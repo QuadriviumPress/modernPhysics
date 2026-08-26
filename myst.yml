@@ -18,21 +18,25 @@ project:
         - file: chapters/ch-01-the-need-for-relativity.md
         - file: chapters/ch-02-special-relativity.md
         - file: chapters/ch-03-relativistic-dynamics.md
-    - title: Part II — Quantum Theory
+    - title: Part II — Wave Optics
       children:
-        - file: chapters/ch-04-particle-properties-of-waves.md
-        - file: chapters/ch-05-wave-properties-of-particles.md
-        - file: chapters/ch-06-the-schrodinger-equation.md
-        - file: chapters/ch-07-quantum-mechanics-in-three-dimensions.md
-    - title: Part III — Atoms and Molecules
+        - file: chapters/ch-04-interference-of-light.md
+        - file: chapters/ch-05-diffraction-of-light.md
+    - title: Part III — Quantum Theory
       children:
-        - file: chapters/ch-08-the-hydrogen-atom.md
-        - file: chapters/ch-09-many-electron-atoms.md
-        - file: chapters/ch-10-molecular-structure.md
-    - title: Part IV — Nuclear and Particle Physics
+        - file: chapters/ch-06-particle-properties-of-waves.md
+        - file: chapters/ch-07-wave-properties-of-particles.md
+        - file: chapters/ch-08-the-schrodinger-equation.md
+        - file: chapters/ch-09-quantum-mechanics-in-three-dimensions.md
+    - title: Part IV — Atoms and Molecules
       children:
-        - file: chapters/ch-11-nuclear-physics.md
-        - file: chapters/ch-12-elementary-particles-and-the-standard-model.md
+        - file: chapters/ch-10-the-hydrogen-atom.md
+        - file: chapters/ch-11-many-electron-atoms.md
+        - file: chapters/ch-12-molecular-structure.md
+    - title: Part V — Nuclear and Particle Physics
+      children:
+        - file: chapters/ch-13-nuclear-physics.md
+        - file: chapters/ch-14-elementary-particles-and-the-standard-model.md
 site:
   template: book-theme
   title: Modern Physics

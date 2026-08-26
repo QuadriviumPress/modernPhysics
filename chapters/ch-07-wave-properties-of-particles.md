@@ -1,6 +1,7 @@
 ---
 title: Wave Properties of Particles
-short_title: Chapter 5. Wave Properties of Particles
+short_title: Chapter 7. Wave Properties of Particles
+label: ch-wave-properties-of-particles
 ---
 
 ## Learning Objectives
@@ -16,11 +17,11 @@ By the end of this chapter, you should be able to:
 
 ## Introduction
 
-Chapter 4 established that light, long understood as a wave, also behaves as a stream of particle-like quanta in its interactions with matter. In 1924, Louis de Broglie proposed the converse: that matter, long understood as composed of particles, should also exhibit wave behavior. This was not an experimental discovery but a bold symmetry argument, made in de Broglie's doctoral thesis, and it proved correct. This chapter develops the de Broglie hypothesis, the experiments that confirmed it, and its most important consequence: because a particle with a well-defined wavelength is necessarily spread out in space, position and momentum cannot both be known with unlimited precision. That trade-off, the Heisenberg uncertainty principle, is not a statement about the limits of measurement technique but a fundamental feature of nature, and it sets the stage for the wave mechanics developed in Chapter 6.
+[Chapter 6](#ch-particle-properties-of-waves) established that light, long understood as a wave, also behaves as a stream of particle-like quanta in its interactions with matter. In 1924, Louis de Broglie proposed the converse: that matter, long understood as composed of particles, should also exhibit wave behavior. This was not an experimental discovery but a bold symmetry argument, made in de Broglie's doctoral thesis, and it proved correct. This chapter develops the de Broglie hypothesis, the experiments that confirmed it, and its most important consequence: because a particle with a well-defined wavelength is necessarily spread out in space, position and momentum cannot both be known with unlimited precision. That trade-off, the Heisenberg uncertainty principle, is not a statement about the limits of measurement technique but a fundamental feature of nature, and it sets the stage for the wave mechanics developed in [Chapter 8](#ch-the-schrodinger-equation).
 
 ## The de Broglie Hypothesis
 
-Chapter 4 established that a photon carries momentum related to its wavelength by $p = h/\lambda$. De Broglie's proposal was to take this relation, turn it around, and apply it universally: **every material particle of momentum $p$ has an associated wavelength**
+[Chapter 6](#ch-particle-properties-of-waves) established that a photon carries momentum related to its wavelength by $p = h/\lambda$. De Broglie's proposal was to take this relation, turn it around, and apply it universally: **every material particle of momentum $p$ has an associated wavelength**
 
 $$
 \lambda = \frac{h}{p},
@@ -40,7 +41,7 @@ $$
 
 ## Wave–Particle Duality
 
-The picture that emerges from Chapters 4 and 5 together is symmetric: light, ordinarily described as a wave, exhibits particle-like behavior (photoelectric effect, Compton scattering); matter, ordinarily described as particles, exhibits wave-like behavior (electron diffraction). Neither description is simply "wrong" and replaced by the other; rather, **both light and matter possess both wave and particle aspects**, and which aspect is manifest depends on the experiment performed. This is **wave–particle duality**. It is tempting, but incorrect, to imagine that a photon or electron is "really" a tiny wave packet that sometimes behaves like a particle, or "really" a tiny particle that sometimes behaves like a wave; the two descriptions are complementary, and a full account of quantum behavior (developed starting in Chapter 6) requires a mathematical object — the wave function — that reduces to particle-like or wave-like predictions depending on what is measured, without being fully captured by either classical picture on its own.
+The picture that emerges from Chapters [6](#ch-particle-properties-of-waves) and [7](#ch-wave-properties-of-particles) together is symmetric: light, ordinarily described as a wave, exhibits particle-like behavior (photoelectric effect, Compton scattering); matter, ordinarily described as particles, exhibits wave-like behavior (electron diffraction). Neither description is simply "wrong" and replaced by the other; rather, **both light and matter possess both wave and particle aspects**, and which aspect is manifest depends on the experiment performed. This is **wave–particle duality**. It is tempting, but incorrect, to imagine that a photon or electron is "really" a tiny wave packet that sometimes behaves like a particle, or "really" a tiny particle that sometimes behaves like a wave; the two descriptions are complementary, and a full account of quantum behavior (developed starting in [Chapter 8](#ch-the-schrodinger-equation)) requires a mathematical object — the wave function — that reduces to particle-like or wave-like predictions depending on what is measured, without being fully captured by either classical picture on its own.
 
 ## Wave Packets
 
@@ -82,11 +83,11 @@ $$
 \Delta p \gtrsim \frac{\hbar}{2\,\Delta x} \approx \frac{1.055\times10^{-34}}{2(5\times10^{-15})}\ \text{kg}\cdot\text{m/s} \approx 1.1\times10^{-20}\ \text{kg}\cdot\text{m/s}.
 $$
 
-Converting to an energy via the (relativistic, since this momentum turns out to be large) relation $E \approx pc$ for $pc \gg mc^2$: $pc \approx (1.1\times10^{-20})(3.0\times10^8)\ \text{J} \approx 3.3\times10^{-12}\ \text{J} \approx 21\ \text{MeV}$. An electron confined to nuclear dimensions would need kinetic energy of tens of MeV — far larger than the few-MeV binding energies available in nuclei (Chapter 11) — so such an electron could not remain bound; this is one of the historical arguments (alongside others involving nuclear spin and magnetic moment) that electrons are not constituents of the nucleus, correctly anticipating that beta decay (Chapter 11) must *create* an electron at the moment of decay rather than releasing one that was previously confined inside.
+Converting to an energy via the (relativistic, since this momentum turns out to be large) relation $E \approx pc$ for $pc \gg mc^2$: $pc \approx (1.1\times10^{-20})(3.0\times10^8)\ \text{J} \approx 3.3\times10^{-12}\ \text{J} \approx 21\ \text{MeV}$. An electron confined to nuclear dimensions would need kinetic energy of tens of MeV — far larger than the few-MeV binding energies available in nuclei ([Chapter 13](#ch-nuclear-physics)) — so such an electron could not remain bound; this is one of the historical arguments (alongside others involving nuclear spin and magnetic moment) that electrons are not constituents of the nucleus, correctly anticipating that beta decay ([Chapter 13](#ch-nuclear-physics)) must *create* an electron at the moment of decay rather than releasing one that was previously confined inside.
 
 ## Summary
 
-- The **de Broglie hypothesis** assigns every particle of momentum $p$ a wavelength $\lambda = h/p$, extending the photon relation of Chapter 4 to all matter.
+- The **de Broglie hypothesis** assigns every particle of momentum $p$ a wavelength $\lambda = h/p$, extending the photon relation of [Chapter 6](#ch-particle-properties-of-waves) to all matter.
 - The **Davisson–Germer experiment** confirmed this directly: electrons diffract from a crystal lattice with a wavelength matching $\lambda = h/p$, exactly as X-rays do.
 - **Wave–particle duality**: light and matter both show wave and particle behavior; which is manifest depends on the experiment, and neither classical picture alone is complete.
 - A localized particle is represented by a **wave packet**, a superposition of waves over a range of wave numbers $\Delta k$; a narrower spatial spread $\Delta x$ requires a broader $\Delta k$ (and hence, via $p = \hbar k$, a broader momentum spread $\Delta p$).
@@ -98,10 +99,10 @@ Converting to an energy via the (relativistic, since this momentum turns out to 
 
 2. In the Davisson–Germer experiment, a diffraction maximum for 54 eV electrons was observed at $\theta = 50°$ from a nickel crystal. Using $\lambda = h/p$ for the electrons' de Broglie wavelength and the diffraction condition $d\sin\theta = \lambda$ (first order, $n=1$), find the effective interplanar spacing $d$ of the nickel crystal consistent with this observation.
 
-3. A proton is confined to a nucleus of diameter $1.0\times10^{-14}\ \text{m}$. Use the uncertainty principle to estimate the minimum kinetic energy the proton must have, and compare it (order of magnitude) to typical nuclear binding energies of several MeV per nucleon (Chapter 11).
+3. A proton is confined to a nucleus of diameter $1.0\times10^{-14}\ \text{m}$. Use the uncertainty principle to estimate the minimum kinetic energy the proton must have, and compare it (order of magnitude) to typical nuclear binding energies of several MeV per nucleon ([Chapter 13](#ch-nuclear-physics)).
 
 4. An excited atomic state has a mean lifetime of $\Delta t = 1.0\times10^{-8}\ \text{s}$. (a) Use the energy–time uncertainty relation to estimate the minimum energy spread $\Delta E$ of this state, in eV. (b) If the state decays by emitting a photon of wavelength $500\ \text{nm}$, estimate the corresponding spread (linewidth) $\Delta\lambda$ in the emitted wavelength.
 
 5. A beam of electrons is passed through a single slit of width $a$. Using the single-slit diffraction condition (first minimum at $\sin\theta \approx \lambda/a$ for small angles) together with the de Broglie relation, express the transverse momentum spread $\Delta p_y$ imparted to the electrons (estimated from $p\sin\theta$) in terms of the slit width $a$, and show that $\Delta y\,\Delta p_y \sim h$ if $\Delta y \sim a$, consistent with the uncertainty principle.
 
-6. Explain, using the energy–time uncertainty relation, why a particle that is truly stable (infinite lifetime) can have a perfectly sharp rest energy $mc^2$, while an unstable particle cannot — and why particle physicists therefore quote both a mass and a "width" (in energy units) for unstable particles, a topic revisited in Chapter 12.
+6. Explain, using the energy–time uncertainty relation, why a particle that is truly stable (infinite lifetime) can have a perfectly sharp rest energy $mc^2$, while an unstable particle cannot — and why particle physicists therefore quote both a mass and a "width" (in energy units) for unstable particles, a topic revisited in [Chapter 14](#ch-elementary-particles-and-the-standard-model).

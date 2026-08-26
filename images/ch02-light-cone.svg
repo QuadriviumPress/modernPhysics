@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 430" role="img" aria-labelledby="title desc">
+  <title id="title">Light cone and causal regions</title>
+  <desc id="desc">A spacetime diagram with ct vertical and x horizontal. Light rays form a cone, separating future, past, and spacelike elsewhere.</desc>
+  <rect width="700" height="430" fill="#fff"/>
+  <text x="350" y="28" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold">Light cone and causality</text>
+  <polygon points="350,205 110,70 110,340" fill="#eaf4fb"/>
+  <polygon points="350,205 590,70 590,340" fill="#fff4df"/>
+  <polygon points="350,205 110,70 590,70" fill="#e8f5e9" opacity=".8"/>
+  <polygon points="350,205 110,340 590,340" fill="#fce8e8" opacity=".8"/>
+  <line x1="350" y1="370" x2="350" y2="52" stroke="#222" stroke-width="3"/>
+  <line x1="70" y1="205" x2="630" y2="205" stroke="#222" stroke-width="3"/>
+  <line x1="350" y1="205" x2="110" y2="70" stroke="#b33a3a" stroke-width="4"/>
+  <line x1="350" y1="205" x2="590" y2="70" stroke="#b33a3a" stroke-width="4"/>
+  <line x1="350" y1="205" x2="110" y2="340" stroke="#b33a3a" stroke-width="4"/>
+  <line x1="350" y1="205" x2="590" y2="340" stroke="#b33a3a" stroke-width="4"/>
+  <circle cx="350" cy="205" r="7" fill="#222"/>
+  <text x="360" y="198" font-family="sans-serif" font-size="16">event</text>
+  <text x="365" y="67" font-family="sans-serif" font-size="17">future</text>
+  <text x="365" y="358" font-family="sans-serif" font-size="17">past</text>
+  <text x="120" y="200" text-anchor="middle" font-family="sans-serif" font-size="16">elsewhere</text>
+  <text x="580" y="200" text-anchor="middle" font-family="sans-serif" font-size="16">elsewhere</text>
+  <text x="365" y="50" font-family="sans-serif" font-size="17">ct</text><text x="615" y="195" font-family="sans-serif" font-size="17">x</text>
+  <text x="350" y="405" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#555">45° boundaries are light rays: |Δx| = c|Δt|</text>
+</svg>

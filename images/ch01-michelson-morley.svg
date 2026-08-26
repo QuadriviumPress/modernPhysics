@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 390" role="img" aria-labelledby="title desc">
+  <title id="title">Michelson–Morley interferometer</title>
+  <desc id="desc">A beam splitter sends light along perpendicular arms to mirrors and back to a detector. An ether wind is shown from left to right.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#b33a3a"/></marker>
+    <marker id="light" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#1769aa"/></marker>
+  </defs>
+  <rect width="760" height="390" fill="#fff"/>
+  <text x="380" y="30" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#222">Michelson–Morley interferometer</text>
+  <line x1="75" y1="72" x2="685" y2="72" stroke="#b33a3a" stroke-width="4" marker-end="url(#arrow)"/>
+  <text x="380" y="62" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#8d2c2c">hypothetical ether wind, v</text>
+  <line x1="365" y1="205" x2="170" y2="205" stroke="#444" stroke-width="8"/>
+  <line x1="365" y1="205" x2="365" y2="105" stroke="#444" stroke-width="8"/>
+  <line x1="365" y1="205" x2="560" y2="205" stroke="#555" stroke-width="4"/>
+  <rect x="160" y="178" width="18" height="54" fill="#555"/>
+  <rect x="352" y="95" width="26" height="20" fill="#555"/>
+  <rect x="550" y="178" width="18" height="54" fill="#555"/>
+  <rect x="352" y="192" width="26" height="26" fill="#f4c542" stroke="#8b6e00" stroke-width="2" transform="rotate(45 365 205)"/>
+  <circle cx="365" cy="205" r="9" fill="#1769aa"/>
+  <path d="M80 205 H350" stroke="#1769aa" stroke-width="4" marker-end="url(#light)"/>
+  <path d="M365 192 V118" stroke="#1769aa" stroke-width="4" marker-end="url(#light)"/>
+  <path d="M365 218 V292" stroke="#1769aa" stroke-width="4" marker-end="url(#light)"/>
+  <path d="M380 205 H545" stroke="#1769aa" stroke-width="4" marker-end="url(#light)"/>
+  <path d="M545 220 H380" stroke="#1769aa" stroke-width="3" stroke-dasharray="7 5" marker-end="url(#light)"/>
+  <path d="M350 205 H190" stroke="#1769aa" stroke-width="3" stroke-dasharray="7 5" marker-end="url(#light)"/>
+  <text x="75" y="245" font-family="sans-serif" font-size="16" fill="#222">light source</text>
+  <text x="390" y="103" font-family="sans-serif" font-size="16" fill="#222">mirror</text>
+  <text x="575" y="210" font-family="sans-serif" font-size="16" fill="#222">mirror</text>
+  <text x="380" y="330" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#1769aa">recombined beams → fringes at detector</text>
+  <text x="380" y="365" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#555">Rotating the apparatus exchanges the parallel and perpendicular arms.</text>
+</svg>

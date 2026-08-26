@@ -1,6 +1,7 @@
 ---
 title: Molecular Structure
-short_title: Chapter 10. Molecular Structure
+short_title: Chapter 12. Molecular Structure
+label: ch-molecular-structure
 ---
 
 ## Learning Objectives
@@ -16,7 +17,7 @@ By the end of this chapter, you should be able to:
 
 ## Introduction
 
-Chapters 8 and 9 explained the structure of individual atoms — how electrons occupy discrete energy levels arranged into subshells and shells, and how that arrangement produces the periodic table. This chapter asks how atoms combine to form molecules, using the same quantum-mechanical toolkit: atomic orbitals, the Pauli exclusion principle, and the variational tendency of a bound system to seek its lowest-energy configuration. Two complementary pictures are developed. **Valence bond theory** treats a bond as the overlap of atomic orbitals from two atoms, localized between them, and is the natural language for molecular geometry. **Molecular orbital theory** instead builds orbitals belonging to the molecule as a whole, and is the more powerful tool for predicting a molecule's stability, bond strength, and magnetic properties. The chapter closes by treating a bonded diatomic molecule as a single quantum system in its own right, subject to quantized vibrational and rotational energy levels — a direct application of the harmonic oscillator (Chapter 6) and angular momentum quantization (Chapter 7) to a new physical system.
+Chapters [10](#ch-the-hydrogen-atom) and [11](#ch-many-electron-atoms) explained the structure of individual atoms — how electrons occupy discrete energy levels arranged into subshells and shells, and how that arrangement produces the periodic table. This chapter asks how atoms combine to form molecules, using the same quantum-mechanical toolkit: atomic orbitals, the Pauli exclusion principle, and the variational tendency of a bound system to seek its lowest-energy configuration. Two complementary pictures are developed. **Valence bond theory** treats a bond as the overlap of atomic orbitals from two atoms, localized between them, and is the natural language for molecular geometry. **Molecular orbital theory** instead builds orbitals belonging to the molecule as a whole, and is the more powerful tool for predicting a molecule's stability, bond strength, and magnetic properties. The chapter closes by treating a bonded diatomic molecule as a single quantum system in its own right, subject to quantized vibrational and rotational energy levels — a direct application of the harmonic oscillator ([Chapter 8](#ch-the-schrodinger-equation)) and angular momentum quantization ([Chapter 9](#ch-quantum-mechanics-in-three-dimensions)) to a new physical system.
 
 ## Ionic and Covalent Bonding
 
@@ -28,7 +29,7 @@ Chemical bonds form because a molecule can have lower total energy than its cons
 
 ## Hybrid Orbitals
 
-Simple atomic $s$ and $p$ orbitals, taken directly from the hydrogen-like solutions of Chapter 8, generally point in the wrong directions (or have the wrong shapes) to account for the observed bond angles and geometries of real molecules — the observed near-$109.5°$ bond angles of methane, $\text{CH}_4$, for instance, are not reproduced by combinations of the atom's unmodified $2s$ and three $2p$ orbitals directly. The resolution is that the atomic orbitals actually used in bonding are not the pure $s$, $p$, $d$ orbitals of an isolated atom, but specific linear combinations of them, called **hybrid orbitals**, that better match the geometry demanded by minimizing electron-pair repulsion among the atom's bonding and lone electron pairs (the same qualitative principle underlying the electron-domain, or VSEPR, geometries encountered in general chemistry). Mixing one $s$ orbital with a varying number of $p$ (and, for some geometries, $d$) orbitals produces hybrid sets with characteristic, experimentally matched geometries:
+Simple atomic $s$ and $p$ orbitals, taken directly from the hydrogen-like solutions of [Chapter 10](#ch-the-hydrogen-atom), generally point in the wrong directions (or have the wrong shapes) to account for the observed bond angles and geometries of real molecules — the observed near-$109.5°$ bond angles of methane, $\text{CH}_4$, for instance, are not reproduced by combinations of the atom's unmodified $2s$ and three $2p$ orbitals directly. The resolution is that the atomic orbitals actually used in bonding are not the pure $s$, $p$, $d$ orbitals of an isolated atom, but specific linear combinations of them, called **hybrid orbitals**, that better match the geometry demanded by minimizing electron-pair repulsion among the atom's bonding and lone electron pairs (the same qualitative principle underlying the electron-domain, or VSEPR, geometries encountered in general chemistry). Mixing one $s$ orbital with a varying number of $p$ (and, for some geometries, $d$) orbitals produces hybrid sets with characteristic, experimentally matched geometries:
 
 | Hybridization | Orbitals mixed | Number of hybrids | Geometry | Example |
 |---|---|---|---|---|
@@ -62,7 +63,7 @@ A bond order of zero predicts an unstable molecule (no net energy lowering relat
 
 ## Vibrational and Rotational Energy Levels
 
-Once bonded, a diatomic molecule is itself a quantum system with its own internal energy levels, in addition to the electronic energy levels associated with its bonding orbitals. Near the equilibrium bond length $r_0$ (where the molecular potential energy curve, as a function of internuclear separation, has its minimum), the potential is well approximated by a parabola, so small-amplitude **vibration** of the two nuclei about $r_0$ is, to good approximation, the quantum harmonic oscillator of Chapter 6, with quantized energies
+Once bonded, a diatomic molecule is itself a quantum system with its own internal energy levels, in addition to the electronic energy levels associated with its bonding orbitals. Near the equilibrium bond length $r_0$ (where the molecular potential energy curve, as a function of internuclear separation, has its minimum), the potential is well approximated by a parabola, so small-amplitude **vibration** of the two nuclei about $r_0$ is, to good approximation, the quantum harmonic oscillator of [Chapter 8](#ch-the-schrodinger-equation), with quantized energies
 
 $$
 E_v = \left(v + \tfrac12\right)\hbar\omega, \qquad v = 0, 1, 2, \ldots,
@@ -70,7 +71,7 @@ $$
 
 where $\omega = \sqrt{k/\mu}$, $k$ is the effective "spring constant" of the bond (obtained from the curvature of the potential at its minimum), and $\mu = m_1m_2/(m_1+m_2)$ is the **reduced mass** of the two-nucleus system (the appropriate effective mass for relative motion of a two-body system, reducing the two-body vibration problem to an equivalent single-particle problem).
 
-Independently, the molecule can **rotate** about its center of mass; treating the two nuclei as point masses at fixed separation $r_0$ (the **rigid rotor** approximation, reasonable when rotational energies are small compared to vibrational spacing) makes this exactly the angular-momentum problem of Chapter 7, with quantized rotational energy
+Independently, the molecule can **rotate** about its center of mass; treating the two nuclei as point masses at fixed separation $r_0$ (the **rigid rotor** approximation, reasonable when rotational energies are small compared to vibrational spacing) makes this exactly the angular-momentum problem of [Chapter 9](#ch-quantum-mechanics-in-three-dimensions), with quantized rotational energy
 
 $$
 E_J = \frac{\hbar^2}{2I}J(J+1), \qquad J = 0, 1, 2, \ldots,

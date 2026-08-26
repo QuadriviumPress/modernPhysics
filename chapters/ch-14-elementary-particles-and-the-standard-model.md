@@ -1,6 +1,7 @@
 ---
 title: Elementary Particles and the Standard Model
-short_title: Chapter 12. Elementary Particles and the Standard Model
+short_title: Chapter 14. Elementary Particles and the Standard Model
+label: ch-elementary-particles-and-the-standard-model
 ---
 
 ## Learning Objectives
@@ -16,11 +17,11 @@ By the end of this chapter, you should be able to:
 
 ## Introduction
 
-Nuclear physics (Chapter 11) treated protons and neutrons as elementary building blocks, bound by the strong force into nuclei. This chapter goes one level deeper, to the particles and forces from which protons, neutrons, and indeed all matter are built. Over the course of the twentieth century, a rapidly growing zoo of "elementary" particles, discovered first in cosmic rays and then in purpose-built particle accelerators, was gradually organized into a coherent theoretical framework, the **Standard Model of particle physics**, which identifies a genuinely small set of truly fundamental particles and the forces (themselves mediated by particle exchange) that govern their interactions. This chapter surveys that framework: the classification of particles by spin and by the forces they feel, the substructure of protons and neutrons in terms of quarks, the conservation laws that govern which particle reactions can occur, and the mechanism by which most fundamental particles acquire mass at all.
+Nuclear physics ([Chapter 13](#ch-nuclear-physics)) treated protons and neutrons as elementary building blocks, bound by the strong force into nuclei. This chapter goes one level deeper, to the particles and forces from which protons, neutrons, and indeed all matter are built. Over the course of the twentieth century, a rapidly growing zoo of "elementary" particles, discovered first in cosmic rays and then in purpose-built particle accelerators, was gradually organized into a coherent theoretical framework, the **Standard Model of particle physics**, which identifies a genuinely small set of truly fundamental particles and the forces (themselves mediated by particle exchange) that govern their interactions. This chapter surveys that framework: the classification of particles by spin and by the forces they feel, the substructure of protons and neutrons in terms of quarks, the conservation laws that govern which particle reactions can occur, and the mechanism by which most fundamental particles acquire mass at all.
 
 ## Classifying Particles: Fermions and Bosons
 
-Every known particle carries an intrinsic spin angular momentum, quantized exactly as orbital angular momentum is (Chapter 7), $S = \sqrt{s(s+1)}\hbar$, but with $s$ either a half-integer ($\tfrac12, \tfrac32, \ldots$) or an integer ($0, 1, 2, \ldots$). This distinction is far more than bookkeeping: particles with half-integer spin, called **fermions**, obey the Pauli exclusion principle (Chapter 9) and cannot occupy the same quantum state as an identical partner; particles with integer spin, called **bosons**, obey no such restriction and can occupy the same state in unlimited numbers (the basis, for photons, of the stimulated-emission cascade in a laser, Chapter 9). Matter, in the Standard Model, is built from fermions (spin $\tfrac12$); the forces between them are mediated by the exchange of bosons.
+Every known particle carries an intrinsic spin angular momentum, quantized exactly as orbital angular momentum is ([Chapter 9](#ch-quantum-mechanics-in-three-dimensions)), $S = \sqrt{s(s+1)}\hbar$, but with $s$ either a half-integer ($\tfrac12, \tfrac32, \ldots$) or an integer ($0, 1, 2, \ldots$). This distinction is far more than bookkeeping: particles with half-integer spin, called **fermions**, obey the Pauli exclusion principle ([Chapter 11](#ch-many-electron-atoms)) and cannot occupy the same quantum state as an identical partner; particles with integer spin, called **bosons**, obey no such restriction and can occupy the same state in unlimited numbers (the basis, for photons, of the stimulated-emission cascade in a laser, [Chapter 11](#ch-many-electron-atoms)). Matter, in the Standard Model, is built from fermions (spin $\tfrac12$); the forces between them are mediated by the exchange of bosons.
 
 ## The Four Fundamental Interactions
 
@@ -33,7 +34,7 @@ All observed particle interactions are, to the precision of current experiments,
 | Weak | $\sim 10^{-6}$ | $\sim 10^{-3}\ \text{fm}$ | $W^\pm$, $Z^0$ | beta decay; some particle decays |
 | Gravitational | $\sim 10^{-38}$ | infinite | graviton (hypothesized, not yet observed) | negligible for individual particles; dominant only for macroscopic masses |
 
-The strong and weak interactions, both confined to nuclear-scale distances, are the reason their effects were unknown until nuclear and particle physics probed those scales directly; the electromagnetic and gravitational interactions, both infinite in range because their mediating boson is massless, dominate everyday, macroscopic experience. The relative strengths quoted are approximate and depend on the energy/distance scale at which the comparison is made, but the ordering — strong $\gg$ electromagnetic $\gg$ weak $\gg$ gravitational, at typical particle-physics scales — is robust. The strong force between nucleons discussed in Chapter 11 is, in the Standard Model's deeper description, a residual effect of the strong force acting between the quarks confined inside each nucleon (analogous to the way the residual electromagnetic force between neutral atoms, the van der Waals force, is a residual effect of the more fundamental electromagnetic force between the charged constituents of each atom).
+The strong and weak interactions, both confined to nuclear-scale distances, are the reason their effects were unknown until nuclear and particle physics probed those scales directly; the electromagnetic and gravitational interactions, both infinite in range because their mediating boson is massless, dominate everyday, macroscopic experience. The relative strengths quoted are approximate and depend on the energy/distance scale at which the comparison is made, but the ordering — strong $\gg$ electromagnetic $\gg$ weak $\gg$ gravitational, at typical particle-physics scales — is robust. The strong force between nucleons discussed in [Chapter 13](#ch-nuclear-physics) is, in the Standard Model's deeper description, a residual effect of the strong force acting between the quarks confined inside each nucleon (analogous to the way the residual electromagnetic force between neutral atoms, the van der Waals force, is a residual effect of the more fundamental electromagnetic force between the charged constituents of each atom).
 
 ## Leptons and Quarks
 
@@ -43,7 +44,7 @@ The Standard Model's fundamental matter fermions fall into two families, **lepto
 
 **Quarks** are fermions that do feel the strong interaction, and — unlike leptons — are never observed as free, isolated particles (a phenomenon called **confinement**, discussed further below). The three generations are: up ($u$) and down ($d$) (generation 1, the constituents of ordinary protons and neutrons); charm ($c$) and strange ($s$) (generation 2); and top ($t$) and bottom ($b$) (generation 3). Quarks carry fractional electric charge, $+\tfrac23 e$ ($u$, $c$, $t$) or $-\tfrac13 e$ ($d$, $s$, $b$), the only known particles to do so, and additionally carry a strong-interaction charge called **color** (in three varieties, whimsically named red, green, and blue, with no relation to visible color), which plays a role for the strong force directly analogous to the role electric charge plays for the electromagnetic force.
 
-For every lepton and quark there exists a corresponding **antiparticle**, with identical mass and spin but opposite electric charge (and, for quarks, opposite color) — the electron's antiparticle, the positron, was introduced already in Chapter 4's discussion of pair production, and the same particle-antiparticle structure is universal across all Standard Model fermions.
+For every lepton and quark there exists a corresponding **antiparticle**, with identical mass and spin but opposite electric charge (and, for quarks, opposite color) — the electron's antiparticle, the positron, was introduced already in [Chapter 6](#ch-particle-properties-of-waves)'s discussion of pair production, and the same particle-antiparticle structure is universal across all Standard Model fermions.
 
 ## Hadrons and Confinement
 
@@ -79,11 +80,12 @@ A long-standing puzzle in the Standard Model was that the mathematical framework
 
 1. Classify each of the following as a fermion or boson, based on its spin: photon ($s=1$), electron ($s=\tfrac12$), pion ($s=0$), proton ($s=\tfrac12$).
 
+(ex-elementary-particles-and-the-standard-model-2)=
 2. Determine the electric charge of a baryon composed of $uds$ (this particle is the $\Lambda^0$) using the quark charges $+\tfrac23 e$ for $u$, $-\tfrac13 e$ for $d$ and $s$, and check your result against the known charge of the $\Lambda^0$ (zero).
 
 3. Determine whether each proposed reaction conserves charge, baryon number, and lepton number as required, and state which conservation law (if any) forbids the ones that are not allowed: (a) $p \to e^+ + \gamma$, (b) $n \to p + e^- + \bar\nu_e$, (c) $\mu^- \to e^- + \gamma$, (d) $p + p \to p + p + \pi^0$.
 
-4. Using the known quark content of the proton ($uud$) and neutron ($udd$), and the quark charges given in Problem 2, verify that the proton has charge $+e$ and the neutron has charge $0$.
+4. Using the known quark content of the proton ($uud$) and neutron ($udd$), and the quark charges given in [Problem 2](#ex-elementary-particles-and-the-standard-model-2), verify that the proton has charge $+e$ and the neutron has charge $0$.
 
 5. The muon decays via $\mu^- \to e^- + \bar\nu_e + \nu_\mu$. Explain, using lepton-number conservation applied separately to the electron-generation number $L_e$ and muon-generation number $L_\mu$, why the decay $\mu^- \to e^- + \gamma$ alone (without the two neutrinos) is forbidden, even though it conserves charge, energy, and momentum.
 

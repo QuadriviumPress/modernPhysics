@@ -19,12 +19,13 @@ The current table of contents (see [`myst.yml`](myst.yml)) is a scaffold:
 
 - **Part I — Relativity**: the need for relativity, special relativity,
   relativistic dynamics
-- **Part II — Quantum Theory**: particle properties of waves, wave
+- **Part II — Wave Optics**: interference of light, diffraction of light
+- **Part III — Quantum Theory**: particle properties of waves, wave
   properties of particles, the Schrödinger equation, quantum mechanics in
   three dimensions
-- **Part III — Atoms and Molecules**: the hydrogen atom, many-electron
+- **Part IV — Atoms and Molecules**: the hydrogen atom, many-electron
   atoms, molecular structure
-- **Part IV — Nuclear and Particle Physics**: nuclear physics, elementary
+- **Part V — Nuclear and Particle Physics**: nuclear physics, elementary
   particles and the Standard Model
 
 Each chapter file starts as a stub (Learning Objectives / Introduction /

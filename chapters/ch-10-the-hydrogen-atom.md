@@ -1,6 +1,7 @@
 ---
 title: The Hydrogen Atom
-short_title: Chapter 8. The Hydrogen Atom
+short_title: Chapter 10. The Hydrogen Atom
+label: ch-the-hydrogen-atom
 ---
 
 ## Learning Objectives
@@ -16,7 +17,7 @@ By the end of this chapter, you should be able to:
 
 ## Introduction
 
-Chapter 7 developed the general machinery for any central potential: separation into radial and angular parts, and the universal quantization of orbital angular momentum. This chapter specializes that machinery to the single most important central potential in atomic physics — the Coulomb attraction between an electron and a proton — and solves it for the hydrogen atom, the only atom for which the Schrödinger equation can be solved exactly in closed form. The result reproduces (and explains, rather than assumes) the energy levels first found empirically in atomic spectra and postulated ad hoc in the 1913 Bohr model, while revealing a far richer structure — angular momentum, spatial probability distributions, and a fourth quantum number, electron spin, with no classical counterpart at all.
+[Chapter 9](#ch-quantum-mechanics-in-three-dimensions) developed the general machinery for any central potential: separation into radial and angular parts, and the universal quantization of orbital angular momentum. This chapter specializes that machinery to the single most important central potential in atomic physics — the Coulomb attraction between an electron and a proton — and solves it for the hydrogen atom, the only atom for which the Schrödinger equation can be solved exactly in closed form. The result reproduces (and explains, rather than assumes) the energy levels first found empirically in atomic spectra and postulated ad hoc in the 1913 Bohr model, while revealing a far richer structure — angular momentum, spatial probability distributions, and a fourth quantum number, electron spin, with no classical counterpart at all.
 
 ## The Radial Equation and Energy Quantization
 
@@ -26,7 +27,7 @@ $$
 V(r) = -\frac{e^2}{4\pi\epsilon_0\, r}.
 $$
 
-Substituting this $V(r)$ into the radial equation obtained from the separation $\psi = R(r)Y(\theta,\phi)$ (Chapter 7), and requiring $R(r)$ to be normalizable (i.e., to decay rather than blow up as $r\to\infty$, and to remain finite at $r=0$), restricts the allowed energies to exactly the same discrete set found by Bohr in 1913 from an ad hoc semiclassical model:
+Substituting this $V(r)$ into the radial equation obtained from the separation $\psi = R(r)Y(\theta,\phi)$ ([Chapter 9](#ch-quantum-mechanics-in-three-dimensions)), and requiring $R(r)$ to be normalizable (i.e., to decay rather than blow up as $r\to\infty$, and to remain finite at $r=0$), restricts the allowed energies to exactly the same discrete set found by Bohr in 1913 from an ad hoc semiclassical model:
 
 $$
 E_n = -\frac{m_ee^4}{8\epsilon_0^2h^2}\,\frac{1}{n^2} = -\frac{13.6\ \text{eV}}{n^2}, \qquad n = 1, 2, 3,\ldots.
@@ -36,13 +37,13 @@ This agreement is a triumph for the Schrödinger equation — it reproduces a re
 
 ## Quantum Numbers and Degeneracy in Hydrogen
 
-Solving the full three-dimensional problem gives states labeled by the same three quantum numbers introduced in Chapter 7 — $n$, $\ell$, $m_\ell$ — but with a further restriction, specific to the $1/r$ Coulomb potential, tying $\ell$ to $n$:
+Solving the full three-dimensional problem gives states labeled by the same three quantum numbers introduced in [Chapter 9](#ch-quantum-mechanics-in-three-dimensions) — $n$, $\ell$, $m_\ell$ — but with a further restriction, specific to the $1/r$ Coulomb potential, tying $\ell$ to $n$:
 
 $$
 n = 1, 2, 3, \ldots, \qquad \ell = 0, 1, \ldots, n-1, \qquad m_\ell = -\ell, \ldots, \ell.
 $$
 
-Because the energy $E_n$ depends *only* on $n$ — not on $\ell$ or $m_\ell$ — every state sharing a given $n$ is degenerate (equal in energy), regardless of its orbital angular momentum. Counting the total number of $(\ell, m_\ell)$ combinations for a given $n$ gives $n^2$ degenerate states (before accounting for electron spin, discussed below): for example, $n=2$ admits $\ell=0$ (one state, $m_\ell=0$) and $\ell=1$ (three states, $m_\ell=-1,0,1$), for $1+3=4=2^2$ states total. This $\ell$-independence of the energy is itself notable — it does *not* hold for multi-electron atoms (Chapter 9), where the energy depends on $\ell$ as well as $n$, and is a special feature of the pure $1/r$ Coulomb potential (technically, a signature of a hidden extra symmetry, beyond ordinary rotational symmetry, unique to the $1/r$ potential).
+Because the energy $E_n$ depends *only* on $n$ — not on $\ell$ or $m_\ell$ — every state sharing a given $n$ is degenerate (equal in energy), regardless of its orbital angular momentum. Counting the total number of $(\ell, m_\ell)$ combinations for a given $n$ gives $n^2$ degenerate states (before accounting for electron spin, discussed below): for example, $n=2$ admits $\ell=0$ (one state, $m_\ell=0$) and $\ell=1$ (three states, $m_\ell=-1,0,1$), for $1+3=4=2^2$ states total. This $\ell$-independence of the energy is itself notable — it does *not* hold for multi-electron atoms ([Chapter 11](#ch-many-electron-atoms)), where the energy depends on $\ell$ as well as $n$, and is a special feature of the pure $1/r$ Coulomb potential (technically, a signature of a hidden extra symmetry, beyond ordinary rotational symmetry, unique to the $1/r$ potential).
 
 ## Wave Functions and Probability Distributions
 
@@ -54,11 +55,11 @@ $$
 
 is the **Bohr radius** — reappearing here not as the radius of a Bohr orbit but as the natural length scale over which the ground-state probability density falls off. The **radial probability distribution**, $P(r) = r^2|R_{n\ell}(r)|^2$ (the probability per unit $r$ of finding the electron at distance $r$ from the nucleus, obtained by integrating $|\psi|^2$ over all angles at fixed $r$), peaks at $r = a_0$ for the ground state — the most probable electron-nucleus distance in hydrogen's ground state is exactly the Bohr radius, even though the electron has zero orbital angular momentum and hence, unlike in the Bohr picture, is not "orbiting" in any classical sense.
 
-More generally, $R_{n\ell}(r)$ has $n-\ell-1$ radial nodes (points, other than $r=0$ and $r=\infty$, where the probability density vanishes), and the angular functions $Y_{\ell m_\ell}(\theta,\phi)$ have angular nodes (nodal planes or cones) whose count and shape depend on $\ell$ and $m_\ell$ — giving rise to the familiar $s$ (spherical), $p$ (dumbbell-shaped, with a single nodal plane through the origin), and $d$-orbital shapes used throughout chemistry (Chapter 10) to describe electron distributions in atoms and molecules.
+More generally, $R_{n\ell}(r)$ has $n-\ell-1$ radial nodes (points, other than $r=0$ and $r=\infty$, where the probability density vanishes), and the angular functions $Y_{\ell m_\ell}(\theta,\phi)$ have angular nodes (nodal planes or cones) whose count and shape depend on $\ell$ and $m_\ell$ — giving rise to the familiar $s$ (spherical), $p$ (dumbbell-shaped, with a single nodal plane through the origin), and $d$-orbital shapes used throughout chemistry ([Chapter 12](#ch-molecular-structure)) to describe electron distributions in atoms and molecules.
 
 ## Electron Spin
 
-By the mid-1920s, several pieces of spectroscopic evidence — most directly, the splitting of atomic beams passing through an inhomogeneous magnetic field — showed that the three quantum numbers $(n,\ell,m_\ell)$ do not fully specify an electron's state. In the **Stern–Gerlach experiment** (1922), a beam of (electrically neutral) silver atoms was passed through a strongly inhomogeneous magnetic field and allowed to strike a detector screen. A classical magnetic dipole, oriented randomly, should be deflected by an amount depending continuously on its orientation, producing a single smeared-out band on the screen. Instead, the beam split into exactly **two** discrete spots, symmetric about the undeflected position — direct evidence of **space quantization** (Chapter 7) applied to a new, previously unsuspected degree of freedom, since the outermost electron in a silver atom happens to be in an $s$-state ($\ell=0$, hence zero orbital angular momentum and no orbital magnetic moment to produce any deflection at all), so the observed splitting could not be due to orbital angular momentum.
+By the mid-1920s, several pieces of spectroscopic evidence — most directly, the splitting of atomic beams passing through an inhomogeneous magnetic field — showed that the three quantum numbers $(n,\ell,m_\ell)$ do not fully specify an electron's state. In the **Stern–Gerlach experiment** (1922), a beam of (electrically neutral) silver atoms was passed through a strongly inhomogeneous magnetic field and allowed to strike a detector screen. A classical magnetic dipole, oriented randomly, should be deflected by an amount depending continuously on its orientation, producing a single smeared-out band on the screen. Instead, the beam split into exactly **two** discrete spots, symmetric about the undeflected position — direct evidence of **space quantization** ([Chapter 9](#ch-quantum-mechanics-in-three-dimensions)) applied to a new, previously unsuspected degree of freedom, since the outermost electron in a silver atom happens to be in an $s$-state ($\ell=0$, hence zero orbital angular momentum and no orbital magnetic moment to produce any deflection at all), so the observed splitting could not be due to orbital angular momentum.
 
 The resolution, proposed by Samuel Goudsmit and George Uhlenbeck (1925), is that the electron possesses an intrinsic angular momentum, **spin**, $\vec S$, with no classical counterpart (it is not literally the electron spinning on its axis — such a picture leads to internal-consistency and speed-of-rotation contradictions and should be regarded purely as a suggestive name), quantized exactly as orbital angular momentum is, but with a spin quantum number restricted to the single value $s=\tfrac12$:
 
@@ -66,7 +67,7 @@ $$
 S = \sqrt{s(s+1)}\,\hbar = \frac{\sqrt3}{2}\hbar, \qquad S_z = m_s\hbar, \qquad m_s = -\tfrac12, +\tfrac12.
 $$
 
-The two allowed values of $m_s$ — "spin up" and "spin down" — account exactly for the two Stern–Gerlach spots. A complete specification of an electron's state in hydrogen therefore requires **four** quantum numbers, $(n,\ell,m_\ell,m_s)$, and the count of degenerate states for a given $n$ becomes $2n^2$ rather than $n^2$, the factor of 2 from the two spin orientations — a result central to the structure of the periodic table in Chapter 9.
+The two allowed values of $m_s$ — "spin up" and "spin down" — account exactly for the two Stern–Gerlach spots. A complete specification of an electron's state in hydrogen therefore requires **four** quantum numbers, $(n,\ell,m_\ell,m_s)$, and the count of degenerate states for a given $n$ becomes $2n^2$ rather than $n^2$, the factor of 2 from the two spin orientations — a result central to the structure of the periodic table in [Chapter 11](#ch-many-electron-atoms).
 
 ## Magnetic Moments
 
@@ -113,6 +114,6 @@ $$
 
 4. An electron in a hydrogen atom is in a $3d$ state ($\ell=2$). (a) Compute the magnitude of its orbital angular momentum in units of $\hbar$. (b) Compute the maximum possible $z$-component of its orbital magnetic moment, in units of the Bohr magneton.
 
-5. In the Stern–Gerlach experiment, explain why silver atoms (rather than, say, helium atoms) were a good choice for demonstrating space quantization due to electron spin, referring to the electron configuration of the outermost electron (you may look ahead to Chapter 9's discussion of electron configurations, or simply reason from the fact that silver's single outer electron is in an $s$-state).
+5. In the Stern–Gerlach experiment, explain why silver atoms (rather than, say, helium atoms) were a good choice for demonstrating space quantization due to electron spin, referring to the electron configuration of the outermost electron (you may look ahead to [Chapter 11](#ch-many-electron-atoms)'s discussion of electron configurations, or simply reason from the fact that silver's single outer electron is in an $s$-state).
 
 6. Show that the ground-state radial probability distribution of hydrogen, $P(r) = r^2|R_{10}(r)|^2 \propto r^2 e^{-2r/a_0}$, is maximized at $r=a_0$ by differentiating $P(r)$ with respect to $r$ and setting the result to zero.

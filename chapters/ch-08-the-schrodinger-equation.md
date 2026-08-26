@@ -1,6 +1,7 @@
 ---
 title: The Schrödinger Equation
-short_title: Chapter 6. The Schrödinger Equation
+short_title: Chapter 8. The Schrödinger Equation
+label: ch-the-schrodinger-equation
 ---
 
 ## Learning Objectives
@@ -16,7 +17,7 @@ By the end of this chapter, you should be able to:
 
 ## Introduction
 
-Chapter 5 established that a wave packet, not a point trajectory, is the appropriate description of a quantum particle, and that this wave nature is directly responsible for the Heisenberg uncertainty principle. This chapter introduces the equation that governs how such a wave evolves: the **Schrödinger equation**, proposed by Erwin Schrödinger in 1926. It plays the role in quantum mechanics that Newton's second law plays in classical mechanics — given a system's wave function at one instant and the forces (via a potential energy function) acting on it, the Schrödinger equation determines the wave function at all later times. Solving it for a sequence of increasingly realistic potentials — a particle confined to a box, a particle in a finite well, a particle in a parabolic potential — reveals features with no classical counterpart: quantized energy levels, a nonzero minimum energy, and the ability of a particle to be found where classical mechanics says it cannot.
+[Chapter 7](#ch-wave-properties-of-particles) established that a wave packet, not a point trajectory, is the appropriate description of a quantum particle, and that this wave nature is directly responsible for the Heisenberg uncertainty principle. This chapter introduces the equation that governs how such a wave evolves: the **Schrödinger equation**, proposed by Erwin Schrödinger in 1926. It plays the role in quantum mechanics that Newton's second law plays in classical mechanics — given a system's wave function at one instant and the forces (via a potential energy function) acting on it, the Schrödinger equation determines the wave function at all later times. Solving it for a sequence of increasingly realistic potentials — a particle confined to a box, a particle in a finite well, a particle in a parabolic potential — reveals features with no classical counterpart: quantized energy levels, a nonzero minimum energy, and the ability of a particle to be found where classical mechanics says it cannot.
 
 ## The Wave Function and Its Interpretation
 
@@ -76,11 +77,11 @@ $$
 T \approx e^{-2\kappa L}, \qquad \kappa = \frac{\sqrt{2m(V_0-E)}}{\hbar},
 $$
 
-showing that tunneling probability falls off exponentially with both the barrier's width and the square root of $m(V_0-E)$ — which is why tunneling is significant for light particles (electrons) through thin barriers but utterly negligible for macroscopic objects. Tunneling is not a mathematical curiosity; it is the mechanism behind alpha decay (Chapter 11), the scanning tunneling microscope, and (approximately) the operation of tunnel diodes.
+showing that tunneling probability falls off exponentially with both the barrier's width and the square root of $m(V_0-E)$ — which is why tunneling is significant for light particles (electrons) through thin barriers but utterly negligible for macroscopic objects. Tunneling is not a mathematical curiosity; it is the mechanism behind alpha decay ([Chapter 13](#ch-nuclear-physics)), the scanning tunneling microscope, and (approximately) the operation of tunnel diodes.
 
 ## The Quantum Harmonic Oscillator
 
-A particle in a potential $V(x) = \tfrac12 kx^2$ (with $k$ here the spring constant, not a wave number) is the quantum analog of the classical simple harmonic oscillator, and it is important beyond this specific system because *any* smooth potential, expanded in a Taylor series about a point of stable equilibrium, is approximately parabolic near that minimum — the harmonic oscillator is the generic first approximation for small oscillations about equilibrium in essentially any bound system, including the vibrations of a diatomic molecule (Chapter 10).
+A particle in a potential $V(x) = \tfrac12 kx^2$ (with $k$ here the spring constant, not a wave number) is the quantum analog of the classical simple harmonic oscillator, and it is important beyond this specific system because *any* smooth potential, expanded in a Taylor series about a point of stable equilibrium, is approximately parabolic near that minimum — the harmonic oscillator is the generic first approximation for small oscillations about equilibrium in essentially any bound system, including the vibrations of a diatomic molecule ([Chapter 12](#ch-molecular-structure)).
 
 Solving the time-independent Schrödinger equation with this potential (the details require either a power-series method or an elegant operator technique, developed in more advanced treatments) yields an evenly spaced energy spectrum,
 
@@ -108,6 +109,6 @@ with $\omega$ the classical angular frequency of the corresponding classical osc
 
 4. Verify that the ground-state wave function of the harmonic oscillator, $\psi_0(x) = A\,e^{-m\omega x^2/2\hbar}$, satisfies the time-independent Schrödinger equation for $V(x) = \tfrac12 m\omega^2 x^2$ with energy $E_0 = \tfrac12\hbar\omega$, by direct substitution (you need not determine the normalization constant $A$).
 
-5. A diatomic molecule vibrates approximately as a harmonic oscillator with classical frequency $f = \omega/2\pi = 8.7\times10^{13}\ \text{Hz}$. Find (a) the zero-point energy in eV, and (b) the energy of a photon emitted in a transition between adjacent vibrational levels ($\Delta n = 1$), and (c) identify the region of the electromagnetic spectrum (see Chapter 4) in which this photon lies.
+5. A diatomic molecule vibrates approximately as a harmonic oscillator with classical frequency $f = \omega/2\pi = 8.7\times10^{13}\ \text{Hz}$. Find (a) the zero-point energy in eV, and (b) the energy of a photon emitted in a transition between adjacent vibrational levels ($\Delta n = 1$), and (c) identify the region of the electromagnetic spectrum (see [Chapter 6](#ch-particle-properties-of-waves)) in which this photon lies.
 
 6. Explain, using the uncertainty principle rather than solving the Schrödinger equation directly, why both the infinite square well and the harmonic oscillator must have a ground-state energy strictly greater than the classical minimum ($E=0$ in both cases), and why this argument would not apply to a classical (macroscopic) oscillator or box.

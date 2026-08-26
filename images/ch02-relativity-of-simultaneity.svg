@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" role="img" aria-labelledby="title desc">
+  <title id="title">Relativity of simultaneity</title>
+  <desc id="desc">A moving train has flashes at its front and rear. The ground observer sees them arrive together at the midpoint, while the train observer is moving toward the front flash.</desc>
+  <defs><marker id="a" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#1769aa"/></marker></defs>
+  <rect width="760" height="360" fill="#fff"/>
+  <text x="380" y="29" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold">Relativity of simultaneity</text>
+  <rect x="145" y="110" width="470" height="105" rx="8" fill="#e7eef5" stroke="#3d566e" stroke-width="3"/>
+  <circle cx="175" cy="162" r="13" fill="#f2c14e" stroke="#8d6c1d"/><circle cx="585" cy="162" r="13" fill="#f2c14e" stroke="#8d6c1d"/>
+  <circle cx="380" cy="162" r="10" fill="#333"/>
+  <text x="380" y="140" text-anchor="middle" font-family="sans-serif" font-size="16">train frame S′</text>
+  <path d="M185 162 H365" stroke="#1769aa" stroke-width="3" marker-end="url(#a)"/><path d="M575 162 H395" stroke="#1769aa" stroke-width="3" marker-end="url(#a)"/>
+  <line x1="110" y1="260" x2="650" y2="260" stroke="#555" stroke-width="3"/>
+  <circle cx="380" cy="260" r="7" fill="#333"/><path d="M380 260 H595" stroke="#1769aa" stroke-width="4" marker-end="url(#a)"/>
+  <text x="380" y="288" text-anchor="middle" font-family="sans-serif" font-size="16">ground frame S: midpoint observer sees equal arrival times</text>
+  <text x="380" y="326" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#8d2c2c">The train moves right, so its observer meets the front flash first.</text>
+</svg>

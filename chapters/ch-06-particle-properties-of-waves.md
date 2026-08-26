@@ -1,6 +1,7 @@
 ---
 title: Particle Properties of Waves
-short_title: Chapter 4. Particle Properties of Waves
+short_title: Chapter 6. Particle Properties of Waves
+label: ch-particle-properties-of-waves
 ---
 
 ## Learning Objectives
@@ -16,7 +17,7 @@ By the end of this chapter, you should be able to:
 
 ## Introduction
 
-Chapters 1–3 dismantled the ether and rebuilt kinematics and dynamics on Einstein's postulates, but light itself — a wave, according to Maxwell's equations, which special relativity leaves intact — remained conceptually untouched. This chapter takes up a second, independent crisis of classical physics, one concerning not the *kinematics* of light but its very *nature*. Three phenomena — blackbody radiation, the photoelectric effect, and Compton scattering — each show, in a different experimental setting, that electromagnetic radiation exchanges energy with matter not continuously, as a wave should, but in discrete packets. The concept that emerges, the **photon**, carries energy $E = hf$ and momentum $p = h/\lambda$, and behaves in each of these experiments like a particle, even though light indisputably also shows wave behavior — diffraction and interference — in other settings. Reconciling these two faces of light is the beginning of quantum mechanics.
+Chapters [1](#ch-need-for-relativity)–[3](#ch-relativistic-dynamics) dismantled the ether and rebuilt kinematics and dynamics on Einstein's postulates, but light itself — a wave, according to Maxwell's equations, which special relativity leaves intact — remained conceptually untouched. Chapters [4](#ch-interference-of-light)–[5](#ch-diffraction-of-light) then developed that wave picture in full quantitative detail: interference and diffraction, both direct, precise confirmations that light obeys a wave equation. This chapter takes up a second, independent crisis of classical physics, one concerning not the *kinematics* of light but its very *nature*. Three phenomena — blackbody radiation, the photoelectric effect, and Compton scattering — each show, in a different experimental setting, that electromagnetic radiation exchanges energy with matter not continuously, as a wave should, but in discrete packets. The concept that emerges, the **photon**, carries energy $E = hf$ and momentum $p = h/\lambda$, and behaves in each of these experiments like a particle, even though light indisputably also shows the wave behavior of Chapters [4](#ch-interference-of-light)–[5](#ch-diffraction-of-light) in other settings. Reconciling these two faces of light is the beginning of quantum mechanics.
 
 ## Blackbody Radiation and Planck's Hypothesis
 
@@ -82,7 +83,7 @@ Even after the photoelectric effect, one could imagine "photon-like" energy exch
 
 In Compton's experiment, X-rays of a single wavelength $\lambda$ are directed at a target of loosely bound (effectively free) electrons, and the wavelength $\lambda'$ of the scattered X-rays is measured as a function of scattering angle $\theta$. Classically, an electromagnetic wave incident on a charge should simply drive that charge to oscillate at the incident frequency and re-radiate at the *same* frequency (Thomson scattering); no wavelength shift is expected. Compton observed a systematic *increase* in wavelength, $\lambda' > \lambda$, growing with scattering angle $\theta$ and independent of the target material — a signature of a two-body collision, not wave re-radiation.
 
-Treating the photon as a particle with energy $E = hf = hc/\lambda$ and momentum $p = E/c = h/\lambda$ (consistent with the massless-particle limit of the energy–momentum relation from Chapter 3), and applying conservation of relativistic energy and momentum to an elastic collision between the photon and an initially free, stationary electron of mass $m_e$, gives the **Compton scattering formula**:
+Treating the photon as a particle with energy $E = hf = hc/\lambda$ and momentum $p = E/c = h/\lambda$ (consistent with the massless-particle limit of the energy–momentum relation from [Chapter 3](#ch-relativistic-dynamics)), and applying conservation of relativistic energy and momentum to an elastic collision between the photon and an initially free, stationary electron of mass $m_e$, gives the **Compton scattering formula**:
 
 $$
 \lambda' - \lambda = \frac{h}{m_ec}(1 - \cos\theta).
@@ -98,7 +99,7 @@ $$
 \gamma \rightarrow e^- + e^+,
 $$
 
-requiring a photon energy of at least $2m_ec^2 = 1.022\ \text{MeV}$ (twice the electron rest energy) — a direct manifestation of mass–energy equivalence (Chapter 3), converting a massless particle's energy into the rest mass of two massive particles. The reverse process, **pair annihilation**, $e^- + e^+ \to 2\gamma$ (two photons are required, rather than one, to conserve momentum in the electron-positron center-of-momentum frame — see Chapter 3, Problem 3), converts rest mass entirely back into photon energy and is used, for example, in positron-emission tomography (PET) imaging.
+requiring a photon energy of at least $2m_ec^2 = 1.022\ \text{MeV}$ (twice the electron rest energy) — a direct manifestation of mass–energy equivalence ([Chapter 3](#ch-relativistic-dynamics)), converting a massless particle's energy into the rest mass of two massive particles. The reverse process, **pair annihilation**, $e^- + e^+ \to 2\gamma$ (two photons are required, rather than one, to conserve momentum in the electron-positron center-of-momentum frame — see [Chapter 3](#ch-relativistic-dynamics), [Problem 3](#ex-relativistic-dynamics-3)), converts rest mass entirely back into photon energy and is used, for example, in positron-emission tomography (PET) imaging.
 
 ## Summary
 

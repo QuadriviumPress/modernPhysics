@@ -41,7 +41,7 @@ $$
 so the de Broglie wavelength is
 
 $$
-\lambda = \frac{h}{p} = \frac{6.626\times10^{-34}}{5.40\times10^{-24}}\ \text{m} = 1.23\times10^{-10}\ \text{m} = 0.123\ \text{nm}.
+\lambda = \frac{h}{p} = \frac{6.626\times10^{-34}\ \text{J}\cdot\text{s}}{5.40\times10^{-24}\ \text{kg}\cdot\text{m/s}} = 1.23\times10^{-10}\ \text{m} = 0.123\ \text{nm}.
 $$
 
 This convenient combination is often written $\lambda[\text{nm}] \approx 1.226/\sqrt{V[\text{volts}]}$ for nonrelativistic electrons. The result, $0.123\ \text{nm}$, is comparable to the spacing between atomic planes in a crystal ($\sim 0.1$–$0.3\ \text{nm}$) — exactly the condition needed for the crystal to act as a diffraction grating for the electrons, as the next section describes.
@@ -60,7 +60,7 @@ $$
 
 (with $d$ the crystal's known interplanar spacing) allowed Davisson and Germer to extract an experimental wavelength for the electrons — and it agreed, to good precision, with the de Broglie wavelength $\lambda = h/p$ computed from the electrons' known kinetic energy.
 
-The experiment is reconstructed in @fig:ch07-davisson-germer-sim, where both sides of $d\sin\theta = n\lambda$ are under control: the electron gun's accelerating voltage, which fixes $p$ and hence $\lambda = h/p$, and the spacing of the target atoms, which fixes $d$. Raising the voltage shortens the wavelength and pulls the scattering maxima to smaller angles; widening the atomic spacing pushes them back out. Neither response is available to a stream of particles bouncing off a surface, and observing both is what settled the question.
+The experiment is reconstructed in {numref}`Figure %s <fig:ch07-davisson-germer-sim>`, where both sides of $d\sin\theta = n\lambda$ are under control: the electron gun's accelerating voltage, which fixes $p$ and hence $\lambda = h/p$, and the spacing of the target atoms, which fixes $d$. Raising the voltage shortens the wavelength and pulls the scattering maxima to smaller angles; widening the atomic spacing pushes them back out. Neither response is available to a stream of particles bouncing off a surface, and observing both is what settled the question.
 
 ```{phet-legacy} quantum-wave-interference/davisson-germer
 :sim-name: Davisson–Germer: Electron Diffraction
@@ -87,7 +87,7 @@ $$
 
 since otherwise the wave would interfere destructively with itself on successive trips around the loop and no stable pattern could persist. Rearranging, $pr = n\hbar$ — exactly Bohr's angular-momentum quantization condition, $L = n\hbar$, now derived (rather than assumed) from the requirement that an electron's matter wave close consistently on itself. This does not yet constitute a full theory (that requires the Schrödinger equation of Chapters [8](#ch-the-schrodinger-equation)–[9](#ch-quantum-mechanics-in-three-dimensions), applied to the hydrogen atom in [Chapter 10](#ch-the-hydrogen-atom)), but it shows that de Broglie's hypothesis was not an isolated curiosity: it directly explains why atomic angular momentum comes only in discrete multiples of $\hbar$, years before Schrödinger's wave equation made the connection rigorous.
 
-Quantization by a closure condition is not a quantum idea, and it is easier to trust once it has been seen somewhere unmysterious. @fig:ch07-standing-wave-sim drives a column of air and sweeps the frequency: almost every frequency produces nothing, and at a discrete set of them the tube suddenly resonates, because only there does the wave returning from the far end arrive back in step with itself. Nothing is quantized about air. What is discrete is the set of wavelengths that a boundary condition permits — an integer count fitting into the available length — and de Broglie's contribution was to notice that an electron's wave going around an orbit is subject to a closure condition of exactly the same kind.
+Quantization by a closure condition is not a quantum idea, and it is easier to trust once it has been seen somewhere unmysterious. {numref}`Figure %s <fig:ch07-standing-wave-sim>` drives a column of air and sweeps the frequency: almost every frequency produces nothing, and at a discrete set of them the tube suddenly resonates, because only there does the wave returning from the far end arrive back in step with itself. Nothing is quantized about air. What is discrete is the set of wavelengths that a boundary condition permits — an integer count fitting into the available length — and de Broglie's contribution was to notice that an electron's wave going around an orbit is subject to a closure condition of exactly the same kind.
 
 ```{openphysics} StandingWaves
 :screen: 3
@@ -101,10 +101,10 @@ Standing waves in a pipe. Sweep the drive frequency and the response is a set of
 The Bohr model (developed further in [Chapter 10](#ch-the-hydrogen-atom)) gives the electron in hydrogen's $n=1$ orbit a radius $a_0 = 5.29\times10^{-11}\ \text{m}$ (the **Bohr radius**) and an orbital speed $v = 2.19\times10^6\ \text{m/s}$. Its de Broglie wavelength is
 
 $$
-\lambda = \frac{h}{m_ev} = \frac{6.626\times10^{-34}}{(9.11\times10^{-31})(2.19\times10^6)}\ \text{m} = 3.32\times10^{-10}\ \text{m},
+\lambda = \frac{h}{m_ev} = \frac{6.626\times10^{-34}\ \text{J}\cdot\text{s}}{(9.11\times10^{-31}\ \text{kg})(2.19\times10^6\ \text{m/s})} = 3.32\times10^{-10}\ \text{m},
 $$
 
-while the orbit's circumference is $2\pi a_0 = 2\pi(5.29\times10^{-11})\ \text{m} = 3.32\times10^{-10}\ \text{m}$ — the two agree to three significant figures, exactly confirming the standing-wave condition $2\pi r = n\lambda$ for $n=1$: the ground-state orbit's circumference is precisely one de Broglie wavelength.
+while the orbit's circumference is $2\pi a_0 = 2\pi(5.29\times10^{-11}\ \text{m}) = 3.32\times10^{-10}\ \text{m}$ — the two agree to three significant figures, exactly confirming the standing-wave condition $2\pi r = n\lambda$ for $n=1$: the ground-state orbit's circumference is precisely one de Broglie wavelength.
 
 ## Wave–Particle Duality
 
@@ -112,7 +112,7 @@ The picture that emerges from Chapters [6](#ch-particle-properties-of-waves) and
 
 The double-slit experiment ([Chapter 4](#ch-interference-of-light)) makes this concrete. Even when electrons (or photons) are sent through the apparatus one at a time — far too infrequently for any two particles to interact or "interfere with each other" in transit — the individual, localized detection events recorded on a screen accumulate, after many particles, into the same interference fringe pattern predicted for a wave. Each particle arrives as a single, point-like click, exactly as a particle should; yet the *statistical distribution* of many such clicks builds up the wave-interference pattern, meaning each individual particle's behavior is governed by the same wave mathematics used for light, even though no two particles are present in the apparatus at once to "interfere" with each other in any classical sense. This experiment has been performed with electrons (originally by Claus Jönsson in 1961, and in a particularly clean single-particle-at-a-time form by Akira Tonomura and collaborators in 1989) and confirms the interference pattern exactly as quantum mechanics predicts.
 
-That accumulation is the thing to watch, and it is what @fig:ch07-single-particle-sim reproduces. Fire particles one at a time and the screen records isolated, point-like hits in what looks at first like a random scatter; leave it running and the fringes emerge from the statistics of hits that were never anything but individual. The simulation also carries the which-path apparatus discussed next: a detector placed in the path of the wave function collapses it on each measurement, and the fringes go with it, while the individual hits go on looking exactly the same.
+That accumulation is the thing to watch, and it is what {numref}`Figure %s <fig:ch07-single-particle-sim>` reproduces. Fire particles one at a time and the screen records isolated, point-like hits in what looks at first like a random scatter; leave it running and the fringes emerge from the statistics of hits that were never anything but individual. The simulation also carries the which-path apparatus discussed next: a detector placed in the path of the wave function collapses it on each measurement, and the fringes go with it, while the individual hits go on looking exactly the same.
 
 ```{phet-legacy} quantum-wave-interference
 :label: fig:ch07-single-particle-sim
@@ -134,7 +134,7 @@ $$
 \Delta x\, \Delta k \gtrsim 1,
 $$
 
-The trade-off can be watched directly. @fig:ch07-wave-packet-sim builds a packet out of harmonic components whose amplitudes follow an adjustable envelope, and prints both widths as you work: narrow the spread $\sigma_k$ of contributing wave numbers and the packet in $x$ stretches out toward the infinite sinusoid of definite momentum; widen $\sigma_k$ and the packet contracts toward a spike, with the panel reporting $\sigma_x = 1/\sigma_k$ throughout. Switching the display from a function of space to a function of time turns the same relation into the energy–time form used later in this section.
+The trade-off can be watched directly. {numref}`Figure %s <fig:ch07-wave-packet-sim>` builds a packet out of harmonic components whose amplitudes follow an adjustable envelope, and prints both widths as you work: narrow the spread $\sigma_k$ of contributing wave numbers and the packet in $x$ stretches out toward the infinite sinusoid of definite momentum; widen $\sigma_k$ and the packet contracts toward a spike, with the panel reporting $\sigma_x = 1/\sigma_k$ throughout. Switching the display from a function of space to a function of time turns the same relation into the energy–time form used later in this section.
 
 ```{phet} fourier-making-waves
 :sim-name: Fourier: Making Waves
@@ -162,7 +162,7 @@ which is, in general, different from the **phase velocity** $v_p = \omega/k$ at 
 
 $$
 \omega(k) = \frac{\hbar k^2}{2m},
-$$
+$$ (eq:ch07-dispersion)
 
 so that
 
@@ -174,7 +174,7 @@ exactly the classical particle velocity — the wave packet's envelope, the phys
 
 ### Wave Packet Spreading
 
-The nonrelativistic dispersion relation $\omega(k) = \hbar k^2/2m$ used above is not linear in $k$ (unlike the dispersion relation $\omega = ck$ for light in vacuum), which has a further consequence beyond fixing the group velocity: different Fourier components of a wave packet, corresponding to different momenta, travel at slightly different group velocities $v_g(k) = \hbar k/m$, since a component with larger $k$ (larger momentum) simply moves faster. A packet initially localized to a narrow width $\Delta x_0$ therefore does not maintain its shape as it propagates; because it necessarily contains a spread $\Delta k \sim 1/\Delta x_0$ of wave numbers (the same uncertainty relation used earlier in this section), and each component travels at a slightly different speed, the packet's spatial width grows with time — it **spreads**. A careful calculation shows the spreading time scale is of order $\tau \sim m(\Delta x_0)^2/\hbar$: a light particle (small $m$) confined to a very small initial region (small $\Delta x_0$) spreads apart quickly, while a macroscopic object's wave packet spreads on a time scale so astronomically long that the effect is entirely unobservable — one more reason, alongside the negligible de Broglie wavelength itself, that ordinary macroscopic objects appear to follow sharp, well-defined classical trajectories rather than visibly diffusing.
+The nonrelativistic dispersion relation in Equation {eq}`eq:ch07-dispersion` is not linear in $k$ (unlike the dispersion relation $\omega = ck$ for light in vacuum), which has a further consequence beyond fixing the group velocity: different Fourier components of a wave packet, corresponding to different momenta, travel at slightly different group velocities $v_g(k) = \hbar k/m$, since a component with larger $k$ (larger momentum) simply moves faster. A packet initially localized to a narrow width $\Delta x_0$ therefore does not maintain its shape as it propagates; because it necessarily contains a spread $\Delta k \sim 1/\Delta x_0$ of wave numbers (the same uncertainty relation used earlier in this section), and each component travels at a slightly different speed, the packet's spatial width grows with time — it **spreads**. A careful calculation shows the spreading time scale is of order $\tau \sim m(\Delta x_0)^2/\hbar$: a light particle (small $m$) confined to a very small initial region (small $\Delta x_0$) spreads apart quickly, while a macroscopic object's wave packet spreads on a time scale so astronomically long that the effect is entirely unobservable — one more reason, alongside the negligible de Broglie wavelength itself, that ordinary macroscopic objects appear to follow sharp, well-defined classical trajectories rather than visibly diffusing.
 
 ## The Heisenberg Uncertainty Principle
 
@@ -194,7 +194,7 @@ $$
 
 where $\Delta t$ characterizes the time available to measure (or the lifetime of a state with) energy spread $\Delta E$. This relation, for instance, explains why an unstable state with a short lifetime $\Delta t$ (such as an excited atomic state, or an unstable particle) necessarily has an intrinsic spread, or "width," in its energy — and correspondingly in the frequency/wavelength of radiation it emits — that grows as its lifetime shrinks.
 
-Stripped of $\hbar$, this is a theorem about signals rather than about quantum mechanics, and it applies to any wave one cares to measure — including the sound of one's own voice. @fig:ch07-bandwidth-sim runs a live spectrum of whatever the microphone hears: a sustained vowel, going on for a long $\Delta t$, resolves into sharp harmonic lines with small $\Delta f$, while a clipped consonant lasting a few milliseconds has no sharp lines at all, only a broad smear across the spectrum. No better microphone would fix this. A short signal does not *have* a well-defined frequency, exactly as a short-lived excited state does not have a well-defined energy.
+Stripped of $\hbar$, this is a theorem about signals rather than about quantum mechanics, and it applies to any wave one cares to measure — including the sound of one's own voice. {numref}`Figure %s <fig:ch07-bandwidth-sim>` runs a live spectrum of whatever the microphone hears: a sustained vowel, going on for a long $\Delta t$, resolves into sharp harmonic lines with small $\Delta f$, while a clipped consonant lasting a few milliseconds has no sharp lines at all, only a broad smear across the spectrum. No better microphone would fix this. A short signal does not *have* a well-defined frequency, exactly as a short-lived excited state does not have a well-defined energy.
 
 ```{openphysics} WaveComposer
 :label: fig:ch07-bandwidth-sim
@@ -207,20 +207,20 @@ Real-time spectrum analysis of a microphone signal. The duration of a sound and 
 Could an electron exist bound inside an atomic nucleus, of radius $r \sim 5\times 10^{-15}\ \text{m}$? If so, the position uncertainty could be no larger than $\Delta x \sim r$, and the uncertainty principle then requires a momentum uncertainty of at least
 
 $$
-\Delta p \gtrsim \frac{\hbar}{2\,\Delta x} \approx \frac{1.055\times10^{-34}}{2(5\times10^{-15})}\ \text{kg}\cdot\text{m/s} \approx 1.1\times10^{-20}\ \text{kg}\cdot\text{m/s}.
+\Delta p \gtrsim \frac{\hbar}{2\,\Delta x} \approx \frac{1.055\times10^{-34}\ \text{J}\cdot\text{s}}{2(5\times10^{-15}\ \text{m})} \approx 1.1\times10^{-20}\ \text{kg}\cdot\text{m/s}.
 $$
 
-Converting to an energy via the (relativistic, since this momentum turns out to be large) relation $E \approx pc$ for $pc \gg mc^2$: $pc \approx (1.1\times10^{-20})(3.0\times10^8)\ \text{J} \approx 3.3\times10^{-12}\ \text{J} \approx 21\ \text{MeV}$. An electron confined to nuclear dimensions would need kinetic energy of tens of MeV — far larger than the few-MeV binding energies available in nuclei ([Chapter 13](#ch-nuclear-physics)) — so such an electron could not remain bound; this is one of the historical arguments (alongside others involving nuclear spin and magnetic moment) that electrons are not constituents of the nucleus, correctly anticipating that beta decay ([Chapter 13](#ch-nuclear-physics)) must *create* an electron at the moment of decay rather than releasing one that was previously confined inside.
+Converting to an energy via the (relativistic, since this momentum turns out to be large) relation $E \approx pc$ for $pc \gg mc^2$: $pc \approx (1.1\times10^{-20}\ \text{kg}\cdot\text{m/s})(3.0\times10^8\ \text{m/s}) \approx 3.3\times10^{-12}\ \text{J} \approx 21\ \text{MeV}$. An electron confined to nuclear dimensions would need kinetic energy of tens of MeV — far larger than the few-MeV binding energies available in nuclei ([Chapter 13](#ch-nuclear-physics)) — so such an electron could not remain bound; this is one of the historical arguments (alongside others involving nuclear spin and magnetic moment) that electrons are not constituents of the nucleus, correctly anticipating that beta decay ([Chapter 13](#ch-nuclear-physics)) must *create* an electron at the moment of decay rather than releasing one that was previously confined inside.
 
 ### Worked Example: The Scale of Atomic Energies
 
 The uncertainty principle also correctly predicts the *order of magnitude* of atomic binding energies, without needing to solve the Schrödinger equation at all. An electron confined to an atom of radius $r \sim a_0 = 5.3\times10^{-11}\ \text{m}$ (the Bohr radius, derived properly in [Chapter 10](#ch-the-hydrogen-atom)) has, by the same reasoning as above, a minimum momentum uncertainty
 
 $$
-\Delta p \gtrsim \frac{\hbar}{2\,\Delta x} \approx \frac{1.055\times10^{-34}}{2(5.3\times10^{-11})}\ \text{kg}\cdot\text{m/s} \approx 1.0\times10^{-24}\ \text{kg}\cdot\text{m/s}.
+\Delta p \gtrsim \frac{\hbar}{2\,\Delta x} \approx \frac{1.055\times10^{-34}\ \text{J}\cdot\text{s}}{2(5.3\times10^{-11}\ \text{m})} \approx 1.0\times10^{-24}\ \text{kg}\cdot\text{m/s}.
 $$
 
-Since this is small enough that the electron remains nonrelativistic, its kinetic energy is $K \sim (\Delta p)^2/2m_e \approx (1.0\times10^{-24})^2/[2(9.11\times10^{-31})]\ \text{J} \approx 5.5\times10^{-19}\ \text{J} \approx 3.4\ \text{eV}$ — the right order of magnitude for atomic binding and ionization energies (a few to a few tens of eV), even though the precise numerical value requires the full machinery of Chapters [9](#ch-quantum-mechanics-in-three-dimensions)–[10](#ch-the-hydrogen-atom). This is a recurring pattern in quantum mechanics: the uncertainty principle alone, applied as an order-of-magnitude estimate, correctly anticipates the characteristic energy scale of a confined system, well before an exact calculation is carried out.
+Since this is small enough that the electron remains nonrelativistic, its kinetic energy is $K \sim (\Delta p)^2/2m_e \approx (1.0\times10^{-24}\ \text{kg}\cdot\text{m/s})^2/[2(9.11\times10^{-31}\ \text{kg})] \approx 5.5\times10^{-19}\ \text{J} \approx 3.4\ \text{eV}$ — the right order of magnitude for atomic binding and ionization energies (a few to a few tens of eV), even though the precise numerical value requires the full machinery of Chapters [9](#ch-quantum-mechanics-in-three-dimensions)–[10](#ch-the-hydrogen-atom). This is a recurring pattern in quantum mechanics: the uncertainty principle alone, applied as an order-of-magnitude estimate, correctly anticipates the characteristic energy scale of a confined system, well before an exact calculation is carried out.
 
 ## Summary
 

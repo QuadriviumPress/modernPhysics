@@ -27,16 +27,22 @@ Every known particle carries an intrinsic spin angular momentum, quantized exact
 
 All observed particle interactions are, to the precision of current experiments, accounted for by exactly four fundamental forces, each mediated by the exchange of a characteristic boson (a **gauge boson**, in the language of the quantum field theories underlying the Standard Model) and each with a distinct characteristic strength and range:
 
+The interactions are compared directly in {numref}`Table %s <tab:ch14-fundamental-interactions>`.
+
+```{table} The four fundamental interactions
+:label: tab:ch14-fundamental-interactions
+
 | Interaction | Relative strength | Range | Mediating boson(s) | Governs |
 |---|---|---|---|---|
 | Strong | $1$ | $\sim 1\ \text{fm}$ | gluon | quark binding; nuclear force (residual) |
 | Electromagnetic | $\sim 10^{-2}$ | infinite | photon | charged-particle interactions |
 | Weak | $\sim 10^{-6}$ | $\sim 10^{-3}\ \text{fm}$ | $W^\pm$, $Z^0$ | beta decay; some particle decays |
 | Gravitational | $\sim 10^{-38}$ | infinite | graviton (hypothesized, not yet observed) | negligible for individual particles; dominant only for macroscopic masses |
+```
 
 The strong and weak interactions, both confined to nuclear-scale distances, are the reason their effects were unknown until nuclear and particle physics probed those scales directly; the electromagnetic and gravitational interactions, both infinite in range because their mediating boson is massless, dominate everyday, macroscopic experience. The relative strengths quoted are approximate and depend on the energy/distance scale at which the comparison is made, but the ordering — strong $\gg$ electromagnetic $\gg$ weak $\gg$ gravitational, at typical particle-physics scales — is robust. The strong force between nucleons discussed in [Chapter 13](#ch-nuclear-physics) is, in the Standard Model's deeper description, a residual effect of the strong force acting between the quarks confined inside each nucleon (analogous to the way the residual electromagnetic force between neutral atoms, the van der Waals force, is a residual effect of the more fundamental electromagnetic force between the charged constituents of each atom).
 
-Of the four, the weak interaction is the one with no everyday signature to point at — it is too short-ranged to hold anything together and too feeble to push anything around — and its importance is easy to underrate as a result. Its distinction is that it is the only interaction that changes one kind of quark into another, and @fig:ch14-beta-decay-sim is that transformation at work: a neutron ($udd$) becomes a proton ($uud$) by turning a down quark into an up quark, with an electron and an antineutrino carrying off the charge and lepton-number balance. Nothing else in the table can do this. Without it, the proton-proton chain could never take its first step, no hydrogen would ever become helium, and stars would not shine.
+Of the four, the weak interaction is the one with no everyday signature to point at — it is too short-ranged to hold anything together and too feeble to push anything around — and its importance is easy to underrate as a result. Its distinction is that it is the only interaction that changes one kind of quark into another, and {numref}`Figure %s <fig:ch14-beta-decay-sim>` is that transformation at work: a neutron ($udd$) becomes a proton ($uud$) by turning a down quark into an up quark, with an electron and an antineutrino carrying off the charge and lepton-number balance. None of the other interactions in {numref}`Table %s <tab:ch14-fundamental-interactions>` can do this. Without it, the proton-proton chain could never take its first step, no hydrogen would ever become helium, and stars would not shine.
 
 ```{phet-legacy} nuclear-physics/beta-decay
 :label: fig:ch14-beta-decay-sim

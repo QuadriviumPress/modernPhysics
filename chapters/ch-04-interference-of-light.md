@@ -71,7 +71,7 @@ $$
 
 A phase advance is $2\pi$ per wavelength, so the phase accumulated over a physical distance $d$ in a medium of index $n$ is $(2\pi/\lambda)\,nd$ with $\lambda$ the *vacuum* wavelength. This idea reappears in the thin-film section and again in the Michelson interferometer, and it is the reason the thin-film formulas below carry a factor of $n$.
 
-The picture behind all of this — a transverse electric field, a magnetic field perpendicular to it, and both perpendicular to the direction of travel — is drawn in three dimensions and set in motion in @fig:ch04-em-wave-sim. It is also the place to see what the phase constant $\varphi_0$ and the amplitude $E_0$ actually do, and what it means for a wave to be polarized: a direction of oscillation that plays no part in this chapter, where all the interfering beams share one, but that becomes the whole subject once a filter is put in the beam.
+The picture behind all of this — a transverse electric field, a magnetic field perpendicular to it, and both perpendicular to the direction of travel — is drawn in three dimensions and set in motion in {numref}`Figure %s <fig:ch04-em-wave-sim>`. It is also the place to see what the phase constant $\varphi_0$ and the amplitude $E_0$ actually do, and what it means for a wave to be polarized: a direction of oscillation that plays no part in this chapter, where all the interfering beams share one, but that becomes the whole subject once a filter is put in the beam.
 
 ```{openphysics} LightPropagation
 :label: fig:ch04-em-wave-sim
@@ -105,7 +105,7 @@ The practical lesson is simple: to see interference and diffraction, build apert
 
 **Huygens's principle** (1678) states that *every point on a wavefront may be treated as a source of secondary spherical wavelets, spreading out at the wave's speed; the wavefront at a later time is the envelope — the surface tangent to all of these wavelets.*
 
-This is a purely geometrical recipe, proposed nearly two centuries before Maxwell's electromagnetic theory existed, and it is remarkably powerful. Applied to a plane wave in open space (@fig:ch04-huygens, panel a) it simply regenerates a plane wave, which is the least it must do. Applied at an interface it reproduces the laws of reflection and refraction. And applied at an aperture it makes a prediction that the ray picture cannot: the wavelets emitted near the edges have no neighbors to cancel their sideways spread, so the wave must bend into the geometric shadow. How much it bends depends, as the scaling argument above requires, on $\lambda/a$ (panels b and c).
+This is a purely geometrical recipe, proposed nearly two centuries before Maxwell's electromagnetic theory existed, and it is remarkably powerful. Applied to a plane wave in open space ({numref}`Figure %s <fig:ch04-huygens>`, panel a) it simply regenerates a plane wave, which is the least it must do. Applied at an interface it reproduces the laws of reflection and refraction. And applied at an aperture it makes a prediction that the ray picture cannot: the wavelets emitted near the edges have no neighbors to cancel their sideways spread, so the wave must bend into the geometric shadow. How much it bends depends, as the scaling argument above requires, on $\lambda/a$ (panels b and c).
 
 ```{figure} ../images/ch04-huygens-principle.svg
 :label: fig:ch04-huygens
@@ -158,11 +158,11 @@ $$
 
 The path difference is two and a half wavelengths — a half-integer number — so $\phi = 2\pi(2.5) = 5\pi$, an odd multiple of $\pi$. The point is **dark**.
 
-Now suppose the whole region between the sources and that point is filled with water, $n = 1.33$, without moving anything. The geometric path difference is unchanged, but the wavelength in the water is $\lambda_n = 500/1.33 = 376\ \text{nm}$, so the path difference is now $1250/376 = 3.32$ wavelengths and the point is neither fully bright nor fully dark. Immersing an interference experiment in a medium genuinely changes the pattern; it does not merely rescale the brightness.
+Now suppose the whole region between the sources and that point is filled with water, $n = 1.33$, without moving anything. The geometric path difference is unchanged, but the wavelength in the water is $\lambda_n = (500\ \text{nm})/1.33 = 376\ \text{nm}$, so the path difference is now $(1250\ \text{nm})/(376\ \text{nm}) = 3.32$ wavelengths and the point is neither fully bright nor fully dark. Immersing an interference experiment in a medium genuinely changes the pattern; it does not merely rescale the brightness.
 
 ## Young's Double-Slit Experiment
 
-Young's arrangement is shown in @fig:ch04-double-slit. Light from a source passes first through a *single* narrow slit, then through *two* narrow slits separated by a distance $d$, and finally falls on a screen a distance $L$ away.
+Young's arrangement is shown in {numref}`Figure %s <fig:ch04-double-slit>`. Light from a source passes first through a *single* narrow slit, then through *two* narrow slits separated by a distance $d$, and finally falls on a screen a distance $L$ away.
 
 ```{figure} ../images/ch04-double-slit-geometry.svg
 :label: fig:ch04-double-slit
@@ -175,7 +175,7 @@ The first slit is not decoration. Its job is to guarantee that a single wavefron
 
 ### The Path Difference
 
-Consider a point $P$ on the screen, at angle $\theta$ from the central axis. Light reaching $P$ from $S_2$ has traveled farther than light from $S_1$. Because $L \gg d$ in any practical apparatus — $d$ is tens of micrometers, $L$ is a meter or more — the two rays heading for $P$ are very nearly parallel, and the geometry collapses to the small right triangle of @fig:ch04-double-slit(b): drop a perpendicular from $S_1$ onto the ray from $S_2$, and the extra leg is
+Consider a point $P$ on the screen, at angle $\theta$ from the central axis. Light reaching $P$ from $S_2$ has traveled farther than light from $S_1$. Because $L \gg d$ in any practical apparatus — $d$ is tens of micrometers, $L$ is a meter or more — the two rays heading for $P$ are very nearly parallel, and the geometry collapses to the small right triangle of {numref}`Figure %s(b) <fig:ch04-double-slit>`: drop a perpendicular from $S_1$ onto the ray from $S_2$, and the extra leg is
 
 $$
 \Delta r = d\sin\theta .
@@ -209,7 +209,7 @@ $$
 
 Three features of this result deserve comment. First, measuring $\Delta y$, $L$, and $d$ determines $\lambda$ — this was historically one of the first accurate measurements of the wavelength of visible light, and the first evidence that different colors correspond to different, specific wavelengths. Second, the fringes get *farther apart* as the slits get *closer together*: squeezing the apparatus stretches the pattern. This reciprocal relationship between a wave's confinement and its spread is a hallmark of wave phenomena, and it returns as the uncertainty principle in [Chapter 7](#ch-wave-properties-of-particles). Third, the small-angle form is an approximation; when $d$ is only a few wavelengths the fringes are not evenly spaced and $d\sin\theta = m\lambda$ must be used directly.
 
-The reciprocal relationship in $\Delta y = \lambda L/d$ is easy to state and easy to get backwards, so it is worth watching it happen. In @fig:ch04-double-slit-sim the slit separation is a slider and the pattern responds live: closing the slits together spreads the fringes apart, and raising the frequency — shortening $\lambda$ — packs them closer. The simulation runs the same geometry with water waves, sound, and light, which is a useful reminder that nothing in the derivation used any property of light beyond its being a wave with a wavelength.
+The reciprocal relationship in $\Delta y = \lambda L/d$ is easy to state and easy to get backwards, so it is worth watching it happen. In {numref}`Figure %s <fig:ch04-double-slit-sim>` the slit separation is a slider and the pattern responds live: closing the slits together spreads the fringes apart, and raising the frequency — shortening $\lambda$ — packs them closer. The simulation runs the same geometry with water waves, sound, and light, which is a useful reminder that nothing in the derivation used any property of light beyond its being a wave with a wavelength.
 
 ```{phet} wave-interference
 :screen: 3
@@ -253,18 +253,18 @@ The angle is small, which retroactively justifies the small-angle work in (b).
 **(b)**
 
 $$
-\Delta y = \frac{\lambda L}{d} = \frac{(546\times10^{-9})(1.20)}{1.00\times10^{-4}} = 6.55\times10^{-3}\ \text{m} = 6.55\ \text{mm}.
+\Delta y = \frac{\lambda L}{d} = \frac{(546\times10^{-9}\ \text{m})(1.20\ \text{m})}{1.00\times10^{-4}\ \text{m}} = 6.55\times10^{-3}\ \text{m} = 6.55\ \text{mm}.
 $$
 
-**(c)** The screen extends from $y = -2.5\ \text{cm}$ to $+2.5\ \text{cm}$, so the highest order that lands on it satisfies $|m|\Delta y \le 25\ \text{mm}$, giving $|m| \le 25/6.55 = 3.8$. Orders $m = -3$ through $m = +3$ appear: **seven bright fringes**.
+**(c)** The screen extends from $y = -2.5\ \text{cm}$ to $+2.5\ \text{cm}$, so the highest order that lands on it satisfies $|m|\Delta y \le 25\ \text{mm}$, giving $|m| \le (25\ \text{mm})/(6.55\ \text{mm}) = 3.8$. Orders $m = -3$ through $m = +3$ appear: **seven bright fringes**.
 
-**(d)** In principle, $|m| \le d/\lambda = 1.00\times10^{-4}/546\times10^{-9} = 183$. The far orders are useless in practice — they lie at large angles where the small-angle formula fails, and (as [Chapter 5](#ch-diffraction-of-light) shows) the finite width of real slits has long since dimmed them to nothing — but the counting matters for gratings.
+**(d)** In principle, $|m| \le d/\lambda = (1.00\times10^{-4}\ \text{m})/(546\times10^{-9}\ \text{m}) = 183$. The far orders are useless in practice — they lie at large angles where the small-angle formula fails, and (as [Chapter 5](#ch-diffraction-of-light) shows) the finite width of real slits has long since dimmed them to nothing — but the counting matters for gratings.
 
 ### Worked Example: The Same Experiment Under Water
 
 The apparatus of the previous example is submerged in water, $n = 1.33$, source and screen included. What happens to the fringe spacing?
 
-The frequency of the light does not change, but its wavelength does: $\lambda_n = \lambda/n = 546/1.33 = 411\ \text{nm}$. Nothing in the derivation of $\Delta y = \lambda L/d$ referred to vacuum, so the same formula holds with the *local* wavelength:
+The frequency of the light does not change, but its wavelength does: $\lambda_n = \lambda/n = (546\ \text{nm})/1.33 = 411\ \text{nm}$. Nothing in the derivation of $\Delta y = \lambda L/d$ referred to vacuum, so the same formula holds with the *local* wavelength:
 
 $$
 \Delta y_{\text{water}} = \frac{\lambda_n L}{d} = \frac{\Delta y}{n} = \frac{6.55\ \text{mm}}{1.33} = 4.93\ \text{mm}.
@@ -276,7 +276,7 @@ The pattern contracts by the factor $n$. This is a genuinely useful check on und
 
 Young's experiment works only because both slits are carved out of the *same* wavefront, so the light leaving them keeps a fixed phase relationship. Try the experiment with two separate light bulbs and you see nothing but a uniformly lit screen. The reason is not that light bulbs are dim; it is that they are **incoherent**.
 
-An ordinary thermal source — a filament, a flame, a fluorescent tube — emits light as an enormous number of independent atomic events. Each excited atom radiates a short burst, a **wave train** lasting perhaps $10^{-8}\ \text{s}$, and the next atom to radiate does so with no memory of the phase of the last. What emerges is therefore a chain of wave trains whose phase jumps randomly every few nanoseconds, as sketched in @fig:ch04-coherence.
+An ordinary thermal source — a filament, a flame, a fluorescent tube — emits light as an enormous number of independent atomic events. Each excited atom radiates a short burst, a **wave train** lasting perhaps $10^{-8}\ \text{s}$, and the next atom to radiate does so with no memory of the phase of the last. What emerges is therefore a chain of wave trains whose phase jumps randomly every few nanoseconds, as sketched in {numref}`Figure %s <fig:ch04-coherence>`.
 
 ```{figure} ../images/ch04-coherence.svg
 :label: fig:ch04-coherence
@@ -300,7 +300,10 @@ $$
 \ell_c \approx \frac{\lambda^2}{\Delta\lambda}.
 $$
 
-The numbers span an extraordinary range:
+The representative values in {numref}`Table %s <tab:ch04-coherence-lengths>` span an extraordinary range:
+
+```{table} Representative coherence lengths for common light sources
+:label: tab:ch04-coherence-lengths
 
 | Source | $\lambda$ | $\Delta\lambda$ | $\ell_c \approx \lambda^2/\Delta\lambda$ |
 |---|---|---|---|
@@ -308,6 +311,7 @@ The numbers span an extraordinary range:
 | Filtered sodium lamp | $589\ \text{nm}$ | $\sim 0.6\ \text{nm}$ | $\sim 0.6\ \text{mm}$ |
 | Helium–neon laser | $633\ \text{nm}$ | $\sim 0.002\ \text{nm}$ | $\sim 20\ \text{cm}$ |
 | Stabilized single-mode laser | $633\ \text{nm}$ | $\sim 10^{-6}\ \text{nm}$ | hundreds of meters |
+```
 
 A closely related way to say the same thing: the number of fringes you can count before the pattern fades is roughly
 
@@ -327,7 +331,7 @@ A laser is coherent in both senses at once, which is why a laser pointer and a p
 
 A Michelson interferometer (below) has arms differing in length by $\Delta L = 5.0\ \text{cm}$, so the two recombining beams differ in path by $2\Delta L = 10\ \text{cm}$. Will fringes be visible with (a) a filtered sodium lamp, (b) a helium–neon laser?
 
-**(a)** From the table, $\ell_c \approx 0.6\ \text{mm}$ for the sodium lamp. The path difference of $10\ \text{cm}$ exceeds this by a factor of about $170$, so the beams arriving together come from unrelated wave trains: **no fringes**.
+**(a)** From {numref}`Table %s <tab:ch04-coherence-lengths>`, $\ell_c \approx 0.6\ \text{mm}$ for the sodium lamp. The path difference of $10\ \text{cm}$ exceeds this by a factor of about $170$, so the beams arriving together come from unrelated wave trains: **no fringes**.
 
 **(b)** For the laser, $\ell_c \approx 20\ \text{cm}$, comfortably larger than the $10\ \text{cm}$ path difference: **fringes are visible**, though with reduced contrast since the path difference is a sizable fraction of $\ell_c$.
 
@@ -354,7 +358,7 @@ $$
 \phi = \frac{2\pi}{\lambda}\,d\sin\theta .
 $$
 
-They form an isosceles triangle (@fig:ch04-phasors a). The resultant bisects the angle between them, and dropping a perpendicular gives immediately
+They form an isosceles triangle ({numref}`Figure %s(a) <fig:ch04-phasors>`). The resultant bisects the angle between them, and dropping a perpendicular gives immediately
 
 $$
 E = 2E_0\cos\!\left(\frac{\phi}{2}\right).
@@ -366,7 +370,7 @@ $$
 I(\theta) = 4I_1\cos^2\!\left(\frac{\phi}{2}\right) = I_0\cos^2\!\left(\frac{\pi d\sin\theta}{\lambda}\right), \qquad I_0 \equiv 4I_1 .
 $$
 
-The result is plotted in @fig:ch04-two-slit-intensity. It reproduces everything derived earlier — $I = I_0$ whenever $d\sin\theta = m\lambda$, and $I = 0$ whenever $d\sin\theta = (m+\frac12)\lambda$ — and now fills in the smooth $\cos^2$ variation between.
+The result is plotted in {numref}`Figure %s <fig:ch04-two-slit-intensity>`. It reproduces everything derived earlier — $I = I_0$ whenever $d\sin\theta = m\lambda$, and $I = 0$ whenever $d\sin\theta = (m+\frac12)\lambda$ — and now fills in the smooth $\cos^2$ variation between.
 
 ```{figure} ../images/ch04-two-slit-intensity.svg
 :label: fig:ch04-two-slit-intensity
@@ -417,7 +421,7 @@ Add a third identical slit, equally spaced. What changes?
 
 The principal maxima do not move. At $d\sin\theta = m\lambda$, *every* slit is in step with every other, so all three phasors point the same way, the resultant is $3E_0$, and the intensity is $9I_1$. Adding slits at the same spacing can never shift these directions; it just adds more phasors to an already aligned stack.
 
-What changes is where the *first zero* falls. With two slits, the resultant vanishes when the second phasor is antiparallel to the first: $\phi = \pi$. With three slits, the three phasors close into an equilateral triangle — and hence sum to zero — as soon as $\phi = 2\pi/3$, well before $\phi$ reaches $\pi$. The maximum has become narrower. With $N$ slits, the chain closes into a regular $N$-gon at $\phi = 2\pi/N$ (@fig:ch04-phasors c), so the first zero sits only $1/N$ of the way to the next principal maximum.
+What changes is where the *first zero* falls. With two slits, the resultant vanishes when the second phasor is antiparallel to the first: $\phi = \pi$. With three slits, the three phasors close into an equilateral triangle — and hence sum to zero — as soon as $\phi = 2\pi/3$, well before $\phi$ reaches $\pi$. The maximum has become narrower. With $N$ slits, the chain closes into a regular $N$-gon at $\phi = 2\pi/N$ ({numref}`Figure %s(c) <fig:ch04-phasors>`), so the first zero sits only $1/N$ of the way to the next principal maximum.
 
 Summing the general chain is a geometric series. Writing each successive phasor as the previous one multiplied by $e^{i\phi}$, the total field is $E_0(1 + e^{i\phi} + e^{2i\phi} + \cdots + e^{i(N-1)\phi})$, whose magnitude works out to $E_0\,|\sin(N\phi/2)/\sin(\phi/2)|$. Squaring gives the **$N$-slit intensity pattern**
 
@@ -427,7 +431,7 @@ $$
 
 where $I_1$ is the intensity from a single slit. Setting $N = 2$ recovers the two-slit result, since $\sin\phi/\sin(\phi/2) = 2\cos(\phi/2)$.
 
-@fig:ch04-n-slit collects the consequences:
+{numref}`Figure %s <fig:ch04-n-slit>` collects the consequences:
 
 - **Principal maxima** occur wherever $\phi$ is a multiple of $2\pi$, that is $d\sin\theta = m\lambda$ — the same directions as for two slits, for any $N$. Their height is $N^2I_1$.
 - **Zeros** occur at $\phi = 2\pi p/N$ for every integer $p$ that is *not* a multiple of $N$. There are $N-1$ zeros between consecutive principal maxima, and hence $N-2$ much weaker **secondary maxima** squeezed between them.
@@ -446,7 +450,7 @@ The two scalings work together. The peak height grows as $N^2$ while the width s
 
 Five slits with $d = 2.00\ \mu\text{m}$ are illuminated at $\lambda = 500\ \text{nm}$. Find the directions of the principal maxima, and of the zeros lying between the central maximum and the first-order maximum.
 
-Principal maxima: $\sin\theta = m\lambda/d = 0.250\,m$, giving $m = 0,\pm1,\pm2,\pm3$ at $\sin\theta = 0, 0.250, 0.500, 0.750$, plus $m = \pm4$ exactly at $\sin\theta = 1$ (grazing, and not observable).
+Principal maxima: $\sin\theta = m\lambda/d = m(500\ \text{nm})/(2000\ \text{nm}) = 0.250\,m$, giving $m = 0,\pm1,\pm2,\pm3$ at $\sin\theta = 0, 0.250, 0.500, 0.750$, plus $m = \pm4$ exactly at $\sin\theta = 1$ (grazing, and not observable).
 
 Zeros: $\phi = 2\pi p/5$ means $d\sin\theta = p\lambda/5$, so
 
@@ -460,7 +464,7 @@ for $p = 1,2,3,4$ (the value $p = 5$ is excluded — it is the first-order princ
 
 The most familiar interference in everyday life needs no slits at all. The colors swirling on a soap bubble, the rainbow sheen of oil on a wet road, and the faint purple cast of a coated camera lens are all produced by light reflecting from the two surfaces of a very thin transparent layer.
 
-@fig:ch04-thin-film-rays shows the situation. Light striking a film of thickness $t$ and refractive index $n_{\text{film}}$ partially reflects at the front surface (ray 1) and partially enters the film, reflects from the back surface, and re-emerges (ray 2). The two emerging beams are parallel, and the eye or a lens brings them together to interfere.
+{numref}`Figure %s <fig:ch04-thin-film-rays>` shows the situation. Light striking a film of thickness $t$ and refractive index $n_{\text{film}}$ partially reflects at the front surface (ray 1) and partially enters the film, reflects from the back surface, and re-emerges (ray 2). The two emerging beams are parallel, and the eye or a lens brings them together to interfere.
 
 ```{figure} ../images/ch04-thin-film-rays.svg
 :label: fig:ch04-thin-film-rays
@@ -481,7 +485,7 @@ with $\lambda$ the vacuum wavelength. The factor $n_{\text{film}}$ is not option
 
 **Phase shift on reflection.** Reflection at a boundary where the refractive index *increases* (light in a lower-index medium striking a higher-index one) flips the sign of the reflected field — an extra phase shift of exactly $\pi$. Reflection at a boundary where the index *decreases* produces no shift. The mechanical analog is a wave on a string: a pulse reflecting from a fixed end (a heavy string beyond, the "denser" case) comes back inverted, while a pulse reflecting from a free end (a light string beyond) comes back upright. "Higher refractive index" plays the role of "heavier string".
 
-That analog is worth more than a sentence, because the sign is the one thing students reliably get wrong and it is not something to be memorized. @fig:ch04-reflection-sim launches a pulse down a chain of masses and springs terminated either rigidly or freely, and the inversion is not scripted into the simulation: it falls out of the boundary condition, exactly as the $\pi$ shift falls out of matching the electric field across an optical interface. A fixed end cannot move, so the reflected pulse must arrive with the opposite sign to cancel the incident one there; a free end has nothing to push against, and the pulse returns upright.
+That analog is worth more than a sentence, because the sign is the one thing students reliably get wrong and it is not something to be memorized. {numref}`Figure %s <fig:ch04-reflection-sim>` launches a pulse down a chain of masses and springs terminated either rigidly or freely, and the inversion is not scripted into the simulation: it falls out of the boundary condition, exactly as the $\pi$ shift falls out of matching the electric field across an optical interface. A fixed end cannot move, so the reflected pulse must arrive with the opposite sign to cancel the incident one there; a free end has nothing to push against, and the pulse returns upright.
 
 ```{openphysics} StandingWaves
 :screen: 1
@@ -492,7 +496,7 @@ A pulse reflecting from a rigid termination and from a free one, side by side on
 
 ### Assembling the Conditions
 
-Because the reflection shifts are either $0$ or $\pi$, the two reflections in @fig:ch04-thin-film-rays can only produce a *net* relative shift of $0$ or $\pi$. This gives a reliable three-step recipe:
+Because the reflection shifts are either $0$ or $\pi$, the two reflections in {numref}`Figure %s <fig:ch04-thin-film-rays>` can only produce a *net* relative shift of $0$ or $\pi$. This gives a reliable three-step recipe:
 
 1. Check the front reflection. Does the index increase going into the film? If so, that ray gets $\pi$.
 2. Check the back reflection. Does the index increase going out of the film into whatever lies beyond? If so, that ray gets $\pi$.
@@ -520,7 +524,7 @@ Getting the case wrong swaps bright for dark everywhere, so it is worth the ten 
 
 ### Why Soap Films Are Colored — and Why They Go Black
 
-Since the conditions involve $\lambda$, a film illuminated with white light reflects some wavelengths strongly and suppresses others, and the favored wavelength shifts as the thickness changes. @fig:ch04-thin-film-color shows the reflected intensity of red, green, and blue light as a function of the thickness of a soap film in air.
+Since the conditions involve $\lambda$, a film illuminated with white light reflects some wavelengths strongly and suppresses others, and the favored wavelength shifts as the thickness changes. {numref}`Figure %s <fig:ch04-thin-film-color>` shows the reflected intensity of red, green, and blue light as a function of the thickness of a soap film in air.
 
 ```{figure} ../images/ch04-thin-film-color.svg
 :label: fig:ch04-thin-film-color
@@ -541,7 +545,7 @@ $$
 \lambda = \frac{2n_{\text{film}}t}{m + \frac12}.
 $$
 
-For $m = 0$: $\lambda = 2(1.33)(100\ \text{nm})/0.5 = 532\ \text{nm}$ — green. For $m = 1$: $\lambda = 266/1.5 = 177\ \text{nm}$, deep in the ultraviolet and invisible. So this film looks green, and only the $m = 0$ order matters. That is characteristic of thin films: they are thin enough that only the lowest one or two orders land in the visible, which is why their colors are broad and pastel rather than a sequence of sharp spectral lines.
+For $m = 0$: $\lambda = 2(1.33)(100\ \text{nm})/0.5 = 532\ \text{nm}$ — green. For $m = 1$: $\lambda = (266\ \text{nm})/1.5 = 177\ \text{nm}$, deep in the ultraviolet and invisible. So this film looks green, and only the $m = 0$ order matters. That is characteristic of thin films: they are thin enough that only the lowest one or two orders land in the visible, which is why their colors are broad and pastel rather than a sequence of sharp spectral lines.
 
 ### Worked Example: An Antireflection Coating
 
@@ -595,7 +599,7 @@ The plate length never entered — it only sets the fringe *spacing*, $\Delta x 
 
 ## The Michelson Interferometer
 
-The **Michelson interferometer** (@fig:ch04-michelson) is Young's two-path experiment rebuilt with mirrors, and it is the most consequential single instrument in this book.
+The **Michelson interferometer** ({numref}`Figure %s <fig:ch04-michelson>`) is Young's two-path experiment rebuilt with mirrors, and it is the most consequential single instrument in this book.
 
 ```{figure} ../images/ch04-michelson.svg
 :label: fig:ch04-michelson
@@ -614,15 +618,15 @@ Now translate one mirror through a distance $\delta$. That arm's round trip chan
 
 $$
 \Delta N = \frac{2\delta}{\lambda} \qquad\text{fringes}.
-$$
+$$ (eq:ch04-michelson-fringe-count)
 
 One full fringe passes the detector for every *half* wavelength of mirror motion. Since $\lambda/2 \approx 300\ \text{nm}$ for visible light, and fringe positions can be interpolated to a small fraction of a fringe, the instrument measures displacements of a few nanometers. That is the whole reason for its importance: it converts a length comparison into a fringe count, and light's wavelength is a very fine ruler.
 
-The small tilted plate in @fig:ch04-michelson is the **compensator**. Without it, the beam going to $M_2$ passes through the glass of the beam splitter three times while the beam going to $M_1$ passes through it once — a large and, worse, wavelength-dependent optical path difference. The compensator is an identical piece of uncoated glass placed in the other arm so that both beams traverse the same thickness. It is unnecessary with a laser but essential with white light.
+The small tilted plate in {numref}`Figure %s <fig:ch04-michelson>` is the **compensator**. Without it, the beam going to $M_2$ passes through the glass of the beam splitter three times while the beam going to $M_1$ passes through it once — a large and, worse, wavelength-dependent optical path difference. The compensator is an identical piece of uncoated glass placed in the other arm so that both beams traverse the same thickness. It is unnecessary with a laser but essential with white light.
 
 Both arms, and the fringes they produce, can be manipulated directly in
-@fig:ch04-interferometry-sim. Translating one mirror sweeps the fringe count
-$\Delta N = 2\delta/\lambda$ derived above; shortening the coherence length
+{numref}`Figure %s <fig:ch04-interferometry-sim>`. Translating one mirror sweeps the fringe count
+given by Equation {eq}`eq:ch04-michelson-fringe-count`; shortening the coherence length
 washes the fringes out, which is the constraint of the next section made
 visible.
 
@@ -658,7 +662,7 @@ so $n = 1.000293$ — the accepted value for dry air at standard conditions. The
 
 ### What Interferometers Are For
 
-- **The Michelson–Morley experiment.** As described in [Chapter 1](#ch-need-for-relativity), rotating the apparatus should have exchanged the roles of the arm parallel to Earth's motion through the ether and the arm perpendicular to it, shifting the fringes by about $0.4$ fringe against a sensitivity of $0.01$ fringe. No shift was ever seen, at any orientation or any time of year. The fringe-counting relation above is exactly what converted a null optical measurement into a decisive statement about the structure of spacetime.
+- **The Michelson–Morley experiment.** As described in [Chapter 1](#ch-need-for-relativity), rotating the apparatus should have exchanged the roles of the arm parallel to Earth's motion through the ether and the arm perpendicular to it, shifting the fringes by about $0.4$ fringe against a sensitivity of $0.01$ fringe. No shift was ever seen, at any orientation or any time of year. The fringe-counting relation in Equation {eq}`eq:ch04-michelson-fringe-count` is exactly what converted a null optical measurement into a decisive statement about the structure of spacetime.
 - **Fourier-transform spectroscopy.** Record the detector signal as a function of mirror position and you have the *autocorrelation* of the light; its Fourier transform is the spectrum. Nearly every infrared spectrometer in a modern chemistry laboratory is a Michelson interferometer operated this way.
 - **Metrology.** Surface flatness, machine-tool calibration, and — until the 1983 redefinition of the meter in terms of $c$ — the international length standard itself.
 - **Gravitational-wave detection.** LIGO and Virgo are Michelson interferometers with $4\ \text{km}$ arms, folded optically to an effective length of hundreds of kilometers, measuring mirror displacements of order $10^{-19}\ \text{m}$ — about one ten-thousandth of a proton's radius. The first detection, in September 2015, came from two merging black holes $1.3$ billion light-years away. The instrument that failed to find the ether became the instrument that found the ripples in spacetime that replaced it.

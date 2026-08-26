@@ -34,16 +34,16 @@ When the potential is **separable in Cartesian coordinates**, $V(x,y,z) = V_1(x)
 
 $$
 E_{n_x,n_y,n_z} = \frac{h^2}{8m}\left(\frac{n_x^2}{L_x^2} + \frac{n_y^2}{L_y^2} + \frac{n_z^2}{L_z^2}\right), \qquad n_x, n_y, n_z = 1, 2, 3, \ldots,
-$$
+$$ (eq:ch09-box-energy)
 
 with three independent quantum numbers, one per dimension. A notable feature not seen in one dimension: for a cubic box ($L_x=L_y=L_z=L$), distinct combinations of $(n_x,n_y,n_z)$ — e.g., $(2,1,1)$, $(1,2,1)$, $(1,1,2)$ — can give the *same* total energy. This is called **degeneracy**, and it is a recurring feature of higher-dimensional quantum systems, generally traceable to an underlying symmetry of the potential (here, the equivalence of the three directions in a cube).
 
 ### Worked Example: A Rectangular Quantum Dot
 
-A semiconductor quantum dot confines an electron in a box with $L_x = L_y = 5.0\ \text{nm}$ but $L_z = 10.0\ \text{nm}$ (a "square" cross-section, but elongated along $z$) — a shape with less symmetry than a cube, but more than a fully generic box. Using $E_n(\text{eV}) = 0.376\ \text{eV}\cdot\text{nm}^2 \times n^2/L^2(\text{nm})$ (a convenient rewriting of the formula above for an electron), the ground state has
+A semiconductor quantum dot confines an electron in a box with $L_x = L_y = 5.0\ \text{nm}$ but $L_z = 10.0\ \text{nm}$ (a "square" cross-section, but elongated along $z$) — a shape with less symmetry than a cube, but more than a fully generic box. Using $E_n(\text{eV}) = 0.376\ \text{eV}\cdot\text{nm}^2 \times n^2/L^2(\text{nm})$ (a convenient rewriting of Equation {eq}`eq:ch09-box-energy` for an electron), the ground state has
 
 $$
-E_{1,1,1} = (0.376\ \text{eV}\cdot\text{nm}^2)\left(\frac{1}{5.0^2}+\frac{1}{5.0^2}+\frac{1}{10.0^2}\right)\text{nm}^{-2} = (0.376)(0.090)\ \text{eV} \approx 34\ \text{meV},
+E_{1,1,1} = (0.376\ \text{eV}\cdot\text{nm}^2)\left[\frac{1}{(5.0\ \text{nm})^2}+\frac{1}{(5.0\ \text{nm})^2}+\frac{1}{(10.0\ \text{nm})^2}\right] = (0.376\ \text{eV}\cdot\text{nm}^2)(0.090\ \text{nm}^{-2}) \approx 34\ \text{meV},
 $$
 
 a confinement energy of a few tens of millielectronvolts, comparable to $k_BT$ at room temperature ($\approx 26\ \text{meV}$) — which is why quantum-dot devices are often cooled to enhance the visibility of their discrete energy levels. Because $L_x=L_y \ne L_z$, the box retains a *partial* symmetry: states $(n_x,n_y,n_z)$ and $(n_y,n_x,n_z)$ are degenerate for any choice of $n_z$ (swapping the two equal dimensions changes nothing), but states that instead permute the unequal dimension, such as $(1,1,2)$ versus $(2,1,1)$, are generally *not* degenerate with $(1,1,1)$ or with each other. A box with $L_x=L_y=L_z$ would restore full degeneracy among all permutations of a given $(n_x,n_y,n_z)$ triple, while a fully generic box ($L_x \ne L_y \ne L_z$) would show no degeneracy at all — the amount of degeneracy is a direct fingerprint of how much geometric symmetry the confining potential actually has.
@@ -108,7 +108,7 @@ for an electron of charge $-e$, directed opposite to $\vec L$ because the electr
 
 That a magnetic field sorts a beam into a discrete number of orientations —
 rather than the continuum a classical dipole would give — is the content of
-@fig:ch09-stern-gerlach-sim. Firing spin-$\tfrac12$ atoms through a single
+{numref}`Figure %s <fig:ch09-stern-gerlach-sim>`. Firing spin-$\tfrac12$ atoms through a single
 analyzer splits the beam in two; chaining analyzers at different angles shows
 that the measurement does not simply read a pre-existing orientation.
 
@@ -137,7 +137,7 @@ $$
 
 confirming explicitly that $\vec L$ can never point exactly along $z$ (which would require $\theta=0°$) no matter how large $m_\ell$ is chosen for a given $\ell$; the discrepancy $\ell\hbar$ versus $\sqrt{\ell(\ell+1)}\hbar$ shrinks only in a relative sense as $\ell$ grows large, another instance of the correspondence principle encountered in [Chapter 8](#ch-the-schrodinger-equation).
 
-The cone that this worked example describes is usually drawn as a static picture, which makes the indeterminacy of $L_x$ and $L_y$ look like an admission of ignorance about a vector that is really sitting still somewhere on the cone. The classical system that gets the geometry right is a gyroscope, @fig:ch09-precession-sim: gravity applies a torque perpendicular to the spin angular momentum, and the response is not to tip the axis over but to walk it around a cone at fixed polar angle, with $|\vec L|$ and $L_z$ both constant while $L_x$ and $L_y$ oscillate. Put a magnetic moment in a field instead of a top in gravity and the equation of motion is the same one; the quantum content is only that the cone's opening angle may take just $2\ell+1$ values.
+The cone that this worked example describes is usually drawn as a static picture, which makes the indeterminacy of $L_x$ and $L_y$ look like an admission of ignorance about a vector that is really sitting still somewhere on the cone. The classical system that gets the geometry right is a gyroscope, {numref}`Figure %s <fig:ch09-precession-sim>`: gravity applies a torque perpendicular to the spin angular momentum, and the response is not to tip the axis over but to walk it around a cone at fixed polar angle, with $|\vec L|$ and $L_z$ both constant while $L_x$ and $L_y$ oscillate. Put a magnetic moment in a field instead of a top in gravity and the equation of motion is the same one; the quantum content is only that the cone's opening angle may take just $2\ell+1$ values.
 
 ```{openphysics} Precession
 :label: fig:ch09-precession-sim

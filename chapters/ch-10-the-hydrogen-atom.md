@@ -36,7 +36,7 @@ $$
 This agreement is a triumph for the Schrödinger equation — it reproduces a result that matched atomic spectroscopy to remarkable precision — but the derivation and interpretation are entirely different from Bohr's. Bohr postulated that the electron moves on definite circular orbits, with angular momentum quantized as $L = n\hbar$ by assumption. The Schrödinger treatment makes no such assumption about orbits at all; instead, $n$ emerges purely as an index counting the normalizable solutions of the radial equation, the electron has no well-defined trajectory, and — as shown below — the ground state ($n=1$) actually has **zero** orbital angular momentum, in direct contradiction to Bohr's $L=n\hbar$. The numerical agreement in $E_n$ is, in this sense, a coincidence specific to the particular form of the $1/r$ Coulomb potential, not a sign that the Bohr picture was substantially correct.
 
 The distance between Bohr's picture and Schrödinger's is easiest to see by
-running them side by side, as in @fig:ch10-hydrogen-models-sim. Both reproduce
+running them side by side, as in {numref}`Figure %s <fig:ch10-hydrogen-models-sim>`. Both reproduce
 the same $E_n$ and therefore the same emission lines, but only one of them
 places the electron on an orbit.
 
@@ -98,7 +98,7 @@ $$
 
 These magnetic moments are what couple to an external magnetic field in the Stern–Gerlach experiment (producing the observed splitting and deflection) and, coupling to each other and to nuclear magnetic moments, produce the fine and hyperfine splittings observed in high-resolution atomic spectra.
 
-The same coupling, applied to the *proton's* magnetic moment rather than the electron's, is the basis of magnetic resonance imaging, and @fig:ch10-mri-sim is a working model of it. A static field along $z$ splits the two spin orientations by $\Delta E = g\mu_N B$, which for a proton in a $1\ \text{T}$ field falls in the radio band; a transverse radio-frequency field tuned to exactly that frequency drives transitions between them, and the resonance is sharp enough that a deliberate spatial *gradient* in $B$ makes the resonant frequency a map of position. Everything in the sequence — the splitting proportional to $B$, the resonance condition $hf = \Delta E$, the return to equilibrium afterwards — is this section's physics with $\mu_B$ replaced by the nuclear magneton.
+The same coupling, applied to the *proton's* magnetic moment rather than the electron's, is the basis of magnetic resonance imaging, and {numref}`Figure %s <fig:ch10-mri-sim>` is a working model of it. A static field along $z$ splits the two spin orientations by $\Delta E = g\mu_N B$, which for a proton in a $1\ \text{T}$ field falls in the radio band; a transverse radio-frequency field tuned to exactly that frequency drives transitions between them, and the resonance is sharp enough that a deliberate spatial *gradient* in $B$ makes the resonant frequency a map of position. Everything in the sequence — the splitting proportional to $B$, the resonance condition $hf = \Delta E$, the return to equilibrium afterwards — is this section's physics with $\mu_B$ replaced by the nuclear magneton.
 
 ```{phet-legacy} mri
 :sim-name: Simplified MRI

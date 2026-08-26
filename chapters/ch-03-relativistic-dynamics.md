@@ -101,7 +101,7 @@ Momentum and energy are not independent; eliminating $u$ and $\gamma$ between $\
 
 $$
 E^2 = (pc)^2 + (mc^2)^2,
-$$
+$$ (eq:ch03-energy-momentum)
 
 a relation that holds for every particle, in every inertial frame. This is directly analogous to the invariant spacetime interval $(\Delta s)^2 = c^2\Delta t^2 - \Delta x^2$ of [Chapter 2](#ch-special-relativity), and the analogy is not superficial: just as $(ct, x, y, z)$ can be assembled into a single spacetime-displacement four-vector that transforms under a Lorentz boost according to the Lorentz transformation, the quadruple $(E/c, p_x, p_y, p_z)$ can be assembled into a single **energy–momentum four-vector**,
 
@@ -115,9 +115,9 @@ $$
 \left(\frac{E}{c}\right)^2 - p_x^2 - p_y^2 - p_z^2 = (mc)^2,
 $$
 
-which is precisely the energy–momentum relation above, rearranged; the rest mass $m$ plays the same role for the energy–momentum four-vector that the invariant interval plays for the spacetime-displacement four-vector — a quantity every observer computes to be the same, regardless of the frame in which $E$ and $\vec p$ individually are measured. Because $E/c$ and $\vec p$ transform together, an object's energy–momentum four-vector is always parallel to its worldline on a spacetime diagram of the $(ct, x)$ plane extended to include $(E/c, p_x)$: a slower particle has a "steeper" four-vector (larger $E/c$ relative to $p_x$), and the ratio $v/c = p_xc/E$ recovers the particle's ordinary velocity.
+which is precisely the energy–momentum relation in Equation {eq}`eq:ch03-energy-momentum`, rearranged; the rest mass $m$ plays the same role for the energy–momentum four-vector that the invariant interval plays for the spacetime-displacement four-vector — a quantity every observer computes to be the same, regardless of the frame in which $E$ and $\vec p$ individually are measured. Because $E/c$ and $\vec p$ transform together, an object's energy–momentum four-vector is always parallel to its worldline on a spacetime diagram of the $(ct, x)$ plane extended to include $(E/c, p_x)$: a slower particle has a "steeper" four-vector (larger $E/c$ relative to $p_x$), and the ratio $v/c = p_xc/E$ recovers the particle's ordinary velocity.
 
-The relation can be read geometrically as a right triangle, as shown in @fig:ch03-energy-momentum: the total-energy term is the hypotenuse, while rest energy and momentum provide the two legs.
+The relation can be read geometrically as a right triangle, as shown in {numref}`Figure %s <fig:ch03-energy-momentum>`: the total-energy term is the hypotenuse, while rest energy and momentum provide the two legs.
 
 ```{figure} ../images/ch03-energy-momentum.svg
 :label: fig:ch03-energy-momentum
@@ -149,7 +149,7 @@ $$
 
 is the same number whether computed in the lab frame or in the CM frame — but in the CM frame, where $p_{\text{total}} = 0$ by definition, it simplifies to $Mc^2 = E_{\text{total,CM}}$: the total CM-frame energy alone. This invariant $M$ is exactly the quantity that determines whether a given reaction can occur at all: by conservation of the energy-momentum four-vector, a reaction that produces a set of final-state particles with total rest mass $\sum m_f$ is only possible if the *available* energy in the CM frame is at least $\left(\sum m_f\right)c^2$ — i.e., if $M \ge \sum m_f$. The **threshold** condition is $M = \sum m_f$ exactly, corresponding to all final-state particles created at rest relative to the CM frame (and hence relative to each other), with no leftover kinetic energy to spare.
 
-The CM frame is not a relativistic invention, and it is worth recovering the non-relativistic intuition before leaning on it. @fig:ch03-collision-sim runs elastic and inelastic collisions in one and two dimensions, with the center of mass drawn on the screen and a momentum diagram beside it. Whatever the pucks do, that marker glides on at constant velocity — the collision cannot touch it, because the internal forces cancel in pairs — which is what makes its rest frame a natural place to do the bookkeeping. Choose the masses and velocities so that the marker stands still, and the momentum diagram shows what has been bought: two arrows equal and opposite before the collision, two arrows equal and opposite after it, however much kinetic energy was lost in between. The relativistic version below keeps that structure exactly, replacing $m\vec u$ by $\gamma m \vec u$ and the total mass by the invariant $M$; what changes is that $M$ is no longer the sum of the parts.
+The CM frame is not a relativistic invention, and it is worth recovering the non-relativistic intuition before leaning on it. {numref}`Figure %s <fig:ch03-collision-sim>` runs elastic and inelastic collisions in one and two dimensions, with the center of mass drawn on the screen and a momentum diagram beside it. Whatever the pucks do, that marker glides on at constant velocity — the collision cannot touch it, because the internal forces cancel in pairs — which is what makes its rest frame a natural place to do the bookkeeping. Choose the masses and velocities so that the marker stands still, and the momentum diagram shows what has been bought: two arrows equal and opposite before the collision, two arrows equal and opposite after it, however much kinetic energy was lost in between. The relativistic version below keeps that structure exactly, replacing $m\vec u$ by $\gamma m \vec u$ and the total mass by the invariant $M$; what changes is that $M$ is no longer the sum of the parts.
 
 ```{phet} collision-lab
 :label: fig:ch03-collision-sim
@@ -179,11 +179,11 @@ $$
 16m^2c^4 = m^2c^4 + 2E_1mc^2 + m^2c^4 \quad \Longrightarrow \quad E_1 = 7mc^2.
 $$
 
-The threshold *kinetic* energy is $K_1 = E_1 - mc^2 = 6mc^2$. With $mc^2 = 938\ \text{MeV}$ for the proton, this is $K_1 = 5.6\ \text{GeV}$ — dramatically larger than the naive $2mc^2 = 1.9\ \text{GeV}$ one might have guessed from simply counting the rest-mass energy of the new particle pair. The extra factor of three arises because, in the lab frame, the newly created particles must all share the *same* velocity as the CM frame itself (since at threshold they are at rest *in* the CM frame, which is itself moving relative to the lab), so a substantial fraction of the beam's kinetic energy is unavoidably "wasted" maintaining the overall forward motion of the collision products rather than being converted into new rest mass. The Bevatron was deliberately designed to reach a beam energy of $6.2\ \text{GeV}$, comfortably above this threshold, and the antiproton was discovered there later that same year by Owen Chamberlain, Emilio Segrè, and collaborators.
+The threshold *kinetic* energy is $K_1 = E_1 - mc^2 = 6mc^2$. With $mc^2 = 938\ \text{MeV}$ for the proton, this is $K_1 = 6(938\ \text{MeV}) = 5.6\ \text{GeV}$ — dramatically larger than the naive $2mc^2 = 2(938\ \text{MeV}) = 1.9\ \text{GeV}$ one might have guessed from simply counting the rest-mass energy of the new particle pair. The extra factor of three arises because, in the lab frame, the newly created particles must all share the *same* velocity as the CM frame itself (since at threshold they are at rest *in* the CM frame, which is itself moving relative to the lab), so a substantial fraction of the beam's kinetic energy is unavoidably "wasted" maintaining the overall forward motion of the collision products rather than being converted into new rest mass. The Bevatron was deliberately designed to reach a beam energy of $6.2\ \text{GeV}$, comfortably above this threshold, and the antiproton was discovered there later that same year by Owen Chamberlain, Emilio Segrè, and collaborators.
 
 This "wasted energy" problem is exactly why modern particle physics favors **colliders**, in which two beams travel toward each other and collide head-on. If the beam and target in the reaction above were replaced by two protons of equal and opposite momentum (so that the lab frame *is* the CM frame), the threshold condition becomes simply $2E_1 = 4mc^2$, i.e., $K_1 = mc^2$ per beam — nearly six times less kinetic energy required per proton than the fixed-target case, precisely because no energy needs to be spent maintaining a net forward CM velocity.
 
-The contrast between the two arrangements is summarized in @fig:ch03-collider.
+The contrast between the two arrangements is summarized in {numref}`Figure %s <fig:ch03-collider>`.
 
 ```{figure} ../images/ch03-fixed-target-collider.svg
 :label: fig:ch03-collider
@@ -192,7 +192,7 @@ The contrast between the two arrangements is summarized in @fig:ch03-collider.
 Fixed-target versus collider kinematics. In a head-on collider the center-of-momentum frame can coincide with the laboratory, so more of the beam energy is available to create rest mass. Original schematic by the author.
 ```
 
-The historical setting of this threshold calculation is shown in @fig:ch03-bevatron-historical: the Bevatron was built in the 1950s to reach the energies needed to discover the antiproton.
+The historical setting of this threshold calculation is shown in {numref}`Figure %s <fig:ch03-bevatron-historical>`: the Bevatron was built in the 1950s to reach the energies needed to discover the antiproton.
 
 ```{figure} ../images/historical-bevatron.jpg
 :label: fig:ch03-bevatron-historical
@@ -211,19 +211,19 @@ It is sometimes asked whether a hypothetical particle might simply be *born* mov
 
 An electron (rest energy $m c^2 = 0.511\ \text{MeV}$) is accelerated from rest through a potential difference of $2.00\ \text{MV}$, gaining kinetic energy $K = qV = 2.00\ \text{MeV}$.
 
-**Total energy:** $E = K + mc^2 = 2.00 + 0.511 = 2.511\ \text{MeV}$.
+**Total energy:** $E = K + mc^2 = 2.00\ \text{MeV} + 0.511\ \text{MeV} = 2.511\ \text{MeV}$.
 
 **Momentum:** from $E^2 = (pc)^2 + (mc^2)^2$,
 
 $$
-pc = \sqrt{E^2 - (mc^2)^2} = \sqrt{(2.511)^2 - (0.511)^2}\ \text{MeV} = 2.459\ \text{MeV},
+pc = \sqrt{E^2 - (mc^2)^2} = \sqrt{(2.511\ \text{MeV})^2 - (0.511\ \text{MeV})^2} = 2.459\ \text{MeV},
 $$
 
 so $p = 2.459\ \text{MeV}/c$.
 
-**Speed:** from $E = \gamma mc^2$, $\gamma = E/mc^2 = 2.511/0.511 = 4.914$, and $u = c\sqrt{1 - 1/\gamma^2} = 0.979c$.
+**Speed:** from $E = \gamma mc^2$, $\gamma = E/mc^2 = (2.511\ \text{MeV})/(0.511\ \text{MeV}) = 4.914$, and $u = c\sqrt{1 - 1/\gamma^2} = 0.979c$.
 
-Note that a Newtonian calculation of the speed from $K = \tfrac12 mu^2$ would give $u = c\sqrt{2K/mc^2} = c\sqrt{2(2.00)/0.511} \approx 2.8c$ — an unphysical result exceeding $c$, and a sharp reminder that the Newtonian kinetic-energy formula must not be used once $K$ is comparable to or larger than $mc^2$.
+Note that a Newtonian calculation of the speed from $K = \tfrac12 mu^2$ would give $u = c\sqrt{2K/mc^2} = c\sqrt{2(2.00\ \text{MeV})/(0.511\ \text{MeV})} \approx 2.8c$ — an unphysical result exceeding $c$, and a sharp reminder that the Newtonian kinetic-energy formula must not be used once $K$ is comparable to or larger than $mc^2$.
 
 ## Summary
 

@@ -34,7 +34,7 @@ $$
 
 for the spectral energy density. This matches the observed spectrum reasonably well at long wavelength, but diverges as $\lambda \to 0$: since the number of short-wavelength modes grows without bound and each is assigned the same energy $k_BT$, the predicted radiated energy — obtained by integrating $u(\lambda,T)$ over all $\lambda$ — is *infinite*. This absurd prediction, sharply contradicted by the observed spectrum (which rises from zero at short wavelength, peaks, and falls off at long wavelength), became known as the **ultraviolet catastrophe**: not a small discrepancy to be patched, but a qualitative failure of classical statistical mechanics applied to the electromagnetic field.
 
-@fig:ch06-blackbody-sim plots both curves against each other. Raising the
+{numref}`Figure %s <fig:ch06-blackbody-sim>` plots both curves against each other. Raising the
 temperature moves the peak and lifts the total area, as the next section's
 displacement and Stefan–Boltzmann laws require; the classical curve, plotted
 alongside, runs off the top of the graph at short wavelength no matter what
@@ -94,10 +94,10 @@ $$
 \lambda_{\max} = \frac{2.898\times10^{-3}\ \text{m}\cdot\text{K}}{5778\ \text{K}} = 5.01\times10^{-7}\ \text{m} = 501\ \text{nm},
 $$
 
-squarely in the green part of the visible spectrum — the Sun's spectrum actually peaks near the middle of the range of wavelengths the human eye evolved to detect, though scattering in Earth's atmosphere and the eye's overall spectral response make sunlight appear white or yellow rather than green. The Stefan–Boltzmann law gives the power radiated per unit area, $P/A = \sigma T^4 = (5.670\times10^{-8})(5778)^4\ \text{W/m}^2 \approx 6.32\times10^7\ \text{W/m}^2$. Multiplying by the Sun's surface area, $A = 4\pi R_\odot^2 \approx 6.09\times10^{18}\ \text{m}^2$, gives a total radiated power (luminosity)
+squarely in the green part of the visible spectrum — the Sun's spectrum actually peaks near the middle of the range of wavelengths the human eye evolved to detect, though scattering in Earth's atmosphere and the eye's overall spectral response make sunlight appear white or yellow rather than green. The Stefan–Boltzmann law gives the power radiated per unit area, $P/A = \sigma T^4 = (5.670\times10^{-8}\ \text{W}\cdot\text{m}^{-2}\cdot\text{K}^{-4})(5778\ \text{K})^4 \approx 6.32\times10^7\ \text{W/m}^2$. Multiplying by the Sun's surface area, $A = 4\pi R_\odot^2 \approx 6.09\times10^{18}\ \text{m}^2$, gives a total radiated power (luminosity)
 
 $$
-P = \frac{P}{A}\cdot A \approx (6.32\times10^7)(6.09\times10^{18})\ \text{W} \approx 3.85\times10^{26}\ \text{W},
+P = \frac{P}{A}\cdot A \approx (6.32\times10^7\ \text{W/m}^2)(6.09\times10^{18}\ \text{m}^2) \approx 3.85\times10^{26}\ \text{W},
 $$
 
 in close agreement with the Sun's independently measured luminosity of $3.828\times10^{26}\ \text{W}$ — the same figure used in [Chapter 3, Problem 6](#ex-relativistic-dynamics-6) to estimate the Sun's rate of mass loss via $E=mc^2$. That two completely independent lines of physics (blackbody radiation here, and mass–energy equivalence there) connect so tightly to the same measured number is a testament to how well both theories describe the physical world.
@@ -130,7 +130,7 @@ $$
 
 the **photoelectric equation**. This immediately explains all three observations: $K_{\max}$ depends on $f$ (through the photon energy $hf$) but not on intensity, since intensity only changes the *number* of photons per second, not the energy of each one; the threshold frequency is $f_0 = \phi/h$, below which a single photon simply does not carry enough energy to free an electron, no matter how many photons arrive; and emission is instantaneous because each electron absorbs one photon's energy all at once, not gradually. A plot of $K_{\max}$ (equivalently, $eV_0$) versus $f$ is a straight line of slope $h$ and $y$-intercept $-\phi$, and Millikan's precise measurement of exactly this line (1916) provided both a direct experimental value of $h$ and strong confirmation of Einstein's photon hypothesis — for which, not for relativity, Einstein received the 1921 Nobel Prize in Physics.
 
-The three stubborn facts are best met in the order Lenard and Millikan met them, with the apparatus in front of you. In @fig:ch06-photoelectric-sim the light's intensity, its wavelength, the target metal, and the retarding voltage are all under control, and the photocurrent and stopping potential are read off directly. Turn the intensity up at fixed wavelength: the current rises and the stopping potential does not move. Shorten the wavelength instead: the stopping potential climbs, and a plot of $eV_0$ against $f$ — the simulation will accumulate one for you — is a straight line whose slope is $h$ and whose intercept names the metal. Cross the threshold from the long-wavelength side and the current stops altogether, at full intensity.
+The three stubborn facts are best met in the order Lenard and Millikan met them, with the apparatus in front of you. In {numref}`Figure %s <fig:ch06-photoelectric-sim>` the light's intensity, its wavelength, the target metal, and the retarding voltage are all under control, and the photocurrent and stopping potential are read off directly. Turn the intensity up at fixed wavelength: the current rises and the stopping potential does not move. Shorten the wavelength instead: the stopping potential climbs, and a plot of $eV_0$ against $f$ — the simulation will accumulate one for you — is a straight line whose slope is $h$ and whose intercept names the metal. Cross the threshold from the long-wavelength side and the current stops altogether, at full intensity.
 
 ```{phet-legacy} photoelectric
 :sim-name: Photoelectric Effect
@@ -147,7 +147,7 @@ $$
 E_{\text{photon}} = \frac{hc}{\lambda} = \frac{1240\ \text{eV}\cdot\text{nm}}{250\ \text{nm}} = 4.96\ \text{eV}.
 $$
 
-The maximum kinetic energy of the photoelectrons is $K_{\max} = E_{\text{photon}} - \phi = 4.96 - 2.14 = 2.82\ \text{eV}$, so the stopping potential is $V_0 = 2.82\ \text{V}$. The threshold wavelength — the longest wavelength that can still eject an electron — follows from $\phi = hc/\lambda_0$:
+The maximum kinetic energy of the photoelectrons is $K_{\max} = E_{\text{photon}} - \phi = 4.96\ \text{eV} - 2.14\ \text{eV} = 2.82\ \text{eV}$, so the stopping potential is $V_0 = 2.82\ \text{V}$. The threshold wavelength — the longest wavelength that can still eject an electron — follows from $\phi = hc/\lambda_0$:
 
 $$
 \lambda_0 = \frac{hc}{\phi} = \frac{1240\ \text{eV}\cdot\text{nm}}{2.14\ \text{eV}} = 579\ \text{nm},
@@ -173,7 +173,7 @@ $$
 
 known as the **Duane–Hunt limit**. Most electrons instead lose their energy gradually over many collisions, radiating photons of smaller energy at each step and producing a continuous spectrum of wavelengths longer than $\lambda_{\min}$ — but no photon in the entire spectrum can have a wavelength shorter than $\lambda_{\min}$, since no single electron carries more than $eV$ of kinetic energy to begin with. Superimposed on this continuous bremsstrahlung spectrum are sharp **characteristic X-ray lines**, produced when an incident electron knocks an inner-shell electron out of a target atom and an outer electron falls down to fill the vacancy, emitting a photon of energy fixed by the target element's inner-shell energy levels (Moseley's law for these characteristic energies is developed in [Chapter 11](#ch-many-electron-atoms)). Unlike the continuous bremsstrahlung background, the characteristic lines depend on the target material, not on the accelerating voltage (once $V$ is large enough to eject the inner-shell electron in the first place).
 
-Bremsstrahlung is worth separating into its classical and its quantum halves, because only the second is new here. The classical half — that a charge which accelerates radiates, and that the radiation carries energy away — is already in Maxwell's equations, and @fig:ch06-radiating-charge-sim is that statement on its own: shake a charge and kinks in its field propagate outward at $c$, taking energy with them. Stopping a charge dead is an acceleration like any other, so an electron slamming into a tungsten anode must radiate. What classical physics cannot supply is the sharp edge at $\lambda_{\min}$: a continuous field theory sets no floor on the wavelength radiated in a single event, and the Duane–Hunt limit exists only because the radiated energy comes in quanta $hf$ and one electron brings only $eV$ to spend.
+Bremsstrahlung is worth separating into its classical and its quantum halves, because only the second is new here. The classical half — that a charge which accelerates radiates, and that the radiation carries energy away — is already in Maxwell's equations, and {numref}`Figure %s <fig:ch06-radiating-charge-sim>` is that statement on its own: shake a charge and kinks in its field propagate outward at $c$, taking energy with them. Stopping a charge dead is an acceleration like any other, so an electron slamming into a tungsten anode must radiate. What classical physics cannot supply is the sharp edge at $\lambda_{\min}$: a continuous field theory sets no floor on the wavelength radiated in a single event, and the Duane–Hunt limit exists only because the radiated energy comes in quanta $hf$ and one electron brings only $eV$ to spend.
 
 ```{openphysics} RadioWaves
 :label: fig:ch06-radiating-charge-sim
@@ -233,7 +233,7 @@ $$
 \Delta\lambda = \frac{h}{m_ec}(1-\cos 60°) = (2.426\times10^{-12}\ \text{m})(1 - 0.500) = 1.21\times10^{-12}\ \text{m} = 1.21\ \text{pm},
 $$
 
-so the scattered wavelength is $\lambda' = 101.2\ \text{pm}$. In photon-energy terms, the incident photon carries $E = hc/\lambda = 1240\ \text{eV}\cdot\text{nm}/0.100\ \text{nm} = 12.40\ \text{keV}$, while the scattered photon carries $E' = hc/\lambda' = 1240/0.1012\ \text{eV} = 12.25\ \text{keV}$. The energy transferred to the recoiling electron is therefore $\Delta E = E - E' \approx 0.15\ \text{keV} = 150\ \text{eV}$ — a small but entirely measurable fraction of the incident photon's energy, exactly the kind of energy loss Compton measured to confirm the formula.
+so the scattered wavelength is $\lambda' = 101.2\ \text{pm}$. In photon-energy terms, the incident photon carries $E = hc/\lambda = (1240\ \text{eV}\cdot\text{nm})/(0.100\ \text{nm}) = 12.40\ \text{keV}$, while the scattered photon carries $E' = hc/\lambda' = (1240\ \text{eV}\cdot\text{nm})/(0.1012\ \text{nm}) = 12.25\ \text{keV}$. The energy transferred to the recoiling electron is therefore $\Delta E = E - E' \approx 0.15\ \text{keV} = 150\ \text{eV}$ — a small but entirely measurable fraction of the incident photon's energy, exactly the kind of energy loss Compton measured to confirm the formula.
 
 ### The Compton Edge
 
@@ -258,7 +258,7 @@ The reverse process, **pair annihilation**, $e^- + e^+ \to 2\gamma$ (two photons
 A photon of energy $E_\gamma = 3.00\ \text{MeV}$, well above the $1.022\ \text{MeV}$ threshold, undergoes pair production near a heavy nucleus. Because the nucleus is far more massive than the electron or positron, it absorbs essentially none of the available kinetic energy (a large mass can supply whatever small momentum balance is needed while carrying away almost no energy, exactly analogous to how a wall barely recoils, and gains almost no kinetic energy, when it reflects a ball). The energy left over after paying the $2m_ec^2$ rest-mass cost is therefore shared, to good approximation, between the electron and positron as kinetic energy:
 
 $$
-K_{e^-} + K_{e^+} \approx E_\gamma - 2m_ec^2 = 3.00 - 1.022 = 1.978\ \text{MeV}.
+K_{e^-} + K_{e^+} \approx E_\gamma - 2m_ec^2 = 3.00\ \text{MeV} - 1.022\ \text{MeV} = 1.978\ \text{MeV}.
 $$
 
 If the pair shares this energy symmetrically (not required by any conservation law, but a common simplifying assumption and, on average, the most probable outcome), each particle carries about $0.989\ \text{MeV}$ of kinetic energy — comparable to its own rest energy, so each is produced at a substantial fraction of the speed of light.

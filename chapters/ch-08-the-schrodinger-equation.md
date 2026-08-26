@@ -31,7 +31,7 @@ $$
 
 For $\Psi$ to yield a sensible probability density, it (and, where the potential is finite, its first derivative) must be single-valued, finite, and continuous; discontinuities or divergences in $\Psi$ would correspond to ill-defined or infinite probability densities.
 
-The Born rule is easy to state and easy to under-read, because probability is also what a classical physicist reaches for when describing ignorance about a definite fact. The two are not the same, and @fig:ch08-measurement-sim is built around the difference. Its first screen puts a classical coin under a cover beside a quantum one: both give heads half the time, but the classical coin already *is* heads or tails while it is hidden, and the quantum one is in a superposition of the two until it is looked at. Its later screens make the distinction operational — single photons through a polarizer arriving with probability $\cos^2\theta$, and spin-$\tfrac12$ particles through a chain of analyzers whose statistics no assignment of pre-existing values reproduces.
+The Born rule is easy to state and easy to under-read, because probability is also what a classical physicist reaches for when describing ignorance about a definite fact. The two are not the same, and {numref}`Figure %s <fig:ch08-measurement-sim>` is built around the difference. Its first screen puts a classical coin under a cover beside a quantum one: both give heads half the time, but the classical coin already *is* heads or tails while it is hidden, and the quantum one is in a superposition of the two until it is looked at. Its later screens make the distinction operational — single photons through a polarizer arriving with probability $\cos^2\theta$, and spin-$\tfrac12$ particles through a chain of analyzers whose statistics no assignment of pre-existing values reproduces.
 
 ```{phet} quantum-measurement
 :label: fig:ch08-measurement-sim
@@ -105,7 +105,7 @@ Normalizing $\psi_n(x) = A\sin(n\pi x/L)$ over $[0,L]$ gives $A = \sqrt{2/L}$. S
 - **The ground state ($n=1$) has $E_1 = \pi^2\hbar^2/2mL^2 > 0$**, not zero. A particle strictly confined to a box, unlike a classical particle, can never be perfectly at rest — a direct consequence of the uncertainty principle: confining $\Delta x \sim L$ forces $\Delta p \gtrsim \hbar/L$, hence a minimum kinetic energy $\sim \hbar^2/mL^2$, of the same order as $E_1$.
 - **The probability density $|\psi_n(x)|^2$ has $n-1$ interior nodes** (points where the particle has zero probability of being found) — for $n>1$, positions strictly inside the box that the particle can never occupy, again with no classical counterpart.
 
-All three features are on display in @fig:ch08-bound-states-sim, which solves the time-independent equation numerically for a potential you choose and draws the resulting eigenfunctions on top of the level diagram. Start with a square well and make it deep: the levels approach the $n^2$ ladder derived above, the ground state sits visibly above the bottom of the well, and $\psi_n$ picks up one more node with each step up that ladder. The same simulation carries the finite well, the harmonic oscillator, and the one-dimensional Coulomb potential, so it is worth returning to as those appear later in this chapter and in [Chapter 10](#ch-the-hydrogen-atom); the differences between their level *spacings* — $n^2$ here, uniform for the oscillator, $-1/n^2$ for Coulomb — are the fingerprints of the three potentials.
+All three features are on display in {numref}`Figure %s <fig:ch08-bound-states-sim>`, which solves the time-independent equation numerically for a potential you choose and draws the resulting eigenfunctions on top of the level diagram. Start with a square well and make it deep: the levels approach the $n^2$ ladder derived above, the ground state sits visibly above the bottom of the well, and $\psi_n$ picks up one more node with each step up that ladder. The same simulation carries the finite well, the harmonic oscillator, and the one-dimensional Coulomb potential, so it is worth returning to as those appear later in this chapter and in [Chapter 10](#ch-the-hydrogen-atom); the differences between their level *spacings* — $n^2$ here, uniform for the oscillator, $-1/n^2$ for Coulomb — are the fingerprints of the three potentials.
 
 ```{phet-legacy} bound-states
 :sim-name: Quantum Bound States
@@ -142,7 +142,7 @@ $$
 
 the last equality expressing overall conservation of probability: every incident particle is eventually found either reflected or transmitted. If instead $E < V_0$, then $k_2$ becomes imaginary, the "transmitted" solution turns into a decaying exponential (no propagating wave in region II at all), and $R=1$ exactly — total reflection, as classically expected — but, just as in the wave-packet argument of [Chapter 7](#ch-wave-properties-of-particles), the wave function does not vanish abruptly at $x=0$; writing $k_2 = i\kappa$ with $\kappa = \sqrt{2m(V_0-E)}/\hbar$ real, the wave function in region II becomes $\psi_{\text{II}}(x) \propto e^{-\kappa x}$, decaying with a characteristic **penetration depth** $1/\kappa$ rather than vanishing abruptly at $x=0$. The particle therefore has a small but nonzero probability of being found some distance *into* the classically forbidden region, even though it is certain, eventually, to be reflected back the way it came — a preview of the tunneling phenomenon developed below, in which a *second* boundary, ending the forbidden region before $\psi$ has fully decayed away, allows the particle to escape entirely rather than merely penetrate and return.
 
-Both halves of that story — partial reflection at a step the particle has the energy to cross, and exponential decay into a step it does not — can be run against a real wave packet rather than a plane wave in @fig:ch08-tunneling-sim. Send a packet at a step with $E > V_0$ and it visibly splits: part of it continues, slower and stretched, and part comes back, with the areas under the two pieces reproducing the $T$ and $R$ computed above. Lower the energy below $V_0$ and the packet is entirely reflected, but during the encounter it leaks a decaying tail into the barrier. Replacing the step by a barrier of finite thickness — the simulation's next potential — is the whole of tunneling: the tail reaches the far side before it has died away, and what emerges there is a transmitted packet.
+Both halves of that story — partial reflection at a step the particle has the energy to cross, and exponential decay into a step it does not — can be run against a real wave packet rather than a plane wave in {numref}`Figure %s <fig:ch08-tunneling-sim>`. Send a packet at a step with $E > V_0$ and it visibly splits: part of it continues, slower and stretched, and part comes back, with the areas under the two pieces reproducing the $T$ and $R$ computed above. Lower the energy below $V_0$ and the packet is entirely reflected, but during the encounter it leaks a decaying tail into the barrier. Replacing the step by a barrier of finite thickness — the simulation's next potential — is the whole of tunneling: the tail reaches the far side before it has died away, and what emerges there is a transmitted packet.
 
 ```{phet-legacy} quantum-tunneling
 :sim-name: Quantum Tunneling and Wave Packets
@@ -153,7 +153,7 @@ A wave packet incident on a step, a barrier, or a double barrier, with the real 
 
 ### Worked Example: Reflection at a Potential Step
 
-An electron with kinetic energy $E = 2.00\ \text{eV}$ approaches a potential step of height $V_0 = 1.00\ \text{eV}$. Since $k \propto \sqrt{E}$ (with the same proportionality constant on both sides, as $m$ is unchanged), the ratio $k_2/k_1 = \sqrt{(E-V_0)/E} = \sqrt{1.00/2.00} = 0.707$. The reflection coefficient is then
+An electron with kinetic energy $E = 2.00\ \text{eV}$ approaches a potential step of height $V_0 = 1.00\ \text{eV}$. Since $k \propto \sqrt{E}$ (with the same proportionality constant on both sides, as $m$ is unchanged), the ratio $k_2/k_1 = \sqrt{(E-V_0)/E} = \sqrt{(1.00\ \text{eV})/(2.00\ \text{eV})} = 0.707$. The reflection coefficient is then
 
 $$
 R = \left(\frac{1-0.707}{1+0.707}\right)^2 = \left(\frac{0.293}{1.707}\right)^2 = 0.0295,
@@ -192,13 +192,13 @@ showing that tunneling probability falls off exponentially with both the barrier
 A scanning tunneling microscope (STM) images a conducting surface by scanning a sharp metal tip a fraction of a nanometer above it and measuring the tunneling current of electrons crossing the vacuum gap — a gap that acts as a potential barrier of height roughly equal to the metal's work function, here taken as $V_0 - E \approx 4.0\ \text{eV}$. The decay constant is
 
 $$
-\kappa = \frac{\sqrt{2m_e(V_0-E)}}{\hbar} = \frac{\sqrt{2(9.11\times10^{-31})(4.0\times1.60\times10^{-19})}}{1.055\times10^{-34}}\ \text{m}^{-1} \approx 1.02\times10^{10}\ \text{m}^{-1} \approx 10.2\ \text{nm}^{-1}.
+\kappa = \frac{\sqrt{2m_e(V_0-E)}}{\hbar} = \frac{\sqrt{2(9.11\times10^{-31}\ \text{kg})[(4.0\ \text{eV})(1.60\times10^{-19}\ \text{J/eV})]}}{1.055\times10^{-34}\ \text{J}\cdot\text{s}} \approx 1.02\times10^{10}\ \text{m}^{-1} \approx 10.2\ \text{nm}^{-1}.
 $$
 
 Since $T \propto e^{-2\kappa L}$, increasing the tip–surface gap by just $\Delta L = 0.10\ \text{nm}$ (one angstrom) changes the transmission probability, and hence the measured tunneling current, by a factor of
 
 $$
-e^{-2\kappa\,\Delta L} = e^{-2(10.2)(0.10)} = e^{-2.05} \approx \frac{1}{7.8},
+e^{-2\kappa\,\Delta L} = e^{-2(10.2\ \text{nm}^{-1})(0.10\ \text{nm})} = e^{-2.05} \approx \frac{1}{7.8},
 $$
 
 roughly an order of magnitude per angstrom of vertical displacement — exactly the extreme sensitivity that allows an STM to resolve individual atoms on a surface by tracking tiny changes in tunneling current as the tip scans across atomic-scale height variations.
@@ -208,16 +208,16 @@ roughly an order of magnitude per angstrom of vertical displacement — exactly 
 Alpha decay ([Chapter 13](#ch-nuclear-physics)) is understood as an alpha particle ($m_\alpha \approx 6.64\times10^{-27}\ \text{kg}$) tunneling through the Coulomb barrier confining it inside a heavy nucleus. As a rough, illustrative model, approximate this barrier as rectangular, with the alpha particle's energy falling $\Delta E \approx V_0-E = 20\ \text{MeV}$ below the barrier height and an effective barrier width $L \approx 7\ \text{fm} = 7\times10^{-15}\ \text{m}$ (real barriers are Coulombic, not rectangular, and a proper treatment integrates $\kappa(r)$ over the barrier's actual shape — the **Gamow factor** — but the rectangular approximation captures the essential physics). Then
 
 $$
-\kappa = \frac{\sqrt{2m_\alpha \Delta E}}{\hbar} = \frac{\sqrt{2(6.64\times10^{-27})(20\times1.602\times10^{-13})}}{1.055\times10^{-34}}\ \text{m}^{-1} \approx 1.96\times10^{15}\ \text{m}^{-1},
+\kappa = \frac{\sqrt{2m_\alpha \Delta E}}{\hbar} = \frac{\sqrt{2(6.64\times10^{-27}\ \text{kg})[(20\ \text{MeV})(1.602\times10^{-13}\ \text{J/MeV})]}}{1.055\times10^{-34}\ \text{J}\cdot\text{s}} \approx 1.96\times10^{15}\ \text{m}^{-1},
 $$
 
 so the tunneling probability per attempt is
 
 $$
-T \approx e^{-2\kappa L} = e^{-2(1.96\times10^{15})(7\times10^{-15})} = e^{-27.4} \approx 1\times10^{-12}.
+T \approx e^{-2\kappa L} = e^{-2(1.96\times10^{15}\ \text{m}^{-1})(7\times10^{-15}\ \text{m})} = e^{-27.4} \approx 1\times10^{-12}.
 $$
 
-This tiny number is not the final answer for a decay rate; it must be combined with an **assault frequency**, the rate at which the alpha particle, rattling back and forth inside the nucleus at a speed of order $10^7\ \text{m/s}$ across a nuclear diameter of order $10^{-14}\ \text{m}$, "attempts" to escape — roughly $f \sim 10^{21}\ \text{s}^{-1}$. The decay rate is then of order $f\,T \sim (10^{21})(10^{-12})\ \text{s}^{-1} = 10^{9}\ \text{s}^{-1}$, corresponding to a half-life of order $10^{-9}\ \text{s}$ for *this* choice of illustrative barrier parameters. Real alpha emitters span half-lives from microseconds to billions of years, entirely because $T$ depends *exponentially* on $\Delta E$ and $L$: changing the barrier parameters by a modest amount changes $T$, and hence the half-life, by many orders of magnitude — exactly the empirical pattern captured by the **Geiger–Nuttall relation** revisited quantitatively in [Chapter 13](#ch-nuclear-physics).
+This tiny number is not the final answer for a decay rate; it must be combined with an **assault frequency**, the rate at which the alpha particle, rattling back and forth inside the nucleus at a speed of order $10^7\ \text{m/s}$ across a nuclear diameter of order $10^{-14}\ \text{m}$, "attempts" to escape — roughly $f \sim 10^{21}\ \text{s}^{-1}$. The decay rate is then of order $f\,T \sim (10^{21}\ \text{s}^{-1})(10^{-12}) = 10^{9}\ \text{s}^{-1}$, corresponding to a half-life of order $10^{-9}\ \text{s}$ for *this* choice of illustrative barrier parameters. Real alpha emitters span half-lives from microseconds to billions of years, entirely because $T$ depends *exponentially* on $\Delta E$ and $L$: changing the barrier parameters by a modest amount changes $T$, and hence the half-life, by many orders of magnitude — exactly the empirical pattern captured by the **Geiger–Nuttall relation** revisited quantitatively in [Chapter 13](#ch-nuclear-physics).
 
 ## The Quantum Harmonic Oscillator
 
@@ -240,13 +240,13 @@ Transitions between harmonic-oscillator levels by absorption or emission of a ph
 The characteristic spread of the ground-state Gaussian wave function is $\Delta x = \sqrt{\hbar/2m\omega}$. For a macroscopic oscillator — a $1.0\ \text{kg}$ mass on a spring with $k = 100\ \text{N/m}$, so $\omega = \sqrt{k/m} = 10\ \text{rad/s}$ — this gives
 
 $$
-\Delta x = \sqrt{\frac{1.055\times10^{-34}}{2(1.0)(10)}}\ \text{m} \approx 2.3\times10^{-18}\ \text{m},
+\Delta x = \sqrt{\frac{1.055\times10^{-34}\ \text{J}\cdot\text{s}}{2(1.0\ \text{kg})(10\ \text{s}^{-1})}} \approx 2.3\times10^{-18}\ \text{m},
 $$
 
 many orders of magnitude smaller than even a proton's radius ($\sim10^{-15}\ \text{m}$): zero-point motion is utterly unobservable for a macroscopic object, consistent with everyday experience that a spring at rest simply looks at rest. By contrast, a carbon monoxide molecule vibrating with $\omega \approx 4.0\times10^{14}\ \text{rad/s}$ (a typical molecular vibrational frequency, corresponding to the reduced mass $\mu \approx 1.14\times10^{-26}\ \text{kg}$ and bond stiffness $k \approx 1860\ \text{N/m}$ of the C–O bond) has
 
 $$
-\Delta x = \sqrt{\frac{1.055\times10^{-34}}{2(1.14\times10^{-26})(4.0\times10^{14})}}\ \text{m} \approx 3.4\times10^{-12}\ \text{m} = 3.4\ \text{pm},
+\Delta x = \sqrt{\frac{1.055\times10^{-34}\ \text{J}\cdot\text{s}}{2(1.14\times10^{-26}\ \text{kg})(4.0\times10^{14}\ \text{s}^{-1})}} \approx 3.4\times10^{-12}\ \text{m} = 3.4\ \text{pm},
 $$
 
 a few percent of the bond's equilibrium length ($\approx 113\ \text{pm}$) — small, but not at all negligible, and precisely why zero-point vibrational motion has measurable consequences (a nonzero zero-point vibrational energy that must be included in molecular bond-energy calculations) for real molecules even though the analogous effect is entirely unobservable for a spring on a lab bench.

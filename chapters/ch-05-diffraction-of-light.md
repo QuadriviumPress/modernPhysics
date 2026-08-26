@@ -59,13 +59,13 @@ $$
 F = \frac{a^2}{L\lambda},
 $$
 
-where $a$ is the aperture size and $L$ the aperture-to-screen distance. Fraunhofer diffraction applies when $F \ll 1$; Fresnel diffraction when $F \gtrsim 1$. For a $0.05\ \text{mm}$ slit, $550\ \text{nm}$ light, and a screen $2\ \text{m}$ away, $F = (5\times10^{-5})^2/[(2)(5.5\times10^{-7})] = 2\times10^{-3}$, comfortably in the far field. Conveniently, a lens converts the far field into something you can put on a bench: any lens placed after the aperture brings the parallel bundles to a focus in its focal plane, so the Fraunhofer pattern appears there no matter how short the bench.
+where $a$ is the aperture size and $L$ the aperture-to-screen distance. Fraunhofer diffraction applies when $F \ll 1$; Fresnel diffraction when $F \gtrsim 1$. For a $0.05\ \text{mm}$ slit, $550\ \text{nm}$ light, and a screen $2\ \text{m}$ away, $F = (5\times10^{-5}\ \text{m})^2/[(2\ \text{m})(5.5\times10^{-7}\ \text{m})] = 2\times10^{-3}$, comfortably in the far field. Conveniently, a lens converts the far field into something you can put on a bench: any lens placed after the aperture brings the parallel bundles to a focus in its focal plane, so the Fraunhofer pattern appears there no matter how short the bench.
 
 ## Single-Slit Diffraction
 
 Consider a slit of width $a$ illuminated by a plane wave of wavelength $\lambda$, with a distant screen. The clever step, due to Fresnel, is not to attempt the whole sum at once but to ask a narrower question: *in which directions does everything cancel?*
 
-Divide the slit conceptually into two equal halves, each of width $a/2$, as in @fig:ch05-pairing(a). Pair up the topmost point of the upper half with the topmost point of the lower half; they are a distance $a/2$ apart. Pair the second point of the upper half with the second point of the lower half; also $a/2$ apart. Every point in the upper half has a partner in the lower half exactly $a/2$ below it. If the light heading off at angle $\theta$ from each pair is exactly out of phase — path difference $\lambda/2$ — then *every* pair cancels, and so does the whole slit:
+Divide the slit conceptually into two equal halves, each of width $a/2$, as in {numref}`Figure %s(a) <fig:ch05-pairing>`. Pair up the topmost point of the upper half with the topmost point of the lower half; they are a distance $a/2$ apart. Pair the second point of the upper half with the second point of the lower half; also $a/2$ apart. Every point in the upper half has a partner in the lower half exactly $a/2$ below it. If the light heading off at angle $\theta$ from each pair is exactly out of phase — path difference $\lambda/2$ — then *every* pair cancels, and so does the whole slit:
 
 $$
 \frac{a}{2}\sin\theta = \frac{\lambda}{2} \qquad\Longrightarrow\qquad a\sin\theta = \lambda .
@@ -78,7 +78,7 @@ $$
 Canceling the slit against itself. Dividing the slit into two strips pairs each point with a partner $a/2$ away; when those pairs are a half wavelength out of step, the whole slit cancels, giving $a\sin\theta = \lambda$. Dividing into four strips pairs points $a/4$ apart and gives $a\sin\theta = 2\lambda$, and so on. Original schematic generated with matplotlib; see `scripts/figures/`.
 ```
 
-Repeat the argument with four strips (@fig:ch05-pairing b): now partners are $a/4$ apart, each pair cancels when $(a/4)\sin\theta = \lambda/2$, and the whole slit cancels at $a\sin\theta = 2\lambda$. With $2m$ strips the condition is $a\sin\theta = m\lambda$. The complete set of **single-slit minima** is therefore
+Repeat the argument with four strips ({numref}`Figure %s(b) <fig:ch05-pairing>`): now partners are $a/4$ apart, each pair cancels when $(a/4)\sin\theta = \lambda/2$, and the whole slit cancels at $a\sin\theta = 2\lambda$. With $2m$ strips the condition is $a\sin\theta = m\lambda$. The complete set of **single-slit minima** is therefore
 
 $$
 a\sin\theta = m\lambda, \qquad m = \pm1, \pm2, \pm3, \ldots \qquad (\text{diffraction minima}).
@@ -100,7 +100,7 @@ $$
 
 exactly the $\lambda/a$ scaling that the dimensional argument of [Chapter 4](#ch-interference-of-light) demanded. Note that in $\sin\theta$ the central maximum runs from $-\lambda/a$ to $+\lambda/a$, while every other maximum spans only $\lambda/a$: the central peak is **twice as wide** as the rest, in addition to being far brighter.
 
-The most important qualitative consequence is that *narrowing the slit widens the pattern*, as @fig:ch05-scaling shows.
+The most important qualitative consequence is that *narrowing the slit widens the pattern*, as {numref}`Figure %s <fig:ch05-scaling>` shows.
 
 ```{figure} ../images/ch05-slit-width-scaling.svg
 :label: fig:ch05-scaling
@@ -111,7 +111,7 @@ Single-slit patterns for four slit widths. The central maximum spans $\sin\theta
 
 This is the opposite of the naive expectation that a narrower opening should produce a narrower beam, and it is a genuinely wave-like signature. It also gives the correct picture of the limiting case: when $a \le \lambda$, the condition $\sin\theta = \lambda/a \ge 1$ has no solution, there are no minima anywhere, and the slit radiates into the entire forward hemisphere — behaving, exactly as [Chapter 4](#ch-interference-of-light) assumed, like a single Huygens point source. That is the justification, after the fact, for treating the slits of the double-slit experiment as points.
 
-The inverse relationship between the aperture and its pattern is worth seeing rather than reading about, and @fig:ch05-diffraction-sim shows the two side by side: the aperture on the left, the far-field pattern it produces on the right, with the aperture's size and the wavelength both on sliders. Shrinking the opening spreads the pattern, and by exactly the ratio $\lambda/a$ derived above. Two further controls make the point sharper than a single slit can. Squashing the round aperture into an ellipse produces an elliptical pattern elongated along the *other* axis, so the reciprocity holds direction by direction and not just on average; and the non-circular shapes on offer produce patterns of matching symmetry — an anticipation of the circular-aperture section below, where a round hole is found to give rings rather than a row of bands, and of the crystal lattices at the end of the chapter, where a periodic array of holes gives a periodic array of spots.
+The inverse relationship between the aperture and its pattern is worth seeing rather than reading about, and {numref}`Figure %s <fig:ch05-diffraction-sim>` shows the two side by side: the aperture on the left, the far-field pattern it produces on the right, with the aperture's size and the wavelength both on sliders. Shrinking the opening spreads the pattern, and by exactly the ratio $\lambda/a$ derived above. Two further controls make the point sharper than a single slit can. Squashing the round aperture into an ellipse produces an elliptical pattern elongated along the *other* axis, so the reciprocity holds direction by direction and not just on average; and the non-circular shapes on offer produce patterns of matching symmetry — an anticipation of the circular-aperture section below, where a round hole is found to give rings rather than a row of bands, and of the crystal lattices at the end of the chapter, where a periodic array of holes gives a periodic array of spots.
 
 ```{phet} wave-interference
 :screen: 4
@@ -133,7 +133,7 @@ $$
 so $\theta_1 = 0.0145\ \text{rad} = 0.831°$ (the small-angle approximation is excellent here). On the screen,
 
 $$
-y_1 = L\tan\theta_1 \approx L\theta_1 = (2.00\ \text{m})(0.0145) = 0.0290\ \text{m},
+y_1 = L\tan\theta_1 \approx L\theta_1 = (2.00\ \text{m})(0.0145\ \text{rad}) = 0.0290\ \text{m},
 $$
 
 and the central maximum, running from $-y_1$ to $+y_1$, has full width
@@ -160,7 +160,7 @@ $$
 \beta \equiv \frac{2\pi}{\lambda}\,a\sin\theta .
 $$
 
-The chain of tiny phasors therefore turns through a total angle $\beta$ from beginning to end. A chain of equal segments turning at a uniform rate is an arc of a circle, and the resultant field is its **chord** (@fig:ch05-phasor-arc).
+The chain of tiny phasors therefore turns through a total angle $\beta$ from beginning to end. A chain of equal segments turning at a uniform rate is an arc of a circle, and the resultant field is its **chord** ({numref}`Figure %s <fig:ch05-phasor-arc>`).
 
 ```{figure} ../images/ch05-phasor-arc.svg
 :label: fig:ch05-phasor-arc
@@ -210,7 +210,7 @@ $$
 4.7\%, \qquad 1.6\%, \qquad 0.83\%
 $$
 
-of $I_0$, falling off roughly as $1/m^2$. This is why a single-slit pattern does not look like a row of comparable fringes at all: it looks like one dominant bright band, flanked by faint ripples that most observers overlook entirely. It is also why @fig:ch05-single-slit-intensity has to magnify them $20\times$ before they are visible on the page.
+of $I_0$, falling off roughly as $1/m^2$. This is why a single-slit pattern does not look like a row of comparable fringes at all: it looks like one dominant bright band, flanked by faint ripples that most observers overlook entirely. It is also why {numref}`Figure %s <fig:ch05-single-slit-intensity>` has to magnify them $20\times$ before they are visible on the page.
 
 ## Double-Slit Diffraction: Both Effects Together
 
@@ -220,7 +220,7 @@ $$
 I(\theta) = I_0\underbrace{\cos^2\!\left(\frac{\pi d\sin\theta}{\lambda}\right)}_{\text{interference, set by }d}\;\underbrace{\left[\frac{\sin(\beta/2)}{\beta/2}\right]^2}_{\text{diffraction envelope, set by }a}, \qquad \beta = \frac{2\pi}{\lambda}a\sin\theta .
 $$
 
-Since $d > a$, the $\cos^2$ factor oscillates rapidly and the $\mathrm{sinc}^2$ factor varies slowly: fine fringes under a broad envelope, as in @fig:ch05-double-slit.
+Since $d > a$, the $\cos^2$ factor oscillates rapidly and the $\mathrm{sinc}^2$ factor varies slowly: fine fringes under a broad envelope, as in {numref}`Figure %s <fig:ch05-double-slit>`.
 
 ```{figure} ../images/ch05-double-slit-envelope.svg
 :label: fig:ch05-double-slit
@@ -231,7 +231,7 @@ A real double slit with $d = 5a$. The rapid $\cos^2$ fringes are set by the slit
 
 ### Missing Orders
 
-The striking feature of @fig:ch05-double-slit is that some interference maxima are simply absent. An interference maximum at $d\sin\theta = m\lambda$ is wiped out if a diffraction minimum, $a\sin\theta = m'\lambda$, falls at the same angle. Dividing one condition by the other, this happens when
+The striking feature of {numref}`Figure %s <fig:ch05-double-slit>` is that some interference maxima are simply absent. An interference maximum at $d\sin\theta = m\lambda$ is wiped out if a diffraction minimum, $a\sin\theta = m'\lambda$, falls at the same angle. Dividing one condition by the other, this happens when
 
 $$
 \frac{m}{m'} = \frac{d}{a},
@@ -245,11 +245,11 @@ that is, whenever $m\,(a/d)$ is an integer. If $d/a$ is itself an integer, every
 
 A double slit has slit width $a = 0.0200\ \text{mm}$ and separation $d = 0.100\ \text{mm}$, illuminated at $\lambda = 633\ \text{nm}$. (a) Which orders are missing? (b) How many bright fringes lie inside the central diffraction maximum? (c) Find the angular width of the central envelope.
 
-**(a)** $d/a = 0.100/0.0200 = 5$, an integer, so orders $m = \pm5, \pm10, \pm15,\ldots$ are missing.
+**(a)** $d/a = (0.100\ \text{mm})/(0.0200\ \text{mm}) = 5$, an integer, so orders $m = \pm5, \pm10, \pm15,\ldots$ are missing.
 
 **(b)** The central envelope runs from $\sin\theta = -\lambda/a$ to $+\lambda/a$; the fringes at its edges are the missing $m = \pm5$. The visible orders inside are $m = -4,\ldots,+4$: **nine bright fringes**, of which the central one is brightest.
 
-**(c)** $\sin\theta_{\text{env}} = \lambda/a = 633\times10^{-9}/2.00\times10^{-5} = 0.0317$, so the envelope's first zeros are at $\theta = \pm1.81°$, giving a full angular width of $3.63°$. On a screen $2.00\ \text{m}$ away that is a central band $12.7\ \text{cm}$ wide, containing nine fringes spaced $\lambda L/d = 12.7\ \text{mm}$ apart — a comfortable laboratory pattern.
+**(c)** $\sin\theta_{\text{env}} = \lambda/a = (633\times10^{-9}\ \text{m})/(2.00\times10^{-5}\ \text{m}) = 0.0317$, so the envelope's first zeros are at $\theta = \pm1.81°$, giving a full angular width of $3.63°$. On a screen $2.00\ \text{m}$ away that is a central band $12.7\ \text{cm}$ wide, containing nine fringes spaced $\lambda L/d = 12.7\ \text{mm}$ apart — a comfortable laboratory pattern.
 
 ## Diffraction Gratings
 
@@ -287,7 +287,7 @@ $$
 \boxed{\;R \equiv \frac{\lambda}{\Delta\lambda} = mN\;}
 $$
 
-@fig:ch05-resolving-power shows the criterion in action. The resolving power depends only on the order and on the number of lines actually illuminated. Two consequences are worth noting. First, resolving power improves with the *illuminated* width of the grating, not with the total number of lines ruled on it; underfilling a grating with a narrow beam throws resolution away. Second, working in second or third order doubles or triples the resolution, at the cost of dimmer lines and increased risk of overlapping orders — a trade every spectroscopist makes.
+{numref}`Figure %s <fig:ch05-resolving-power>` shows the criterion in action. The resolving power depends only on the order and on the number of lines actually illuminated. Two consequences are worth noting. First, resolving power improves with the *illuminated* width of the grating, not with the total number of lines ruled on it; underfilling a grating with a narrow beam throws resolution away. Second, working in second or third order doubles or triples the resolution, at the cost of dimmer lines and increased risk of overlapping orders — a trade every spectroscopist makes.
 
 ```{figure} ../images/ch05-grating-resolving-power.svg
 :label: fig:ch05-resolving-power
@@ -318,9 +318,9 @@ On a grating with $600$ lines per millimeter this needs a beam only $1.64\ \text
 
 A transmission grating has $5000$ lines per centimeter. (a) Find the line spacing. (b) Find the angle of the first-order maximum for $\lambda = 500\ \text{nm}$. (c) Find the highest observable order. (d) Find the angular separation between the $486\ \text{nm}$ and $656\ \text{nm}$ hydrogen lines in first order.
 
-**(a)** $d = 1\ \text{cm}/5000 = 2.00\times10^{-6}\ \text{m} = 2.00\ \mu\text{m}$.
+**(a)** $d = (1\ \text{cm})/5000 = 2.00\times10^{-6}\ \text{m} = 2.00\ \mu\text{m}$.
 
-**(b)** $\sin\theta_1 = \lambda/d = 500\times10^{-9}/2.00\times10^{-6} = 0.250$, so $\theta_1 = 14.5°$.
+**(b)** $\sin\theta_1 = \lambda/d = (500\times10^{-9}\ \text{m})/(2.00\times10^{-6}\ \text{m}) = 0.250$, so $\theta_1 = 14.5°$.
 
 **(c)** $m_{\max} = \lfloor d/\lambda\rfloor = \lfloor 4.00\rfloor = 4$, but $m = 4$ gives $\sin\theta = 1.00$ exactly — grazing emergence, unobservable in practice. The highest usable order is $m = 3$, at $\theta = 48.6°$.
 
@@ -346,7 +346,7 @@ $$
 \theta_{\min} = 1.22\,\frac{\lambda}{D} \qquad (\textbf{Rayleigh criterion}).
 $$
 
-@fig:ch05-rayleigh shows what this looks like. At the criterion there is a shallow dip between the two peaks — about $26\%$ down from the maxima — which is roughly the smallest contrast a human observer can pick out reliably. The criterion is a convention, not a law of nature: with a high signal-to-noise ratio and a known point-spread function, computational methods routinely do better, and modern super-resolution fluorescence microscopy beats it by orders of magnitude using tricks that exploit the *non*-simultaneity of individual emitters. But as an estimate of what an instrument can do, it is excellent.
+{numref}`Figure %s <fig:ch05-rayleigh>` shows what this looks like. At the criterion there is a shallow dip between the two peaks — about $26\%$ down from the maxima — which is roughly the smallest contrast a human observer can pick out reliably. The criterion is a convention, not a law of nature: with a high signal-to-noise ratio and a known point-spread function, computational methods routinely do better, and modern super-resolution fluorescence microscopy beats it by orders of magnitude using tricks that exploit the *non*-simultaneity of individual emitters. But as an estimate of what an instrument can do, it is excellent.
 
 ```{figure} ../images/ch05-airy-rayleigh.svg
 :label: fig:ch05-rayleigh
@@ -372,7 +372,7 @@ $$
 **(b)**
 
 $$
-s = \theta_{\min}\,d = (2.80\times10^{-7})(3.84\times10^8\ \text{m}) = 107\ \text{m}.
+s = \theta_{\min}\,d = (2.80\times10^{-7}\ \text{rad})(3.84\times10^8\ \text{m}) = 107\ \text{m}.
 $$
 
 Hubble could not photograph the Apollo landing sites; the largest hardware left there is a few meters across. The limitation is not the telescope's quality but its aperture, and no amount of image processing changes the fact that the information never entered the instrument.
@@ -382,10 +382,10 @@ Hubble could not photograph the Apollo landing sites; the largest hardware left 
 **(a)** The pupil of the eye is about $D = 4.0\ \text{mm}$ in ordinary lighting. Its diffraction limit at $\lambda = 550\ \text{nm}$ is
 
 $$
-\theta_{\min} = 1.22\,\frac{550\times10^{-9}}{4.0\times10^{-3}} = 1.68\times10^{-4}\ \text{rad} \approx 0.6\ \text{arcmin} .
+\theta_{\min} = 1.22\,\frac{550\times10^{-9}\ \text{m}}{4.0\times10^{-3}\ \text{m}} = 1.68\times10^{-4}\ \text{rad} \approx 0.6\ \text{arcmin} .
 $$
 
-At a reading distance of $25\ \text{cm}$ this corresponds to $s = (1.68\times10^{-4})(0.25\ \text{m}) = 42\ \mu\text{m}$ — about half the width of a human hair, and in reasonable agreement with measured visual acuity of about $1$ arcmin. The eye is, remarkably, working close to its diffraction limit.
+At a reading distance of $25\ \text{cm}$ this corresponds to $s = (1.68\times10^{-4}\ \text{rad})(0.25\ \text{m}) = 42\ \mu\text{m}$ — about half the width of a human hair, and in reasonable agreement with measured visual acuity of about $1$ arcmin. The eye is, remarkably, working close to its diffraction limit.
 
 **(b)** Now apply the same formula to a $2.4\ \text{m}$ telescope on the ground: $\theta_{\min} = 0.058$ arcsec, the same as Hubble. Yet ground-based images at visible wavelengths are typically blurred to about $1$ arcsec, a factor of $17$ worse. The culprit is not diffraction but **atmospheric seeing**: turbulent cells of air, of order $10\ \text{cm}$ across, refract the incoming wavefront by slightly different amounts and scramble it. The effective aperture is set by the turbulence, not the mirror. Two responses are possible — put the telescope above the atmosphere, which is why Hubble exists, or measure the distortion hundreds of times a second and cancel it with a deformable mirror, which is *adaptive optics*, and which now lets large ground telescopes reach their diffraction limits in the infrared.
 
@@ -397,7 +397,7 @@ Gratings work because their line spacing is comparable to the wavelength of the 
 
 Max von Laue proposed the experiment in 1912 and his collaborators Friedrich and Knipping performed it, obtaining a pattern of discrete spots from a copper sulfate crystal that established two things at once: that X-rays are waves, and that crystals are periodic arrays of atoms. Both had been conjectures until that afternoon.
 
-W. H. Bragg and his son W. L. Bragg supplied the simple picture that made the technique usable, shown in @fig:ch05-bragg. Regard the crystal as a stack of parallel atomic planes separated by $d$, and consider X-rays reflecting specularly from successive planes. By long-standing crystallographic convention, the angle $\theta$ is measured *from the plane itself*, not from the normal — a trap for anyone importing habits from optics.
+W. H. Bragg and his son W. L. Bragg supplied the simple picture that made the technique usable, shown in {numref}`Figure %s <fig:ch05-bragg>`. Regard the crystal as a stack of parallel atomic planes separated by $d$, and consider X-rays reflecting specularly from successive planes. By long-standing crystallographic convention, the angle $\theta$ is measured *from the plane itself*, not from the normal — a trap for anyone importing habits from optics.
 
 ```{figure} ../images/ch05-bragg-law.svg
 :label: fig:ch05-bragg
@@ -417,7 +417,7 @@ The consequence is that a crystal reflects a given X-ray wavelength strongly *on
 This is **X-ray crystallography**, and its record is hard to overstate: the structures of table salt and diamond (the Braggs, 1913), of penicillin and vitamin B$_{12}$ (Dorothy Hodgkin), of DNA — the double helix inferred by Watson and Crick from the diffraction photographs taken by Rosalind Franklin and Raymond Gosling — and of hundreds of thousands of proteins since. Nearly everything we know about where atoms sit in condensed matter came through Bragg's law.
 
 The lattice on the other side of Bragg's law is the subject of
-@fig:ch05-crystal-sim. Changing the unit cell changes the set of atomic planes,
+{numref}`Figure %s <fig:ch05-crystal-sim>`. Changing the unit cell changes the set of atomic planes,
 their spacings $d$, and therefore the angles at which reflections appear —
 including the aperiodic case, where the diffraction pattern is as sharp as a
 crystal's but carries a symmetry no crystal can have.
@@ -438,13 +438,13 @@ X-rays of wavelength $\lambda = 0.154\ \text{nm}$ (the copper $K_\alpha$ line, t
 First order, $n = 1$:
 
 $$
-d = \frac{n\lambda}{2\sin\theta} = \frac{0.154\ \text{nm}}{2\sin 22.5°} = \frac{0.154}{2(0.3827)} = 0.201\ \text{nm},
+d = \frac{n\lambda}{2\sin\theta} = \frac{0.154\ \text{nm}}{2\sin 22.5°} = \frac{0.154\ \text{nm}}{2(0.3827)} = 0.201\ \text{nm},
 $$
 
 a typical interatomic spacing. For $n = 2$,
 
 $$
-\sin\theta_2 = \frac{2\lambda}{2d} = \frac{0.154}{0.201} = 0.766 \quad\Longrightarrow\quad \theta_2 = 50.0°.
+\sin\theta_2 = \frac{2\lambda}{2d} = \frac{0.154\ \text{nm}}{0.201\ \text{nm}} = 0.766 \quad\Longrightarrow\quad \theta_2 = 50.0°.
 $$
 
 Note that a third order would require $\sin\theta_3 = 1.149 > 1$: with this wavelength and this spacing, only two orders exist. Requiring $n\lambda \le 2d$ also shows why X-rays are essential — with visible light, $\lambda \gg 2d$ and *no* order exists at all, which is exactly why crystals look like ordinary transparent solids rather than gratings.

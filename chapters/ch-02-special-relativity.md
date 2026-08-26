@@ -34,7 +34,7 @@ To an observer standing on the ground watching the car go by, the situation is d
 
 This is not a measurement error or a signal-delay artifact to be corrected for — it is a genuine disagreement about which events are simultaneous, forced on us by the requirement that both observers measure the same speed $c$ for the same light pulses. **Simultaneity is relative to the observer's frame of motion**, not an absolute, frame-independent relation between events. This single fact is the seed from which time dilation and length contraction both grow.
 
-The basic geometry is shown in @fig:ch02-simultaneity. The two flashes are simultaneous in the train frame, but the moving observer travels toward the front flash and away from the rear flash.
+The basic geometry is shown in {numref}`Figure %s <fig:ch02-simultaneity>`. The two flashes are simultaneous in the train frame, but the moving observer travels toward the front flash and away from the rear flash.
 
 ```{figure} ../images/ch02-relativity-of-simultaneity.svg
 :label: fig:ch02-simultaneity
@@ -87,7 +87,7 @@ $$
 
 is greater than or equal to $1$ for any $v < c$, and grows without bound as $v \to c$. This is **time dilation**: a clock moving at speed $v$ relative to an observer is measured by that observer to run slow, ticking out $\Delta t = \gamma \Delta t_0$ of the observer's own time for every $\Delta t_0$ of proper time it displays. The effect is symmetric — each of two observers in relative motion sees the *other's* clock as running slow, since each is equally entitled to regard themselves as at rest. Although derived here for a light clock, time dilation applies to time itself, and hence to every physical process — mechanical clocks, radioactive decay rates, biological aging — since two different physical clocks, built differently, must stay in agreement in every frame or their disagreement could be used to detect absolute motion, contradicting postulate 1.
 
-The two clocks of that argument run side by side in @fig:ch02-light-clock-sim: one at rest in the laboratory, one gliding past at a speed you set, with the moving pulse's zigzag path drawn in. Nothing in the simulation makes the moving clock tick slowly by fiat. Both pulses travel at $c$; the moving one simply has a longer path to cover between reflections, and the two tick counts drift apart by exactly the factor $\gamma$ computed above.
+The two clocks of that argument run side by side in {numref}`Figure %s <fig:ch02-light-clock-sim>`: one at rest in the laboratory, one gliding past at a speed you set, with the moving pulse's zigzag path drawn in. Nothing in the simulation makes the moving clock tick slowly by fiat. Both pulses travel at $c$; the moving one simply has a longer path to cover between reflections, and the two tick counts drift apart by exactly the factor $\gamma$ computed above.
 
 ```{openphysics} SpecialRelativity
 :screen: 1
@@ -163,18 +163,18 @@ Two events occur in frame $S$: event 1 at $(x_1, t_1) = (0, 0)$, and event 2 at 
 First, $\gamma = 1/\sqrt{1-0.36} = 1/\sqrt{0.64} = 1.25$. Event 1 is at the shared origin, so $(x_1', t_1') = (0,0)$ trivially. For event 2,
 
 $$
-x_2' = \gamma(x_2 - vt_2) = 1.25\left[600\ \text{m} - (0.60)(3.00\times10^8\ \text{m/s})(1.00\times10^{-6}\ \text{s})\right] = 1.25(600 - 180)\ \text{m} = 525\ \text{m},
+x_2' = \gamma(x_2 - vt_2) = 1.25\left[600\ \text{m} - (0.60)(3.00\times10^8\ \text{m/s})(1.00\times10^{-6}\ \text{s})\right] = 1.25(600\ \text{m} - 180\ \text{m}) = 525\ \text{m},
 $$
 
 $$
-t_2' = \gamma\left(t_2 - \frac{vx_2}{c^2}\right) = 1.25\left[1.00\times10^{-6}\ \text{s} - \frac{(0.60)(600\ \text{m})}{3.00\times10^8\ \text{m/s}}\right] = 1.25(1.00\times10^{-6} - 1.20\times10^{-6})\ \text{s} = -0.25\ \mu\text{s}.
+t_2' = \gamma\left(t_2 - \frac{vx_2}{c^2}\right) = 1.25\left[1.00\times10^{-6}\ \text{s} - \frac{(0.60)(600\ \text{m})}{3.00\times10^8\ \text{m/s}}\right] = 1.25(1.00\times10^{-6}\ \text{s} - 1.20\times10^{-6}\ \text{s}) = -0.25\ \mu\text{s}.
 $$
 
-In $S$, the interval is $(\Delta s)^2 = c^2(\Delta t)^2 - (\Delta x)^2 = (300\ \text{m})^2 - (600\ \text{m})^2 = -270{,}000\ \text{m}^2$ (using $c\,\Delta t = 300\ \text{m}$). In $S'$, $c\,\Delta t' = (3.00\times10^8)(-0.25\times10^{-6}) = -75\ \text{m}$, so $(\Delta s')^2 = (-75\ \text{m})^2 - (525\ \text{m})^2 = 5625 - 275{,}625 = -270{,}000\ \text{m}^2$ — the same value, confirming invariance. Note also that $t_2' < 0$: event 2 occurs *before* event 1 in $S'$, even though event 2 occurs after event 1 in $S$. This is only possible because, as the next section shows, the interval between these two events is spacelike.
+In $S$, the interval is $(\Delta s)^2 = c^2(\Delta t)^2 - (\Delta x)^2 = (300\ \text{m})^2 - (600\ \text{m})^2 = -270{,}000\ \text{m}^2$ (using $c\,\Delta t = 300\ \text{m}$). In $S'$, $c\,\Delta t' = (3.00\times10^8\ \text{m/s})(-0.25\times10^{-6}\ \text{s}) = -75\ \text{m}$, so $(\Delta s')^2 = (-75\ \text{m})^2 - (525\ \text{m})^2 = 5625\ \text{m}^2 - 275{,}625\ \text{m}^2 = -270{,}000\ \text{m}^2$ — the same value, confirming invariance. Note also that $t_2' < 0$: event 2 occurs *before* event 1 in $S'$, even though event 2 occurs after event 1 in $S$. This is only possible because, as the next section shows, the interval between these two events is spacelike.
 
 ## Light Cones and Causality
 
-Einstein's 1905 paper introduced the two postulates that resolved the experimental tension; a later portrait of Einstein is included in @fig:ch02-einstein-historical.
+Einstein's 1905 paper introduced the two postulates that resolved the experimental tension; a later portrait of Einstein is included in {numref}`Figure %s <fig:ch02-einstein-historical>`.
 
 ```{figure} ../images/historical-einstein-1921.jpg
 :label: fig:ch02-einstein-historical
@@ -233,7 +233,7 @@ dropping the term of order $v^2/c$, which is negligible for the modest flow spee
 
 The classical Doppler effect — the pitch of an ambulance siren rising as it approaches and falling as it recedes — arises from the finite travel time of successive wave crests to a stationary observer. Light shows an analogous effect, but with a relativistic correction on top of it, because the *source's clock itself* runs slow according to the observer, an effect with no classical counterpart at all.
 
-It is worth being precise about what the classical effect does and does not depend on, because the difference is the whole point. @fig:ch02-classical-doppler-sim is the acoustic case, with the source and the observer independently movable. Move the source toward a stationary listener at speed $u$ and the received frequency is $f_0/(1 - u/v_s)$; leave the source alone and move the *listener* toward it at the same $u$ and the answer is $f_0(1 + u/v_s)$ instead. The two disagree at second order in $u/v_s$, and they must: the air is a medium, the medium picks out a frame, and "which one is really moving" is a question sound can answer. Light has no such medium, so the formula derived below can depend on the relative velocity and on nothing else — and that constraint alone is nearly enough to fix it.
+It is worth being precise about what the classical effect does and does not depend on, because the difference is the whole point. {numref}`Figure %s <fig:ch02-classical-doppler-sim>` is the acoustic case, with the source and the observer independently movable. Move the source toward a stationary listener at speed $u$ and the received frequency is $f_0/(1 - u/v_s)$; leave the source alone and move the *listener* toward it at the same $u$ and the answer is $f_0(1 + u/v_s)$ instead. The two disagree at second order in $u/v_s$, and they must: the air is a medium, the medium picks out a frame, and "which one is really moving" is a question sound can answer. Light has no such medium, so the formula derived below can depend on the relative velocity and on nothing else — and that constraint alone is nearly enough to fix it.
 
 ```{openphysics} DopplerEffect
 :label: fig:ch02-classical-doppler-sim
@@ -272,7 +272,7 @@ The relativistic Doppler effect is not a laboratory curiosity: the cosmological 
 
 A distant galaxy's hydrogen emission line, with rest-frame (proper) wavelength $\lambda_0 = 656.3\ \text{nm}$, is observed at $\lambda_{\text{obs}} = 682.0\ \text{nm}$. Find the galaxy's recession speed.
 
-Since $f = c/\lambda$, the frequency ratio is $f_{\text{obs}}/f_0 = \lambda_0/\lambda_{\text{obs}} = 656.3/682.0 = 0.9623$. Setting this equal to $\sqrt{(1-v/c)/(1+v/c)}$ and squaring gives $0.9260 = (1-v/c)/(1+v/c)$. Solving for $v/c$:
+Since $f = c/\lambda$, the frequency ratio is $f_{\text{obs}}/f_0 = \lambda_0/\lambda_{\text{obs}} = (656.3\ \text{nm})/(682.0\ \text{nm}) = 0.9623$. Setting this equal to $\sqrt{(1-v/c)/(1+v/c)}$ and squaring gives $0.9260 = (1-v/c)/(1+v/c)$. Solving for $v/c$:
 
 $$
 0.9260(1+v/c) = 1 - v/c \implies v/c(1 + 0.9260) = 1 - 0.9260 \implies v/c = \frac{0.0740}{1.9260} = 0.0384,
@@ -288,7 +288,7 @@ In frame $S'$, that same moving observer's own $x'$ and $ct'$ axes are *not* per
 
 The light cone of the previous section appears naturally on such a diagram: the two $45°$ lines through any event $x$ divide the diagram into the future (above both lines), the past (below both lines), and two "elsewhere" regions (spacelike-separated from $x$), to either side. As a frame's axes tilt with increasing relative speed $v$, they close in like a pair of scissors toward — but, for any $v<c$, never quite reaching — the $45°$ light-cone lines themselves. This is the geometrical statement that no continuous process of acceleration can bring a massive object's worldline from a slope less steep than $45°$ to one that equals or exceeds it: velocities do not simply add in relativity, and the speed $c$ is a genuine asymptote, never attained.
 
-The causal regions and their light-speed boundaries are shown in @fig:ch02-light-cone.
+The causal regions and their light-speed boundaries are shown in {numref}`Figure %s <fig:ch02-light-cone>`.
 
 ```{figure} ../images/ch02-light-cone.svg
 :label: fig:ch02-light-cone
@@ -297,7 +297,7 @@ The causal regions and their light-speed boundaries are shown in @fig:ch02-light
 The light cone divides events into the causal future, causal past, and spacelike-separated “elsewhere.” Its $45°$ boundaries are the worldlines of light in units where the horizontal coordinate is $x$ and the vertical coordinate is $ct$. Original schematic by the author.
 ```
 
-The simulation in @fig:ch02-sr-sim draws these diagrams live. Sliding the
+The simulation in {numref}`Figure %s <fig:ch02-sr-sim>` draws these diagrams live. Sliding the
 relative speed tilts the $x'$ and $ct'$ axes toward the light cone exactly as
 described above, and dragging an event shows how its coordinates — and, on the
 other screens, the reading of a moving light clock and the ageing of the

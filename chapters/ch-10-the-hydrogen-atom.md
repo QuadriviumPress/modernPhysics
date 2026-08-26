@@ -11,10 +11,14 @@ numbering:
 By the end of this chapter, you should be able to:
 
 - State the radial equation for the hydrogen atom and the resulting energy quantization, and compare it to the Bohr model's prediction.
-- Describe the hydrogen wave functions qualitatively, including radial probability distributions and angular nodal structure.
+- Explain, from the normalizability of the radial equation's solutions, why the principal quantum number $n$ is discrete and why $\ell$ is restricted to $0,\ldots,n-1$.
+- Write down the explicit hydrogen radial wave functions $R_{10}$, $R_{20}$, $R_{21}$, describe the resulting radial probability distributions, and use the effective (centrifugal) potential to explain why low-$\ell$ states penetrate closer to the nucleus.
+- Extend the hydrogen solution to hydrogenic ions (e.g., $\text{He}^+$, $\text{Li}^{2+}$) and compute the $Z^2$ scaling of energy and $1/Z$ scaling of orbital size.
+- Read an energy-level diagram for hydrogen and compute the wavelengths of lines in the Lyman, Balmer, and Paschen series.
 - Enumerate the allowed quantum states for a given $n$ and explain the origin of degeneracy in hydrogen.
-- Explain electron spin and the Stern–Gerlach experiment that revealed it.
+- Explain electron spin and the Stern–Gerlach experiment that revealed it, and compute the force and deflection produced by a Stern–Gerlach magnet.
 - Combine orbital and spin angular momentum via the orbital and spin magnetic quantum numbers, and compute orbital and spin magnetic moments.
+- Compute the frequency and wavelength shift produced by the (normal) Zeeman effect, and estimate the order of magnitude of fine-structure splitting in terms of the fine-structure constant $\alpha$.
 - Apply selection rules to determine which transitions between hydrogen energy levels are allowed.
 
 ## Introduction
@@ -37,6 +41,8 @@ $$
 
 This agreement is a triumph for the Schrödinger equation — it reproduces a result that matched atomic spectroscopy to remarkable precision — but the derivation and interpretation are entirely different from Bohr's. Bohr postulated that the electron moves on definite circular orbits, with angular momentum quantized as $L = n\hbar$ by assumption. The Schrödinger treatment makes no such assumption about orbits at all; instead, $n$ emerges purely as an index counting the normalizable solutions of the radial equation, the electron has no well-defined trajectory, and — as shown below — the ground state ($n=1$) actually has **zero** orbital angular momentum, in direct contradiction to Bohr's $L=n\hbar$. The numerical agreement in $E_n$ is, in this sense, a coincidence specific to the particular form of the $1/r$ Coulomb potential, not a sign that the Bohr picture was substantially correct.
 
+The mechanism behind the discreteness is worth making explicit, since the same pattern recurs throughout quantum mechanics. Solving the radial equation for a trial (negative) energy $E$ produces a function that falls off as $e^{-\kappa r}$ at large $r$, with $\kappa = \sqrt{-2m_eE}/\hbar$, multiplied by an infinite series in powers of $r$; for almost any choice of $E$, that series itself grows fast enough that the full product still diverges as $r\to\infty$, exactly the unnormalizable blow-up that ruled out most trial energies in the finite square well of [Chapter 8](#ch-the-schrodinger-equation). Demanding a normalizable wave function forces the series to *terminate* after a finite number of terms — collapsing it from an infinite series into a finite polynomial — and this termination happens only when $1/\kappa a_0$ lands exactly on a positive integer, which is precisely the principal quantum number $n$. The same termination condition also caps the orbital quantum number: the polynomial's degree fixes a nonnegative integer $n_r = 0, 1, 2,\ldots$ (the number of interior radial nodes, discussed further below) related to $n$ and $\ell$ by $n = n_r + \ell + 1$, so that $n_r\ge0$ immediately forces $\ell \le n-1$ — and, for the ground state $n=1$, forces $n_r=\ell=0$ exactly, which is the direct algebraic reason the ground state must have zero orbital angular momentum, not merely an empirical fact to be taken on faith.
+
 The distance between Bohr's picture and Schrödinger's is easiest to see by
 running them side by side, as in {numref}`Figure %s <fig:ch10-hydrogen-models-sim>`. Both reproduce
 the same $E_n$ and therefore the same emission lines, but only one of them
@@ -49,6 +55,38 @@ Successive models of the hydrogen atom — Bohr, de Broglie, Schrödinger, and
 their predecessors — each firing photons at an atom and producing a spectrum.
 The models that agree on $E_n$ disagree entirely about where the electron is.
 ```
+
+### Historical Context: Bohr's 1913 Model and Its Limits
+
+It is worth pausing on why a model built on postulates that turned out to be simply wrong — definite orbits, angular momentum quantized as $L=n\hbar$ — nonetheless earned Niels Bohr the 1922 Nobel Prize and remains the picture most people first encounter. In 1913, fourteen years before Schrödinger's equation existed, Bohr combined classical circular-orbit mechanics with a single ad hoc quantization rule and reproduced the empirical Rydberg formula for hydrogen's spectral lines essentially exactly, including its dependence on nuclear charge for hydrogenic ions (below) — a stunning success for a model with no derivation behind its central assumption. The de Broglie standing-wave argument of [Chapter 7](#ch-wave-properties-of-particles) later supplied a retroactive justification for $L=n\hbar$, which is part of why the Bohr model survived as long as it did before being fully superseded.
+
+The model's failures, however, were just as instructive as its success. Extending Bohr's orbit-quantization scheme to **helium** — even with the refinements (elliptical orbits, relativistic orbit precession) added by Arnold Sommerfeld through the 1910s — never produced a correct ionization energy or a stable ground-state configuration for a two-electron atom; the semiclassical machinery simply had no consistent way to handle two mutually interacting orbiting electrons. The model also could not predict *which* transitions between levels actually occur (the selection rules developed later in this chapter), could not account for the relative brightness of spectral lines, and — as already emphasized above — gets the ground state's angular momentum flatly wrong: Bohr's $n=1$ orbit carries $L=\hbar$, while the true ground state has $L=0$ and no orbit, well-defined trajectory, or definite radius at all, only the probability cloud shown in {numref}`Figure %s <fig:ch10-hydrogen-models-sim>`. These failures, especially the inability to extend the model consistently beyond hydrogen, were a central motivation for the fully quantum-mechanical treatment developed in Chapters [8](#ch-the-schrodinger-equation)–[9](#ch-quantum-mechanics-in-three-dimensions) and specialized to hydrogen in this chapter — a treatment that, unlike Bohr's, generalizes cleanly to helium and every other atom in [Chapter 11](#ch-many-electron-atoms).
+
+## Hydrogenic Ions: Scaling with Nuclear Charge
+
+Everything derived above specializes the general central-potential machinery of [Chapter 9](#ch-quantum-mechanics-in-three-dimensions) to a nuclear charge of exactly $+e$. The same radial equation applies unchanged, with only $e^2 \to Ze^2$ in the Coulomb potential, to any **hydrogenic (hydrogen-like) ion**: a single electron bound to a nucleus of charge $+Ze$, such as singly ionized helium $\text{He}^+$ ($Z=2$) or doubly ionized lithium $\text{Li}^{2+}$ ($Z=3$). Repeating the normalizability argument above with the rescaled potential gives
+
+$$
+E_n(Z) = -Z^2\,\frac{13.6\ \text{eV}}{n^2}, \qquad a_n(Z) = \frac{n^2}{Z}\,a_0,
+$$
+
+where $a_n(Z)$ is the length scale (generalizing the Bohr radius) over which the radial probability distribution of the $n$-th shell peaks. Both dependences make direct physical sense: a larger nuclear charge attracts the electron more strongly, pulling its orbit *inward* (radius shrinks as $1/Z$) while binding it *more tightly* — and because the potential energy itself scales as $Z$ while the resulting spatial compression compounds that scaling once more, the binding energy grows as $Z^2$, not simply $Z$. This $Z^2$ scaling reappears with direct experimental consequence in [Chapter 11](#ch-many-electron-atoms), where it underlies Moseley's law for the energies of characteristic X-ray transitions in multi-electron atoms.
+
+### Worked Example: The Ionization Energy and Orbital Size of He⁺
+
+Find the ground-state ionization energy and the most probable electron–nucleus separation for $\text{He}^+$ ($Z=2$), a one-electron ion, and compare both to hydrogen's.
+
+$$
+E_1(\text{He}^+) = -Z^2(13.6\ \text{eV}) = -(2)^2(13.6\ \text{eV}) = -54.4\ \text{eV},
+$$
+
+so the ionization energy — the energy required to remove the electron entirely — is $54.4\ \text{eV}$, exactly four times hydrogen's $13.6\ \text{eV}$, matching the measured ionization energy of $\text{He}^+$. The orbital size scales the other way,
+
+$$
+a_1(\text{He}^+) = \frac{a_0}{Z} = \frac{0.0529\ \text{nm}}{2} = 0.0265\ \text{nm},
+$$
+
+half of hydrogen's Bohr radius: the electron in $\text{He}^+$ is bound four times more tightly and orbits, on average, twice as close to the nucleus as the electron in neutral hydrogen — both consequences of the same doubled nuclear charge, entering the energy quadratically and the size linearly (inversely).
 
 ## Quantum Numbers and Degeneracy in Hydrogen
 
@@ -70,7 +108,73 @@ $$
 
 is the **Bohr radius** — reappearing here not as the radius of a Bohr orbit but as the natural length scale over which the ground-state probability density falls off. The **radial probability distribution**, $P(r) = r^2|R_{n\ell}(r)|^2$ (the probability per unit $r$ of finding the electron at distance $r$ from the nucleus, obtained by integrating $|\psi|^2$ over all angles at fixed $r$), peaks at $r = a_0$ for the ground state — the most probable electron-nucleus distance in hydrogen's ground state is exactly the Bohr radius, even though the electron has zero orbital angular momentum and hence, unlike in the Bohr picture, is not "orbiting" in any classical sense.
 
+Written out in full, with proper normalization, the lowest few radial wave functions are
+
+$$
+R_{10}(r) = \frac{2}{a_0^{3/2}}\,e^{-r/a_0}, \qquad
+R_{20}(r) = \frac{1}{2\sqrt2\,a_0^{3/2}}\left(2-\frac{r}{a_0}\right)e^{-r/2a_0}, \qquad
+R_{21}(r) = \frac{1}{2\sqrt6\,a_0^{3/2}}\,\frac{r}{a_0}\,e^{-r/2a_0},
+$$
+
+each verified against the standard hydrogen wave-function table (e.g. OpenStax Vol. 3, §8.2). The pattern generalizes: every $R_{n\ell}(r)$ is an exponential $e^{-r/na_0}$ (decay rate set only by $n$) multiplied by a polynomial in $r$ of degree $n-1$, and the number of interior zeros of that polynomial — the **radial nodes** counted below — is exactly $n_r = n-\ell-1$, the same integer introduced above via $n=n_r+\ell+1$. $R_{10}$ ($n_r=0$) is a bare exponential with no node; $R_{20}$ ($n_r=1$) has one node, at $r=2a_0$, exactly where its parenthetical factor vanishes; $R_{21}$ ($n_r=0$, since its higher $\ell$ "uses up" the node budget at fixed $n=2$) is a bare power of $r$ times an exponential, with no node at all despite sharing $n=2$ with $R_{20}$.
+
+{numref}`Figure %s <fig:ch10-radial-probability>` plots the resulting $P(r)=r^2|R_{n\ell}(r)|^2$ for six low-lying states, making the node-counting rule directly visible rather than merely asserted: each panel's dotted vertical lines mark its nodes, and the count in every panel matches $n-\ell-1$ exactly — zero for $1s$, $2p$, and $3d$; one for $2s$ and $3p$; two for $3s$.
+
+```{figure} ../images/ch10-radial-probability.svg
+:label: fig:ch10-radial-probability
+:alt: Six panels of radial probability distribution P(r) versus r over the Bohr radius, for the 1s, 2s, 2p, 3s, 3p, and 3d states of hydrogen, with dotted lines marking the radial nodes.
+
+Radial probability distributions $P(r)=r^2|R_{n\ell}(r)|^2$ for the six lowest distinct $(n,\ell)$ combinations. Each state's node count matches $n-\ell-1$ exactly, and every curve for a given $n$ extends, on average, farther from the origin as $n$ increases — the size of the atom really does grow with $n$, just not along a sharp Bohr orbit. Computed directly from the closed-form $R_{n\ell}(r)$ formulas; see `scripts/figures/`.
+```
+
 More generally, $R_{n\ell}(r)$ has $n-\ell-1$ radial nodes (points, other than $r=0$ and $r=\infty$, where the probability density vanishes), and the angular functions $Y_{\ell m_\ell}(\theta,\phi)$ have angular nodes (nodal planes or cones) whose count and shape depend on $\ell$ and $m_\ell$ — giving rise to the familiar $s$ (spherical), $p$ (dumbbell-shaped, with a single nodal plane through the origin), and $d$-orbital shapes used throughout chemistry ([Chapter 12](#ch-molecular-structure)) to describe electron distributions in atoms and molecules.
+
+### The Effective Potential and the Centrifugal Barrier
+
+[Chapter 9](#ch-quantum-mechanics-in-three-dimensions) showed that the radial equation for any central potential can be recast as an effective one-dimensional Schrödinger equation for $u(r)=rR(r)$, governed by an **effective potential**
+
+$$
+V_{\text{eff}}(r) = V(r) + \frac{\hbar^2\,\ell(\ell+1)}{2m_er^2} = -\frac{e^2}{4\pi\epsilon_0 r} + \frac{\hbar^2\,\ell(\ell+1)}{2m_er^2},
+$$
+
+the attractive Coulomb term plus the repulsive **centrifugal barrier** introduced there. For $\ell=0$ ($s$-states), $V_{\text{eff}}(r)=V(r)$: nothing but the bare attractive well, all the way in to $r=0$, which is exactly why only $\ell=0$ states have nonzero probability density at the nucleus — the $1s$, $2s$, and $3s$ curves in {numref}`Figure %s <fig:ch10-radial-probability>` all rise from zero right at the origin with no barrier in the way. For $\ell>0$, the centrifugal term ($\propto 1/r^2$) dominates the attractive term ($\propto 1/r$) at small $r$ and produces a genuine barrier that pushes the wave function away from the nucleus; the larger $\ell$ is, the taller that barrier and the farther out the first significant probability appears, exactly as seen in the figure, where $2p$, $3p$, and $3d$ all start at zero and rise more gradually than their same-$n$ $s$-state counterparts, and where $3d$ — the largest $\ell$ at $n=3$ — peaks farthest from the origin of the three $n=3$ curves. This $\ell$-dependent "penetration" toward the nucleus is purely qualitative for hydrogen's single electron, but it becomes quantitatively essential in [Chapter 11](#ch-many-electron-atoms), where it explains why an $s$-electron in a multi-electron atom is attracted more strongly by (and screens other electrons from) the nuclear charge than a $p$- or $d$-electron of the same $n$ — the mechanism that breaks hydrogen's accidental $\ell$-independent degeneracy once more than one electron is present.
+
+## Spectral Series and the Energy-Level Diagram
+
+Every property established so far — discrete $E_n$, the selection rule developed below — can be assembled into a single picture: the ladder of allowed energies together with the transitions between them that are actually observed. {numref}`Figure %s <fig:ch10-energy-levels>` draws that ladder for $n=1$ through $5$, together with the three most commonly tabulated spectral series, each named for whoever first catalogued it and each defined by a common *lower* level: the **Lyman series** ($n_f=1$, entirely in the ultraviolet), the **Balmer series** ($n_f=2$, spanning the visible), and the **Paschen series** ($n_f=3$, infrared). Because the spacing between successive $E_n$ shrinks rapidly as $n$ grows (it falls off as roughly $1/n^3$ near the top of the ladder), the levels bunch up as they approach $E=0$, and each series converges to a **series limit**: the shortest wavelength (highest photon energy) the series can produce, corresponding to a transition from $n_i\to\infty$ down to the series' fixed $n_f$, and equal to the energy $13.6\ \text{eV}/n_f^2$ needed to ionize the atom starting from level $n_f$. Beyond that limit the spectrum stops being a set of discrete lines at all, since a photoionized electron ($E>0$) is no longer confined to a discrete spectrum and can carry away any leftover energy continuously.
+
+```{figure} ../images/ch10-energy-levels.svg
+:label: fig:ch10-energy-levels
+:alt: Hydrogen energy levels for n equals 1 through 5 on a compressed vertical scale, with clusters of arrows showing the Lyman series converging on n=1, the Balmer series converging on n=2, and the Paschen series converging on n=3.
+
+Hydrogen energy levels $n=1$–$5$ (vertical position compressed for legibility; labels give the real $E_n=-13.6\ \text{eV}/n^2$), with the Lyman, Balmer, and Paschen series drawn as clusters of downward transitions converging on $n_f=1$, $2$, and $3$ respectively. Each series' shortest-wavelength member is its series limit, reached only as $n_i\to\infty$. Computed directly from $E_n$; see `scripts/figures/`.
+```
+
+### Worked Example: The Balmer Series and the Visible Spectrum
+
+The **Rydberg formula** is simply $E_n=-13.6\ \text{eV}/n^2$ rewritten as a wavelength via $hc/\lambda = |E_{n_i}-E_{n_f}|$:
+
+$$
+\frac{1}{\lambda} = R\left(\frac{1}{n_f^2}-\frac{1}{n_i^2}\right), \qquad R = 1.097\times10^7\ \text{m}^{-1}.
+$$
+
+Find (a) the wavelength of $\text{H}_\alpha$, the first (longest-wavelength) line of the Balmer series ($n_i=3\to n_f=2$), and (b) the Balmer series limit.
+
+**(a)**
+
+$$
+\frac{1}{\lambda} = (1.097\times10^7\ \text{m}^{-1})\left(\frac14-\frac19\right) = 1.524\times10^6\ \text{m}^{-1} \quad\Longrightarrow\quad \lambda = 656.3\ \text{nm},
+$$
+
+a deep red line — the $\text{H}_\alpha$ line used to image glowing hydrogen gas in nebulae and to trace the rotation of spiral galaxies.
+
+**(b)** As $n_i\to\infty$, $1/n_i^2\to0$, so
+
+$$
+\frac{1}{\lambda_{\text{limit}}} = \frac{R}{4} = 2.743\times10^6\ \text{m}^{-1} \quad\Longrightarrow\quad \lambda_{\text{limit}} = 364.6\ \text{nm},
+$$
+
+just past the violet edge of the visible spectrum, in the near ultraviolet. Every Balmer line falls between these two wavelengths, $364.6\ \text{nm} < \lambda \le 656.3\ \text{nm}$ — which is why nearly the whole series, unlike the entirely ultraviolet Lyman series or the entirely infrared Paschen series, is visible to the human eye, and why Johann Balmer found the first four of these lines by curve-fitting alone in 1885, three decades before Bohr's model — or Schrödinger's equation — existed to explain them.
 
 ## Electron Spin
 
@@ -100,6 +204,84 @@ $$
 
 These magnetic moments are what couple to an external magnetic field in the Stern–Gerlach experiment (producing the observed splitting and deflection) and, coupling to each other and to nuclear magnetic moments, produce the fine and hyperfine splittings observed in high-resolution atomic spectra.
 
+### The Stern–Gerlach Force and a Numeric Deflection
+
+A *uniform* magnetic field exerts a torque on a magnetic dipole — producing the Larmor precession pictured in [Chapter 9](#ch-quantum-mechanics-in-three-dimensions)'s precessing-top figure — but exerts zero *net force*, because the interaction energy $-\vec\mu\cdot\vec B$ does not depend on position when $\vec B$ itself does not. Deflecting the beam at all, as Stern and Gerlach needed to do to see anything on their screen, requires a spatially varying (inhomogeneous) field, whose gradient converts the dipole's orientation into a genuine transverse force:
+
+$$
+F_z = \mu_z\,\frac{\partial B_z}{\partial z},
+$$
+
+pushing atoms with $\mu_z>0$ one way and $\mu_z<0$ the other. Because $\mu_z$ takes only the two discrete values $\mu_{S,z}=\pm\mu_B$ (from the spin-moment formula above, with $m_s=\pm\tfrac12$ and $g_s\approx2$) rather than a continuum of values, the beam splits into exactly two discrete trajectories instead of spreading into one continuous smear — the direct experimental signature of space quantization that motivated this section.
+
+### Worked Example: Beam Splitting in a Stern–Gerlach Magnet
+
+A beam of silver atoms ($m=1.79\times10^{-25}\ \text{kg}$) effuses from an oven at $T=1000\ \text{K}$, giving a typical beam speed $v=\sqrt{3k_BT/m}\approx 480\ \text{m/s}$. The beam passes through a magnet of length $L=0.50\ \text{m}$ producing a field gradient $\partial B_z/\partial z = 10\ \text{T/m}$, then drifts a further $D=0.50\ \text{m}$ to a detector screen. Find the separation between the two spots.
+
+The force on each atom is
+
+$$
+F_z = \mu_z\frac{\partial B_z}{\partial z} = \pm(9.274\times10^{-24}\ \text{J/T})(10\ \text{T/m}) = \pm9.27\times10^{-23}\ \text{N},
+$$
+
+giving a transverse acceleration $a = F_z/m = \pm518\ \text{m/s}^2$. While inside the magnet, for a time $t_1=L/v=1.04\times10^{-3}\ \text{s}$, each atom acquires a transverse displacement $z_1=\tfrac12at_1^2 = 0.28\ \text{mm}$ and a transverse velocity $v_z=at_1=0.54\ \text{m/s}$; it then drifts (no further transverse force, but still moving at $v_z$) for an additional time $t_2=D/v=1.04\times10^{-3}\ \text{s}$, adding $z_2=v_zt_2=0.56\ \text{mm}$. The one-sided deflection is $z_1+z_2\approx0.84\ \text{mm}$, so the two spin states land
+
+$$
+\Delta z = 2(z_1+z_2) \approx 1.7\ \text{mm}
+$$
+
+apart on the screen — comfortably resolvable, and the same order of magnitude as the splitting Stern and Gerlach actually measured in 1922 with a weaker gradient over a shorter path, which is what made their two-spot pattern (rather than one smeared band) unambiguous.
+
+### The Zeeman Effect
+
+[Chapter 9](#ch-quantum-mechanics-in-three-dimensions) introduced the (normal) **Zeeman effect** qualitatively: an external field $\vec B$ along $z$ adds an energy $-\vec\mu_L\cdot\vec B = m_\ell\mu_B B$ to each otherwise-degenerate $m_\ell$ sublevel of a given $(n,\ell)$. Including the spin moment as well, the total field-induced shift of a state $(m_\ell,m_s)$ is
+
+$$
+\Delta E = (m_\ell + g_sm_s)\,\mu_B B \approx (m_\ell + 2m_s)\,\mu_B B,
+$$
+
+so that sublevels differing by $\Delta m_\ell = \pm1$ — the only orbital transitions the selection rule below permits — are split, orbitally, by exactly $\mu_BB$. Historically, it was the *observed* splitting pattern (sometimes the simple three-line "normal" Zeeman pattern predicted by $m_\ell$ alone, but more often a more complicated "anomalous" pattern explainable only once spin and its distinct $g$-factor were included) that provided some of the earliest indirect evidence for electron spin, years before Stern and Gerlach identified its direct mechanical signature.
+
+### Worked Example: Zeeman Splitting Frequency in a 1 T Field
+
+Estimate the frequency splitting between adjacent $m_\ell$ sublevels for a hydrogen atom in a $B=1.0\ \text{T}$ field (a typical laboratory electromagnet), and the resulting wavelength shift of the $\text{H}_\alpha$ line ($\lambda=656.3\ \text{nm}$, from the worked example above).
+
+$$
+\Delta E = \mu_BB = (9.274\times10^{-24}\ \text{J/T})(1.0\ \text{T}) = 9.27\times10^{-24}\ \text{J} = 5.79\times10^{-5}\ \text{eV},
+$$
+
+$$
+\Delta f = \frac{\Delta E}{h} = \frac{9.27\times10^{-24}\ \text{J}}{6.626\times10^{-34}\ \text{J}\cdot\text{s}} = 1.40\times10^{10}\ \text{Hz} = 14.0\ \text{GHz}
+$$
+
+(the electron's Larmor precession frequency in this field). Converting to a wavelength shift via $|\Delta\lambda|\approx(\lambda^2/c)\,\Delta f$,
+
+$$
+\Delta\lambda \approx \frac{(656.3\times10^{-9}\ \text{m})^2(1.40\times10^{10}\ \text{Hz})}{3.00\times10^8\ \text{m/s}} \approx 0.020\ \text{nm},
+$$
+
+about $30{,}000$ times smaller than the line's own wavelength — invisible by eye, but well within reach of a laboratory grating with resolving power $R=\lambda/\Delta\lambda\sim3\times10^4$ ([Chapter 5](#ch-diffraction-of-light)), which is how the Zeeman effect is actually resolved in the lab.
+
+### Fine Structure: Spin–Orbit Coupling
+
+Even with no external field at all, the energies $E_n=-13.6\ \text{eV}/n^2$ are not quite the whole story. In the electron's own rest frame, the orbiting (positively charged) nucleus constitutes a circulating current that produces a magnetic field at the electron's location, and that internal field couples to the electron's own spin magnetic moment exactly as an external field does in the Zeeman effect above — an interaction called **spin–orbit coupling**, whose strength depends on the relative orientation of $\vec L$ and $\vec S$ (equivalently, on the total angular momentum $\vec J = \vec L+\vec S$, a full treatment of which requires relativistic corrections beyond the nonrelativistic Schrödinger equation used throughout this book). What matters here is the *size* of the resulting **fine-structure** splitting of each $(n,\ell)$ level (other than $\ell=0$, where there is no orbital field to couple to):
+
+$$
+\Delta E_{\text{fine}} \sim \alpha^2\,|E_n|, \qquad \alpha \equiv \frac{e^2}{4\pi\epsilon_0\hbar c} \approx \frac{1}{137.0} \approx 7.30\times10^{-3},
+$$
+
+where $\alpha$, the dimensionless **fine-structure constant**, measures the intrinsic strength of the electromagnetic interaction and sets the size of essentially every relativistic correction in atomic physics. Because $\alpha^2\approx5\times10^{-5}$, fine structure shifts a level by only a few parts in $10^5$ of $|E_n|$ itself — far too fine to see with a simple grating, but readily resolved with a high-resolution spectrometer, and the historical reason spectral lines that look perfectly sharp in an introductory demonstration reveal themselves, under sufficient magnification, to be closely spaced multiplets (hence the name, coined for exactly this kind of fine-toothed splitting of what earlier instruments saw as a single line).
+
+### Worked Example: Order-of-Magnitude Fine-Structure Splitting
+
+Estimate the fine-structure splitting of hydrogen's $n=2$ level, and compare it to the actual measured splitting of the $2p$ levels, $\Delta E_{\text{fine}}\approx4.5\times10^{-5}\ \text{eV}$ (equivalently, about $10.9\ \text{GHz}$).
+
+$$
+E_2 = -\frac{13.6\ \text{eV}}{4} = -3.40\ \text{eV} \quad\Longrightarrow\quad \Delta E_{\text{fine}} \sim \alpha^2|E_2| = (7.30\times10^{-3})^2(3.40\ \text{eV}) \approx 1.8\times10^{-4}\ \text{eV},
+$$
+
+within about a factor of four of the measured value — entirely appropriate for an order-of-magnitude estimate that drops the numerical factors ($j$-dependence and other combinatorics supplied only by a full relativistic treatment) while correctly capturing the essential physical scale: fine structure is smaller than the gross level spacing $|E_n|$ by a factor of $\alpha^2\approx5\times10^{-5}$, the same small parameter that controls, order by order, essentially every relativistic correction in atomic physics.
+
 The same coupling, applied to the *proton's* magnetic moment rather than the electron's, is the basis of magnetic resonance imaging, and {numref}`Figure %s <fig:ch10-mri-sim>` is a working model of it. A static field along $z$ splits the two spin orientations by $\Delta E = g\mu_N B$, which for a proton in a $1\ \text{T}$ field falls in the radio band; a transverse radio-frequency field tuned to exactly that frequency drives transitions between them, and the resonance is sharp enough that a deliberate spatial *gradient* in $B$ makes the resonant frequency a map of position. Everything in the sequence — the splitting proportional to $B$, the resonance condition $hf = \Delta E$, the return to equilibrium afterwards — is this section's physics with $\mu_B$ replaced by the nuclear magneton.
 
 ```{phet-legacy} mri
@@ -121,16 +303,20 @@ $$
 
 ## Summary
 
-- The radial Schrödinger equation for hydrogen's $1/r$ Coulomb potential reproduces the Bohr energy levels $E_n = -13.6\ \text{eV}/n^2$, but from normalizability of $R(r)$ rather than a postulated orbit, and with the ground state having zero orbital angular momentum, unlike Bohr's model.
+- The radial Schrödinger equation for hydrogen's $1/r$ Coulomb potential reproduces the Bohr energy levels $E_n = -13.6\ \text{eV}/n^2$, but from normalizability of $R(r)$ rather than a postulated orbit, and with the ground state having zero orbital angular momentum, unlike Bohr's model. Normalizability forces the radial series to terminate into a finite polynomial, which fixes $n$ to a positive integer and, via $n=n_r+\ell+1$ ($n_r\ge0$ the radial node count), caps $\ell$ at $n-1$.
+- **Bohr's 1913 model** reproduced hydrogen's spectrum numerically from an unjustified orbit postulate, but could not be extended consistently to helium or predict transition rates, and gets the ground state's angular momentum flatly wrong — failures that motivated the full Schrödinger treatment.
+- **Hydrogenic ions** (e.g. $\text{He}^+$, $\text{Li}^{2+}$) follow $E_n(Z) = -Z^2(13.6\ \text{eV})/n^2$ and $a_n(Z) = n^2a_0/Z$: binding energy scales as $Z^2$, orbital size as $1/Z$.
 - Hydrogen states are labeled by $n$, $\ell = 0,\ldots,n-1$, $m_\ell = -\ell,\ldots,\ell$; because $E_n$ depends only on $n$, there are $n^2$ degenerate spatial states per $n$ — a special feature of the pure Coulomb potential.
-- Radial probability distributions $P(r) = r^2|R_{n\ell}|^2$ and angular nodal structure give rise to the characteristic $s$, $p$, $d$ orbital shapes; the Bohr radius $a_0$ reappears as the most probable electron-nucleus separation in the ground state.
-- The **Stern–Gerlach experiment** revealed **electron spin**, an intrinsic angular momentum with quantum number $s=\tfrac12$ and $m_s = \pm\tfrac12$, doubling the degenerate state count to $2n^2$ and requiring four quantum numbers $(n,\ell,m_\ell,m_s)$ to fully specify a state.
-- Orbital and spin angular momentum each produce a magnetic moment, in units of the Bohr magneton $\mu_B$; the spin moment carries an extra $g$-factor $\approx 2$.
+- Explicit radial wave functions $R_{10}$, $R_{20}$, $R_{21}$, and the radial probability distributions $P(r) = r^2|R_{n\ell}|^2$ they generate, show the $n-\ell-1$ node count directly; angular nodal structure gives rise to the characteristic $s$, $p$, $d$ orbital shapes. The Bohr radius $a_0$ reappears as the most probable electron-nucleus separation in the ground state.
+- The **effective potential** $V_{\text{eff}}(r)=V(r)+\hbar^2\ell(\ell+1)/2m_er^2$ shows that only $\ell=0$ states have nonzero probability density at the nucleus; higher $\ell$ states are held away from the origin by the centrifugal barrier, a penetration effect central to screening in [Chapter 11](#ch-many-electron-atoms).
+- The **Lyman**, **Balmer**, and **Paschen** series (transitions ending on $n_f=1,2,3$) each converge to a series limit at $n_i\to\infty$; the Rydberg formula $1/\lambda=R(1/n_f^2-1/n_i^2)$ gives their wavelengths, with the Balmer series ($364.6$–$656.3\ \text{nm}$) spanning most of the visible range.
+- The **Stern–Gerlach experiment** revealed **electron spin**, an intrinsic angular momentum with quantum number $s=\tfrac12$ and $m_s = \pm\tfrac12$, doubling the degenerate state count to $2n^2$ and requiring four quantum numbers $(n,\ell,m_\ell,m_s)$ to fully specify a state. The inhomogeneous-field force $F_z=\mu_z\,\partial B_z/\partial z$ converts the two spin orientations into two discrete beam deflections.
+- Orbital and spin angular momentum each produce a magnetic moment, in units of the Bohr magneton $\mu_B$; the spin moment carries an extra $g$-factor $\approx 2$. In an external field, the (normal) **Zeeman effect** shifts sublevels by $\Delta E \approx (m_\ell+2m_s)\mu_BB$; even with no external field, **spin–orbit coupling** produces **fine-structure** splitting of order $\alpha^2|E_n|$, where $\alpha\approx1/137$ is the fine-structure constant.
 - Single-photon transitions obey the selection rule $\Delta\ell = \pm1$, explaining the observed pattern of hydrogen spectral lines.
 
 ## Problems
 
-1. Compute the wavelength of the photon emitted in the hydrogen transition $n=3 \to n=2$ (the first line of the Balmer series), and identify whether it lies in the visible spectrum.
+1. Using the Rydberg formula, compute the wavelength of the first line of the Lyman series ($n=2\to n=1$) and the Lyman series limit ($n\to\infty \to n=1$). State which portion of the electromagnetic spectrum both lie in, and explain why the entire Lyman series (unlike the Balmer series) is invisible to the human eye.
 
 2. List all allowed $(\ell, m_\ell)$ combinations for $n=3$, count the total number of spatial states, and verify this equals $n^2=9$. Including spin, how many total quantum states share this energy?
 
@@ -141,3 +327,11 @@ $$
 5. In the Stern–Gerlach experiment, explain why silver atoms (rather than, say, helium atoms) were a good choice for demonstrating space quantization due to electron spin, referring to the electron configuration of the outermost electron (you may look ahead to [Chapter 11](#ch-many-electron-atoms)'s discussion of electron configurations, or simply reason from the fact that silver's single outer electron is in an $s$-state).
 
 6. Show that the ground-state radial probability distribution of hydrogen, $P(r) = r^2|R_{10}(r)|^2 \propto r^2 e^{-2r/a_0}$, is maximized at $r=a_0$ by differentiating $P(r)$ with respect to $r$ and setting the result to zero.
+
+7. Doubly ionized lithium, $\text{Li}^{2+}$ ($Z=3$), is a one-electron hydrogenic ion. (a) Find its ground-state ionization energy. (b) Find the radius at which its ground-state radial probability distribution peaks. (c) Compare both results, as ratios, to hydrogen's, and confirm they follow the $Z^2$ and $1/Z$ scaling laws given in the text.
+
+8. A different Stern–Gerlach apparatus uses a field gradient $\partial B_z/\partial z = 15\ \text{T/m}$ over a magnet of length $L=0.20\ \text{m}$, with silver atoms ($m=1.79\times10^{-25}\ \text{kg}$) moving at $v=600\ \text{m/s}$, followed by a $D=0.40\ \text{m}$ drift to the screen. Using the method of the worked example, find the separation between the two spots.
+
+9. A hydrogen discharge tube is placed in a magnetic field of $B=0.50\ \text{T}$. (a) Find the Zeeman energy splitting $\Delta E$ (in eV) between adjacent $m_\ell$ sublevels. (b) Find the corresponding frequency splitting $\Delta f$. (c) Using $\lambda=486.1\ \text{nm}$ (the $\text{H}_\beta$ line), estimate the wavelength splitting $\Delta\lambda$, and compare its order of magnitude to the $0.50\ \text{T}$ case's expected scaling relative to the $1.0\ \text{T}$ worked example in the text.
+
+10. Estimate the order-of-magnitude fine-structure splitting of hydrogen's $n=3$ level, using $\Delta E_{\text{fine}}\sim\alpha^2|E_n|$. Compare your result to the $n=2$ estimate found in the text, and explain, in terms of the $|E_n|=13.6\ \text{eV}/n^2$ scaling, why fine structure becomes progressively harder to resolve at higher $n$.

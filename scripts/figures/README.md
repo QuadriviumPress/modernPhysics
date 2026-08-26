@@ -1,9 +1,9 @@
 # Figure generation
 
-Figures for Chapters 4 and 5 are generated with matplotlib and written as SVG
-into [`../../images/`](../../images/). The rendered SVGs are **committed**,
-because the GitHub Pages workflow runs `myst build --html` only — there is no
-Python available at build time.
+Figures for Chapters 4, 5, and 10–14 are generated with matplotlib and written
+as SVG into [`../../images/`](../../images/). The rendered SVGs are
+**committed**, because the GitHub Pages workflow runs `myst build --html`
+only — there is no Python available at build time.
 
 ## Regenerating
 
@@ -13,6 +13,11 @@ python3 scripts/figures/ch04_figures.py      # computed curves for ch. 4
 python3 scripts/figures/ch04_schematics.py   # diagrams for ch. 4
 python3 scripts/figures/ch05_figures.py      # computed curves for ch. 5
 python3 scripts/figures/ch05_schematics.py   # diagrams for ch. 5
+python3 scripts/figures/ch10_figures.py      # radial probability / energy levels for ch. 10
+python3 scripts/figures/ch11_figures.py      # ionization-energy curve for ch. 11
+python3 scripts/figures/ch12_figures.py      # MO diagram / rovibrational spectrum for ch. 12
+python3 scripts/figures/ch13_figures.py      # binding-energy curve for ch. 13
+python3 scripts/figures/ch14_figures.py      # Feynman diagrams / Standard Model chart for ch. 14
 python3 scripts/figures/simulation_placeholder.py   # fallback card for {simulation}
 python3 scripts/figures/brand_assets.py             # social card, favicon, header logos
 ```
@@ -29,6 +34,11 @@ any change to the scripts, so the site and the source stay in step.
 | `ch04_schematics.py` | Huygens wavelets, double-slit geometry, phasor addition, thin-film rays, Michelson interferometer |
 | `ch05_figures.py` | Single-slit $\mathrm{sinc}^2$, slit-width scaling, double-slit envelope with missing orders, grating resolving power, Airy pattern and the Rayleigh criterion |
 | `ch05_schematics.py` | Single-slit pairwise cancellation, the circular phasor arc, Bragg reflection |
+| `ch10_figures.py` | Hydrogen radial probability distributions $P(r)=r^2\lvert R_{n\ell}\rvert^2$ for $1s,2s,2p,3s,3p,3d$ (closed-form $R_{n\ell}$), with node markers; energy-level diagram for $n=1$–$5$ with Lyman/Balmer/Paschen transition arrows |
+| `ch11_figures.py` | First ionization energy vs. atomic number ($Z=1$–$36$, NIST Atomic Spectra Database values), showing the periodic sawtooth with noble-gas peaks and alkali-metal troughs annotated |
+| `ch12_figures.py` | Side-by-side N₂/O₂ molecular-orbital energy-level diagrams (atomic 2s/2p levels outside, filled MOs in the middle, showing the $\sigma_{2p}$/$\pi_{2p}$ order swap); rovibrational (vibration–rotation) stick spectrum with P-branch/R-branch lines spaced by $2B$ and the missing-Q-branch gap at the band origin |
+| `ch13_figures.py` | Binding energy per nucleon vs. mass number, computed from standard atomic mass data for a representative set of nuclides (deuterium through uranium-238), with the iron/nickel peak and fusion/fission arrows annotated directly on the plot |
+| `ch14_figures.py` | Original Feynman-diagram schematic ($e^-e^-$ scattering via photon exchange; neutron beta decay via $W^-$ exchange, with the antiparticle arrow-reversal convention shown explicitly) and a redrawn Standard Model particle-content chart (three generations of quarks/leptons plus gauge bosons and the Higgs, in the book's own palette) |
 | `simulation_placeholder.py` | The generic fallback card shown in PDF, DOCX, and print for a `{simulation}` with no screenshot |
 | `brand_assets.py` | Site identity: the 1200×630 social card, the multi-size `favicon.ico`, and the light/dark header logos |
 

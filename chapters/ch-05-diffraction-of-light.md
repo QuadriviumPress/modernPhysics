@@ -2,6 +2,8 @@
 title: Diffraction of Light
 short_title: Chapter 5. Diffraction of Light
 label: ch-diffraction-of-light
+numbering:
+  enumerator: "5.%s"
 ---
 
 ## Learning Objectives

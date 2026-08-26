@@ -2,6 +2,8 @@
 title: Quantum Mechanics in Three Dimensions
 short_title: Chapter 9. Quantum Mechanics in Three Dimensions
 label: ch-quantum-mechanics-in-three-dimensions
+numbering:
+  enumerator: "9.%s"
 ---
 
 ## Learning Objectives

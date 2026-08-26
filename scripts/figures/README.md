@@ -14,6 +14,7 @@ python3 scripts/figures/ch04_schematics.py   # diagrams for ch. 4
 python3 scripts/figures/ch05_figures.py      # computed curves for ch. 5
 python3 scripts/figures/ch05_schematics.py   # diagrams for ch. 5
 python3 scripts/figures/simulation_placeholder.py   # fallback card for {simulation}
+python3 scripts/figures/brand_assets.py             # social card, favicon, header logos
 ```
 
 Each script prints the files it writes. Commit the regenerated SVGs along with
@@ -29,13 +30,17 @@ any change to the scripts, so the site and the source stay in step.
 | `ch05_figures.py` | Single-slit $\mathrm{sinc}^2$, slit-width scaling, double-slit envelope with missing orders, grating resolving power, Airy pattern and the Rayleigh criterion |
 | `ch05_schematics.py` | Single-slit pairwise cancellation, the circular phasor arc, Bragg reflection |
 | `simulation_placeholder.py` | The generic fallback card shown in PDF, DOCX, and print for a `{simulation}` with no screenshot |
+| `brand_assets.py` | Site identity: the 1200×630 social card, the multi-size `favicon.ico`, and the light/dark header logos |
 
 ## Conventions
 
-- **SVG everywhere except one file.** `simulation_placeholder.py` writes PNG,
+- **SVG everywhere except two files.** `simulation_placeholder.py` writes PNG,
   because LaTeX accepts only `.pdf .png .jpg .jpeg` and DOCX only
   `.png .jpg .jpeg`; an SVG placeholder would need Inkscape or ImageMagick on
-  the build machine to survive an export.
+  the build machine to survive an export. `brand_assets.py` writes PNG and ICO
+  for the same class of reason — some social platforms will not render an SVG
+  `og:image`, and MyST copies `site.options.favicon` to `/favicon.ico`
+  byte-for-byte, so that file has to really be an ICO.
 - **Palette** matches the hand-authored SVG schematics in `images/` (blue `#1769aa`,
   red `#b33a3a`, green `#2e7d5b`, purple `#6a4c93`, orange `#d97706`).
 - **White background**, set explicitly, so figures read the same in either site theme.

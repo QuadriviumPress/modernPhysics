@@ -2,6 +2,8 @@
 title: The Hydrogen Atom
 short_title: Chapter 10. The Hydrogen Atom
 label: ch-the-hydrogen-atom
+numbering:
+  enumerator: "10.%s"
 ---
 
 ## Learning Objectives

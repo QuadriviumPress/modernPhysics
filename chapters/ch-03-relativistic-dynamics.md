@@ -2,6 +2,8 @@
 title: Relativistic Dynamics
 short_title: Chapter 3. Relativistic Dynamics
 label: ch-relativistic-dynamics
+numbering:
+  enumerator: "3.%s"
 ---
 
 ## Learning Objectives

@@ -2,6 +2,8 @@
 title: Molecular Structure
 short_title: Chapter 12. Molecular Structure
 label: ch-molecular-structure
+numbering:
+  enumerator: "12.%s"
 ---
 
 ## Learning Objectives

@@ -2,6 +2,8 @@
 title: The Need for Relativity
 short_title: Chapter 1. The Need for Relativity
 label: ch-need-for-relativity
+numbering:
+  enumerator: "1.%s"
 ---
 
 ## Learning Objectives

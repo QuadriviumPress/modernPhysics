@@ -2,6 +2,8 @@
 title: The Schrödinger Equation
 short_title: Chapter 8. The Schrödinger Equation
 label: ch-the-schrodinger-equation
+numbering:
+  enumerator: "8.%s"
 ---
 
 ## Learning Objectives

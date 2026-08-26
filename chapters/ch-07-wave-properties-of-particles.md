@@ -2,6 +2,8 @@
 title: Wave Properties of Particles
 short_title: Chapter 7. Wave Properties of Particles
 label: ch-wave-properties-of-particles
+numbering:
+  enumerator: "7.%s"
 ---
 
 ## Learning Objectives

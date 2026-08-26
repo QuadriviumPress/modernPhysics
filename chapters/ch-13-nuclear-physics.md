@@ -2,6 +2,8 @@
 title: Nuclear Physics
 short_title: Chapter 13. Nuclear Physics
 label: ch-nuclear-physics
+numbering:
+  enumerator: "13.%s"
 ---
 
 ## Learning Objectives

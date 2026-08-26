@@ -2,6 +2,8 @@
 title: Many-Electron Atoms
 short_title: Chapter 11. Many-Electron Atoms
 label: ch-many-electron-atoms
+numbering:
+  enumerator: "11.%s"
 ---
 
 ## Learning Objectives

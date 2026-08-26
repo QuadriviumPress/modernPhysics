@@ -2,6 +2,8 @@
 title: Elementary Particles and the Standard Model
 short_title: Chapter 14. Elementary Particles and the Standard Model
 label: ch-elementary-particles-and-the-standard-model
+numbering:
+  enumerator: "14.%s"
 ---
 
 ## Learning Objectives

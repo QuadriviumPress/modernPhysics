@@ -2,6 +2,8 @@
 title: Special Relativity
 short_title: Chapter 2. Special Relativity
 label: ch-special-relativity
+numbering:
+  enumerator: "2.%s"
 ---
 
 ## Learning Objectives

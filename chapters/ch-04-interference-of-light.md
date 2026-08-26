@@ -2,6 +2,8 @@
 title: Interference of Light
 short_title: Chapter 4. Interference of Light
 label: ch-interference-of-light
+numbering:
+  enumerator: "4.%s"
 ---
 
 ## Learning Objectives

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="7.5 0 49 64" role="img" aria-label="Modern Physics">
+  <title>Modern Physics</title>
+  <g>
+    <polygon points="32,32 9,57 55,57" fill="#8dabc4"/>
+    <ellipse cx="32" cy="57" rx="23" ry="5.5" fill="#8dabc4"/>
+    <polygon points="32,32 9,7 55,7" fill="#1769aa"/>
+    <ellipse cx="32" cy="7" rx="23" ry="5.5" fill="#1769aa"/>
+    <circle cx="32" cy="32" r="3.11" fill="#b33a3a"/>
+  </g>
+</svg>

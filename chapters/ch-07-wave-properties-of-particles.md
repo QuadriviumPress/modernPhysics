@@ -9,9 +9,10 @@ label: ch-wave-properties-of-particles
 By the end of this chapter, you should be able to:
 
 - State the de Broglie hypothesis and compute the de Broglie wavelength of a particle.
-- Describe the Davisson–Germer experiment and explain why it confirms the de Broglie hypothesis.
-- Explain wave–particle duality and why it applies to both light and matter.
-- Construct a wave packet as a superposition of waves and relate its spatial and momentum spread.
+- Explain how the de Broglie hypothesis reinterprets the Bohr model's angular-momentum quantization condition as a standing-wave requirement.
+- Describe the Davisson–Germer and G. P. Thomson experiments and explain why they confirm the de Broglie hypothesis, and describe how matter-wave interference has since been extended to atoms and large molecules.
+- Explain wave–particle duality and complementarity, and describe how "which-path" information destroys interference.
+- Construct a wave packet as a superposition of waves and relate its spatial and momentum spread; distinguish phase velocity from group velocity and show that group velocity equals particle velocity.
 - State, derive qualitatively, and apply the Heisenberg uncertainty principle for position–momentum and energy–time.
 - Use the uncertainty principle to estimate minimum energies and to explain why electrons cannot exist inside a nucleus.
 
@@ -27,9 +28,29 @@ $$
 \lambda = \frac{h}{p},
 $$
 
-now called the **de Broglie wavelength**. For a nonrelativistic particle of mass $m$ and speed $u$, $p = mu$, so $\lambda = h/mu$. Because $h$ is so small, the de Broglie wavelength of ordinary macroscopic objects is utterly negligible — a $1\ \text{g}$ mass moving at $1\ \text{m/s}$ has $\lambda \sim 10^{-31}\ \text{m}$, far too small to produce any observable wave effect — which is why matter waves went unnoticed until physicists deliberately looked for them in systems where $\lambda$ is not negligible, such as low-energy electrons, whose small mass makes $\lambda$ comparable to atomic and crystal-lattice spacings for accessible kinetic energies.
+now called the **de Broglie wavelength**. For a nonrelativistic particle of mass $m$ and speed $u$, $p = mu$, so $\lambda = h/mu$; more generally, for a particle accelerated from rest through a potential difference $V$, $K = eV = p^2/2m$ gives $p = \sqrt{2meV}$ and hence $\lambda = h/\sqrt{2meV}$. Because $h$ is so small, the de Broglie wavelength of ordinary macroscopic objects is utterly negligible — a $1\ \text{g}$ mass moving at $1\ \text{m/s}$ has $\lambda \sim 10^{-31}\ \text{m}$, far too small to produce any observable wave effect — which is why matter waves went unnoticed until physicists deliberately looked for them in systems where $\lambda$ is not negligible, such as low-energy electrons, whose small mass makes $\lambda$ comparable to atomic and crystal-lattice spacings for accessible kinetic energies.
 
-## The Davisson–Germer Experiment
+### Worked Example: De Broglie Wavelength of an Accelerated Electron
+
+An electron is accelerated from rest through a potential difference of $V = 100\ \text{V}$, a typical value in early electron-diffraction experiments. Its nonrelativistic momentum is
+
+$$
+p = \sqrt{2m_eeV} = \sqrt{2(9.11\times10^{-31}\ \text{kg})(1.60\times10^{-19}\ \text{C})(100\ \text{V})} = 5.40\times10^{-24}\ \text{kg}\cdot\text{m/s},
+$$
+
+so the de Broglie wavelength is
+
+$$
+\lambda = \frac{h}{p} = \frac{6.626\times10^{-34}}{5.40\times10^{-24}}\ \text{m} = 1.23\times10^{-10}\ \text{m} = 0.123\ \text{nm}.
+$$
+
+This convenient combination is often written $\lambda[\text{nm}] \approx 1.226/\sqrt{V[\text{volts}]}$ for nonrelativistic electrons. The result, $0.123\ \text{nm}$, is comparable to the spacing between atomic planes in a crystal ($\sim 0.1$–$0.3\ \text{nm}$) — exactly the condition needed for the crystal to act as a diffraction grating for the electrons, as the next section describes.
+
+### A Consistency Check: The Relativistic Origin of $\lambda = h/p$
+
+De Broglie did not simply guess $\lambda = h/p$; he arrived at it by demanding consistency between the photon relations of [Chapter 6](#ch-particle-properties-of-waves) and the relativistic energy–momentum relation of [Chapter 3](#ch-relativistic-dynamics). A wave of frequency $f$ and phase speed $u_p$ has wavelength $\lambda = u_p/f$. Associating a particle of energy $E$ with a wave of frequency $f=E/h$ (the Planck–Einstein relation, extended by hypothesis to matter) and demanding that the resulting phase velocity be consistent with the particle's momentum $p$ via $E=pc^2/u$ (the relativistic relation between energy, momentum, and velocity established in [Chapter 3](#ch-relativistic-dynamics)) leads, after eliminating $f$ and $u_p$ in favor of $E$, $p$, and the particle's actual velocity $u$, directly to $\lambda = h/p$ — the same relation obtained by simply carrying the photon formula over to matter, but now derived from relativistic energy–momentum consistency rather than asserted by analogy alone. This is one reason de Broglie's hypothesis, though speculative, was taken seriously immediately: it was not an arbitrary guess but the unique relation consistent with treating matter and light on the same relativistic footing.
+
+## The Davisson–Germer and G. P. Thomson Experiments
 
 Direct confirmation came in 1927, when Clinton Davisson and Lester Germer, studying electron scattering from a nickel crystal (originally for an unrelated purpose), observed that the intensity of electrons scattered from the crystal surface showed sharp maxima at specific angles, depending on the electrons' kinetic energy — exactly the pattern expected from **diffraction** of a wave by the regularly spaced planes of atoms in the crystal, analogous to X-ray diffraction from a crystal lattice (Bragg diffraction). Measuring the angles of the diffraction maxima and applying the same diffraction condition used for X-rays,
 
@@ -37,11 +58,47 @@ $$
 d\sin\theta = n\lambda,
 $$
 
-(with $d$ the crystal's known interplanar spacing) allowed Davisson and Germer to extract an experimental wavelength for the electrons — and it agreed, to good precision, with the de Broglie wavelength $\lambda = h/p$ computed from the electrons' known kinetic energy. Electrons, unambiguously particles in every other respect (they have definite charge and mass, and leave localized tracks and point-like impacts on a detector), diffract like waves when their de Broglie wavelength is comparable to the spacing of the diffracting structure. The effect has since been confirmed for neutrons, atoms, and even large molecules, and is the operating principle of the electron microscope, whose resolution — set by the wavelength of the imaging "light," per ordinary diffraction limits — can be far finer than any visible-light microscope because electron de Broglie wavelengths can be made far shorter than visible wavelengths.
+(with $d$ the crystal's known interplanar spacing) allowed Davisson and Germer to extract an experimental wavelength for the electrons — and it agreed, to good precision, with the de Broglie wavelength $\lambda = h/p$ computed from the electrons' known kinetic energy.
+
+That same year, working independently in Britain, George Paget Thomson fired higher-energy electrons through thin polycrystalline metal foils and observed concentric diffraction rings on a photographic plate — the electron analog of the ring patterns produced by X-ray diffraction through a powdered crystalline sample — providing an independent confirmation using a completely different experimental geometry. Thomson's result carries a particular irony: his father, J. J. Thomson, had won the 1906 Nobel Prize for discovering the electron and demonstrating that it is a particle with a definite charge-to-mass ratio; the son shared the 1937 Nobel Prize (with Davisson) for demonstrating that the very same particle also behaves as a wave — both experiments correct, neither in conflict with the other, once wave–particle duality is properly understood.
+
+Electrons, unambiguously particles in every other respect (they have definite charge and mass, and leave localized tracks and point-like impacts on a detector), diffract like waves when their de Broglie wavelength is comparable to the spacing of the diffracting structure. The effect has since been confirmed for neutrons, atoms, and — in experiments beginning in the late 1990s — even large molecules: neutron diffraction is now a standard tool for probing crystal and magnetic structure (complementing X-ray diffraction, since neutrons, being uncharged, scatter primarily from nuclei rather than electron clouds), and a landmark 1999 experiment by Arndt, Zeilinger, and collaborators observed diffraction of $C_{60}$ "buckyball" molecules — each containing 60 carbon atoms, with a mass some $10^5$ times that of a single electron — through a microfabricated grating, with a measured de Broglie wavelength of only a few picometers, far smaller than the molecule itself, yet still large enough to produce a measurable diffraction pattern. Matter-wave interference is not a special property of electrons; it is a universal feature of quantum objects, observable whenever a system can be prepared with a de Broglie wavelength comparable to some accessible length scale. The same phenomenon is the operating principle of the electron microscope, whose resolution — set by the wavelength of the imaging "light," per ordinary diffraction limits ([Chapter 5](#ch-diffraction-of-light)) — can be far finer than any visible-light microscope because electron de Broglie wavelengths, as the worked example above shows, can be made far shorter than visible wavelengths simply by choosing a sufficiently large accelerating voltage.
+
+### Neutron Interferometry
+
+Because neutrons are electrically neutral, they can be split into two coherent beams and recombined using **neutron interferometers** built from a single, precisely machined crystal of silicon, without the beam-steering complications that an electron's charge would introduce in a magnetic or electric field. A landmark 1975 experiment by Colella, Overhauser, and Werner (the "COW experiment") used exactly this technique to observe a measurable phase shift between the two arms of a neutron interferometer when one arm was raised slightly in the Earth's gravitational field relative to the other — a direct demonstration that a quantum matter wave, not merely a mathematical bookkeeping device, is affected by gravity precisely as its de Broglie wavelength and the classical gravitational potential energy predict. Neutron interferometry has since been used to test the sign and magnitude of gravitational, and even rotational (Sagnac), phase shifts on matter waves with high precision, extending the reach of wave–particle duality from crystal diffraction to macroscopic-scale sensitivity to gravity itself.
+
+### The Bohr Quantization Condition Revisited
+
+The de Broglie hypothesis retroactively explains a feature of the 1913 Bohr model of the hydrogen atom (developed further in [Chapter 10](#ch-the-hydrogen-atom)) that Bohr himself had simply postulated without justification: that an orbiting electron's angular momentum is quantized in integer multiples of $\hbar$, $L = n\hbar$. If the electron in a circular orbit of radius $r$ is described by a de Broglie wave of wavelength $\lambda = h/p$, that wave can only form a consistent, single-valued standing pattern around the orbit if the orbit's circumference contains a whole number of wavelengths,
+
+$$
+2\pi r = n\lambda = \frac{nh}{p}, \qquad n = 1, 2, 3, \ldots,
+$$
+
+since otherwise the wave would interfere destructively with itself on successive trips around the loop and no stable pattern could persist. Rearranging, $pr = n\hbar$ — exactly Bohr's angular-momentum quantization condition, $L = n\hbar$, now derived (rather than assumed) from the requirement that an electron's matter wave close consistently on itself. This does not yet constitute a full theory (that requires the Schrödinger equation of Chapters [8](#ch-the-schrodinger-equation)–[9](#ch-quantum-mechanics-in-three-dimensions), applied to the hydrogen atom in [Chapter 10](#ch-the-hydrogen-atom)), but it shows that de Broglie's hypothesis was not an isolated curiosity: it directly explains why atomic angular momentum comes only in discrete multiples of $\hbar$, years before Schrödinger's wave equation made the connection rigorous.
+
+### Worked Example: Checking the Standing-Wave Condition for Hydrogen's Ground State
+
+The Bohr model (developed further in [Chapter 10](#ch-the-hydrogen-atom)) gives the electron in hydrogen's $n=1$ orbit a radius $a_0 = 5.29\times10^{-11}\ \text{m}$ (the **Bohr radius**) and an orbital speed $v = 2.19\times10^6\ \text{m/s}$. Its de Broglie wavelength is
+
+$$
+\lambda = \frac{h}{m_ev} = \frac{6.626\times10^{-34}}{(9.11\times10^{-31})(2.19\times10^6)}\ \text{m} = 3.32\times10^{-10}\ \text{m},
+$$
+
+while the orbit's circumference is $2\pi a_0 = 2\pi(5.29\times10^{-11})\ \text{m} = 3.32\times10^{-10}\ \text{m}$ — the two agree to three significant figures, exactly confirming the standing-wave condition $2\pi r = n\lambda$ for $n=1$: the ground-state orbit's circumference is precisely one de Broglie wavelength.
 
 ## Wave–Particle Duality
 
-The picture that emerges from Chapters [6](#ch-particle-properties-of-waves) and [7](#ch-wave-properties-of-particles) together is symmetric: light, ordinarily described as a wave, exhibits particle-like behavior (photoelectric effect, Compton scattering); matter, ordinarily described as particles, exhibits wave-like behavior (electron diffraction). Neither description is simply "wrong" and replaced by the other; rather, **both light and matter possess both wave and particle aspects**, and which aspect is manifest depends on the experiment performed. This is **wave–particle duality**. It is tempting, but incorrect, to imagine that a photon or electron is "really" a tiny wave packet that sometimes behaves like a particle, or "really" a tiny particle that sometimes behaves like a wave; the two descriptions are complementary, and a full account of quantum behavior (developed starting in [Chapter 8](#ch-the-schrodinger-equation)) requires a mathematical object — the wave function — that reduces to particle-like or wave-like predictions depending on what is measured, without being fully captured by either classical picture on its own.
+The picture that emerges from Chapters [6](#ch-particle-properties-of-waves) and [7](#ch-wave-properties-of-particles) together is symmetric: light, ordinarily described as a wave, exhibits particle-like behavior (photoelectric effect, Compton scattering); matter, ordinarily described as particles, exhibits wave-like behavior (electron diffraction). Neither description is simply "wrong" and replaced by the other; rather, **both light and matter possess both wave and particle aspects**, and which aspect is manifest depends on the experiment performed. This is **wave–particle duality**, and its sharpest expression is Niels Bohr's **principle of complementarity**: the wave and particle descriptions are both necessary for a complete account of quantum behavior, both cannot be exhibited in full simultaneously by the same experimental arrangement, and neither alone is sufficient.
+
+The double-slit experiment ([Chapter 4](#ch-interference-of-light)) makes this concrete. Even when electrons (or photons) are sent through the apparatus one at a time — far too infrequently for any two particles to interact or "interfere with each other" in transit — the individual, localized detection events recorded on a screen accumulate, after many particles, into the same interference fringe pattern predicted for a wave. Each particle arrives as a single, point-like click, exactly as a particle should; yet the *statistical distribution* of many such clicks builds up the wave-interference pattern, meaning each individual particle's behavior is governed by the same wave mathematics used for light, even though no two particles are present in the apparatus at once to "interfere" with each other in any classical sense. This experiment has been performed with electrons (originally by Claus Jönsson in 1961, and in a particularly clean single-particle-at-a-time form by Akira Tonomura and collaborators in 1989) and confirms the interference pattern exactly as quantum mechanics predicts.
+
+Crucially, if a measurement is added to the apparatus that determines *which* slit each particle actually passed through — "which-path" information — the interference pattern disappears entirely, replaced by the simple sum of the two single-slit patterns, exactly as if the particles were classical objects going through one slit or the other. Acquiring which-path information is not a matter of clumsy experimental technique that could, with sufficient care, be avoided while preserving the fringes; the loss of interference is a direct, unavoidable consequence of the uncertainty principle (developed later in this chapter), since determining which slit a particle used necessarily disturbs its momentum by an amount sufficient to wash out the fringe spacing. It is tempting, but incorrect, to imagine that a photon or electron is "really" a tiny wave packet that sometimes behaves like a particle, or "really" a tiny particle that sometimes behaves like a wave; the two descriptions are complementary, and a full account of quantum behavior (developed starting in [Chapter 8](#ch-the-schrodinger-equation)) requires a mathematical object — the wave function — that reduces to particle-like or wave-like predictions depending on what is measured, without being fully captured by either classical picture on its own.
+
+### Delayed Choice and the Quantum Eraser
+
+A particularly striking variant, proposed by John Wheeler in 1978 and since realized experimentally, asks whether the decision to measure which-path information can be postponed until *after* a particle has, in some naive classical sense, "already passed" through the slits. In a **delayed-choice experiment**, the choice of whether to record which-path information (destroying the interference pattern) or to erase it before the particle is detected (restoring the interference pattern) is made only at the very last possible moment — in some realizations, only after the particle has already traversed the region of the slits. Experiments of this kind confirm quantum mechanics' prediction exactly: interference reappears whenever which-path information is unavailable (or erased before it can be extracted) at the time of final detection, regardless of when in the experiment that choice is made. A related arrangement, the **quantum eraser**, first correlates each particle with a "marker" that could in principle reveal which path it took, then either reads that marker (destroying the interference pattern in the corresponding subset of detection events) or "erases" the marker's which-path information before it is read (restoring interference in that subset). Neither experiment allows sending a signal backward in time or violates causality; both instead show that the loss or restoration of interference tracks strictly whether which-path information is, at the moment of detection, available anywhere in the universe in principle — not whether a human experimenter has looked at it, and not whether the "choice" is made before or after the particle has traversed the apparatus. These results reinforce the same lesson as the ordinary double-slit experiment: a quantum system does not carry a hidden, predetermined trajectory waiting to be revealed, and complementarity is a statement about what information can coexist, not merely about the limits of measurement technology.
 
 ## Wave Packets
 
@@ -57,9 +114,35 @@ $$
 \Delta x\,\Delta p \gtrsim \hbar.
 $$
 
+### Phase Velocity and Group Velocity
+
+A wave packet built from components of angular frequency $\omega(k)$ spread over a narrow range of $k$ can be shown, by adding two nearby component waves $\cos(kx-\omega t)$ and $\cos[(k+\Delta k)x - (\omega+\Delta \omega)t]$, to have an overall envelope that moves at the **group velocity**
+
+$$
+v_g = \frac{d\omega}{dk},
+$$
+
+which is, in general, different from the **phase velocity** $v_p = \omega/k$ at which the individual wave crests inside the envelope move. For a nonrelativistic free particle, the de Broglie relations $p = \hbar k$ and $E = \hbar\omega$, combined with the nonrelativistic kinetic-energy relation $E = p^2/2m$, give
+
+$$
+\omega(k) = \frac{\hbar k^2}{2m},
+$$
+
+so that
+
+$$
+v_g = \frac{d\omega}{dk} = \frac{\hbar k}{m} = \frac{p}{m} = u,
+$$
+
+exactly the classical particle velocity — the wave packet's envelope, the physically observable, localized "blob" of probability, moves at precisely the speed a classical particle with the same momentum would have. The phase velocity, by contrast, is $v_p = \omega/k = \hbar k/2m = u/2$, exactly *half* the particle's actual speed: the individual crests inside the packet move at a different, less physically meaningful speed than the envelope itself, a reminder that it is the group velocity, not the phase velocity, that corresponds to the motion of the particle (and, for a light pulse in a dispersive medium, to the speed at which energy and information actually travel).
+
+### Wave Packet Spreading
+
+The nonrelativistic dispersion relation $\omega(k) = \hbar k^2/2m$ used above is not linear in $k$ (unlike the dispersion relation $\omega = ck$ for light in vacuum), which has a further consequence beyond fixing the group velocity: different Fourier components of a wave packet, corresponding to different momenta, travel at slightly different group velocities $v_g(k) = \hbar k/m$, since a component with larger $k$ (larger momentum) simply moves faster. A packet initially localized to a narrow width $\Delta x_0$ therefore does not maintain its shape as it propagates; because it necessarily contains a spread $\Delta k \sim 1/\Delta x_0$ of wave numbers (the same uncertainty relation used earlier in this section), and each component travels at a slightly different speed, the packet's spatial width grows with time — it **spreads**. A careful calculation shows the spreading time scale is of order $\tau \sim m(\Delta x_0)^2/\hbar$: a light particle (small $m$) confined to a very small initial region (small $\Delta x_0$) spreads apart quickly, while a macroscopic object's wave packet spreads on a time scale so astronomically long that the effect is entirely unobservable — one more reason, alongside the negligible de Broglie wavelength itself, that ordinary macroscopic objects appear to follow sharp, well-defined classical trajectories rather than visibly diffusing.
+
 ## The Heisenberg Uncertainty Principle
 
-Werner Heisenberg (1927) elevated this wave-packet relation to a fundamental principle governing all quantum systems, stated precisely as
+Werner Heisenberg (1927) elevated the wave-packet relation above to a fundamental principle governing all quantum systems, stated precisely as
 
 $$
 \Delta x\, \Delta p_x \geq \frac{\hbar}{2},
@@ -85,13 +168,24 @@ $$
 
 Converting to an energy via the (relativistic, since this momentum turns out to be large) relation $E \approx pc$ for $pc \gg mc^2$: $pc \approx (1.1\times10^{-20})(3.0\times10^8)\ \text{J} \approx 3.3\times10^{-12}\ \text{J} \approx 21\ \text{MeV}$. An electron confined to nuclear dimensions would need kinetic energy of tens of MeV — far larger than the few-MeV binding energies available in nuclei ([Chapter 13](#ch-nuclear-physics)) — so such an electron could not remain bound; this is one of the historical arguments (alongside others involving nuclear spin and magnetic moment) that electrons are not constituents of the nucleus, correctly anticipating that beta decay ([Chapter 13](#ch-nuclear-physics)) must *create* an electron at the moment of decay rather than releasing one that was previously confined inside.
 
+### Worked Example: The Scale of Atomic Energies
+
+The uncertainty principle also correctly predicts the *order of magnitude* of atomic binding energies, without needing to solve the Schrödinger equation at all. An electron confined to an atom of radius $r \sim a_0 = 5.3\times10^{-11}\ \text{m}$ (the Bohr radius, derived properly in [Chapter 10](#ch-the-hydrogen-atom)) has, by the same reasoning as above, a minimum momentum uncertainty
+
+$$
+\Delta p \gtrsim \frac{\hbar}{2\,\Delta x} \approx \frac{1.055\times10^{-34}}{2(5.3\times10^{-11})}\ \text{kg}\cdot\text{m/s} \approx 1.0\times10^{-24}\ \text{kg}\cdot\text{m/s}.
+$$
+
+Since this is small enough that the electron remains nonrelativistic, its kinetic energy is $K \sim (\Delta p)^2/2m_e \approx (1.0\times10^{-24})^2/[2(9.11\times10^{-31})]\ \text{J} \approx 5.5\times10^{-19}\ \text{J} \approx 3.4\ \text{eV}$ — the right order of magnitude for atomic binding and ionization energies (a few to a few tens of eV), even though the precise numerical value requires the full machinery of Chapters [9](#ch-quantum-mechanics-in-three-dimensions)–[10](#ch-the-hydrogen-atom). This is a recurring pattern in quantum mechanics: the uncertainty principle alone, applied as an order-of-magnitude estimate, correctly anticipates the characteristic energy scale of a confined system, well before an exact calculation is carried out.
+
 ## Summary
 
-- The **de Broglie hypothesis** assigns every particle of momentum $p$ a wavelength $\lambda = h/p$, extending the photon relation of [Chapter 6](#ch-particle-properties-of-waves) to all matter.
-- The **Davisson–Germer experiment** confirmed this directly: electrons diffract from a crystal lattice with a wavelength matching $\lambda = h/p$, exactly as X-rays do.
-- **Wave–particle duality**: light and matter both show wave and particle behavior; which is manifest depends on the experiment, and neither classical picture alone is complete.
-- A localized particle is represented by a **wave packet**, a superposition of waves over a range of wave numbers $\Delta k$; a narrower spatial spread $\Delta x$ requires a broader $\Delta k$ (and hence, via $p = \hbar k$, a broader momentum spread $\Delta p$).
-- The **Heisenberg uncertainty principle**, $\Delta x\,\Delta p_x \geq \hbar/2$ (and analogously $\Delta E\,\Delta t \geq \hbar/2$), is a fundamental limit on the simultaneous precision of conjugate quantities, rooted in the wave nature of matter, not a limitation of measuring instruments.
+- The **de Broglie hypothesis** assigns every particle of momentum $p$ a wavelength $\lambda = h/p$, extending the photon relation of [Chapter 6](#ch-particle-properties-of-waves) to all matter, and for an electron accelerated through voltage $V$ gives $\lambda \approx 1.226\ \text{nm}/\sqrt{V[\text{volts}]}$.
+- Requiring an electron's de Broglie wave to form a consistent standing pattern around a circular orbit, $2\pi r = n\lambda$, reproduces the Bohr model's angular-momentum quantization $L = n\hbar$, previously an unexplained postulate.
+- The **Davisson–Germer** and **G. P. Thomson** experiments confirmed matter waves directly: electrons diffract from a crystal lattice with a wavelength matching $\lambda = h/p$, exactly as X-rays do; matter-wave interference has since been observed for neutrons, atoms, and large molecules such as $C_{60}$.
+- **Wave–particle duality** and Bohr's **complementarity principle**: light and matter both show wave and particle behavior; which is manifest depends on the experiment (as the single-particle double-slit experiment and the loss of fringes upon acquiring which-path information both show), and neither classical picture alone is complete.
+- A localized particle is represented by a **wave packet**, a superposition of waves over a range of wave numbers $\Delta k$; its envelope moves at the **group velocity** $v_g = d\omega/dk$, which equals the particle's classical velocity, distinct from the **phase velocity** $v_p = \omega/k$ of the individual wave crests.
+- The **Heisenberg uncertainty principle**, $\Delta x\,\Delta p_x \geq \hbar/2$ (and analogously $\Delta E\,\Delta t \geq \hbar/2$), is a fundamental limit on the simultaneous precision of conjugate quantities, rooted in the wave nature of matter, not a limitation of measuring instruments, and correctly predicts the order of magnitude of confinement energies from nuclear to atomic scales.
 
 ## Problems
 
@@ -99,10 +193,38 @@ Converting to an energy via the (relativistic, since this momentum turns out to 
 
 2. In the Davisson–Germer experiment, a diffraction maximum for 54 eV electrons was observed at $\theta = 50°$ from a nickel crystal. Using $\lambda = h/p$ for the electrons' de Broglie wavelength and the diffraction condition $d\sin\theta = \lambda$ (first order, $n=1$), find the effective interplanar spacing $d$ of the nickel crystal consistent with this observation.
 
-3. A proton is confined to a nucleus of diameter $1.0\times10^{-14}\ \text{m}$. Use the uncertainty principle to estimate the minimum kinetic energy the proton must have, and compare it (order of magnitude) to typical nuclear binding energies of several MeV per nucleon ([Chapter 13](#ch-nuclear-physics)).
+3. Using the worked-example formula $\lambda \approx 1.226\ \text{nm}/\sqrt{V[\text{volts}]}$, find the accelerating voltage needed to give electrons a de Broglie wavelength of exactly $0.0500\ \text{nm}$, comparable to a typical X-ray wavelength used in crystallography.
 
-4. An excited atomic state has a mean lifetime of $\Delta t = 1.0\times10^{-8}\ \text{s}$. (a) Use the energy–time uncertainty relation to estimate the minimum energy spread $\Delta E$ of this state, in eV. (b) If the state decays by emitting a photon of wavelength $500\ \text{nm}$, estimate the corresponding spread (linewidth) $\Delta\lambda$ in the emitted wavelength.
+4. A beam of thermal neutrons (kinetic energy $\approx k_BT$ at room temperature, $T \approx 300\ \text{K}$) is used for neutron diffraction studies of crystal structure. (a) Estimate the neutrons' typical kinetic energy in eV. (b) Find their de Broglie wavelength, given the neutron mass $m_n = 1.675\times10^{-27}\ \text{kg}$, and compare it to typical interatomic spacings.
 
-5. A beam of electrons is passed through a single slit of width $a$. Using the single-slit diffraction condition (first minimum at $\sin\theta \approx \lambda/a$ for small angles) together with the de Broglie relation, express the transverse momentum spread $\Delta p_y$ imparted to the electrons (estimated from $p\sin\theta$) in terms of the slit width $a$, and show that $\Delta y\,\Delta p_y \sim h$ if $\Delta y \sim a$, consistent with the uncertainty principle.
+5. Verify the claim in the text that a $C_{60}$ molecule (mass $\approx 1.2\times10^{-24}\ \text{kg}$) moving at a typical thermal beam speed of $200\ \text{m/s}$ has a de Broglie wavelength of a few picometers, and comment on why such a short wavelength, far smaller than the molecule's own diameter ($\approx 1\ \text{nm}$), can nonetheless produce an observable diffraction pattern from a grating with a period of order $100\ \text{nm}$.
 
-6. Explain, using the energy–time uncertainty relation, why a particle that is truly stable (infinite lifetime) can have a perfectly sharp rest energy $mc^2$, while an unstable particle cannot — and why particle physicists therefore quote both a mass and a "width" (in energy units) for unstable particles, a topic revisited in [Chapter 14](#ch-elementary-particles-and-the-standard-model).
+6. Using the de Broglie standing-wave argument, show that an electron in a circular Bohr orbit with $n=1$ has an orbital circumference equal to exactly one de Broglie wavelength, and explain qualitatively (without calculation) why this is consistent with such an orbit being the atom's lowest-energy (ground) state.
+
+7. A proton is confined to a nucleus of diameter $1.0\times10^{-14}\ \text{m}$. Use the uncertainty principle to estimate the minimum kinetic energy the proton must have, and compare it (order of magnitude) to typical nuclear binding energies of several MeV per nucleon ([Chapter 13](#ch-nuclear-physics)).
+
+8. An excited atomic state has a mean lifetime of $\Delta t = 1.0\times10^{-8}\ \text{s}$. (a) Use the energy–time uncertainty relation to estimate the minimum energy spread $\Delta E$ of this state, in eV. (b) If the state decays by emitting a photon of wavelength $500\ \text{nm}$, estimate the corresponding spread (linewidth) $\Delta\lambda$ in the emitted wavelength.
+
+9. A beam of electrons is passed through a single slit of width $a$. Using the single-slit diffraction condition (first minimum at $\sin\theta \approx \lambda/a$ for small angles) together with the de Broglie relation, express the transverse momentum spread $\Delta p_y$ imparted to the electrons (estimated from $p\sin\theta$) in terms of the slit width $a$, and show that $\Delta y\,\Delta p_y \sim h$ if $\Delta y \sim a$, consistent with the uncertainty principle.
+
+10. Explain, using the energy–time uncertainty relation, why a particle that is truly stable (infinite lifetime) can have a perfectly sharp rest energy $mc^2$, while an unstable particle cannot — and why particle physicists therefore quote both a mass and a "width" (in energy units) for unstable particles, a topic revisited in [Chapter 14](#ch-elementary-particles-and-the-standard-model).
+
+11. Verify the group-velocity calculation in the text: starting from $\omega(k) = \hbar k^2/2m$ (the nonrelativistic free-particle dispersion relation), compute $d\omega/dk$ explicitly and confirm that it equals $\hbar k/m = p/m$.
+
+12. A relativistic free particle has energy $E = \sqrt{(pc)^2+(mc^2)^2}$ ([Chapter 3](#ch-relativistic-dynamics)). Using $E = \hbar\omega$ and $p = \hbar k$, show that the group velocity $v_g = d\omega/dk$ equals $pc^2/E$, and confirm that this reduces to the particle's actual (relativistic) velocity $u$ using the relation $u = pc^2/E$ established in [Chapter 3](#ch-relativistic-dynamics).
+
+13. Estimate, using the uncertainty principle in the same manner as the atomic-scale worked example, the characteristic kinetic energy of an electron confined to a quantum dot (a nanoscale semiconductor structure) of diameter $10\ \text{nm}$, and compare it in order of magnitude to the atomic-scale estimate found in the text.
+
+14. A double-slit experiment is performed with electrons at a rate of one electron at a time, with a detector placed at one slit to determine which slit each electron passes through. (a) Explain, in terms of the uncertainty principle, why this which-path measurement necessarily disturbs the electron's momentum. (b) Estimate the momentum disturbance needed to determine, to within the slit width $a$, which of two slits separated by distance $d$ an electron passed through, and explain qualitatively why a disturbance of this size is enough to wash out an interference pattern with fringe spacing set by $d$.
+
+15. Explain why the phase velocity $v_p = \omega/k$ of a nonrelativistic free-particle matter wave, found in the text to be $u/2$, is not the speed of anything physically observable (in contrast with the group velocity), and why this is not a paradox.
+
+16. Using the spreading time scale $\tau \sim m(\Delta x_0)^2/\hbar$ quoted in the text, estimate $\tau$ for (a) an electron initially localized to $\Delta x_0 = 1.0\times10^{-10}\ \text{m}$ (roughly an atomic diameter), and (b) a $1.0\ \text{mg}$ dust grain initially localized to $\Delta x_0 = 1.0\times10^{-6}\ \text{m}$. Comment on which of these spreading times could plausibly be observed in a laboratory measurement lasting a few seconds.
+
+17. In a delayed-choice or quantum-eraser experiment, explain why the disappearance and reappearance of the interference pattern cannot be used to send information backward in time, even though the "choice" of whether which-path information is available may be made after the particle has passed through the slit region. (Hint: consider what an experimenter examining only the particles that land in a single, fixed detector region can and cannot know without also consulting the marker/eraser results.)
+
+18. A beam of electrons, each with the same de Broglie wavelength $\lambda = h/p$, is used in a Davisson–Germer-type experiment. Explain, using the standing-wave condition of the "Bohr Quantization Condition Revisited" subsection as an analogy, why a diffraction condition $d\sin\theta = n\lambda$ (rather than an arbitrary relation between $\theta$ and $\lambda$) is required for a diffraction maximum, drawing the parallel between constructive interference around a crystal lattice and constructive interference around a closed atomic orbit.
+
+19. Verify the claim in the "Consistency Check" subsection that $E=pc^2/u$ for a relativistic particle, using $E=\gamma mc^2$ and $p=\gamma mu$ from [Chapter 3](#ch-relativistic-dynamics), and show that combining this with $E=hf$ and $\lambda = u_p/f$ (with $u_p$ the wave's phase velocity) gives a phase velocity $u_p = c^2/u$ greater than $c$ — then explain why this superluminal *phase* velocity does not violate relativity, referring to your answer to Problem 15 about which velocity is physically observable.
+
+20. The neutron interferometry (COW) experiment detects a gravitationally induced phase shift between two paths of different height $\Delta h$ in a neutron interferometer of horizontal path length $L$. Explain qualitatively, using the de Broglie relation $\lambda = h/p$ and the fact that a neutron's kinetic energy (and hence its momentum and wavelength) changes very slightly with height in a gravitational field, why raising one arm of the interferometer changes the phase accumulated along that arm relative to the other.

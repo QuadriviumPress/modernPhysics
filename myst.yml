@@ -1,0 +1,39 @@
+version: 1
+project:
+  title: Modern Physics
+  subtitle: Relativity, Quantum Theory, and the Structure of Matter
+  short_title: Modern Physics
+  authors:
+    - name: Martin Veillette
+      corresponding: true
+      email: martin.veillette@gmail.com
+  date: 2026-01-01
+  license: CC-BY-NC-SA-4.0
+  open_access: true
+  github: QuadriviumPress/modernPhysics
+  toc:
+    - file: index.md
+    - title: Part I — Relativity
+      children:
+        - file: chapters/ch-01-the-need-for-relativity.md
+        - file: chapters/ch-02-special-relativity.md
+        - file: chapters/ch-03-relativistic-dynamics.md
+    - title: Part II — Quantum Theory
+      children:
+        - file: chapters/ch-04-particle-properties-of-waves.md
+        - file: chapters/ch-05-wave-properties-of-particles.md
+        - file: chapters/ch-06-the-schrodinger-equation.md
+        - file: chapters/ch-07-quantum-mechanics-in-three-dimensions.md
+    - title: Part III — Atoms and Molecules
+      children:
+        - file: chapters/ch-08-the-hydrogen-atom.md
+        - file: chapters/ch-09-many-electron-atoms.md
+        - file: chapters/ch-10-molecular-structure.md
+    - title: Part IV — Nuclear and Particle Physics
+      children:
+        - file: chapters/ch-11-nuclear-physics.md
+        - file: chapters/ch-12-elementary-particles-and-the-standard-model.md
+site:
+  template: book-theme
+  title: Modern Physics
+  nav: []

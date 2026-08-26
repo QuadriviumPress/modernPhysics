@@ -111,6 +111,15 @@ Single-slit patterns for four slit widths. The central maximum spans $\sin\theta
 
 This is the opposite of the naive expectation that a narrower opening should produce a narrower beam, and it is a genuinely wave-like signature. It also gives the correct picture of the limiting case: when $a \le \lambda$, the condition $\sin\theta = \lambda/a \ge 1$ has no solution, there are no minima anywhere, and the slit radiates into the entire forward hemisphere — behaving, exactly as [Chapter 4](#ch-interference-of-light) assumed, like a single Huygens point source. That is the justification, after the fact, for treating the slits of the double-slit experiment as points.
 
+The inverse relationship between the aperture and its pattern is worth seeing rather than reading about, and @fig:ch05-diffraction-sim shows the two side by side: the aperture on the left, the far-field pattern it produces on the right, with the aperture's size and the wavelength both on sliders. Shrinking the opening spreads the pattern, and by exactly the ratio $\lambda/a$ derived above. Two further controls make the point sharper than a single slit can. Squashing the round aperture into an ellipse produces an elliptical pattern elongated along the *other* axis, so the reciprocity holds direction by direction and not just on average; and the non-circular shapes on offer produce patterns of matching symmetry — an anticipation of the circular-aperture section below, where a round hole is found to give rings rather than a row of bands, and of the crystal lattices at the end of the chapter, where a periodic array of holes gives a periodic array of spots.
+
+```{phet} wave-interference
+:screen: 4
+:label: fig:ch05-diffraction-sim
+
+An aperture and the far-field diffraction pattern it produces, with aperture size, shape, and wavelength adjustable. Everything narrow in the aperture is wide in the pattern, and vice versa — the $\theta_1 \approx \lambda/a$ scaling of this section, seen whole rather than one angle at a time.
+```
+
 ### Worked Example: Width of the Central Maximum
 
 A slit of width $a = 0.0400\ \text{mm}$ is illuminated with $\lambda = 580\ \text{nm}$ light, and the pattern is observed on a screen $L = 2.00\ \text{m}$ away. Find the width of the central maximum.

@@ -47,6 +47,14 @@ $$
 
 This is the rule that lets you add your walking speed to a moving walkway, or a thrown ball's speed to the speed of the train from which it is thrown. Applied to light, it makes a sharp prediction: if light travels at speed $c$ relative to the ether, and Earth moves through the ether at orbital speed $v \approx 3\times 10^4\ \text{m/s}$, then an observer on Earth measuring light traveling in the same direction as Earth's motion should get $c - v$, and light traveling in the opposite direction should give $c + v$. The effect is small — about one part in $10^4$ — but with an interferometer sensitive enough to detect a shift in the interference pattern of order that size, it should be measurable.
 
+The assumption hiding inside that argument is worth making explicit, because every wave known to nineteenth-century physics encouraged it. A wave is a disturbance of *something*, and that something fixes the frame in which the wave has its textbook speed: @fig:ch01-waves-sim runs one oscillating source as a ripple on water, as a sound wave in air, and as light. On the first two screens the medium can be put on display directly — the water surface, and the individual air molecules being pushed back and forth — and it is relative to that medium that the disturbance travels at its stated speed. The ether hypothesis is the assumption that the third screen works like the first two, and that the medium there is merely one nobody had yet managed to detect.
+
+```{phet} waves-intro
+:label: fig:ch01-waves-sim
+
+A single oscillating source seen as a water wave, a sound wave, and a light wave. For water and sound the medium can be drawn on the screen, and it sets the frame in which the wave travels at its stated speed; light was expected to be no different, and the medium it was supposed to disturb was the ether.
+```
+
 ## The Michelson–Morley Experiment
 
 Albert Michelson (and later Michelson working with Edward Morley) built exactly such an interferometer. Its principle is to split a beam of light into two perpendicular paths, reflect each off a mirror, recombine the beams, and observe the resulting interference pattern. If Earth moves through the ether, the round-trip travel time along the path parallel to that motion should differ slightly from the round-trip time along the perpendicular path, because a "cross-stream" trip and an "upstream–downstream" trip through a moving medium take different times even when the two paths have equal length — the same effect that makes a boat crossing a river directly and returning take less time than travelling the same distance upstream and back. The predicted difference is small, but the interferometer was sensitive enough to detect a shift of a small fraction of a fringe, and the apparatus was mounted on a stone slab floating on mercury so that it could be rotated smoothly to swap the roles of the two arms.
@@ -96,6 +104,14 @@ The beam-splitting layout that makes this comparison possible is shown in @fig:c
 :alt: Schematic of a Michelson–Morley interferometer with perpendicular arms, mirrors, a beam splitter, and a hypothetical ether wind.
 
 The Michelson–Morley arrangement. A beam is split into perpendicular paths and recombined; rotating the apparatus exchanges the arms that are parallel and perpendicular to the hypothesized ether wind. Original schematic by the author.
+```
+
+What a fraction of a fringe looks like, and how little it takes to produce one, can be checked directly in @fig:ch01-interferometry-sim. Translating one mirror by half a wavelength moves the pattern by one full fringe, so the $0.37$ fringe that Michelson and Morley were hunting corresponds to an optical path difference of $0.37\lambda \approx 0.22\ \mu\text{m}$, and to a mirror motion of half that — small, but on this display an unmistakable movement of the whole pattern rather than a subtle change of shape. That is why the null result was so hard to argue with.
+
+```{openphysics} InterferometryLab
+:label: fig:ch01-interferometry-sim
+
+The Michelson geometry that Michelson and Morley used, with the arms under direct control. The ether wind is not modeled — no experiment has ever needed it to be — but the instrument's response to a path-length difference between the arms is, and it is that response the 1887 apparatus was calibrated against.
 ```
 
 ## A Second Null Result: The Kennedy–Thorndike Experiment

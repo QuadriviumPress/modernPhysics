@@ -46,7 +46,7 @@ admonitions, and cross-references — see the
 ## Interactive simulations
 
 Chapters can embed a running browser simulation with the `{openphysics}`,
-`{phet}`, or `{simulation}` directives, supplied by
+`{phet}`, `{phet-legacy}`, or `{simulation}` directives, supplied by
 [`plugins/simulation.mjs`](plugins/simulation.mjs):
 
 ````markdown
@@ -65,6 +65,17 @@ that works in an iframe can be embedded, not only simulations from
 [PhET](https://phet.colorado.edu). See
 [`plugins/README.md`](plugins/README.md) for the options and for how the
 fallback works.
+
+`{phet-legacy}` reaches PhET's pre-HTML5 Java simulations, which PhET runs in
+the browser through CheerpJ. Several topics here — the photoelectric effect,
+quantum bound states, tunneling, lasers, gas discharge, the nuclear-physics
+family — have no HTML5 equivalent, so the Java version is the only interactive
+option. It is slow to start and mouse-only; prefer `{phet}` or `{openphysics}`
+where either has something comparable.
+
+Every chapter carries at least one simulation;
+[`SOURCES.md`](SOURCES.md) lists which, chapter by chapter, along with the
+attribution each supplier requires.
 
 ## Figures
 

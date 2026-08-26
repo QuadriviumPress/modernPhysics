@@ -87,6 +87,15 @@ $$
 
 is greater than or equal to $1$ for any $v < c$, and grows without bound as $v \to c$. This is **time dilation**: a clock moving at speed $v$ relative to an observer is measured by that observer to run slow, ticking out $\Delta t = \gamma \Delta t_0$ of the observer's own time for every $\Delta t_0$ of proper time it displays. The effect is symmetric — each of two observers in relative motion sees the *other's* clock as running slow, since each is equally entitled to regard themselves as at rest. Although derived here for a light clock, time dilation applies to time itself, and hence to every physical process — mechanical clocks, radioactive decay rates, biological aging — since two different physical clocks, built differently, must stay in agreement in every frame or their disagreement could be used to detect absolute motion, contradicting postulate 1.
 
+The two clocks of that argument run side by side in @fig:ch02-light-clock-sim: one at rest in the laboratory, one gliding past at a speed you set, with the moving pulse's zigzag path drawn in. Nothing in the simulation makes the moving clock tick slowly by fiat. Both pulses travel at $c$; the moving one simply has a longer path to cover between reflections, and the two tick counts drift apart by exactly the factor $\gamma$ computed above.
+
+```{openphysics} SpecialRelativity
+:screen: 1
+:label: fig:ch02-light-clock-sim
+
+A light clock at rest beside an identical one moving at $\beta = v/c$, with the diagonal light path and both tick counts displayed. The other screens of this simulation return in the sections that follow — length contraction, the twin paradox, and the relativistic Doppler effect are each one screen along.
+```
+
 Time dilation is not a hypothesis awaiting confirmation; it is routinely observed. Muons created by cosmic rays in the upper atmosphere have a mean lifetime, at rest, of about $2.2\ \mu\text{s}$ — long enough, at nearly the speed of light, to travel only a few hundred meters before decaying, far short of the several kilometers to Earth's surface. Yet large numbers of these muons are detected at sea level. In Earth's frame, the muons' internal "clock" — the process governing decay — runs slow by the factor $\gamma$, extending their mean range by that same factor, which is exactly what is observed. (This effect was confirmed with precision in a classic 1941 experiment by Bruno Rossi and David Hall, comparing muon flux measured at the top of Mount Washington in New Hampshire to the flux at a lower elevation.)
 
 ### The Twin Paradox
@@ -223,6 +232,14 @@ dropping the term of order $v^2/c$, which is negligible for the modest flow spee
 ## The Relativistic Doppler Effect
 
 The classical Doppler effect — the pitch of an ambulance siren rising as it approaches and falling as it recedes — arises from the finite travel time of successive wave crests to a stationary observer. Light shows an analogous effect, but with a relativistic correction on top of it, because the *source's clock itself* runs slow according to the observer, an effect with no classical counterpart at all.
+
+It is worth being precise about what the classical effect does and does not depend on, because the difference is the whole point. @fig:ch02-classical-doppler-sim is the acoustic case, with the source and the observer independently movable. Move the source toward a stationary listener at speed $u$ and the received frequency is $f_0/(1 - u/v_s)$; leave the source alone and move the *listener* toward it at the same $u$ and the answer is $f_0(1 + u/v_s)$ instead. The two disagree at second order in $u/v_s$, and they must: the air is a medium, the medium picks out a frame, and "which one is really moving" is a question sound can answer. Light has no such medium, so the formula derived below can depend on the relative velocity and on nothing else — and that constraint alone is nearly enough to fix it.
+
+```{openphysics} DopplerEffect
+:label: fig:ch02-classical-doppler-sim
+
+The *classical* Doppler effect, for sound in air. Drag the source and the observer independently and compare the shift produced by moving one against the shift produced by moving the other; the asymmetry between the two cases is the signature of a medium, and it is what disappears in the relativistic formula.
+```
 
 Consider a source emitting light of proper frequency $f_0$ (the frequency measured by an observer at rest relative to the source), receding directly away from an observer at speed $v$. Two effects combine:
 

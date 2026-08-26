@@ -130,6 +130,15 @@ $$
 
 the **photoelectric equation**. This immediately explains all three observations: $K_{\max}$ depends on $f$ (through the photon energy $hf$) but not on intensity, since intensity only changes the *number* of photons per second, not the energy of each one; the threshold frequency is $f_0 = \phi/h$, below which a single photon simply does not carry enough energy to free an electron, no matter how many photons arrive; and emission is instantaneous because each electron absorbs one photon's energy all at once, not gradually. A plot of $K_{\max}$ (equivalently, $eV_0$) versus $f$ is a straight line of slope $h$ and $y$-intercept $-\phi$, and Millikan's precise measurement of exactly this line (1916) provided both a direct experimental value of $h$ and strong confirmation of Einstein's photon hypothesis — for which, not for relativity, Einstein received the 1921 Nobel Prize in Physics.
 
+The three stubborn facts are best met in the order Lenard and Millikan met them, with the apparatus in front of you. In @fig:ch06-photoelectric-sim the light's intensity, its wavelength, the target metal, and the retarding voltage are all under control, and the photocurrent and stopping potential are read off directly. Turn the intensity up at fixed wavelength: the current rises and the stopping potential does not move. Shorten the wavelength instead: the stopping potential climbs, and a plot of $eV_0$ against $f$ — the simulation will accumulate one for you — is a straight line whose slope is $h$ and whose intercept names the metal. Cross the threshold from the long-wavelength side and the current stops altogether, at full intensity.
+
+```{phet-legacy} photoelectric
+:sim-name: Photoelectric Effect
+:label: fig:ch06-photoelectric-sim
+
+The photoelectric apparatus: a photocathode, an adjustable light source, and a retarding voltage. (This is one of PhET's original Java simulations, run in the browser by CheerpJ; it downloads a Java runtime before it starts, so give it a few seconds on first load.)
+```
+
 ### Worked Example: The Photoelectric Effect in Cesium
 
 Cesium has one of the lowest work functions of any metal, $\phi = 2.14\ \text{eV}$, which is why it is used in the photocathodes of photomultiplier tubes and early photoelectric light meters. Ultraviolet light of wavelength $\lambda = 250\ \text{nm}$ illuminates a cesium surface. Using the convenient combination $hc = 1240\ \text{eV}\cdot\text{nm}$,
@@ -163,6 +172,14 @@ eV = \frac{hc}{\lambda_{\min}} \quad \Longrightarrow \quad \lambda_{\min} = \fra
 $$
 
 known as the **Duane–Hunt limit**. Most electrons instead lose their energy gradually over many collisions, radiating photons of smaller energy at each step and producing a continuous spectrum of wavelengths longer than $\lambda_{\min}$ — but no photon in the entire spectrum can have a wavelength shorter than $\lambda_{\min}$, since no single electron carries more than $eV$ of kinetic energy to begin with. Superimposed on this continuous bremsstrahlung spectrum are sharp **characteristic X-ray lines**, produced when an incident electron knocks an inner-shell electron out of a target atom and an outer electron falls down to fill the vacancy, emitting a photon of energy fixed by the target element's inner-shell energy levels (Moseley's law for these characteristic energies is developed in [Chapter 11](#ch-many-electron-atoms)). Unlike the continuous bremsstrahlung background, the characteristic lines depend on the target material, not on the accelerating voltage (once $V$ is large enough to eject the inner-shell electron in the first place).
+
+Bremsstrahlung is worth separating into its classical and its quantum halves, because only the second is new here. The classical half — that a charge which accelerates radiates, and that the radiation carries energy away — is already in Maxwell's equations, and @fig:ch06-radiating-charge-sim is that statement on its own: shake a charge and kinks in its field propagate outward at $c$, taking energy with them. Stopping a charge dead is an acceleration like any other, so an electron slamming into a tungsten anode must radiate. What classical physics cannot supply is the sharp edge at $\lambda_{\min}$: a continuous field theory sets no floor on the wavelength radiated in a single event, and the Duane–Hunt limit exists only because the radiated energy comes in quanta $hf$ and one electron brings only $eV$ to spend.
+
+```{openphysics} RadioWaves
+:label: fig:ch06-radiating-charge-sim
+
+An accelerating charge and the field it radiates. Move the charge by hand and watch the disturbance propagate outward at $c$ — the classical mechanism behind bremsstrahlung, and the one the electron in an X-ray tube obeys on its way to producing a photon of energy up to $eV$.
+```
 
 ### Worked Example: Minimum Wavelength from a Diagnostic X-Ray Tube
 

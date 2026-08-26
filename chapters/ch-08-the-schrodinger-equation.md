@@ -31,6 +31,14 @@ $$
 
 For $\Psi$ to yield a sensible probability density, it (and, where the potential is finite, its first derivative) must be single-valued, finite, and continuous; discontinuities or divergences in $\Psi$ would correspond to ill-defined or infinite probability densities.
 
+The Born rule is easy to state and easy to under-read, because probability is also what a classical physicist reaches for when describing ignorance about a definite fact. The two are not the same, and @fig:ch08-measurement-sim is built around the difference. Its first screen puts a classical coin under a cover beside a quantum one: both give heads half the time, but the classical coin already *is* heads or tails while it is hidden, and the quantum one is in a superposition of the two until it is looked at. Its later screens make the distinction operational — single photons through a polarizer arriving with probability $\cos^2\theta$, and spin-$\tfrac12$ particles through a chain of analyzers whose statistics no assignment of pre-existing values reproduces.
+
+```{phet} quantum-measurement
+:label: fig:ch08-measurement-sim
+
+Measurement statistics for a classical coin, for single photons through a polarizer, and for spin-$\tfrac12$ particles. $|\Psi|^2$ is a probability, but not a probability about something already decided — the distinction this chapter's mathematics quietly assumes.
+```
+
 ### Expectation Values and Operators
 
 Because $|\Psi(x,t)|^2$ gives only a probability distribution, not a definite trajectory, a quantum "measurement" of position generally yields different results on identically prepared systems, with a statistical average — the **expectation value** — defined by
@@ -97,6 +105,15 @@ Normalizing $\psi_n(x) = A\sin(n\pi x/L)$ over $[0,L]$ gives $A = \sqrt{2/L}$. S
 - **The ground state ($n=1$) has $E_1 = \pi^2\hbar^2/2mL^2 > 0$**, not zero. A particle strictly confined to a box, unlike a classical particle, can never be perfectly at rest — a direct consequence of the uncertainty principle: confining $\Delta x \sim L$ forces $\Delta p \gtrsim \hbar/L$, hence a minimum kinetic energy $\sim \hbar^2/mL^2$, of the same order as $E_1$.
 - **The probability density $|\psi_n(x)|^2$ has $n-1$ interior nodes** (points where the particle has zero probability of being found) — for $n>1$, positions strictly inside the box that the particle can never occupy, again with no classical counterpart.
 
+All three features are on display in @fig:ch08-bound-states-sim, which solves the time-independent equation numerically for a potential you choose and draws the resulting eigenfunctions on top of the level diagram. Start with a square well and make it deep: the levels approach the $n^2$ ladder derived above, the ground state sits visibly above the bottom of the well, and $\psi_n$ picks up one more node with each step up that ladder. The same simulation carries the finite well, the harmonic oscillator, and the one-dimensional Coulomb potential, so it is worth returning to as those appear later in this chapter and in [Chapter 10](#ch-the-hydrogen-atom); the differences between their level *spacings* — $n^2$ here, uniform for the oscillator, $-1/n^2$ for Coulomb — are the fingerprints of the three potentials.
+
+```{phet-legacy} bound-states
+:sim-name: Quantum Bound States
+:label: fig:ch08-bound-states-sim
+
+Bound states of a one-dimensional potential, with the well shape, depth, and width adjustable and the eigenfunctions drawn at their own energies. Superpositions of two eigenstates can be built and run in time, which is where the stationary states stop being stationary.
+```
+
 ### Worked Example: Expectation Values in the Ground State
 
 For the infinite-well ground state $\psi_1(x) = \sqrt{2/L}\sin(\pi x/L)$, the probability density $|\psi_1(x)|^2$ is symmetric about the well's midpoint $x=L/2$, so by symmetry alone,
@@ -124,6 +141,15 @@ R = \left(\frac{k_1-k_2}{k_1+k_2}\right)^2, \qquad T = \frac{4k_1k_2}{(k_1+k_2)^
 $$
 
 the last equality expressing overall conservation of probability: every incident particle is eventually found either reflected or transmitted. If instead $E < V_0$, then $k_2$ becomes imaginary, the "transmitted" solution turns into a decaying exponential (no propagating wave in region II at all), and $R=1$ exactly — total reflection, as classically expected — but, just as in the wave-packet argument of [Chapter 7](#ch-wave-properties-of-particles), the wave function does not vanish abruptly at $x=0$; writing $k_2 = i\kappa$ with $\kappa = \sqrt{2m(V_0-E)}/\hbar$ real, the wave function in region II becomes $\psi_{\text{II}}(x) \propto e^{-\kappa x}$, decaying with a characteristic **penetration depth** $1/\kappa$ rather than vanishing abruptly at $x=0$. The particle therefore has a small but nonzero probability of being found some distance *into* the classically forbidden region, even though it is certain, eventually, to be reflected back the way it came — a preview of the tunneling phenomenon developed below, in which a *second* boundary, ending the forbidden region before $\psi$ has fully decayed away, allows the particle to escape entirely rather than merely penetrate and return.
+
+Both halves of that story — partial reflection at a step the particle has the energy to cross, and exponential decay into a step it does not — can be run against a real wave packet rather than a plane wave in @fig:ch08-tunneling-sim. Send a packet at a step with $E > V_0$ and it visibly splits: part of it continues, slower and stretched, and part comes back, with the areas under the two pieces reproducing the $T$ and $R$ computed above. Lower the energy below $V_0$ and the packet is entirely reflected, but during the encounter it leaks a decaying tail into the barrier. Replacing the step by a barrier of finite thickness — the simulation's next potential — is the whole of tunneling: the tail reaches the far side before it has died away, and what emerges there is a transmitted packet.
+
+```{phet-legacy} quantum-tunneling
+:sim-name: Quantum Tunneling and Wave Packets
+:label: fig:ch08-tunneling-sim
+
+A wave packet incident on a step, a barrier, or a double barrier, with the real and imaginary parts of $\psi$ and the probability density all available. The energy relative to the barrier height is adjustable, as are the barrier's width and height — the two parameters the transmission coefficient of the next section depends on exponentially.
+```
 
 ### Worked Example: Reflection at a Potential Step
 

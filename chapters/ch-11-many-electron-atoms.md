@@ -41,6 +41,14 @@ $$
 
 This filling scheme directly generates the structure of the **periodic table**. Each **period** (row) corresponds to filling a new principal shell $n$; each period ends when a subshell configuration reaches a particularly stable, filled-shell arrangement (a noble gas). Elements in the same **group** (column) share the same outer-shell (**valence**) configuration and, correspondingly, similar chemical properties, since chemical bonding ([Chapter 12](#ch-molecular-structure)) is governed primarily by the valence electrons. The table's division into $s$-block, $p$-block, $d$-block (transition metals), and $f$-block (lanthanides/actinides) regions directly reflects which subshell is being filled across that block. The chemical inertness of the noble gases, the strong reactivity of the alkali metals (a single, loosely bound $s$-electron outside a filled shell) and the halogens (one electron short of a filled shell), and the broad periodicity of atomic size and ionization energy all follow from this shell structure, without further assumptions.
 
+The Aufbau procedure is quicker to learn by doing it than by reading the rules, and @fig:ch11-build-atom-sim is the exercise: add protons, neutrons, and electrons one at a time and watch the element name, the net charge, the mass number, and the shell occupancy update together. Two habits of thought are worth breaking there. Adding a proton changes the element; adding a neutron does not, and only moves the atom along a row of isotopes ([Chapter 13](#ch-nuclear-physics)). And the electrons go into shells that fill in a fixed order, so that the chemistry of the atom is decided by the last few added rather than by the total.
+
+```{phet} build-an-atom
+:label: fig:ch11-build-atom-sim
+
+Atoms assembled particle by particle, with element, charge, mass number, and electron shell filling all displayed as they are built. Build up to neon or argon and the outer shell closes exactly as the electron count reaches a noble gas — the closure being a fact about the electrons, and nothing to do with the nucleus underneath them.
+```
+
 ## Atomic Spectra and X-Rays
 
 Optical spectra of multi-electron atoms arise, as in hydrogen, from transitions of a single (typically outer, valence) electron between energy levels, now shifted by screening as described above and further split by the interaction between an electron's orbital and spin magnetic moments (**spin-orbit coupling**), producing the closely spaced doublets and multiplets seen in high-resolution atomic spectra.
@@ -55,11 +63,28 @@ $$
 
 where $a$ and $b$ are constants (with $b\approx 1$ for the $K_\alpha$ line, reflecting screening of the nuclear charge by the one remaining $K$-shell electron) essentially independent of the element. This relation follows directly from a hydrogen-like treatment of the transition, with the true nuclear charge $Z$ replaced by an effective charge $Z_{\text{eff}} = Z - b$ to account for screening by the other $K$-shell electron, applied to the Bohr/Schrödinger hydrogen energy formula. Moseley's law provided, for the first time, a direct physical (rather than merely chemical) way to determine an element's atomic number $Z$, and was used to correctly order elements in the periodic table, resolve several ambiguities in the ordering by atomic mass, and confirm the existence of predicted-but-then-unobserved elements by their expected X-ray frequency, cementing $Z$ (nuclear charge) rather than atomic mass as the correct organizing quantity for the periodic table.
 
+At the optical end of the same physics, @fig:ch11-discharge-sim runs the experiment a neon sign runs: electrons accelerated through a low-pressure gas, colliding with atoms, and the light that comes out. The collisions are the point. Below a threshold electron energy the atoms are elastic scatterers and the tube stays dark; raise the accelerating voltage past the first excitation energy and the atoms begin to absorb *exactly* that much, no more, and re-emit it as a photon of fixed wavelength. That threshold behavior is the Franck–Hertz experiment, and it is direct evidence of discrete atomic levels that owes nothing to spectroscopy. Multi-level atoms can be selected to see cascades through intermediate states, which is the same level structure the next section exploits.
+
+```{phet-legacy} discharge-lamps
+:sim-name: Neon Lights & Other Discharge Lamps
+:label: fig:ch11-discharge-sim
+
+A gas discharge tube with the accelerating voltage, the gas, and the atomic energy-level scheme under control. Excitation happens only at discrete electron energies, and the emitted spectrum is the level diagram read out in light.
+```
+
 ## Lasers
 
 A further application of atomic energy levels involves the interaction between atoms and light more actively than simple absorption/emission spectroscopy. An atom in an excited state can lose energy in two distinct ways: **spontaneous emission**, in which it decays at a random time with a photon emitted in a random direction (governing ordinary fluorescence and, statistically, the exponential decay laws seen throughout atomic and nuclear physics), and **stimulated emission**, in which a passing photon of exactly the transition energy triggers the atom to emit a second, additional photon that is an exact copy of the first — same energy, direction, phase, and polarization. Einstein first predicted stimulated emission in 1917, well before it could be technologically exploited.
 
 Ordinarily, stimulated emission is masked by the competing process of absorption, since a typical collection of atoms in thermal equilibrium has more atoms in lower-energy states than higher ones. A **laser** (light amplification by stimulated emission of radiation) requires engineering a **population inversion** — an atomic sample with more atoms in a higher-energy state than a lower one, typically achieved by "pumping" atoms into a higher state and relying on an intermediate **metastable state** (one with an anomalously long lifetime against spontaneous decay, because its decay to lower states is forbidden or strongly suppressed by selection rules such as the $\Delta\ell=\pm1$ rule of [Chapter 10](#ch-the-hydrogen-atom)) to accumulate a population large enough to exceed that of the lower lasing level. Once inverted, a single spontaneously emitted photon can trigger a cascade of stimulated emission as it passes back and forth through the gain medium (typically between two mirrors forming an optical cavity), producing an intense, coherent, highly directional, single-wavelength beam — a direct, large-scale, technological manifestation of discrete atomic energy levels and the quantum-mechanical description of light-matter interaction developed across this and the preceding chapters.
+
+Every ingredient of that description is separately adjustable in @fig:ch11-laser-sim, which is the best way to see that a laser is a threshold device rather than a bright lamp. Pump a two-level medium as hard as you like and it will not lase: absorption and stimulated emission from a two-level system saturate at equal populations, so no inversion is possible. Switch to three levels, so that atoms accumulate in a metastable state, and the inversion appears; add the cavity mirrors and, above a pump rate that the simulation makes it easy to bracket from below, the output collapses from a random scatter of spontaneous photons into a single coherent beam.
+
+```{phet-legacy} lasers
+:label: fig:ch11-laser-sim
+
+A laser assembled from its parts: a pump, a two- or three-level gain medium, and an optical cavity. Population inversion is displayed directly, so the threshold for lasing can be found by experiment rather than asserted.
+```
 
 ## Summary
 

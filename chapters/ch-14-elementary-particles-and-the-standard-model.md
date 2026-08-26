@@ -36,6 +36,14 @@ All observed particle interactions are, to the precision of current experiments,
 
 The strong and weak interactions, both confined to nuclear-scale distances, are the reason their effects were unknown until nuclear and particle physics probed those scales directly; the electromagnetic and gravitational interactions, both infinite in range because their mediating boson is massless, dominate everyday, macroscopic experience. The relative strengths quoted are approximate and depend on the energy/distance scale at which the comparison is made, but the ordering — strong $\gg$ electromagnetic $\gg$ weak $\gg$ gravitational, at typical particle-physics scales — is robust. The strong force between nucleons discussed in [Chapter 13](#ch-nuclear-physics) is, in the Standard Model's deeper description, a residual effect of the strong force acting between the quarks confined inside each nucleon (analogous to the way the residual electromagnetic force between neutral atoms, the van der Waals force, is a residual effect of the more fundamental electromagnetic force between the charged constituents of each atom).
 
+Of the four, the weak interaction is the one with no everyday signature to point at — it is too short-ranged to hold anything together and too feeble to push anything around — and its importance is easy to underrate as a result. Its distinction is that it is the only interaction that changes one kind of quark into another, and @fig:ch14-beta-decay-sim is that transformation at work: a neutron ($udd$) becomes a proton ($uud$) by turning a down quark into an up quark, with an electron and an antineutrino carrying off the charge and lepton-number balance. Nothing else in the table can do this. Without it, the proton-proton chain could never take its first step, no hydrogen would ever become helium, and stars would not shine.
+
+```{phet-legacy} nuclear-physics/beta-decay
+:label: fig:ch14-beta-decay-sim
+
+Beta decay of a single nucleus and of a sample, with the emitted electron and antineutrino shown. The conservation laws catalogued later in this chapter can be read directly off the products: charge, baryon number, and electron lepton number each balance, event by event.
+```
+
 ## Leptons and Quarks
 
 The Standard Model's fundamental matter fermions fall into two families, **leptons** and **quarks**, each organized into three repeating **generations** of increasing mass, with (as far as current experiments show) identical properties within a generation apart from mass:

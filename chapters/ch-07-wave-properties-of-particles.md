@@ -60,6 +60,15 @@ $$
 
 (with $d$ the crystal's known interplanar spacing) allowed Davisson and Germer to extract an experimental wavelength for the electrons — and it agreed, to good precision, with the de Broglie wavelength $\lambda = h/p$ computed from the electrons' known kinetic energy.
 
+The experiment is reconstructed in @fig:ch07-davisson-germer-sim, where both sides of $d\sin\theta = n\lambda$ are under control: the electron gun's accelerating voltage, which fixes $p$ and hence $\lambda = h/p$, and the spacing of the target atoms, which fixes $d$. Raising the voltage shortens the wavelength and pulls the scattering maxima to smaller angles; widening the atomic spacing pushes them back out. Neither response is available to a stream of particles bouncing off a surface, and observing both is what settled the question.
+
+```{phet-legacy} quantum-wave-interference/davisson-germer
+:sim-name: Davisson–Germer: Electron Diffraction
+:label: fig:ch07-davisson-germer-sim
+
+Electrons scattering from a crystal surface, with the beam energy and the atomic spacing under control. What is drawn is the electron's wave; where it is detected is a single point.
+```
+
 That same year, working independently in Britain, George Paget Thomson fired higher-energy electrons through thin polycrystalline metal foils and observed concentric diffraction rings on a photographic plate — the electron analog of the ring patterns produced by X-ray diffraction through a powdered crystalline sample — providing an independent confirmation using a completely different experimental geometry. Thomson's result carries a particular irony: his father, J. J. Thomson, had won the 1906 Nobel Prize for discovering the electron and demonstrating that it is a particle with a definite charge-to-mass ratio; the son shared the 1937 Nobel Prize (with Davisson) for demonstrating that the very same particle also behaves as a wave — both experiments correct, neither in conflict with the other, once wave–particle duality is properly understood.
 
 Electrons, unambiguously particles in every other respect (they have definite charge and mass, and leave localized tracks and point-like impacts on a detector), diffract like waves when their de Broglie wavelength is comparable to the spacing of the diffracting structure. The effect has since been confirmed for neutrons, atoms, and — in experiments beginning in the late 1990s — even large molecules: neutron diffraction is now a standard tool for probing crystal and magnetic structure (complementing X-ray diffraction, since neutrons, being uncharged, scatter primarily from nuclei rather than electron clouds), and a landmark 1999 experiment by Arndt, Zeilinger, and collaborators observed diffraction of $C_{60}$ "buckyball" molecules — each containing 60 carbon atoms, with a mass some $10^5$ times that of a single electron — through a microfabricated grating, with a measured de Broglie wavelength of only a few picometers, far smaller than the molecule itself, yet still large enough to produce a measurable diffraction pattern. Matter-wave interference is not a special property of electrons; it is a universal feature of quantum objects, observable whenever a system can be prepared with a de Broglie wavelength comparable to some accessible length scale. The same phenomenon is the operating principle of the electron microscope, whose resolution — set by the wavelength of the imaging "light," per ordinary diffraction limits ([Chapter 5](#ch-diffraction-of-light)) — can be far finer than any visible-light microscope because electron de Broglie wavelengths, as the worked example above shows, can be made far shorter than visible wavelengths simply by choosing a sufficiently large accelerating voltage.
@@ -78,6 +87,15 @@ $$
 
 since otherwise the wave would interfere destructively with itself on successive trips around the loop and no stable pattern could persist. Rearranging, $pr = n\hbar$ — exactly Bohr's angular-momentum quantization condition, $L = n\hbar$, now derived (rather than assumed) from the requirement that an electron's matter wave close consistently on itself. This does not yet constitute a full theory (that requires the Schrödinger equation of Chapters [8](#ch-the-schrodinger-equation)–[9](#ch-quantum-mechanics-in-three-dimensions), applied to the hydrogen atom in [Chapter 10](#ch-the-hydrogen-atom)), but it shows that de Broglie's hypothesis was not an isolated curiosity: it directly explains why atomic angular momentum comes only in discrete multiples of $\hbar$, years before Schrödinger's wave equation made the connection rigorous.
 
+Quantization by a closure condition is not a quantum idea, and it is easier to trust once it has been seen somewhere unmysterious. @fig:ch07-standing-wave-sim drives a column of air and sweeps the frequency: almost every frequency produces nothing, and at a discrete set of them the tube suddenly resonates, because only there does the wave returning from the far end arrive back in step with itself. Nothing is quantized about air. What is discrete is the set of wavelengths that a boundary condition permits — an integer count fitting into the available length — and de Broglie's contribution was to notice that an electron's wave going around an orbit is subject to a closure condition of exactly the same kind.
+
+```{openphysics} StandingWaves
+:screen: 3
+:label: fig:ch07-standing-wave-sim
+
+Standing waves in a pipe. Sweep the drive frequency and the response is a set of sharp resonances at which a whole number of half-wavelengths fits between the ends; between them, the returning wave arrives out of step and cancels itself. The Bohr condition $2\pi r = n\lambda$ is the same statement for a wave that closes on a loop instead of between two ends.
+```
+
 ### Worked Example: Checking the Standing-Wave Condition for Hydrogen's Ground State
 
 The Bohr model (developed further in [Chapter 10](#ch-the-hydrogen-atom)) gives the electron in hydrogen's $n=1$ orbit a radius $a_0 = 5.29\times10^{-11}\ \text{m}$ (the **Bohr radius**) and an orbital speed $v = 2.19\times10^6\ \text{m/s}$. Its de Broglie wavelength is
@@ -94,6 +112,14 @@ The picture that emerges from Chapters [6](#ch-particle-properties-of-waves) and
 
 The double-slit experiment ([Chapter 4](#ch-interference-of-light)) makes this concrete. Even when electrons (or photons) are sent through the apparatus one at a time — far too infrequently for any two particles to interact or "interfere with each other" in transit — the individual, localized detection events recorded on a screen accumulate, after many particles, into the same interference fringe pattern predicted for a wave. Each particle arrives as a single, point-like click, exactly as a particle should; yet the *statistical distribution* of many such clicks builds up the wave-interference pattern, meaning each individual particle's behavior is governed by the same wave mathematics used for light, even though no two particles are present in the apparatus at once to "interfere" with each other in any classical sense. This experiment has been performed with electrons (originally by Claus Jönsson in 1961, and in a particularly clean single-particle-at-a-time form by Akira Tonomura and collaborators in 1989) and confirms the interference pattern exactly as quantum mechanics predicts.
 
+That accumulation is the thing to watch, and it is what @fig:ch07-single-particle-sim reproduces. Fire particles one at a time and the screen records isolated, point-like hits in what looks at first like a random scatter; leave it running and the fringes emerge from the statistics of hits that were never anything but individual. The simulation also carries the which-path apparatus discussed next: a detector placed in the path of the wave function collapses it on each measurement, and the fringes go with it, while the individual hits go on looking exactly the same.
+
+```{phet-legacy} quantum-wave-interference
+:label: fig:ch07-single-particle-sim
+
+Single particles sent through a double slit, one at a time, with the detection screen accumulating hits. The wave function is displayed alongside the record of impacts: one object, propagating as a wave and detected as a particle.
+```
+
 Crucially, if a measurement is added to the apparatus that determines *which* slit each particle actually passed through — "which-path" information — the interference pattern disappears entirely, replaced by the simple sum of the two single-slit patterns, exactly as if the particles were classical objects going through one slit or the other. Acquiring which-path information is not a matter of clumsy experimental technique that could, with sufficient care, be avoided while preserving the fringes; the loss of interference is a direct, unavoidable consequence of the uncertainty principle (developed later in this chapter), since determining which slit a particle used necessarily disturbs its momentum by an amount sufficient to wash out the fringe spacing. It is tempting, but incorrect, to imagine that a photon or electron is "really" a tiny wave packet that sometimes behaves like a particle, or "really" a tiny particle that sometimes behaves like a wave; the two descriptions are complementary, and a full account of quantum behavior (developed starting in [Chapter 8](#ch-the-schrodinger-equation)) requires a mathematical object — the wave function — that reduces to particle-like or wave-like predictions depending on what is measured, without being fully captured by either classical picture on its own.
 
 ### Delayed Choice and the Quantum Eraser
@@ -107,6 +133,16 @@ To describe a localized particle in wave language, a single wave of definite wav
 $$
 \Delta x\, \Delta k \gtrsim 1,
 $$
+
+The trade-off can be watched directly. @fig:ch07-wave-packet-sim builds a packet out of harmonic components whose amplitudes follow an adjustable envelope, and prints both widths as you work: narrow the spread $\sigma_k$ of contributing wave numbers and the packet in $x$ stretches out toward the infinite sinusoid of definite momentum; widen $\sigma_k$ and the packet contracts toward a spike, with the panel reporting $\sigma_x = 1/\sigma_k$ throughout. Switching the display from a function of space to a function of time turns the same relation into the energy–time form used later in this section.
+
+```{phet} fourier-making-waves
+:sim-name: Fourier: Making Waves
+:screen: 3
+:label: fig:ch07-wave-packet-sim
+
+A wave packet and the Fourier components that build it, with the width in $k$ and the width in $x$ both displayed. Their product cannot be reduced: this is the classical wave theorem that becomes the uncertainty principle once $p = \hbar k$ is imposed.
+```
 
 a purely mathematical fact about waves, true for sound pulses and water-wave packets just as much as for matter waves, with no quantum content yet. Quantum mechanics enters when this relation is combined with the de Broglie relation $p = hk/2\pi = \hbar k$ (where $\hbar \equiv h/2\pi$), converting spread in wave number into spread in momentum, $\Delta p = \hbar\,\Delta k$, and giving
 
@@ -157,6 +193,14 @@ $$
 $$
 
 where $\Delta t$ characterizes the time available to measure (or the lifetime of a state with) energy spread $\Delta E$. This relation, for instance, explains why an unstable state with a short lifetime $\Delta t$ (such as an excited atomic state, or an unstable particle) necessarily has an intrinsic spread, or "width," in its energy — and correspondingly in the frequency/wavelength of radiation it emits — that grows as its lifetime shrinks.
+
+Stripped of $\hbar$, this is a theorem about signals rather than about quantum mechanics, and it applies to any wave one cares to measure — including the sound of one's own voice. @fig:ch07-bandwidth-sim runs a live spectrum of whatever the microphone hears: a sustained vowel, going on for a long $\Delta t$, resolves into sharp harmonic lines with small $\Delta f$, while a clipped consonant lasting a few milliseconds has no sharp lines at all, only a broad smear across the spectrum. No better microphone would fix this. A short signal does not *have* a well-defined frequency, exactly as a short-lived excited state does not have a well-defined energy.
+
+```{openphysics} WaveComposer
+:label: fig:ch07-bandwidth-sim
+
+Real-time spectrum analysis of a microphone signal. The duration of a sound and the sharpness of its spectrum trade off against each other, which is $\Delta E\,\Delta t \gtrsim \hbar/2$ with the $\hbar$ removed and the quantum mechanics along with it.
+```
 
 ### Worked Example: Confining an Electron in a Nucleus
 

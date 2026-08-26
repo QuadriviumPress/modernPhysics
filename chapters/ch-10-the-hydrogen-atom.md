@@ -98,6 +98,15 @@ $$
 
 These magnetic moments are what couple to an external magnetic field in the Stern–Gerlach experiment (producing the observed splitting and deflection) and, coupling to each other and to nuclear magnetic moments, produce the fine and hyperfine splittings observed in high-resolution atomic spectra.
 
+The same coupling, applied to the *proton's* magnetic moment rather than the electron's, is the basis of magnetic resonance imaging, and @fig:ch10-mri-sim is a working model of it. A static field along $z$ splits the two spin orientations by $\Delta E = g\mu_N B$, which for a proton in a $1\ \text{T}$ field falls in the radio band; a transverse radio-frequency field tuned to exactly that frequency drives transitions between them, and the resonance is sharp enough that a deliberate spatial *gradient* in $B$ makes the resonant frequency a map of position. Everything in the sequence — the splitting proportional to $B$, the resonance condition $hf = \Delta E$, the return to equilibrium afterwards — is this section's physics with $\mu_B$ replaced by the nuclear magneton.
+
+```{phet-legacy} mri
+:sim-name: Simplified MRI
+:label: fig:ch10-mri-sim
+
+Proton spins in a magnetic field: Zeeman splitting, resonant absorption of a radio-frequency photon, and the field gradient that turns the resonance into an image.
+```
+
 ## Selection Rules
 
 Not every pair of hydrogen energy levels is connected by an observable spectral line. An electron making a transition between stationary states typically does so by emitting or absorbing a single photon, and conservation of the photon's own angular momentum (it carries one unit, $\hbar$, of angular momentum along its propagation direction) restricts which transitions can occur via this single-photon (electric dipole) process to those satisfying the **selection rule**

@@ -149,6 +149,14 @@ $$
 
 is the same number whether computed in the lab frame or in the CM frame — but in the CM frame, where $p_{\text{total}} = 0$ by definition, it simplifies to $Mc^2 = E_{\text{total,CM}}$: the total CM-frame energy alone. This invariant $M$ is exactly the quantity that determines whether a given reaction can occur at all: by conservation of the energy-momentum four-vector, a reaction that produces a set of final-state particles with total rest mass $\sum m_f$ is only possible if the *available* energy in the CM frame is at least $\left(\sum m_f\right)c^2$ — i.e., if $M \ge \sum m_f$. The **threshold** condition is $M = \sum m_f$ exactly, corresponding to all final-state particles created at rest relative to the CM frame (and hence relative to each other), with no leftover kinetic energy to spare.
 
+The CM frame is not a relativistic invention, and it is worth recovering the non-relativistic intuition before leaning on it. @fig:ch03-collision-sim runs elastic and inelastic collisions in one and two dimensions, with the center of mass drawn on the screen and a momentum diagram beside it. Whatever the pucks do, that marker glides on at constant velocity — the collision cannot touch it, because the internal forces cancel in pairs — which is what makes its rest frame a natural place to do the bookkeeping. Choose the masses and velocities so that the marker stands still, and the momentum diagram shows what has been bought: two arrows equal and opposite before the collision, two arrows equal and opposite after it, however much kinetic energy was lost in between. The relativistic version below keeps that structure exactly, replacing $m\vec u$ by $\gamma m \vec u$ and the total mass by the invariant $M$; what changes is that $M$ is no longer the sum of the parts.
+
+```{phet} collision-lab
+:label: fig:ch03-collision-sim
+
+Classical collisions with the center of mass and the momentum vectors displayed. The center of mass moves at a velocity no collision can change, elastic or not, which is what makes its rest frame a natural place to do the bookkeeping — and what carries over, with $\gamma m\vec u$ in place of $m\vec u$, to the relativistic threshold calculations of this section.
+```
+
 ### Worked Example: The Threshold for Antiproton Production
 
 In 1955, the Bevatron at Berkeley was built specifically to search for the antiproton, via the reaction

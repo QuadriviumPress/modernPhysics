@@ -23,6 +23,14 @@ Chapters [10](#ch-the-hydrogen-atom) and [11](#ch-many-electron-atoms) explained
 
 Chemical bonds form because a molecule can have lower total energy than its constituent separated atoms. Two limiting mechanisms produce this energy lowering. In **ionic bonding**, one atom (typically one with a low ionization energy, such as an alkali metal) transfers one or more electrons entirely to another atom (typically one with a high electron affinity, such as a halogen); the resulting oppositely charged ions are then held together by simple electrostatic (Coulomb) attraction. In **covalent bonding**, by contrast, one or more electron pairs are *shared* between two atoms, occupying a region of enhanced electron density between the two nuclei; both nuclei are then simultaneously attracted to this shared, concentrated negative charge, producing a net attractive bond. Most real bonds fall on a continuum between these two limits, described by varying degrees of bond **polarity**, depending on the difference in electronegativity between the bonded atoms; this chapter focuses on the covalent limit, whose treatment requires genuinely quantum-mechanical ideas beyond simple electrostatics.
 
+That continuum is a slider rather than a classification, and @fig:ch12-polarity-sim makes it one: set the electronegativity of each atom in a diatomic and watch the shared electron density slide from the midpoint toward the more electronegative partner, dragging a dipole moment with it. At equal electronegativity the bond is purely covalent and the dipole vanishes; at a large difference the electron is effectively transferred and what remains is a pair of ions attracting each other. Neither limit is a separate mechanism — they are the two ends of one.
+
+```{phet} molecule-polarity
+:label: fig:ch12-polarity-sim
+
+Bond polarity as a continuous function of the electronegativity difference between two atoms, with the electron density and the resulting dipole moment displayed. Later screens add a third atom, where bond dipoles combine vectorially and a molecule of polar bonds can still be nonpolar overall.
+```
+
 ## Valence Bond Theory and Orbital Overlap
 
 **Valence bond theory** treats covalent bond formation as arising from the overlap of a singly occupied atomic orbital on one atom with a singly occupied atomic orbital on another, the two electrons (one from each atom, necessarily of opposite spin, per the exclusion principle applied to the resulting shared, doubly occupied region) pairing up to form the bond. The simplest example is the hydrogen molecule $\text{H}_2$: as two hydrogen atoms approach, their $1s$ orbitals begin to overlap, and if the two electrons involved have opposite spin, the resulting overlap region between the nuclei has a high joint probability of finding both electrons — an enhanced electron density that lowers the system's total energy relative to two separate atoms, up to a certain optimal internuclear separation (the **bond length**, at which attractive and repulsive contributions to the energy balance). Bonds formed by orbitals overlapping directly along the internuclear axis, giving a cylindrically symmetric electron distribution about that axis, are called **sigma ($\sigma$) bonds**; bonds formed by the sideways overlap of parallel $p$ orbitals, with electron density concentrated above and below (rather than directly along) the internuclear axis, are called **pi ($\pi$) bonds**. A single bond is one $\sigma$ bond; a double bond is one $\sigma$ plus one $\pi$ bond; a triple bond is one $\sigma$ plus two (mutually perpendicular) $\pi$ bonds.
@@ -40,6 +48,14 @@ Simple atomic $s$ and $p$ orbitals, taken directly from the hydrogen-like soluti
 | $sp^3d^2$ | one $s$, three $p$, two $d$ | 6 | octahedral | $\text{SF}_6$ |
 
 The general rule connecting geometry to hybridization is that the number of hybrid orbitals equals the number of **electron domains** around the central atom — bonding pairs plus lone pairs — and that hybrid orbitals arrange themselves to maximize their mutual angular separation, minimizing electron-pair repulsion, exactly as in the VSEPR (valence-shell electron-pair repulsion) model of molecular geometry. Unshared (lone) electron pairs occupy hybrid orbitals just as bonding pairs do, but exert somewhat greater repulsion (being attracted to only one nucleus rather than shared between two), which is why, for example, the bond angle in water ($\text{H}_2\text{O}$, two bonding pairs and two lone pairs on an approximately $sp^3$ oxygen) is compressed to about $104.5°$ from the ideal tetrahedral $109.5°$.
+
+The counting rule behind that table is worth exercising on molecules other than the five listed, and @fig:ch12-shapes-sim is set up for exactly that: attach single, double, or triple bonds and lone pairs to a central atom in any combination and the geometry rearranges itself, with the bond angles reported as they change. Two predictions from the paragraph above can be checked in a few seconds there. A double bond and a single bond count the same for geometry — both are one electron domain — and replacing a bonding pair by a lone pair squeezes the remaining angles, reproducing water's $104.5°$ from tetrahedral.
+
+```{phet} molecule-shapes
+:label: fig:ch12-shapes-sim
+
+Molecular geometry built from electron domains. Bond angles are displayed live, and the "real molecules" screen compares the idealized VSEPR prediction with measured geometries.
+```
 
 ## Molecular Orbital Theory
 
@@ -61,6 +77,15 @@ $$
 
 A bond order of zero predicts an unstable molecule (no net energy lowering relative to separated atoms) that should not form; a bond order of $1, 2, 3, \ldots$ corresponds roughly to a single, double, triple, $\ldots$ bond, with higher bond order generally correlating with a shorter, stronger bond. For $\text{H}_2$ (two electrons, both in $\sigma_{1s}$), the bond order is $(2-0)/2 = 1$, consistent with the known stable single bond; for the hypothetical $\text{He}_2$ (four electrons, two in $\sigma_{1s}$ and two forced by the exclusion principle into $\sigma_{1s}^{*}$), the bond order is $(2-2)/2 = 0$ — correctly predicting that $\text{He}_2$ does not exist as a stable molecule, a conclusion valence bond theory (which has no natural way to place electrons in an antibonding orbital) does not straightforwardly reach. MO theory additionally predicts a molecule's magnetic behavior directly from its orbital diagram: any unpaired electrons (occurring, per Hund's rule applied to degenerate molecular orbitals, when a set of same-energy orbitals is only partially filled) make the molecule **paramagnetic** (weakly attracted into a magnetic field), while a fully paired configuration makes it **diamagnetic** (weakly repelled) — famously correctly predicting that $\text{O}_2$ is paramagnetic (two unpaired electrons in degenerate antibonding $\pi^*$ orbitals), a fact simple Lewis-structure/valence-bond reasoning does not anticipate.
 
+The bonding and antibonding pair are not a chemical convention; they are what the Schrödinger equation returns for two wells brought close together, and @fig:ch12-double-well-sim solves that problem directly. Start with two widely separated square wells: each has its own ground state, and the two are degenerate. Slide them together and the degeneracy lifts into exactly two states — one symmetric, with no node between the wells and an energy *below* the isolated-atom level, and one antisymmetric, with a node at the midpoint and an energy above it. That is $\sigma_{1s}$ and $\sigma_{1s}^*$, obtained without mentioning chemistry, and the splitting between them grows as the wells approach, which is why bond strength depends on overlap.
+
+```{phet-legacy} bound-states/covalent-bonds
+:sim-name: Double Wells and Covalent Bonds
+:label: fig:ch12-double-well-sim
+
+A double square well with adjustable separation and depth, and the eigenstates it supports. The symmetric–antisymmetric splitting of a pair of formerly degenerate levels is the origin of the bonding/antibonding pair of MO theory, and — extended to $N$ wells in a row — of the energy bands of a solid.
+```
+
 ## Vibrational and Rotational Energy Levels
 
 Once bonded, a diatomic molecule is itself a quantum system with its own internal energy levels, in addition to the electronic energy levels associated with its bonding orbitals. Near the equilibrium bond length $r_0$ (where the molecular potential energy curve, as a function of internuclear separation, has its minimum), the potential is well approximated by a parabola, so small-amplitude **vibration** of the two nuclei about $r_0$ is, to good approximation, the quantum harmonic oscillator of [Chapter 8](#ch-the-schrodinger-equation), with quantized energies
@@ -71,6 +96,14 @@ $$
 
 where $\omega = \sqrt{k/\mu}$, $k$ is the effective "spring constant" of the bond (obtained from the curvature of the potential at its minimum), and $\mu = m_1m_2/(m_1+m_2)$ is the **reduced mass** of the two-nucleus system (the appropriate effective mass for relative motion of a two-body system, reducing the two-body vibration problem to an equivalent single-particle problem).
 
+The parabola is an approximation, and it is useful to see what it approximates. @fig:ch12-interatomic-sim plots the interatomic potential energy of a diatomic pair as a function of separation: strongly repulsive at short range, attractive at long range, with a minimum at $r_0$ whose depth is the bond energy and whose curvature is the $k$ in $\omega = \sqrt{k/\mu}$. Pull the atoms far from $r_0$ and the curve is visibly not a parabola — it flattens out toward dissociation on one side and rises much faster than quadratically on the other — which is why real molecular vibrational levels crowd together at high $v$ instead of staying evenly spaced at $\hbar\omega$.
+
+```{phet} atomic-interactions
+:label: fig:ch12-interatomic-sim
+
+The potential energy curve between two atoms, with the atom types adjustable. The equilibrium separation, the well depth, and the curvature at the minimum are the bond length, the bond energy, and the vibrational spring constant respectively.
+```
+
 Independently, the molecule can **rotate** about its center of mass; treating the two nuclei as point masses at fixed separation $r_0$ (the **rigid rotor** approximation, reasonable when rotational energies are small compared to vibrational spacing) makes this exactly the angular-momentum problem of [Chapter 9](#ch-quantum-mechanics-in-three-dimensions), with quantized rotational energy
 
 $$
@@ -78,6 +111,14 @@ E_J = \frac{\hbar^2}{2I}J(J+1), \qquad J = 0, 1, 2, \ldots,
 $$
 
 where $I = \mu r_0^2$ is the molecule's moment of inertia and $J$ plays the role of the orbital angular momentum quantum number $\ell$. Because $I$ for a typical molecule is large (bond lengths of order $10^{-10}\ \text{m}$, but heavy nuclear masses) compared to the effective "moment of inertia" scale set by an electron, rotational energy spacings are much smaller than vibrational spacings, which are in turn much smaller than electronic transition energies — a hierarchy ($E_{\text{elec}} \gg E_{\text{vib}} \gg E_{\text{rot}}$) that is directly reflected in molecular spectra: electronic transitions lie in the visible/ultraviolet, vibrational transitions in the infrared, and pure rotational transitions in the microwave region, each region probing a different aspect of molecular structure.
+
+This hierarchy is not merely a table of numbers; it is why a molecule responds to one part of the spectrum and ignores another, and @fig:ch12-molecules-light-sim lets it be tested one photon at a time. Aim microwaves at a molecule and it rotates. Switch to infrared and it starts to vibrate — but only if the vibration changes the molecule's dipole moment, which is why $\text{N}_2$ and $\text{O}_2$ are transparent in the infrared while $\text{CO}_2$ and $\text{H}_2\text{O}$ are not, and hence why the two minor constituents of the atmosphere, not the two major ones, set the temperature of the planet. Go to the ultraviolet and the molecule breaks apart, the electronic energy scale having been reached at last.
+
+```{phet} molecules-and-light
+:label: fig:ch12-molecules-light-sim
+
+Single photons of a chosen wavelength directed at a chosen molecule. Microwave, infrared, visible, and ultraviolet photons each produce a different response — rotation, vibration, electronic excitation, or dissociation — in the order of the $E_{\text{elec}} \gg E_{\text{vib}} \gg E_{\text{rot}}$ hierarchy.
+```
 
 ## Summary
 

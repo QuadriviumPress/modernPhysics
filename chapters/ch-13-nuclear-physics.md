@@ -23,6 +23,14 @@ Chapters [10](#ch-the-hydrogen-atom)–[12](#ch-molecular-structure) treated the
 
 A nucleus consists of $Z$ protons and $N$ neutrons, collectively called **nucleons**, with mass number $A = Z + N$. A given nuclear species (**nuclide**) is denoted $^A_Z X$, where $X$ is the chemical symbol determined by $Z$ (since $Z$ alone fixes the number of atomic electrons in the neutral atom, and hence its chemistry). Nuclides sharing the same $Z$ but different $N$ (and hence different $A$) are **isotopes** of the same element — chemically near-identical but differing in mass and, often, nuclear stability. Protons and neutrons have nearly equal mass ($m_p c^2 = 938.3\ \text{MeV}$, $m_nc^2 = 939.6\ \text{MeV}$), and because a proton's charge is exactly opposite an electron's, the notation $^AZX$ carries the atom's full identity without needing $N$ written explicitly ($N = A - Z$).
 
+The division of labor between $Z$ and $N$ — one fixes the chemistry, the other only the mass and the stability — is worth handling directly before the rest of the chapter leans on it. In @fig:ch13-isotopes-sim, adding a neutron to an atom leaves the element name untouched and moves along a row of isotopes, while adding a proton changes the element outright. The simulation also assembles the tabulated atomic mass of an element from its isotopes weighted by natural abundance, which is why the periodic table lists $35.45$ for chlorine although no chlorine nucleus has that mass.
+
+```{phet} isotopes-and-atomic-mass
+:label: fig:ch13-isotopes-sim
+
+Isotopes built nucleon by nucleon, with natural abundances and the resulting average atomic mass. $Z$ names the element; $N$ decides how long the nucleus lasts.
+```
+
 ## Nuclear Size, Density, and the Strong Force
 
 Scattering experiments (extending Rutherford's original alpha-scattering method, now generally using higher-energy electron or nucleon probes to resolve the nuclear interior itself) show that nuclear radius grows with mass number as
@@ -34,6 +42,14 @@ $$
 so nuclear *volume* is proportional to $A$ — each nucleon occupies, on average, the same volume regardless of the size of the nucleus it belongs to, exactly as one would expect for an (nearly) incompressible fluid of tightly packed, closely spaced constituents. This is the empirical basis of the **liquid-drop model** of the nucleus, in which the nucleus is treated, for many purposes, as a droplet of incompressible nuclear fluid.
 
 Nuclear stability is not explained by electromagnetism — the Coulomb force between two protons at nuclear separations, $\sim 1\ \text{fm}$, is enormously repulsive and would fly the nucleus apart if the electromagnetic force between nucleons were the whole story. Nuclei are held together by the **strong nuclear force**, an attractive interaction between nucleons (proton-proton, proton-neutron, and neutron-neutron alike, largely independent of charge) that is far stronger than the Coulomb repulsion at nuclear distances, but has an extremely short range (roughly $1$–$2\ \text{fm}$), falling off essentially to zero beyond a few fermis. This short range explains why nuclear binding, unlike Coulomb binding, saturates: a given nucleon interacts strongly only with its immediate neighbors, not with every other nucleon in the nucleus (unlike the long-range Coulomb repulsion, which every proton feels from every other proton, growing roughly as $Z^2$) — a key qualitative fact used below to explain both the shape of the binding-energy curve and, ultimately, nuclear fission and fusion.
+
+The measurement that started all of this is reconstructed in @fig:ch13-rutherford-sim. Alpha particles are fired at a nucleus of adjustable $Z$, and almost all of them pass through with a barely perceptible deflection — but a few come back. Rutherford's inference from that rare, large-angle scattering was that the positive charge is concentrated in a volume tiny compared with the atom, and the simulation makes the inference reproducible: shrink the nuclear charge and the sharp back-scattering disappears, while the plum-pudding screen shows what a diffuse charge distribution would have produced instead — no large deflections at all, at any impact parameter.
+
+```{phet} rutherford-scattering
+:label: fig:ch13-rutherford-sim
+
+Alpha particles scattering from a nucleus of adjustable charge, with a diffuse-charge atom available for comparison. The trajectories are pure Coulomb hyperbolas; the strong force never enters, which is exactly why the experiment measures charge and size rather than nuclear structure.
+```
 
 ## Binding Energy
 
@@ -65,6 +81,14 @@ $$
 
 The **activity**, $\mathcal{A} \equiv -dN/dt = \lambda N(t) = \mathcal{A}_0 e^{-\lambda t}$, is the physically measured decay rate (in decays per second, or the traditional unit the curie), and decays with the same exponential form and the same $T_{1/2}$ as $N(t)$ itself, since $\mathcal A$ is simply proportional to $N$ at every instant.
 
+The exponential law describes a population, not a nucleus, and the difference between those two statements is where intuition usually fails. @fig:ch13-decay-sim shows both at once: individual nuclei decaying at unpredictable moments with no memory of how long they have already waited, and the count of survivors nevertheless tracing a clean exponential once the sample is large enough. The same simulation puts the law to work in reverse — measuring the residual $^{14}\text{C}$ or $^{238}\text{U}$ fraction in a sample of unknown age and reading off the elapsed time — which is the argument by which the age of a bone, a lava flow, or the Earth itself is established.
+
+```{phet-legacy} nuclear-physics/radioactive-dating-game
+:label: fig:ch13-decay-sim
+
+Radioactive decay watched nucleus by nucleus and in bulk, then applied to dating. The decay constant is a probability per unit time and nothing else: nuclei do not age.
+```
+
 ## Modes of Decay
 
 Three principal decay modes connect unstable nuclides to more stable ones:
@@ -75,11 +99,27 @@ Three principal decay modes connect unstable nuclides to more stable ones:
 
 **Gamma decay** ($^A_ZX^* \to {}^A_ZX + \gamma$, where the asterisk denotes an excited nuclear state) is the nuclear analog of atomic photon emission ([Chapter 10](#ch-the-hydrogen-atom)): a nucleus left in an excited state, often as the immediate product of a preceding alpha or beta decay, drops to a lower-energy (often the ground) state by emitting a photon, with energy set by the spacing between nuclear energy levels — typically keV to MeV, far larger than atomic transition energies, because the nuclear scale of confinement is so much smaller than the atomic scale (an application of the same uncertainty-principle confinement argument used in [Chapter 7](#ch-wave-properties-of-particles)).
 
+All three modes, and the reason a given nuclide chooses one of them, are laid out in @fig:ch13-nucleus-sim. Its chart of the nuclides is the useful part: stable nuclides form a narrow band that starts along $N = Z$ and bends toward neutron excess as $Z$ grows, and the decay mode of anything off that band is predictable from which side of it the nuclide sits on. Neutron-rich nuclides convert a neutron to a proton by $\beta^-$ and step toward the band; proton-rich ones go the other way by $\beta^+$ or electron capture; and beyond $Z \approx 83$ nothing is stable at all, so the heavy corner of the chart empties itself by alpha emission.
+
+```{phet} build-a-nucleus
+:label: fig:ch13-nucleus-sim
+
+Nuclei assembled from protons and neutrons, with the decay mode of each unstable arrangement shown, alongside the chart of the nuclides. The chart is the whole of nuclear stability in one picture: a thin band of nuclides that last, and, on either side of it, a decay mode pointing back toward it.
+```
+
 ## Fission
 
 **Nuclear fission** is the splitting of a heavy nucleus (typically after absorbing a neutron, which excites the nucleus into oscillation, distorting the initially spherical liquid drop) into two lighter, roughly comparable-mass fragments, plus several free neutrons. Because the binding-energy-per-nucleon curve rises steeply from heavy $A$ toward the $A\approx56$ peak, the fragments are individually more tightly bound (per nucleon) than the original heavy nucleus was, and the reaction releases a large amount of energy, typically around $200\ \text{MeV}$ per fission event for a nucleus such as $^{235}_{92}\text{U}$ — overwhelmingly larger than typical chemical reaction energies (electron-volts per bond, versus roughly $10^8$ times more energy per fission event), directly reflecting the vastly greater strength of the nuclear force compared to the electromagnetic forces governing chemical bonding.
 
 Because each fission event releases, on average, more than one free neutron, and each of those neutrons can potentially induce a further fission event in a neighboring nucleus, a **chain reaction** is possible if enough fissile material is present (a **critical mass**) to sustain, on average, at least one neutron-induced fission per neutron released — the basis of both controlled fission (nuclear power reactors, where the reaction rate is regulated, e.g. via neutron-absorbing control rods) and uncontrolled fission (fission weapons).
+
+The distinction between those last two outcomes is quantitative, not qualitative, and @fig:ch13-fission-sim is where that becomes obvious. Fire a neutron at a single $^{235}\text{U}$ nucleus and watch the liquid drop distort, neck, and split; assemble a pile of nuclei instead and the multiplication factor decides everything. Below one neutron per fission surviving to cause another, the reaction dies out; above it, the population grows exponentially; and the control rods in the reactor screen do nothing more sophisticated than hold that number at exactly one by absorbing the surplus.
+
+```{phet-legacy} nuclear-physics/nuclear-fission
+:label: fig:ch13-fission-sim
+
+A single fission event, a chain reaction in an assembly of adjustable size and enrichment, and a controlled reactor. Criticality is a statement about a ratio, and it is the same ratio in all three.
+```
 
 ## Fusion
 

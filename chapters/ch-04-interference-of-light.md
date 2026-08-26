@@ -71,6 +71,14 @@ $$
 
 A phase advance is $2\pi$ per wavelength, so the phase accumulated over a physical distance $d$ in a medium of index $n$ is $(2\pi/\lambda)\,nd$ with $\lambda$ the *vacuum* wavelength. This idea reappears in the thin-film section and again in the Michelson interferometer, and it is the reason the thin-film formulas below carry a factor of $n$.
 
+The picture behind all of this — a transverse electric field, a magnetic field perpendicular to it, and both perpendicular to the direction of travel — is drawn in three dimensions and set in motion in @fig:ch04-em-wave-sim. It is also the place to see what the phase constant $\varphi_0$ and the amplitude $E_0$ actually do, and what it means for a wave to be polarized: a direction of oscillation that plays no part in this chapter, where all the interfering beams share one, but that becomes the whole subject once a filter is put in the beam.
+
+```{openphysics} LightPropagation
+:label: fig:ch04-em-wave-sim
+
+A monochromatic electromagnetic wave with its electric and magnetic fields drawn perpendicular to each other and to the direction of propagation. Later screens send the wave through polarizers and birefringent plates, where two components of one wave are given different optical paths — the same mechanism as the thin films of this chapter, applied to polarization rather than to geometry.
+```
+
 ## Why Wave Effects Are So Hard to See
 
 Before doing any interference calculation, it pays to understand why nobody notices these effects while walking around. The argument is a scaling argument, and it requires almost no algebra.
@@ -200,6 +208,15 @@ $$
 $$
 
 Three features of this result deserve comment. First, measuring $\Delta y$, $L$, and $d$ determines $\lambda$ — this was historically one of the first accurate measurements of the wavelength of visible light, and the first evidence that different colors correspond to different, specific wavelengths. Second, the fringes get *farther apart* as the slits get *closer together*: squeezing the apparatus stretches the pattern. This reciprocal relationship between a wave's confinement and its spread is a hallmark of wave phenomena, and it returns as the uncertainty principle in [Chapter 7](#ch-wave-properties-of-particles). Third, the small-angle form is an approximation; when $d$ is only a few wavelengths the fringes are not evenly spaced and $d\sin\theta = m\lambda$ must be used directly.
+
+The reciprocal relationship in $\Delta y = \lambda L/d$ is easy to state and easy to get backwards, so it is worth watching it happen. In @fig:ch04-double-slit-sim the slit separation is a slider and the pattern responds live: closing the slits together spreads the fringes apart, and raising the frequency — shortening $\lambda$ — packs them closer. The simulation runs the same geometry with water waves, sound, and light, which is a useful reminder that nothing in the derivation used any property of light beyond its being a wave with a wavelength.
+
+```{phet} wave-interference
+:screen: 3
+:label: fig:ch04-double-slit-sim
+
+Young's geometry with the slit separation, the slit width, and the wavelength under direct control. Switch between one slit and two: with one slit open the screen still shows structure, which is the diffraction of [Chapter 5](#ch-diffraction-of-light) intruding on the idealization used here, where the slits are treated as point sources.
+```
 
 Finally, since $\sin\theta$ can never exceed $1$, the condition $d\sin\theta = m\lambda$ has solutions only for
 
@@ -463,6 +480,15 @@ $$
 with $\lambda$ the vacuum wavelength. The factor $n_{\text{film}}$ is not optional: the film packs more wavelengths into the same thickness.
 
 **Phase shift on reflection.** Reflection at a boundary where the refractive index *increases* (light in a lower-index medium striking a higher-index one) flips the sign of the reflected field — an extra phase shift of exactly $\pi$. Reflection at a boundary where the index *decreases* produces no shift. The mechanical analog is a wave on a string: a pulse reflecting from a fixed end (a heavy string beyond, the "denser" case) comes back inverted, while a pulse reflecting from a free end (a light string beyond) comes back upright. "Higher refractive index" plays the role of "heavier string".
+
+That analog is worth more than a sentence, because the sign is the one thing students reliably get wrong and it is not something to be memorized. @fig:ch04-reflection-sim launches a pulse down a chain of masses and springs terminated either rigidly or freely, and the inversion is not scripted into the simulation: it falls out of the boundary condition, exactly as the $\pi$ shift falls out of matching the electric field across an optical interface. A fixed end cannot move, so the reflected pulse must arrive with the opposite sign to cancel the incident one there; a free end has nothing to push against, and the pulse returns upright.
+
+```{openphysics} StandingWaves
+:screen: 1
+:label: fig:ch04-reflection-sim
+
+A pulse reflecting from a rigid termination and from a free one, side by side on the same clock. The rigid end inverts the pulse and the free end does not — the mechanical statement of the $0$-or-$\pi$ rule used throughout this section.
+```
 
 ### Assembling the Conditions
 

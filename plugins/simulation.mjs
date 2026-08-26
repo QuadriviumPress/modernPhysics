@@ -113,6 +113,50 @@ const PROVIDERS = {
         placeholder: `https://phet.colorado.edu/sims/html/${ id }/latest/${ id }-600.png`
       };
     }
+  },
+
+  'phet-legacy': {
+    label: 'PhET Interactive Simulations',
+    // The Java sims fill whatever frame they are given (the launcher sets
+    // 100vw/100vh) but were laid out for a 4:3 window, so give them one.
+    aspect: '4:3',
+    /**
+     * PhET's pre-HTML5 catalogue -- Photoelectric Effect, Quantum Bound
+     * States, Quantum Tunneling, Lasers, the nuclear-physics family -- is
+     * still the best interactive treatment of several topics in this book and
+     * has no HTML5 replacement. Those sims are Java, run in the browser by
+     * CheerpJ, and are served from a launcher that takes the *project* in the
+     * path and the *simulation* in the query string. The two usually coincide;
+     * where they do not, write them as `project/sim`, e.g.
+     * `nuclear-physics/alpha-decay`.
+     *
+     * Two consequences worth knowing before using this provider. A CheerpJ sim
+     * downloads a JVM before it starts, so the first paint takes tens of
+     * seconds on a cold cache, and it is mouse-driven -- neither touch nor
+     * keyboard navigation works the way it does in an HTML5 sim. Prefer `phet`
+     * or `openphysics` when either has something equivalent.
+     *
+     * `screens`/`screen` are joist query parameters and mean nothing here; the
+     * flavor of a multi-sim project is chosen by the `sim` half of the id.
+     *
+     * @param {string} id - `sim`, or `project/sim` when they differ.
+     * @param {Object} opts - Resolved directive options.
+     * @returns {{url: string, placeholder: string, name: string}}
+     */
+    resolve( id, opts ) {
+      const [ project, sim ] = id.includes( '/' ) ? id.split( '/', 2 ) : [ id, id ];
+      const query = buildQuery( {
+        simulation: sim,
+        locale: opts.locale
+      }, opts.params );
+      return {
+        url: `https://phet.colorado.edu/sims/cheerpj/${ project }/latest/${ project }.html${ query }`,
+        // Legacy screenshots live beside the project, not under `sims/html`.
+        placeholder: `https://phet.colorado.edu/sims/${ project }/${ sim }-600.png`,
+        // Without this the caption link would read "Nuclear Physics/alpha Decay".
+        name: humanize( sim )
+      };
+    }
   }
 };
 
@@ -285,6 +329,12 @@ function runSimulation( data, vfile, fixedProvider ) {
     url = resolved.url;
     defaultPlaceholder = resolved.placeholder;
     defaultAspect = provider.aspect ?? DEFAULT_ASPECT;
+    // A provider whose id carries more than the simulation's name -- as
+    // `phet-legacy`'s `project/sim` does -- names the simulation itself.
+    if ( resolved.name ) {
+      name = resolved.name;
+      defaultAlt = `Screenshot of the ${ name } simulation`;
+    }
   }
   else {
     return directiveError(
@@ -292,6 +342,13 @@ function runSimulation( data, vfile, fixedProvider ) {
       `(known providers: ${ Object.keys( PROVIDERS ).join( ', ' ) })`,
       vfile
     );
+  }
+
+  // An explicit name overrides both the humanized id and anything a provider
+  // derived, and feeds the caption link and the iframe title alike.
+  if ( options[ 'sim-name' ] ) {
+    name = String( options[ 'sim-name' ] ).trim();
+    defaultAlt = `Screenshot of the ${ name } simulation`;
   }
 
   const width = options.width || '100%';
@@ -440,6 +497,13 @@ function simulationOptions() {
       type: String,
       doc: 'Language code, e.g. `fr`. Defaults to `en`.'
     },
+    'sim-name': {
+      type: String,
+      doc: 'Display name of the simulation, used for the caption link, the iframe ' +
+           'title, and the fallback alt text. Defaults to the id made readable, ' +
+           'which is wrong whenever the publisher\'s title is not its URL slug ' +
+           '(`mri` is "Simplified MRI").'
+    },
     'link-text': {
       type: String,
       doc: 'Text of the caption link to the live simulation. Defaults to the simulation name.'
@@ -505,12 +569,22 @@ const phetDirective = makeDirective( {
   argDoc: 'The PhET simulation name, e.g. `blackbody-spectrum`.'
 } );
 
+const phetLegacyDirective = makeDirective( {
+  name: 'phet-legacy',
+  provider: 'phet-legacy',
+  doc: 'Embed one of PhET\'s pre-HTML5 Java simulations, run in the browser by ' +
+       'CheerpJ. Slow to start and mouse-only; use `{phet}` where an HTML5 ' +
+       'version exists.',
+  argDoc: 'The PhET simulation name, or `project/name` when the two differ, ' +
+          'e.g. `photoelectric` or `nuclear-physics/alpha-decay`.'
+} );
+
 /**
  * @type {{name: string, directives: Array<Object>}}
  */
 const plugin = {
   name: 'Interactive simulations',
-  directives: [ simulationDirective, openPhysicsDirective, phetDirective ]
+  directives: [ simulationDirective, openPhysicsDirective, phetDirective, phetLegacyDirective ]
 };
 
 export default plugin;

@@ -3,7 +3,7 @@
 A MyST plugin that embeds a running browser simulation on the website and falls
 back to a screenshot, a caption, and a link everywhere else.
 
-- [`simulation.mjs`](simulation.mjs) — the plugin: `{simulation}`, `{openphysics}`, `{phet}`
+- [`simulation.mjs`](simulation.mjs) — the plugin: `{simulation}`, `{openphysics}`, `{phet}`, `{phet-legacy}`
 - [`simulation.css`](simulation.css) — hides the fallback on screen, restores it for print
 
 Both are registered in [`../myst.yml`](../myst.yml):
@@ -34,12 +34,13 @@ visibility collapse.
 The figure is numbered and cross-referenced like any other:
 `@fig:ch04-interferometry-sim`.
 
-Three directives, one implementation:
+Four directives, one implementation:
 
 | Directive | Argument | Resolves to |
 |---|---|---|
 | `{openphysics}` | repository name | `https://openphysics.github.io/<Repo>/` |
 | `{phet}` | simulation name | `https://phet.colorado.edu/sims/html/<sim>/latest/<sim>_<locale>.html` |
+| `{phet-legacy}` | simulation name, or `project/sim` | `https://phet.colorado.edu/sims/cheerpj/<project>/latest/<project>.html?simulation=<sim>` |
 | `{simulation}` (alias `{sim}`) | a URL, or `provider:name` | whatever you give it |
 
 So these three are the same embed:
@@ -57,12 +58,46 @@ So these three are the same embed:
 Anything that runs in an iframe works — the plugin is not tied to SceneryStack.
 A bare URL just needs a `:placeholder:` to look right in a PDF.
 
+## PhET's Java simulations
+
+Several topics in a modern physics course — the photoelectric effect, quantum
+bound states, tunneling, lasers, gas discharge, the nuclear-physics family —
+have no HTML5 PhET simulation, only the original Java one. PhET still publishes
+those, run in the browser by [CheerpJ](https://cheerpj.com/), and `{phet-legacy}`
+addresses them:
+
+````markdown
+```{phet-legacy} photoelectric
+```
+```{phet-legacy} nuclear-physics/alpha-decay
+```
+````
+
+The launcher takes the *project* in the path and the *simulation* in the query
+string. Usually they are the same word, and a bare name is enough; where they
+differ — one project shipping several sims, as `nuclear-physics` and
+`bound-states` do — write `project/sim`. Both halves are visible on PhET's own
+URLs, and the sim half is what names the figure and the caption link.
+
+Two things to know before reaching for it:
+
+- **It is slow to start.** A CheerpJ sim downloads a Java runtime before its
+  first paint — tens of seconds on a cold cache. The first caption in the book
+  to use one ([Chapter 6](../chapters/ch-06-particle-properties-of-waves.md))
+  says so; the rest do not repeat it.
+- **It is mouse-only.** Neither touch nor keyboard navigation works the way it
+  does in an HTML5 sim, and there is no screen-reader support.
+
+So prefer `{phet}` or `{openphysics}` wherever either has something equivalent.
+`screens` and `screen` are joist query parameters and do nothing here; the
+flavor of a multi-sim project is chosen by the `sim` half of the argument.
+
 ## Options
 
 | Option | Default | Notes |
 |---|---|---|
 | `width` | `100%` | **Percentages only.** The theme mangles `px` values. |
-| `aspect` | `1024:618` (OpenPhysics), `768:504` (PhET) | Other ratios need a matching rule in `simulation.css`. |
+| `aspect` | `1024:618` (OpenPhysics), `768:504` (PhET), `4:3` (PhET legacy) | Other ratios need a matching rule in `simulation.css`. |
 | `placeholder` | provider screenshot | Relative to the `.md` file, `/`-prefixed for the project root, or a URL. Use **PNG or JPEG**. |
 | `no-placeholder` | — | Drop the static fallback entirely. |
 | `alt` | derived | Alternative text for the fallback image. |
@@ -75,6 +110,7 @@ A bare URL just needs a `:placeholder:` to look right in a PDF.
 | `screens` | — | `?screens=` — restrict to particular screens. |
 | `screen` | — | `?initialScreen=` — which screen to open on. |
 | `locale` | `en` | SceneryStack reads `?locale=`; PhET puts it in the filename. |
+| `sim-name` | the id made readable | Display name — caption link, iframe title, and alt text. Needed when the publisher's title is not its URL slug (`mri` is "Simplified MRI"). |
 | `link-text` | the simulation name | Text of the caption link. |
 | `no-link` | — | Suppress the caption link. |
 
@@ -131,6 +167,11 @@ are captures of the running simulation, refreshed by its own workflow, and cover
 all 37 catalogued simulations one for one.
 
 `{phet}` uses `<sim>-600.png`, which is the largest size PhET publishes.
+`{phet-legacy}` uses the same name from the project directory rather than from
+`sims/html`. Beware that for the oldest simulations the `-600` file is not
+600 px wide: Lasers, Neon Lights and Simplified MRI publish nothing larger than
+300 px, which is thin for print. A print edition should capture those three
+locally and point `:placeholder:` at the capture.
 
 Both are remote URLs. MyST downloads and caches them into `_build/`, so exports
 work offline after the first build, but the *first* build of a new simulation

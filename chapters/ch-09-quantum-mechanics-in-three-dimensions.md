@@ -137,6 +137,14 @@ $$
 
 confirming explicitly that $\vec L$ can never point exactly along $z$ (which would require $\theta=0°$) no matter how large $m_\ell$ is chosen for a given $\ell$; the discrepancy $\ell\hbar$ versus $\sqrt{\ell(\ell+1)}\hbar$ shrinks only in a relative sense as $\ell$ grows large, another instance of the correspondence principle encountered in [Chapter 8](#ch-the-schrodinger-equation).
 
+The cone that this worked example describes is usually drawn as a static picture, which makes the indeterminacy of $L_x$ and $L_y$ look like an admission of ignorance about a vector that is really sitting still somewhere on the cone. The classical system that gets the geometry right is a gyroscope, @fig:ch09-precession-sim: gravity applies a torque perpendicular to the spin angular momentum, and the response is not to tip the axis over but to walk it around a cone at fixed polar angle, with $|\vec L|$ and $L_z$ both constant while $L_x$ and $L_y$ oscillate. Put a magnetic moment in a field instead of a top in gravity and the equation of motion is the same one; the quantum content is only that the cone's opening angle may take just $2\ell+1$ values.
+
+```{openphysics} Precession
+:label: fig:ch09-precession-sim
+
+A spinning top under gravity. In steady precession the torque stays perpendicular to $\vec L$, so it changes the direction of the angular momentum without changing either its magnitude or its vertical component — the classical motion behind the vector model's cone, and behind the Larmor precession of a magnetic moment in a field ([Chapter 10](#ch-the-hydrogen-atom)).
+```
+
 ### Angular Momentum Commutation Relations
 
 The impossibility of simultaneously sharp values for more than one Cartesian component of $\vec L$ is not merely observed; it follows from the algebra of the angular momentum operators themselves, which satisfy the commutation relations

@@ -14,6 +14,8 @@ published book.
 - [`index.md`](index.md) — book landing page
 - [`chapters/`](chapters/) — chapter content
 - [`images/`](images/) — figures and diagrams
+- [`plugins/`](plugins/) — the MyST plugin that embeds interactive simulations
+- [`scripts/figures/`](scripts/figures/) — matplotlib sources for the computed figures
 
 The current table of contents (see [`myst.yml`](myst.yml)) is a scaffold:
 
@@ -40,6 +42,46 @@ admonitions, and cross-references — see the
 [MyST Markdown guide](https://mystmd.org/guide) for the full syntax
 (`$...$` / `$$...$$` for math, `{figure}` for images, `{prf:theorem}` /
 `{prf:proof}` and similar for structured content, etc.).
+
+## Interactive simulations
+
+Chapters can embed a running browser simulation with the `{openphysics}`,
+`{phet}`, or `{simulation}` directives, supplied by
+[`plugins/simulation.mjs`](plugins/simulation.mjs):
+
+````markdown
+```{openphysics} InterferometryLab
+:label: fig:ch04-interferometry-sim
+
+Move a mirror and count fringes.
+```
+````
+
+On the website this is the live simulation. In a PDF, a Word document, exported
+Markdown, or a printed page — none of which can run JavaScript — the same figure
+becomes a screenshot with its caption and a link to the running version. Any URL
+that works in an iframe can be embedded, not only simulations from
+[OpenPhysics](https://github.com/OpenPhysics) and
+[PhET](https://phet.colorado.edu). See
+[`plugins/README.md`](plugins/README.md) for the options and for how the
+fallback works.
+
+## Figures
+
+Figures are committed as SVG in [`images/`](images/). The ones for Chapters 4
+and 5 are generated with matplotlib rather than drawn by hand; their source is
+in [`scripts/figures/`](scripts/figures/), which also documents the palette and
+styling conventions. The SVGs are committed because the Pages build runs
+`myst build --html` only and has no Python. To regenerate after editing a
+script:
+
+```bash
+pip install matplotlib numpy scipy
+python3 scripts/figures/ch04_figures.py
+python3 scripts/figures/ch04_schematics.py
+python3 scripts/figures/ch05_figures.py
+python3 scripts/figures/ch05_schematics.py
+```
 
 ## Preview locally
 

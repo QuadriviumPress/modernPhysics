@@ -106,6 +106,21 @@ $$
 
 for an electron of charge $-e$, directed opposite to $\vec L$ because the electron's charge is negative. Placed in an external magnetic field $\vec B$ along the $z$-axis, this moment contributes an additional term to the electron's energy, $-\vec\mu_L\cdot\vec B \propto m_\ell$, proportional directly to the magnetic quantum number: each of the $2\ell+1$ otherwise energy-degenerate orientations of $\vec L$ acquires a distinct energy shift once a magnetic field is applied, splitting a single spectral line into $2\ell+1$ closely spaced components. This splitting — the (normal) **Zeeman effect** — was observed spectroscopically well before quantum mechanics existed and is precisely why $m_\ell$ earned its name: it is the quantum number that controls how atomic energy levels respond to an external magnetic field, a connection developed quantitatively in [Chapter 10](#ch-the-hydrogen-atom) and [Chapter 11](#ch-many-electron-atoms), alongside the further complication (electron spin) required to explain the full richness of observed atomic spectra in a magnetic field.
 
+That a magnetic field sorts a beam into a discrete number of orientations —
+rather than the continuum a classical dipole would give — is the content of
+@fig:ch09-stern-gerlach-sim. Firing spin-$\tfrac12$ atoms through a single
+analyzer splits the beam in two; chaining analyzers at different angles shows
+that the measurement does not simply read a pre-existing orientation.
+
+```{openphysics} SternGerlach
+:label: fig:ch09-stern-gerlach-sim
+
+The Stern–Gerlach experiment, assembled from analyzers, magnets, and counters.
+Monte Carlo counts accumulate alongside the analytic quantum prediction, so the
+$2\ell+1$ (or, for spin, $2s+1$) discrete outcomes can be checked against the
+statistics.
+```
+
 ### Worked Example: The Vector Model for $\ell=2$
 
 An electron is in a state with orbital angular momentum quantum number $\ell=2$ (a $d$-state). Its angular momentum magnitude is

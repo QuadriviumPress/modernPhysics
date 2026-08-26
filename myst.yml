@@ -11,6 +11,8 @@ project:
   license: CC-BY-NC-SA-4.0
   open_access: true
   github: QuadriviumPress/modernPhysics
+  plugins:
+    - plugins/simulation.mjs
   toc:
     - file: index.md
     - title: Part I — Relativity
@@ -41,3 +43,7 @@ site:
   template: book-theme
   title: Modern Physics
   nav: []
+  options:
+    # Hides the static simulation screenshots on screen and swaps them back in
+    # for print; see plugins/simulation.mjs.
+    style: plugins/simulation.css

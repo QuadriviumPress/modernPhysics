@@ -34,6 +34,20 @@ $$
 
 for the spectral energy density. This matches the observed spectrum reasonably well at long wavelength, but diverges as $\lambda \to 0$: since the number of short-wavelength modes grows without bound and each is assigned the same energy $k_BT$, the predicted radiated energy — obtained by integrating $u(\lambda,T)$ over all $\lambda$ — is *infinite*. This absurd prediction, sharply contradicted by the observed spectrum (which rises from zero at short wavelength, peaks, and falls off at long wavelength), became known as the **ultraviolet catastrophe**: not a small discrepancy to be patched, but a qualitative failure of classical statistical mechanics applied to the electromagnetic field.
 
+@fig:ch06-blackbody-sim plots both curves against each other. Raising the
+temperature moves the peak and lifts the total area, as the next section's
+displacement and Stefan–Boltzmann laws require; the classical curve, plotted
+alongside, runs off the top of the graph at short wavelength no matter what
+temperature is chosen.
+
+```{phet} blackbody-spectrum
+:label: fig:ch06-blackbody-sim
+
+The blackbody spectrum as a function of temperature, with the Rayleigh–Jeans
+prediction available for comparison. The gap between the two at short wavelength
+is the ultraviolet catastrophe.
+```
+
 ### Planck's Quantization Hypothesis
 
 Max Planck resolved this in 1900 by a hypothesis with no classical justification: the oscillators making up the cavity walls cannot exchange energy with the field continuously, but only in discrete multiples of a fundamental quantum,

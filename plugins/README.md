@@ -1,0 +1,193 @@
+# Interactive simulation plugin
+
+A MyST plugin that embeds a running browser simulation on the website and falls
+back to a screenshot, a caption, and a link everywhere else.
+
+- [`simulation.mjs`](simulation.mjs) — the plugin: `{simulation}`, `{openphysics}`, `{phet}`
+- [`simulation.css`](simulation.css) — hides the fallback on screen, restores it for print
+
+Both are registered in [`../myst.yml`](../myst.yml):
+
+```yaml
+project:
+  plugins:
+    - plugins/simulation.mjs
+site:
+  options:
+    style: plugins/simulation.css
+```
+
+Edits to a `.mjs` plugin do **not** hot-reload. Restart `myst start` after
+changing it.
+
+## Usage
+
+````markdown
+```{openphysics} InterferometryLab
+:label: fig:ch04-interferometry-sim
+
+Move a mirror and count fringes; shorten the coherence length and watch the
+visibility collapse.
+```
+````
+
+The figure is numbered and cross-referenced like any other:
+`@fig:ch04-interferometry-sim`.
+
+Three directives, one implementation:
+
+| Directive | Argument | Resolves to |
+|---|---|---|
+| `{openphysics}` | repository name | `https://openphysics.github.io/<Repo>/` |
+| `{phet}` | simulation name | `https://phet.colorado.edu/sims/html/<sim>/latest/<sim>_<locale>.html` |
+| `{simulation}` (alias `{sim}`) | a URL, or `provider:name` | whatever you give it |
+
+So these three are the same embed:
+
+````markdown
+```{openphysics} SpecialRelativity
+```
+```{simulation} openphysics:SpecialRelativity
+```
+```{simulation} https://openphysics.github.io/SpecialRelativity/
+:placeholder: ../images/my-screenshot.png
+```
+````
+
+Anything that runs in an iframe works — the plugin is not tied to SceneryStack.
+A bare URL just needs a `:placeholder:` to look right in a PDF.
+
+## Options
+
+| Option | Default | Notes |
+|---|---|---|
+| `width` | `100%` | **Percentages only.** The theme mangles `px` values. |
+| `aspect` | `1024:618` (OpenPhysics), `768:504` (PhET) | Other ratios need a matching rule in `simulation.css`. |
+| `placeholder` | provider screenshot | Relative to the `.md` file, `/`-prefixed for the project root, or a URL. Use **PNG or JPEG**. |
+| `no-placeholder` | — | Drop the static fallback entirely. |
+| `alt` | derived | Alternative text for the fallback image. |
+| `title` | derived | Accessible title for the iframe. |
+| `align` | `center` | `left`, `center`, `right`. |
+| `label` | — | Makes the figure cross-referenceable. |
+| `class` | — | Extra classes on the simulation frame. |
+| `enumerated` | — | Whether the figure is numbered. |
+| `params` | — | Raw query string, e.g. `snapToGrid=true&gridSpacing=2`. |
+| `screens` | — | `?screens=` — restrict to particular screens. |
+| `screen` | — | `?initialScreen=` — which screen to open on. |
+| `locale` | `en` | SceneryStack reads `?locale=`; PhET puts it in the filename. |
+| `link-text` | the simulation name | Text of the caption link. |
+| `no-link` | — | Suppress the caption link. |
+
+## How the fallback works
+
+A simulation is a JavaScript application, so it can only ever *run* on the
+website. MyST reflects that: the `iframe` node is rendered by the site theme and
+by nothing else. `myst-to-tex` and `myst-to-docx` have no handler for it at all.
+
+MyST plugins cannot supply renderers for export formats — that part of the
+plugin API is documented as planned, not implemented — and transforms run at the
+`document`/`project` stage, before any format-specific rendering, so a plugin
+cannot branch on the output format either. The fallback therefore has to be
+structural.
+
+Each directive emits **both** an `iframe` node and a plain `image` node as
+siblings inside one `figure` container, and each renderer keeps whichever of the
+two it understands:
+
+| Output | `iframe` | fallback `image` | Result |
+|---|---|---|---|
+| HTML site | live simulation | hidden by `simulation.css` | the simulation |
+| Browser print | hidden by `@media print` | shown by `@media print` | the screenshot |
+| `--pdf` / `--tex` | dropped | `\includegraphics` | screenshot + caption |
+| `--typst` | renders nothing | `#image` | screenshot + caption |
+| `--docx` | unsupported, skipped | embedded image | screenshot + caption |
+| `--md` | folded away | becomes the `{figure}` argument | figure + link |
+
+The caption always ends with a link to the live simulation. That link is the one
+piece of the fallback that survives in every format, so a reader holding a
+printed PDF still knows where to find the running thing.
+
+Two deliberate non-choices, both of which look like obvious simplifications and
+are not:
+
+- **The iframe gets no `placeholder` child.** `myst-to-typst`'s `iframe` handler
+  renders `children[0]` when it is marked `placeholder: true`. Leaving it off is
+  what stops Typst from printing the screenshot twice.
+- **The fallback image is not marked `placeholder: true`.** MyST's placeholder
+  promotion runs only for tex/typst/docx, only if the URL extension is valid for
+  that format, and leaves `myst-to-md`'s figure handler dereferencing an
+  undefined `node.source`. A plain image needs none of that machinery.
+
+`simulation.css` is load-bearing for the website: without it every simulation
+has its own screenshot sitting underneath it. That is a graceful degradation
+rather than a break, but it is why the stylesheet is registered in `myst.yml`.
+
+## Screenshots
+
+`{openphysics}` uses `Baton/screenshots/<Repo>.png`, not the `screenshots/wide.png`
+each simulation publishes on its own Pages site. The latter is the PWA manifest
+asset — a generic splash screen, byte-identical across most of the fleet. Baton's
+are captures of the running simulation, refreshed by its own workflow, and cover
+all 37 catalogued simulations one for one.
+
+`{phet}` uses `<sim>-600.png`, which is the largest size PhET publishes.
+
+Both are remote URLs. MyST downloads and caches them into `_build/`, so exports
+work offline after the first build, but the *first* build of a new simulation
+needs network access.
+
+Placeholders must be **PNG or JPEG**. LaTeX accepts `.pdf .png .jpg .jpeg` and
+DOCX only `.png .jpg .jpeg`; an SVG or WebP placeholder needs Inkscape or
+ImageMagick on the build machine to survive an export.
+
+A `{simulation}` given a bare URL and no `:placeholder:` falls back to
+[`../images/simulation-placeholder.png`](../images/simulation-placeholder.png), a
+generic card generated by
+[`../scripts/figures/simulation_placeholder.py`](../scripts/figures/simulation_placeholder.py).
+
+## Adding a provider
+
+`PROVIDERS` at the top of `simulation.mjs` is a plain object. An entry needs a
+`resolve( id, options )` returning the simulation URL and a screenshot URL, plus
+the frame's aspect ratio:
+
+```js
+myhost: {
+  label: 'My Host',
+  aspect: '16:9',
+  resolve( id, opts ) {
+    return {
+      url: `https://example.org/sims/${ id }/${ buildQuery( {}, opts.params ) }`,
+      placeholder: `https://example.org/sims/${ id }/thumb.png`
+    };
+  }
+}
+```
+
+If the aspect ratio is not already in `simulation.css`, add a rule for it there.
+These URL patterns are conventions of the hosts, not contracts — if OpenPhysics
+or PhET changes its Pages layout, `PROVIDERS` is the only thing to update.
+
+## Expected export messages
+
+Exporting to LaTeX or DOCX reports the dropped iframe:
+
+```
+⛔️ Unhandled LaTeX conversion for node of "iframe"
+⛔️ Node of type "iframe" is not supported by docx renderer
+```
+
+This is the design working, not a fault: the sibling image is what carries the
+figure in those formats. The GitHub Pages workflow runs `myst build --html`
+only, where the iframe *is* supported, so this never appears in CI. To quiet it
+for local exports, at the cost of hiding genuinely unhandled nodes of other
+types, add to `myst.yml`:
+
+```yaml
+project:
+  error_rules:
+    - id: tex-renders
+      severity: warn
+    - id: docx-renders
+      severity: warn
+```

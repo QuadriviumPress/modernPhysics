@@ -35,6 +35,19 @@ $$
 
 This agreement is a triumph for the Schrödinger equation — it reproduces a result that matched atomic spectroscopy to remarkable precision — but the derivation and interpretation are entirely different from Bohr's. Bohr postulated that the electron moves on definite circular orbits, with angular momentum quantized as $L = n\hbar$ by assumption. The Schrödinger treatment makes no such assumption about orbits at all; instead, $n$ emerges purely as an index counting the normalizable solutions of the radial equation, the electron has no well-defined trajectory, and — as shown below — the ground state ($n=1$) actually has **zero** orbital angular momentum, in direct contradiction to Bohr's $L=n\hbar$. The numerical agreement in $E_n$ is, in this sense, a coincidence specific to the particular form of the $1/r$ Coulomb potential, not a sign that the Bohr picture was substantially correct.
 
+The distance between Bohr's picture and Schrödinger's is easiest to see by
+running them side by side, as in @fig:ch10-hydrogen-models-sim. Both reproduce
+the same $E_n$ and therefore the same emission lines, but only one of them
+places the electron on an orbit.
+
+```{phet} models-of-the-hydrogen-atom
+:label: fig:ch10-hydrogen-models-sim
+
+Successive models of the hydrogen atom — Bohr, de Broglie, Schrödinger, and
+their predecessors — each firing photons at an atom and producing a spectrum.
+The models that agree on $E_n$ disagree entirely about where the electron is.
+```
+
 ## Quantum Numbers and Degeneracy in Hydrogen
 
 Solving the full three-dimensional problem gives states labeled by the same three quantum numbers introduced in [Chapter 9](#ch-quantum-mechanics-in-three-dimensions) — $n$, $\ell$, $m_\ell$ — but with a further restriction, specific to the $1/r$ Coulomb potential, tying $\ell$ to $n$:

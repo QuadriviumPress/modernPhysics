@@ -280,6 +280,21 @@ The causal regions and their light-speed boundaries are shown in @fig:ch02-light
 The light cone divides events into the causal future, causal past, and spacelike-separated “elsewhere.” Its $45°$ boundaries are the worldlines of light in units where the horizontal coordinate is $x$ and the vertical coordinate is $ct$. Original schematic by the author.
 ```
 
+The simulation in @fig:ch02-sr-sim draws these diagrams live. Sliding the
+relative speed tilts the $x'$ and $ct'$ axes toward the light cone exactly as
+described above, and dragging an event shows how its coordinates — and, on the
+other screens, the reading of a moving light clock and the ageing of the
+travelling twin — change between frames.
+
+```{openphysics} SpecialRelativity
+:label: fig:ch02-sr-sim
+
+Special relativity in five screens: a moving light clock, an interactive
+Minkowski diagram, the ladder-and-barn paradox, the twin paradox, and the
+relativistic Doppler effect. Set the relative speed and watch the tilted axes
+close on the $45°$ light-cone lines without ever reaching them.
+```
+
 ## Application: Magnetism as a Relativistic Effect
 
 It may seem that special relativity, having explained a handful of subtle high-precision optical experiments, is otherwise disconnected from everyday electromagnetism. In fact one of the most familiar phenomena in electromagnetism — magnetism itself — can be understood as a direct consequence of length contraction applied to electric charge.

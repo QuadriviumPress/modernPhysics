@@ -234,7 +234,16 @@ An electron is in a state with $\ell = 2$. (a) List all allowed values of $m_\el
 :label: sol-quantum-mechanics-in-three-dimensions-3
 :class: dropdown
 
-For $\ell=2$, $m_\ell=-2,-1,0,1,2$.  The magnitude is $L=\sqrt{2(3)}\hbar=\sqrt6\hbar$, while the largest component is $L_z=2\hbar$.  Since $2\hbar<\sqrt6\hbar$, the vector retains an unavoidable transverse component.  Therefore, the allowed $m_\ell$ values are $-2$ through $+2$, and even the largest $L_z$ is strictly less than $L$.
+For $\ell=2$, $m_\ell=-2,-1,0,1,2$.  The magnitude is $L=\sqrt{2(3)}\hbar=\sqrt6\hbar$, while the largest component is $L_z=2\hbar$.  Since $2\hbar<\sqrt6\hbar$, the vector retains an unavoidable transverse component, as drawn in {numref}`Figure %s <fig:ch09-sol-angular-momentum-cones>`.
+
+```{figure} ../images/ch09-sol-angular-momentum-cones.svg
+:label: fig:ch09-sol-angular-momentum-cones
+:alt: Left: five allowed vector orientations of the orbital angular momentum for ell equals 2, drawn from the origin to a circle of radius square root of 6 hbar, at heights corresponding to each allowed m sub ell. Right: comparison of the minimum angle to the z axis for ell equals 2 and ell equals 3, showing the angle shrinking as ell increases.
+
+Left: the five allowed orientations of $\vec L$ for $\ell=2$; even the steepest one, $m_\ell=2$, sits $35.3^\circ$ off the $z$-axis. Right: [Problem 9](#ex-quantum-mechanics-in-three-dimensions-9)'s comparison — the minimum angle shrinks to $30.0^\circ$ for $\ell=3$, as $L$ grows faster than its maximum projection $\ell\hbar$.
+```
+
+Therefore, the allowed $m_\ell$ values are $-2$ through $+2$, and even the largest $L_z$ is strictly less than $L$.
 :::
 
 :::{exercise}
@@ -299,7 +308,16 @@ Explain, using the centrifugal barrier term $\hbar^2\ell(\ell+1)/2mr^2$, why an 
 :label: sol-quantum-mechanics-in-three-dimensions-8
 :class: dropdown
 
-For $\ell=0$, the centrifugal term $\hbar^2\ell(\ell+1)/(2mr^2)$ is zero, so there is no angular-momentum barrier at $r=0$.  For $\ell=1$, it diverges positively as $1/r^2$, suppressing the wave function near the nucleus.  Therefore, $s$ electrons can penetrate to the nucleus whereas $p$ electrons cannot.
+For $\ell=0$, the centrifugal term $\hbar^2\ell(\ell+1)/(2mr^2)$ is zero, so there is no angular-momentum barrier at $r=0$.  For $\ell=1$, it diverges positively as $1/r^2$, suppressing the wave function near the nucleus.
+
+```{figure} ../images/ch09-sol-centrifugal-barrier.svg
+:label: fig:ch09-sol-centrifugal-barrier
+:alt: The centrifugal term plotted against radius, flat at zero for ell equals 0 and diverging as one over r squared for ell equals 1 as r approaches zero.
+
+For $\ell=0$ the centrifugal term is identically zero, so nothing prevents $\psi(0)\neq0$; for $\ell=1$ it diverges as $r\to0$, an infinitely steep repulsive wall that forces $\psi(0)=0$.
+```
+
+Therefore, $s$ electrons can penetrate to the nucleus whereas $p$ electrons cannot.
 :::
 
 :::{exercise}
@@ -316,7 +334,7 @@ The smallest angle occurs for $m_\ell=\ell=3$:
 
 $$\cos\theta=\frac{L_z}{L}=\frac{3\hbar}{\sqrt{3(4)}\hbar}=\frac{\sqrt3}{2},\qquad\theta=30.0^\circ.$$
 
-For $\ell=2$, $\cos\theta=2/\sqrt6$ and $\theta=35.3^\circ$.  Therefore, an $f$ state reaches $30.0^\circ$, closer to the $z$ axis than a $d$ state; the cone narrows as $\ell$ increases.
+For $\ell=2$, $\cos\theta=2/\sqrt6$ and $\theta=35.3^\circ$, both shown together in {numref}`Figure %s <fig:ch09-sol-angular-momentum-cones>`.  Therefore, an $f$ state reaches $30.0^\circ$, closer to the $z$ axis than a $d$ state; the cone narrows as $\ell$ increases.
 :::
 
 :::{exercise}
@@ -342,7 +360,7 @@ For the isotropic three-dimensional harmonic oscillator, list all the Cartesian 
 :label: sol-quantum-mechanics-in-three-dimensions-11
 :class: dropdown
 
-The nonnegative triples summing to $2$ are $(2,0,0),(0,2,0),(0,0,2),(1,1,0),(1,0,1),(0,1,1)$.  There are six, and the formula gives $(2+1)(2+2)/2=6$.  Therefore, the $N=2$ oscillator shell has exactly six spatial states.
+The nonnegative triples summing to $2$ are $(2,0,0),(0,2,0),(0,0,2),(1,1,0),(1,0,1),(0,1,1)$.  There are six, and the formula gives $(2+1)(2+2)/2=6$.  {numref}`Figure %s <fig:ch09-sol-oscillator-shells>` carries this same degeneracy count into [Problem 13](#ex-quantum-mechanics-in-three-dimensions-13)'s nuclear-shell application.  Therefore, the $N=2$ oscillator shell has exactly six spatial states.
 :::
 
 :::{exercise}
@@ -368,7 +386,16 @@ The nuclear shell model uses an isotropic-oscillator-like potential to explain w
 :label: sol-quantum-mechanics-in-three-dimensions-13
 :class: dropdown
 
-The spatial degeneracies are $1$, $3$, and $6$ for $N=0,1,2$.  Including spin gives shell capacities $2$, $6$, and $12$, so cumulative capacities are $2$, $8$, and $20$.  Therefore, the simple oscillator model reproduces the first three nuclear magic numbers $2$, $8$, and $20$ before spin--orbit corrections are needed.
+The spatial degeneracies are $1$, $3$, and $6$ for $N=0,1,2$.  Including spin gives shell capacities $2$, $6$, and $12$, so cumulative capacities are $2$, $8$, and $20$.
+
+```{figure} ../images/ch09-sol-oscillator-shells.svg
+:label: fig:ch09-sol-oscillator-shells
+:alt: Three oscillator shells N equals 0, 1, and 2 with their spatial degeneracies 1, 3, and 6, spin capacities 2, 6, and 12, and cumulative totals 2, 8, and 20 marked beside each level.
+
+Filling the oscillator shells in order, the running total after each shell — $2$, $8$, $20$ — lands exactly on the first three nuclear magic numbers.
+```
+
+Therefore, the simple oscillator model reproduces the first three nuclear magic numbers $2$, $8$, and $20$ before spin--orbit corrections are needed.
 :::
 
 :::{exercise}
@@ -394,7 +421,16 @@ An electron in a hydrogen-like atom is in a $p$-state ($\ell=1$, $m_\ell=0$), wh
 :label: sol-quantum-mechanics-in-three-dimensions-15
 :class: dropdown
 
-Because $|Y_1^0|^2\propto\cos^2\theta$, it vanishes where $\cos\theta=0$, namely at $\theta=90^\circ$.  This nodal $xy$ plane leaves two lobes on the positive and negative $z$ axes, hence the name $p_z$.  Therefore, $p_z$ is directional with an equatorial node, unlike an $s$ state whose angular probability is uniform in every direction.
+Because $|Y_1^0|^2\propto\cos^2\theta$, it vanishes where $\cos\theta=0$, namely at $\theta=90^\circ$.  This nodal $xy$ plane leaves two lobes on the positive and negative $z$ axes, hence the name $p_z$.
+
+```{figure} ../images/ch09-sol-p-orbital-shape.svg
+:label: fig:ch09-sol-p-orbital-shape
+:alt: Polar plots comparing the angular probability density of an s-state, a filled circle uniform in every direction, with a p_z state, a dumbbell shape with two lobes along the vertical axis and a node at the equator.
+
+The $s$-state angular density is a circle — the same in every direction. The $p_z$-state density is a dumbbell with a node at $\theta=90^\circ$, concentrating probability along $\pm z$.
+```
+
+Therefore, $p_z$ is directional with an equatorial node, unlike an $s$ state whose angular probability is uniform in every direction.
 :::
 
 :::{exercise}
@@ -407,7 +443,16 @@ An atom in a state with $\ell=1$ is placed in an external magnetic field along t
 :label: sol-quantum-mechanics-in-three-dimensions-16
 :class: dropdown
 
-For $\ell=1$, $m_\ell=-1,0,+1$, so a shift proportional to $m_\ell$ produces three distinct levels.  For $\ell=0$, only $m_\ell=0$ exists and the orbital shift is zero.  Therefore, a $p$ level splits into three orbital Zeeman components while an $s$ level does not split orbitally.
+For $\ell=1$, $m_\ell=-1,0,+1$, so a shift proportional to $m_\ell$ produces three distinct levels.  For $\ell=0$, only $m_\ell=0$ exists and the orbital shift is zero.
+
+```{figure} ../images/ch09-sol-zeeman-splitting.svg
+:label: fig:ch09-sol-zeeman-splitting
+:alt: Left: a single ell equals 1 level splitting into three levels labeled m sub ell equals minus 1, 0, and 1 when a magnetic field is turned on. Right: a single ell equals 0 level staying single with no splitting when the same field is turned on.
+
+Turning on the field splits the $\ell=1$ level into three, one for each $m_\ell$; the $\ell=0$ level has only $m_\ell=0$ to begin with, so there is nothing to split.
+```
+
+Therefore, a $p$ level splits into three orbital Zeeman components while an $s$ level does not split orbitally.
 :::
 
 :::{exercise}

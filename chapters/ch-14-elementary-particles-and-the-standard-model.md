@@ -316,7 +316,16 @@ Determine whether each proposed reaction conserves charge, baryon number, and le
 :label: sol-elementary-particles-and-the-standard-model-3
 :class: dropdown
 
-For (a), the initial proton has $(Q,B,L)=(+1,+1,0)$, while $e^++\gamma$ has $(+1,0,-1)$; baryon number and lepton number fail, so it is forbidden.  For (b), both sides have $(Q,B,L)=(0,1,0)$, because $e^-$ has $L=+1$ and $\bar\nu_e$ has $L=-1$; it is allowed.  For (c), charge is conserved, but the initial state has $L_\mu=+1$ and the final state has $L_\mu=0$, so it is forbidden.  For (d), both sides have $Q=+2$, $B=2$, and $L=0$, so it is allowed if sufficient kinetic energy is supplied.  Therefore, (b) and (d) conserve all listed quantum numbers, whereas (a) violates $B$ and $L$ and (c) violates muon lepton number.
+For (a), the initial proton has $(Q,B,L)=(+1,+1,0)$, while $e^++\gamma$ has $(+1,0,-1)$; baryon number and lepton number fail, so it is forbidden.  For (b), both sides have $(Q,B,L)=(0,1,0)$, because $e^-$ has $L=+1$ and $\bar\nu_e$ has $L=-1$; it is allowed.  For (c), charge is conserved, but the initial state has $L_\mu=+1$ and the final state has $L_\mu=0$, so it is forbidden.  For (d), both sides have $Q=+2$, $B=2$, and $L=0$, so it is allowed if sufficient kinetic energy is supplied.
+
+```{figure} ../images/ch14-sol-conservation-checklist.svg
+:label: fig:ch14-sol-conservation-checklist
+:alt: Table of four proposed reactions against charge, baryon number, and lepton number, marked pass or fail, plus a fifth row for the K minus plus p reaction from Problem 8 checked against charge, baryon number, and strangeness.
+
+Reading conservation laws as a pass/fail table: (a) fails on two counts, (c) fails on lepton number alone, and (b), (d), and [Problem 8](#ex-elementary-particles-and-the-standard-model-8)'s reaction pass everything asked of them.
+```
+
+Therefore, (b) and (d) conserve all listed quantum numbers, whereas (a) violates $B$ and $L$ and (c) violates muon lepton number.
 :::
 
 :::{exercise}
@@ -376,7 +385,16 @@ An anti-up quark has charge $-\tfrac23e$, and an $s$ quark has charge $-\tfrac13
 
 $$Q_{\bar us}=-\frac23e-\frac13e=-e.$$
 
-The $s$ quark has strangeness $S=-1$, so $K^-$ has $S=-1$.  The antiparticle $K^+$ has the opposite values, $Q=+e$ and $S=+1$.  Therefore, $K^-$ is the antiparticle of $K^+$ because antiparticles have opposite additive quantum numbers, including charge and strangeness.
+The $s$ quark has strangeness $S=-1$, so $K^-$ has $S=-1$.  The antiparticle $K^+$ has the opposite values, $Q=+e$ and $S=+1$.
+
+```{figure} ../images/ch14-sol-kaon-antiparticle.svg
+:label: fig:ch14-sol-kaon-antiparticle
+:alt: K minus and K plus shown side by side with their quark content, charge, and strangeness, connected by a double arrow labeled antiparticles: opposite Q, opposite S.
+
+Every additive quantum number a particle carries — not just charge — reverses sign for its antiparticle; $K^-$ and $K^+$ show this for both $Q$ and $S$ at once.
+```
+
+Therefore, $K^-$ is the antiparticle of $K^+$ because antiparticles have opposite additive quantum numbers, including charge and strangeness.
 :::
 
 :::{exercise}
@@ -389,7 +407,7 @@ Determine whether the reaction $K^- + p \to \Lambda^0 + \pi^0$ conserves charge,
 :label: sol-elementary-particles-and-the-standard-model-8
 :class: dropdown
 
-Initially $K^-+p$ has $Q=-1+1=0$, $B=0+1=1$, and $S=-1+0=-1$.  Finally $\Lambda^0+\pi^0$ has $Q=0+0=0$, $B=1+0=1$, and $S=-1+0=-1$.  Therefore, charge, baryon number, and strangeness are all conserved, so the reaction can proceed through the strong interaction.
+Initially $K^-+p$ has $Q=-1+1=0$, $B=0+1=1$, and $S=-1+0=-1$.  Finally $\Lambda^0+\pi^0$ has $Q=0+0=0$, $B=1+0=1$, and $S=-1+0=-1$, the bottom row of {numref}`Figure %s <fig:ch14-sol-conservation-checklist>`.  Therefore, charge, baryon number, and strangeness are all conserved, so the reaction can proceed through the strong interaction.
 :::
 
 :::{exercise}
@@ -402,7 +420,16 @@ The muon decays via $\mu^- \to e^- + \bar\nu_e + \nu_\mu$ ([Chapter 2](#ch-speci
 :label: sol-elementary-particles-and-the-standard-model-9
 :class: dropdown
 
-Draw an incoming $\mu^-$ line ending at a vertex that emits an outgoing $\nu_\mu$ line and a virtual $W^-$ line; the $W^-$ ends at a second vertex in outgoing $e^-$ and $\bar\nu_e$ lines.  At the first vertex, $Q:-1=0+(-1)$ and $L_\mu:+1=+1+0$.  At the second, $Q:-1=-1+0$ and $L_e:0=+1+(-1)$.  All unmentioned generation numbers are zero on both sides.  Therefore, each vertex separately conserves charge and the electron and muon lepton numbers.
+Draw an incoming $\mu^-$ line ending at a vertex that emits an outgoing $\nu_\mu$ line and a virtual $W^-$ line; the $W^-$ ends at a second vertex in outgoing $e^-$ and $\bar\nu_e$ lines.  At the first vertex, $Q:-1=0+(-1)$ and $L_\mu:+1=+1+0$.  At the second, $Q:-1=-1+0$ and $L_e:0=+1+(-1)$.  All unmentioned generation numbers are zero on both sides.
+
+```{figure} ../images/ch14-sol-muon-decay-feynman.svg
+:label: fig:ch14-sol-muon-decay-feynman
+:alt: Feynman diagram for muon decay with time running upward, an incoming mu minus turning into an outgoing nu mu at the first vertex, emitting a virtual W minus that decays at a second vertex into an outgoing electron and an outgoing antineutrino.
+
+Drawn in the same style as {numref}`Figure %s <fig:ch14-feynman-diagrams>`: the $\mu^-$ converts to $\nu_\mu$ at vertex 1 while emitting a virtual $W^-$, which decays to $e^-+\bar\nu_e$ at vertex 2 — charge and each generation's lepton number balance separately at both vertices.
+```
+
+Therefore, each vertex separately conserves charge and the electron and muon lepton numbers.
 :::
 
 :::{exercise}
@@ -425,6 +452,13 @@ The mean lab lifetime is $\gamma\tau_0=(11.35)(2.20\ \mu\text{s})=25.0\ \mu\text
 
 $$\ell=\beta c\gamma\tau_0=(0.9961)(3.00\times10^8\ \text{m/s})(25.0\times10^{-6}\ \text{s})=7.47\times10^3\ \text{m}.$$
 
+```{figure} ../images/ch14-sol-muon-decay-length.svg
+:label: fig:ch14-sol-muon-decay-length
+:alt: Mean muon decay length versus total beam energy, rising smoothly, with the worked example's 2.4 kilometer point and this problem's 7.47 kilometer point both marked on the curve.
+
+Both beams sit on the same $\beta c\gamma\tau_0$ curve; this problem's higher energy gives a larger $\gamma$ and a correspondingly longer mean decay length.
+```
+
 Therefore, this beam has $\gamma=11.35$, $\beta=0.9961$, and a mean decay length of $7.47\ \text{km}$, longer than $2.4\ \text{km}$ because its Lorentz factor is larger.
 :::
 
@@ -441,6 +475,13 @@ Repeat the gravitational-versus-electromagnetic force-ratio calculation of the w
 For two identical particles, the force ratio is $F_G/F_E=Gm^2/(ke^2)$.  For electrons,
 
 $$\frac{F_G}{F_E}=\frac{(6.674\times10^{-11}\ \text{N m}^2\! /\text{kg}^2)(9.109\times10^{-31}\ \text{kg})^2}{(8.988\times10^9\ \text{N m}^2\! /\text{C}^2)(1.602\times10^{-19}\ \text{C})^2}=2.4\times10^{-43}.$$
+
+```{figure} ../images/ch14-sol-gravity-em-ratio.svg
+:label: fig:ch14-sol-gravity-em-ratio
+:alt: Log-scale bar chart comparing the gravity-to-electromagnetism force ratio for two protons and two electrons, with the electron ratio about six orders of magnitude smaller.
+
+Same formula, same charge magnitude, but $m_e/m_p\approx1/1836$ enters squared: the electron ratio is smaller by roughly $(1836)^2\approx3.4\times10^6$.
+```
 
 Therefore, gravity between two electrons is only about $2.4\times10^{-43}$ of their electrical repulsion; the ratio is far smaller than for protons because it scales as $m^2$ while the charge magnitude is unchanged.
 :::

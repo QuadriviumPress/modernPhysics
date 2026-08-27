@@ -264,7 +264,16 @@ Using Hund's rule, sketch the orbital-filling diagram (boxes for each $m_\ell$ o
 :label: sol-many-electron-atoms-2
 :class: dropdown
 
-Nitrogen has $2p^3$.  Hund's rule puts one parallel-spin electron into each of the three $p$ orbitals before any pairing: $[\uparrow]\,[\uparrow]\,[\uparrow]$.  The three spins each have $m_s=+\tfrac12$, so $S=3(\tfrac12)\hbar=\tfrac32\hbar$.  Therefore, nitrogen's $2p$ subshell has three unpaired parallel electrons and total spin $S=\tfrac32\hbar$.
+Nitrogen has $2p^3$.  Hund's rule puts one parallel-spin electron into each of the three $p$ orbitals before any pairing: $[\uparrow]\,[\uparrow]\,[\uparrow]$.  The three spins each have $m_s=+\tfrac12$, so $S=3(\tfrac12)\hbar=\tfrac32\hbar$.
+
+```{figure} ../images/ch11-sol-hunds-rule-nitrogen.svg
+:label: fig:ch11-sol-hunds-rule-nitrogen
+:alt: Three separate orbital boxes for nitrogen's 2p subshell, each containing a single upward-pointing spin arrow, with no orbital doubly occupied.
+
+Hund's rule in action: all three $2p$ orbitals get one electron, spins aligned, before any orbital is filled with a second, opposite-spin electron.
+```
+
+Therefore, nitrogen's $2p$ subshell has three unpaired parallel electrons and total spin $S=\tfrac32\hbar$.
 :::
 
 :::{exercise}
@@ -293,6 +302,13 @@ The measured $K_\alpha$ X-ray frequency of copper ($Z=29$) is $f = 1.94\times10^
 Moseley's relation with $b=1$ gives $f\propto(Z-1)^2$.  Hence
 
 $$f_{\rm Ni}=f_{\rm Cu}\left(\frac{28-1}{29-1}\right)^2=(1.94\times10^{18}\ \text{Hz})\left(\frac{27}{28}\right)^2=1.80\times10^{18}\ \text{Hz}.$$
+
+```{figure} ../images/ch11-sol-moseley-plot.svg
+:label: fig:ch11-sol-moseley-plot
+:alt: Square root of the K-alpha frequency plotted against atomic number, with a dashed line assuming b equals 1 through the copper point predicting nickel, and a solid line fit through copper and molybdenum predicting silver, in Problem 9.
+
+This problem's single-point, $b=1$ extrapolation (dashed) and [Problem 9](#ex-many-electron-atoms-9)'s two-point fit (solid) nearly coincide over this range — both are straight lines in $\sqrt f$ vs. $Z$, just anchored differently.
+```
 
 Therefore, nickel's predicted $K_\alpha$ frequency is $1.80\times10^{18}\ \text{Hz}$, lower than copper's because nickel has one fewer proton.
 :::
@@ -337,6 +353,13 @@ For one magnesium $3s$ electron, the other $3s$ electron shields $0.35$; the eig
 
 $$S=0.35+6.80+2.00=9.15,\qquad Z_{\rm eff}=Z-S=12-9.15=2.85.$$
 
+```{figure} ../images/ch11-sol-zeff-comparison.svg
+:label: fig:ch11-sol-zeff-comparison
+:alt: Bar chart of effective nuclear charge for the outer electron of sodium, magnesium, and chlorine, increasing from sodium through magnesium to chlorine.
+
+Slater's-rules $Z_{\rm eff}$ increases steadily across the period as protons are added faster than shielding can compensate; magnesium's $2.85$ falls exactly between sodium's and chlorine's.
+```
+
 Therefore, magnesium's $3s$ electron feels $Z_{\rm eff}=2.85$, appropriately between sodium's $2.20$ and chlorine's $6.10$.
 :::
 
@@ -350,7 +373,16 @@ Sulfur's first ionization energy ($10.36\ \text{eV}$) is slightly *lower* than p
 :label: sol-many-electron-atoms-8
 :class: dropdown
 
-Phosphorus has $3p^3$, with three parallel electrons in separate orbitals, gaining the stabilization associated with a half-filled subshell.  Sulfur is $3p^4$, so one $p$ orbital contains a pair; the added electron introduces pairing repulsion and reduces that special exchange stabilization.  Therefore, sulfur's first ionization energy is slightly lower than phosphorus's despite sulfur's larger nuclear charge.
+Phosphorus has $3p^3$, with three parallel electrons in separate orbitals, gaining the stabilization associated with a half-filled subshell.  Sulfur is $3p^4$, so one $p$ orbital contains a pair; the added electron introduces pairing repulsion and reduces that special exchange stabilization.
+
+```{figure} ../images/ch11-sol-phosphorus-sulfur.svg
+:label: fig:ch11-sol-phosphorus-sulfur
+:alt: Orbital box diagrams comparing phosphorus 3p cubed, with three singly occupied orbitals, and sulfur 3p to the fourth, with one doubly occupied orbital and two singly occupied, alongside their first ionization energies.
+
+Phosphorus keeps every $3p$ electron unpaired and enjoys the full half-filled-subshell exchange bonus; sulfur's fourth electron must double up, and the resulting pairing repulsion slightly outweighs its extra proton.
+```
+
+Therefore, sulfur's first ionization energy is slightly lower than phosphorus's despite sulfur's larger nuclear charge.
 :::
 
 :::{exercise}
@@ -369,7 +401,7 @@ $$a=\frac{\sqrt{4.226\times10^{18}}-\sqrt{1.94\times10^{18}}}{42-29}=5.10\times1
 
 $$b=29-\frac{\sqrt{1.94\times10^{18}}}{a}=1.68.$$
 
-For silver, $\sqrt f=a(47-b)=2.31\times10^9\ \text{Hz}^{1/2}$, so $f=5.34\times10^{18}\ \text{Hz}$ and $E=hf=22.1\ \text{keV}$.  Therefore, $b\approx1.68$ is of order unity and the fitted law predicts a $22.1\ \text{keV}$ silver $K_\alpha$ photon.
+For silver, $\sqrt f=a(47-b)=2.31\times10^9\ \text{Hz}^{1/2}$, so $f=5.34\times10^{18}\ \text{Hz}$ and $E=hf=22.1\ \text{keV}$, the point extrapolated in {numref}`Figure %s <fig:ch11-sol-moseley-plot>`.  Therefore, $b\approx1.68$ is of order unity and the fitted law predicts a $22.1\ \text{keV}$ silver $K_\alpha$ photon.
 :::
 
 :::{exercise}
@@ -412,5 +444,14 @@ Argon ($Z=18$, configuration $[\text{Ne}]\,3s^23p^6$) has a *smaller* atomic rad
 :label: sol-many-electron-atoms-12
 :class: dropdown
 
-Across period 3, added protons raise $Z_{\rm eff}$ while electrons stay in the $n=3$ shell, so radii generally decrease.  Potassium starts a new $n=4$ shell: its $4s$ electron is farther out and strongly shielded by the filled argon core.  Therefore, potassium's new principal shell outweighs its extra proton, giving it a larger radius than argon.
+Across period 3, added protons raise $Z_{\rm eff}$ while electrons stay in the $n=3$ shell, so radii generally decrease.  Potassium starts a new $n=4$ shell: its $4s$ electron is farther out and strongly shielded by the filled argon core.
+
+```{figure} ../images/ch11-sol-atomic-radius-anomaly.svg
+:label: fig:ch11-sol-atomic-radius-anomaly
+:alt: Bar chart of atomic radius across period 3 from sodium to argon, steadily decreasing, followed by a sharp jump up at potassium.
+
+Radius falls steadily as $Z_{\rm eff}$ grows across a period, then jumps back up the instant a new principal shell opens at potassium.
+```
+
+Therefore, potassium's new principal shell outweighs its extra proton, giving it a larger radius than argon.
 :::

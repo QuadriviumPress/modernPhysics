@@ -876,7 +876,16 @@ Principal maxima obey $d\sin\theta=m\lambda$, hence
 
 $$\sin\theta=m\frac{600\ \text{nm}}{3.00\ \mu\text{m}}=0.200m.$$
 
-The allowed orders are $m=0,\pm1,\pm2,\pm3,\pm4,\pm5$, with $\sin\theta=0,\pm0.200,\pm0.400,\pm0.600,\pm0.800,\pm1.000$.  Zeros satisfy $d\sin\theta=q\lambda/N$ where $q=1,\ldots,N-1$ between adjacent principal maxima.  Between $m=0$ and $m=1$, $\sin\theta=q(0.200)/6$, giving $0.0333,0.0667,0.100,0.133,0.167$.  There are $N-2=4$ secondary maxima between those five zeros.  Therefore, the stated principal directions, five intervening zeros, and four secondary maxima describe the six-slit pattern.
+The allowed orders are $m=0,\pm1,\pm2,\pm3,\pm4,\pm5$, with $\sin\theta=0,\pm0.200,\pm0.400,\pm0.600,\pm0.800,\pm1.000$.  Zeros satisfy $d\sin\theta=q\lambda/N$ where $q=1,\ldots,N-1$ between adjacent principal maxima.  Between $m=0$ and $m=1$, $\sin\theta=q(0.200)/6$, giving $0.0333,0.0667,0.100,0.133,0.167$.  There are $N-2=4$ secondary maxima between those five zeros, as shown in {numref}`Figure %s <fig:ch04-sol-six-slit>`.
+
+```{figure} ../images/ch04-sol-six-slit.svg
+:label: fig:ch04-sol-six-slit
+:alt: Six-slit interference pattern showing ten principal maxima across the full range of sin(theta), with a zoomed panel between the m=0 and m=1 maxima showing five zeros and four secondary maxima.
+
+Six-slit pattern for $d=3.00\ \mu\text{m}$, $\lambda=600\ \text{nm}$. Top: principal maxima at $\sin\theta=0.200m$. Bottom: zoom between $m=0$ and $m=1$, showing the five zeros and four secondary maxima predicted above.
+```
+
+Therefore, the stated principal directions, five intervening zeros, and four secondary maxima describe the six-slit pattern.
 :::
 
 :::{exercise}
@@ -918,6 +927,13 @@ For oil on $n=1.60$ material, both reflections reverse phase, so this is Case B.
 
 $$t=\frac{\lambda}{2n}=\frac{600\ \text{nm}}{2(1.45)}=207\ \text{nm}.$$
 
+```{figure} ../images/ch04-sol-thin-film-cases.svg
+:label: fig:ch04-sol-thin-film-cases
+:alt: Side-by-side ray diagrams of oil on water, with a single pi phase shift at the top surface only, and oil on a higher-index substrate, with a pi shift at both surfaces.
+
+Case A (oil on water) has one phase reversal, so the first bright thickness is a quarter-wave; Case B (oil on the denser substrate) has two reversals that cancel, so the first bright thickness is a half-wave — twice as large.
+```
+
 Therefore, oil on water is Case A and reflects strongly first at $103\ \text{nm}$, while oil on $n=1.60$ is Case B and first reflects strongly at $207\ \text{nm}$; the two phase reversals shift the condition by half an order.
 :::
 
@@ -952,7 +968,16 @@ For reflected Newton rings with one phase reversal, dark rings satisfy $r_m^2=m\
 
 $$r_{10}=\sqrt{10(589\times10^{-9}\ \text{m})(2.00\ \text{m})}=3.43\times10^{-3}\ \text{m}=3.43\ \text{mm}.$$
 
-At the center $t=0$, the propagation phase difference is zero while one reflected ray has a $\pi$ shift, so the center is dark.  Since $r_m\propto\sqrt m$, $r_{m+1}-r_m$ decreases as $m$ increases.  Therefore, the tenth dark ring has radius $3.43\ \text{mm}$, the center is dark because of the single phase reversal, and rings crowd outward.
+At the center $t=0$, the propagation phase difference is zero while one reflected ray has a $\pi$ shift, so the center is dark.  Since $r_m\propto\sqrt m$, $r_{m+1}-r_m$ decreases as $m$ increases, as seen in {numref}`Figure %s <fig:ch04-sol-newton-rings>`.
+
+```{figure} ../images/ch04-sol-newton-rings.svg
+:label: fig:ch04-sol-newton-rings
+:alt: Simulated Newton's rings pattern in reflection, dark at the center, with the tenth dark ring at radius 3.43 millimeters marked and rings crowding closer together at larger radius.
+
+The reflected pattern: dark at the center from the single phase reversal, with $r_m=\sqrt{m\lambda R}$ so the rings crowd together as $m$ grows. The dashed circle marks $r_{10}=3.43\ \text{mm}$.
+```
+
+Therefore, the tenth dark ring has radius $3.43\ \text{mm}$, the center is dark because of the single phase reversal, and rings crowd outward.
 :::
 
 :::{exercise}
@@ -1076,6 +1101,13 @@ $$m_1(480)=m_2(600)\quad\Rightarrow\quad4m_1=5m_2.$$
 The smallest positive integers are $m_1=5$ and $m_2=4$.  The common position is
 
 $$y\simeq\frac{Lm_1\lambda_1}{d}=\frac{(2.00\ \text{m})(5)(480\times10^{-9}\ \text{m})}{0.150\times10^{-3}\ \text{m}}=3.20\times10^{-2}\ \text{m}=3.20\ \text{cm}.$$
+
+```{figure} ../images/ch04-sol-coincidence.svg
+:label: fig:ch04-sol-coincidence
+:alt: Overlaid bright-fringe intensity patterns for 480 nanometer and 600 nanometer light versus screen position, with their product peaking at the first coincidence at 3.20 centimeters.
+
+The two fringe patterns drift in and out of step; their product (bottom) peaks wherever both are bright at once, first at $y=3.20\ \text{cm}$ where $m_1=5$ and $m_2=4$.
+```
 
 Therefore, the first noncentral coincidence is $3.20\ \text{cm}$ from the center.
 :::

@@ -330,7 +330,7 @@ For $2\to1$, the Rydberg formula gives
 
 $$\frac1\lambda=R\left(1-\frac14\right)=\frac34(1.097\times10^7\ \text{m}^{-1}),\qquad \lambda=121.5\ \text{nm}.$$
 
-At the series limit, $1/\lambda=R$, so $\lambda=91.2\ \text{nm}$.  Therefore, the first Lyman line is $121.5\ \text{nm}$ and the limit is $91.2\ \text{nm}$; both are ultraviolet, so the entire series is invisible to the eye.
+At the series limit, $1/\lambda=R$, so $\lambda=91.2\ \text{nm}$.  Both lines are the leftmost cluster of downward arrows in {numref}`Figure %s <fig:ch10-energy-levels>`, all converging on $n_f=1$.  Therefore, the first Lyman line is $121.5\ \text{nm}$ and the limit is $91.2\ \text{nm}$; both are ultraviolet, so the entire series is invisible to the eye.
 :::
 
 :::{exercise}
@@ -356,7 +356,16 @@ Using the selection rule $\Delta\ell=\pm1$, determine which of the following sin
 :label: sol-the-hydrogen-atom-3
 :class: dropdown
 
-The changes in $\ell$ are: (a) $2\to1$, so $\Delta\ell=-1$ and allowed; (b) $0\to0$, so forbidden; (c) $1\to0$, so allowed; and (d) $1\to0$, so allowed.  Therefore, only $3s\to2s$ is forbidden by the electric-dipole selection rule.
+The changes in $\ell$ are: (a) $2\to1$, so $\Delta\ell=-1$ and allowed; (b) $0\to0$, so forbidden; (c) $1\to0$, so allowed; and (d) $1\to0$, so allowed.
+
+```{figure} ../images/ch10-sol-selection-rule-transitions.svg
+:label: fig:ch10-sol-selection-rule-transitions
+:alt: Energy levels grouped by orbital type s, p, and d at n equals 1, 2, and 3, with solid arrows for the three allowed transitions and a dashed crossed arrow for the forbidden 3s to 2s transition.
+
+Grouping the levels by $\ell$ makes the rule visual: an allowed arrow always moves one column over, while $3s\to2s$ tries to stay in the same column and is forbidden.
+```
+
+Therefore, only $3s\to2s$ is forbidden by the electric-dipole selection rule.
 :::
 
 :::{exercise}
@@ -403,7 +412,7 @@ Ignoring the positive normalization constant, $P(r)=r^2e^{-2r/a_0}$.  Differenti
 
 $$\frac{dP}{dr}=2re^{-2r/a_0}-\frac2{a_0}r^2e^{-2r/a_0}=2re^{-2r/a_0}\left(1-\frac r{a_0}\right).$$
 
-For $r>0$, the derivative vanishes at $r=a_0$, changing from positive to negative there.  Therefore, the ground-state radial probability is largest at the Bohr radius $r=a_0$.
+For $r>0$, the derivative vanishes at $r=a_0$, changing from positive to negative there — exactly the peak of the $1s$ curve in {numref}`Figure %s <fig:ch10-radial-probability>`.  Therefore, the ground-state radial probability is largest at the Bohr radius $r=a_0$.
 :::
 
 :::{exercise}
@@ -419,6 +428,13 @@ Doubly ionized lithium, $\text{Li}^{2+}$ ($Z=3$), is a one-electron hydrogenic i
 Hydrogenic ionization energy scales as $Z^2$ and the most-probable radius as $a_0/Z$.  Thus
 
 $$E_I=3^2(13.6\ \text{eV})=122.4\ \text{eV},\qquad r_{\max}=\frac{0.529\ \text{\AA}}3=0.176\ \text{\AA}=0.0176\ \text{nm}.$$
+
+```{figure} ../images/ch10-sol-hydrogenic-z-scaling.svg
+:label: fig:ch10-sol-hydrogenic-z-scaling
+:alt: Ground-state radial probability distributions for hydrogen and doubly ionized lithium, each normalized to its own peak, with the lithium curve peaking at one-third the radius of hydrogen's.
+
+Both curves have the same shape, rescaled: replacing $Z=1$ with $Z=3$ compresses the peak radius by $1/Z$ while (not shown to the same vertical scale) the binding energy grows by $Z^2$.
+```
 
 Therefore, $\text{Li}^{2+}$ has a $122.4\ \text{eV}$ ionization energy and a $0.0176\ \text{nm}$ most-probable radius: nine times hydrogen's energy and one-third its radius.
 :::
@@ -436,6 +452,13 @@ A different Stern–Gerlach apparatus uses a field gradient $\partial B_z/\parti
 The force magnitude is $F=\mu_B(\partial B_z/\partial z)=(9.274\times10^{-24})(15)=1.39\times10^{-22}\ \text{N}$, so $a=F/m=777\ \text{m/s}^2$.  The magnet time is $t_1=L/v=3.33\times10^{-4}\ \text{s}$ and the drift time is $t_2=D/v=6.67\times10^{-4}\ \text{s}$.  One component deflects by
 
 $$z=\tfrac12at_1^2+(at_1)t_2=2.16\times10^{-4}\ \text{m}=0.216\ \text{mm}.$$
+
+```{figure} ../images/ch10-sol-stern-gerlach.svg
+:label: fig:ch10-sol-stern-gerlach
+:alt: Schematic of a beam entering an inhomogeneous magnet and splitting into two straight paths that reach the screen separated by 0.432 millimeters, one for each spin projection.
+
+The two spin states feel opposite forces inside the magnet, coast in straight lines afterward, and arrive at the screen separated by $2z$. (The deflection is exaggerated for visibility; the real displacement is a fraction of a millimeter.)
+```
 
 Therefore, the two opposite spin components are separated by $2z=0.432\ \text{mm}$.
 :::
@@ -456,7 +479,16 @@ $$\Delta E=(5.79\times10^{-5}\ \text{eV/T})(0.50\ \text{T})=2.90\times10^{-5}\ \
 
 $$\Delta f=\frac{\Delta E}{h}=7.00\times10^9\ \text{Hz}.$$
 
-Finally $\Delta\lambda\simeq\lambda^2\Delta f/c=(486.1\times10^{-9}\ \text{m})^2(7.00\times10^9\ \text{Hz})/(3.00\times10^8\ \text{m/s})=0.00551\ \text{nm}$.  Therefore, the $0.50\ \text{T}$ splitting is $2.90\times10^{-5}\ \text{eV}$, $7.00\ \text{GHz}$, and $0.0055\ \text{nm}$, half the corresponding $1.0\ \text{T}$ scale.
+Finally $\Delta\lambda\simeq\lambda^2\Delta f/c=(486.1\times10^{-9}\ \text{m})^2(7.00\times10^9\ \text{Hz})/(3.00\times10^8\ \text{m/s})=0.00551\ \text{nm}$.
+
+```{figure} ../images/ch10-sol-zeeman-line-splitting.svg
+:label: fig:ch10-sol-zeeman-line-splitting
+:alt: A single spectral line at 486.1 nanometers shown splitting into three closely spaced lines separated by 0.00551 nanometers when a 0.50 tesla field is applied.
+
+The field-free H$_\beta$ line becomes a triplet spaced by $\Delta\lambda$, one component for each $m_\ell$ sublevel the upper and lower states split into.
+```
+
+Therefore, the $0.50\ \text{T}$ splitting is $2.90\times10^{-5}\ \text{eV}$, $7.00\ \text{GHz}$, and $0.0055\ \text{nm}$, half the corresponding $1.0\ \text{T}$ scale.
 :::
 
 :::{exercise}

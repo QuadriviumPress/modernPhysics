@@ -311,6 +311,13 @@ Wien's law gives $\lambda_{\max}=(2.898\times10^{-3}\ \text{m K})/(2900\ \text{K
 
 $$\frac PA=\sigma T^4=(5.670\times10^{-8}\ \text{W m}^{-2}\text{K}^{-4})(2900\ \text{K})^4=4.01\times10^6\ \text{W/m}^2.$$
 
+```{figure} ../images/ch06-sol-tungsten-spectrum.svg
+:label: fig:ch06-sol-tungsten-spectrum
+:alt: Blackbody spectral radiance curve at 2900 kelvin peaking at 999 nanometers in the infrared, with the visible band from 380 to 750 nanometers shaded and shown to cover only the rising edge of the curve.
+
+The filament's blackbody curve peaks in the infrared at $999\ \text{nm}$; the shaded visible band captures only the small, rising left shoulder of the distribution.
+```
+
 Therefore, the filament peaks near $1.00\ \mu\text{m}$ in the infrared and radiates $4.01\times10^6\ \text{W/m}^2$ ideally; most of its power is invisible infrared rather than useful visible light.
 :::
 
@@ -362,7 +369,16 @@ The frequencies are $f_1=c/(450\ \text{nm})=6.67\times10^{14}\ \text{Hz}$ and $f
 
 $$h=\frac{e(1.28-0.65)\ \text{V}}{f_2-f_1}=3.78\times10^{-15}\ \text{eV s}=6.05\times10^{-34}\ \text{J s}.$$
 
-Then $\phi=hf_1-eV_1=(3.78\times10^{-15})(6.67\times10^{14})-0.65=1.87\ \text{eV}$.  Therefore, the data give $h=6.05\times10^{-34}\ \text{J s}$ and a work function of $1.87\ \text{eV}$.
+Then $\phi=hf_1-eV_1=(3.78\times10^{-15})(6.67\times10^{14})-0.65=1.87\ \text{eV}$.
+
+```{figure} ../images/ch06-sol-photoelectric-fit.svg
+:label: fig:ch06-sol-photoelectric-fit
+:alt: Stopping potential versus frequency with two measured points and the straight line through them, showing the line's slope equals h over e and its frequency-axis intercept equals the threshold frequency.
+
+The two measurements determine the line $V_0=(h/e)f-\phi/e$ completely: its slope gives $h$ without assuming a textbook value, and its intercept with $V_0=0$ gives the threshold frequency $f_0=\phi/h$.
+```
+
+Therefore, the data give $h=6.05\times10^{-34}\ \text{J s}$ and a work function of $1.87\ \text{eV}$.
 :::
 
 :::{exercise}
@@ -428,7 +444,16 @@ $$\lambda'=0.0711\ \text{nm}+0.002426\ \text{nm}=0.073526\ \text{nm},$$
 
 $$E'=\frac{1240\ \text{eV nm}}{0.073526\ \text{nm}}=16.86\ \text{keV}.$$
 
-The incident energy is $1240/0.0711=17.44\ \text{keV}$, so the electron receives $17.44-16.86=0.58\ \text{keV}$.  Therefore, the shift is $2.426\ \text{pm}$, the scattered photon has wavelength $0.07353\ \text{nm}$ and energy $16.86\ \text{keV}$, and the electron receives about $0.58\ \text{keV}$.
+The incident energy is $1240/0.0711=17.44\ \text{keV}$, so the electron receives $17.44-16.86=0.58\ \text{keV}$.
+
+```{figure} ../images/ch06-sol-compton-angle.svg
+:label: fig:ch06-sol-compton-angle
+:alt: Wavelength shift versus scattering angle from zero to 180 degrees, with the 90 degree and 180 degree cases marked, alongside a bar chart comparing the fractional shift at 90 degrees for visible light and for X-rays on a log scale.
+
+Left: $\Delta\lambda=(h/m_ec)(1-\cos\theta)$ depends only on angle, not wavelength; this problem's $90^\circ$ shift and [Problem 10](#ex-particle-properties-of-waves-10)'s $180^\circ$ shift are both points on the same curve. Right: the same $2.426\ \text{pm}$ shift is four parts per million of a visible wavelength but several percent of an X-ray wavelength ([Problem 12](#ex-particle-properties-of-waves-12)) — why Compton scattering was discovered with X-rays, not light.
+```
+
+Therefore, the shift is $2.426\ \text{pm}$, the scattered photon has wavelength $0.07353\ \text{nm}$ and energy $16.86\ \text{keV}$, and the electron receives about $0.58\ \text{keV}$.
 :::
 
 :::{exercise}
@@ -445,7 +470,7 @@ Putting $\theta=180^\circ$ into $\Delta\lambda=(h/m_ec)(1-\cos\theta)$ gives
 
 $$\Delta\lambda=\frac{h}{m_ec}[1-(-1)]=\frac{2h}{m_ec}=4.852\times10^{-12}\ \text{m}=4.852\ \text{pm}.$$
 
-For $\lambda\ll h/(m_ec)$, $\lambda'=\lambda+2h/(m_ec)\approx2h/(m_ec)$, so $E'/E=\lambda/\lambda'\ll1$ and $(E-E')/E\approx1$.  Therefore, backscattering shifts the wavelength by $4.852\ \text{pm}$ and transfers nearly $100\%$ of a sufficiently energetic photon's energy to the electron.
+For $\lambda\ll h/(m_ec)$, $\lambda'=\lambda+2h/(m_ec)\approx2h/(m_ec)$, so $E'/E=\lambda/\lambda'\ll1$ and $(E-E')/E\approx1$.  This is the $\theta=180^\circ$ endpoint of the same curve shown in {numref}`Figure %s <fig:ch06-sol-compton-angle>`.  Therefore, backscattering shifts the wavelength by $4.852\ \text{pm}$ and transfers nearly $100\%$ of a sufficiently energetic photon's energy to the electron.
 :::
 
 :::{exercise}
@@ -481,7 +506,7 @@ At $90^\circ$, $\Delta\lambda=2.426\ \text{pm}$.  Therefore,
 
 $$\frac{\Delta\lambda}{\lambda}=\frac{2.426\times10^{-12}\ \text{m}}{600\times10^{-9}\ \text{m}}=4.04\times10^{-6}.$$
 
-Therefore, visible light shifts by only four parts per million, far below ordinary spectral resolution, whereas the same fixed Compton shift is a measurable fraction of an X-ray wavelength.
+The right-hand panel of {numref}`Figure %s <fig:ch06-sol-compton-angle>` compares this fraction directly with the X-ray case of Problem 9.  Therefore, visible light shifts by only four parts per million, far below ordinary spectral resolution, whereas the same fixed Compton shift is a measurable fraction of an X-ray wavelength.
 :::
 
 :::{exercise}
@@ -517,7 +542,16 @@ The rest-energy cost is $2m_ec^2=1.022\ \text{MeV}$, leaving
 
 $$K_{\rm available}=2.50\ \text{MeV}-1.022\ \text{MeV}=1.478\ \text{MeV}.$$
 
-Equal sharing gives $K_e=K_{e^+}=0.739\ \text{MeV}$ and total energy $0.739+0.511=1.250\ \text{MeV}$ for each.  Therefore, each particle has $0.739\ \text{MeV}$ kinetic energy and $1.250\ \text{MeV}$ total energy.
+Equal sharing gives $K_e=K_{e^+}=0.739\ \text{MeV}$ and total energy $0.739+0.511=1.250\ \text{MeV}$ for each.
+
+```{figure} ../images/ch06-sol-pair-production-budget.svg
+:label: fig:ch06-sol-pair-production-budget
+:alt: Horizontal stacked bar showing the incident 2.50 megaelectronvolt photon energy divided into four segments: the electron rest energy, the positron rest energy, and each particle's 0.739 megaelectronvolt kinetic energy.
+
+The photon's $2.50\ \text{MeV}$ splits into a fixed $1.022\ \text{MeV}$ entry fee (the two rest masses) and a remaining $1.478\ \text{MeV}$ divided equally as kinetic energy.
+```
+
+Therefore, each particle has $0.739\ \text{MeV}$ kinetic energy and $1.250\ \text{MeV}$ total energy.
 :::
 
 :::{exercise}
@@ -570,7 +604,16 @@ $$E'=\frac{0.662\ \text{MeV}}{1+2(0.662/0.511)}=0.184\ \text{MeV},$$
 
 $$\Delta E_{\max}=0.662\ \text{MeV}-0.184\ \text{MeV}=0.478\ \text{MeV}.$$
 
-Full photoelectric absorption deposits $0.662\ \text{MeV}$.  Therefore, the Compton edge is $0.478\ \text{MeV}$ and the photopeak is $0.662\ \text{MeV}$; both appear because photons can either scatter incompletely or be fully absorbed.
+Full photoelectric absorption deposits $0.662\ \text{MeV}$.
+
+```{figure} ../images/ch06-sol-compton-spectrum.svg
+:label: fig:ch06-sol-compton-spectrum
+:alt: Idealized gamma-ray energy-deposition spectrum showing a continuum of energies rising toward a Compton edge at 0.478 megaelectronvolts, and a separate sharp photopeak at 0.662 megaelectronvolts.
+
+A real detector shows both features side by side: a continuum of partial-absorption events ending at the $180^\circ$ Compton edge, and a separate sharp photopeak from full photoelectric absorption. (Continuum shape is schematic, not the exact Klein–Nishina cross section.)
+```
+
+Therefore, the Compton edge is $0.478\ \text{MeV}$ and the photopeak is $0.662\ \text{MeV}$; both appear because photons can either scatter incompletely or be fully absorbed.
 :::
 
 :::{exercise}

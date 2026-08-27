@@ -249,6 +249,13 @@ For nonrelativistic particles, $\lambda=h/\sqrt{2mK}$.  For $54\ \text{eV}$ elec
 
 $$\lambda=\frac{6.626\times10^{-34}\ \text{J s}}{(0.145\ \text{kg})(40\ \text{m/s})}=1.14\times10^{-34}\ \text{m}.$$
 
+```{figure} ../images/ch07-sol-debroglie-scale.svg
+:label: fig:ch07-sol-debroglie-scale
+:alt: Log-scale comparison of de Broglie wavelengths for a baseball, a 1 megaelectronvolt proton, and a 54 electronvolt electron, alongside reference lines for a typical nuclear diameter and a typical atomic diameter.
+
+Seventy orders of magnitude separate the baseball's wavelength from the electron's. Only the electron's wavelength is comparable to a natural length scale (here, atomic spacing) and can therefore diffract observably.
+```
+
 Therefore, electron waves can diffract from atomic crystal planes, proton waves need nuclear-scale structure, and the baseball wavelength is far too small to observe diffraction.
 :::
 
@@ -330,7 +337,16 @@ Using the de Broglie standing-wave argument, show that an electron in a circular
 :label: sol-wave-properties-of-particles-6
 :class: dropdown
 
-The standing-wave condition is $2\pi r=n\lambda$.  For $n=1$, $2\pi r=\lambda$: exactly one de Broglie wavelength fits around the orbit.  A shorter circumference would not close in phase, and the one-wavelength state has the smallest allowed momentum and kinetic energy.  Therefore, the Bohr ground orbit corresponds to the lowest closed standing matter wave.
+The standing-wave condition is $2\pi r=n\lambda$.  For $n=1$, $2\pi r=\lambda$: exactly one de Broglie wavelength fits around the orbit, as shown in {numref}`Figure %s <fig:ch07-sol-bohr-standing-wave>`.  A shorter circumference would not close in phase, and the one-wavelength state has the smallest allowed momentum and kinetic energy.
+
+```{figure} ../images/ch07-sol-bohr-standing-wave.svg
+:label: fig:ch07-sol-bohr-standing-wave
+:alt: A circular orbit traced by a wave whose amplitude completes exactly one full cycle around the circumference, shown both wrapped around the circle and unrolled into a single sine wave.
+
+Left: the $n=1$ matter wave, wrapped around the orbit, closes on itself after exactly one wavelength. Right: the same wave unrolled into a line, showing $\lambda=2\pi r$ directly.
+```
+
+Therefore, the Bohr ground orbit corresponds to the lowest closed standing matter wave.
 :::
 
 :::{exercise}
@@ -364,7 +380,16 @@ The energy--time uncertainty estimate is
 
 $$\Delta E\sim\frac{\hbar}{2\Delta t}=\frac{1.055\times10^{-34}\ \text{J s}}{2(1.0\times10^{-8}\ \text{s})}=5.28\times10^{-27}\ \text{J}=3.29\times10^{-8}\ \text{eV}.$$
 
-Since $E=hc/\lambda$, $|\Delta\lambda|\simeq\lambda^2\Delta E/(hc)$, giving $\Delta\lambda=(500\ \text{nm})^2(3.29\times10^{-8}\ \text{eV})/(1240\ \text{eV nm})=6.6\times10^{-6}\ \text{nm}$.  Therefore, the lifetime implies a minimum width of about $3.3\times10^{-8}\ \text{eV}$ or $6.6\times10^{-6}\ \text{nm}$.
+Since $E=hc/\lambda$, $|\Delta\lambda|\simeq\lambda^2\Delta E/(hc)$, giving $\Delta\lambda=(500\ \text{nm})^2(3.29\times10^{-8}\ \text{eV})/(1240\ \text{eV nm})=6.6\times10^{-6}\ \text{nm}$.
+
+```{figure} ../images/ch07-sol-linewidth.svg
+:label: fig:ch07-sol-linewidth
+:alt: A Lorentzian-shaped emission line with its full width at half maximum marked and labeled as the energy uncertainty set by the state's finite lifetime.
+
+A finite-lifetime state cannot have a perfectly sharp energy: the emitted line has a Lorentzian shape whose width is set by $\Delta E\sim\hbar/(2\Delta t)$.
+```
+
+Therefore, the lifetime implies a minimum width of about $3.3\times10^{-8}\ \text{eV}$ or $6.6\times10^{-6}\ \text{nm}$.
 :::
 
 :::{exercise}
@@ -471,7 +496,7 @@ Explain why the phase velocity $v_p = \omega/k$ of a nonrelativistic free-partic
 :label: sol-wave-properties-of-particles-15
 :class: dropdown
 
-For a nonrelativistic free particle, phase velocity is $v_p=\omega/k=(\hbar k/2m)=u/2$, while the wave packet and all information move at $v_g=d\omega/dk=u$.  Individual phase crests are not localized objects and cannot carry a signal.  Therefore, the phase velocity is not an observable propagation speed, so its difference from the group velocity is not paradoxical.
+For a nonrelativistic free particle, phase velocity is $v_p=\omega/k=(\hbar k/2m)=u/2$, while the wave packet and all information move at $v_g=d\omega/dk=u$.  Individual phase crests are not localized objects and cannot carry a signal.  {numref}`Figure %s <fig:ch07-sol-phase-group-velocity>` shows the same story in the relativistic setting of Problem 19, where the gap between the two velocities is even more dramatic.  Therefore, the phase velocity is not an observable propagation speed, so its difference from the group velocity is not paradoxical.
 :::
 
 :::{exercise}
@@ -488,7 +513,16 @@ For the electron,
 
 $$\tau\sim\frac{m(\Delta x_0)^2}{\hbar}=\frac{(9.109\times10^{-31}\ \text{kg})(10^{-10}\ \text{m})^2}{1.055\times10^{-34}\ \text{J s}}=8.6\times10^{-17}\ \text{s}.$$
 
-For the dust grain, $\tau=(10^{-6}\ \text{kg})(10^{-6}\ \text{m})^2/\hbar=9.5\times10^{15}\ \text{s}\approx3\times10^8\ \text{yr}$.  Therefore, electron spreading is extremely rapid, whereas dust-grain spreading is unobservable during a seconds-long laboratory measurement.
+For the dust grain, $\tau=(10^{-6}\ \text{kg})(10^{-6}\ \text{m})^2/\hbar=9.5\times10^{15}\ \text{s}\approx3\times10^8\ \text{yr}$.
+
+```{figure} ../images/ch07-sol-spreading-time.svg
+:label: fig:ch07-sol-spreading-time
+:alt: Log-scale comparison of wavepacket spreading times for an electron and a dust grain, with reference lines at one second for a typical lab measurement and at the age of the universe.
+
+The electron's wavepacket spreads in a fraction of a femtosecond, while the dust grain's spreading time dwarfs even the age of the universe; only the electron's spreading could ever appear in a real measurement.
+```
+
+Therefore, electron spreading is extremely rapid, whereas dust-grain spreading is unobservable during a seconds-long laboratory measurement.
 :::
 
 :::{exercise}
@@ -531,7 +565,16 @@ From $E=\gamma mc^2$ and $p=\gamma mu$,
 
 $$\frac{pc^2}{u}=\frac{(\gamma mu)c^2}{u}=\gamma mc^2=E.$$
 
-Combining $E=hf$ with $\lambda=u_p/f$ gives $E=hu_p/\lambda=pu_p$, so $u_p=E/p=c^2/u$.  This can exceed $c$ because phase velocity carries neither a particle nor usable information; the group velocity remains $u<c$.  Therefore, superluminal phase velocity does not violate relativity.
+Combining $E=hf$ with $\lambda=u_p/f$ gives $E=hu_p/\lambda=pu_p$, so $u_p=E/p=c^2/u$.
+
+```{figure} ../images/ch07-sol-phase-group-velocity.svg
+:label: fig:ch07-sol-phase-group-velocity
+:alt: Group velocity equal to the particle speed and phase velocity equal to c squared over the particle speed, plotted against particle speed over c, with the phase velocity exceeding c everywhere except at u equals c.
+
+$v_g=u$ never exceeds $c$, while $v_p=c^2/u$ exceeds $c$ everywhere except at $u=c$ itself — yet their product is fixed at $c^2$, and only $v_g$ carries the particle or any information.
+```
+
+This can exceed $c$ because phase velocity carries neither a particle nor usable information; the group velocity remains $u<c$.  Therefore, superluminal phase velocity does not violate relativity.
 :::
 
 :::{exercise}

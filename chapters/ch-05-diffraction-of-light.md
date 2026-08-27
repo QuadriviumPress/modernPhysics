@@ -613,7 +613,7 @@ The ratio is
 
 $$\frac da=\frac{0.100\ \text{mm}}{0.020\ \text{mm}}=5.$$
 
-An interference maximum is missing when $m\lambda/d=p\lambda/a$, or $m=p(d/a)=5p$.  Up to $m=12$, the missing orders are $m=5$ and $m=10$.  The central envelope contains $|m|<d/a=5$, namely $m=-4,\ldots,4$, for nine nonmissing bright fringes.  Therefore, $d/a=5$, orders $5$ and $10$ are absent, and nine bright fringes lie inside the central diffraction maximum.
+An interference maximum is missing when $m\lambda/d=p\lambda/a$, or $m=p(d/a)=5p$.  Up to $m=12$, the missing orders are $m=5$ and $m=10$.  The central envelope contains $|m|<d/a=5$, namely $m=-4,\ldots,4$, for nine nonmissing bright fringes — exactly the pattern plotted in {numref}`Figure %s <fig:ch05-double-slit>`, whose missing orders $m=\pm5,\pm10$ are this problem's $d/a=5$.  Therefore, $d/a=5$, orders $5$ and $10$ are absent, and nine bright fringes lie inside the central diffraction maximum.
 :::
 
 :::{exercise}
@@ -668,7 +668,7 @@ Resolving power is $R=mN=\lambda/\Delta\lambda$.  In second order,
 
 $$\Delta\lambda=\frac{600\ \text{nm}}{(2)(4000)}=0.0750\ \text{nm}.$$
 
-In first order it is $600/4000=0.150\ \text{nm}$, twice as large, so the resolution is two times poorer.  If only $1000$ lines are illuminated in second order, $R=2000$ and $\Delta\lambda=0.300\ \text{nm}$; only illuminated lines contribute coherently.  Therefore, second order resolves $0.0750\ \text{nm}$ versus $0.150\ \text{nm}$ in first order, and narrowing the beam reduces the resolving power in direct proportion to the illuminated line count.
+In first order it is $600/4000=0.150\ \text{nm}$, twice as large, so the resolution is two times poorer.  If only $1000$ lines are illuminated in second order, $R=2000$ and $\Delta\lambda=0.300\ \text{nm}$; only illuminated lines contribute coherently, exactly as {numref}`Figure %s <fig:ch05-resolving-power>` shows for the sodium doublet: raising $N$ narrows each order's peak until two close wavelengths separate.  Therefore, second order resolves $0.0750\ \text{nm}$ versus $0.150\ \text{nm}$ in first order, and narrowing the beam reduces the resolving power in direct proportion to the illuminated line count.
 :::
 
 :::{exercise}
@@ -683,7 +683,16 @@ A grating with $600$ lines per millimeter is illuminated with white light ($400$
 
 The spacing is $d=(600\ \text{mm}^{-1})^{-1}=1.667\ \mu\text{m}$.  In first order the endpoint angles are $\sin^{-1}(400/1667)=13.9^\circ$ and $\sin^{-1}(700/1667)=24.8^\circ$, so the width is $10.9^\circ$.  In second order they are $\sin^{-1}(0.480)=28.7^\circ$ and $\sin^{-1}(0.840)=57.1^\circ$, so the width is $28.4^\circ$.
 
-Overlap begins where $2\lambda_2=3\lambda_3$.  The first common direction occurs for $\lambda_2=600\ \text{nm}$ and $\lambda_3=400\ \text{nm}$, at $\sin\theta=0.720$ or $\theta=46.1^\circ$.  Therefore, the first- and second-order widths are $10.9^\circ$ and $28.4^\circ$, and second and third orders overlap from $46.1^\circ$ onward.
+Overlap begins where $2\lambda_2=3\lambda_3$.  The first common direction occurs for $\lambda_2=600\ \text{nm}$ and $\lambda_3=400\ \text{nm}$, at $\sin\theta=0.720$ or $\theta=46.1^\circ$.
+
+```{figure} ../images/ch05-sol-order-overlap.svg
+:label: fig:ch05-sol-order-overlap
+:alt: Diffraction angle versus wavelength for the first, second, and third grating orders, with the angular band where the second and third orders overlap shaded.
+
+The three orders' angular ranges as $\lambda$ sweeps across the visible spectrum. The shaded band is where 2nd- and 3rd-order light arrive at the same angle; it begins where the 2nd order's $600\ \text{nm}$ meets the 3rd order's $400\ \text{nm}$, both at $46.1^\circ$.
+```
+
+Therefore, the first- and second-order widths are $10.9^\circ$ and $28.4^\circ$, and second and third orders overlap from $46.1^\circ$ onward.
 :::
 
 :::{exercise}
@@ -700,7 +709,7 @@ The Rayleigh limit is
 
 $$\theta_{\min}=\frac{1.22\lambda}{D}=\frac{1.22(550\times10^{-9}\ \text{m})}{4.0\times10^{-3}\ \text{m}}=1.68\times10^{-4}\ \text{rad}=34.6\ \text{arcsec}.$$
 
-At $L=0.250\ \text{m}$, $s\simeq L\theta=(0.250)(1.68\times10^{-4})=4.19\times10^{-5}\ \text{m}=42\ \mu\text{m}$.  Therefore, the ideal eye resolves about $34.6\ \text{arcsec}$, corresponding to $42\ \mu\text{m}$ at reading distance.
+At $L=0.250\ \text{m}$, $s\simeq L\theta=(0.250)(1.68\times10^{-4})=4.19\times10^{-5}\ \text{m}=42\ \mu\text{m}$.  This is the "just resolved" case of {numref}`Figure %s <fig:ch05-rayleigh>`, where the two Airy patterns are separated by exactly $\theta_{\min}$.  Therefore, the ideal eye resolves about $34.6\ \text{arcsec}$, corresponding to $42\ \mu\text{m}$ at reading distance.
 :::
 
 :::{exercise}
@@ -764,7 +773,16 @@ Bragg's law is $2d\sin\theta=m\lambda$.  For first order,
 
 $$d=\frac{0.0709\ \text{nm}}{2\sin15.0^\circ}=0.137\ \text{nm}.$$
 
-For second order, $\sin\theta_2=2\lambda/(2d)=0.518$, so $\theta_2=31.2^\circ$.  Finally $m\le2d/\lambda=3.86$, so $m_{\max}=3$.  Therefore, the plane spacing is $0.137\ \text{nm}$, the second-order reflection is at $31.2^\circ$, and orders through $m=3$ exist.
+For second order, $\sin\theta_2=2\lambda/(2d)=0.518$, so $\theta_2=31.2^\circ$.  Finally $m\le2d/\lambda=3.86$, so $m_{\max}=3$.
+
+```{figure} ../images/ch05-sol-bragg-order-limit.svg
+:label: fig:ch05-sol-bragg-order-limit
+:alt: Bar chart of sin(theta_m) for orders m = 1 through 5, with m = 1, 2, 3 below the sin(theta) = 1 limit and m = 4, 5 shown as impossible above it.
+
+$\sin\theta_m=m\lambda/2d$ grows in equal steps with $m$; it crosses the physical ceiling $\sin\theta=1$ between $m=3$ and $m=4$, so no reflection of any order beyond $m=3$ exists for these planes.
+```
+
+Therefore, the plane spacing is $0.137\ \text{nm}$, the second-order reflection is at $31.2^\circ$, and orders through $m=3$ exist.
 :::
 
 :::{exercise}
@@ -841,7 +859,16 @@ The synthesized aperture has
 
 $$\theta_{\min}=\frac{1.22(1.3\times10^{-3}\ \text{m})}{1.0\times10^7\ \text{m}}=1.59\times10^{-10}\ \text{rad}=32.7\ \mu\text{arcsec}.$$
 
-Since $32.7\ \mu\text{arcsec}<40\ \mu\text{arcsec}$, the shadow is just resolvable.  Therefore, Earth-scale interferometry provides just enough resolution, whereas a single dish would need an impossible diameter comparable to Earth to supply the same aperture.
+Since $32.7\ \mu\text{arcsec}<40\ \mu\text{arcsec}$, the shadow is just resolvable.
+
+```{figure} ../images/ch05-sol-eht-resolution.svg
+:label: fig:ch05-sol-eht-resolution
+:alt: Log-log plot of angular resolution versus aperture diameter at 1.3 millimeter wavelength, marking a 100 meter single dish, the 40 microarcsecond M87 shadow, and the Earth-scale synthesized aperture that reaches it.
+
+Angular resolution improves only as $1/D$, so reaching $40\ \mu\text{arcsec}$ at $\lambda=1.3\ \text{mm}$ requires an aperture the size of the Earth; even the largest single dish ($D\sim100\ \text{m}$) falls short by a factor of $10^5$.
+```
+
+Therefore, Earth-scale interferometry provides just enough resolution, whereas a single dish would need an impossible diameter comparable to Earth to supply the same aperture.
 :::
 
 :::{exercise}
@@ -854,5 +881,14 @@ A compact disc has data tracks spaced $1.6\ \mu\text{m}$ apart and acts as a ref
 :label: sol-diffraction-of-light-20
 :class: dropdown
 
-For a CD, $d=1.6\ \mu\text{m}$ and $\sin\theta_1=650/1600=0.406$, so $\theta_1=24.0^\circ$.  The maximum order is $\lfloor1600/650\rfloor=2$.  For a DVD, $d=0.74\ \mu\text{m}$, so $\sin\theta_1=650/740=0.878$ and $\theta_1=61.4^\circ$.  Therefore, a DVD sends the first order to a much larger angle than a CD, producing a wider color spread because its track spacing is smaller.
+For a CD, $d=1.6\ \mu\text{m}$ and $\sin\theta_1=650/1600=0.406$, so $\theta_1=24.0^\circ$.  The maximum order is $\lfloor1600/650\rfloor=2$.  For a DVD, $d=0.74\ \mu\text{m}$, so $\sin\theta_1=650/740=0.878$ and $\theta_1=61.4^\circ$.
+
+```{figure} ../images/ch05-sol-cd-dvd-orders.svg
+:label: fig:ch05-sol-cd-dvd-orders
+:alt: Bar chart comparing diffraction angles for orders 1 through 3 on a CD and a DVD, with the DVD's first order already larger than the CD's second order, and higher orders impossible for the DVD.
+
+At the same wavelength, the DVD's smaller track spacing pushes every order to a larger angle; its first order alone exceeds the CD's, and no second order exists for the DVD at all, since $2\lambda/d>1$ there.
+```
+
+Therefore, a DVD sends the first order to a much larger angle than a CD, producing a wider color spread because its track spacing is smaller.
 :::

@@ -323,7 +323,16 @@ Determine the hybridization of the central atom and predict the molecular geomet
 :label: sol-molecular-structure-1
 :class: dropdown
 
-VSEPR counts electron domains.  Ammonia has four domains, so nitrogen is $sp^3$ hybridized; one lone pair makes its molecular geometry trigonal pyramidal.  Carbon dioxide has two domains, so carbon is $sp$ hybridized and the molecule is linear.  Sulfur hexafluoride has six domains, so sulfur is $sp^3d^2$ hybridized with octahedral geometry.  Therefore, the predicted geometries are trigonal pyramidal for $\text{NH}_3$, linear for $\text{CO}_2$, and octahedral for $\text{SF}_6$.
+VSEPR counts electron domains.  Ammonia has four domains, so nitrogen is $sp^3$ hybridized; one lone pair makes its molecular geometry trigonal pyramidal.  Carbon dioxide has two domains, so carbon is $sp$ hybridized and the molecule is linear.  Sulfur hexafluoride has six domains, so sulfur is $sp^3d^2$ hybridized with octahedral geometry.
+
+```{figure} ../images/ch12-sol-vsepr-shapes.svg
+:label: fig:ch12-sol-vsepr-shapes
+:alt: Three ball-and-stick sketches: ammonia as a trigonal pyramid with a lone pair, carbon dioxide as a straight line, and sulfur hexafluoride as an octahedron with six bonds around the central atom.
+
+Electron-domain count alone fixes the shape: four domains (one a lone pair) bends $\text{NH}_3$ into a pyramid, two domains keep $\text{CO}_2$ straight, and six domains spread $\text{SF}_6$'s bonds into an octahedron.
+```
+
+Therefore, the predicted geometries are trigonal pyramidal for $\text{NH}_3$, linear for $\text{CO}_2$, and octahedral for $\text{SF}_6$.
 :::
 
 :::{exercise}
@@ -344,7 +353,7 @@ There are $8$ bonding and $2$ antibonding electrons, so
 
 $$\text{bond order}=\frac{8-2}{2}=3.$$
 
-Therefore, MO theory predicts bond order $3$ for $\text{N}_2$, agreeing with the triple bond in the Lewis structure.
+This is exactly the filled diagram drawn in {numref}`Figure %s <fig:ch12-mo-n2-o2>`.  Therefore, MO theory predicts bond order $3$ for $\text{N}_2$, agreeing with the triple bond in the Lewis structure.
 :::
 
 :::{exercise}
@@ -360,6 +369,13 @@ Using the same style of reasoning applied to $\text{H}_2$ and $\text{He}_2$ in t
 For $\text{He}_2^+$, two electrons occupy bonding $\sigma_{1s}$ and one occupies antibonding $\sigma_{1s}^*$.  Thus
 
 $$\text{bond order}=\frac{N_b-N_a}{2}=\frac{2-1}{2}=\frac12.$$
+
+```{figure} ../images/ch12-sol-he2-plus-mo.svg
+:label: fig:ch12-sol-he2-plus-mo
+:alt: Molecular orbital diagram for helium-2-plus, with two electrons filling the bonding sigma-1s orbital and one electron in the antibonding sigma-1s-star orbital.
+
+Two bonding electrons and one antibonding electron leave a net half a bond — weaker than $\text{H}_2$'s full bond, but not zero like neutral $\text{He}_2$.
+```
 
 Therefore, $\text{He}_2^+$ is predicted to have a weak, marginally stable half-order bond.
 :::
@@ -416,7 +432,7 @@ Explain, using the concept of bond order, why $\text{O}_2^-$ (superoxide, one mo
 :label: sol-molecular-structure-6
 :class: dropdown
 
-The highest occupied orbitals of $\text{O}_2$ are antibonding $\pi_{2p}^*$ orbitals.  Adding an electron to make $\text{O}_2^-$ raises the antibonding count and lowers bond order by $\tfrac12$; removing one to make $\text{O}_2^+$ lowers the antibonding count and raises bond order by $\tfrac12$.  Therefore, superoxide has a weaker, longer bond, whereas dioxygenyl has a stronger, shorter bond.
+The highest occupied orbitals of $\text{O}_2$ are antibonding $\pi_{2p}^*$ orbitals.  Adding an electron to make $\text{O}_2^-$ raises the antibonding count and lowers bond order by $\tfrac12$; removing one to make $\text{O}_2^+$ lowers the antibonding count and raises bond order by $\tfrac12$ — the same $\pi_{2p}^*$ level marked in {numref}`Figure %s <fig:ch12-mo-n2-o2>`'s $\text{O}_2$ diagram is where both changes happen.  Therefore, superoxide has a weaker, longer bond, whereas dioxygenyl has a stronger, shorter bond.
 :::
 
 :::{exercise}
@@ -429,7 +445,16 @@ Determine the hybridization of the central atom and predict the molecular geomet
 :label: sol-molecular-structure-7
 :class: dropdown
 
-$\text{SF}_4$ has five electron domains, so sulfur uses $sp^3d$ hybridization and has trigonal-bipyramidal electron-domain geometry.  A lone pair preferentially occupies an equatorial site, where it has only two $90^\circ$ interactions rather than three.  The four atoms then form a seesaw geometry.  Therefore, one equatorial lone pair gives $\text{SF}_4$ a seesaw shape, whereas two lone pairs in $\text{XeF}_4$ occupy both axial-equivalent arrangements that leave a square planar molecular shape.
+$\text{SF}_4$ has five electron domains, so sulfur uses $sp^3d$ hybridization and has trigonal-bipyramidal electron-domain geometry.  A lone pair preferentially occupies an equatorial site, where it has only two $90^\circ$ interactions rather than three.  The four atoms then form a seesaw geometry.
+
+```{figure} ../images/ch12-sol-sf4-xef4.svg
+:label: fig:ch12-sol-sf4-xef4
+:alt: Side-by-side sketches of SF4 as a seesaw shape with one equatorial lone pair, and XeF4 as a square planar shape with two lone pairs perpendicular to the plane of the four fluorine atoms.
+
+One equatorial lone pair pushes $\text{SF}_4$'s four bonds into a lopsided seesaw; a second lone pair, forced to the opposite axial position, symmetrizes the remaining four bonds into a flat square.
+```
+
+Therefore, one equatorial lone pair gives $\text{SF}_4$ a seesaw shape, whereas two lone pairs in $\text{XeF}_4$ occupy both axial-equivalent arrangements that leave a square planar molecular shape.
 :::
 
 :::{exercise}
@@ -447,6 +472,13 @@ The fourteen valence electrons fill
 $$\sigma_{2s}^2\sigma_{2s}^{*2}\sigma_{2p}^2(\pi_{2p})^4(\pi_{2p}^*)^4.$$
 
 Thus $N_b=8$ and $N_a=6$, giving bond order $(8-6)/2=1$.  Ionization removes an electron from the highest, antibonding $\pi_{2p}^*$ level, so $\text{F}_2^+$ has bond order $1.5$.  One unpaired electron remains in $\pi_{2p}^*$.
+
+```{figure} ../images/ch12-sol-f2-mo-diagram.svg
+:label: fig:ch12-sol-f2-mo-diagram
+:alt: Side-by-side molecular orbital diagrams for F2 and F2-plus, with F2 having all orbitals through pi-2p-star fully paired and F2-plus missing one electron from the antibonding pi-2p-star level, leaving it unpaired.
+
+Removing one electron from an antibonding level does double duty: it raises the bond order from $1$ to $1.5$ and leaves one $\pi_{2p}^*$ electron unpaired, making $\text{F}_2^+$ paramagnetic where neutral $\text{F}_2$ is not.
+```
 
 Therefore, neutral $\text{F}_2$ has a single bond, while $\text{F}_2^+$ is paramagnetic and has a stronger, shorter bond.
 :::
@@ -467,7 +499,7 @@ $$I=\mu r_0^2=2.65\times10^{-47}\ \text{kg m}^2,$$
 
 $$B=\frac{\hbar^2}{2I}=2.10\times10^{-22}\ \text{J}=1.31\times10^{-3}\ \text{eV}.$$
 
-The wavenumber $B/(hc)=10.6\ \text{cm}^{-1}$, so adjacent rovibrational lines are $2B/(hc)=21.2\ \text{cm}^{-1}$ apart.  The missing $Q$ branch leaves a central gap of $2(2B/hc)=42.4\ \text{cm}^{-1}$ between the nearest $P$ and $R$ lines.  Therefore, HCl has the stated moment of inertia, $B=1.31\times10^{-3}\ \text{eV}$, $21.2\ \text{cm}^{-1}$ line spacing, and a $42.4\ \text{cm}^{-1}$ central gap.
+The wavenumber $B/(hc)=10.6\ \text{cm}^{-1}$, so adjacent rovibrational lines are $2B/(hc)=21.2\ \text{cm}^{-1}$ apart.  The missing $Q$ branch leaves a central gap of $2(2B/hc)=42.4\ \text{cm}^{-1}$ between the nearest $P$ and $R$ lines — the same structure {numref}`Figure %s <fig:ch12-rovibrational>` draws in general, with HCl's own numbers filled in.  Therefore, HCl has the stated moment of inertia, $B=1.31\times10^{-3}\ \text{eV}$, $21.2\ \text{cm}^{-1}$ line spacing, and a $42.4\ \text{cm}^{-1}$ central gap.
 :::
 
 :::{exercise}

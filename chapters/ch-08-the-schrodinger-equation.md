@@ -285,7 +285,16 @@ For an electron in a well, $E_n=0.376\,n^2/L^2\ \text{eV}$ when $L$ is in nanome
 
 $$E_1=\frac{0.376\ \text{eV}\cdot\text{nm}^2}{(0.20\ \text{nm})^2}=9.40\ \text{eV}.$$
 
-Because $E_2=4E_1$, the emitted energy is $E_2-E_1=3E_1=28.2\ \text{eV}$.  Therefore, the ground-state energy is $9.40\ \text{eV}$ and the $n=2\to1$ photon has energy $28.2\ \text{eV}$.
+Because $E_2=4E_1$, the emitted energy is $E_2-E_1=3E_1=28.2\ \text{eV}$.
+
+```{figure} ../images/ch08-sol-infinite-well-levels.svg
+:label: fig:ch08-sol-infinite-well-levels
+:alt: Energy level ladder for an infinite square well showing levels n equals 1 through 4 growing as n squared, with an arrow marking the 28.2 electronvolt photon emitted from n equals 2 down to n equals 1.
+
+The $n^2$ spacing of infinite-well levels: the gap between $n=1$ and $n=2$ is $3E_1$, not $E_1$, because $E_2=4E_1$.
+```
+
+Therefore, the ground-state energy is $9.40\ \text{eV}$ and the $n=2\to1$ photon has energy $28.2\ \text{eV}$.
 :::
 
 :::{exercise}
@@ -342,7 +351,16 @@ $$\frac{k_2}{k_1}=\sqrt{\frac{E-V_0}{E}}=\sqrt{\frac{1.00}{3.00}}=0.577,$$
 
 $$R=\left(\frac{1-0.577}{1+0.577}\right)^2=0.0718,\qquad T=1-R=0.928.$$
 
-For $V_0=0.500\ \text{eV}$, $k_2/k_1=\sqrt{2.50/3.00}=0.913$, so $R=0.00207$ and $T=0.998$.  Therefore, the reflection falls from $7.18\%$ to $0.207\%$ as the step is lowered.
+For $V_0=0.500\ \text{eV}$, $k_2/k_1=\sqrt{2.50/3.00}=0.913$, so $R=0.00207$ and $T=0.998$.
+
+```{figure} ../images/ch08-sol-step-reflection.svg
+:label: fig:ch08-sol-step-reflection
+:alt: Reflection coefficient versus the ratio of step height to incident energy, rising smoothly from zero, with the two computed cases at 2.00 electronvolts and 0.500 electronvolts marked.
+
+$R$ depends only on the ratio $V_0/E$ and falls smoothly to zero as $V_0\to0$; both computed cases sit on this one curve.
+```
+
+Therefore, the reflection falls from $7.18\%$ to $0.207\%$ as the step is lowered.
 :::
 
 :::{exercise}
@@ -380,7 +398,16 @@ Here $V_0-E=5.0\ \text{MeV}$.  Using $\hbar c=197.3\ \text{MeV fm}$ and $m_pc^2=
 
 $$\kappa_p=\frac{\sqrt{2(938\ \text{MeV})(5.0\ \text{MeV})}}{197.3\ \text{MeV fm}}=0.491\ \text{fm}^{-1}.$$
 
-Thus $T_p\simeq e^{-2\kappa_pL}=e^{-2(0.491)(2.0)}=0.140$.  For an alpha particle, the mass is four times larger, so $\kappa_\alpha=2\kappa_p=0.982\ \text{fm}^{-1}$ and $T_\alpha=e^{-3.93}=0.0197$.  Therefore, the proton transmission is about $14\%$, while the alpha transmission is about $2.0\%$ because the heavier particle has a larger tunneling exponent.
+Thus $T_p\simeq e^{-2\kappa_pL}=e^{-2(0.491)(2.0)}=0.140$.  For an alpha particle, the mass is four times larger, so $\kappa_\alpha=2\kappa_p=0.982\ \text{fm}^{-1}$ and $T_\alpha=e^{-3.93}=0.0197$.
+
+```{figure} ../images/ch08-sol-tunneling-barrier.svg
+:label: fig:ch08-sol-tunneling-barrier
+:alt: Wavefunction amplitude envelope decaying exponentially inside a rectangular barrier, with the alpha particle's curve falling off faster than the proton's and settling at a lower plateau beyond the barrier.
+
+The heavier alpha particle has twice the proton's decay constant $\kappa$, so its amplitude falls off twice as fast inside the barrier — the reason its transmission probability ($T=|{\rm amplitude\ ratio}|^2$) ends up smaller.
+```
+
+Therefore, the proton transmission is about $14\%$, while the alpha transmission is about $2.0\%$ because the heavier particle has a larger tunneling exponent.
 :::
 
 :::{exercise}
@@ -435,7 +462,16 @@ The spacing is
 
 $$hf=(6.626\times10^{-34}\ \text{J s})(8.7\times10^{13}\ \text{s}^{-1})=5.77\times10^{-20}\ \text{J}=0.360\ \text{eV}.$$
 
-Thus $E_0=\tfrac12hf=0.180\ \text{eV}$.  An adjacent-level photon has $0.360\ \text{eV}$ and wavelength $\lambda=1240/0.360=3440\ \text{nm}$.  Therefore, the zero-point energy is $0.180\ \text{eV}$ and vibrational transitions emit $0.360\ \text{eV}$ mid-infrared photons.
+Thus $E_0=\tfrac12hf=0.180\ \text{eV}$.  An adjacent-level photon has $0.360\ \text{eV}$ and wavelength $\lambda=1240/0.360=3440\ \text{nm}$.
+
+```{figure} ../images/ch08-sol-oscillator-ladder-spread.svg
+:label: fig:ch08-sol-oscillator-ladder-spread
+:alt: Left panel: equally spaced harmonic oscillator energy levels with the 0.360 electronvolt spacing and 0.180 electronvolt zero-point energy marked. Right panel: a Gaussian probability distribution of width 8.7 picometers compared with the 74 picometer bond length of molecular hydrogen.
+
+Left: the equally spaced ladder $E_n=(n+\tfrac12)hf$, with this problem's zero-point energy and level spacing marked. Right: [Problem 10](#ex-the-schrodinger-equation-10)'s zero-point position spread for H$_2$, $8.7\ \text{pm}$, shown against the $74\ \text{pm}$ bond length it must fit inside.
+```
+
+Therefore, the zero-point energy is $0.180\ \text{eV}$ and vibrational transitions emit $0.360\ \text{eV}$ mid-infrared photons.
 :::
 
 :::{exercise}
@@ -452,7 +488,7 @@ For the $1.0\ \text{kg}$ oscillator, $\omega=\sqrt{k/m}=10\ \text{s}^{-1}$, so
 
 $$\Delta x=\sqrt{\frac{\hbar}{2m\omega}}=\sqrt{\frac{1.055\times10^{-34}\ \text{J s}}{2(1.0\ \text{kg})(10\ \text{s}^{-1})}}=2.30\times10^{-18}\ \text{m}.$$
 
-For $\text{H}_2$, $\omega=\sqrt{570/(8.4\times10^{-28})}=8.24\times10^{14}\ \text{s}^{-1}$ and $\Delta x=8.7\ \text{pm}$.  Therefore, the molecular zero-point spread is about $12\%$ of the $74\ \text{pm}$ bond length, whereas the macroscopic spread is negligible.
+For $\text{H}_2$, $\omega=\sqrt{570/(8.4\times10^{-28})}=8.24\times10^{14}\ \text{s}^{-1}$ and $\Delta x=8.7\ \text{pm}$, shown to scale against the bond length in {numref}`Figure %s <fig:ch08-sol-oscillator-ladder-spread>`.  Therefore, the molecular zero-point spread is about $12\%$ of the $74\ \text{pm}$ bond length, whereas the macroscopic spread is negligible.
 :::
 
 :::{exercise}
@@ -482,7 +518,16 @@ The selection rule is $\Delta n=\pm1$.  Starting at $n=2$, the only downward one
 
 $$E_2-E_1=(2+\tfrac12)\hbar\omega-(1+\tfrac12)\hbar\omega=\hbar\omega.$$
 
-The $2\to0$ transition has $\Delta n=-2$ and is forbidden for a single photon.  Therefore, the only allowed emitted photon has energy $\hbar\omega$.
+The $2\to0$ transition has $\Delta n=-2$ and is forbidden for a single photon.
+
+```{figure} ../images/ch08-sol-selection-rule.svg
+:label: fig:ch08-sol-selection-rule
+:alt: Three equally spaced harmonic oscillator levels n equals 0, 1, and 2, with a solid arrow for the allowed 2 to 1 transition and a dashed crossed-out arrow for the forbidden 2 to 0 transition.
+
+Only $\Delta n=\pm1$ transitions emit or absorb a single photon; the direct $2\to0$ path is forbidden regardless of how much energy it would release.
+```
+
+Therefore, the only allowed emitted photon has energy $\hbar\omega$.
 :::
 
 :::{exercise}
@@ -495,7 +540,16 @@ Explain qualitatively, using the correspondence principle, why the probability d
 :label: sol-the-schrodinger-equation-13
 :class: dropdown
 
-A classical oscillator moves slowest near its turning points and fastest through $x=0$, so it spends most of its time near the turning points.  The correspondence principle requires the averaged probability density of a large-$n$ quantum state to reproduce that classical time distribution.  Therefore, highly excited oscillator states have their largest probability density near turning points and their smallest near the origin.
+A classical oscillator moves slowest near its turning points and fastest through $x=0$, so it spends most of its time near the turning points.  The correspondence principle requires the averaged probability density of a large-$n$ quantum state to reproduce that classical time distribution.
+
+```{figure} ../images/ch08-sol-correspondence-principle.svg
+:label: fig:ch08-sol-correspondence-principle
+:alt: Side by side plots of oscillator probability density for the ground state, peaked at the center, and for a highly excited state, oscillating around a classical envelope that is peaked at the two turning points.
+
+$n=0$ is peaked at the center, the opposite of the classical expectation. By $n=20$, the fine quantum oscillations average out to the classical time-averaged density (dashed), which piles up at the turning points where the classical oscillator moves slowest.
+```
+
+Therefore, highly excited oscillator states have their largest probability density near turning points and their smallest near the origin.
 :::
 
 :::{exercise}
@@ -551,7 +605,16 @@ Using the even-solution matching condition $k\tan(kL/2)=\kappa$ for the symmetri
 :label: sol-the-schrodinger-equation-17
 :class: dropdown
 
-At fixed width, increasing $V_0$ increases $\kappa=\sqrt{2m(V_0-E)}/\hbar$.  In $k\tan(kL/2)=\kappa$, a larger right-hand side allows intersections on additional tangent branches, each corresponding to another bound-state energy.  Therefore, a deeper finite well supports more bound states.
+At fixed width, increasing $V_0$ increases $\kappa=\sqrt{2m(V_0-E)}/\hbar$.  In $k\tan(kL/2)=\kappa$, a larger right-hand side allows intersections on additional tangent branches, each corresponding to another bound-state energy.
+
+```{figure} ../images/ch08-sol-finite-well-bound-states.svg
+:label: fig:ch08-sol-finite-well-bound-states
+:alt: Graphical solution of the even-parity finite square well matching condition, showing tangent branches of z tan z intersected by two quarter-circle curves of different radius, with the larger radius crossing more branches.
+
+The matching condition plotted graphically: each branch of $z\tan z$ that the quarter-circle $\sqrt{z_0^2-z^2}$ reaches gives one even bound state. Since $z_0\propto\sqrt{V_0}$, a deeper well (larger circle) reaches farther out and crosses more branches — here, one branch for the shallow well and two for the deep well, among the even-parity solutions alone.
+```
+
+Therefore, a deeper finite well supports more bound states.
 :::
 
 :::{exercise}

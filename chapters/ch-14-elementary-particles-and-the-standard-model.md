@@ -286,7 +286,7 @@ Classify each of the following as a fermion or boson, based on its spin: photon 
 :label: sol-elementary-particles-and-the-standard-model-1
 :class: dropdown
 
-_Solution not yet written._
+Particles with integer spin are bosons, while particles with half-integer spin are fermions.  Thus the photon ($s=1$) and pion ($s=0$) are bosons, whereas the electron ($s=\tfrac12$) and proton ($s=\tfrac12$) are fermions.  Therefore, photons and pions obey Bose statistics, while electrons and protons obey Fermi--Dirac statistics.
 :::
 
 :::{exercise}
@@ -299,7 +299,11 @@ Determine the electric charge of a baryon composed of $uds$ (this particle is th
 :label: sol-elementary-particles-and-the-standard-model-2
 :class: dropdown
 
-_Solution not yet written._
+Adding the constituent-quark charges gives
+
+$$Q_{uds}=\left(+\frac23e\right)+\left(-\frac13e\right)+\left(-\frac13e\right)=0.$$
+
+Therefore, the $uds$ baryon has charge $0$, in agreement with the neutral charge of the $\Lambda^0$.
 :::
 
 :::{exercise}
@@ -312,7 +316,7 @@ Determine whether each proposed reaction conserves charge, baryon number, and le
 :label: sol-elementary-particles-and-the-standard-model-3
 :class: dropdown
 
-_Solution not yet written._
+For (a), the initial proton has $(Q,B,L)=(+1,+1,0)$, while $e^++\gamma$ has $(+1,0,-1)$; baryon number and lepton number fail, so it is forbidden.  For (b), both sides have $(Q,B,L)=(0,1,0)$, because $e^-$ has $L=+1$ and $\bar\nu_e$ has $L=-1$; it is allowed.  For (c), charge is conserved, but the initial state has $L_\mu=+1$ and the final state has $L_\mu=0$, so it is forbidden.  For (d), both sides have $Q=+2$, $B=2$, and $L=0$, so it is allowed if sufficient kinetic energy is supplied.  Therefore, (b) and (d) conserve all listed quantum numbers, whereas (a) violates $B$ and $L$ and (c) violates muon lepton number.
 :::
 
 :::{exercise}
@@ -325,7 +329,11 @@ Using the known quark content of the proton ($uud$) and neutron ($udd$), and the
 :label: sol-elementary-particles-and-the-standard-model-4
 :class: dropdown
 
-_Solution not yet written._
+For a proton, $Q_{uud}=\tfrac23e+\tfrac23e-\tfrac13e=+e$.  For a neutron,
+
+$$Q_{udd}=\left(+\frac23-\frac13-\frac13\right)e=0.$$
+
+Therefore, quark charges give the observed proton charge $+e$ and neutron charge $0$.
 :::
 
 :::{exercise}
@@ -338,7 +346,7 @@ The muon decays via $\mu^- \to e^- + \bar\nu_e + \nu_\mu$. Explain, using lepton
 :label: sol-elementary-particles-and-the-standard-model-5
 :class: dropdown
 
-_Solution not yet written._
+Initially, $\mu^-$ has $L_e=0$ and $L_\mu=+1$.  In $\mu^-\to e^-+\gamma$, the final electron has $L_e=+1$ and $L_\mu=0$, while the photon has both numbers zero.  The proposed final state therefore changes both generation numbers.  In the observed decay, $\bar\nu_e$ supplies $L_e=-1$ and $\nu_\mu$ supplies $L_\mu=+1$, so each total is restored.  Therefore, the neutrinos are required by separate electron- and muon-lepton-number conservation.
 :::
 
 :::{exercise}
@@ -351,7 +359,7 @@ Explain, in your own words, why quark confinement means that the constituent qua
 :label: sol-elementary-particles-and-the-standard-model-6
 :class: dropdown
 
-_Solution not yet written._
+Separating colored quarks stores increasing energy in the strong-force field between them.  Before an isolated quark can emerge, the stored energy is sufficient to create a quark--antiquark pair, which forms new color-neutral hadrons instead.  By contrast, the electromagnetic force between charges decreases approximately as $1/r^2$, so separating charges requires progressively less additional force.  Therefore, quark confinement produces only color-neutral particles, whereas electric charges can be isolated.
 :::
 
 :::{exercise}
@@ -364,7 +372,11 @@ The $K^-$ meson has quark content $K^- = \bar u s$. (a) Using the quark charges 
 :label: sol-elementary-particles-and-the-standard-model-7
 :class: dropdown
 
-_Solution not yet written._
+An anti-up quark has charge $-\tfrac23e$, and an $s$ quark has charge $-\tfrac13e$, so
+
+$$Q_{\bar us}=-\frac23e-\frac13e=-e.$$
+
+The $s$ quark has strangeness $S=-1$, so $K^-$ has $S=-1$.  The antiparticle $K^+$ has the opposite values, $Q=+e$ and $S=+1$.  Therefore, $K^-$ is the antiparticle of $K^+$ because antiparticles have opposite additive quantum numbers, including charge and strangeness.
 :::
 
 :::{exercise}
@@ -377,7 +389,7 @@ Determine whether the reaction $K^- + p \to \Lambda^0 + \pi^0$ conserves charge,
 :label: sol-elementary-particles-and-the-standard-model-8
 :class: dropdown
 
-_Solution not yet written._
+Initially $K^-+p$ has $Q=-1+1=0$, $B=0+1=1$, and $S=-1+0=-1$.  Finally $\Lambda^0+\pi^0$ has $Q=0+0=0$, $B=1+0=1$, and $S=-1+0=-1$.  Therefore, charge, baryon number, and strangeness are all conserved, so the reaction can proceed through the strong interaction.
 :::
 
 :::{exercise}
@@ -390,7 +402,7 @@ The muon decays via $\mu^- \to e^- + \bar\nu_e + \nu_\mu$ ([Chapter 2](#ch-speci
 :label: sol-elementary-particles-and-the-standard-model-9
 :class: dropdown
 
-_Solution not yet written._
+Draw an incoming $\mu^-$ line ending at a vertex that emits an outgoing $\nu_\mu$ line and a virtual $W^-$ line; the $W^-$ ends at a second vertex in outgoing $e^-$ and $\bar\nu_e$ lines.  At the first vertex, $Q:-1=0+(-1)$ and $L_\mu:+1=+1+0$.  At the second, $Q:-1=-1+0$ and $L_e:0=+1+(-1)$.  All unmentioned generation numbers are zero on both sides.  Therefore, each vertex separately conserves charge and the electron and muon lepton numbers.
 :::
 
 :::{exercise}
@@ -403,7 +415,17 @@ A second muon beam is produced with total energy $E = 1.20\ \text{GeV}$ (using $
 :label: sol-elementary-particles-and-the-standard-model-10
 :class: dropdown
 
-_Solution not yet written._
+Convert the total energy to $1200\ \text{MeV}$.  Then
+
+$$\gamma=\frac{E}{m_\mu c^2}=\frac{1200\ \text{MeV}}{105.7\ \text{MeV}}=11.35,$$
+
+$$\beta=\sqrt{1-\gamma^{-2}}=\sqrt{1-\frac1{(11.35)^2}}=0.9961.$$
+
+The mean lab lifetime is $\gamma\tau_0=(11.35)(2.20\ \mu\text{s})=25.0\ \mu\text{s}$, so
+
+$$\ell=\beta c\gamma\tau_0=(0.9961)(3.00\times10^8\ \text{m/s})(25.0\times10^{-6}\ \text{s})=7.47\times10^3\ \text{m}.$$
+
+Therefore, this beam has $\gamma=11.35$, $\beta=0.9961$, and a mean decay length of $7.47\ \text{km}$, longer than $2.4\ \text{km}$ because its Lorentz factor is larger.
 :::
 
 :::{exercise}
@@ -416,5 +438,9 @@ Repeat the gravitational-versus-electromagnetic force-ratio calculation of the w
 :label: sol-elementary-particles-and-the-standard-model-11
 :class: dropdown
 
-_Solution not yet written._
+For two identical particles, the force ratio is $F_G/F_E=Gm^2/(ke^2)$.  For electrons,
+
+$$\frac{F_G}{F_E}=\frac{(6.674\times10^{-11}\ \text{N m}^2\! /\text{kg}^2)(9.109\times10^{-31}\ \text{kg})^2}{(8.988\times10^9\ \text{N m}^2\! /\text{C}^2)(1.602\times10^{-19}\ \text{C})^2}=2.4\times10^{-43}.$$
+
+Therefore, gravity between two electrons is only about $2.4\times10^{-43}$ of their electrical repulsion; the ratio is far smaller than for protons because it scales as $m^2$ while the charge magnitude is unchanged.
 :::

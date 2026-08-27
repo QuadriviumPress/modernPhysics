@@ -323,7 +323,7 @@ Determine the hybridization of the central atom and predict the molecular geomet
 :label: sol-molecular-structure-1
 :class: dropdown
 
-_Solution not yet written._
+VSEPR counts electron domains.  Ammonia has four domains, so nitrogen is $sp^3$ hybridized; one lone pair makes its molecular geometry trigonal pyramidal.  Carbon dioxide has two domains, so carbon is $sp$ hybridized and the molecule is linear.  Sulfur hexafluoride has six domains, so sulfur is $sp^3d^2$ hybridized with octahedral geometry.  Therefore, the predicted geometries are trigonal pyramidal for $\text{NH}_3$, linear for $\text{CO}_2$, and octahedral for $\text{SF}_6$.
 :::
 
 :::{exercise}
@@ -336,7 +336,15 @@ Construct the molecular orbital diagram for the nitrogen molecule $\text{N}_2$ (
 :label: sol-molecular-structure-2
 :class: dropdown
 
-_Solution not yet written._
+The ten valence electrons fill
+
+$$\sigma_{2s}^2\,\sigma_{2s}^{*2}\,(\pi_{2p})^4\,\sigma_{2p}^2.$$
+
+There are $8$ bonding and $2$ antibonding electrons, so
+
+$$\text{bond order}=\frac{8-2}{2}=3.$$
+
+Therefore, MO theory predicts bond order $3$ for $\text{N}_2$, agreeing with the triple bond in the Lewis structure.
 :::
 
 :::{exercise}
@@ -349,7 +357,11 @@ Using the same style of reasoning applied to $\text{H}_2$ and $\text{He}_2$ in t
 :label: sol-molecular-structure-3
 :class: dropdown
 
-_Solution not yet written._
+For $\text{He}_2^+$, two electrons occupy bonding $\sigma_{1s}$ and one occupies antibonding $\sigma_{1s}^*$.  Thus
+
+$$\text{bond order}=\frac{N_b-N_a}{2}=\frac{2-1}{2}=\frac12.$$
+
+Therefore, $\text{He}_2^+$ is predicted to have a weak, marginally stable half-order bond.
 :::
 
 :::{exercise}
@@ -362,7 +374,15 @@ The HCl molecule has an effective vibrational frequency $f = \omega/2\pi = 8.66\
 :label: sol-molecular-structure-4
 :class: dropdown
 
-_Solution not yet written._
+The reduced mass is
+
+$$\mu=\frac{m_{\rm H}m_{\rm Cl}}{m_{\rm H}+m_{\rm Cl}}=\frac{(1.008)(35.45)}{1.008+35.45}\ \text{u}=0.980\ \text{u}=1.63\times10^{-27}\ \text{kg}.$$
+
+With $\omega=2\pi f=2\pi(8.66\times10^{13}\ \text{s}^{-1})$,
+
+$$E_0=\frac12\hbar\omega=\frac12(1.055\times10^{-34}\ \text{J s})(5.44\times10^{14}\ \text{s}^{-1})=2.87\times10^{-20}\ \text{J}=0.179\ \text{eV}.$$
+
+Therefore, HCl has reduced mass $1.63\times10^{-27}\ \text{kg}$ and zero-point vibrational energy $0.179\ \text{eV}$.
 :::
 
 :::{exercise}
@@ -375,7 +395,15 @@ The CO molecule has bond length $r_0 = 0.113\ \text{nm}$ and reduced mass $\mu =
 :label: sol-molecular-structure-5
 :class: dropdown
 
-_Solution not yet written._
+First convert $\mu=6.86\ \text{u}=1.139\times10^{-26}\ \text{kg}$ and $r_0=0.113\ \text{nm}=1.13\times10^{-10}\ \text{m}$.  Then
+
+$$I=\mu r_0^2=(1.139\times10^{-26})(1.13\times10^{-10})^2=1.45\times10^{-46}\ \text{kg m}^2.$$
+
+For $J=0\to1$, $\Delta E=\hbar^2/I$:
+
+$$\Delta E=\frac{(1.055\times10^{-34}\ \text{J s})^2}{1.45\times10^{-46}\ \text{kg m}^2}=7.68\times10^{-23}\ \text{J}=4.79\times10^{-4}\ \text{eV}.$$
+
+Therefore, CO has $I=1.45\times10^{-46}\ \text{kg m}^2$ and its first rotational transition has energy $4.79\times10^{-4}\ \text{eV}$, or $4.79$ in units of $10^{-4}\ \text{eV}$.
 :::
 
 :::{exercise}
@@ -388,7 +416,7 @@ Explain, using the concept of bond order, why $\text{O}_2^-$ (superoxide, one mo
 :label: sol-molecular-structure-6
 :class: dropdown
 
-_Solution not yet written._
+The highest occupied orbitals of $\text{O}_2$ are antibonding $\pi_{2p}^*$ orbitals.  Adding an electron to make $\text{O}_2^-$ raises the antibonding count and lowers bond order by $\tfrac12$; removing one to make $\text{O}_2^+$ lowers the antibonding count and raises bond order by $\tfrac12$.  Therefore, superoxide has a weaker, longer bond, whereas dioxygenyl has a stronger, shorter bond.
 :::
 
 :::{exercise}
@@ -401,7 +429,7 @@ Determine the hybridization of the central atom and predict the molecular geomet
 :label: sol-molecular-structure-7
 :class: dropdown
 
-_Solution not yet written._
+$\text{SF}_4$ has five electron domains, so sulfur uses $sp^3d$ hybridization and has trigonal-bipyramidal electron-domain geometry.  A lone pair preferentially occupies an equatorial site, where it has only two $90^\circ$ interactions rather than three.  The four atoms then form a seesaw geometry.  Therefore, one equatorial lone pair gives $\text{SF}_4$ a seesaw shape, whereas two lone pairs in $\text{XeF}_4$ occupy both axial-equivalent arrangements that leave a square planar molecular shape.
 :::
 
 :::{exercise}
@@ -414,7 +442,13 @@ Using the same reasoning applied to $\text{N}_2$/$\text{N}_2^+$ in the text and 
 :label: sol-molecular-structure-8
 :class: dropdown
 
-_Solution not yet written._
+The fourteen valence electrons fill
+
+$$\sigma_{2s}^2\sigma_{2s}^{*2}\sigma_{2p}^2(\pi_{2p})^4(\pi_{2p}^*)^4.$$
+
+Thus $N_b=8$ and $N_a=6$, giving bond order $(8-6)/2=1$.  Ionization removes an electron from the highest, antibonding $\pi_{2p}^*$ level, so $\text{F}_2^+$ has bond order $1.5$.  One unpaired electron remains in $\pi_{2p}^*$.
+
+Therefore, neutral $\text{F}_2$ has a single bond, while $\text{F}_2^+$ is paramagnetic and has a stronger, shorter bond.
 :::
 
 :::{exercise}
@@ -427,7 +461,13 @@ Using the reduced mass $\mu$ found in [Problem 4](#ex-molecular-structure-4)(a) 
 :label: sol-molecular-structure-9
 :class: dropdown
 
-_Solution not yet written._
+Using $\mu=1.63\times10^{-27}\ \text{kg}$ from Problem 4 and $r_0=127.5\ \text{pm}=1.275\times10^{-10}\ \text{m}$,
+
+$$I=\mu r_0^2=2.65\times10^{-47}\ \text{kg m}^2,$$
+
+$$B=\frac{\hbar^2}{2I}=2.10\times10^{-22}\ \text{J}=1.31\times10^{-3}\ \text{eV}.$$
+
+The wavenumber $B/(hc)=10.6\ \text{cm}^{-1}$, so adjacent rovibrational lines are $2B/(hc)=21.2\ \text{cm}^{-1}$ apart.  The missing $Q$ branch leaves a central gap of $2(2B/hc)=42.4\ \text{cm}^{-1}$ between the nearest $P$ and $R$ lines.  Therefore, HCl has the stated moment of inertia, $B=1.31\times10^{-3}\ \text{eV}$, $21.2\ \text{cm}^{-1}$ line spacing, and a $42.4\ \text{cm}^{-1}$ central gap.
 :::
 
 :::{exercise}
@@ -440,5 +480,5 @@ The boiling points of the halogens rise steadily down the group: $\text{F}_2$, $
 :label: sol-molecular-structure-10
 :class: dropdown
 
-_Solution not yet written._
+All four halogens are nonpolar, so their rising boiling points are not caused by permanent dipoles.  Down the group, the electron cloud contains more electrons and is larger and more easily distorted; its polarizability increases.  Stronger instantaneous induced dipoles then give stronger London dispersion forces and require more thermal energy to separate molecules.  Therefore, the rising boiling points are caused chiefly by increasing molecular polarizability (and associated electron-cloud size).
 :::

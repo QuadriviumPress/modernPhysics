@@ -326,7 +326,11 @@ Using the Rydberg formula, compute the wavelength of the first line of the Lyman
 :label: sol-the-hydrogen-atom-1
 :class: dropdown
 
-_Solution not yet written._
+For $2\to1$, the Rydberg formula gives
+
+$$\frac1\lambda=R\left(1-\frac14\right)=\frac34(1.097\times10^7\ \text{m}^{-1}),\qquad \lambda=121.5\ \text{nm}.$$
+
+At the series limit, $1/\lambda=R$, so $\lambda=91.2\ \text{nm}$.  Therefore, the first Lyman line is $121.5\ \text{nm}$ and the limit is $91.2\ \text{nm}$; both are ultraviolet, so the entire series is invisible to the eye.
 :::
 
 :::{exercise}
@@ -339,7 +343,7 @@ List all allowed $(\ell, m_\ell)$ combinations for $n=3$, count the total number
 :label: sol-the-hydrogen-atom-2
 :class: dropdown
 
-_Solution not yet written._
+For $n=3$, $\ell=0,1,2$.  The allowed sets are $(0,0)$; $(1,-1),(1,0),(1,1)$; and $(2,-2),(2,-1),(2,0),(2,1),(2,2)$.  Their count is $1+3+5=9=n^2$.  Including $m_s=\pm\tfrac12$ doubles this count to $18$.  Therefore, the $n=3$ level has nine spatial states and eighteen states when spin is included.
 :::
 
 :::{exercise}
@@ -352,7 +356,7 @@ Using the selection rule $\Delta\ell=\pm1$, determine which of the following sin
 :label: sol-the-hydrogen-atom-3
 :class: dropdown
 
-_Solution not yet written._
+The changes in $\ell$ are: (a) $2\to1$, so $\Delta\ell=-1$ and allowed; (b) $0\to0$, so forbidden; (c) $1\to0$, so allowed; and (d) $1\to0$, so allowed.  Therefore, only $3s\to2s$ is forbidden by the electric-dipole selection rule.
 :::
 
 :::{exercise}
@@ -365,7 +369,11 @@ An electron in a hydrogen atom is in a $3d$ state ($\ell=2$). (a) Compute the ma
 :label: sol-the-hydrogen-atom-4
 :class: dropdown
 
-_Solution not yet written._
+For $\ell=2$,
+
+$$L=\sqrt{\ell(\ell+1)}\hbar=\sqrt6\hbar.$$
+
+The largest $m_\ell$ is $+2$, and $\mu_{L,z}=-m_\ell\mu_B=-2\mu_B$, whose maximum magnitude is $2\mu_B$.  Therefore, the $3d$ electron has orbital angular momentum $\sqrt6\hbar$ and maximum $z$-component magnetic-moment magnitude $2\mu_B$.
 :::
 
 :::{exercise}
@@ -378,7 +386,7 @@ In the Stern–Gerlach experiment, explain why silver atoms (rather than, say, h
 :label: sol-the-hydrogen-atom-5
 :class: dropdown
 
-_Solution not yet written._
+Silver has one unpaired outer $5s$ electron.  An $s$ state has $\ell=0$, so it has no orbital magnetic moment that could obscure the result; the two-way splitting is therefore due cleanly to spin.  Helium's paired $1s^2$ electrons have canceling spin moments.  Therefore, silver was ideal because its single outer $s$ electron leaves an uncompensated spin moment, whereas helium has no net moment.
 :::
 
 :::{exercise}
@@ -391,7 +399,11 @@ Show that the ground-state radial probability distribution of hydrogen, $P(r) = 
 :label: sol-the-hydrogen-atom-6
 :class: dropdown
 
-_Solution not yet written._
+Ignoring the positive normalization constant, $P(r)=r^2e^{-2r/a_0}$.  Differentiation gives
+
+$$\frac{dP}{dr}=2re^{-2r/a_0}-\frac2{a_0}r^2e^{-2r/a_0}=2re^{-2r/a_0}\left(1-\frac r{a_0}\right).$$
+
+For $r>0$, the derivative vanishes at $r=a_0$, changing from positive to negative there.  Therefore, the ground-state radial probability is largest at the Bohr radius $r=a_0$.
 :::
 
 :::{exercise}
@@ -404,7 +416,11 @@ Doubly ionized lithium, $\text{Li}^{2+}$ ($Z=3$), is a one-electron hydrogenic i
 :label: sol-the-hydrogen-atom-7
 :class: dropdown
 
-_Solution not yet written._
+Hydrogenic ionization energy scales as $Z^2$ and the most-probable radius as $a_0/Z$.  Thus
+
+$$E_I=3^2(13.6\ \text{eV})=122.4\ \text{eV},\qquad r_{\max}=\frac{0.529\ \text{\AA}}3=0.176\ \text{\AA}=0.0176\ \text{nm}.$$
+
+Therefore, $\text{Li}^{2+}$ has a $122.4\ \text{eV}$ ionization energy and a $0.0176\ \text{nm}$ most-probable radius: nine times hydrogen's energy and one-third its radius.
 :::
 
 :::{exercise}
@@ -417,7 +433,11 @@ A different Stern–Gerlach apparatus uses a field gradient $\partial B_z/\parti
 :label: sol-the-hydrogen-atom-8
 :class: dropdown
 
-_Solution not yet written._
+The force magnitude is $F=\mu_B(\partial B_z/\partial z)=(9.274\times10^{-24})(15)=1.39\times10^{-22}\ \text{N}$, so $a=F/m=777\ \text{m/s}^2$.  The magnet time is $t_1=L/v=3.33\times10^{-4}\ \text{s}$ and the drift time is $t_2=D/v=6.67\times10^{-4}\ \text{s}$.  One component deflects by
+
+$$z=\tfrac12at_1^2+(at_1)t_2=2.16\times10^{-4}\ \text{m}=0.216\ \text{mm}.$$
+
+Therefore, the two opposite spin components are separated by $2z=0.432\ \text{mm}$.
 :::
 
 :::{exercise}
@@ -430,7 +450,13 @@ A hydrogen discharge tube is placed in a magnetic field of $B=0.50\ \text{T}$. (
 :label: sol-the-hydrogen-atom-9
 :class: dropdown
 
-_Solution not yet written._
+Adjacent orbital sublevels differ by $\Delta E=\mu_BB$, so
+
+$$\Delta E=(5.79\times10^{-5}\ \text{eV/T})(0.50\ \text{T})=2.90\times10^{-5}\ \text{eV},$$
+
+$$\Delta f=\frac{\Delta E}{h}=7.00\times10^9\ \text{Hz}.$$
+
+Finally $\Delta\lambda\simeq\lambda^2\Delta f/c=(486.1\times10^{-9}\ \text{m})^2(7.00\times10^9\ \text{Hz})/(3.00\times10^8\ \text{m/s})=0.00551\ \text{nm}$.  Therefore, the $0.50\ \text{T}$ splitting is $2.90\times10^{-5}\ \text{eV}$, $7.00\ \text{GHz}$, and $0.0055\ \text{nm}$, half the corresponding $1.0\ \text{T}$ scale.
 :::
 
 :::{exercise}
@@ -443,5 +469,9 @@ Estimate the order-of-magnitude fine-structure splitting of hydrogen's $n=3$ lev
 :label: sol-the-hydrogen-atom-10
 :class: dropdown
 
-_Solution not yet written._
+For $n=3$, $|E_3|=13.6/9=1.51\ \text{eV}$ and $\alpha^2=(1/137)^2=5.33\times10^{-5}$.  Thus
+
+$$\Delta E_{\rm fine}\sim\alpha^2|E_3|=(5.33\times10^{-5})(1.51\ \text{eV})=8.1\times10^{-5}\ \text{eV}.$$
+
+This is $4/9$ of the $n=2$ estimate because $|E_n|\propto1/n^2$.  Therefore, the $n=3$ fine splitting is of order $8\times10^{-5}\ \text{eV}$ and becomes harder to resolve as $n$ rises.
 :::

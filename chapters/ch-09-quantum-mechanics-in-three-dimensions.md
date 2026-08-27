@@ -204,7 +204,7 @@ For a cubic 3D infinite box of side $L$, list the three lowest-lying distinct en
 :label: sol-quantum-mechanics-in-three-dimensions-1
 :class: dropdown
 
-_Solution not yet written._
+The box energy in the stated unit is $n_x^2+n_y^2+n_z^2$.  The three lowest distinct values are $3$ from $(1,1,1)$ (degeneracy $1$), $6$ from permutations of $(1,1,2)$ (degeneracy $3$), and $9$ from permutations of $(1,2,2)$ (degeneracy $3$).  Therefore, the first three energy levels are $3$, $6$, and $9$ times $h^2/(8mL^2)$, with degeneracies $1$, $3$, and $3$.
 :::
 
 :::{exercise}
@@ -217,7 +217,11 @@ For the rectangular quantum dot of the worked example ($L_x=L_y=5.0\ \text{nm}$,
 :label: sol-quantum-mechanics-in-three-dimensions-2
 :class: dropdown
 
-_Solution not yet written._
+Using $E=0.376\ \text{eV nm}^2[n_x^2/L_x^2+n_y^2/L_y^2+n_z^2/L_z^2]$,
+
+$$E=0.376\left(\frac1{25}+\frac1{25}+\frac4{100}\right)\text{eV}=0.0451\ \text{eV}=45.1\ \text{meV}.$$
+
+Interchanging $x$ and $y$ changes nothing, but this state already has $n_x=n_y=1$; permutations involving $z$ change the energy because $L_z\ne L_x$.  Therefore, $(1,1,2)$ has energy $45.1\ \text{meV}$ and no distinct symmetry partner at that energy.
 :::
 
 :::{exercise}
@@ -230,7 +234,7 @@ An electron is in a state with $\ell = 2$. (a) List all allowed values of $m_\el
 :label: sol-quantum-mechanics-in-three-dimensions-3
 :class: dropdown
 
-_Solution not yet written._
+For $\ell=2$, $m_\ell=-2,-1,0,1,2$.  The magnitude is $L=\sqrt{2(3)}\hbar=\sqrt6\hbar$, while the largest component is $L_z=2\hbar$.  Since $2\hbar<\sqrt6\hbar$, the vector retains an unavoidable transverse component.  Therefore, the allowed $m_\ell$ values are $-2$ through $+2$, and even the largest $L_z$ is strictly less than $L$.
 :::
 
 :::{exercise}
@@ -243,7 +247,7 @@ How many distinct $(\ell, m_\ell)$ combinations are allowed for principal quantu
 :label: sol-quantum-mechanics-in-three-dimensions-4
 :class: dropdown
 
-_Solution not yet written._
+For $n=3$, $\ell=0,1,2$.  The combinations are $s:(0,0)$; $p:(1,-1),(1,0),(1,1)$; and $d:(2,-2),(2,-1),(2,0),(2,1),(2,2)$.  Their total is $1+3+5=9$.  Therefore, there are nine allowed $(\ell,m_\ell)$ states for $n=3$.
 :::
 
 :::{exercise}
@@ -256,7 +260,7 @@ Explain, using the uncertainty relation among the components of angular momentum
 :label: sol-quantum-mechanics-in-three-dimensions-5
 :class: dropdown
 
-_Solution not yet written._
+Because $[L_x,L_z]= -i\hbar L_y$ is generally nonzero, exact values of $L_x$ and $L_z$ cannot be simultaneous observables.  A state with definite $L$ and $L_z$ therefore has uncertain transverse components, so its angular-momentum vector cannot lie exactly along the $z$ axis unless $L=0$.  Therefore, component uncertainty is precisely why orbital angular momentum is represented by a cone rather than a fixed vector direction.
 :::
 
 :::{exercise}
@@ -269,7 +273,7 @@ A particle is in a central-potential bound state with $n=4$. What is the maximum
 :label: sol-quantum-mechanics-in-three-dimensions-6
 :class: dropdown
 
-_Solution not yet written._
+At $n=4$, $\ell$ can be $0,1,2,3$, so the maximum is $\ell=3$.  The total number is $\sum_{\ell=0}^{3}(2\ell+1)=1+3+5+7=16=n^2$.  Therefore, $n=4$ permits maximum orbital quantum number $3$ and contains sixteen $(\ell,m_\ell)$ states.
 :::
 
 :::{exercise}
@@ -282,7 +286,7 @@ Explain qualitatively why the *angular* part of the wave function, $Y(\theta,\ph
 :label: sol-quantum-mechanics-in-three-dimensions-7
 :class: dropdown
 
-_Solution not yet written._
+When the Schrödinger equation separates, every angular derivative occurs in the angular equation and fixes the spherical harmonics $Y_\ell^m(\theta,\phi)$.  The potential $V(r)$ appears only in the radial equation.  Therefore, all central potentials share the same angular functions, while their radial functions and energies differ.
 :::
 
 :::{exercise}
@@ -295,7 +299,7 @@ Explain, using the centrifugal barrier term $\hbar^2\ell(\ell+1)/2mr^2$, why an 
 :label: sol-quantum-mechanics-in-three-dimensions-8
 :class: dropdown
 
-_Solution not yet written._
+For $\ell=0$, the centrifugal term $\hbar^2\ell(\ell+1)/(2mr^2)$ is zero, so there is no angular-momentum barrier at $r=0$.  For $\ell=1$, it diverges positively as $1/r^2$, suppressing the wave function near the nucleus.  Therefore, $s$ electrons can penetrate to the nucleus whereas $p$ electrons cannot.
 :::
 
 :::{exercise}
@@ -308,7 +312,11 @@ For an electron in a state with $\ell=3$ ($f$-state), find (using the method of 
 :label: sol-quantum-mechanics-in-three-dimensions-9
 :class: dropdown
 
-_Solution not yet written._
+The smallest angle occurs for $m_\ell=\ell=3$:
+
+$$\cos\theta=\frac{L_z}{L}=\frac{3\hbar}{\sqrt{3(4)}\hbar}=\frac{\sqrt3}{2},\qquad\theta=30.0^\circ.$$
+
+For $\ell=2$, $\cos\theta=2/\sqrt6$ and $\theta=35.3^\circ$.  Therefore, an $f$ state reaches $30.0^\circ$, closer to the $z$ axis than a $d$ state; the cone narrows as $\ell$ increases.
 :::
 
 :::{exercise}
@@ -321,7 +329,7 @@ Verify the commutation relation $[\hat L_z,\hat L_x]=i\hbar\hat L_y$ is consiste
 :label: sol-quantum-mechanics-in-three-dimensions-10
 :class: dropdown
 
-_Solution not yet written._
+Cycling $x\to y\to z\to x$ gives $[L_y,L_z]=i\hbar L_x$ and then $[L_z,L_x]=i\hbar L_y$, consistent with the stated relation.  In contrast, $[L^2,L_i]=0$ for each component $i=x,y,z$.  Therefore, commuting of $L^2$ with one Cartesian component guarantees that $L$ and one chosen component can be simultaneously sharp.
 :::
 
 :::{exercise}
@@ -334,7 +342,7 @@ For the isotropic three-dimensional harmonic oscillator, list all the Cartesian 
 :label: sol-quantum-mechanics-in-three-dimensions-11
 :class: dropdown
 
-_Solution not yet written._
+The nonnegative triples summing to $2$ are $(2,0,0),(0,2,0),(0,0,2),(1,1,0),(1,0,1),(0,1,1)$.  There are six, and the formula gives $(2+1)(2+2)/2=6$.  Therefore, the $N=2$ oscillator shell has exactly six spatial states.
 :::
 
 :::{exercise}
@@ -347,7 +355,7 @@ Explain, in terms of symmetry, why the isotropic harmonic oscillator shows a hig
 :label: sol-quantum-mechanics-in-three-dimensions-12
 :class: dropdown
 
-_Solution not yet written._
+The cubic box has only discrete rotational/permutation symmetry, and its energy depends on the separate squares $n_x^2+n_y^2+n_z^2$.  The isotropic oscillator has continuous rotational symmetry and energy depending only on the sum $N=n_x+n_y+n_z$, so many more partitions share one energy.  Therefore, the oscillator's larger symmetry produces its larger degeneracy.
 :::
 
 :::{exercise}
@@ -360,7 +368,7 @@ The nuclear shell model uses an isotropic-oscillator-like potential to explain w
 :label: sol-quantum-mechanics-in-three-dimensions-13
 :class: dropdown
 
-_Solution not yet written._
+The spatial degeneracies are $1$, $3$, and $6$ for $N=0,1,2$.  Including spin gives shell capacities $2$, $6$, and $12$, so cumulative capacities are $2$, $8$, and $20$.  Therefore, the simple oscillator model reproduces the first three nuclear magic numbers $2$, $8$, and $20$ before spin--orbit corrections are needed.
 :::
 
 :::{exercise}
@@ -373,7 +381,7 @@ A particle in a central potential is in a state with $n=2$. (a) List the allowed
 :label: sol-quantum-mechanics-in-three-dimensions-14
 :class: dropdown
 
-_Solution not yet written._
+For $n=2$, the states are $(0,0)$ and $(1,-1),(1,0),(1,1)$.  The maximum $L_z$ is therefore obtained for $\ell=1$, $m_\ell=1$.  Then $L=\sqrt2\hbar$ and $\cos\theta=\hbar/(\sqrt2\hbar)=1/\sqrt2$, so $\theta=45^\circ$.  Therefore, the maximum-projection state has $(\ell,m_\ell)=(1,1)$, $L=\sqrt2\hbar$, and a $45^\circ$ angle to $z$.
 :::
 
 :::{exercise}
@@ -386,7 +394,7 @@ An electron in a hydrogen-like atom is in a $p$-state ($\ell=1$, $m_\ell=0$), wh
 :label: sol-quantum-mechanics-in-three-dimensions-15
 :class: dropdown
 
-_Solution not yet written._
+Because $|Y_1^0|^2\propto\cos^2\theta$, it vanishes where $\cos\theta=0$, namely at $\theta=90^\circ$.  This nodal $xy$ plane leaves two lobes on the positive and negative $z$ axes, hence the name $p_z$.  Therefore, $p_z$ is directional with an equatorial node, unlike an $s$ state whose angular probability is uniform in every direction.
 :::
 
 :::{exercise}
@@ -399,7 +407,7 @@ An atom in a state with $\ell=1$ is placed in an external magnetic field along t
 :label: sol-quantum-mechanics-in-three-dimensions-16
 :class: dropdown
 
-_Solution not yet written._
+For $\ell=1$, $m_\ell=-1,0,+1$, so a shift proportional to $m_\ell$ produces three distinct levels.  For $\ell=0$, only $m_\ell=0$ exists and the orbital shift is zero.  Therefore, a $p$ level splits into three orbital Zeeman components while an $s$ level does not split orbitally.
 :::
 
 :::{exercise}
@@ -412,7 +420,11 @@ Verify, by explicit substitution of $n_x=n_y=n_z=0$ (so $N=0$), that the ground 
 :label: sol-quantum-mechanics-in-three-dimensions-17
 :class: dropdown
 
-_Solution not yet written._
+Substitution gives
+
+$$E=(n_x+n_y+n_z+\tfrac32)\hbar\omega=(0+0+0+\tfrac32)\hbar\omega=\tfrac32\hbar\omega.$$
+
+Each independent one-dimensional coordinate contributes $\tfrac12\hbar\omega$.  Therefore, the three-dimensional ground state has $3(\tfrac12\hbar\omega)=\tfrac32\hbar\omega$.
 :::
 
 :::{exercise}
@@ -425,7 +437,7 @@ Explain, referring to the "accidental" degeneracy discussed in the text, what wo
 :label: sol-quantum-mechanics-in-three-dimensions-18
 :class: dropdown
 
-_Solution not yet written._
+For a general central potential, the radial equation can yield energies that depend separately on radial and angular quantum numbers; then states of equal principal $n$ but different $\ell$ are no longer degenerate.  Coulomb's $1/r$ potential is special in giving energy depending only on $n$.  The isotropic oscillator instead depends on $N=2n_r+\ell$, so it has degeneracy among different $(n_r,\ell)$ combinations but not the Coulomb all-$\ell$ degeneracy at fixed $n$.  Therefore, its degeneracy is special but not the same Coulomb accidental degeneracy.
 :::
 
 :::{exercise}
@@ -438,5 +450,5 @@ A beam of silver atoms (used in the Stern–Gerlach experiment discussed further
 :label: sol-quantum-mechanics-in-three-dimensions-19
 :class: dropdown
 
-_Solution not yet written._
+For an $s$ electron, $\ell=0$ and hence $L=\sqrt{\ell(\ell+1)}\hbar=0$.  The orbital magnetic moment is then $\vec\mu_L=-(e/2m)\vec L=0$, so there is no orbital force $\mu_z\,\partial B_z/\partial z$ to split the beam.  Therefore, silver's Stern--Gerlach splitting requires electron spin, not orbital angular momentum.
 :::

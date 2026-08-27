@@ -251,7 +251,7 @@ Write the ground-state electron configuration (using $n\ell^{\,x}$ notation, e.g
 :label: sol-many-electron-atoms-1
 :class: dropdown
 
-_Solution not yet written._
+Filling orbitals in the stated energy order gives carbon: $1s^2\,2s^2\,2p^2$; sodium: $1s^2\,2s^2\,2p^6\,3s^1$; and iron: $1s^2\,2s^2\,2p^6\,3s^2\,3p^6\,4s^2\,3d^6$.  Therefore, these are the respective ground-state electron configurations for $Z=6$, $11$, and $26$.
 :::
 
 :::{exercise}
@@ -264,7 +264,7 @@ Using Hund's rule, sketch the orbital-filling diagram (boxes for each $m_\ell$ o
 :label: sol-many-electron-atoms-2
 :class: dropdown
 
-_Solution not yet written._
+Nitrogen has $2p^3$.  Hund's rule puts one parallel-spin electron into each of the three $p$ orbitals before any pairing: $[\uparrow]\,[\uparrow]\,[\uparrow]$.  The three spins each have $m_s=+\tfrac12$, so $S=3(\tfrac12)\hbar=\tfrac32\hbar$.  Therefore, nitrogen's $2p$ subshell has three unpaired parallel electrons and total spin $S=\tfrac32\hbar$.
 :::
 
 :::{exercise}
@@ -277,7 +277,7 @@ Explain why, in a multi-electron atom, a $4s$ electron can have lower energy tha
 :label: sol-many-electron-atoms-3
 :class: dropdown
 
-_Solution not yet written._
+A $4s$ electron penetrates toward the nucleus more effectively than a $3d$ electron, so it spends more time inside the shielding cloud of inner electrons.  It consequently feels a larger effective nuclear charge and can have a lower energy despite its larger principal quantum number.  Therefore, orbital energy in a many-electron atom depends on penetration and screening, not on $n$ alone.
 :::
 
 :::{exercise}
@@ -290,7 +290,11 @@ The measured $K_\alpha$ X-ray frequency of copper ($Z=29$) is $f = 1.94\times10^
 :label: sol-many-electron-atoms-4
 :class: dropdown
 
-_Solution not yet written._
+Moseley's relation with $b=1$ gives $f\propto(Z-1)^2$.  Hence
+
+$$f_{\rm Ni}=f_{\rm Cu}\left(\frac{28-1}{29-1}\right)^2=(1.94\times10^{18}\ \text{Hz})\left(\frac{27}{28}\right)^2=1.80\times10^{18}\ \text{Hz}.$$
+
+Therefore, nickel's predicted $K_\alpha$ frequency is $1.80\times10^{18}\ \text{Hz}$, lower than copper's because nickel has one fewer proton.
 :::
 
 :::{exercise}
@@ -303,7 +307,7 @@ Explain, in terms of the exclusion principle, why the ground-state electron conf
 :label: sol-many-electron-atoms-5
 :class: dropdown
 
-_Solution not yet written._
+Helium's $1s$ orbital is full: the exclusion principle prevents a third electron from entering the same lowest-energy state, so removing or rearranging an electron requires a large energy.  Lithium has the closed $1s^2$ core plus one weakly bound $2s$ electron, which can be removed or shared at much lower energy.  Therefore, helium is chemically inert while lithium is reactive because lithium has an accessible unpaired outer electron.
 :::
 
 :::{exercise}
@@ -316,7 +320,7 @@ Explain why a three-level or four-level laser scheme requires a metastable inter
 :label: sol-many-electron-atoms-6
 :class: dropdown
 
-_Solution not yet written._
+Pumping directly to a short-lived allowed-transition level does not build an inversion because that level decays rapidly.  A metastable state has a transition to the lower state that is forbidden or strongly suppressed, so its lifetime is long enough for pumped atoms to accumulate above the lasing transition.  Therefore, metastability is what permits a sustained population inversion in three- and four-level lasers.
 :::
 
 :::{exercise}
@@ -329,7 +333,11 @@ Using Slater's rules (the grouping $(1s)(2s,2p)(3s,3p)\ldots$ and the shielding 
 :label: sol-many-electron-atoms-7
 :class: dropdown
 
-_Solution not yet written._
+For one magnesium $3s$ electron, the other $3s$ electron shields $0.35$; the eight $n=2$ electrons shield $8(0.85)=6.80$; and the two $1s$ electrons shield $2(1.00)=2.00$.  Thus
+
+$$S=0.35+6.80+2.00=9.15,\qquad Z_{\rm eff}=Z-S=12-9.15=2.85.$$
+
+Therefore, magnesium's $3s$ electron feels $Z_{\rm eff}=2.85$, appropriately between sodium's $2.20$ and chlorine's $6.10$.
 :::
 
 :::{exercise}
@@ -342,7 +350,7 @@ Sulfur's first ionization energy ($10.36\ \text{eV}$) is slightly *lower* than p
 :label: sol-many-electron-atoms-8
 :class: dropdown
 
-_Solution not yet written._
+Phosphorus has $3p^3$, with three parallel electrons in separate orbitals, gaining the stabilization associated with a half-filled subshell.  Sulfur is $3p^4$, so one $p$ orbital contains a pair; the added electron introduces pairing repulsion and reduces that special exchange stabilization.  Therefore, sulfur's first ionization energy is slightly lower than phosphorus's despite sulfur's larger nuclear charge.
 :::
 
 :::{exercise}
@@ -355,7 +363,13 @@ Copper's $K_\alpha$ frequency is $f_{\text{Cu}} = 1.94\times10^{18}\ \text{Hz}$ 
 :label: sol-many-electron-atoms-9
 :class: dropdown
 
-_Solution not yet written._
+For molybdenum, $f_{\rm Mo}=E/h=(17.478\times10^3\ \text{eV})/(4.1357\times10^{-15}\ \text{eV s})=4.226\times10^{18}\ \text{Hz}$.  Subtracting $\sqrt{f}=a(Z-b)$ for Cu and Mo gives
+
+$$a=\frac{\sqrt{4.226\times10^{18}}-\sqrt{1.94\times10^{18}}}{42-29}=5.10\times10^7\ \text{Hz}^{1/2},$$
+
+$$b=29-\frac{\sqrt{1.94\times10^{18}}}{a}=1.68.$$
+
+For silver, $\sqrt f=a(47-b)=2.31\times10^9\ \text{Hz}^{1/2}$, so $f=5.34\times10^{18}\ \text{Hz}$ and $E=hf=22.1\ \text{keV}$.  Therefore, $b\approx1.68$ is of order unity and the fitted law predicts a $22.1\ \text{keV}$ silver $K_\alpha$ photon.
 :::
 
 :::{exercise}
@@ -368,7 +382,11 @@ A helium–neon laser emits a continuous beam at $\lambda = 632.8\ \text{nm}$ wi
 :label: sol-many-electron-atoms-10
 :class: dropdown
 
-_Solution not yet written._
+The photon energy is
+
+$$E=\frac{1240\ \text{eV nm}}{632.8\ \text{nm}}=1.96\ \text{eV}=3.14\times10^{-19}\ \text{J}.$$
+
+The photon rate is $P/E=(5.00\times10^{-3}\ \text{J/s})/(3.14\times10^{-19}\ \text{J})=1.59\times10^{16}\ \text{s}^{-1}$.  Therefore, the laser emits $1.96\ \text{eV}$ photons at $1.59\times10^{16}$ photons/s; its spatial coherence can focus this modest power into a very small retinal spot, making it hazardous.
 :::
 
 :::{exercise}
@@ -381,7 +399,7 @@ In your own words, explain why the Hartree self-consistent field method is "circ
 :label: sol-many-electron-atoms-11
 :class: dropdown
 
-_Solution not yet written._
+The electron density determines the screening part of $V_{\rm eff}$, but that density is obtained only after solving for the electron wave functions in $V_{\rm eff}$ itself.  Hartree's method begins with a trial density, solves the one-electron equations, constructs a new density and potential, and repeats.  Therefore, the method is called self-consistent when an iteration returns the same density and effective potential with no material further change.
 :::
 
 :::{exercise}
@@ -394,5 +412,5 @@ Argon ($Z=18$, configuration $[\text{Ne}]\,3s^23p^6$) has a *smaller* atomic rad
 :label: sol-many-electron-atoms-12
 :class: dropdown
 
-_Solution not yet written._
+Across period 3, added protons raise $Z_{\rm eff}$ while electrons stay in the $n=3$ shell, so radii generally decrease.  Potassium starts a new $n=4$ shell: its $4s$ electron is farther out and strongly shielded by the filled argon core.  Therefore, potassium's new principal shell outweighs its extra proton, giving it a larger radius than argon.
 :::

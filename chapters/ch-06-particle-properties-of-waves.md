@@ -290,7 +290,11 @@ The peak of the Sun's blackbody emission spectrum occurs near $\lambda_{\max} \a
 :label: sol-particle-properties-of-waves-1
 :class: dropdown
 
-_Solution not yet written._
+Wien's law gives
+
+$$T=\frac{2.898\times10^{-3}\ \text{m K}}{500\times10^{-9}\ \text{m}}=5.80\times10^3\ \text{K}.$$
+
+The difference from $5778\ \text{K}$ is $22\ \text{K}$, or $0.4\%$.  Therefore, the peak wavelength estimates the solar surface temperature as about $5800\ \text{K}$, in excellent agreement with the stated value.
 :::
 
 :::{exercise}
@@ -303,7 +307,11 @@ A tungsten filament in an incandescent bulb operates at $T = 2900\ \text{K}$. (a
 :label: sol-particle-properties-of-waves-2
 :class: dropdown
 
-_Solution not yet written._
+Wien's law gives $\lambda_{\max}=(2.898\times10^{-3}\ \text{m K})/(2900\ \text{K})=9.99\times10^{-7}\ \text{m}=999\ \text{nm}$, which is infrared.  The blackbody flux is
+
+$$\frac PA=\sigma T^4=(5.670\times10^{-8}\ \text{W m}^{-2}\text{K}^{-4})(2900\ \text{K})^4=4.01\times10^6\ \text{W/m}^2.$$
+
+Therefore, the filament peaks near $1.00\ \mu\text{m}$ in the infrared and radiates $4.01\times10^6\ \text{W/m}^2$ ideally; most of its power is invisible infrared rather than useful visible light.
 :::
 
 :::{exercise}
@@ -316,7 +324,11 @@ A red giant star has surface temperature $3200\ \text{K}$ and radius $500\,R_\od
 :label: sol-particle-properties-of-waves-3
 :class: dropdown
 
-_Solution not yet written._
+The radius is $R=500(6.96\times10^8\ \text{m})=3.48\times10^{11}\ \text{m}$.  Thus
+
+$$P=4\pi R^2\sigma T^4=4\pi(3.48\times10^{11}\ \text{m})^2(5.670\times10^{-8})(3200\ \text{K})^4=9.05\times10^{30}\ \text{W}.$$
+
+The ratio is $9.05\times10^{30}/(3.83\times10^{26})=2.36\times10^4$.  Therefore, the red giant radiates about $9.1\times10^{30}\ \text{W}$, or $2.4\times10^4$ times the Sun's luminosity.
 :::
 
 :::{exercise}
@@ -329,7 +341,11 @@ Light of wavelength $400\ \text{nm}$ strikes a sodium surface with work function
 :label: sol-particle-properties-of-waves-4
 :class: dropdown
 
-_Solution not yet written._
+Using $hc=1240\ \text{eV nm}$,
+
+$$E_\gamma=\frac{1240\ \text{eV nm}}{400\ \text{nm}}=3.10\ \text{eV},\qquad K_{\max}=3.10\ \text{eV}-2.28\ \text{eV}=0.82\ \text{eV}.$$
+
+Since $eV_0=K_{\max}$, $V_0=0.82\ \text{V}$.  At threshold, $\phi=hc/\lambda_0$, so $\lambda_0=1240/2.28=544\ \text{nm}$.  Therefore, the photon energy is $3.10\ \text{eV}$, the largest electron kinetic energy is $0.82\ \text{eV}$, the stopping potential is $0.82\ \text{V}$, and the threshold wavelength is $544\ \text{nm}$.
 :::
 
 :::{exercise}
@@ -342,7 +358,11 @@ A photoelectric-effect experiment on a certain metal gives a stopping potential 
 :label: sol-particle-properties-of-waves-5
 :class: dropdown
 
-_Solution not yet written._
+The frequencies are $f_1=c/(450\ \text{nm})=6.67\times10^{14}\ \text{Hz}$ and $f_2=c/(360\ \text{nm})=8.33\times10^{14}\ \text{Hz}$.  Subtracting $eV_0=hf-\phi$ for the two data points gives
+
+$$h=\frac{e(1.28-0.65)\ \text{V}}{f_2-f_1}=3.78\times10^{-15}\ \text{eV s}=6.05\times10^{-34}\ \text{J s}.$$
+
+Then $\phi=hf_1-eV_1=(3.78\times10^{-15})(6.67\times10^{14})-0.65=1.87\ \text{eV}$.  Therefore, the data give $h=6.05\times10^{-34}\ \text{J s}$ and a work function of $1.87\ \text{eV}$.
 :::
 
 :::{exercise}
@@ -355,7 +375,11 @@ A photocell with a platinum surface (work function $\phi = 6.35\ \text{eV}$) is 
 :label: sol-particle-properties-of-waves-6
 :class: dropdown
 
-_Solution not yet written._
+The incident photon energy is $E=1240/150=8.27\ \text{eV}$, which exceeds $\phi=6.35\ \text{eV}$.  Thus $K_{\max}=8.27-6.35=1.92\ \text{eV}$.  The threshold wavelength is
+
+$$\lambda_0=\frac{1240\ \text{eV nm}}{6.35\ \text{eV}}=195\ \text{nm}.$$
+
+Therefore, $150\ \text{nm}$ ultraviolet light ejects electrons with up to $1.92\ \text{eV}$ kinetic energy, while visible and near-UV wavelengths longer than $195\ \text{nm}$ cannot overcome platinum's work function.
 :::
 
 :::{exercise}
@@ -368,7 +392,11 @@ An X-ray tube is operated at an accelerating voltage of $120\ \text{kV}$. (a) Fi
 :label: sol-particle-properties-of-waves-7
 :class: dropdown
 
-_Solution not yet written._
+An electron accelerated through $120\ \text{kV}$ gains $eV=120\ \text{keV}$.  Hence
+
+$$\lambda_{\min}=\frac{hc}{eV}=\frac{1240\ \text{eV nm}}{120000\ \text{eV}}=0.0103\ \text{nm}.$$
+
+Therefore, the minimum wavelength is $0.0103\ \text{nm}$ and the maximum photon energy is $120\ \text{keV}$; doubling the voltage halves $\lambda_{\min}$.
 :::
 
 :::{exercise}
@@ -381,7 +409,7 @@ Explain, in your own words and using conservation of energy, why the bremsstrahl
 :label: sol-particle-properties-of-waves-8
 :class: dropdown
 
-_Solution not yet written._
+Each incident electron begins with energy $eV$, but it can lose any fraction of that energy in one encounter and can lose the rest in subsequent collisions, target excitation, or heat.  A photon made in one braking event can therefore have any energy from nearly zero up to $eV$, with $E_\gamma=hc/\lambda$.  Therefore, the many allowed energy shares produce a continuous bremsstrahlung spectrum, even though the endpoint energy and minimum wavelength are sharp.
 :::
 
 :::{exercise}
@@ -394,7 +422,13 @@ X-rays of wavelength $\lambda = 0.0711\ \text{nm}$ are Compton-scattered at $\th
 :label: sol-particle-properties-of-waves-9
 :class: dropdown
 
-_Solution not yet written._
+At $90^\circ$, $\Delta\lambda=h/(m_ec)=2.426\ \text{pm}=0.002426\ \text{nm}$.  Thus
+
+$$\lambda'=0.0711\ \text{nm}+0.002426\ \text{nm}=0.073526\ \text{nm},$$
+
+$$E'=\frac{1240\ \text{eV nm}}{0.073526\ \text{nm}}=16.86\ \text{keV}.$$
+
+The incident energy is $1240/0.0711=17.44\ \text{keV}$, so the electron receives $17.44-16.86=0.58\ \text{keV}$.  Therefore, the shift is $2.426\ \text{pm}$, the scattered photon has wavelength $0.07353\ \text{nm}$ and energy $16.86\ \text{keV}$, and the electron receives about $0.58\ \text{keV}$.
 :::
 
 :::{exercise}
@@ -407,7 +441,11 @@ Show that, for a photon Compton-scattered directly backward ($\theta = 180°$) b
 :label: sol-particle-properties-of-waves-10
 :class: dropdown
 
-_Solution not yet written._
+Putting $\theta=180^\circ$ into $\Delta\lambda=(h/m_ec)(1-\cos\theta)$ gives
+
+$$\Delta\lambda=\frac{h}{m_ec}[1-(-1)]=\frac{2h}{m_ec}=4.852\times10^{-12}\ \text{m}=4.852\ \text{pm}.$$
+
+For $\lambda\ll h/(m_ec)$, $\lambda'=\lambda+2h/(m_ec)\approx2h/(m_ec)$, so $E'/E=\lambda/\lambda'\ll1$ and $(E-E')/E\approx1$.  Therefore, backscattering shifts the wavelength by $4.852\ \text{pm}$ and transfers nearly $100\%$ of a sufficiently energetic photon's energy to the electron.
 :::
 
 :::{exercise}
@@ -420,7 +458,13 @@ Fill in the algebraic step omitted in the text: starting from equations (i) and 
 :label: sol-particle-properties-of-waves-11
 :class: dropdown
 
-_Solution not yet written._
+Let $A=hc/\lambda$, $B=hc/\lambda'$, and $M=m_ec^2$.  Equations (i) and (ii) give
+
+$$E_e^2=(A-B+M)^2=A^2+B^2+M^2-2AB+2AM-2BM,$$
+
+$$E_e^2=(p_ec)^2+M^2=A^2+B^2-2AB\cos\theta+M^2.$$
+
+Cancelling $A^2$, $B^2$, and $M^2$ leaves $-2AB+2M(A-B)=-2AB\cos\theta$, or $M(A-B)=AB(1-\cos\theta)$.  Therefore, explicit cancellation gives exactly the simplified relation quoted in the text.
 :::
 
 :::{exercise}
@@ -433,7 +477,11 @@ A beam of visible-light photons ($\lambda = 600\ \text{nm}$) is Compton-scattere
 :label: sol-particle-properties-of-waves-12
 :class: dropdown
 
-_Solution not yet written._
+At $90^\circ$, $\Delta\lambda=2.426\ \text{pm}$.  Therefore,
+
+$$\frac{\Delta\lambda}{\lambda}=\frac{2.426\times10^{-12}\ \text{m}}{600\times10^{-9}\ \text{m}}=4.04\times10^{-6}.$$
+
+Therefore, visible light shifts by only four parts per million, far below ordinary spectral resolution, whereas the same fixed Compton shift is a measurable fraction of an X-ray wavelength.
 :::
 
 :::{exercise}
@@ -446,7 +494,13 @@ Find the minimum photon energy required for pair production of an electron-posit
 :label: sol-particle-properties-of-waves-13
 :class: dropdown
 
-_Solution not yet written._
+At minimum, the photon supplies two electron rest energies:
+
+$$E_{\min}=2m_ec^2=2(0.511\ \text{MeV})=1.022\ \text{MeV},$$
+
+$$\lambda=\frac{1240\ \text{eV nm}}{1.022\times10^6\ \text{eV}}=0.00121\ \text{nm}=1.21\ \text{pm}.$$
+
+An isolated photon has $p=E/c$, but two massive particles with the same total energy have total momentum less than $E/c$; energy and momentum cannot both be conserved.  Therefore, pair production requires at least $1.022\ \text{MeV}$ photons of wavelength about $1.21\ \text{pm}$ and a nearby nucleus to absorb recoil momentum.
 :::
 
 :::{exercise}
@@ -459,7 +513,11 @@ A $2.50\ \text{MeV}$ photon undergoes pair production near a heavy nucleus, whic
 :label: sol-particle-properties-of-waves-14
 :class: dropdown
 
-_Solution not yet written._
+The rest-energy cost is $2m_ec^2=1.022\ \text{MeV}$, leaving
+
+$$K_{\rm available}=2.50\ \text{MeV}-1.022\ \text{MeV}=1.478\ \text{MeV}.$$
+
+Equal sharing gives $K_e=K_{e^+}=0.739\ \text{MeV}$ and total energy $0.739+0.511=1.250\ \text{MeV}$ for each.  Therefore, each particle has $0.739\ \text{MeV}$ kinetic energy and $1.250\ \text{MeV}$ total energy.
 :::
 
 :::{exercise}
@@ -472,7 +530,11 @@ In positron-emission tomography, a positron emitted by a radioactive tracer trav
 :label: sol-particle-properties-of-waves-15
 :class: dropdown
 
-_Solution not yet written._
+At rest the electron and positron have total energy $2m_ec^2=1.022\ \text{MeV}$ and total momentum zero.  The two photons must have equal, opposite momenta and equal energies, so each has $0.511\ \text{MeV}$.  Its wavelength is
+
+$$\lambda=\frac{1240\ \text{eV nm}}{511000\ \text{eV}}=0.00243\ \text{nm}=2.43\ \text{pm}.$$
+
+Therefore, annihilation produces two opposite $511\ \text{keV}$ gamma rays of wavelength $2.43\ \text{pm}$; a detector ring records their coincident, back-to-back directions to localize the annihilation line through the patient.
 :::
 
 :::{exercise}
@@ -485,7 +547,11 @@ Estimate the minimum photon energy needed to produce a proton–antiproton pair 
 :label: sol-particle-properties-of-waves-16
 :class: dropdown
 
-_Solution not yet written._
+The threshold is $2m_pc^2=2(938\ \text{MeV})=1876\ \text{MeV}=1.876\ \text{GeV}$.  Its wavelength is
+
+$$\lambda=\frac{1240\ \text{eV nm}}{1.876\times10^9\ \text{eV}}=6.61\times10^{-7}\ \text{nm}=0.661\ \text{fm}.$$
+
+Compared with the electron-pair threshold wavelength $1.21\ \text{pm}$, this is smaller by about $1836$, the proton-to-electron mass ratio.  Therefore, proton--antiproton production needs about $1.88\ \text{GeV}$ photons with a $0.661\ \text{fm}$ wavelength.
 :::
 
 :::{exercise}
@@ -498,7 +564,13 @@ A $0.662\ \text{MeV}$ gamma ray (a characteristic energy emitted by the common r
 :label: sol-particle-properties-of-waves-17
 :class: dropdown
 
-_Solution not yet written._
+For $180^\circ$ scattering, $E'=E/[1+2E/(m_ec^2)]$.  Hence
+
+$$E'=\frac{0.662\ \text{MeV}}{1+2(0.662/0.511)}=0.184\ \text{MeV},$$
+
+$$\Delta E_{\max}=0.662\ \text{MeV}-0.184\ \text{MeV}=0.478\ \text{MeV}.$$
+
+Full photoelectric absorption deposits $0.662\ \text{MeV}$.  Therefore, the Compton edge is $0.478\ \text{MeV}$ and the photopeak is $0.662\ \text{MeV}$; both appear because photons can either scatter incompletely or be fully absorbed.
 :::
 
 :::{exercise}
@@ -511,7 +583,11 @@ Explain, using the discussion of photomultiplier tubes, why a single visible-lig
 :label: sol-particle-properties-of-waves-18
 :class: dropdown
 
-_Solution not yet written._
+The charge needed is $Q=1.0\times10^{-12}\ \text{C}$, so
+
+$$N=\frac Qe=\frac{1.0\times10^{-12}\ \text{C}}{1.602\times10^{-19}\ \text{C}}=6.24\times10^6\ \text{electrons}.$$
+
+Ten stages multiplying by four give $4^{10}=1.05\times10^6$ electrons, or $1.68\times10^{-13}\ \text{C}$, below the stated threshold.  Therefore, a photomultiplier makes a photon detectable by multiplying one photoelectron into millions, but ten factor-four stages alone are short of a $1.0\times10^{-12}\ \text{C}$ pulse.
 :::
 
 :::{exercise}
@@ -524,7 +600,7 @@ Explain why the ultraviolet catastrophe (Rayleigh–Jeans law) and Lenard's phot
 :label: sol-particle-properties-of-waves-19
 :class: dropdown
 
-_Solution not yet written._
+Classical treatments assume electromagnetic energy is continuously divisible: cavity modes can receive the continuous equipartition energy $k_BT$, and a brighter wave can transfer energy continuously to an electron.  Planck and Einstein replace that assumption with $E=hf$ quanta: high-frequency cavity modes are rarely excited because quanta cost too much energy, and one electron receives one photon's energy at a time.  Therefore, both puzzles are resolved by the same photon-energy quantization postulate.
 :::
 
 :::{exercise}
@@ -537,5 +613,9 @@ Silicon, used in most solar cells, has a band gap of about $1.1\ \text{eV}$. (a)
 :label: sol-particle-properties-of-waves-20
 :class: dropdown
 
-_Solution not yet written._
+The threshold condition is $E_\gamma\ge E_g$, so
+
+$$\lambda_{\max}=\frac{1240\ \text{eV nm}}{1.1\ \text{eV}}=1.13\times10^3\ \text{nm}=1.13\ \mu\text{m}.$$
+
+This lies in the near infrared.  Photon energy above the band gap first creates an electron--hole pair; excess energy is rapidly lost to lattice vibrations rather than producing proportional electrical work.  Therefore, silicon can use wavelengths up to about $1.13\ \mu\text{m}$, and photons far above the $1.1\ \text{eV}$ gap waste much of their extra energy as heat.
 :::

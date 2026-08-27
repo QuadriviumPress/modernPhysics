@@ -245,7 +245,11 @@ Find the de Broglie wavelength of (a) an electron with kinetic energy $54\ \text
 :label: sol-wave-properties-of-particles-1
 :class: dropdown
 
-_Solution not yet written._
+For nonrelativistic particles, $\lambda=h/\sqrt{2mK}$.  For $54\ \text{eV}$ electrons, $\lambda=1.226/\sqrt{54}=0.167\ \text{nm}$.  For a $1.0\ \text{MeV}$ proton, $\lambda=2.86\times10^{-14}\ \text{m}=0.0286\ \text{pm}$.  For the baseball,
+
+$$\lambda=\frac{6.626\times10^{-34}\ \text{J s}}{(0.145\ \text{kg})(40\ \text{m/s})}=1.14\times10^{-34}\ \text{m}.$$
+
+Therefore, electron waves can diffract from atomic crystal planes, proton waves need nuclear-scale structure, and the baseball wavelength is far too small to observe diffraction.
 :::
 
 :::{exercise}
@@ -258,7 +262,11 @@ In the Davisson–Germer experiment, a diffraction maximum for 54 eV electrons w
 :label: sol-wave-properties-of-particles-2
 :class: dropdown
 
-_Solution not yet written._
+The $54\ \text{eV}$ electron wavelength from Problem 1 is $0.167\ \text{nm}$.  First-order diffraction gives
+
+$$d=\frac{\lambda}{\sin50^\circ}=\frac{0.167\ \text{nm}}{0.766}=0.218\ \text{nm}.$$
+
+Therefore, the observed Davisson--Germer maximum corresponds to an effective nickel-plane spacing of $0.218\ \text{nm}$.
 :::
 
 :::{exercise}
@@ -271,7 +279,11 @@ Using the worked-example formula $\lambda \approx 1.226\ \text{nm}/\sqrt{V[\text
 :label: sol-wave-properties-of-particles-3
 :class: dropdown
 
-_Solution not yet written._
+From $\lambda=1.226\ \text{nm}/\sqrt{V}$,
+
+$$V=\left(\frac{1.226\ \text{nm}}{0.0500\ \text{nm}}\right)^2=6.01\times10^2\ \text{V}.$$
+
+Therefore, electrons require an accelerating voltage of about $601\ \text{V}$ to have a $0.0500\ \text{nm}$ de Broglie wavelength.
 :::
 
 :::{exercise}
@@ -284,7 +296,11 @@ A beam of thermal neutrons (kinetic energy $\approx k_BT$ at room temperature, $
 :label: sol-wave-properties-of-particles-4
 :class: dropdown
 
-_Solution not yet written._
+The thermal energy is $K\sim k_BT=(1.381\times10^{-23}\ \text{J/K})(300\ \text{K})=4.14\times10^{-21}\ \text{J}=0.0259\ \text{eV}$.  Then
+
+$$\lambda=\frac{h}{\sqrt{2m_nK}}=\frac{6.626\times10^{-34}}{\sqrt{2(1.675\times10^{-27})(4.14\times10^{-21})}}=1.78\times10^{-10}\ \text{m}=0.178\ \text{nm}.$$
+
+Therefore, room-temperature neutrons have about $0.026\ \text{eV}$ energy and $0.18\ \text{nm}$ wavelength, comparable to interatomic spacings and ideal for crystal diffraction.
 :::
 
 :::{exercise}
@@ -297,7 +313,11 @@ Verify the claim in the text that a $C_{60}$ molecule (mass $\approx 1.2\times10
 :label: sol-wave-properties-of-particles-5
 :class: dropdown
 
-_Solution not yet written._
+The molecular momentum is $p=mv=(1.2\times10^{-24}\ \text{kg})(200\ \text{m/s})=2.4\times10^{-22}\ \text{kg m/s}$.  Thus
+
+$$\lambda=\frac hp=\frac{6.626\times10^{-34}}{2.4\times10^{-22}}=2.76\times10^{-12}\ \text{m}=2.76\ \text{pm}.$$
+
+The grating period is much larger than this wavelength, but diffraction angles can still be measured and the molecule's center-of-mass wave can interfere.  Therefore, $C_{60}$ has a few-picometer de Broglie wavelength and can diffract from a nanostructured grating despite being physically larger than its wavelength.
 :::
 
 :::{exercise}
@@ -310,7 +330,7 @@ Using the de Broglie standing-wave argument, show that an electron in a circular
 :label: sol-wave-properties-of-particles-6
 :class: dropdown
 
-_Solution not yet written._
+The standing-wave condition is $2\pi r=n\lambda$.  For $n=1$, $2\pi r=\lambda$: exactly one de Broglie wavelength fits around the orbit.  A shorter circumference would not close in phase, and the one-wavelength state has the smallest allowed momentum and kinetic energy.  Therefore, the Bohr ground orbit corresponds to the lowest closed standing matter wave.
 :::
 
 :::{exercise}
@@ -323,7 +343,11 @@ A proton is confined to a nucleus of diameter $1.0\times10^{-14}\ \text{m}$. Use
 :label: sol-wave-properties-of-particles-7
 :class: dropdown
 
-_Solution not yet written._
+Taking $\Delta x\sim10^{-14}\ \text{m}$ gives $\Delta p\sim h/\Delta x=6.63\times10^{-20}\ \text{kg m/s}$.  The minimum kinetic energy is
+
+$$K\sim\frac{(\Delta p)^2}{2m_p}=\frac{(6.63\times10^{-20})^2}{2(1.673\times10^{-27})}=1.31\times10^{-12}\ \text{J}=8.2\ \text{MeV}.$$
+
+Therefore, nuclear confinement requires proton kinetic energies of order several MeV, comparable to nuclear binding energies.
 :::
 
 :::{exercise}
@@ -336,7 +360,11 @@ An excited atomic state has a mean lifetime of $\Delta t = 1.0\times10^{-8}\ \te
 :label: sol-wave-properties-of-particles-8
 :class: dropdown
 
-_Solution not yet written._
+The energy--time uncertainty estimate is
+
+$$\Delta E\sim\frac{\hbar}{2\Delta t}=\frac{1.055\times10^{-34}\ \text{J s}}{2(1.0\times10^{-8}\ \text{s})}=5.28\times10^{-27}\ \text{J}=3.29\times10^{-8}\ \text{eV}.$$
+
+Since $E=hc/\lambda$, $|\Delta\lambda|\simeq\lambda^2\Delta E/(hc)$, giving $\Delta\lambda=(500\ \text{nm})^2(3.29\times10^{-8}\ \text{eV})/(1240\ \text{eV nm})=6.6\times10^{-6}\ \text{nm}$.  Therefore, the lifetime implies a minimum width of about $3.3\times10^{-8}\ \text{eV}$ or $6.6\times10^{-6}\ \text{nm}$.
 :::
 
 :::{exercise}
@@ -349,7 +377,11 @@ A beam of electrons is passed through a single slit of width $a$. Using the sing
 :label: sol-wave-properties-of-particles-9
 :class: dropdown
 
-_Solution not yet written._
+At the first minimum, $\sin\theta\simeq\lambda/a$.  Thus
+
+$$\Delta p_y\sim p\sin\theta=\frac h\lambda\frac\lambda a=\frac ha.$$
+
+With $\Delta y\sim a$, $\Delta y\Delta p_y\sim a(h/a)=h$.  Therefore, single-slit diffraction gives the same position--momentum uncertainty scale required by the uncertainty principle.
 :::
 
 :::{exercise}
@@ -362,7 +394,7 @@ Explain, using the energy–time uncertainty relation, why a particle that is tr
 :label: sol-wave-properties-of-particles-10
 :class: dropdown
 
-_Solution not yet written._
+For an infinite lifetime, $\Delta t\to\infty$, so the uncertainty lower bound $\Delta E\gtrsim\hbar/(2\Delta t)$ tends to zero.  An unstable state has finite lifetime and therefore nonzero energy width.  Therefore, stable particles can have sharp rest energies, while unstable particles must be described by both a central mass and a finite decay width.
 :::
 
 :::{exercise}
@@ -375,7 +407,11 @@ Verify the group-velocity calculation in the text: starting from $\omega(k) = \h
 :label: sol-wave-properties-of-particles-11
 :class: dropdown
 
-_Solution not yet written._
+Differentiate directly:
+
+$$v_g=\frac{d\omega}{dk}=\frac{d}{dk}\left(\frac{\hbar k^2}{2m}\right)=\frac{2\hbar k}{2m}=\frac{\hbar k}{m}=\frac pm.$$
+
+Therefore, the nonrelativistic matter-wave group velocity equals the particle velocity.
 :::
 
 :::{exercise}
@@ -388,7 +424,11 @@ A relativistic free particle has energy $E = \sqrt{(pc)^2+(mc^2)^2}$ ([Chapter 3
 :label: sol-wave-properties-of-particles-12
 :class: dropdown
 
-_Solution not yet written._
+With $E=\hbar\omega$ and $p=\hbar k$,
+
+$$v_g=\frac{d\omega}{dk}=\frac{dE}{dp}=\frac{d}{dp}\sqrt{p^2c^2+m^2c^4}=\frac{pc^2}{E}.$$
+
+The relativistic momentum and energy relations give the same identity $u=pc^2/E$.  Therefore, the group velocity of a relativistic matter wave is exactly the particle's physical velocity $u$.
 :::
 
 :::{exercise}
@@ -401,7 +441,11 @@ Estimate, using the uncertainty principle in the same manner as the atomic-scale
 :label: sol-wave-properties-of-particles-13
 :class: dropdown
 
-_Solution not yet written._
+For confinement to $L=10\ \text{nm}=10^{-8}\ \text{m}$, take $p\sim h/L$.  Then
+
+$$K\sim\frac{h^2}{2m_eL^2}=\frac{(6.626\times10^{-34})^2}{2(9.109\times10^{-31})(10^{-8})^2}=2.41\times10^{-21}\ \text{J}=0.015\ \text{eV}.$$
+
+An atom-scale $0.1\ \text{nm}$ confinement is $10^2$ smaller in length and therefore $10^4$ larger in energy.  Therefore, a $10\ \text{nm}$ quantum dot has a characteristic confinement energy of order $10^{-2}\ \text{eV}$, far below atomic-scale energies.
 :::
 
 :::{exercise}
@@ -414,7 +458,7 @@ A double-slit experiment is performed with electrons at a rate of one electron a
 :label: sol-wave-properties-of-particles-14
 :class: dropdown
 
-_Solution not yet written._
+Determining a slit position to uncertainty $\Delta y\sim a$ necessarily gives a transverse momentum disturbance $\Delta p_y\gtrsim\hbar/(2a)$ (of order $h/a$).  This random transverse kick changes the relative phase between paths; when its associated angular spread is comparable with the interference angle $\lambda/d$, the fringe correlation is lost.  Therefore, a sufficiently precise which-path measurement necessarily supplies enough momentum uncertainty to wash out the two-slit interference pattern.
 :::
 
 :::{exercise}
@@ -427,7 +471,7 @@ Explain why the phase velocity $v_p = \omega/k$ of a nonrelativistic free-partic
 :label: sol-wave-properties-of-particles-15
 :class: dropdown
 
-_Solution not yet written._
+For a nonrelativistic free particle, phase velocity is $v_p=\omega/k=(\hbar k/2m)=u/2$, while the wave packet and all information move at $v_g=d\omega/dk=u$.  Individual phase crests are not localized objects and cannot carry a signal.  Therefore, the phase velocity is not an observable propagation speed, so its difference from the group velocity is not paradoxical.
 :::
 
 :::{exercise}
@@ -440,7 +484,11 @@ Using the spreading time scale $\tau \sim m(\Delta x_0)^2/\hbar$ quoted in the t
 :label: sol-wave-properties-of-particles-16
 :class: dropdown
 
-_Solution not yet written._
+For the electron,
+
+$$\tau\sim\frac{m(\Delta x_0)^2}{\hbar}=\frac{(9.109\times10^{-31}\ \text{kg})(10^{-10}\ \text{m})^2}{1.055\times10^{-34}\ \text{J s}}=8.6\times10^{-17}\ \text{s}.$$
+
+For the dust grain, $\tau=(10^{-6}\ \text{kg})(10^{-6}\ \text{m})^2/\hbar=9.5\times10^{15}\ \text{s}\approx3\times10^8\ \text{yr}$.  Therefore, electron spreading is extremely rapid, whereas dust-grain spreading is unobservable during a seconds-long laboratory measurement.
 :::
 
 :::{exercise}
@@ -453,7 +501,7 @@ In a delayed-choice or quantum-eraser experiment, explain why the disappearance 
 :label: sol-wave-properties-of-particles-17
 :class: dropdown
 
-_Solution not yet written._
+Without consulting the marker result, detections in any one output channel form an ordinary interference-free mixture; no observer can tell whether a later eraser choice was made.  Interference reappears only after sorting the already-recorded events into correlated subensembles using classical information from the marker/eraser measurement.  Therefore, quantum erasure changes conditional correlations, not past detection outcomes, and cannot transmit information backward in time.
 :::
 
 :::{exercise}
@@ -466,7 +514,7 @@ A beam of electrons, each with the same de Broglie wavelength $\lambda = h/p$, i
 :label: sol-wave-properties-of-particles-18
 :class: dropdown
 
-_Solution not yet written._
+Waves from successive crystal planes differ in path by $d\sin\theta$.  They reinforce only when this difference is an integer number of wavelengths, $d\sin\theta=n\lambda$; otherwise their phases cancel in the sum.  This is directly analogous to an atomic orbit, where a matter wave survives only when its circumference contains an integer number of wavelengths.  Therefore, a diffraction maximum is a standing-wave condition imposed across the periodic crystal lattice.
 :::
 
 :::{exercise}
@@ -479,7 +527,11 @@ Verify the claim in the "Consistency Check" subsection that $E=pc^2/u$ for a rel
 :label: sol-wave-properties-of-particles-19
 :class: dropdown
 
-_Solution not yet written._
+From $E=\gamma mc^2$ and $p=\gamma mu$,
+
+$$\frac{pc^2}{u}=\frac{(\gamma mu)c^2}{u}=\gamma mc^2=E.$$
+
+Combining $E=hf$ with $\lambda=u_p/f$ gives $E=hu_p/\lambda=pu_p$, so $u_p=E/p=c^2/u$.  This can exceed $c$ because phase velocity carries neither a particle nor usable information; the group velocity remains $u<c$.  Therefore, superluminal phase velocity does not violate relativity.
 :::
 
 :::{exercise}
@@ -492,5 +544,5 @@ The neutron interferometry (COW) experiment detects a gravitationally induced ph
 :label: sol-wave-properties-of-particles-20
 :class: dropdown
 
-_Solution not yet written._
+Raising a neutron increases its gravitational potential energy and decreases its kinetic energy by the same small amount.  Its momentum therefore decreases and its de Broglie wavelength $\lambda=h/p$ increases slightly; over a finite path this changes the accumulated phase $2\pi L/\lambda$.  Therefore, paths at different heights acquire a measurable relative gravitational phase shift even though the energy change is very small.
 :::

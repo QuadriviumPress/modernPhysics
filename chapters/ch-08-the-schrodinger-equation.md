@@ -281,7 +281,11 @@ An electron is confined to an infinite square well of width $L = 0.20\ \text{nm}
 :label: sol-the-schrodinger-equation-1
 :class: dropdown
 
-_Solution not yet written._
+For an electron in a well, $E_n=0.376\,n^2/L^2\ \text{eV}$ when $L$ is in nanometers.  Thus
+
+$$E_1=\frac{0.376\ \text{eV}\cdot\text{nm}^2}{(0.20\ \text{nm})^2}=9.40\ \text{eV}.$$
+
+Because $E_2=4E_1$, the emitted energy is $E_2-E_1=3E_1=28.2\ \text{eV}$.  Therefore, the ground-state energy is $9.40\ \text{eV}$ and the $n=2\to1$ photon has energy $28.2\ \text{eV}$.
 :::
 
 :::{exercise}
@@ -294,7 +298,15 @@ Show, by direct substitution into the time-independent Schrödinger equation, th
 :label: sol-the-schrodinger-equation-2
 :class: dropdown
 
-_Solution not yet written._
+Differentiating twice gives
+
+$$\frac{d^2\psi_n}{dx^2}=-\left(\frac{n\pi}{L}\right)^2\psi_n.$$
+
+Consequently,
+
+$$-\frac{\hbar^2}{2m}\frac{d^2\psi_n}{dx^2}=\frac{n^2\pi^2\hbar^2}{2mL^2}\psi_n=E_n\psi_n.$$
+
+Also $\psi_n(0)=\psi_n(L)=0$.  Therefore, the stated sine function satisfies both the time-independent Schrödinger equation and the infinite-well boundary conditions.
 :::
 
 :::{exercise}
@@ -307,7 +319,11 @@ For the infinite-well state $\psi_2(x) = \sqrt{2/L}\sin(2\pi x/L)$ ($n=2$), use 
 :label: sol-the-schrodinger-equation-3
 :class: dropdown
 
-_Solution not yet written._
+The density $|\psi_2(x)|^2$ is symmetric about $x=L/2$, so its mean position is $\langle x\rangle=L/2$.  The interior node follows from
+
+$$\sin\left(\frac{2\pi x}{L}\right)=0\quad\Rightarrow\quad x=\frac L2$$
+
+for $0<x<L$.  Therefore, $\langle x\rangle=L/2$ and the single interior node is at $x=L/2$.
 :::
 
 :::{exercise}
@@ -320,7 +336,13 @@ An electron with kinetic energy $E=3.00\ \text{eV}$ encounters a potential step 
 :label: sol-the-schrodinger-equation-4
 :class: dropdown
 
-_Solution not yet written._
+For $V_0=2.00\ \text{eV}$,
+
+$$\frac{k_2}{k_1}=\sqrt{\frac{E-V_0}{E}}=\sqrt{\frac{1.00}{3.00}}=0.577,$$
+
+$$R=\left(\frac{1-0.577}{1+0.577}\right)^2=0.0718,\qquad T=1-R=0.928.$$
+
+For $V_0=0.500\ \text{eV}$, $k_2/k_1=\sqrt{2.50/3.00}=0.913$, so $R=0.00207$ and $T=0.998$.  Therefore, the reflection falls from $7.18\%$ to $0.207\%$ as the step is lowered.
 :::
 
 :::{exercise}
@@ -333,7 +355,15 @@ Show algebraically, starting from the amplitude ratios $B/A = (k_1-k_2)/(k_1+k_2
 :label: sol-the-schrodinger-equation-5
 :class: dropdown
 
-_Solution not yet written._
+The amplitude formulas give
+
+$$R=\frac{(k_1-k_2)^2}{(k_1+k_2)^2},\qquad T=\frac{k_2}{k_1}\left(\frac{2k_1}{k_1+k_2}\right)^2=\frac{4k_1k_2}{(k_1+k_2)^2}.$$
+
+Therefore,
+
+$$R+T=\frac{k_1^2-2k_1k_2+k_2^2+4k_1k_2}{(k_1+k_2)^2}=\frac{(k_1+k_2)^2}{(k_1+k_2)^2}=1.$$
+
+Therefore, reflection plus transmission equals one, as required by probability-current conservation.
 :::
 
 :::{exercise}
@@ -346,7 +376,11 @@ A proton with $5.0\ \text{MeV}$ of kinetic energy strikes a rectangular potentia
 :label: sol-the-schrodinger-equation-6
 :class: dropdown
 
-_Solution not yet written._
+Here $V_0-E=5.0\ \text{MeV}$.  Using $\hbar c=197.3\ \text{MeV fm}$ and $m_pc^2=938\ \text{MeV}$,
+
+$$\kappa_p=\frac{\sqrt{2(938\ \text{MeV})(5.0\ \text{MeV})}}{197.3\ \text{MeV fm}}=0.491\ \text{fm}^{-1}.$$
+
+Thus $T_p\simeq e^{-2\kappa_pL}=e^{-2(0.491)(2.0)}=0.140$.  For an alpha particle, the mass is four times larger, so $\kappa_\alpha=2\kappa_p=0.982\ \text{fm}^{-1}$ and $T_\alpha=e^{-3.93}=0.0197$.  Therefore, the proton transmission is about $14\%$, while the alpha transmission is about $2.0\%$ because the heavier particle has a larger tunneling exponent.
 :::
 
 :::{exercise}
@@ -359,7 +393,11 @@ Using the STM worked example's value of $\kappa \approx 10.2\ \text{nm}^{-1}$, f
 :label: sol-the-schrodinger-equation-7
 :class: dropdown
 
-_Solution not yet written._
+Tunneling current varies as $I\propto e^{-2\kappa L}$, so an added gap $\Delta L$ changes it by
+
+$$\frac{I'}{I}=e^{-2\kappa\Delta L}=e^{-2(10.2\ \text{nm}^{-1})(0.20\ \text{nm})}=e^{-4.08}=0.0169.$$
+
+Therefore, a $0.20\ \text{nm}$ increase reduces the current by a factor of about $59$, which is why STM height measurements can resolve much less than an angstrom.
 :::
 
 :::{exercise}
@@ -372,7 +410,15 @@ Verify that the ground-state wave function of the harmonic oscillator, $\psi_0(x
 :label: sol-the-schrodinger-equation-8
 :class: dropdown
 
-_Solution not yet written._
+For $\psi_0=Ae^{-m\omega x^2/(2\hbar)}$,
+
+$$\frac{d^2\psi_0}{dx^2}=\left(\frac{m^2\omega^2x^2}{\hbar^2}-\frac{m\omega}{\hbar}\right)\psi_0.$$
+
+Substitution gives
+
+$$-\frac{\hbar^2}{2m}\psi_0''+\frac12m\omega^2x^2\psi_0=\left[-\frac12m\omega^2x^2+\frac12\hbar\omega+\frac12m\omega^2x^2\right]\psi_0=\frac12\hbar\omega\psi_0.$$
+
+Therefore, the Gaussian satisfies the oscillator equation with $E_0=\tfrac12\hbar\omega$.
 :::
 
 :::{exercise}
@@ -385,7 +431,11 @@ A diatomic molecule vibrates approximately as a harmonic oscillator with classic
 :label: sol-the-schrodinger-equation-9
 :class: dropdown
 
-_Solution not yet written._
+The spacing is
+
+$$hf=(6.626\times10^{-34}\ \text{J s})(8.7\times10^{13}\ \text{s}^{-1})=5.77\times10^{-20}\ \text{J}=0.360\ \text{eV}.$$
+
+Thus $E_0=\tfrac12hf=0.180\ \text{eV}$.  An adjacent-level photon has $0.360\ \text{eV}$ and wavelength $\lambda=1240/0.360=3440\ \text{nm}$.  Therefore, the zero-point energy is $0.180\ \text{eV}$ and vibrational transitions emit $0.360\ \text{eV}$ mid-infrared photons.
 :::
 
 :::{exercise}
@@ -398,7 +448,11 @@ Using the general formula $\Delta x = \sqrt{\hbar/2m\omega}$, verify the zero-po
 :label: sol-the-schrodinger-equation-10
 :class: dropdown
 
-_Solution not yet written._
+For the $1.0\ \text{kg}$ oscillator, $\omega=\sqrt{k/m}=10\ \text{s}^{-1}$, so
+
+$$\Delta x=\sqrt{\frac{\hbar}{2m\omega}}=\sqrt{\frac{1.055\times10^{-34}\ \text{J s}}{2(1.0\ \text{kg})(10\ \text{s}^{-1})}}=2.30\times10^{-18}\ \text{m}.$$
+
+For $\text{H}_2$, $\omega=\sqrt{570/(8.4\times10^{-28})}=8.24\times10^{14}\ \text{s}^{-1}$ and $\Delta x=8.7\ \text{pm}$.  Therefore, the molecular zero-point spread is about $12\%$ of the $74\ \text{pm}$ bond length, whereas the macroscopic spread is negligible.
 :::
 
 :::{exercise}
@@ -411,7 +465,7 @@ Explain, using the uncertainty principle rather than solving the Schrödinger eq
 :label: sol-the-schrodinger-equation-11
 :class: dropdown
 
-_Solution not yet written._
+Confinement requires a finite position uncertainty $\Delta x$, which by $\Delta x\Delta p\gtrsim\hbar/2$ requires nonzero momentum uncertainty and therefore positive kinetic energy.  An oscillator likewise cannot have both exact equilibrium position and zero momentum.  Therefore, both systems have a ground-state energy above the classical minimum; for macroscopic masses the resulting quantum energy is far too small to observe.
 :::
 
 :::{exercise}
@@ -424,7 +478,11 @@ A hydrogen molecule vibrates with quantized energy levels $E_n = (n+\tfrac12)\hb
 :label: sol-the-schrodinger-equation-12
 :class: dropdown
 
-_Solution not yet written._
+The selection rule is $\Delta n=\pm1$.  Starting at $n=2$, the only downward one-photon transition is $2\to1$, and
+
+$$E_2-E_1=(2+\tfrac12)\hbar\omega-(1+\tfrac12)\hbar\omega=\hbar\omega.$$
+
+The $2\to0$ transition has $\Delta n=-2$ and is forbidden for a single photon.  Therefore, the only allowed emitted photon has energy $\hbar\omega$.
 :::
 
 :::{exercise}
@@ -437,7 +495,7 @@ Explain qualitatively, using the correspondence principle, why the probability d
 :label: sol-the-schrodinger-equation-13
 :class: dropdown
 
-_Solution not yet written._
+A classical oscillator moves slowest near its turning points and fastest through $x=0$, so it spends most of its time near the turning points.  The correspondence principle requires the averaged probability density of a large-$n$ quantum state to reproduce that classical time distribution.  Therefore, highly excited oscillator states have their largest probability density near turning points and their smallest near the origin.
 :::
 
 :::{exercise}
@@ -450,7 +508,7 @@ A particle of energy $E$ is incident on a potential step of height $V_0 > E$ (ra
 :label: sol-the-schrodinger-equation-14
 :class: dropdown
 
-_Solution not yet written._
+When $V_0>E$, the wave number beyond the step is imaginary, so that region has no propagating wave capable of carrying transmitted probability current; hence $R=1$.  The acceptable solution there is nevertheless an exponentially decaying evanescent wave.  Therefore, reflection is total even though the probability density penetrates a finite distance into $x>0$.
 :::
 
 :::{exercise}
@@ -463,7 +521,11 @@ A particle in an infinite square well of width $L$ is prepared in the $n=3$ stat
 :label: sol-the-schrodinger-equation-15
 :class: dropdown
 
-_Solution not yet written._
+The $n=3$ probability density has three lobes and two interior nodes, at $x=L/3$ and $x=2L/3$; the walls are additional zeros.  Since $E_n\propto n^2/L^2$,
+
+$$\frac{E_3(2L)}{E_3(L)}=\frac{L^2}{(2L)^2}=\frac14.$$
+
+Therefore, the state has two interior nodes and its energy becomes one-quarter as large when the well width doubles.
 :::
 
 :::{exercise}
@@ -476,7 +538,7 @@ Explain why a free-particle plane wave $\Psi \propto e^{i(kx-\omega t)}$ cannot 
 :label: sol-the-schrodinger-equation-16
 :class: dropdown
 
-_Solution not yet written._
+A plane wave has constant $|\Psi|^2$, so $\int_{-\infty}^{\infty}|\Psi|^2dx$ diverges and no finite normalization constant exists.  It has one exact wave number and momentum $p=\hbar k$, which requires completely indefinite position.  Therefore, non-normalizability is the unavoidable position-space consequence of perfectly sharp momentum.
 :::
 
 :::{exercise}
@@ -489,7 +551,7 @@ Using the even-solution matching condition $k\tan(kL/2)=\kappa$ for the symmetri
 :label: sol-the-schrodinger-equation-17
 :class: dropdown
 
-_Solution not yet written._
+At fixed width, increasing $V_0$ increases $\kappa=\sqrt{2m(V_0-E)}/\hbar$.  In $k\tan(kL/2)=\kappa$, a larger right-hand side allows intersections on additional tangent branches, each corresponding to another bound-state energy.  Therefore, a deeper finite well supports more bound states.
 :::
 
 :::{exercise}
@@ -502,7 +564,11 @@ Repeat the alpha-decay order-of-magnitude estimate in the worked example, but fo
 :label: sol-the-schrodinger-equation-18
 :class: dropdown
 
-_Solution not yet written._
+The worked example gives $\kappa=1.96\times10^{15}\ \text{m}^{-1}$.  For $L=10\ \text{fm}=10\times10^{-15}\ \text{m}$,
+
+$$T=e^{-2\kappa L}=e^{-2(1.96\times10^{15})(10\times10^{-15})}=e^{-39.2}=9.4\times10^{-18}.$$
+
+With assault frequency $10^{21}\ \text{s}^{-1}$, the decay rate is about $9.4\times10^3\ \text{s}^{-1}$ and $t_{1/2}\sim0.693/(9.4\times10^3)=7.4\times10^{-5}\ \text{s}$.  Therefore, increasing the width by only $3\ \text{fm}$ changes the model half-life from about $10^{-9}\ \text{s}$ to about $10^{-4}\ \text{s}$, illustrating the exponential sensitivity.
 :::
 
 :::{exercise}
@@ -515,7 +581,7 @@ State the number of nodes you expect for the harmonic-oscillator wave function $
 :label: sol-the-schrodinger-equation-19
 :class: dropdown
 
-_Solution not yet written._
+The harmonic-oscillator state $\psi_n$ has exactly $n$ nodes, so $\psi_4$ has four.  The infinite-well state $\psi_n$ has $n-1$ interior nodes, so its $n=5$ state also has four interior nodes.  Therefore, both specified states have four nodes in the stated convention; the one-node difference comes from counting the two fixed wall zeros of the well separately from its interior nodes.
 :::
 
 :::{exercise}
@@ -528,5 +594,9 @@ A macroscopic pendulum of mass $0.50\ \text{kg}$ and angular frequency $\omega =
 :label: sol-the-schrodinger-equation-20
 :class: dropdown
 
-_Solution not yet written._
+For large $n$, $E\simeq n\hbar\omega$, so
+
+$$n\simeq\frac{E}{\hbar\omega}=\frac{1.0\times10^{-3}\ \text{J}}{(1.055\times10^{-34}\ \text{J s})(2.0\ \text{s}^{-1})}=4.7\times10^{30}.$$
+
+The spacing $\hbar\omega=2.11\times10^{-34}\ \text{J}$ is negligible beside the pendulum energy.  Therefore, the pendulum occupies a quantum number of order $10^{30}$ and its quantization appears completely continuous and classical.
 :::

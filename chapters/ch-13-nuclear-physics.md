@@ -344,7 +344,11 @@ Estimate the nuclear radius of $^{238}_{92}\text{U}$ and of $^{4}_{2}\text{He}$ 
 :label: sol-nuclear-physics-1
 :class: dropdown
 
-_Solution not yet written._
+Using $R=R_0A^{1/3}$ with $R_0=1.2\ \text{fm}$,
+
+$$R_{\rm U}=1.2(238)^{1/3}\ \text{fm}=7.44\ \text{fm},\qquad R_{\rm He}=1.2(4)^{1/3}\ \text{fm}=1.90\ \text{fm}.$$
+
+Their ratio is $7.44/1.90=3.91$, while $(238/4)^{1/3}=3.90$.  Therefore, uranium's radius is about $7.4\ \text{fm}$ and helium's is about $1.9\ \text{fm}$, fully consistent with $A^{1/3}$ scaling.
 :::
 
 :::{exercise}
@@ -357,7 +361,13 @@ Compute the binding energy and binding energy per nucleon of $^{4}_{2}\text{He}$
 :label: sol-nuclear-physics-2
 :class: dropdown
 
-_Solution not yet written._
+The separated-nucleon mass is $2m_p+2m_n=2(1.007276)+2(1.008665)=4.031882\ \text{u}$.  Thus
+
+$$\Delta m=4.031882\ \text{u}-4.002602\ \text{u}=0.029280\ \text{u},$$
+
+$$E_B=(0.029280\ \text{u})(931.5\ \text{MeV}/\text{u})=27.28\ \text{MeV},\qquad \frac{E_B}{A}=\frac{27.28\ \text{MeV}}4=6.82\ \text{MeV/nucleon}.$$
+
+Therefore, helium-4 has binding energy $27.3\ \text{MeV}$, or $6.82\ \text{MeV}$ per nucleon, under the stated mass approximation.
 :::
 
 :::{exercise}
@@ -370,7 +380,15 @@ A radioactive sample of $^{131}_{53}\text{I}$ (half-life $8.02$ days) initially 
 :label: sol-nuclear-physics-3
 :class: dropdown
 
-_Solution not yet written._
+Convert the half-life: $T_{1/2}=8.02(86400\ \text{s})=6.929\times10^5\ \text{s}$.  Hence
+
+$$\lambda=\frac{\ln2}{T_{1/2}}=\frac{0.693}{6.929\times10^5\ \text{s}}=1.00\times10^{-6}\ \text{s}^{-1}.$$
+
+After $t=24.0\ \text{d}$, $N=N_0 2^{-t/T_{1/2}}=10^{18}2^{-24/8.02}=1.26\times10^{17}$.  Initially,
+
+$$A_0=\lambda N_0=(1.00\times10^{-6}\ \text{s}^{-1})(1.00\times10^{18})=1.00\times10^{12}\ \text{Bq}.$$
+
+Therefore, $\lambda=1.00\times10^{-6}\ \text{s}^{-1}$, $1.26\times10^{17}$ nuclei remain after $24\ \text{d}$, and the initial activity is $1.00\times10^{12}\ \text{Bq}$.
 :::
 
 :::{exercise}
@@ -383,7 +401,11 @@ $^{238}_{92}\text{U}$ undergoes alpha decay to $^{234}_{90}\text{Th}$. Write the
 :label: sol-nuclear-physics-4
 :class: dropdown
 
-_Solution not yet written._
+Conservation of mass number and charge gives
+
+$$^{238}_{92}\text{U}\longrightarrow{}^{234}_{90}\text{Th}+{}^{4}_{2}\text{He}+Q.$$
+
+An alpha particle is an exceptionally tightly bound cluster, and its emission moves a very heavy nucleus toward a region of higher binding energy per nucleon while reducing its Coulomb repulsion.  A single proton is much less tightly bound as an emitted fragment and would leave a less favorable daughter.  Therefore, uranium-238 alpha-decays to thorium-234 plus helium-4 because this channel lowers the total mass more effectively than single-proton emission.
 :::
 
 :::{exercise}
@@ -396,7 +418,11 @@ In beta-minus decay of a free neutron, $n \to p + e^- + \bar\nu_e$, use $m_nc^2 
 :label: sol-nuclear-physics-5
 :class: dropdown
 
-_Solution not yet written._
+The available kinetic energy is the rest-energy difference:
+
+$$Q=939.57\ \text{MeV}-938.27\ \text{MeV}-0.511\ \text{MeV}=0.789\ \text{MeV}.$$
+
+Therefore, the proton, electron, and antineutrino share $0.789\ \text{MeV}$ of kinetic energy.  The electron does not always receive that whole amount because the antineutrino and recoiling proton can carry variable shares while conserving energy and momentum, producing a continuous electron spectrum.
 :::
 
 :::{exercise}
@@ -409,7 +435,15 @@ In the fission of $^{235}_{92}\text{U}$ (via neutron absorption to $^{236}_{92}\
 :label: sol-nuclear-physics-6
 :class: dropdown
 
-_Solution not yet written._
+One fission releases
+
+$$E_f=200\ \text{MeV}\left(1.602\times10^{-13}\ \text{J/MeV}\right)=3.204\times10^{-11}\ \text{J}.$$
+
+The required number is $N=(1.0\times10^{14}\ \text{J})/E_f=3.12\times10^{24}$.  Its amount is $n=N/N_A=5.18\ \text{mol}$, so
+
+$$m=(5.18\ \text{mol})(235\ \text{g/mol})=1.22\times10^3\ \text{g}=1.22\ \text{kg}.$$
+
+Therefore, complete fission of about $1.2\ \text{kg}$ of uranium-235 releases $1.0\times10^{14}\ \text{J}$.
 :::
 
 :::{exercise}
@@ -422,7 +456,13 @@ Using the semi-empirical mass formula coefficients given in the text, compute th
 :label: sol-nuclear-physics-7
 :class: dropdown
 
-_Solution not yet written._
+For $A=120$, $Z=50$, $A^{1/3}=4.932$, $A^{2/3}=24.33$, and $A-2Z=20$.  The five terms are
+
+$$15.5(120)=1860.0,\quad16.8(24.33)=408.7,\quad0.72\frac{50(49)}{4.932}=357.5,$$
+
+$$23\frac{20^2}{120}=76.7,\qquad \delta=34(120)^{-3/4}=0.94\ \text{MeV}.$$
+
+Thus $E_B=1860.0-408.7-357.5-76.7+0.94=1018\ \text{MeV}$ and $E_B/A=8.48\ \text{MeV/nucleon}$.  Therefore, the formula predicts about $8.48\ \text{MeV/nucleon}$, within $0.03\ \text{MeV/nucleon}$ of $8.51\ \text{MeV/nucleon}$; the small difference reflects shell effects and fitted-coefficient limitations.
 :::
 
 :::{exercise}
@@ -435,7 +475,7 @@ In the uranium-238 decay chain, $^{226}_{88}\text{Ra}$ (half-life $1600\ \text{y
 :label: sol-nuclear-physics-8
 :class: dropdown
 
-_Solution not yet written._
+In secular equilibrium the daughter production rate equals its decay rate, so $A_{\rm Rn}=A_{\rm Ra}$.  The worked example gives $A_{\rm Ra}=3.7\times10^{10}\ \text{Bq}$ for $1.00\ \text{g}$ of radium-226.  Therefore, the radon-222 activity is $3.7\times10^{10}\ \text{Bq}$, even though its number of atoms is much smaller because its decay constant is much larger.
 :::
 
 :::{exercise}
@@ -448,7 +488,11 @@ A bone fragment has a measured $^{14}\text{C}$ activity that is $42.0\%$ of that
 :label: sol-nuclear-physics-9
 :class: dropdown
 
-_Solution not yet written._
+Activity is proportional to the number of undecayed nuclei, so $A/A_0=2^{-t/T_{1/2}}=0.420$.  Taking logarithms,
+
+$$t=-T_{1/2}\frac{\ln(0.420)}{\ln2}=-(5730\ \text{yr})\frac{-0.8675}{0.6931}=7.17\times10^3\ \text{yr}.$$
+
+Therefore, the bone fragment is about $7.2\times10^3\ \text{years}$ old.
 :::
 
 :::{exercise}
@@ -461,5 +505,11 @@ Verify the claim in the deuterium-tritium fusion worked example that momentum co
 :label: sol-nuclear-physics-10
 :class: dropdown
 
-_Solution not yet written._
+Momentum conservation gives equal momentum magnitudes $p$ for the alpha particle and neutron.  Since $K=p^2/(2m)$, $K_\alpha/K_n=m_n/m_\alpha$.  With $Q=K_\alpha+K_n$,
+
+$$K_\alpha=Q\frac{m_n}{m_\alpha+m_n}=17.6\ \text{MeV}\frac{1.01}{4.00+1.01}=3.55\ \text{MeV},$$
+
+$$K_n=Q\frac{m_\alpha}{m_\alpha+m_n}=17.6\ \text{MeV}\frac{4.00}{5.01}=14.1\ \text{MeV}.$$
+
+Therefore, the alpha particle receives about $3.5\ \text{MeV}$ and the neutron about $14.1\ \text{MeV}$, as required by equal and opposite final momenta.
 :::

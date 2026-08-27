@@ -722,7 +722,15 @@ Light of wavelength $633\ \text{nm}$ (a helium–neon laser) illuminates two sli
 :label: sol-interference-of-light-1
 :class: dropdown
 
-_Solution not yet written._
+For bright fringes, $d\sin\theta=m\lambda$.  With $d=0.120\ \text{mm}=1.20\times10^{-4}\ \text{m}$ and $\lambda=633\ \text{nm}=6.33\times10^{-7}\ \text{m}$,
+
+$$\sin\theta_3=\frac{3\lambda}{d}=\frac{3(6.33\times10^{-7}\ \text{m})}{1.20\times10^{-4}\ \text{m}}=0.015825,$$
+
+so $\theta_3=0.907^\circ$.  A dark fringe has $d\sin\theta=(m+\tfrac12)\lambda$; the second dark fringe corresponds to $m=1$:
+
+$$\sin\theta_{\mathrm{dark},2}=\frac{1.5\lambda}{d}=0.0079125,\qquad \theta_{\mathrm{dark},2}=0.453^\circ.$$
+
+Therefore, the third bright fringe is at $0.907^\circ$ and the second dark fringe is at $0.453^\circ$ from the central axis.
 :::
 
 :::{exercise}
@@ -735,7 +743,12 @@ In a double-slit experiment with $d = 0.250\ \text{mm}$ and a screen at $L = 1.4
 :label: sol-interference-of-light-2
 :class: dropdown
 
-_Solution not yet written._
+For small angles, adjacent bright fringes are separated by $\Delta y=L\lambda/d$, so
+
+$$\lambda=\frac{d\Delta y}{L}=\frac{(0.250\times10^{-3}\ \text{m})(3.30\times10^{-3}\ \text{m})}{1.40\ \text{m}}
+=5.89\times10^{-7}\ \text{m}=589\ \text{nm}.$$
+
+Therefore, the light has wavelength about $589\ \text{nm}$, which is yellow light.
 :::
 
 :::{exercise}
@@ -748,7 +761,15 @@ A double slit with $d = 0.0800\ \text{mm}$ is illuminated at $\lambda = 480\ \te
 :label: sol-interference-of-light-3
 :class: dropdown
 
-_Solution not yet written._
+The small-angle fringe spacing is
+
+$$\Delta y=\frac{L\lambda}{d}=\frac{(2.50\ \text{m})(480\times10^{-9}\ \text{m})}{0.0800\times10^{-3}\ \text{m}}=1.50\times10^{-2}\ \text{m}=1.50\ \text{cm}.$$
+
+The half-width of the $8.0\ \text{cm}$ screen is $4.0\ \text{cm}$, so $|m|\Delta y\le4.0\ \text{cm}$ gives $|m|\le2.67$.  Thus $m=-2,-1,0,1,2$: five bright fringes fall on the screen.  In principle $|m|\le d/\lambda$:
+
+$$m_{\max}=\left\lfloor\frac{8.00\times10^{-5}\ \text{m}}{4.80\times10^{-7}\ \text{m}}\right\rfloor=166.$$
+
+Therefore, the spacing is $1.50\ \text{cm}$, five bright fringes fit on the stated screen, and the largest possible order is $166$.
 :::
 
 :::{exercise}
@@ -761,7 +782,12 @@ Two identical in-step sources emit light of wavelength $620\ \text{nm}$. Find th
 :label: sol-interference-of-light-4
 :class: dropdown
 
-_Solution not yet written._
+For in-step sources, a bright point requires $\Delta r=m\lambda$ and a dark point requires $\Delta r=(m+\tfrac12)\lambda$.  Hence
+
+$$\Delta r_{\rm bright}=1(620\ \text{nm})=620\ \text{nm},\qquad
+\Delta r_{\rm dark}=\tfrac12(620\ \text{nm})=310\ \text{nm}.$$
+
+Also $I/I_{\max}=\cos^2(\phi/2)=1/2$ first occurs at $\phi/2=\pi/4$, so $\phi=\pi/2$ and $\Delta r=\lambda/4=155\ \text{nm}$.  Therefore, the smallest nonzero path differences are $620\ \text{nm}$ (bright), $310\ \text{nm}$ (dark), and $155\ \text{nm}$ (half maximum).
 :::
 
 :::{exercise}
@@ -774,7 +800,11 @@ The double slit of Problem 3 is immersed, along with its source and screen, in a
 :label: sol-interference-of-light-5
 :class: dropdown
 
-_Solution not yet written._
+Immersion changes the wavelength to $\lambda_n=\lambda/n$ while $d$ and $L$ remain fixed.  Thus
+
+$$\Delta y_n=\frac{L\lambda_n}{d}=\frac{1}{1.47}(1.50\times10^{-2}\ \text{m})=1.02\times10^{-2}\ \text{m}=1.02\ \text{cm}.$$
+
+Therefore, the new fringe spacing is $1.02\ \text{cm}$; it depends only on the optical path difference between the two complete paths, so moving the liquid within an apparatus that is wholly immersed cannot change it.
 :::
 
 :::{exercise}
@@ -787,7 +817,15 @@ A source has a central wavelength of $600\ \text{nm}$ and a wavelength spread $\
 :label: sol-interference-of-light-6
 :class: dropdown
 
-_Solution not yet written._
+The coherence length is approximately $\ell_c=\lambda^2/\Delta\lambda$.  For the laser,
+
+$$\ell_c=\frac{(600\ \text{nm})^2}{0.02\ \text{nm}}=1.8\times10^7\ \text{nm}=1.8\times10^{-2}\ \text{m}=1.8\ \text{cm},$$
+
+and the number of wavelengths, hence the approximate number of visible fringes, is $\ell_c/\lambda=\lambda/\Delta\lambda=3.0\times10^4$.  For white light,
+
+$$\ell_c=\frac{(550\ \text{nm})^2}{300\ \text{nm}}=1.0\times10^3\ \text{nm}=1.0\ \mu\text{m},\qquad N\approx\frac{550}{300}=1.8.$$
+
+Therefore, the laser can show about $30{,}000$ fringes over a $1.8\ \text{cm}$ path mismatch, whereas white light shows only a few fringes because its wavelengths lose phase agreement almost immediately.
 :::
 
 :::{exercise}
@@ -800,7 +838,11 @@ Starting from $I = I_0\cos^2(\phi/2)$ with $\phi = (2\pi/\lambda)d\sin\theta$, s
 :label: sol-interference-of-light-7
 :class: dropdown
 
-_Solution not yet written._
+At half maximum, $\cos^2(\phi/2)=1/2$, so the two nearest values are $\phi/2=\pm\pi/4$ and therefore $\phi=\pm\pi/2$.  Since $\phi=(2\pi/\lambda)d\sin\theta$, the two half-maximum points obey
+
+$$d\sin\theta=\pm\frac{\lambda}{4}.$$
+
+Their separation is $\Delta(d\sin\theta)=\lambda/2$.  Adjacent bright fringes differ by $\Delta(d\sin\theta)=\lambda$, so the FWHM is $\lambda/2$ in this coordinate, exactly one-half of the fringe spacing.  Therefore, the FWHM is one-half the bright-fringe spacing, independently of $\lambda$, $d$, and $L$.
 :::
 
 :::{exercise}
@@ -813,7 +855,11 @@ Using the $N$-slit intensity formula, evaluate $I(\theta = 0)$ for $N = 2$ and $
 :label: sol-interference-of-light-8
 :class: dropdown
 
-_Solution not yet written._
+At $\theta=0$, all phases agree and the $N$-slit formula gives $I(0)=N^2I_1$.  Consequently,
+
+$$I_{N=2}=4I_1,\qquad I_{N=4}=16I_1,$$
+
+so doubling the slit number from $2$ to $4$ raises the peak height by $16/4=4$, confirming $I_{\max}\propto N^2$.  The principal-maximum angular width is proportional to $1/N$, so peak height times width scales as $N^2(1/N)=N$.  Therefore, coherent addition makes a peak taller as $N^2$, but its narrowing ensures that the total transmitted light is proportional only to the number $N$ of slits.
 :::
 
 :::{exercise}
@@ -826,7 +872,11 @@ Six equally spaced slits with $d = 3.00\ \mu\text{m}$ are illuminated at $\lambd
 :label: sol-interference-of-light-9
 :class: dropdown
 
-_Solution not yet written._
+Principal maxima obey $d\sin\theta=m\lambda$, hence
+
+$$\sin\theta=m\frac{600\ \text{nm}}{3.00\ \mu\text{m}}=0.200m.$$
+
+The allowed orders are $m=0,\pm1,\pm2,\pm3,\pm4,\pm5$, with $\sin\theta=0,\pm0.200,\pm0.400,\pm0.600,\pm0.800,\pm1.000$.  Zeros satisfy $d\sin\theta=q\lambda/N$ where $q=1,\ldots,N-1$ between adjacent principal maxima.  Between $m=0$ and $m=1$, $\sin\theta=q(0.200)/6$, giving $0.0333,0.0667,0.100,0.133,0.167$.  There are $N-2=4$ secondary maxima between those five zeros.  Therefore, the stated principal directions, five intervening zeros, and four secondary maxima describe the six-slit pattern.
 :::
 
 :::{exercise}
@@ -839,7 +889,15 @@ A soap film ($n = 1.33$) in air is viewed at near-normal incidence with $\lambda
 :label: sol-interference-of-light-10
 :class: dropdown
 
-_Solution not yet written._
+The air-to-film reflection is from lower to higher index and gains a $\pi$ phase shift; the film-to-air reflection is from higher to lower index and gains none.  This is the one-phase-reversal case.  Bright reflection therefore requires $2nt=(m+\tfrac12)\lambda$:
+
+$$t=\frac{(m+1/2)(500\ \text{nm})}{2(1.33)}.$$
+
+For $m=0,1$, $t=94.0\ \text{nm}$ and $282\ \text{nm}$.  Dark reflection requires $2nt=m\lambda$, and its smallest nonzero thickness is
+
+$$t=\frac{500\ \text{nm}}{2(1.33)}=188\ \text{nm}.$$
+
+Therefore, the first two bright thicknesses are $94.0\ \text{nm}$ and $282\ \text{nm}$, and the first nonzero dark thickness is $188\ \text{nm}$.
 :::
 
 :::{exercise}
@@ -852,7 +910,15 @@ A thin layer of oil ($n = 1.45$) floats on water ($n = 1.33$). (a) Determine whe
 :label: sol-interference-of-light-11
 :class: dropdown
 
-_Solution not yet written._
+For oil on water, the air--oil reflection reverses phase but the oil--water reflection does not, so this is the one-reversal case (Case A).  Its first bright thickness is
+
+$$t=\frac{\lambda}{4n}=\frac{600\ \text{nm}}{4(1.45)}=103\ \text{nm}.$$
+
+For oil on $n=1.60$ material, both reflections reverse phase, so this is Case B.  Bright reflection then requires $2nt=m\lambda$, whose first nonzero solution is
+
+$$t=\frac{\lambda}{2n}=\frac{600\ \text{nm}}{2(1.45)}=207\ \text{nm}.$$
+
+Therefore, oil on water is Case A and reflects strongly first at $103\ \text{nm}$, while oil on $n=1.60$ is Case B and first reflects strongly at $207\ \text{nm}$; the two phase reversals shift the condition by half an order.
 :::
 
 :::{exercise}
@@ -865,7 +931,11 @@ Design an antireflection coating of magnesium fluoride ($n = 1.38$) on glass ($n
 :label: sol-interference-of-light-12
 :class: dropdown
 
-_Solution not yet written._
+Both air--coating and coating--glass reflections reverse phase, so destructive reflection requires a quarter-wave thickness:
+
+$$t=\frac{\lambda}{4n}=\frac{600\ \text{nm}}{4(1.38)}=109\ \text{nm}.$$
+
+For this thickness, $2nt/\lambda_{\rm test}=(300\ \text{nm})/\lambda_{\rm test}$.  Thus it is $300/450=0.667$ at $450\ \text{nm}$ and $300/700=0.429$ at $700\ \text{nm}$, rather than the design value $0.500$.  Therefore, a $109\ \text{nm}$ coating minimizes $600\ \text{nm}$ reflection, but it is imperfect at blue and red wavelengths; the unequal residual reflection can look purple.
 :::
 
 :::{exercise}
@@ -878,7 +948,11 @@ A plano-convex lens with radius of curvature $R = 2.00\ \text{m}$ rests on a fla
 :label: sol-interference-of-light-13
 :class: dropdown
 
-_Solution not yet written._
+For reflected Newton rings with one phase reversal, dark rings satisfy $r_m^2=m\lambda R$.  Hence
+
+$$r_{10}=\sqrt{10(589\times10^{-9}\ \text{m})(2.00\ \text{m})}=3.43\times10^{-3}\ \text{m}=3.43\ \text{mm}.$$
+
+At the center $t=0$, the propagation phase difference is zero while one reflected ray has a $\pi$ shift, so the center is dark.  Since $r_m\propto\sqrt m$, $r_{m+1}-r_m$ decreases as $m$ increases.  Therefore, the tenth dark ring has radius $3.43\ \text{mm}$, the center is dark because of the single phase reversal, and rings crowd outward.
 :::
 
 :::{exercise}
@@ -891,7 +965,15 @@ Two flat plates $15.0\ \text{cm}$ long touch at one end and are separated at the
 :label: sol-interference-of-light-14
 :class: dropdown
 
-_Solution not yet written._
+For an air wedge, successive dark fringes correspond to a thickness increase $\Delta t=\lambda/2$.  With wedge angle $\alpha$, $\Delta t=\alpha\Delta x$, so
+
+$$\alpha=\frac{546\times10^{-9}\ \text{m}}{2(0.750\times10^{-3}\ \text{m})}=3.64\times10^{-4}\ \text{rad}.$$
+
+The foil thickness at $L=0.150\ \text{m}$ is
+
+$$t=\alpha L=(3.64\times10^{-4})(0.150\ \text{m})=5.46\times10^{-5}\ \text{m}=54.6\ \mu\text{m}.$$
+
+Therefore, the foil is $54.6\ \mu\text{m}$ thick.
 :::
 
 :::{exercise}
@@ -904,7 +986,11 @@ In a Michelson interferometer illuminated at $\lambda = 546\ \text{nm}$, one mir
 :label: sol-interference-of-light-15
 :class: dropdown
 
-_Solution not yet written._
+A mirror displacement $\Delta x$ changes the round-trip path by $2\Delta x$, so
+
+$$N=\frac{2\Delta x}{\lambda}=\frac{2(0.200\times10^{-3}\ \text{m})}{546\times10^{-9}\ \text{m}}=7.33\times10^2.$$
+
+Therefore, about $733$ fringes pass the reference mark.
 :::
 
 :::{exercise}
@@ -917,7 +1003,13 @@ A gas cell $8.00\ \text{cm}$ long in one arm of a Michelson interferometer is fi
 :label: sol-interference-of-light-16
 :class: dropdown
 
-_Solution not yet written._
+Filling a cell changes the double-pass optical path by $2L(n-1)$, which equals $N\lambda$.  Thus
+
+$$n-1=\frac{N\lambda}{2L}=\frac{122(589\times10^{-9}\ \text{m})}{2(0.0800\ \text{m})}=4.49\times10^{-4},$$
+
+$$n=1+4.49\times10^{-4}=1.000449.$$
+
+Therefore, the refractive index of carbon dioxide at $589\ \text{nm}$ is approximately $1.00045$.
 :::
 
 :::{exercise}
@@ -930,7 +1022,7 @@ Explain, using the concept of optical path length, why the thin-film conditions 
 :label: sol-interference-of-light-17
 :class: dropdown
 
-_Solution not yet written._
+Inside a film the wavelength is $\lambda/n$, so a round-trip geometric distance $2t$ contains $2t/(\lambda/n)=2nt/\lambda$ wavelengths; this is why the optical path is $2nt$.  Omitting $n=1.33$ for a $100\ \text{nm}$ soap film would predict a phase corresponding to $2t=200\ \text{nm}$ rather than $2nt=266\ \text{nm}$, an error of $66\ \text{nm}$ in optical path, or $66/500\approx0.13$ of a visible-light wavelength near $500\ \text{nm}$.  Therefore, dropping $n$ produces a substantial phase and color error, not a small correction.
 :::
 
 :::{exercise}
@@ -943,7 +1035,11 @@ Revisit the Michelson–Morley experiment of [Chapter 1](#ch-need-for-relativity
 :label: sol-interference-of-light-18
 :class: dropdown
 
-_Solution not yet written._
+The path difference is $\Delta\ell\sim Lv^2/c^2$, so the fringe shift is
+
+$$\Delta N\sim\frac{Lv^2}{\lambda c^2}=\frac{(11\ \text{m})(3.0\times10^4\ \text{m/s})^2}{(590\times10^{-9}\ \text{m})(3.00\times10^8\ \text{m/s})^2}=0.186.$$
+
+A $90^\circ$ rotation exchanges the arms and doubles the change, giving about $0.37$ fringe, consistent with the historical prediction.  Therefore, the expected shift was roughly $0.4$ fringe, about $40$ times the $0.01$-fringe sensitivity.
 :::
 
 :::{exercise}
@@ -956,7 +1052,11 @@ LIGO measures mirror displacements of about $10^{-19}\ \text{m}$ using $\lambda 
 :label: sol-interference-of-light-19
 :class: dropdown
 
-_Solution not yet written._
+The round-trip phase count is
+
+$$\Delta N=\frac{2\delta}{\lambda}=\frac{2(10^{-19}\ \text{m})}{1064\times10^{-9}\ \text{m}}=1.88\times10^{-13}\ \text{fringe}.$$
+
+Therefore, a LIGO-scale displacement is only about $1.9\times10^{-13}$ of a fringe in one pass, so real detectors must amplify the effective path with optical cavities and reduce statistical noise by averaging very large photon counts.
 :::
 
 :::{exercise}
@@ -969,5 +1069,13 @@ A double slit is illuminated with light containing two wavelengths, $480\ \text{
 :label: sol-interference-of-light-20
 :class: dropdown
 
-_Solution not yet written._
+Coincident bright fringes require $m_1\lambda_1=m_2\lambda_2$.  For $\lambda_1=480\ \text{nm}$ and $\lambda_2=600\ \text{nm}$,
+
+$$m_1(480)=m_2(600)\quad\Rightarrow\quad4m_1=5m_2.$$
+
+The smallest positive integers are $m_1=5$ and $m_2=4$.  The common position is
+
+$$y\simeq\frac{Lm_1\lambda_1}{d}=\frac{(2.00\ \text{m})(5)(480\times10^{-9}\ \text{m})}{0.150\times10^{-3}\ \text{m}}=3.20\times10^{-2}\ \text{m}=3.20\ \text{cm}.$$
+
+Therefore, the first noncentral coincidence is $3.20\ \text{cm}$ from the center.
 :::

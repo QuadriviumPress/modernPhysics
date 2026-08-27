@@ -537,7 +537,15 @@ A single slit of width $a = 0.0250\ \text{mm}$ is illuminated at $\lambda = 633\
 :label: sol-diffraction-of-light-1
 :class: dropdown
 
-_Solution not yet written._
+The minima obey $a\sin\theta_m=m\lambda$.  With $a=0.0250\ \text{mm}=2.50\times10^{-5}\ \text{m}$ and $\lambda=633\ \text{nm}$,
+
+$$\sin\theta_1=0.02532,\quad\theta_1=1.45^\circ,\qquad \sin\theta_2=0.05064,\quad\theta_2=2.90^\circ.$$
+
+The central maximum extends from the first minimum on one side to that on the other, so its small-angle width is
+
+$$w=\frac{2L\lambda}{a}=\frac{2(1.80\ \text{m})(633\times10^{-9}\ \text{m})}{2.50\times10^{-5}\ \text{m}}=9.12\times10^{-2}\ \text{m}=9.12\ \text{cm}.$$
+
+Therefore, the first and second minima are at $1.45^\circ$ and $2.90^\circ$, and the central maximum is $9.12\ \text{cm}$ wide.
 :::
 
 :::{exercise}
@@ -550,7 +558,11 @@ A slit of unknown width produces a central diffraction maximum $4.00\ \text{cm}$
 :label: sol-diffraction-of-light-2
 :class: dropdown
 
-_Solution not yet written._
+For a central-maximum width $w=2L\lambda/a$,
+
+$$a=\frac{2L\lambda}{w}=\frac{2(1.50\ \text{m})(520\times10^{-9}\ \text{m})}{4.00\times10^{-2}\ \text{m}}=3.90\times10^{-5}\ \text{m}.$$
+
+Therefore, the slit width is $3.90\times10^{-5}\ \text{m}$, or $0.0390\ \text{mm}$.
 :::
 
 :::{exercise}
@@ -563,7 +575,11 @@ Using $I = I_0[\sin(\beta/2)/(\beta/2)]^2$, compute the intensity, as a fraction
 :label: sol-diffraction-of-light-3
 :class: dropdown
 
-_Solution not yet written._
+At $\beta/2=1.5\pi$,
+
+$$\frac{I}{I_0}=\left[\frac{\sin(1.5\pi)}{1.5\pi}\right]^2=\left(\frac{-1}{4.712}\right)^2=0.0450.$$
+
+The true first secondary maximum is $0.0470I_0$, so the midpoint estimate is lower by $0.0020I_0$, or about $4\%$ of the secondary-maximum value.  Therefore, the halfway-point intensity is $4.50\%$ of the central maximum and is already a good approximation to the true $4.7\%$ secondary maximum.
 :::
 
 :::{exercise}
@@ -576,7 +592,11 @@ Show that the Fresnel number for a $0.10\ \text{mm}$ slit at $\lambda = 550\ \te
 :label: sol-diffraction-of-light-4
 :class: dropdown
 
-_Solution not yet written._
+The Fresnel number is $F=a^2/(\lambda L)$.  Setting $F\sim1$ gives
+
+$$L\sim\frac{a^2}{\lambda}=\frac{(0.10\times10^{-3}\ \text{m})^2}{550\times10^{-9}\ \text{m}}=1.82\times10^{-2}\ \text{m}=1.8\ \text{cm}.$$
+
+Therefore, distances only of order $2\ \text{cm}$ are still at the Fresnel--Fraunhofer boundary; the far-field formulas require a screen appreciably farther away than this scale.
 :::
 
 :::{exercise}
@@ -589,7 +609,11 @@ A double slit has slit width $a = 0.020\ \text{mm}$ and separation $d = 0.100\ \
 :label: sol-diffraction-of-light-5
 :class: dropdown
 
-_Solution not yet written._
+The ratio is
+
+$$\frac da=\frac{0.100\ \text{mm}}{0.020\ \text{mm}}=5.$$
+
+An interference maximum is missing when $m\lambda/d=p\lambda/a$, or $m=p(d/a)=5p$.  Up to $m=12$, the missing orders are $m=5$ and $m=10$.  The central envelope contains $|m|<d/a=5$, namely $m=-4,\ldots,4$, for nine nonmissing bright fringes.  Therefore, $d/a=5$, orders $5$ and $10$ are absent, and nine bright fringes lie inside the central diffraction maximum.
 :::
 
 :::{exercise}
@@ -602,7 +626,11 @@ A double slit produces $7$ bright fringes inside its central diffraction maximum
 :label: sol-diffraction-of-light-6
 :class: dropdown
 
-_Solution not yet written._
+If $d/a$ is an integer $q$, the central maximum contains the orders $m=-(q-1),\ldots,0,\ldots,q-1$, a total of $2q-1$ bright fringes.  Hence
+
+$$2q-1=7\quad\Rightarrow\quad q=4.$$
+
+Therefore, the slit-separation-to-width ratio is $d/a=4$.
 :::
 
 :::{exercise}
@@ -615,7 +643,15 @@ A diffraction grating has $5000$ lines per centimeter. (a) Find the line spacing
 :label: sol-diffraction-of-light-7
 :class: dropdown
 
-_Solution not yet written._
+The line density is $5000\ \text{cm}^{-1}=5.00\times10^5\ \text{m}^{-1}$, so
+
+$$d=\frac1{5.00\times10^5\ \text{m}^{-1}}=2.00\times10^{-6}\ \text{m}.$$
+
+For first order, $\sin\theta=\lambda/d=(500\ \text{nm})/(2000\ \text{nm})=0.250$, so $\theta=14.5^\circ$.  The largest order is $m_{\max}=\lfloor d/\lambda\rfloor=4$.  Differentiating $d\sin\theta=m\lambda$ gives
+
+$$\frac{d\theta}{d\lambda}=\frac{m}{d\cos\theta}=5.16\times10^5\ \text{rad/m}=0.0296^\circ/\text{nm}.$$
+
+Therefore, the spacing is $2.00\ \mu\text{m}$, the first-order angle is $14.5^\circ$, the highest order is $4$, and the first-order dispersion is $0.0296^\circ/\text{nm}$.
 :::
 
 :::{exercise}
@@ -628,7 +664,11 @@ A grating with $N = 4000$ illuminated lines is used in second order. (a) Find th
 :label: sol-diffraction-of-light-8
 :class: dropdown
 
-_Solution not yet written._
+Resolving power is $R=mN=\lambda/\Delta\lambda$.  In second order,
+
+$$\Delta\lambda=\frac{600\ \text{nm}}{(2)(4000)}=0.0750\ \text{nm}.$$
+
+In first order it is $600/4000=0.150\ \text{nm}$, twice as large, so the resolution is two times poorer.  If only $1000$ lines are illuminated in second order, $R=2000$ and $\Delta\lambda=0.300\ \text{nm}$; only illuminated lines contribute coherently.  Therefore, second order resolves $0.0750\ \text{nm}$ versus $0.150\ \text{nm}$ in first order, and narrowing the beam reduces the resolving power in direct proportion to the illuminated line count.
 :::
 
 :::{exercise}
@@ -641,7 +681,9 @@ A grating with $600$ lines per millimeter is illuminated with white light ($400$
 :label: sol-diffraction-of-light-9
 :class: dropdown
 
-_Solution not yet written._
+The spacing is $d=(600\ \text{mm}^{-1})^{-1}=1.667\ \mu\text{m}$.  In first order the endpoint angles are $\sin^{-1}(400/1667)=13.9^\circ$ and $\sin^{-1}(700/1667)=24.8^\circ$, so the width is $10.9^\circ$.  In second order they are $\sin^{-1}(0.480)=28.7^\circ$ and $\sin^{-1}(0.840)=57.1^\circ$, so the width is $28.4^\circ$.
+
+Overlap begins where $2\lambda_2=3\lambda_3$.  The first common direction occurs for $\lambda_2=600\ \text{nm}$ and $\lambda_3=400\ \text{nm}$, at $\sin\theta=0.720$ or $\theta=46.1^\circ$.  Therefore, the first- and second-order widths are $10.9^\circ$ and $28.4^\circ$, and second and third orders overlap from $46.1^\circ$ onward.
 :::
 
 :::{exercise}
@@ -654,7 +696,11 @@ The human eye has a pupil diameter of about $D = 4.0\ \text{mm}$ in typical ligh
 :label: sol-diffraction-of-light-10
 :class: dropdown
 
-_Solution not yet written._
+The Rayleigh limit is
+
+$$\theta_{\min}=\frac{1.22\lambda}{D}=\frac{1.22(550\times10^{-9}\ \text{m})}{4.0\times10^{-3}\ \text{m}}=1.68\times10^{-4}\ \text{rad}=34.6\ \text{arcsec}.$$
+
+At $L=0.250\ \text{m}$, $s\simeq L\theta=(0.250)(1.68\times10^{-4})=4.19\times10^{-5}\ \text{m}=42\ \mu\text{m}$.  Therefore, the ideal eye resolves about $34.6\ \text{arcsec}$, corresponding to $42\ \mu\text{m}$ at reading distance.
 :::
 
 :::{exercise}
@@ -667,7 +713,11 @@ A car's headlights are separated by $1.3\ \text{m}$. Using the eye's diffraction
 :label: sol-diffraction-of-light-11
 :class: dropdown
 
-_Solution not yet written._
+Using $s=L\theta_{\min}$,
+
+$$L_{\max}=\frac{1.3\ \text{m}}{1.68\times10^{-4}\ \text{rad}}=7.75\times10^3\ \text{m}=7.8\ \text{km}.$$
+
+Therefore, diffraction alone would permit resolution to roughly $7.8\ \text{km}$, but atmospheric turbulence, aberrations, contrast loss, and retinal sampling make the practical distance much shorter.
 :::
 
 :::{exercise}
@@ -680,7 +730,7 @@ A telescope's objective diameter is doubled at fixed wavelength. By what factor 
 :label: sol-diffraction-of-light-12
 :class: dropdown
 
-_Solution not yet written._
+Since $\theta_{\min}=1.22\lambda/D$, doubling $D$ changes the limit to $\theta_{\min}/2$.  Halving $\lambda$ from $550\ \text{nm}$ to $275\ \text{nm}$ at fixed $D$ also changes it to $\theta_{\min}/2$.  Therefore, either modification improves the angular resolution by a factor of two.
 :::
 
 :::{exercise}
@@ -693,7 +743,11 @@ A microscope objective of diameter $5.0\ \text{mm}$ has a working distance of $8
 :label: sol-diffraction-of-light-13
 :class: dropdown
 
-_Solution not yet written._
+The aperture numerical angle is approximately $\mathrm{NA}=D/(2L)=5.0/(16.0)=0.313$.  Thus
+
+$$d_{\min}\simeq\frac{0.61\lambda}{\mathrm{NA}}=\frac{0.61(550\ \text{nm})}{0.313}=1.07\ \mu\text{m}.$$
+
+At the same aperture angle, replacing $550\ \text{nm}$ by $4.0\ \text{pm}$ gives $d_{\min}=7.8\ \text{pm}$, an improvement by $550\ \text{nm}/4.0\ \text{pm}=1.38\times10^5$.  Therefore, the light microscope resolves about $1.1\ \mu\text{m}$ and the electron microscope about $8\ \text{pm}$ under the stated idealized comparison.
 :::
 
 :::{exercise}
@@ -706,7 +760,11 @@ X-rays of wavelength $\lambda = 0.0709\ \text{nm}$ (the molybdenum $K_\alpha$ li
 :label: sol-diffraction-of-light-14
 :class: dropdown
 
-_Solution not yet written._
+Bragg's law is $2d\sin\theta=m\lambda$.  For first order,
+
+$$d=\frac{0.0709\ \text{nm}}{2\sin15.0^\circ}=0.137\ \text{nm}.$$
+
+For second order, $\sin\theta_2=2\lambda/(2d)=0.518$, so $\theta_2=31.2^\circ$.  Finally $m\le2d/\lambda=3.86$, so $m_{\max}=3$.  Therefore, the plane spacing is $0.137\ \text{nm}$, the second-order reflection is at $31.2^\circ$, and orders through $m=3$ exist.
 :::
 
 :::{exercise}
@@ -719,7 +777,11 @@ A crystal has an interplanar spacing $d = 0.282\ \text{nm}$, close to the value 
 :label: sol-diffraction-of-light-15
 :class: dropdown
 
-_Solution not yet written._
+For first order,
+
+$$\lambda=2d\sin\theta=2(0.282\ \text{nm})\sin20.0^\circ=0.193\ \text{nm}.$$
+
+This is $1.93\times10^{-10}\ \text{m}$, in the X-ray region.  Since $\sin\theta\le1$, the longest diffracting wavelength is $\lambda_{\max}=2d=0.564\ \text{nm}$.  Therefore, the required wavelength is $0.193\ \text{nm}$ and no wavelength longer than $0.564\ \text{nm}$ can produce a Bragg reflection from these planes.
 :::
 
 :::{exercise}
@@ -732,7 +794,7 @@ Show that the general condition for a Bragg reflection to exist is $\lambda \le 
 :label: sol-diffraction-of-light-16
 :class: dropdown
 
-_Solution not yet written._
+Bragg's law requires $m\lambda=2d\sin\theta$.  Because $\sin\theta\le1$ and the smallest order is $m=1$, an order can exist only if $\lambda\le2d$.  For $d=0.3\ \text{nm}$, $2d=0.6\ \text{nm}$, whereas visible light has $\lambda=550\ \text{nm}$.  Therefore, visible light is about $900$ times too long in wavelength to diffract from atomic crystal planes.
 :::
 
 :::{exercise}
@@ -745,7 +807,7 @@ Explain physically why a narrower slit produces a wider central maximum, using $
 :label: sol-diffraction-of-light-17
 :class: dropdown
 
-_Solution not yet written._
+The first minimum of a narrow slit obeys $\theta_1\simeq\lambda/a$, so decreasing $a$ makes the diffracted beam wider: localization at a smaller opening creates a larger angular spread.  A telescope, however, uses a large aperture to make the diffraction pattern of each *point source* narrower, allowing two nearby patterns to be distinguished.  Therefore, the statements are complementary rather than contradictory: a narrow aperture spreads one beam widely, while a large collecting aperture reduces the diffraction blur of an image.
 :::
 
 :::{exercise}
@@ -758,7 +820,11 @@ A single slit of width $a = 1.0\ \mu\text{m}$ is illuminated at $\lambda = 500\ 
 :label: sol-diffraction-of-light-18
 :class: dropdown
 
-_Solution not yet written._
+For $a=1.0\ \mu\text{m}$, $\sin\theta_1=\lambda/a=0.500$, hence $\theta_1=30.0^\circ$.  Taking $\Delta p_y\sim p\sin\theta_1$ and $p=h/\lambda$,
+
+$$\Delta p_y\sim\frac{h}{\lambda}\frac{\lambda}{a}=\frac{h}{a}=6.63\times10^{-28}\ \text{kg m/s},$$
+
+so $\Delta y\Delta p_y\sim(1.0\times10^{-6}\ \text{m})(6.63\times10^{-28}\ \text{kg m/s})=6.63\times10^{-34}\ \text{J s}=h$.  For $a=0.50\ \mu\text{m}$, the first minimum is at $90^\circ$, $\Delta p_y\sim h/(0.50\ \mu\text{m})=1.33\times10^{-27}\ \text{kg m/s}$, and the product is again $h$.  Therefore, halving the slit doubles the momentum uncertainty while leaving $\Delta y\Delta p_y$ of order $h$.
 :::
 
 :::{exercise}
@@ -771,7 +837,11 @@ The Event Horizon Telescope images the black hole at the center of the galaxy M8
 :label: sol-diffraction-of-light-19
 :class: dropdown
 
-_Solution not yet written._
+The synthesized aperture has
+
+$$\theta_{\min}=\frac{1.22(1.3\times10^{-3}\ \text{m})}{1.0\times10^7\ \text{m}}=1.59\times10^{-10}\ \text{rad}=32.7\ \mu\text{arcsec}.$$
+
+Since $32.7\ \mu\text{arcsec}<40\ \mu\text{arcsec}$, the shadow is just resolvable.  Therefore, Earth-scale interferometry provides just enough resolution, whereas a single dish would need an impossible diameter comparable to Earth to supply the same aperture.
 :::
 
 :::{exercise}
@@ -784,5 +854,5 @@ A compact disc has data tracks spaced $1.6\ \mu\text{m}$ apart and acts as a ref
 :label: sol-diffraction-of-light-20
 :class: dropdown
 
-_Solution not yet written._
+For a CD, $d=1.6\ \mu\text{m}$ and $\sin\theta_1=650/1600=0.406$, so $\theta_1=24.0^\circ$.  The maximum order is $\lfloor1600/650\rfloor=2$.  For a DVD, $d=0.74\ \mu\text{m}$, so $\sin\theta_1=650/740=0.878$ and $\theta_1=61.4^\circ$.  Therefore, a DVD sends the first order to a much larger angle than a CD, producing a wider color spread because its track spacing is smaller.
 :::

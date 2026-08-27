@@ -350,7 +350,22 @@ A spaceship passes Earth at $v = 0.80c$. A clock on the ship ticks off exactly $
 :label: sol-special-relativity-1
 :class: dropdown
 
-_Solution not yet written._
+The Lorentz factor is
+
+$$
+\gamma=\frac{1}{\sqrt{1-v^2/c^2}}
+=\frac{1}{\sqrt{1-(0.80)^2}}
+=\frac{1}{\sqrt{0.36}}
+=1.67.
+$$
+
+Because the $1.00\ \text{s}$ interval is proper time, Earth measures
+
+$$
+\Delta t=\gamma\Delta t_0=(1.67)(1.00\ \text{s})=1.67\ \text{s}.
+$$
+
+Therefore, $\gamma=1.67$, and the Earth observer measures a time interval of $1.67\ \text{s}$.
 :::
 
 :::{exercise}
@@ -363,7 +378,22 @@ A meter stick at rest in frame $S'$ makes an angle such that it lies entirely al
 :label: sol-special-relativity-2
 :class: dropdown
 
-_Solution not yet written._
+The meter stick's proper length is $L_0=1.00\ \text{m}$.  Its Lorentz factor is
+
+$$
+\gamma=\frac{1}{\sqrt{1-(0.60)^2}}
+=\frac{1}{0.800}=1.25.
+$$
+
+Since it is parallel to the motion,
+
+$$
+L=\frac{L_0}{\gamma}
+=\frac{1.00\ \text{m}}{1.25}
+=0.800\ \text{m}.
+$$
+
+Therefore, frame $S$ measures the moving meter stick to be $0.800\ \text{m}$ long.
 :::
 
 :::{exercise}
@@ -376,7 +406,29 @@ Two events occur at the same time $t=0$ in frame $S$, at positions $x_1 = 0$ and
 :label: sol-special-relativity-3
 :class: dropdown
 
-_Solution not yet written._
+For $v=0.50c$,
+
+$$
+\gamma=\frac{1}{\sqrt{1-(0.50)^2}}=1.1547.
+$$
+
+The time transformation is $t'=\gamma(t-vx/c^2)$.  For event 1,
+
+$$
+t_1'=1.1547\left[0-\frac{(0.50c)(0\ \text{m})}{c^2}\right]=0\ \text{s}.
+$$
+
+For event 2,
+
+$$
+\begin{aligned}
+t_2'&=1.1547\left[0-\frac{(0.50)(3.00\times10^8\ \text{m/s})(300\ \text{m})}
+ {(3.00\times10^8\ \text{m/s})^2}\right]\\
+&=-5.77\times10^{-7}\ \text{s}.
+\end{aligned}
+$$
+
+Therefore, $t_1'=0\ \text{s}$ and $t_2'=-5.77\times10^{-7}\ \text{s}$, so the event at $x=300\ \text{m}$ occurs earlier in $S'$ and the events are not simultaneous there.
 :::
 
 :::{exercise}
@@ -389,7 +441,41 @@ A cosmic-ray muon is created at an altitude of $15\ \text{km}$, moving straight 
 :label: sol-special-relativity-4
 :class: dropdown
 
-_Solution not yet written._
+First calculate the Lorentz factor:
+
+$$
+\gamma=\frac{1}{\sqrt{1-(0.998)^2}}=15.8.
+$$
+
+In Earth's frame, the mean lifetime is
+
+$$
+\tau=\gamma\tau_0=(15.8)(2.2\ \mu\text{s})=34.8\ \mu\text{s}.
+$$
+
+The corresponding mean travel distance is
+
+$$
+\begin{aligned}
+d&=v\tau=(0.998)(3.00\times10^8\ \text{m/s})(34.8\times10^{-6}\ \text{s})\\
+&=1.04\times10^4\ \text{m}=10.4\ \text{km}.
+\end{aligned}
+$$
+
+In the muon's rest frame, the atmosphere is length-contracted:
+
+$$
+L'=\frac{L_0}{\gamma}=\frac{15.0\ \text{km}}{15.8}=0.948\ \text{km}.
+$$
+
+The ground approaches at $0.998c$, so the muon-frame time to the ground is
+
+$$
+t'=\frac{0.948\times10^3\ \text{m}}{(0.998)(3.00\times10^8\ \text{m/s})}
+=3.17\ \mu\text{s}.
+$$
+
+Therefore, the Earth-frame mean range is $10.4\ \text{km}$, less than $15\ \text{km}$, and equivalently the ground takes $3.17\ \mu\text{s}$ to arrive in the muon frame, longer than the $2.2\ \mu\text{s}$ mean proper lifetime; reaching the ground is not typical but is quite possible for a surviving fraction of muons.
 :::
 
 :::{exercise}
@@ -402,7 +488,16 @@ Two spaceships approach each other, each moving at speed $0.75c$ relative to Ear
 :label: sol-special-relativity-5
 :class: dropdown
 
-_Solution not yet written._
+Take one ship to have $v=+0.75c$ and the other $u=-0.75c$ in the Earth frame.  The speed magnitude measured from the first ship is
+
+$$
+|u'|=\left|\frac{u-v}{1-uv/c^2}\right|
+=\left|\frac{-0.75c-0.75c}{1-(-0.75)(0.75)}\right|
+=\frac{1.50c}{1.5625}
+=0.960c.
+$$
+
+Therefore, either ship measures the other to approach at $0.960c$; ordinary addition would give $1.50c$, an unphysical speed that would violate Einstein's second postulate that every inertial observer measures light at $c$ and no sublight velocity combination exceeds it.
 :::
 
 :::{exercise}
@@ -415,7 +510,13 @@ Sketch a spacetime diagram (axes $x$ and $ct$) in the rest frame $S$ of a labora
 :label: sol-special-relativity-6
 :class: dropdown
 
-_Solution not yet written._
+On axes with $ct$ vertical and $x$ horizontal, the object at rest has $x=2\ \text{m}$ for every $t$, so its worldline is vertical and makes an angle $0^\circ$ with the vertical axis.  The moving particle obeys
+
+$$
+x=vt=(0.5c)t=0.5(ct),
+$$
+
+so its angle $\theta$ from vertical obeys $\tan\theta=\Delta x/\Delta(ct)=0.5$, giving $\theta=26.6^\circ$.  The light pulse obeys $x=ct$, so $\tan\theta=1$ and $\theta=45.0^\circ$.  Therefore, the requested sketch contains a vertical line at $x=2\ \text{m}$, a $26.6^\circ$-from-vertical line from the origin for the massive particle, and a $45.0^\circ$-from-vertical light ray from the origin.
 :::
 
 :::{exercise}
@@ -428,7 +529,19 @@ Twin Bob leaves Earth at $v = 0.80c$, travels to a star $8.0$ light-years away (
 :label: sol-special-relativity-7
 :class: dropdown
 
-_Solution not yet written._
+In Alice's frame, each leg lasts
+
+$$
+t_{\rm leg}=\frac{8.0\ \text{light-years}}{0.80c}=10.0\ \text{years},
+$$
+
+so Alice's elapsed time is $20.0\ \text{years}$.  At $0.80c$, $\gamma=1.67$, and Bob's proper time is
+
+$$
+\tau_B=\frac{20.0\ \text{years}}{1.67}=12.0\ \text{years}.
+$$
+
+Therefore, Alice ages $20.0\ \text{years}$ while Bob ages $12.0\ \text{years}; Bob, unlike Alice, changes inertial frames at turnaround, so the apparent symmetry between their constant-velocity observations does not apply to the full trip.
 :::
 
 :::{exercise}
@@ -441,7 +554,27 @@ Two events are separated by $\Delta x = 5.0\times10^{8}\ \text{m}$ and $\Delta t
 :label: sol-special-relativity-8
 :class: dropdown
 
-_Solution not yet written._
+The interval is
+
+$$
+\begin{aligned}
+(\Delta s)^2&=c^2\Delta t^2-\Delta x^2\\
+&=(3.00\times10^8\ \text{m/s})^2(1.0\ \text{s})^2-(5.0\times10^8\ \text{m})^2\\
+&=-1.6\times10^{17}\ \text{m}^2.
+\end{aligned}
+$$
+
+It is negative, so the separation is spacelike.  Simultaneity in $S'$ requires
+
+$$
+0=\Delta t'=\gamma\left(\Delta t-\frac{v\Delta x}{c^2}\right),
+\qquad
+v=\frac{c^2\Delta t}{\Delta x}
+=\frac{(3.00\times10^8\ \text{m/s})^2(1.0\ \text{s})}{5.0\times10^8\ \text{m}}
+=0.600c.
+$$
+
+Therefore, the events are spacelike separated and a frame moving at $0.600c$ makes them simultaneous; their order can reverse without a causality paradox because no light-speed-or-slower signal can connect them.
 :::
 
 :::{exercise}
@@ -454,7 +587,24 @@ Light travels through a block of glass with refractive index $n = 1.50$ moving a
 :label: sol-special-relativity-9
 :class: dropdown
 
-_Solution not yet written._
+In the glass rest frame the light speed is $u'=c/n=2.00\times10^8\ \text{m/s}$.  Exact velocity addition gives
+
+$$
+u=\frac{u'+v}{1+u'v/c^2}
+=\frac{2.00\times10^8\ \text{m/s}+20\ \text{m/s}}
+ {1+(2.00\times10^8\ \text{m/s})(20\ \text{m/s})/(3.00\times10^8\ \text{m/s})^2}
+=2.00000011111\times10^8\ \text{m/s}.
+$$
+
+The Fizeau approximation gives
+
+$$
+\frac{c}{n}+v\left(1-\frac{1}{n^2}\right)
+=2.00\times10^8\ \text{m/s}+(20\ \text{m/s})\left(1-\frac{1}{2.25}\right)
+=2.00000011111\times10^8\ \text{m/s}.
+$$
+
+Therefore, both methods give $u\approx2.00000011111\times10^8\ \text{m/s}$ (an increase of $11.1\ \text{m/s}$); their difference is below $10^{-6}\ \text{m/s}$ at this speed because the omitted terms are of order $(v/c)^2$.
 :::
 
 :::{exercise}
@@ -467,7 +617,7 @@ A wire carries equal and opposite densities of positive and negative charge movi
 :label: sol-special-relativity-10
 :class: dropdown
 
-_Solution not yet written._
+In the lab the positive and negative linear charge densities cancel, so the wire is neutral.  An observer moving alongside one species sees that species at rest but sees the other species moving at a different relativistic relative speed.  Because moving charge separations along the wire are length-contracted by different factors, the two charge densities no longer have equal magnitudes in that frame, and the observer therefore measures a net charge density and an electric field.  Therefore, the test charge has an electric force in that observer's frame, while the lab observer describes the same physical acceleration using the transformed electric and magnetic fields; the two descriptions must agree because they are related by the Lorentz transformation.
 :::
 
 :::{exercise}
@@ -480,7 +630,22 @@ A spacecraft recedes directly from Earth at $v = 0.60c$, transmitting a radio si
 :label: sol-special-relativity-11
 :class: dropdown
 
-_Solution not yet written._
+For recession,
+
+$$
+f_{\rm rec}=f_0\sqrt{\frac{1-v/c}{1+v/c}}
+=(100.0\ \text{MHz})\sqrt{\frac{1-0.60}{1+0.60}}
+=50.0\ \text{MHz}.
+$$
+
+For approach, the signs interchange:
+
+$$
+f_{\rm app}=(100.0\ \text{MHz})\sqrt{\frac{1+0.60}{1-0.60}}
+=200.0\ \text{MHz}.
+$$
+
+Therefore, Earth receives $50.0\ \text{MHz}$ from the receding spacecraft and $200.0\ \text{MHz}$ from the approaching one; the shifts are not the classical $f_0(1\pm v/c)$ because time dilation changes the emitted crest spacing in addition to the changing light-travel distance.
 :::
 
 :::{exercise}
@@ -493,7 +658,21 @@ A star's light source moves in a circular orbit, at speed $v = 0.30c$, around a 
 :label: sol-special-relativity-12
 :class: dropdown
 
-_Solution not yet written._
+For transverse motion, $f_{\rm obs}=f_0/\gamma$.  Here
+
+$$
+\gamma=\frac{1}{\sqrt{1-(0.30)^2}}=1.0483,
+\qquad
+\frac{f_{\rm obs}}{f_0}=\frac{1}{1.0483}=0.9539.
+$$
+
+Thus
+
+$$
+\frac{f_0-f_{\rm obs}}{f_0}=1-0.9539=0.0461=4.61\%.
+$$
+
+Therefore, the transverse Doppler shift is a $4.61\%$ redshift, because time dilation always makes the moving source's clock run slow; reversing a purely transverse velocity does not change $v^2$ or $\gamma$, whereas reversing longitudinal motion changes whether successive crests are emitted closer to or farther from the observer.
 :::
 
 :::{exercise}
@@ -506,7 +685,7 @@ In Bell's spaceship paradox, both ships execute identical acceleration profiles 
 :label: sol-special-relativity-13
 :class: dropdown
 
-_Solution not yet written._
+Although the ships keep the same separation $L_0$ in frame $S$, the instantaneous rest frame of either accelerating ship changes continuously.  In each such momentary rest frame, the other ship is not generally at rest at the same separation: relativity of simultaneity assigns the two ships' simultaneous positions differently, and the other ship is seen to recede during part of the acceleration.  A string that would be unstressed in a common instantaneous rest frame requires a larger proper length as the ships gain speed, while its endpoints are constrained to remain only $L_0$ apart in $S$.  Therefore, the string is stretched beyond its natural proper length and develops increasing tension, eventually breaking if it is not strong enough.
 :::
 
 :::{exercise}
@@ -519,5 +698,27 @@ Outline the derivation of the relativistic Doppler formula for direct recession,
 :label: sol-special-relativity-14
 :class: dropdown
 
-_Solution not yet written._
+Let $\Delta t_0=1/f_0$ be the proper interval between emitted crests.  Time dilation makes the Earth-frame emission interval $\Delta t=\gamma\Delta t_0$.  During that interval a receding source moves an additional distance $v\Delta t$, adding a propagation delay $v\Delta t/c$, so
+
+$$
+\Delta t_{\rm obs}=\Delta t+\frac{v\Delta t}{c}
+=\gamma\Delta t_0\left(1+\frac{v}{c}\right).
+$$
+
+Using $\gamma=1/\sqrt{(1-v/c)(1+v/c)}$ gives
+
+$$
+\frac{\Delta t_{\rm obs}}{\Delta t_0}
+=\frac{1+v/c}{\sqrt{(1-v/c)(1+v/c)}}
+=\sqrt{\frac{1+v/c}{1-v/c}}.
+$$
+
+Since frequency is the reciprocal of period,
+
+$$
+f_{\rm obs}=\frac{1}{\Delta t_{\rm obs}}
+=f_0\sqrt{\frac{1-v/c}{1+v/c}}.
+$$
+
+Therefore, combining time dilation with the extra light-travel time produces the relativistic Doppler formula for direct recession.
 :::

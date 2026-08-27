@@ -251,7 +251,34 @@ A proton (rest energy $938\ \text{MeV}$) moves at $u = 0.900c$. Find (a) $\gamma
 :label: sol-relativistic-dynamics-1
 :class: dropdown
 
-_Solution not yet written._
+The Lorentz factor is
+
+$$
+\gamma=\frac{1}{\sqrt{1-(0.900)^2}}=2.294.
+$$
+
+The total energy is
+
+$$
+E=\gamma mc^2=(2.294)(938\ \text{MeV})=2.15\times10^3\ \text{MeV}.
+$$
+
+The kinetic energy is
+
+$$
+K=E-mc^2=(2.15\times10^3\ \text{MeV})-(938\ \text{MeV})
+=1.21\times10^3\ \text{MeV}.
+$$
+
+Finally,
+
+$$
+p=\gamma m u=\gamma\frac{u}{c}\frac{mc^2}{c}
+=(2.294)(0.900)\frac{938\ \text{MeV}}{c}
+=1.94\times10^3\ \text{MeV}/c.
+$$
+
+Therefore, the proton has $\gamma=2.294$, $E=2.15\times10^3\ \text{MeV}$, $K=1.21\times10^3\ \text{MeV}$, and $p=1.94\times10^3\ \text{MeV}/c$.
 :::
 
 :::{exercise}
@@ -264,7 +291,38 @@ Find the speed at which a particle's relativistic kinetic energy differs from th
 :label: sol-relativistic-dynamics-2
 :class: dropdown
 
-_Solution not yet written._
+Write $\beta=u/c$.  The ratio is
+
+$$
+\frac{K_{\rm rel}}{K_{\rm Newt}}
+=\frac{(\gamma-1)mc^2}{\tfrac12 m\beta^2c^2}
+=\frac{2(\gamma-1)}{\beta^2}.
+$$
+
+For a $10\%$ difference, set this ratio equal to $1.10$.  Since $\beta^2=1-1/\gamma^2$,
+
+$$
+\frac{2(\gamma-1)}{1-1/\gamma^2}=1.10
+\quad\Longrightarrow\quad
+\frac{2\gamma^2}{\gamma+1}=1.10.
+$$
+
+Thus
+
+$$
+2\gamma^2-1.10\gamma-1.10=0,
+\qquad
+\gamma=1.06597,
+$$
+
+where the positive root was chosen.  Hence
+
+$$
+\beta=\sqrt{1-\frac{1}{\gamma^2}}
+=0.346.
+$$
+
+Therefore, the relativistic kinetic energy is $10\%$ larger than the Newtonian prediction at $u\approx0.346c=1.04\times10^8\ \text{m/s}$.
 :::
 
 :::{exercise}
@@ -277,7 +335,20 @@ In electron–positron annihilation, an electron and a positron (each of rest en
 :label: sol-relativistic-dynamics-3
 :class: dropdown
 
-_Solution not yet written._
+Initially, both particles are essentially at rest, so their total energy is their combined rest energy:
+
+$$
+E_i=(0.511\ \text{MeV})+(0.511\ \text{MeV})=1.022\ \text{MeV}.
+$$
+
+If the two photons have equal energy $E_\gamma$, energy conservation gives
+
+$$
+2E_\gamma=1.022\ \text{MeV},
+\qquad E_\gamma=0.511\ \text{MeV}.
+$$
+
+The initial total momentum is zero.  Each photon has momentum magnitude $p_\gamma=E_\gamma/c$, so two equal nonzero momentum vectors can sum to zero only if they point in opposite directions.  Therefore, the annihilation produces two photons of energy $0.511\ \text{MeV}$ each, traveling in exactly opposite directions.
 :::
 
 :::{exercise}
@@ -290,7 +361,39 @@ A pion at rest (rest energy $139.6\ \text{MeV}$) decays into a muon (rest energy
 :label: sol-relativistic-dynamics-4
 :class: dropdown
 
-_Solution not yet written._
+The pion is initially at rest, so its total momentum is zero.  The muon and massless neutrino must therefore have equal and opposite momentum magnitude $p$.  Their energies are
+
+$$
+E_\mu=\sqrt{(pc)^2+(105.7\ \text{MeV})^2},
+\qquad E_\nu=pc.
+$$
+
+Energy conservation gives
+
+$$
+139.6\ \text{MeV}=E_\mu+pc.
+$$
+
+Substitute $pc=139.6\ \text{MeV}-E_\mu$ into the muon's energy relation:
+
+$$
+E_\mu^2=(139.6\ \text{MeV}-E_\mu)^2+(105.7\ \text{MeV})^2.
+$$
+
+Expanding and cancelling $E_\mu^2$ yields
+
+$$
+2(139.6\ \text{MeV})E_\mu=(139.6\ \text{MeV})^2+(105.7\ \text{MeV})^2,
+$$
+
+so
+
+$$
+E_\mu=\frac{(139.6\ \text{MeV})^2+(105.7\ \text{MeV})^2}{2(139.6\ \text{MeV})}
+=109.8\ \text{MeV}.
+$$
+
+Therefore, the muon's kinetic energy is $K_\mu=109.8\ \text{MeV}-105.7\ \text{MeV}=4.1\ \text{MeV}$.
 :::
 
 :::{exercise}
@@ -303,7 +406,30 @@ Show algebraically that $E^2 = (pc)^2 + (mc^2)^2$ follows from $\vec p = \gamma 
 :label: sol-relativistic-dynamics-5
 :class: dropdown
 
-_Solution not yet written._
+Starting with the definitions,
+
+$$
+E^2=(\gamma mc^2)^2=\gamma^2m^2c^4
+$$
+
+and
+
+$$
+(pc)^2=(\gamma mu c)^2=\gamma^2m^2u^2c^2.
+$$
+
+Subtracting gives
+
+$$
+\begin{aligned}
+E^2-(pc)^2
+&=\gamma^2m^2c^4-\gamma^2m^2u^2c^2\\
+&=\gamma^2m^2c^4\left(1-\frac{u^2}{c^2}\right)\\
+&=m^2c^4,
+\end{aligned}
+$$
+
+because $\gamma^2(1-u^2/c^2)=1$.  Therefore, rearranging gives $E^2=(pc)^2+(mc^2)^2$.
 :::
 
 :::{exercise}
@@ -316,7 +442,36 @@ The Sun radiates energy at a rate of about $3.8\times10^{26}\ \text{W}$. Use mas
 :label: sol-relativistic-dynamics-6
 :class: dropdown
 
-_Solution not yet written._
+Mass--energy equivalence gives $P=(\Delta m/\Delta t)c^2$, so
+
+$$
+\frac{\Delta m}{\Delta t}=\frac{P}{c^2}
+=\frac{3.8\times10^{26}\ \text{J/s}}{(3.00\times10^8\ \text{m/s})^2}
+=4.2\times10^9\ \text{kg/s}.
+$$
+
+The elapsed time is
+
+$$
+t=(4.6\times10^9\ \text{yr})\left(3.156\times10^7\ \text{s/yr}\right)
+=1.45\times10^{17}\ \text{s}.
+$$
+
+At the stated constant rate, the lost mass would be
+
+$$
+\Delta m=(4.2\times10^9\ \text{kg/s})(1.45\times10^{17}\ \text{s})
+=6.1\times10^{26}\ \text{kg}.
+$$
+
+Its fraction of the Sun's mass is
+
+$$
+\frac{\Delta m}{M_\odot}=\frac{6.1\times10^{26}\ \text{kg}}{2.0\times10^{30}\ \text{kg}}
+=3.1\times10^{-4}=0.031\%.
+$$
+
+Therefore, the Sun loses about $4.2\times10^9\ \text{kg}$ each second to radiation, but this amounts to only about $0.031\%$ of its present mass over $4.6$ billion years and is not significant for its lifetime so far.
 :::
 
 :::{exercise}
@@ -329,7 +484,32 @@ Fill in the missing step in the derivation of relativistic momentum: starting fr
 :label: sol-relativistic-dynamics-7
 :class: dropdown
 
-_Solution not yet written._
+Substitution of $u_y(A)=w_0/\gamma(v)$ into transverse-momentum conservation gives
+
+$$
+m(u(A))\frac{w_0}{\gamma(v)}=m(u(B))w_0.
+$$
+
+For nonzero $w_0$, cancel $w_0$:
+
+$$
+\frac{m(u(A))}{\gamma(v)}=m(u(B)).
+$$
+
+As $w_0\to0$, particle $B$ has only its vanishing transverse motion, so $u(B)\to0$ and $m(u(B))\to m(0)=m$.  Particle $A$ has $u_x(A)=v$ and $u_y(A)=w_0/\gamma(v)\to0$, so
+
+$$
+u(A)=\sqrt{v^2+\left[\frac{w_0}{\gamma(v)}\right]^2}\longrightarrow v.
+$$
+
+Consequently,
+
+$$
+\frac{m(v)}{\gamma(v)}=m,
+\qquad m(v)=\gamma(v)m.
+$$
+
+Therefore, the momentum law required by this limiting collision argument is $\vec p=\gamma m\vec u$.
 :::
 
 :::{exercise}
@@ -342,7 +522,28 @@ Two identical lumps of putty, each of rest mass $m$ and speed $u = 0.60c$ (in th
 :label: sol-relativistic-dynamics-8
 :class: dropdown
 
-_Solution not yet written._
+For $u=0.60c$,
+
+$$
+\gamma=\frac{1}{\sqrt{1-(0.60)^2}}=1.25.
+$$
+
+Each lump has energy $E=\gamma mc^2=1.25mc^2$.  Their momenta are equal and opposite, so the total initial four-vector is
+
+$$
+\left(\frac{E_{\rm tot}}{c},p_{\rm tot}\right)
+=\left(\frac{2(1.25mc^2)}{c},0\right)
+=\left(\frac{2.50mc^2}{c},0\right).
+$$
+
+The composite is at rest, so its four-vector is $(Mc,0)$; conservation gives
+
+$$
+Mc^2=2.50mc^2,
+\qquad M=2.50m.
+$$
+
+Therefore, the stuck-together lump has rest mass $2.50m$, not $2m$; the extra $0.50mc^2$ is the original kinetic energy retained as internal energy, such as heat and deformation, in the composite.
 :::
 
 :::{exercise}
@@ -355,7 +556,47 @@ A physicist wants to create a hypothetical new particle $X$, of rest mass $m_X =
 :label: sol-relativistic-dynamics-9
 :class: dropdown
 
-_Solution not yet written._
+At threshold, the final particles are at rest relative to one another in the CM frame, so their total rest mass is
+
+$$
+M=2m_p+m_X=2m_p+10m_p=12m_p.
+$$
+
+For a stationary target, the initial invariant is
+
+$$
+M^2c^4=(E_b+m_pc^2)^2-(p_bc)^2
+=2m_p^2c^4+2E_bm_pc^2,
+$$
+
+where $E_b^2-(p_bc)^2=m_p^2c^4$ was used.  Set this equal to $(12m_pc^2)^2$:
+
+$$
+144m_p^2c^4=2m_p^2c^4+2E_bm_pc^2,
+$$
+
+so
+
+$$
+E_b=71m_pc^2,
+\qquad K_b=E_b-m_pc^2=70m_pc^2.
+$$
+
+For equal and opposite collider beams, the lab is the CM frame, and threshold requires
+
+$$
+2E_b=12m_pc^2,
+\qquad E_b=6m_pc^2,
+\qquad K_b=5m_pc^2
+$$
+
+per proton.  The ratio is
+
+$$
+\frac{70m_pc^2}{5m_pc^2}=14.
+$$
+
+Therefore, the fixed-target threshold is $70m_pc^2$ of kinetic energy, the collider threshold is $5m_pc^2$ per beam proton, and colliders require fourteen times less kinetic energy per incident proton because the CM has no net forward motion.
 :::
 
 :::{exercise}
@@ -368,7 +609,23 @@ A photon of energy $E_\gamma$ collides head-on with a stationary electron (rest 
 :label: sol-relativistic-dynamics-10
 :class: dropdown
 
-_Solution not yet written._
+There is an inconsistency in the phrase “at rest in the lab frame”: the incident photon has momentum $p_\gamma=E_\gamma/c$, so four-momentum conservation requires the final particle to recoil with that momentum.  The invariant mass of the one-particle final state is nevertheless found from the initial four-vector:
+
+$$
+\begin{aligned}
+M^2c^4&=(mc^2+E_\gamma)^2-(p_\gamma c)^2\\
+&=(mc^2+E_\gamma)^2-E_\gamma^2\\
+&=m^2c^4+2mc^2E_\gamma.
+\end{aligned}
+$$
+
+Thus
+
+$$
+M=\sqrt{m^2+\frac{2mE_\gamma}{c^2}}.
+$$
+
+Therefore, a momentum-conserving perfectly inelastic collision produces a recoiling particle with rest mass $M=\sqrt{m^2+2mE_\gamma/c^2}$; a final particle at rest is impossible unless $E_\gamma=0$.
 :::
 
 :::{exercise}
@@ -381,7 +638,21 @@ A tachyon is hypothesized to have real, finite energy and momentum despite trave
 :label: sol-relativistic-dynamics-11
 :class: dropdown
 
-_Solution not yet written._
+For a particle with finite nonzero energy, $p=Eu/c^2$, so the invariant becomes
+
+$$
+m^2c^4=E^2-(pc)^2
+=E^2-\left(\frac{Eu}{c}\right)^2
+=E^2\left(1-\frac{u^2}{c^2}\right).
+$$
+
+At $u=1.5c$,
+
+$$
+m^2c^4=E^2(1-2.25)=-1.25E^2<0,
+$$
+
+so $m^2<0$.  Such a signal connects spacelike-separated events.  For a spacelike separation, a Lorentz transformation can reverse the order of emission and reception, so some inertial observer would see the signal arrive before it was sent; combining such signals between suitably moving observers permits a reply to reach the sender before the original message.  Therefore, a tachyon requires negative mass squared in this formalism and would permit a causality paradox even apart from that problem.
 :::
 
 :::{exercise}
@@ -394,5 +665,27 @@ Verify the claim in the worked example on antiproton production that a naive est
 :label: sol-relativistic-dynamics-12
 :class: dropdown
 
-_Solution not yet written._
+At threshold the incident proton has $E_b=7mc^2$ and the stationary target has energy $mc^2$, so
+
+$$
+E_{\rm tot}=8mc^2.
+$$
+
+The beam momentum follows from its invariant:
+
+$$
+p_bc=\sqrt{E_b^2-m^2c^4}
+=\sqrt{(7mc^2)^2-(mc^2)^2}
+=\sqrt{48}\,mc^2=4\sqrt3\,mc^2.
+$$
+
+The CM frame moves at $V=c^2p_{\rm tot}/E_{\rm tot}$, hence
+
+$$
+V=\frac{c^2(4\sqrt3\,mc)}{8mc^2}
+=\frac{\sqrt3}{2}c
+=0.866c.
+$$
+
+The final four-particle system has rest energy $4mc^2$ but lab energy $8mc^2$; its Lorentz factor in the lab is $\gamma_{\rm CM}=8mc^2/(4mc^2)=2$, consistent with $V=0.866c$.  Therefore, the naive $2mc^2$ counts only the new pair's rest energy, whereas the additional $4mc^2$ of the $6mc^2$ beam kinetic energy is unavoidable kinetic energy of the entire final system moving at $0.866c$ in the lab.
 :::

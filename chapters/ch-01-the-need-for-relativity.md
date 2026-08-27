@@ -234,7 +234,31 @@ Earth orbits the Sun at approximately $v = 3.0\times10^4\ \text{m/s}$. Using the
 :label: sol-need-for-relativity-1
 :class: dropdown
 
-_Solution not yet written._
+Let $\beta=v/c$.  The requested fractional difference is
+
+$$
+\frac{c+v}{c-v}-1
+=\frac{1+\beta}{1-\beta}-1
+=\frac{(1+\beta)-(1-\beta)}{1-\beta}
+=\frac{2\beta}{1-\beta}.
+$$
+
+With $c=3.00\times10^8\ \text{m/s}$,
+
+$$
+\beta=\frac{3.0\times10^4\ \text{m/s}}{3.00\times10^8\ \text{m/s}}
+=1.0\times10^{-4},
+$$
+
+so
+
+$$
+\frac{2\beta}{1-\beta}
+=\frac{2.0\times10^{-4}}{0.9999}
+=2.000\times10^{-4}.
+$$
+
+Therefore, Galilean addition predicts a fractional directional difference of about $2.0\times10^{-4}$, or $200\ \text{parts per million}$, so an experiment would need sensitivity appreciably better than $2\times10^{-4}$ in speed or travel time to detect it.
 :::
 
 :::{exercise}
@@ -247,7 +271,38 @@ A swimmer who swims at speed $u$ in still water crosses a river of width $L$ flo
 :label: sol-need-for-relativity-2
 :class: dropdown
 
-_Solution not yet written._
+For the cross-river trip, the swimmer must devote a velocity component $v$ upstream to cancel the current.  If $u_y$ is the shore-frame component across the river, then
+
+$$
+u^2=v^2+u_y^2,
+\qquad
+u_y=\sqrt{u^2-v^2}.
+$$
+
+Each crossing takes $L/u_y$, so
+
+$$
+t_\perp=2\frac{L}{\sqrt{u^2-v^2}}.
+$$
+
+For the upstream--downstream trip, the two shore-frame speeds are $u-v$ and $u+v$.  Thus
+
+$$
+t_\parallel=\frac{L}{u-v}+\frac{L}{u+v}
+=\frac{L[(u+v)+(u-v)]}{(u-v)(u+v)}
+=\frac{2Lu}{u^2-v^2}.
+$$
+
+Their ratio is
+
+$$
+\frac{t_\parallel}{t_\perp}
+=\frac{2Lu/(u^2-v^2)}{2L/\sqrt{u^2-v^2}}
+=\frac{u}{\sqrt{u^2-v^2}}>1
+\quad (v>0).
+$$
+
+Therefore, the upstream--downstream trip takes longer than the cross-river trip; this is precisely the classical ether prediction that the interferometer arm parallel to an ether wind has a longer round-trip light time than the perpendicular arm.
 :::
 
 :::{exercise}
@@ -260,7 +315,7 @@ Explain, in your own words, why a null result from a single run of the Michelson
 :label: sol-need-for-relativity-3
 :class: dropdown
 
-_Solution not yet written._
+One null result could have occurred at an unlucky orientation, at a time when Earth's velocity happened to have a small component relative to a hypothetical ether, or because of a temporary instrumental error.  A stationary-ether model predicts that Earth's velocity relative to the ether changes in direction and magnitude over a day and, especially, over a year as Earth orbits the Sun.  Therefore, obtaining null results after rotating the apparatus and repeating the measurement at many times of year rules out those accidental explanations: the predicted signal should have changed, but it did not.
 :::
 
 :::{exercise}
@@ -273,7 +328,7 @@ Suppose light, rather than obeying Einstein's second postulate, were emitted at 
 :label: sol-need-for-relativity-4
 :class: dropdown
 
-_Solution not yet written._
+In an emission theory, light emitted while a star moves toward Earth would initially have a larger Earth-frame speed than light emitted while it moves away.  During a binary orbit, successive pulses emitted at different orbital phases would therefore have different travel times across the same enormous star--Earth distance.  The apparent orbital timing would be systematically advanced for some phases and delayed for others, producing a distorted or scrambled light curve.  Since observed binary-star timing does not show that distance-amplified distortion, light cannot in general travel at $c$ relative to its moving source.
 :::
 
 :::{exercise}
@@ -286,7 +341,7 @@ Explain why the principle of relativity (postulate 1) already applied to Newtoni
 :label: sol-need-for-relativity-5
 :class: dropdown
 
-_Solution not yet written._
+Newtonian mechanics already obeyed the first postulate because experiments involving forces, masses, and accelerations have the same form in every frame moving at constant velocity: $\vec F=m\vec a$ is unchanged by a Galilean transformation.  Einstein's second postulate adds the new empirical statement that every inertial observer also measures light in vacuum to have the same speed, $c=3.00\times10^8\ \text{m/s}$, independent of the source's or observer's motion.  This addition is absent from Newtonian mechanics and is incompatible with its velocity-addition rule.
 :::
 
 :::{exercise}
@@ -299,7 +354,45 @@ Derive the fringe-shift formula $\Delta N = 2Lv^2/(\lambda c^2)$ by working thro
 :label: sol-need-for-relativity-6
 :class: dropdown
 
-_Solution not yet written._
+For the parallel arm, classical velocity addition gives
+
+$$
+t_\parallel=\frac{L}{c-v}+\frac{L}{c+v}
+=\frac{2Lc}{c^2-v^2}
+=\frac{2L}{c}\left(1-\frac{v^2}{c^2}\right)^{-1}.
+$$
+
+For the perpendicular arm, the light's transverse speed is $\sqrt{c^2-v^2}$, so
+
+$$
+t_\perp=\frac{2L}{\sqrt{c^2-v^2}}
+=\frac{2L}{c}\left(1-\frac{v^2}{c^2}\right)^{-1/2}.
+$$
+
+For $v\ll c$, use $(1-x)^{-1}\simeq1+x$ and $(1-x)^{-1/2}\simeq1+x/2$:
+
+$$
+t_\parallel-t_\perp
+\simeq\frac{2L}{c}\left(\frac{v^2}{c^2}-\frac{v^2}{2c^2}\right)
+=\frac{Lv^2}{c^3}.
+$$
+
+Rotation reverses the sign of this difference, so it doubles the change in optical path:
+
+$$
+\Delta N=\frac{2c(t_\parallel-t_\perp)}{\lambda}
+=\frac{2Lv^2}{\lambda c^2}.
+$$
+
+For $L=4.00\times10^3\ \text{m}$, $\lambda=1064\times10^{-9}\ \text{m}$, $v=3.0\times10^4\ \text{m/s}$, and $c=3.00\times10^8\ \text{m/s}$,
+
+$$
+\Delta N=\frac{2(4.00\times10^3\ \text{m})(3.0\times10^4\ \text{m/s})^2}
+ {(1064\times10^{-9}\ \text{m})(3.00\times10^8\ \text{m/s})^2}
+=7.5\times10^1\ \text{fringes}.
+$$
+
+Therefore, a stationary ether would predict about $75$ fringes for this apparatus, about $75/0.37\simeq2.0\times10^2$ times the original 1887 predicted shift, before considering the much better readout precision of modern instruments.
 :::
 
 :::{exercise}
@@ -312,7 +405,28 @@ A modern, high-precision version of the Michelson–Morley experiment finds an u
 :label: sol-need-for-relativity-7
 :class: dropdown
 
-_Solution not yet written._
+The stated upper bound is
+
+$$
+\Delta N_{\max}=(0.4\ \text{fringe})(10^{-5})=4.0\times10^{-6}\ \text{fringe}.
+$$
+
+For a fixed apparatus, $\Delta N\propto v^2$.  Thus, comparing this bound with the original prediction at $v_\oplus=3.0\times10^4\ \text{m/s}$ gives
+
+$$
+\frac{\Delta N_{\max}}{0.4\ \text{fringe}}
+=\left(\frac{v_{\max}}{v_\oplus}\right)^2
+=10^{-5},
+$$
+
+and hence
+
+$$
+v_{\max}=(3.0\times10^4\ \text{m/s})\sqrt{10^{-5}}
+=9.5\times10^1\ \text{m/s}.
+$$
+
+Therefore, under the deliberately incorrect ether interpretation, the residual ether speed would be below about $95\ \text{m/s}$, which is about $3.2\times10^2$ times smaller than Earth's orbital speed.
 :::
 
 :::{exercise}
@@ -325,7 +439,34 @@ Using the Fizeau formula $u_{\text{measured}} = c/n + v(1-1/n^2)$, compute the p
 :label: sol-need-for-relativity-8
 :class: dropdown
 
-_Solution not yet written._
+The Fresnel coefficient for water is
+
+$$
+1-\frac{1}{n^2}=1-\frac{1}{(1.33)^2}=0.435.
+$$
+
+The speed of light in stationary water is
+
+$$
+\frac{c}{n}=\frac{3.00\times10^8\ \text{m/s}}{1.33}
+=2.256\times10^8\ \text{m/s}.
+$$
+
+For water flowing with the light,
+
+$$
+u_+=\frac{c}{n}+v\left(1-\frac{1}{n^2}\right)
+=2.256\times10^8\ \text{m/s}+(7.0\ \text{m/s})(0.435)
+=225\,563\,912.8\ \text{m/s}.
+$$
+
+For water flowing against the light, the sign of $v$ reverses:
+
+$$
+u_-=225\,563\,906.7\ \text{m/s}.
+$$
+
+Thus $u_+-u_-=2(3.04\ \text{m/s})=6.09\ \text{m/s}$; this is smaller than the $2v=14.0\ \text{m/s}$ difference predicted by full Galilean dragging.
 :::
 
 :::{exercise}
@@ -338,7 +479,15 @@ Jupiter orbits the Sun at an orbital speed of about $v = 1.3\times10^4\ \text{m/
 :label: sol-need-for-relativity-9
 :class: dropdown
 
-_Solution not yet written._
+For a small aberration angle, $\tan\theta\simeq\theta=v/c$, so the aberration angle is proportional to orbital speed.  Therefore
+
+$$
+\theta_J=\theta_\oplus\frac{v_J}{v_\oplus}
+=(20.5\ \text{arcsec})\frac{1.3\times10^4\ \text{m/s}}{3.0\times10^4\ \text{m/s}}
+=8.9\ \text{arcsec}.
+$$
+
+Therefore, the astronomer on Jupiter would measure an annual aberration ellipse with angular radius about $8.9\ \text{arcsec}$, and the ratio to Earth's angle depends only on $v_J/v_\oplus$ because the common factor $1/c$ cancels.
 :::
 
 :::{exercise}
@@ -351,7 +500,7 @@ Explain why an ether model in which Earth *fully* drags the surrounding ether al
 :label: sol-need-for-relativity-10
 :class: dropdown
 
-_Solution not yet written._
+Starlight behaves like the falling rain: because Earth moves sideways while the light enters the telescope, the telescope must be tilted slightly into the apparent direction from which the light arrives.  Full ether drag near Earth would make the local ether, and hence the starlight's propagation direction relative to Earth, move along with Earth.  In the rain analogy, it would make the rain in the dragged region fall exactly vertically for the runner, so the umbrella would never need a forward tilt.  Therefore, full ether drag predicts zero stellar aberration, whereas the observed nonzero annual aberration rules it out.
 :::
 
 :::{exercise}
@@ -364,7 +513,7 @@ Explain, in your own words, why the original Michelson–Morley design (equal-le
 :label: sol-need-for-relativity-11
 :class: dropdown
 
-_Solution not yet written._
+With equal arms, a hypothesized length contraction can shorten whichever arm is instantaneously parallel to the ether wind by exactly the amount needed to make its longer classical light time equal to the perpendicular-arm time.  After a $90^\circ$ rotation the other equal arm contracts by the same rule, so the experiment still gives no difference; an equal-arm null result therefore cannot distinguish this cancellation from no ether effect at all.  With unequal arms, $L_1\ne L_2$, the two light times retain a difference whose size depends on Earth's speed through the ether, even if each parallel length contracts.  Therefore, an annual change in the hypothetical ether speed would produce a Kennedy--Thorndike fringe drift unless time-rate changes accompany the length contraction, and the observed absence of that drift closes the loophole.
 :::
 
 :::{exercise}
@@ -377,5 +526,5 @@ Suppose (contrary to fact) that the Kennedy–Thorndike experiment *had* detecte
 :label: sol-need-for-relativity-12
 :class: dropdown
 
-_Solution not yet written._
+A length-contraction-only theory could make the two equal Michelson--Morley arms have equal round-trip times at every orientation, so the original rotation experiment could still have produced its observed null result.  However, for unequal Kennedy--Thorndike arms, that same theory leaves a velocity-dependent difference in travel time because the arms have different lengths; Earth's changing speed relative to the ether would then create a yearly fringe drift.  Therefore, the hypothetical drift would be consistent with the original equal-arm null result but would show that clock rates do not transform with the compensating time-dilation factor required by the Lorentz transformation, contradicting special relativity.
 :::

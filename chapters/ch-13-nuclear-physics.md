@@ -334,23 +334,132 @@ in agreement with the accepted value. Conservation of momentum (the reacting nuc
 
 ## Problems
 
-1. Estimate the nuclear radius of $^{238}_{92}\text{U}$ and of $^{4}_{2}\text{He}$ using $R = R_0A^{1/3}$, and compute the ratio of their radii. Comment on whether this ratio is consistent with $A^{1/3}$ scaling given the ratio of their mass numbers.
+:::{exercise}
+:label: ex-nuclear-physics-1
 
-2. Compute the binding energy and binding energy per nucleon of $^{4}_{2}\text{He}$, given $M(^4_2\text{He}) = 4.002602\ \text{u}$, $m_p = 1.007276\ \text{u}$, $m_n=1.008665\ \text{u}$, and using $1\ \text{u}\,c^2 = 931.5\ \text{MeV}$ (you may neglect the small correction from atomic electron binding energies).
+Estimate the nuclear radius of $^{238}_{92}\text{U}$ and of $^{4}_{2}\text{He}$ using $R = R_0A^{1/3}$, and compute the ratio of their radii. Comment on whether this ratio is consistent with $A^{1/3}$ scaling given the ratio of their mass numbers.
+:::
 
-3. A radioactive sample of $^{131}_{53}\text{I}$ (half-life $8.02$ days) initially contains $N_0 = 1.00\times10^{18}$ nuclei. (a) Find the decay constant $\lambda$. (b) Find the number of nuclei remaining after $24$ days. (c) Find the initial activity, in becquerels (decays/s).
+:::{solution} ex-nuclear-physics-1
+:label: sol-nuclear-physics-1
+:class: dropdown
 
-(ex-nuclear-physics-4)=
-4. $^{238}_{92}\text{U}$ undergoes alpha decay to $^{234}_{90}\text{Th}$. Write the full decay equation, and explain, using the shape of the binding-energy-per-nucleon curve, why alpha decay (rather than, say, single-proton emission) is the energetically favored decay mode for very heavy nuclei.
+_Solution not yet written._
+:::
 
-5. In beta-minus decay of a free neutron, $n \to p + e^- + \bar\nu_e$, use $m_nc^2 = 939.57\ \text{MeV}$, $m_pc^2 = 938.27\ \text{MeV}$, $m_ec^2 = 0.511\ \text{MeV}$ (and treat the antineutrino as massless) to find the total kinetic energy shared among the three decay products. Explain why the electron's kinetic energy alone is not fixed at this value, but instead varies continuously up to it.
+:::{exercise}
+:label: ex-nuclear-physics-2
 
-6. In the fission of $^{235}_{92}\text{U}$ (via neutron absorption to $^{236}_{92}\text{U}$, then fission), roughly $200\ \text{MeV}$ is released per event. Estimate the mass (in kg) of $^{235}\text{U}$ that would need to fission completely to release $1.0\times10^{14}\ \text{J}$ (order of magnitude of a small commercial reactor's daily output), using Avogadro's number and the molar mass of $^{235}\text{U}$.
+Compute the binding energy and binding energy per nucleon of $^{4}_{2}\text{He}$, given $M(^4_2\text{He}) = 4.002602\ \text{u}$, $m_p = 1.007276\ \text{u}$, $m_n=1.008665\ \text{u}$, and using $1\ \text{u}\,c^2 = 931.5\ \text{MeV}$ (you may neglect the small correction from atomic electron binding energies).
+:::
 
-7. Using the semi-empirical mass formula coefficients given in the text, compute the predicted binding energy per nucleon of $^{120}_{50}\text{Sn}$ ($N=70$, even–even). Compare your result to the measured value, $8.51\ \text{MeV/nucleon}$, and comment on the size and likely origin of any discrepancy.
+:::{solution} ex-nuclear-physics-2
+:label: sol-nuclear-physics-2
+:class: dropdown
 
-8. In the uranium-238 decay chain, $^{226}_{88}\text{Ra}$ (half-life $1600\ \text{yr}$) alpha-decays to $^{222}_{86}\text{Rn}$ (half-life $3.8$ days). A sealed sample containing $1.00\ \text{g}$ of $^{226}\text{Ra}$ has been undisturbed for many thousands of years — far longer than radon's half-life, so the radon has reached secular equilibrium with its radium parent. Using the result of the radium worked example, find the activity, in becquerels, of the $^{222}\text{Rn}$ in the sample. (Hint: what must the daughter's activity equal, in secular equilibrium?)
+_Solution not yet written._
+:::
 
-9. A bone fragment has a measured $^{14}\text{C}$ activity that is $42.0\%$ of that of living bone. Using $T_{1/2}=5730\ \text{years}$ for $^{14}\text{C}$, find the fragment's age.
+:::{exercise}
+:label: ex-nuclear-physics-3
 
-10. Verify the claim in the deuterium-tritium fusion worked example that momentum conservation splits the reaction's $17.6\ \text{MeV}$ Q-value into $3.5\ \text{MeV}$ (carried by the alpha particle) and $14.1\ \text{MeV}$ (carried by the neutron): treating the initial deuteron and triton as essentially at rest, set the magnitudes of the final alpha-particle and neutron momenta equal (nonrelativistic momentum conservation) and solve for each product's share of the total kinetic energy in terms of the two product masses ($m_\alpha \approx 4.00\ \text{u}$, $m_n\approx1.01\ \text{u}$).
+A radioactive sample of $^{131}_{53}\text{I}$ (half-life $8.02$ days) initially contains $N_0 = 1.00\times10^{18}$ nuclei. (a) Find the decay constant $\lambda$. (b) Find the number of nuclei remaining after $24$ days. (c) Find the initial activity, in becquerels (decays/s).
+:::
+
+:::{solution} ex-nuclear-physics-3
+:label: sol-nuclear-physics-3
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-nuclear-physics-4
+
+$^{238}_{92}\text{U}$ undergoes alpha decay to $^{234}_{90}\text{Th}$. Write the full decay equation, and explain, using the shape of the binding-energy-per-nucleon curve, why alpha decay (rather than, say, single-proton emission) is the energetically favored decay mode for very heavy nuclei.
+:::
+
+:::{solution} ex-nuclear-physics-4
+:label: sol-nuclear-physics-4
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-nuclear-physics-5
+
+In beta-minus decay of a free neutron, $n \to p + e^- + \bar\nu_e$, use $m_nc^2 = 939.57\ \text{MeV}$, $m_pc^2 = 938.27\ \text{MeV}$, $m_ec^2 = 0.511\ \text{MeV}$ (and treat the antineutrino as massless) to find the total kinetic energy shared among the three decay products. Explain why the electron's kinetic energy alone is not fixed at this value, but instead varies continuously up to it.
+:::
+
+:::{solution} ex-nuclear-physics-5
+:label: sol-nuclear-physics-5
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-nuclear-physics-6
+
+In the fission of $^{235}_{92}\text{U}$ (via neutron absorption to $^{236}_{92}\text{U}$, then fission), roughly $200\ \text{MeV}$ is released per event. Estimate the mass (in kg) of $^{235}\text{U}$ that would need to fission completely to release $1.0\times10^{14}\ \text{J}$ (order of magnitude of a small commercial reactor's daily output), using Avogadro's number and the molar mass of $^{235}\text{U}$.
+:::
+
+:::{solution} ex-nuclear-physics-6
+:label: sol-nuclear-physics-6
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-nuclear-physics-7
+
+Using the semi-empirical mass formula coefficients given in the text, compute the predicted binding energy per nucleon of $^{120}_{50}\text{Sn}$ ($N=70$, even–even). Compare your result to the measured value, $8.51\ \text{MeV/nucleon}$, and comment on the size and likely origin of any discrepancy.
+:::
+
+:::{solution} ex-nuclear-physics-7
+:label: sol-nuclear-physics-7
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-nuclear-physics-8
+
+In the uranium-238 decay chain, $^{226}_{88}\text{Ra}$ (half-life $1600\ \text{yr}$) alpha-decays to $^{222}_{86}\text{Rn}$ (half-life $3.8$ days). A sealed sample containing $1.00\ \text{g}$ of $^{226}\text{Ra}$ has been undisturbed for many thousands of years — far longer than radon's half-life, so the radon has reached secular equilibrium with its radium parent. Using the result of the radium worked example, find the activity, in becquerels, of the $^{222}\text{Rn}$ in the sample. (Hint: what must the daughter's activity equal, in secular equilibrium?)
+:::
+
+:::{solution} ex-nuclear-physics-8
+:label: sol-nuclear-physics-8
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-nuclear-physics-9
+
+A bone fragment has a measured $^{14}\text{C}$ activity that is $42.0\%$ of that of living bone. Using $T_{1/2}=5730\ \text{years}$ for $^{14}\text{C}$, find the fragment's age.
+:::
+
+:::{solution} ex-nuclear-physics-9
+:label: sol-nuclear-physics-9
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-nuclear-physics-10
+
+Verify the claim in the deuterium-tritium fusion worked example that momentum conservation splits the reaction's $17.6\ \text{MeV}$ Q-value into $3.5\ \text{MeV}$ (carried by the alpha particle) and $14.1\ \text{MeV}$ (carried by the neutron): treating the initial deuteron and triton as essentially at rest, set the magnitudes of the final alpha-particle and neutron momenta equal (nonrelativistic momentum conservation) and solve for each product's share of the total kinetic energy in terms of the two product masses ($m_\alpha \approx 4.00\ \text{u}$, $m_n\approx1.01\ \text{u}$).
+:::
+
+:::{solution} ex-nuclear-physics-10
+:label: sol-nuclear-physics-10
+:class: dropdown
+
+_Solution not yet written._
+:::

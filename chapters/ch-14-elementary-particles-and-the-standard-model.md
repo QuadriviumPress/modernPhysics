@@ -276,25 +276,145 @@ These are not signs of failure so much as an honest map of where the frontier cu
 
 ## Problems
 
-1. Classify each of the following as a fermion or boson, based on its spin: photon ($s=1$), electron ($s=\tfrac12$), pion ($s=0$), proton ($s=\tfrac12$).
+:::{exercise}
+:label: ex-elementary-particles-and-the-standard-model-1
 
-(ex-elementary-particles-and-the-standard-model-2)=
-2. Determine the electric charge of a baryon composed of $uds$ (this particle is the $\Lambda^0$) using the quark charges $+\tfrac23 e$ for $u$, $-\tfrac13 e$ for $d$ and $s$, and check your result against the known charge of the $\Lambda^0$ (zero).
+Classify each of the following as a fermion or boson, based on its spin: photon ($s=1$), electron ($s=\tfrac12$), pion ($s=0$), proton ($s=\tfrac12$).
+:::
 
-3. Determine whether each proposed reaction conserves charge, baryon number, and lepton number as required, and state which conservation law (if any) forbids the ones that are not allowed: (a) $p \to e^+ + \gamma$, (b) $n \to p + e^- + \bar\nu_e$, (c) $\mu^- \to e^- + \gamma$, (d) $p + p \to p + p + \pi^0$.
+:::{solution} ex-elementary-particles-and-the-standard-model-1
+:label: sol-elementary-particles-and-the-standard-model-1
+:class: dropdown
 
-4. Using the known quark content of the proton ($uud$) and neutron ($udd$), and the quark charges given in [Problem 2](#ex-elementary-particles-and-the-standard-model-2), verify that the proton has charge $+e$ and the neutron has charge $0$.
+_Solution not yet written._
+:::
 
-5. The muon decays via $\mu^- \to e^- + \bar\nu_e + \nu_\mu$. Explain, using lepton-number conservation applied separately to the electron-generation number $L_e$ and muon-generation number $L_\mu$, why the decay $\mu^- \to e^- + \gamma$ alone (without the two neutrinos) is forbidden, even though it conserves charge, energy, and momentum.
+:::{exercise}
+:label: ex-elementary-particles-and-the-standard-model-2
 
-6. Explain, in your own words, why quark confinement means that the constituent quarks of a proton can never be observed as free, isolated particles no matter how much energy is used to try to separate them, and contrast this with the behavior of the electromagnetic force between two separated electric charges, which weakens (rather than growing) with increasing separation.
+Determine the electric charge of a baryon composed of $uds$ (this particle is the $\Lambda^0$) using the quark charges $+\tfrac23 e$ for $u$, $-\tfrac13 e$ for $d$ and $s$, and check your result against the known charge of the $\Lambda^0$ (zero).
+:::
 
-7. The $K^-$ meson has quark content $K^- = \bar u s$. (a) Using the quark charges given in [Problem 2](#ex-elementary-particles-and-the-standard-model-2) and the rule that an antiquark carries the opposite charge of its quark, find the electric charge of $K^-$. (b) Find its strangeness. (c) Explain why your results show that $K^-$ is the antiparticle of the $K^+$ found in the worked example on kaon quark content, and state the general rule (in terms of charge and strangeness) that a particle and its antiparticle must always satisfy.
+:::{solution} ex-elementary-particles-and-the-standard-model-2
+:label: sol-elementary-particles-and-the-standard-model-2
+:class: dropdown
 
-8. Determine whether the reaction $K^- + p \to \Lambda^0 + \pi^0$ conserves charge, baryon number, and strangeness, and state whether it can proceed via the strong interaction, the weak interaction, or neither.
+_Solution not yet written._
+:::
 
-9. The muon decays via $\mu^- \to e^- + \bar\nu_e + \nu_\mu$ ([Chapter 2](#ch-special-relativity)), and, like neutron beta decay, this proceeds by $\mu^-$ emitting a virtual $W^-$ and converting directly into $\nu_\mu$ at one vertex, with the $W^-$ then decaying to $e^- + \bar\nu_e$ at a second vertex. Sketch this two-vertex diagram in the style of {numref}`Figure %s <fig:ch14-feynman-diagrams>`, and verify explicitly that electric charge and each generation's lepton number ($L_e$ and $L_\mu$ separately) balance at *each* vertex individually, following the method of the worked example on reading a Feynman diagram.
+:::{exercise}
+:label: ex-elementary-particles-and-the-standard-model-3
 
-10. A second muon beam is produced with total energy $E = 1.20\ \text{GeV}$ (using $m_\mu c^2 = 105.7\ \text{MeV}$ and proper mean lifetime $\tau_0 = 2.20\ \mu\text{s}$, as in the worked example on muon decay length). Find (a) $\gamma$, (b) $\beta$, and (c) the mean decay length of this beam in the lab frame. Compare your answer to the $2.4\ \text{km}$ found in the worked example, and explain the direction of the difference in terms of $\gamma$.
+Determine whether each proposed reaction conserves charge, baryon number, and lepton number as required, and state which conservation law (if any) forbids the ones that are not allowed: (a) $p \to e^+ + \gamma$, (b) $n \to p + e^- + \bar\nu_e$, (c) $\mu^- \to e^- + \gamma$, (d) $p + p \to p + p + \pi^0$.
+:::
 
-11. Repeat the gravitational-versus-electromagnetic force-ratio calculation of the worked example in "The Four Fundamental Interactions," but for two electrons instead of two protons (using $m_e = 9.109\times10^{-31}\ \text{kg}$ in place of $m_p$, with $G$, $k$, and $e$ unchanged). Explain, in terms of the formula for the ratio, why the result is so much smaller than the two-proton ratio even though an electron and a proton carry exactly the same magnitude of electric charge.
+:::{solution} ex-elementary-particles-and-the-standard-model-3
+:label: sol-elementary-particles-and-the-standard-model-3
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-elementary-particles-and-the-standard-model-4
+
+Using the known quark content of the proton ($uud$) and neutron ($udd$), and the quark charges given in [Problem 2](#ex-elementary-particles-and-the-standard-model-2), verify that the proton has charge $+e$ and the neutron has charge $0$.
+:::
+
+:::{solution} ex-elementary-particles-and-the-standard-model-4
+:label: sol-elementary-particles-and-the-standard-model-4
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-elementary-particles-and-the-standard-model-5
+
+The muon decays via $\mu^- \to e^- + \bar\nu_e + \nu_\mu$. Explain, using lepton-number conservation applied separately to the electron-generation number $L_e$ and muon-generation number $L_\mu$, why the decay $\mu^- \to e^- + \gamma$ alone (without the two neutrinos) is forbidden, even though it conserves charge, energy, and momentum.
+:::
+
+:::{solution} ex-elementary-particles-and-the-standard-model-5
+:label: sol-elementary-particles-and-the-standard-model-5
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-elementary-particles-and-the-standard-model-6
+
+Explain, in your own words, why quark confinement means that the constituent quarks of a proton can never be observed as free, isolated particles no matter how much energy is used to try to separate them, and contrast this with the behavior of the electromagnetic force between two separated electric charges, which weakens (rather than growing) with increasing separation.
+:::
+
+:::{solution} ex-elementary-particles-and-the-standard-model-6
+:label: sol-elementary-particles-and-the-standard-model-6
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-elementary-particles-and-the-standard-model-7
+
+The $K^-$ meson has quark content $K^- = \bar u s$. (a) Using the quark charges given in [Problem 2](#ex-elementary-particles-and-the-standard-model-2) and the rule that an antiquark carries the opposite charge of its quark, find the electric charge of $K^-$. (b) Find its strangeness. (c) Explain why your results show that $K^-$ is the antiparticle of the $K^+$ found in the worked example on kaon quark content, and state the general rule (in terms of charge and strangeness) that a particle and its antiparticle must always satisfy.
+:::
+
+:::{solution} ex-elementary-particles-and-the-standard-model-7
+:label: sol-elementary-particles-and-the-standard-model-7
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-elementary-particles-and-the-standard-model-8
+
+Determine whether the reaction $K^- + p \to \Lambda^0 + \pi^0$ conserves charge, baryon number, and strangeness, and state whether it can proceed via the strong interaction, the weak interaction, or neither.
+:::
+
+:::{solution} ex-elementary-particles-and-the-standard-model-8
+:label: sol-elementary-particles-and-the-standard-model-8
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-elementary-particles-and-the-standard-model-9
+
+The muon decays via $\mu^- \to e^- + \bar\nu_e + \nu_\mu$ ([Chapter 2](#ch-special-relativity)), and, like neutron beta decay, this proceeds by $\mu^-$ emitting a virtual $W^-$ and converting directly into $\nu_\mu$ at one vertex, with the $W^-$ then decaying to $e^- + \bar\nu_e$ at a second vertex. Sketch this two-vertex diagram in the style of {numref}`Figure %s <fig:ch14-feynman-diagrams>`, and verify explicitly that electric charge and each generation's lepton number ($L_e$ and $L_\mu$ separately) balance at *each* vertex individually, following the method of the worked example on reading a Feynman diagram.
+:::
+
+:::{solution} ex-elementary-particles-and-the-standard-model-9
+:label: sol-elementary-particles-and-the-standard-model-9
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-elementary-particles-and-the-standard-model-10
+
+A second muon beam is produced with total energy $E = 1.20\ \text{GeV}$ (using $m_\mu c^2 = 105.7\ \text{MeV}$ and proper mean lifetime $\tau_0 = 2.20\ \mu\text{s}$, as in the worked example on muon decay length). Find (a) $\gamma$, (b) $\beta$, and (c) the mean decay length of this beam in the lab frame. Compare your answer to the $2.4\ \text{km}$ found in the worked example, and explain the direction of the difference in terms of $\gamma$.
+:::
+
+:::{solution} ex-elementary-particles-and-the-standard-model-10
+:label: sol-elementary-particles-and-the-standard-model-10
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-elementary-particles-and-the-standard-model-11
+
+Repeat the gravitational-versus-electromagnetic force-ratio calculation of the worked example in "The Four Fundamental Interactions," but for two electrons instead of two protons (using $m_e = 9.109\times10^{-31}\ \text{kg}$ in place of $m_p$, with $G$, $k$, and $e$ unchanged). Explain, in terms of the formula for the ratio, why the result is so much smaller than the two-proton ratio even though an electron and a proton carry exactly the same magnitude of electric charge.
+:::
+
+:::{solution} ex-elementary-particles-and-the-standard-model-11
+:label: sol-elementary-particles-and-the-standard-model-11
+:class: dropdown
+
+_Solution not yet written._
+:::

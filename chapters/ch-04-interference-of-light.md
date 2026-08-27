@@ -712,42 +712,262 @@ For now, the wave description stands on its own, and the next chapter completes 
 
 ## Problems
 
-1. Light of wavelength $633\ \text{nm}$ (a helium–neon laser) illuminates two slits separated by $d = 0.120\ \text{mm}$. Find the angle $\theta$ to (a) the third bright fringe and (b) the second dark fringe, measured from the central axis.
+:::{exercise}
+:label: ex-interference-of-light-1
 
-2. In a double-slit experiment with $d = 0.250\ \text{mm}$ and a screen at $L = 1.40\ \text{m}$, bright fringes are observed with spacing $\Delta y = 3.30\ \text{mm}$. Find the wavelength of the light used, and identify approximately its color.
+Light of wavelength $633\ \text{nm}$ (a helium–neon laser) illuminates two slits separated by $d = 0.120\ \text{mm}$. Find the angle $\theta$ to (a) the third bright fringe and (b) the second dark fringe, measured from the central axis.
+:::
 
-3. A double slit with $d = 0.0800\ \text{mm}$ is illuminated at $\lambda = 480\ \text{nm}$ with the screen $2.50\ \text{m}$ away. (a) Find the fringe spacing. (b) How many bright fringes fall on a screen $8.0\ \text{cm}$ wide, centered on the axis? (c) What is the largest order that exists in principle?
+:::{solution} ex-interference-of-light-1
+:label: sol-interference-of-light-1
+:class: dropdown
 
-4. Two identical in-step sources emit light of wavelength $620\ \text{nm}$. Find the smallest nonzero path difference that produces (a) a bright point, (b) a dark point, (c) a point whose intensity is half the maximum.
+_Solution not yet written._
+:::
 
-5. The double slit of Problem 3 is immersed, along with its source and screen, in a liquid of refractive index $n = 1.47$. Find the new fringe spacing, and explain in one sentence why the answer does not depend on where in the apparatus the liquid is.
+:::{exercise}
+:label: ex-interference-of-light-2
 
-6. A source has a central wavelength of $600\ \text{nm}$ and a wavelength spread $\Delta\lambda = 0.02\ \text{nm}$, typical of a good single-mode laser. (a) Estimate its coherence length. (b) Estimate the number of fringes visible before the pattern washes out. (c) Repeat both estimates for white light, $\lambda \approx 550\ \text{nm}$ with $\Delta\lambda \approx 300\ \text{nm}$, and comment on why Young's original experiment showed only a handful of fringes.
+In a double-slit experiment with $d = 0.250\ \text{mm}$ and a screen at $L = 1.40\ \text{m}$, bright fringes are observed with spacing $\Delta y = 3.30\ \text{mm}$. Find the wavelength of the light used, and identify approximately its color.
+:::
 
-7. Starting from $I = I_0\cos^2(\phi/2)$ with $\phi = (2\pi/\lambda)d\sin\theta$, show that the full width at half maximum of each fringe is exactly half the fringe spacing, independent of $\lambda$, $d$, and $L$.
+:::{solution} ex-interference-of-light-2
+:label: sol-interference-of-light-2
+:class: dropdown
 
-8. Using the $N$-slit intensity formula, evaluate $I(\theta = 0)$ for $N = 2$ and $N = 4$ slits with the same single-slit intensity $I_1$, and verify the scaling $I_{\max}\propto N^2$. Then show that the total light delivered by $N$ slits is proportional to $N$, not $N^2$, by combining the peak height with the peak width.
+_Solution not yet written._
+:::
 
-9. Six equally spaced slits with $d = 3.00\ \mu\text{m}$ are illuminated at $\lambda = 600\ \text{nm}$. (a) Find $\sin\theta$ for all the principal maxima. (b) Find the directions of the zeros between the central and first-order maxima. (c) How many secondary maxima lie between them?
+:::{exercise}
+:label: ex-interference-of-light-3
 
-10. A soap film ($n = 1.33$) in air is viewed at near-normal incidence with $\lambda = 500\ \text{nm}$ light. (a) Explain, by counting reflections, why only one of the two picks up a $\pi$ shift. (b) Find the two smallest nonzero thicknesses at which the film appears bright in reflection. (c) Find the smallest nonzero thickness at which it appears dark.
+A double slit with $d = 0.0800\ \text{mm}$ is illuminated at $\lambda = 480\ \text{nm}$ with the screen $2.50\ \text{m}$ away. (a) Find the fringe spacing. (b) How many bright fringes fall on a screen $8.0\ \text{cm}$ wide, centered on the axis? (c) What is the largest order that exists in principle?
+:::
 
-11. A thin layer of oil ($n = 1.45$) floats on water ($n = 1.33$). (a) Determine whether this is Case A or Case B in the classification of this chapter. (b) Find the minimum oil thickness that reflects $\lambda = 600\ \text{nm}$ light strongly. (c) Repeat parts (a) and (b) for the same oil film resting instead on a substrate of index $1.60$, and explain why the answer changes by a factor of two.
+:::{solution} ex-interference-of-light-3
+:label: sol-interference-of-light-3
+:class: dropdown
 
-12. Design an antireflection coating of magnesium fluoride ($n = 1.38$) on glass ($n = 1.52$) that minimizes reflection at $\lambda = 600\ \text{nm}$ in air. (a) Find the minimum thickness. (b) Compute $2n_{\text{coating}}t/\lambda$ at $450\ \text{nm}$ and at $700\ \text{nm}$, and use the results to explain the residual purple reflection of coated optics.
+_Solution not yet written._
+:::
 
-13. A plano-convex lens with radius of curvature $R = 2.00\ \text{m}$ rests on a flat glass plate and is illuminated from above with $\lambda = 589\ \text{nm}$ light. (a) Find the radius of the tenth dark ring. (b) Explain why the center of the pattern is dark. (c) Explain why the rings crowd closer together as $m$ increases.
+:::{exercise}
+:label: ex-interference-of-light-4
 
-14. Two flat plates $15.0\ \text{cm}$ long touch at one end and are separated at the other by a sheet of foil. Illuminated at $\lambda = 546\ \text{nm}$, the plates show dark fringes spaced $0.750\ \text{mm}$ apart. Find the thickness of the foil.
+Two identical in-step sources emit light of wavelength $620\ \text{nm}$. Find the smallest nonzero path difference that produces (a) a bright point, (b) a dark point, (c) a point whose intensity is half the maximum.
+:::
 
-15. In a Michelson interferometer illuminated at $\lambda = 546\ \text{nm}$, one mirror is translated by $0.200\ \text{mm}$. How many fringes pass a reference mark?
+:::{solution} ex-interference-of-light-4
+:label: sol-interference-of-light-4
+:class: dropdown
 
-16. A gas cell $8.00\ \text{cm}$ long in one arm of a Michelson interferometer is filled with carbon dioxide at atmospheric pressure, and $122$ fringes are counted as it fills. Find the refractive index of carbon dioxide at $\lambda = 589\ \text{nm}$.
+_Solution not yet written._
+:::
 
-17. Explain, using the concept of optical path length, why the thin-film conditions use $2n_{\text{film}}t$ rather than $2t$, and estimate the error you would make in the predicted color of a $100\ \text{nm}$ soap film if you dropped the factor of $n$.
+:::{exercise}
+:label: ex-interference-of-light-5
 
-18. Revisit the Michelson–Morley experiment of [Chapter 1](#ch-need-for-relativity) using this chapter's fringe-shift relation. The predicted ether-wind path difference between the two arms was of order $Lv^2/c^2$ for arm length $L$ and Earth's orbital speed $v \approx 3\times10^4\ \text{m/s}$. Estimate the expected fringe shift for $L = 11\ \text{m}$ and $\lambda = 590\ \text{nm}$, and compare it with the experiment's sensitivity of about $0.01$ fringe.
+The double slit of Problem 3 is immersed, along with its source and screen, in a liquid of refractive index $n = 1.47$. Find the new fringe spacing, and explain in one sentence why the answer does not depend on where in the apparatus the liquid is.
+:::
 
-19. LIGO measures mirror displacements of about $10^{-19}\ \text{m}$ using $\lambda = 1064\ \text{nm}$ light. (a) Using $\Delta N = 2\delta/\lambda$, find the corresponding fringe shift. (b) Your answer should be an absurdly small fraction of a fringe; explain what this implies about the additional techniques (optical cavities that fold the beam path, and averaging over enormous photon numbers) that a real detector must use.
+:::{solution} ex-interference-of-light-5
+:label: sol-interference-of-light-5
+:class: dropdown
 
-20. A double slit is illuminated with light containing two wavelengths, $480\ \text{nm}$ and $600\ \text{nm}$, with $d = 0.150\ \text{mm}$ and $L = 2.00\ \text{m}$. Find the smallest nonzero distance from the center of the screen at which a bright fringe of one wavelength coincides exactly with a bright fringe of the other.
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-interference-of-light-6
+
+A source has a central wavelength of $600\ \text{nm}$ and a wavelength spread $\Delta\lambda = 0.02\ \text{nm}$, typical of a good single-mode laser. (a) Estimate its coherence length. (b) Estimate the number of fringes visible before the pattern washes out. (c) Repeat both estimates for white light, $\lambda \approx 550\ \text{nm}$ with $\Delta\lambda \approx 300\ \text{nm}$, and comment on why Young's original experiment showed only a handful of fringes.
+:::
+
+:::{solution} ex-interference-of-light-6
+:label: sol-interference-of-light-6
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-interference-of-light-7
+
+Starting from $I = I_0\cos^2(\phi/2)$ with $\phi = (2\pi/\lambda)d\sin\theta$, show that the full width at half maximum of each fringe is exactly half the fringe spacing, independent of $\lambda$, $d$, and $L$.
+:::
+
+:::{solution} ex-interference-of-light-7
+:label: sol-interference-of-light-7
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-interference-of-light-8
+
+Using the $N$-slit intensity formula, evaluate $I(\theta = 0)$ for $N = 2$ and $N = 4$ slits with the same single-slit intensity $I_1$, and verify the scaling $I_{\max}\propto N^2$. Then show that the total light delivered by $N$ slits is proportional to $N$, not $N^2$, by combining the peak height with the peak width.
+:::
+
+:::{solution} ex-interference-of-light-8
+:label: sol-interference-of-light-8
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-interference-of-light-9
+
+Six equally spaced slits with $d = 3.00\ \mu\text{m}$ are illuminated at $\lambda = 600\ \text{nm}$. (a) Find $\sin\theta$ for all the principal maxima. (b) Find the directions of the zeros between the central and first-order maxima. (c) How many secondary maxima lie between them?
+:::
+
+:::{solution} ex-interference-of-light-9
+:label: sol-interference-of-light-9
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-interference-of-light-10
+
+A soap film ($n = 1.33$) in air is viewed at near-normal incidence with $\lambda = 500\ \text{nm}$ light. (a) Explain, by counting reflections, why only one of the two picks up a $\pi$ shift. (b) Find the two smallest nonzero thicknesses at which the film appears bright in reflection. (c) Find the smallest nonzero thickness at which it appears dark.
+:::
+
+:::{solution} ex-interference-of-light-10
+:label: sol-interference-of-light-10
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-interference-of-light-11
+
+A thin layer of oil ($n = 1.45$) floats on water ($n = 1.33$). (a) Determine whether this is Case A or Case B in the classification of this chapter. (b) Find the minimum oil thickness that reflects $\lambda = 600\ \text{nm}$ light strongly. (c) Repeat parts (a) and (b) for the same oil film resting instead on a substrate of index $1.60$, and explain why the answer changes by a factor of two.
+:::
+
+:::{solution} ex-interference-of-light-11
+:label: sol-interference-of-light-11
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-interference-of-light-12
+
+Design an antireflection coating of magnesium fluoride ($n = 1.38$) on glass ($n = 1.52$) that minimizes reflection at $\lambda = 600\ \text{nm}$ in air. (a) Find the minimum thickness. (b) Compute $2n_{\text{coating}}t/\lambda$ at $450\ \text{nm}$ and at $700\ \text{nm}$, and use the results to explain the residual purple reflection of coated optics.
+:::
+
+:::{solution} ex-interference-of-light-12
+:label: sol-interference-of-light-12
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-interference-of-light-13
+
+A plano-convex lens with radius of curvature $R = 2.00\ \text{m}$ rests on a flat glass plate and is illuminated from above with $\lambda = 589\ \text{nm}$ light. (a) Find the radius of the tenth dark ring. (b) Explain why the center of the pattern is dark. (c) Explain why the rings crowd closer together as $m$ increases.
+:::
+
+:::{solution} ex-interference-of-light-13
+:label: sol-interference-of-light-13
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-interference-of-light-14
+
+Two flat plates $15.0\ \text{cm}$ long touch at one end and are separated at the other by a sheet of foil. Illuminated at $\lambda = 546\ \text{nm}$, the plates show dark fringes spaced $0.750\ \text{mm}$ apart. Find the thickness of the foil.
+:::
+
+:::{solution} ex-interference-of-light-14
+:label: sol-interference-of-light-14
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-interference-of-light-15
+
+In a Michelson interferometer illuminated at $\lambda = 546\ \text{nm}$, one mirror is translated by $0.200\ \text{mm}$. How many fringes pass a reference mark?
+:::
+
+:::{solution} ex-interference-of-light-15
+:label: sol-interference-of-light-15
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-interference-of-light-16
+
+A gas cell $8.00\ \text{cm}$ long in one arm of a Michelson interferometer is filled with carbon dioxide at atmospheric pressure, and $122$ fringes are counted as it fills. Find the refractive index of carbon dioxide at $\lambda = 589\ \text{nm}$.
+:::
+
+:::{solution} ex-interference-of-light-16
+:label: sol-interference-of-light-16
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-interference-of-light-17
+
+Explain, using the concept of optical path length, why the thin-film conditions use $2n_{\text{film}}t$ rather than $2t$, and estimate the error you would make in the predicted color of a $100\ \text{nm}$ soap film if you dropped the factor of $n$.
+:::
+
+:::{solution} ex-interference-of-light-17
+:label: sol-interference-of-light-17
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-interference-of-light-18
+
+Revisit the Michelson–Morley experiment of [Chapter 1](#ch-need-for-relativity) using this chapter's fringe-shift relation. The predicted ether-wind path difference between the two arms was of order $Lv^2/c^2$ for arm length $L$ and Earth's orbital speed $v \approx 3\times10^4\ \text{m/s}$. Estimate the expected fringe shift for $L = 11\ \text{m}$ and $\lambda = 590\ \text{nm}$, and compare it with the experiment's sensitivity of about $0.01$ fringe.
+:::
+
+:::{solution} ex-interference-of-light-18
+:label: sol-interference-of-light-18
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-interference-of-light-19
+
+LIGO measures mirror displacements of about $10^{-19}\ \text{m}$ using $\lambda = 1064\ \text{nm}$ light. (a) Using $\Delta N = 2\delta/\lambda$, find the corresponding fringe shift. (b) Your answer should be an absurdly small fraction of a fringe; explain what this implies about the additional techniques (optical cavities that fold the beam path, and averaging over enormous photon numbers) that a real detector must use.
+:::
+
+:::{solution} ex-interference-of-light-19
+:label: sol-interference-of-light-19
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-interference-of-light-20
+
+A double slit is illuminated with light containing two wavelengths, $480\ \text{nm}$ and $600\ \text{nm}$, with $d = 0.150\ \text{mm}$ and $L = 2.00\ \text{m}$. Find the smallest nonzero distance from the center of the screen at which a bright fringe of one wavelength coincides exactly with a bright fringe of the other.
+:::
+
+:::{solution} ex-interference-of-light-20
+:label: sol-interference-of-light-20
+:class: dropdown
+
+_Solution not yet written._
+:::

@@ -280,42 +280,262 @@ Four seemingly unrelated phenomena — blackbody radiation, the photoelectric ef
 
 ## Problems
 
-1. The peak of the Sun's blackbody emission spectrum occurs near $\lambda_{\max} \approx 500\ \text{nm}$. Use Wien's displacement law to estimate the Sun's surface temperature, and compare your answer to the value $T=5778\ \text{K}$ used in the worked example.
+:::{exercise}
+:label: ex-particle-properties-of-waves-1
 
-2. A tungsten filament in an incandescent bulb operates at $T = 2900\ \text{K}$. (a) Find the wavelength of peak emission and identify the region of the spectrum (visible, infrared, etc.) in which it lies. (b) Explain, using your answer to (a), why incandescent bulbs are inefficient sources of visible light. (c) Find the power radiated per unit area, assuming ideal blackbody behavior.
+The peak of the Sun's blackbody emission spectrum occurs near $\lambda_{\max} \approx 500\ \text{nm}$. Use Wien's displacement law to estimate the Sun's surface temperature, and compare your answer to the value $T=5778\ \text{K}$ used in the worked example.
+:::
 
-3. A red giant star has surface temperature $3200\ \text{K}$ and radius $500\,R_\odot$, where $R_\odot = 6.96\times10^8\ \text{m}$ is the Sun's radius. Using the Stefan–Boltzmann law, find the star's total luminosity, and compare it (as a ratio) to the Sun's luminosity of $3.83\times10^{26}\ \text{W}$ found in the worked example.
+:::{solution} ex-particle-properties-of-waves-1
+:label: sol-particle-properties-of-waves-1
+:class: dropdown
 
-4. Light of wavelength $400\ \text{nm}$ strikes a sodium surface with work function $\phi = 2.28\ \text{eV}$. (a) Find the photon energy in eV. (b) Find the maximum kinetic energy of the ejected photoelectrons. (c) Find the stopping potential $V_0$. (d) Find the threshold wavelength for sodium.
+_Solution not yet written._
+:::
 
-5. A photoelectric-effect experiment on a certain metal gives a stopping potential of $0.65\ \text{V}$ for light of wavelength $450\ \text{nm}$, and $1.28\ \text{V}$ for light of wavelength $360\ \text{nm}$. Use these two data points (rather than assuming a value of $h$) to determine (a) Planck's constant and (b) the work function of the metal from this data, treating $K_{\max}=eV_0=hf-\phi$ as a linear equation in $f$.
+:::{exercise}
+:label: ex-particle-properties-of-waves-2
 
-6. A photocell with a platinum surface (work function $\phi = 6.35\ \text{eV}$) is illuminated with light of wavelength $150\ \text{nm}$. (a) Show that this wavelength is above the threshold for photoemission and find $K_{\max}$. (b) Find the longest wavelength of light that could eject photoelectrons from platinum, and explain why ordinary visible or near-UV light sources cannot do so.
+A tungsten filament in an incandescent bulb operates at $T = 2900\ \text{K}$. (a) Find the wavelength of peak emission and identify the region of the spectrum (visible, infrared, etc.) in which it lies. (b) Explain, using your answer to (a), why incandescent bulbs are inefficient sources of visible light. (c) Find the power radiated per unit area, assuming ideal blackbody behavior.
+:::
 
-7. An X-ray tube is operated at an accelerating voltage of $120\ \text{kV}$. (a) Find the Duane–Hunt minimum wavelength $\lambda_{\min}$. (b) Find the corresponding maximum photon energy, in keV. (c) If the accelerating voltage is doubled, by what factor does $\lambda_{\min}$ change?
+:::{solution} ex-particle-properties-of-waves-2
+:label: sol-particle-properties-of-waves-2
+:class: dropdown
 
-8. Explain, in your own words and using conservation of energy, why the bremsstrahlung spectrum from an X-ray tube is continuous (a range of wavelengths) even though each individual electron carries the same, sharply defined kinetic energy $eV$ upon striking the target.
+_Solution not yet written._
+:::
 
-9. X-rays of wavelength $\lambda = 0.0711\ \text{nm}$ are Compton-scattered at $\theta = 90°$. (a) Find the wavelength shift. (b) Find the wavelength and energy of the scattered photon. (c) Find the kinetic energy given to the recoiling electron.
+:::{exercise}
+:label: ex-particle-properties-of-waves-3
 
-10. Show that, for a photon Compton-scattered directly backward ($\theta = 180°$) by a free electron, the wavelength shift is $2h/m_ec$, and evaluate this numerically. For an incident photon of very short wavelength ($\lambda \ll h/m_ec$, i.e. a very energetic photon), find the approximate fraction of the incident photon's energy that is transferred to the electron in a $180°$ collision.
+A red giant star has surface temperature $3200\ \text{K}$ and radius $500\,R_\odot$, where $R_\odot = 6.96\times10^8\ \text{m}$ is the Sun's radius. Using the Stefan–Boltzmann law, find the star's total luminosity, and compare it (as a ratio) to the Sun's luminosity of $3.83\times10^{26}\ \text{W}$ found in the worked example.
+:::
 
-11. Fill in the algebraic step omitted in the text: starting from equations (i) and (ii) in the derivation of the Compton formula, substitute (i) into the squared version of (ii) combined with $E_e^2=(p_ec)^2+(m_ec^2)^2$, and verify explicitly that the terms $(hc/\lambda)^2$, $(hc/\lambda')^2$, and $(m_ec^2)^2$ cancel between the two sides, leaving the simplified relation quoted in the text.
+:::{solution} ex-particle-properties-of-waves-3
+:label: sol-particle-properties-of-waves-3
+:class: dropdown
 
-12. A beam of visible-light photons ($\lambda = 600\ \text{nm}$) is Compton-scattered from free electrons at $\theta = 90°$. (a) Compute the fractional wavelength shift $\Delta\lambda/\lambda$. (b) Explain, using your numerical result, why the Compton effect is essentially undetectable with visible light and was only discovered using X-rays.
+_Solution not yet written._
+:::
 
-13. Find the minimum photon energy required for pair production of an electron-positron pair, and convert this to a wavelength. Explain why pair production cannot occur for an isolated photon in empty space (i.e., why a nearby nucleus or other particle is required), using conservation of momentum and energy together.
+:::{exercise}
+:label: ex-particle-properties-of-waves-4
 
-14. A $2.50\ \text{MeV}$ photon undergoes pair production near a heavy nucleus, which recoils with negligible kinetic energy. If the electron and positron share the available kinetic energy equally, find the kinetic energy and the total (kinetic plus rest) energy of each particle.
+Light of wavelength $400\ \text{nm}$ strikes a sodium surface with work function $\phi = 2.28\ \text{eV}$. (a) Find the photon energy in eV. (b) Find the maximum kinetic energy of the ejected photoelectrons. (c) Find the stopping potential $V_0$. (d) Find the threshold wavelength for sodium.
+:::
 
-15. In positron-emission tomography, a positron emitted by a radioactive tracer travels a short distance, loses its kinetic energy through collisions, and then annihilates with an atomic electron essentially at rest. (a) Using conservation of energy and momentum (as in [Chapter 3, Problem 3](#ex-relativistic-dynamics-3)), find the energy of each of the two emitted gamma rays. (b) Find the wavelength of each gamma ray. (c) Explain, physically, why PET scanners are built as a ring of detectors surrounding the patient rather than a single detector.
+:::{solution} ex-particle-properties-of-waves-4
+:label: sol-particle-properties-of-waves-4
+:class: dropdown
 
-16. Estimate the minimum photon energy needed to produce a proton–antiproton pair ($p + \bar p$) instead of an electron–positron pair, given the proton rest energy $m_pc^2 = 938\ \text{MeV}$, and compare the required photon wavelength to that found for electron–positron pair production in Problem 13.
+_Solution not yet written._
+:::
 
-17. A $0.662\ \text{MeV}$ gamma ray (a characteristic energy emitted by the common radioactive source cesium-137) Compton-scatters inside a detector. (a) Find the maximum possible energy, $\Delta E_{\max}$, that can be deposited by a single Compton-scattering event (i.e., the location of the Compton edge), using the $\theta=180°$ result from Problem 10. (b) Find the photopeak energy, i.e., the energy deposited if the photon instead undergoes full photoelectric absorption. (c) Explain, in one or two sentences, why a real detector's measured spectrum for this source shows both features.
+:::{exercise}
+:label: ex-particle-properties-of-waves-5
 
-18. Explain, using the discussion of photomultiplier tubes, why a single visible-light photon (energy of order a few eV) can trigger a measurable macroscopic current pulse, even though a single electron's charge ($1.6\times10^{-19}\ \text{C}$) is far too small to detect directly with ordinary circuitry; estimate the number of electrons that must reach the final dynode stage to constitute a charge pulse of $1.0\times10^{-12}\ \text{C}$ (a typical minimum detectable pulse), and comment on whether a cascade of ten dynode stages, each multiplying the electron count by a factor of $4$, is sufficient to produce a pulse of this size starting from one photoelectron.
+A photoelectric-effect experiment on a certain metal gives a stopping potential of $0.65\ \text{V}$ for light of wavelength $450\ \text{nm}$, and $1.28\ \text{V}$ for light of wavelength $360\ \text{nm}$. Use these two data points (rather than assuming a value of $h$) to determine (a) Planck's constant and (b) the work function of the metal from this data, treating $K_{\max}=eV_0=hf-\phi$ as a linear equation in $f$.
+:::
 
-19. Explain why the ultraviolet catastrophe (Rayleigh–Jeans law) and Lenard's photoelectric puzzle are, at first glance, very different experimental problems (one about the color and intensity of thermal glow, the other about ejected electrons), yet both are resolved by exactly the same hypothesis. Identify precisely which physical assumption is shared by both classical (failed) treatments, and which single quantization postulate replaces it in both cases.
+:::{solution} ex-particle-properties-of-waves-5
+:label: sol-particle-properties-of-waves-5
+:class: dropdown
 
-20. Silicon, used in most solar cells, has a band gap of about $1.1\ \text{eV}$. (a) Find the longest wavelength of light that can produce a usable electron–hole pair in a silicon photovoltaic cell, and identify the region of the spectrum in which it lies. (b) Explain, using the photoelectric equation as a guide, why photons with much *more* than the band-gap energy do not produce proportionally more usable electrical energy per photon, even though they carry more energy each.
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-particle-properties-of-waves-6
+
+A photocell with a platinum surface (work function $\phi = 6.35\ \text{eV}$) is illuminated with light of wavelength $150\ \text{nm}$. (a) Show that this wavelength is above the threshold for photoemission and find $K_{\max}$. (b) Find the longest wavelength of light that could eject photoelectrons from platinum, and explain why ordinary visible or near-UV light sources cannot do so.
+:::
+
+:::{solution} ex-particle-properties-of-waves-6
+:label: sol-particle-properties-of-waves-6
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-particle-properties-of-waves-7
+
+An X-ray tube is operated at an accelerating voltage of $120\ \text{kV}$. (a) Find the Duane–Hunt minimum wavelength $\lambda_{\min}$. (b) Find the corresponding maximum photon energy, in keV. (c) If the accelerating voltage is doubled, by what factor does $\lambda_{\min}$ change?
+:::
+
+:::{solution} ex-particle-properties-of-waves-7
+:label: sol-particle-properties-of-waves-7
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-particle-properties-of-waves-8
+
+Explain, in your own words and using conservation of energy, why the bremsstrahlung spectrum from an X-ray tube is continuous (a range of wavelengths) even though each individual electron carries the same, sharply defined kinetic energy $eV$ upon striking the target.
+:::
+
+:::{solution} ex-particle-properties-of-waves-8
+:label: sol-particle-properties-of-waves-8
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-particle-properties-of-waves-9
+
+X-rays of wavelength $\lambda = 0.0711\ \text{nm}$ are Compton-scattered at $\theta = 90°$. (a) Find the wavelength shift. (b) Find the wavelength and energy of the scattered photon. (c) Find the kinetic energy given to the recoiling electron.
+:::
+
+:::{solution} ex-particle-properties-of-waves-9
+:label: sol-particle-properties-of-waves-9
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-particle-properties-of-waves-10
+
+Show that, for a photon Compton-scattered directly backward ($\theta = 180°$) by a free electron, the wavelength shift is $2h/m_ec$, and evaluate this numerically. For an incident photon of very short wavelength ($\lambda \ll h/m_ec$, i.e. a very energetic photon), find the approximate fraction of the incident photon's energy that is transferred to the electron in a $180°$ collision.
+:::
+
+:::{solution} ex-particle-properties-of-waves-10
+:label: sol-particle-properties-of-waves-10
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-particle-properties-of-waves-11
+
+Fill in the algebraic step omitted in the text: starting from equations (i) and (ii) in the derivation of the Compton formula, substitute (i) into the squared version of (ii) combined with $E_e^2=(p_ec)^2+(m_ec^2)^2$, and verify explicitly that the terms $(hc/\lambda)^2$, $(hc/\lambda')^2$, and $(m_ec^2)^2$ cancel between the two sides, leaving the simplified relation quoted in the text.
+:::
+
+:::{solution} ex-particle-properties-of-waves-11
+:label: sol-particle-properties-of-waves-11
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-particle-properties-of-waves-12
+
+A beam of visible-light photons ($\lambda = 600\ \text{nm}$) is Compton-scattered from free electrons at $\theta = 90°$. (a) Compute the fractional wavelength shift $\Delta\lambda/\lambda$. (b) Explain, using your numerical result, why the Compton effect is essentially undetectable with visible light and was only discovered using X-rays.
+:::
+
+:::{solution} ex-particle-properties-of-waves-12
+:label: sol-particle-properties-of-waves-12
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-particle-properties-of-waves-13
+
+Find the minimum photon energy required for pair production of an electron-positron pair, and convert this to a wavelength. Explain why pair production cannot occur for an isolated photon in empty space (i.e., why a nearby nucleus or other particle is required), using conservation of momentum and energy together.
+:::
+
+:::{solution} ex-particle-properties-of-waves-13
+:label: sol-particle-properties-of-waves-13
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-particle-properties-of-waves-14
+
+A $2.50\ \text{MeV}$ photon undergoes pair production near a heavy nucleus, which recoils with negligible kinetic energy. If the electron and positron share the available kinetic energy equally, find the kinetic energy and the total (kinetic plus rest) energy of each particle.
+:::
+
+:::{solution} ex-particle-properties-of-waves-14
+:label: sol-particle-properties-of-waves-14
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-particle-properties-of-waves-15
+
+In positron-emission tomography, a positron emitted by a radioactive tracer travels a short distance, loses its kinetic energy through collisions, and then annihilates with an atomic electron essentially at rest. (a) Using conservation of energy and momentum (as in [Chapter 3, Problem 3](#ex-relativistic-dynamics-3)), find the energy of each of the two emitted gamma rays. (b) Find the wavelength of each gamma ray. (c) Explain, physically, why PET scanners are built as a ring of detectors surrounding the patient rather than a single detector.
+:::
+
+:::{solution} ex-particle-properties-of-waves-15
+:label: sol-particle-properties-of-waves-15
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-particle-properties-of-waves-16
+
+Estimate the minimum photon energy needed to produce a proton–antiproton pair ($p + \bar p$) instead of an electron–positron pair, given the proton rest energy $m_pc^2 = 938\ \text{MeV}$, and compare the required photon wavelength to that found for electron–positron pair production in Problem 13.
+:::
+
+:::{solution} ex-particle-properties-of-waves-16
+:label: sol-particle-properties-of-waves-16
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-particle-properties-of-waves-17
+
+A $0.662\ \text{MeV}$ gamma ray (a characteristic energy emitted by the common radioactive source cesium-137) Compton-scatters inside a detector. (a) Find the maximum possible energy, $\Delta E_{\max}$, that can be deposited by a single Compton-scattering event (i.e., the location of the Compton edge), using the $\theta=180°$ result from Problem 10. (b) Find the photopeak energy, i.e., the energy deposited if the photon instead undergoes full photoelectric absorption. (c) Explain, in one or two sentences, why a real detector's measured spectrum for this source shows both features.
+:::
+
+:::{solution} ex-particle-properties-of-waves-17
+:label: sol-particle-properties-of-waves-17
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-particle-properties-of-waves-18
+
+Explain, using the discussion of photomultiplier tubes, why a single visible-light photon (energy of order a few eV) can trigger a measurable macroscopic current pulse, even though a single electron's charge ($1.6\times10^{-19}\ \text{C}$) is far too small to detect directly with ordinary circuitry; estimate the number of electrons that must reach the final dynode stage to constitute a charge pulse of $1.0\times10^{-12}\ \text{C}$ (a typical minimum detectable pulse), and comment on whether a cascade of ten dynode stages, each multiplying the electron count by a factor of $4$, is sufficient to produce a pulse of this size starting from one photoelectron.
+:::
+
+:::{solution} ex-particle-properties-of-waves-18
+:label: sol-particle-properties-of-waves-18
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-particle-properties-of-waves-19
+
+Explain why the ultraviolet catastrophe (Rayleigh–Jeans law) and Lenard's photoelectric puzzle are, at first glance, very different experimental problems (one about the color and intensity of thermal glow, the other about ejected electrons), yet both are resolved by exactly the same hypothesis. Identify precisely which physical assumption is shared by both classical (failed) treatments, and which single quantization postulate replaces it in both cases.
+:::
+
+:::{solution} ex-particle-properties-of-waves-19
+:label: sol-particle-properties-of-waves-19
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-particle-properties-of-waves-20
+
+Silicon, used in most solar cells, has a band gap of about $1.1\ \text{eV}$. (a) Find the longest wavelength of light that can produce a usable electron–hole pair in a silicon photovoltaic cell, and identify the region of the spectrum in which it lies. (b) Explain, using the photoelectric equation as a guide, why photons with much *more* than the band-gap energy do not produce proportionally more usable electrical energy per photon, even though they carry more energy each.
+:::
+
+:::{solution} ex-particle-properties-of-waves-20
+:label: sol-particle-properties-of-waves-20
+:class: dropdown
+
+_Solution not yet written._
+:::

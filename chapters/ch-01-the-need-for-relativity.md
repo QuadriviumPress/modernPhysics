@@ -224,26 +224,158 @@ It is worth appreciating just how much this single change in starting point acco
 
 ## Problems
 
-1. Earth orbits the Sun at approximately $v = 3.0\times10^4\ \text{m/s}$. Using the (incorrect) Galilean velocity-addition rule, estimate the fractional difference $(c+v)/(c-v) - 1$ between the speed of light measured "downstream" and "upstream" of Earth's motion through a stationary ether. Compare your estimate to the sensitivity you would need in an experiment to detect it.
+:::{exercise}
+:label: ex-need-for-relativity-1
 
-2. A swimmer who swims at speed $u$ in still water crosses a river of width $L$ flowing at speed $v < u$. (a) Find the time to swim straight across and back if the swimmer aims to always move perpendicular to the bank as seen from the shore. (b) Find the time to swim a distance $L$ directly upstream and then back downstream. (c) Show the two times are unequal, and explain the analogy to the two arms of the Michelson–Morley interferometer.
+Earth orbits the Sun at approximately $v = 3.0\times10^4\ \text{m/s}$. Using the (incorrect) Galilean velocity-addition rule, estimate the fractional difference $(c+v)/(c-v) - 1$ between the speed of light measured "downstream" and "upstream" of Earth's motion through a stationary ether. Compare your estimate to the sensitivity you would need in an experiment to detect it.
+:::
 
-3. Explain, in your own words, why a null result from a single run of the Michelson-Morley experiment would not have been convincing on its own, and why repeating it at different times of year strengthened the conclusion.
+:::{solution} ex-need-for-relativity-1
+:label: sol-need-for-relativity-1
+:class: dropdown
 
-4. Suppose light, rather than obeying Einstein's second postulate, were emitted at speed $c$ relative to its source (an "emission theory" of light), like a bullet fired from a moving gun. Explain qualitatively why light from the two stars of a binary system, observed from Earth over one orbital period, would arrive with systematically distorted timing under this theory, and why this distortion is not observed.
+_Solution not yet written._
+:::
 
-5. Explain why the principle of relativity (postulate 1) already applied to Newtonian mechanics before 1905, and identify precisely what Einstein's second postulate adds that Newtonian mechanics did not have.
+:::{exercise}
+:label: ex-need-for-relativity-2
 
-6. Derive the fringe-shift formula $\Delta N = 2Lv^2/(\lambda c^2)$ by working through the steps in the text, and use it to estimate the fringe shift a modern Michelson–Morley-style apparatus with arm length $L = 4\ \text{km}$ (comparable to a gravitational-wave observatory) and $\lambda = 1064\ \text{nm}$ would predict for Earth's orbital speed, if a stationary ether existed. Comment on how much more sensitive such an apparatus is, in principle, than Michelson and Morley's original tabletop instrument.
+A swimmer who swims at speed $u$ in still water crosses a river of width $L$ flowing at speed $v < u$. (a) Find the time to swim straight across and back if the swimmer aims to always move perpendicular to the bank as seen from the shore. (b) Find the time to swim a distance $L$ directly upstream and then back downstream. (c) Show the two times are unequal, and explain the analogy to the two arms of the Michelson–Morley interferometer.
+:::
 
-7. A modern, high-precision version of the Michelson–Morley experiment finds an upper bound on any fringe shift roughly $10^{-5}$ times smaller than the shift $0.4$ fringe originally predicted by Galilean relativity plus a stationary ether. If this bound were instead interpreted (incorrectly, but for the sake of the exercise) as an upper limit on Earth's residual speed through a stationary ether, using the same fringe-shift formula, what upper limit on that speed would it imply? Compare this to Earth's orbital speed.
+:::{solution} ex-need-for-relativity-2
+:label: sol-need-for-relativity-2
+:class: dropdown
 
-8. Using the Fizeau formula $u_{\text{measured}} = c/n + v(1-1/n^2)$, compute the predicted speed (in the lab frame) of light traveling through water ($n = 1.33$) flowing at $v = 7.0\ \text{m/s}$, both with and against the light's direction of travel. Find the difference between these two speeds, and compare it to the difference $2v$ that simple Galilean addition (full dragging) would predict.
+_Solution not yet written._
+:::
 
-9. Jupiter orbits the Sun at an orbital speed of about $v = 1.3\times10^4\ \text{m/s}$. If an astronomer stationed on Jupiter observed the same "overhead" star discussed in the worked example on aberration, using the same reasoning, what angular radius (in arcseconds) would that astronomer measure for the star's annual aberration ellipse? Explain why the ratio of your answer to Earth's $20.5''$ depends only on the ratio of the two planets' orbital speeds.
+:::{exercise}
+:label: ex-need-for-relativity-3
 
-10. Explain why an ether model in which Earth *fully* drags the surrounding ether along with it (proposed to explain the Michelson–Morley null result) is inconsistent with the existence of stellar aberration, using the falling-rain analogy described in the text: a person standing still under vertically falling rain gets wet only from directly above, while a person running through the rain must tilt an umbrella forward to stay dry. What would "full ether drag" have to imply about the umbrella, if starlight is the falling rain and Earth's atmosphere is analogous to the region being dragged?
+Explain, in your own words, why a null result from a single run of the Michelson-Morley experiment would not have been convincing on its own, and why repeating it at different times of year strengthened the conclusion.
+:::
 
-11. Explain, in your own words, why the original Michelson–Morley design (equal-length arms, apparatus rotated) cannot by itself distinguish "no ether effects" from "an ether effect exactly cancelled by a velocity-dependent length contraction." Then explain why making the two arms unequal in length (Kennedy–Thorndike) closes this loophole.
+:::{solution} ex-need-for-relativity-3
+:label: sol-need-for-relativity-3
+:class: dropdown
 
-12. Suppose (contrary to fact) that the Kennedy–Thorndike experiment *had* detected a fringe drift over the course of a year, of a size consistent with length contraction being the *only* relativistic effect (i.e., with clocks ticking at the same rate in every frame). Explain qualitatively why this outcome would have been logically consistent with the original Michelson–Morley null result, even though it would have been inconsistent with the time dilation and Lorentz transformation developed in [Chapter 2](#ch-special-relativity).
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-need-for-relativity-4
+
+Suppose light, rather than obeying Einstein's second postulate, were emitted at speed $c$ relative to its source (an "emission theory" of light), like a bullet fired from a moving gun. Explain qualitatively why light from the two stars of a binary system, observed from Earth over one orbital period, would arrive with systematically distorted timing under this theory, and why this distortion is not observed.
+:::
+
+:::{solution} ex-need-for-relativity-4
+:label: sol-need-for-relativity-4
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-need-for-relativity-5
+
+Explain why the principle of relativity (postulate 1) already applied to Newtonian mechanics before 1905, and identify precisely what Einstein's second postulate adds that Newtonian mechanics did not have.
+:::
+
+:::{solution} ex-need-for-relativity-5
+:label: sol-need-for-relativity-5
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-need-for-relativity-6
+
+Derive the fringe-shift formula $\Delta N = 2Lv^2/(\lambda c^2)$ by working through the steps in the text, and use it to estimate the fringe shift a modern Michelson–Morley-style apparatus with arm length $L = 4\ \text{km}$ (comparable to a gravitational-wave observatory) and $\lambda = 1064\ \text{nm}$ would predict for Earth's orbital speed, if a stationary ether existed. Comment on how much more sensitive such an apparatus is, in principle, than Michelson and Morley's original tabletop instrument.
+:::
+
+:::{solution} ex-need-for-relativity-6
+:label: sol-need-for-relativity-6
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-need-for-relativity-7
+
+A modern, high-precision version of the Michelson–Morley experiment finds an upper bound on any fringe shift roughly $10^{-5}$ times smaller than the shift $0.4$ fringe originally predicted by Galilean relativity plus a stationary ether. If this bound were instead interpreted (incorrectly, but for the sake of the exercise) as an upper limit on Earth's residual speed through a stationary ether, using the same fringe-shift formula, what upper limit on that speed would it imply? Compare this to Earth's orbital speed.
+:::
+
+:::{solution} ex-need-for-relativity-7
+:label: sol-need-for-relativity-7
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-need-for-relativity-8
+
+Using the Fizeau formula $u_{\text{measured}} = c/n + v(1-1/n^2)$, compute the predicted speed (in the lab frame) of light traveling through water ($n = 1.33$) flowing at $v = 7.0\ \text{m/s}$, both with and against the light's direction of travel. Find the difference between these two speeds, and compare it to the difference $2v$ that simple Galilean addition (full dragging) would predict.
+:::
+
+:::{solution} ex-need-for-relativity-8
+:label: sol-need-for-relativity-8
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-need-for-relativity-9
+
+Jupiter orbits the Sun at an orbital speed of about $v = 1.3\times10^4\ \text{m/s}$. If an astronomer stationed on Jupiter observed the same "overhead" star discussed in the worked example on aberration, using the same reasoning, what angular radius (in arcseconds) would that astronomer measure for the star's annual aberration ellipse? Explain why the ratio of your answer to Earth's $20.5''$ depends only on the ratio of the two planets' orbital speeds.
+:::
+
+:::{solution} ex-need-for-relativity-9
+:label: sol-need-for-relativity-9
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-need-for-relativity-10
+
+Explain why an ether model in which Earth *fully* drags the surrounding ether along with it (proposed to explain the Michelson–Morley null result) is inconsistent with the existence of stellar aberration, using the falling-rain analogy described in the text: a person standing still under vertically falling rain gets wet only from directly above, while a person running through the rain must tilt an umbrella forward to stay dry. What would "full ether drag" have to imply about the umbrella, if starlight is the falling rain and Earth's atmosphere is analogous to the region being dragged?
+:::
+
+:::{solution} ex-need-for-relativity-10
+:label: sol-need-for-relativity-10
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-need-for-relativity-11
+
+Explain, in your own words, why the original Michelson–Morley design (equal-length arms, apparatus rotated) cannot by itself distinguish "no ether effects" from "an ether effect exactly cancelled by a velocity-dependent length contraction." Then explain why making the two arms unequal in length (Kennedy–Thorndike) closes this loophole.
+:::
+
+:::{solution} ex-need-for-relativity-11
+:label: sol-need-for-relativity-11
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-need-for-relativity-12
+
+Suppose (contrary to fact) that the Kennedy–Thorndike experiment *had* detected a fringe drift over the course of a year, of a size consistent with length contraction being the *only* relativistic effect (i.e., with clocks ticking at the same rate in every frame). Explain qualitatively why this outcome would have been logically consistent with the original Michelson–Morley null result, even though it would have been inconsistent with the time dilation and Lorentz transformation developed in [Chapter 2](#ch-special-relativity).
+:::
+
+:::{solution} ex-need-for-relativity-12
+:label: sol-need-for-relativity-12
+:class: dropdown
+
+_Solution not yet written._
+:::

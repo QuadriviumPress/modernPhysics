@@ -194,40 +194,249 @@ It is worth pausing to compare the degeneracy patterns of the three central (or 
 
 ## Problems
 
-1. For a cubic 3D infinite box of side $L$, list the three lowest-lying distinct energy levels (in units of $h^2/8mL^2$) and the quantum-number triples $(n_x,n_y,n_z)$ that produce each, noting any degeneracies.
+:::{exercise}
+:label: ex-quantum-mechanics-in-three-dimensions-1
 
-2. For the rectangular quantum dot of the worked example ($L_x=L_y=5.0\ \text{nm}$, $L_z=10.0\ \text{nm}$), find the energy (in meV) of the state $(n_x,n_y,n_z)=(1,1,2)$, and determine whether it is degenerate with any other low-lying state, explaining your reasoning from the box's symmetry.
+For a cubic 3D infinite box of side $L$, list the three lowest-lying distinct energy levels (in units of $h^2/8mL^2$) and the quantum-number triples $(n_x,n_y,n_z)$ that produce each, noting any degeneracies.
+:::
 
-3. An electron is in a state with $\ell = 2$. (a) List all allowed values of $m_\ell$. (b) Compute the magnitude $L$ of its orbital angular momentum (in units of $\hbar$). (c) Compute the maximum possible value of $L_z$, and show it is strictly less than $L$, explaining why physically.
+:::{solution} ex-quantum-mechanics-in-three-dimensions-1
+:label: sol-quantum-mechanics-in-three-dimensions-1
+:class: dropdown
 
-4. How many distinct $(\ell, m_\ell)$ combinations are allowed for principal quantum number $n=3$? List them, grouped by $\ell$, and give the spectroscopic letter for each $\ell$ value.
+_Solution not yet written._
+:::
 
-5. Explain, using the uncertainty relation among the components of angular momentum, why an electron in a state of definite $L$ and $L_z$ cannot simultaneously have a definite value of $L_x$, and why this is consistent with the angular momentum vector never lying exactly along the $z$-axis.
+:::{exercise}
+:label: ex-quantum-mechanics-in-three-dimensions-2
 
-6. A particle is in a central-potential bound state with $n=4$. What is the maximum possible orbital angular momentum quantum number $\ell$ it can have, and how many total $(\ell,m_\ell)$ states are available at that $n$ (summed over all allowed $\ell$)?
+For the rectangular quantum dot of the worked example ($L_x=L_y=5.0\ \text{nm}$, $L_z=10.0\ \text{nm}$), find the energy (in meV) of the state $(n_x,n_y,n_z)=(1,1,2)$, and determine whether it is degenerate with any other low-lying state, explaining your reasoning from the box's symmetry.
+:::
 
-7. Explain qualitatively why the *angular* part of the wave function, $Y(\theta,\phi)$, does not depend on the specific functional form of $V(r)$, while the *radial* part, $R(r)$, does — referring to which term(s) in the separated Schrödinger equation involve $V(r)$ and which involve only the angular derivatives.
+:::{solution} ex-quantum-mechanics-in-three-dimensions-2
+:label: sol-quantum-mechanics-in-three-dimensions-2
+:class: dropdown
 
-8. Explain, using the centrifugal barrier term $\hbar^2\ell(\ell+1)/2mr^2$, why an $s$-state ($\ell=0$) electron can have a nonzero probability density at the nucleus ($r=0$), while a $p$-state ($\ell=1$) electron cannot — a fact revisited in [Chapter 11](#ch-many-electron-atoms)'s discussion of why $s$-electrons are especially effective at "penetrating" toward the nucleus in multi-electron atoms.
+_Solution not yet written._
+:::
 
-9. For an electron in a state with $\ell=3$ ($f$-state), find (using the method of the worked example) the smallest possible angle between $\vec L$ and the $z$-axis, and compare it to the $\ell=2$ result found in the text, commenting on the trend as $\ell$ increases.
+:::{exercise}
+:label: ex-quantum-mechanics-in-three-dimensions-3
 
-10. Verify the commutation relation $[\hat L_z,\hat L_x]=i\hbar\hat L_y$ is consistent (in terms of index cycling $x\to y\to z\to x$) with the relation $[\hat L_x,\hat L_y]=i\hbar\hat L_z$ already stated, by writing out the analogous relation obtained by cycling indices twice, and state which single relation among $\hat L^2$, $\hat L_x$, $\hat L_y$, $\hat L_z$ guarantees that $L$ and one Cartesian component can be simultaneously sharp.
+An electron is in a state with $\ell = 2$. (a) List all allowed values of $m_\ell$. (b) Compute the magnitude $L$ of its orbital angular momentum (in units of $\hbar$). (c) Compute the maximum possible value of $L_z$, and show it is strictly less than $L$, explaining why physically.
+:::
 
-11. For the isotropic three-dimensional harmonic oscillator, list all the Cartesian quantum-number triples $(n_x,n_y,n_z)$ that give $N=n_x+n_y+n_z=2$, verify there are six of them, and compare this total to the formula $(N+1)(N+2)/2$ quoted in the text.
+:::{solution} ex-quantum-mechanics-in-three-dimensions-3
+:label: sol-quantum-mechanics-in-three-dimensions-3
+:class: dropdown
 
-12. Explain, in terms of symmetry, why the isotropic harmonic oscillator shows a higher degree of degeneracy at a given energy than the cubic infinite box does at a comparable energy level, even though both potentials are invariant under the same set of coordinate permutations ($x\leftrightarrow y\leftrightarrow z$).
+_Solution not yet written._
+:::
 
-13. The nuclear shell model uses an isotropic-oscillator-like potential to explain why nuclei with certain "magic" numbers of protons or neutrons (2, 8, 20, ...) are unusually stable. Using only the degeneracy formula $(N+1)(N+2)/2$ (ignoring, for this problem, the spin-orbit correction mentioned in the text), compute the cumulative number of single-particle states available after filling oscillator shells $N=0$, $N=1$, and $N=2$ (counting each spatial state as available to 2 nucleons of a given type, for spin), and compare the resulting cumulative totals to the first few magic numbers.
+:::{exercise}
+:label: ex-quantum-mechanics-in-three-dimensions-4
 
-14. A particle in a central potential is in a state with $n=2$. (a) List the allowed $(\ell, m_\ell)$ combinations. (b) If a measurement of $L_z$ yields the maximum possible value for the largest allowed $\ell$ at this $n$, state the values of $\ell$ and $m_\ell$, and compute $L$ and the angle between $\vec L$ and the $z$-axis.
+How many distinct $(\ell, m_\ell)$ combinations are allowed for principal quantum number $n=3$? List them, grouped by $\ell$, and give the spectroscopic letter for each $\ell$ value.
+:::
 
-15. An electron in a hydrogen-like atom is in a $p$-state ($\ell=1$, $m_\ell=0$), whose angular wave function is $Y_1^0 \propto \cos\theta$. (a) At what polar angle(s) $\theta$ does the angular probability density $|Y_1^0|^2$ vanish? (b) Explain, in terms of your answer, why this state is often called a "$p_z$" state, and contrast its angular shape with the spherically symmetric $\ell=0$ ($s$-state) probability density.
+:::{solution} ex-quantum-mechanics-in-three-dimensions-4
+:label: sol-quantum-mechanics-in-three-dimensions-4
+:class: dropdown
 
-16. An atom in a state with $\ell=1$ is placed in an external magnetic field along the $z$-axis. Using the fact that the energy shift is proportional to $m_\ell$, state how many distinct energy levels the original (field-free) $\ell=1$ level splits into, and explain why an $s$-state ($\ell=0$) shows no such splitting from orbital angular momentum alone.
+_Solution not yet written._
+:::
 
-17. Verify, by explicit substitution of $n_x=n_y=n_z=0$ (so $N=0$), that the ground state of the isotropic three-dimensional harmonic oscillator has energy $E_0 = \tfrac32\hbar\omega$, and explain why this is exactly three times the one-dimensional zero-point energy $\tfrac12\hbar\omega$ found in [Chapter 8](#ch-the-schrodinger-equation).
+:::{exercise}
+:label: ex-quantum-mechanics-in-three-dimensions-5
 
-18. Explain, referring to the "accidental" degeneracy discussed in the text, what would have to be true of a central potential $V(r)$ for its energy levels to depend on $\ell$ as well as $n$ — i.e., for the extra Coulomb-specific degeneracy to be absent — and state whether you would expect the isotropic harmonic oscillator (whose levels depend on $N=2n_r+\ell$, not on $n_r$ and $\ell$ separately) to show this same kind of extra degeneracy.
+Explain, using the uncertainty relation among the components of angular momentum, why an electron in a state of definite $L$ and $L_z$ cannot simultaneously have a definite value of $L_x$, and why this is consistent with the angular momentum vector never lying exactly along the $z$-axis.
+:::
 
-19. A beam of silver atoms (used in the Stern–Gerlach experiment discussed further in [Chapter 10](#ch-the-hydrogen-atom)) has its outer electron in an $s$-state ($\ell=0$). Using the magnetic-moment relation $\vec\mu_L = -(e/2m)\vec L$, explain why this electron's *orbital* angular momentum cannot be responsible for any splitting of the beam in an inhomogeneous magnetic field, foreshadowing the need for an additional angular-momentum-like degree of freedom (electron spin) introduced in [Chapter 10](#ch-the-hydrogen-atom).
+:::{solution} ex-quantum-mechanics-in-three-dimensions-5
+:label: sol-quantum-mechanics-in-three-dimensions-5
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-quantum-mechanics-in-three-dimensions-6
+
+A particle is in a central-potential bound state with $n=4$. What is the maximum possible orbital angular momentum quantum number $\ell$ it can have, and how many total $(\ell,m_\ell)$ states are available at that $n$ (summed over all allowed $\ell$)?
+:::
+
+:::{solution} ex-quantum-mechanics-in-three-dimensions-6
+:label: sol-quantum-mechanics-in-three-dimensions-6
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-quantum-mechanics-in-three-dimensions-7
+
+Explain qualitatively why the *angular* part of the wave function, $Y(\theta,\phi)$, does not depend on the specific functional form of $V(r)$, while the *radial* part, $R(r)$, does — referring to which term(s) in the separated Schrödinger equation involve $V(r)$ and which involve only the angular derivatives.
+:::
+
+:::{solution} ex-quantum-mechanics-in-three-dimensions-7
+:label: sol-quantum-mechanics-in-three-dimensions-7
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-quantum-mechanics-in-three-dimensions-8
+
+Explain, using the centrifugal barrier term $\hbar^2\ell(\ell+1)/2mr^2$, why an $s$-state ($\ell=0$) electron can have a nonzero probability density at the nucleus ($r=0$), while a $p$-state ($\ell=1$) electron cannot — a fact revisited in [Chapter 11](#ch-many-electron-atoms)'s discussion of why $s$-electrons are especially effective at "penetrating" toward the nucleus in multi-electron atoms.
+:::
+
+:::{solution} ex-quantum-mechanics-in-three-dimensions-8
+:label: sol-quantum-mechanics-in-three-dimensions-8
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-quantum-mechanics-in-three-dimensions-9
+
+For an electron in a state with $\ell=3$ ($f$-state), find (using the method of the worked example) the smallest possible angle between $\vec L$ and the $z$-axis, and compare it to the $\ell=2$ result found in the text, commenting on the trend as $\ell$ increases.
+:::
+
+:::{solution} ex-quantum-mechanics-in-three-dimensions-9
+:label: sol-quantum-mechanics-in-three-dimensions-9
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-quantum-mechanics-in-three-dimensions-10
+
+Verify the commutation relation $[\hat L_z,\hat L_x]=i\hbar\hat L_y$ is consistent (in terms of index cycling $x\to y\to z\to x$) with the relation $[\hat L_x,\hat L_y]=i\hbar\hat L_z$ already stated, by writing out the analogous relation obtained by cycling indices twice, and state which single relation among $\hat L^2$, $\hat L_x$, $\hat L_y$, $\hat L_z$ guarantees that $L$ and one Cartesian component can be simultaneously sharp.
+:::
+
+:::{solution} ex-quantum-mechanics-in-three-dimensions-10
+:label: sol-quantum-mechanics-in-three-dimensions-10
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-quantum-mechanics-in-three-dimensions-11
+
+For the isotropic three-dimensional harmonic oscillator, list all the Cartesian quantum-number triples $(n_x,n_y,n_z)$ that give $N=n_x+n_y+n_z=2$, verify there are six of them, and compare this total to the formula $(N+1)(N+2)/2$ quoted in the text.
+:::
+
+:::{solution} ex-quantum-mechanics-in-three-dimensions-11
+:label: sol-quantum-mechanics-in-three-dimensions-11
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-quantum-mechanics-in-three-dimensions-12
+
+Explain, in terms of symmetry, why the isotropic harmonic oscillator shows a higher degree of degeneracy at a given energy than the cubic infinite box does at a comparable energy level, even though both potentials are invariant under the same set of coordinate permutations ($x\leftrightarrow y\leftrightarrow z$).
+:::
+
+:::{solution} ex-quantum-mechanics-in-three-dimensions-12
+:label: sol-quantum-mechanics-in-three-dimensions-12
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-quantum-mechanics-in-three-dimensions-13
+
+The nuclear shell model uses an isotropic-oscillator-like potential to explain why nuclei with certain "magic" numbers of protons or neutrons (2, 8, 20, ...) are unusually stable. Using only the degeneracy formula $(N+1)(N+2)/2$ (ignoring, for this problem, the spin-orbit correction mentioned in the text), compute the cumulative number of single-particle states available after filling oscillator shells $N=0$, $N=1$, and $N=2$ (counting each spatial state as available to 2 nucleons of a given type, for spin), and compare the resulting cumulative totals to the first few magic numbers.
+:::
+
+:::{solution} ex-quantum-mechanics-in-three-dimensions-13
+:label: sol-quantum-mechanics-in-three-dimensions-13
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-quantum-mechanics-in-three-dimensions-14
+
+A particle in a central potential is in a state with $n=2$. (a) List the allowed $(\ell, m_\ell)$ combinations. (b) If a measurement of $L_z$ yields the maximum possible value for the largest allowed $\ell$ at this $n$, state the values of $\ell$ and $m_\ell$, and compute $L$ and the angle between $\vec L$ and the $z$-axis.
+:::
+
+:::{solution} ex-quantum-mechanics-in-three-dimensions-14
+:label: sol-quantum-mechanics-in-three-dimensions-14
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-quantum-mechanics-in-three-dimensions-15
+
+An electron in a hydrogen-like atom is in a $p$-state ($\ell=1$, $m_\ell=0$), whose angular wave function is $Y_1^0 \propto \cos\theta$. (a) At what polar angle(s) $\theta$ does the angular probability density $|Y_1^0|^2$ vanish? (b) Explain, in terms of your answer, why this state is often called a "$p_z$" state, and contrast its angular shape with the spherically symmetric $\ell=0$ ($s$-state) probability density.
+:::
+
+:::{solution} ex-quantum-mechanics-in-three-dimensions-15
+:label: sol-quantum-mechanics-in-three-dimensions-15
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-quantum-mechanics-in-three-dimensions-16
+
+An atom in a state with $\ell=1$ is placed in an external magnetic field along the $z$-axis. Using the fact that the energy shift is proportional to $m_\ell$, state how many distinct energy levels the original (field-free) $\ell=1$ level splits into, and explain why an $s$-state ($\ell=0$) shows no such splitting from orbital angular momentum alone.
+:::
+
+:::{solution} ex-quantum-mechanics-in-three-dimensions-16
+:label: sol-quantum-mechanics-in-three-dimensions-16
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-quantum-mechanics-in-three-dimensions-17
+
+Verify, by explicit substitution of $n_x=n_y=n_z=0$ (so $N=0$), that the ground state of the isotropic three-dimensional harmonic oscillator has energy $E_0 = \tfrac32\hbar\omega$, and explain why this is exactly three times the one-dimensional zero-point energy $\tfrac12\hbar\omega$ found in [Chapter 8](#ch-the-schrodinger-equation).
+:::
+
+:::{solution} ex-quantum-mechanics-in-three-dimensions-17
+:label: sol-quantum-mechanics-in-three-dimensions-17
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-quantum-mechanics-in-three-dimensions-18
+
+Explain, referring to the "accidental" degeneracy discussed in the text, what would have to be true of a central potential $V(r)$ for its energy levels to depend on $\ell$ as well as $n$ — i.e., for the extra Coulomb-specific degeneracy to be absent — and state whether you would expect the isotropic harmonic oscillator (whose levels depend on $N=2n_r+\ell$, not on $n_r$ and $\ell$ separately) to show this same kind of extra degeneracy.
+:::
+
+:::{solution} ex-quantum-mechanics-in-three-dimensions-18
+:label: sol-quantum-mechanics-in-three-dimensions-18
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-quantum-mechanics-in-three-dimensions-19
+
+A beam of silver atoms (used in the Stern–Gerlach experiment discussed further in [Chapter 10](#ch-the-hydrogen-atom)) has its outer electron in an $s$-state ($\ell=0$). Using the magnetic-moment relation $\vec\mu_L = -(e/2m)\vec L$, explain why this electron's *orbital* angular momentum cannot be responsible for any splitting of the beam in an inhomogeneous magnetic field, foreshadowing the need for an additional angular-momentum-like degree of freedom (electron spin) introduced in [Chapter 10](#ch-the-hydrogen-atom).
+:::
+
+:::{solution} ex-quantum-mechanics-in-three-dimensions-19
+:label: sol-quantum-mechanics-in-three-dimensions-19
+:class: dropdown
+
+_Solution not yet written._
+:::

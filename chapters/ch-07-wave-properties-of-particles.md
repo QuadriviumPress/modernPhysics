@@ -235,42 +235,262 @@ Since this is small enough that the electron remains nonrelativistic, its kineti
 
 ## Problems
 
-1. Find the de Broglie wavelength of (a) an electron with kinetic energy $54\ \text{eV}$ (as in the original Davisson–Germer experiment), (b) a proton with kinetic energy $1.0\ \text{MeV}$, and (c) a $0.145\ \text{kg}$ baseball moving at $40\ \text{m/s}$. Comment on which of these wavelengths could plausibly produce observable diffraction, and from what kind of structure.
+:::{exercise}
+:label: ex-wave-properties-of-particles-1
 
-2. In the Davisson–Germer experiment, a diffraction maximum for 54 eV electrons was observed at $\theta = 50°$ from a nickel crystal. Using $\lambda = h/p$ for the electrons' de Broglie wavelength and the diffraction condition $d\sin\theta = \lambda$ (first order, $n=1$), find the effective interplanar spacing $d$ of the nickel crystal consistent with this observation.
+Find the de Broglie wavelength of (a) an electron with kinetic energy $54\ \text{eV}$ (as in the original Davisson–Germer experiment), (b) a proton with kinetic energy $1.0\ \text{MeV}$, and (c) a $0.145\ \text{kg}$ baseball moving at $40\ \text{m/s}$. Comment on which of these wavelengths could plausibly produce observable diffraction, and from what kind of structure.
+:::
 
-3. Using the worked-example formula $\lambda \approx 1.226\ \text{nm}/\sqrt{V[\text{volts}]}$, find the accelerating voltage needed to give electrons a de Broglie wavelength of exactly $0.0500\ \text{nm}$, comparable to a typical X-ray wavelength used in crystallography.
+:::{solution} ex-wave-properties-of-particles-1
+:label: sol-wave-properties-of-particles-1
+:class: dropdown
 
-4. A beam of thermal neutrons (kinetic energy $\approx k_BT$ at room temperature, $T \approx 300\ \text{K}$) is used for neutron diffraction studies of crystal structure. (a) Estimate the neutrons' typical kinetic energy in eV. (b) Find their de Broglie wavelength, given the neutron mass $m_n = 1.675\times10^{-27}\ \text{kg}$, and compare it to typical interatomic spacings.
+_Solution not yet written._
+:::
 
-5. Verify the claim in the text that a $C_{60}$ molecule (mass $\approx 1.2\times10^{-24}\ \text{kg}$) moving at a typical thermal beam speed of $200\ \text{m/s}$ has a de Broglie wavelength of a few picometers, and comment on why such a short wavelength, far smaller than the molecule's own diameter ($\approx 1\ \text{nm}$), can nonetheless produce an observable diffraction pattern from a grating with a period of order $100\ \text{nm}$.
+:::{exercise}
+:label: ex-wave-properties-of-particles-2
 
-6. Using the de Broglie standing-wave argument, show that an electron in a circular Bohr orbit with $n=1$ has an orbital circumference equal to exactly one de Broglie wavelength, and explain qualitatively (without calculation) why this is consistent with such an orbit being the atom's lowest-energy (ground) state.
+In the Davisson–Germer experiment, a diffraction maximum for 54 eV electrons was observed at $\theta = 50°$ from a nickel crystal. Using $\lambda = h/p$ for the electrons' de Broglie wavelength and the diffraction condition $d\sin\theta = \lambda$ (first order, $n=1$), find the effective interplanar spacing $d$ of the nickel crystal consistent with this observation.
+:::
 
-7. A proton is confined to a nucleus of diameter $1.0\times10^{-14}\ \text{m}$. Use the uncertainty principle to estimate the minimum kinetic energy the proton must have, and compare it (order of magnitude) to typical nuclear binding energies of several MeV per nucleon ([Chapter 13](#ch-nuclear-physics)).
+:::{solution} ex-wave-properties-of-particles-2
+:label: sol-wave-properties-of-particles-2
+:class: dropdown
 
-8. An excited atomic state has a mean lifetime of $\Delta t = 1.0\times10^{-8}\ \text{s}$. (a) Use the energy–time uncertainty relation to estimate the minimum energy spread $\Delta E$ of this state, in eV. (b) If the state decays by emitting a photon of wavelength $500\ \text{nm}$, estimate the corresponding spread (linewidth) $\Delta\lambda$ in the emitted wavelength.
+_Solution not yet written._
+:::
 
-9. A beam of electrons is passed through a single slit of width $a$. Using the single-slit diffraction condition (first minimum at $\sin\theta \approx \lambda/a$ for small angles) together with the de Broglie relation, express the transverse momentum spread $\Delta p_y$ imparted to the electrons (estimated from $p\sin\theta$) in terms of the slit width $a$, and show that $\Delta y\,\Delta p_y \sim h$ if $\Delta y \sim a$, consistent with the uncertainty principle.
+:::{exercise}
+:label: ex-wave-properties-of-particles-3
 
-10. Explain, using the energy–time uncertainty relation, why a particle that is truly stable (infinite lifetime) can have a perfectly sharp rest energy $mc^2$, while an unstable particle cannot — and why particle physicists therefore quote both a mass and a "width" (in energy units) for unstable particles, a topic revisited in [Chapter 14](#ch-elementary-particles-and-the-standard-model).
+Using the worked-example formula $\lambda \approx 1.226\ \text{nm}/\sqrt{V[\text{volts}]}$, find the accelerating voltage needed to give electrons a de Broglie wavelength of exactly $0.0500\ \text{nm}$, comparable to a typical X-ray wavelength used in crystallography.
+:::
 
-11. Verify the group-velocity calculation in the text: starting from $\omega(k) = \hbar k^2/2m$ (the nonrelativistic free-particle dispersion relation), compute $d\omega/dk$ explicitly and confirm that it equals $\hbar k/m = p/m$.
+:::{solution} ex-wave-properties-of-particles-3
+:label: sol-wave-properties-of-particles-3
+:class: dropdown
 
-12. A relativistic free particle has energy $E = \sqrt{(pc)^2+(mc^2)^2}$ ([Chapter 3](#ch-relativistic-dynamics)). Using $E = \hbar\omega$ and $p = \hbar k$, show that the group velocity $v_g = d\omega/dk$ equals $pc^2/E$, and confirm that this reduces to the particle's actual (relativistic) velocity $u$ using the relation $u = pc^2/E$ established in [Chapter 3](#ch-relativistic-dynamics).
+_Solution not yet written._
+:::
 
-13. Estimate, using the uncertainty principle in the same manner as the atomic-scale worked example, the characteristic kinetic energy of an electron confined to a quantum dot (a nanoscale semiconductor structure) of diameter $10\ \text{nm}$, and compare it in order of magnitude to the atomic-scale estimate found in the text.
+:::{exercise}
+:label: ex-wave-properties-of-particles-4
 
-14. A double-slit experiment is performed with electrons at a rate of one electron at a time, with a detector placed at one slit to determine which slit each electron passes through. (a) Explain, in terms of the uncertainty principle, why this which-path measurement necessarily disturbs the electron's momentum. (b) Estimate the momentum disturbance needed to determine, to within the slit width $a$, which of two slits separated by distance $d$ an electron passed through, and explain qualitatively why a disturbance of this size is enough to wash out an interference pattern with fringe spacing set by $d$.
+A beam of thermal neutrons (kinetic energy $\approx k_BT$ at room temperature, $T \approx 300\ \text{K}$) is used for neutron diffraction studies of crystal structure. (a) Estimate the neutrons' typical kinetic energy in eV. (b) Find their de Broglie wavelength, given the neutron mass $m_n = 1.675\times10^{-27}\ \text{kg}$, and compare it to typical interatomic spacings.
+:::
 
-15. Explain why the phase velocity $v_p = \omega/k$ of a nonrelativistic free-particle matter wave, found in the text to be $u/2$, is not the speed of anything physically observable (in contrast with the group velocity), and why this is not a paradox.
+:::{solution} ex-wave-properties-of-particles-4
+:label: sol-wave-properties-of-particles-4
+:class: dropdown
 
-16. Using the spreading time scale $\tau \sim m(\Delta x_0)^2/\hbar$ quoted in the text, estimate $\tau$ for (a) an electron initially localized to $\Delta x_0 = 1.0\times10^{-10}\ \text{m}$ (roughly an atomic diameter), and (b) a $1.0\ \text{mg}$ dust grain initially localized to $\Delta x_0 = 1.0\times10^{-6}\ \text{m}$. Comment on which of these spreading times could plausibly be observed in a laboratory measurement lasting a few seconds.
+_Solution not yet written._
+:::
 
-17. In a delayed-choice or quantum-eraser experiment, explain why the disappearance and reappearance of the interference pattern cannot be used to send information backward in time, even though the "choice" of whether which-path information is available may be made after the particle has passed through the slit region. (Hint: consider what an experimenter examining only the particles that land in a single, fixed detector region can and cannot know without also consulting the marker/eraser results.)
+:::{exercise}
+:label: ex-wave-properties-of-particles-5
 
-18. A beam of electrons, each with the same de Broglie wavelength $\lambda = h/p$, is used in a Davisson–Germer-type experiment. Explain, using the standing-wave condition of the "Bohr Quantization Condition Revisited" subsection as an analogy, why a diffraction condition $d\sin\theta = n\lambda$ (rather than an arbitrary relation between $\theta$ and $\lambda$) is required for a diffraction maximum, drawing the parallel between constructive interference around a crystal lattice and constructive interference around a closed atomic orbit.
+Verify the claim in the text that a $C_{60}$ molecule (mass $\approx 1.2\times10^{-24}\ \text{kg}$) moving at a typical thermal beam speed of $200\ \text{m/s}$ has a de Broglie wavelength of a few picometers, and comment on why such a short wavelength, far smaller than the molecule's own diameter ($\approx 1\ \text{nm}$), can nonetheless produce an observable diffraction pattern from a grating with a period of order $100\ \text{nm}$.
+:::
 
-19. Verify the claim in the "Consistency Check" subsection that $E=pc^2/u$ for a relativistic particle, using $E=\gamma mc^2$ and $p=\gamma mu$ from [Chapter 3](#ch-relativistic-dynamics), and show that combining this with $E=hf$ and $\lambda = u_p/f$ (with $u_p$ the wave's phase velocity) gives a phase velocity $u_p = c^2/u$ greater than $c$ — then explain why this superluminal *phase* velocity does not violate relativity, referring to your answer to Problem 15 about which velocity is physically observable.
+:::{solution} ex-wave-properties-of-particles-5
+:label: sol-wave-properties-of-particles-5
+:class: dropdown
 
-20. The neutron interferometry (COW) experiment detects a gravitationally induced phase shift between two paths of different height $\Delta h$ in a neutron interferometer of horizontal path length $L$. Explain qualitatively, using the de Broglie relation $\lambda = h/p$ and the fact that a neutron's kinetic energy (and hence its momentum and wavelength) changes very slightly with height in a gravitational field, why raising one arm of the interferometer changes the phase accumulated along that arm relative to the other.
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-wave-properties-of-particles-6
+
+Using the de Broglie standing-wave argument, show that an electron in a circular Bohr orbit with $n=1$ has an orbital circumference equal to exactly one de Broglie wavelength, and explain qualitatively (without calculation) why this is consistent with such an orbit being the atom's lowest-energy (ground) state.
+:::
+
+:::{solution} ex-wave-properties-of-particles-6
+:label: sol-wave-properties-of-particles-6
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-wave-properties-of-particles-7
+
+A proton is confined to a nucleus of diameter $1.0\times10^{-14}\ \text{m}$. Use the uncertainty principle to estimate the minimum kinetic energy the proton must have, and compare it (order of magnitude) to typical nuclear binding energies of several MeV per nucleon ([Chapter 13](#ch-nuclear-physics)).
+:::
+
+:::{solution} ex-wave-properties-of-particles-7
+:label: sol-wave-properties-of-particles-7
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-wave-properties-of-particles-8
+
+An excited atomic state has a mean lifetime of $\Delta t = 1.0\times10^{-8}\ \text{s}$. (a) Use the energy–time uncertainty relation to estimate the minimum energy spread $\Delta E$ of this state, in eV. (b) If the state decays by emitting a photon of wavelength $500\ \text{nm}$, estimate the corresponding spread (linewidth) $\Delta\lambda$ in the emitted wavelength.
+:::
+
+:::{solution} ex-wave-properties-of-particles-8
+:label: sol-wave-properties-of-particles-8
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-wave-properties-of-particles-9
+
+A beam of electrons is passed through a single slit of width $a$. Using the single-slit diffraction condition (first minimum at $\sin\theta \approx \lambda/a$ for small angles) together with the de Broglie relation, express the transverse momentum spread $\Delta p_y$ imparted to the electrons (estimated from $p\sin\theta$) in terms of the slit width $a$, and show that $\Delta y\,\Delta p_y \sim h$ if $\Delta y \sim a$, consistent with the uncertainty principle.
+:::
+
+:::{solution} ex-wave-properties-of-particles-9
+:label: sol-wave-properties-of-particles-9
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-wave-properties-of-particles-10
+
+Explain, using the energy–time uncertainty relation, why a particle that is truly stable (infinite lifetime) can have a perfectly sharp rest energy $mc^2$, while an unstable particle cannot — and why particle physicists therefore quote both a mass and a "width" (in energy units) for unstable particles, a topic revisited in [Chapter 14](#ch-elementary-particles-and-the-standard-model).
+:::
+
+:::{solution} ex-wave-properties-of-particles-10
+:label: sol-wave-properties-of-particles-10
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-wave-properties-of-particles-11
+
+Verify the group-velocity calculation in the text: starting from $\omega(k) = \hbar k^2/2m$ (the nonrelativistic free-particle dispersion relation), compute $d\omega/dk$ explicitly and confirm that it equals $\hbar k/m = p/m$.
+:::
+
+:::{solution} ex-wave-properties-of-particles-11
+:label: sol-wave-properties-of-particles-11
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-wave-properties-of-particles-12
+
+A relativistic free particle has energy $E = \sqrt{(pc)^2+(mc^2)^2}$ ([Chapter 3](#ch-relativistic-dynamics)). Using $E = \hbar\omega$ and $p = \hbar k$, show that the group velocity $v_g = d\omega/dk$ equals $pc^2/E$, and confirm that this reduces to the particle's actual (relativistic) velocity $u$ using the relation $u = pc^2/E$ established in [Chapter 3](#ch-relativistic-dynamics).
+:::
+
+:::{solution} ex-wave-properties-of-particles-12
+:label: sol-wave-properties-of-particles-12
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-wave-properties-of-particles-13
+
+Estimate, using the uncertainty principle in the same manner as the atomic-scale worked example, the characteristic kinetic energy of an electron confined to a quantum dot (a nanoscale semiconductor structure) of diameter $10\ \text{nm}$, and compare it in order of magnitude to the atomic-scale estimate found in the text.
+:::
+
+:::{solution} ex-wave-properties-of-particles-13
+:label: sol-wave-properties-of-particles-13
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-wave-properties-of-particles-14
+
+A double-slit experiment is performed with electrons at a rate of one electron at a time, with a detector placed at one slit to determine which slit each electron passes through. (a) Explain, in terms of the uncertainty principle, why this which-path measurement necessarily disturbs the electron's momentum. (b) Estimate the momentum disturbance needed to determine, to within the slit width $a$, which of two slits separated by distance $d$ an electron passed through, and explain qualitatively why a disturbance of this size is enough to wash out an interference pattern with fringe spacing set by $d$.
+:::
+
+:::{solution} ex-wave-properties-of-particles-14
+:label: sol-wave-properties-of-particles-14
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-wave-properties-of-particles-15
+
+Explain why the phase velocity $v_p = \omega/k$ of a nonrelativistic free-particle matter wave, found in the text to be $u/2$, is not the speed of anything physically observable (in contrast with the group velocity), and why this is not a paradox.
+:::
+
+:::{solution} ex-wave-properties-of-particles-15
+:label: sol-wave-properties-of-particles-15
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-wave-properties-of-particles-16
+
+Using the spreading time scale $\tau \sim m(\Delta x_0)^2/\hbar$ quoted in the text, estimate $\tau$ for (a) an electron initially localized to $\Delta x_0 = 1.0\times10^{-10}\ \text{m}$ (roughly an atomic diameter), and (b) a $1.0\ \text{mg}$ dust grain initially localized to $\Delta x_0 = 1.0\times10^{-6}\ \text{m}$. Comment on which of these spreading times could plausibly be observed in a laboratory measurement lasting a few seconds.
+:::
+
+:::{solution} ex-wave-properties-of-particles-16
+:label: sol-wave-properties-of-particles-16
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-wave-properties-of-particles-17
+
+In a delayed-choice or quantum-eraser experiment, explain why the disappearance and reappearance of the interference pattern cannot be used to send information backward in time, even though the "choice" of whether which-path information is available may be made after the particle has passed through the slit region. (Hint: consider what an experimenter examining only the particles that land in a single, fixed detector region can and cannot know without also consulting the marker/eraser results.)
+:::
+
+:::{solution} ex-wave-properties-of-particles-17
+:label: sol-wave-properties-of-particles-17
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-wave-properties-of-particles-18
+
+A beam of electrons, each with the same de Broglie wavelength $\lambda = h/p$, is used in a Davisson–Germer-type experiment. Explain, using the standing-wave condition of the "Bohr Quantization Condition Revisited" subsection as an analogy, why a diffraction condition $d\sin\theta = n\lambda$ (rather than an arbitrary relation between $\theta$ and $\lambda$) is required for a diffraction maximum, drawing the parallel between constructive interference around a crystal lattice and constructive interference around a closed atomic orbit.
+:::
+
+:::{solution} ex-wave-properties-of-particles-18
+:label: sol-wave-properties-of-particles-18
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-wave-properties-of-particles-19
+
+Verify the claim in the "Consistency Check" subsection that $E=pc^2/u$ for a relativistic particle, using $E=\gamma mc^2$ and $p=\gamma mu$ from [Chapter 3](#ch-relativistic-dynamics), and show that combining this with $E=hf$ and $\lambda = u_p/f$ (with $u_p$ the wave's phase velocity) gives a phase velocity $u_p = c^2/u$ greater than $c$ — then explain why this superluminal *phase* velocity does not violate relativity, referring to your answer to Problem 15 about which velocity is physically observable.
+:::
+
+:::{solution} ex-wave-properties-of-particles-19
+:label: sol-wave-properties-of-particles-19
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-wave-properties-of-particles-20
+
+The neutron interferometry (COW) experiment detects a gravitationally induced phase shift between two paths of different height $\Delta h$ in a neutron interferometer of horizontal path length $L$. Explain qualitatively, using the de Broglie relation $\lambda = h/p$ and the fact that a neutron's kinetic energy (and hence its momentum and wavelength) changes very slightly with height in a gravitational field, why raising one arm of the interferometer changes the phase accumulated along that arm relative to the other.
+:::
+
+:::{solution} ex-wave-properties-of-particles-20
+:label: sol-wave-properties-of-particles-20
+:class: dropdown
+
+_Solution not yet written._
+:::

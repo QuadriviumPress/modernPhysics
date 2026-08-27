@@ -340,31 +340,184 @@ Both descriptions — "magnetic force in the wire's rest frame" and "electric fo
 
 ## Problems
 
-1. A spaceship passes Earth at $v = 0.80c$. A clock on the ship ticks off exactly $1.00\ \text{s}$ of proper time between two events at the same location on the ship. (a) What time interval between these two events is measured by an observer on Earth? (b) What is $\gamma$ for this speed?
+:::{exercise}
+:label: ex-special-relativity-1
 
-2. A meter stick at rest in frame $S'$ makes an angle such that it lies entirely along the direction of relative motion. If $S'$ moves at $v = 0.60c$ relative to $S$, what length is the stick measured to have in $S$?
+A spaceship passes Earth at $v = 0.80c$. A clock on the ship ticks off exactly $1.00\ \text{s}$ of proper time between two events at the same location on the ship. (a) What time interval between these two events is measured by an observer on Earth? (b) What is $\gamma$ for this speed?
+:::
 
-3. Two events occur at the same time $t=0$ in frame $S$, at positions $x_1 = 0$ and $x_2 = 300\ \text{m}$. Frame $S'$ moves at $v = 0.50c$ relative to $S$ along the $x$-axis, with origins coinciding at $t=t'=0$. Use the Lorentz transformation to find $t_1'$ and $t_2'$, and confirm that the two events are not simultaneous in $S'$.
+:::{solution} ex-special-relativity-1
+:label: sol-special-relativity-1
+:class: dropdown
 
-4. A cosmic-ray muon is created at an altitude of $15\ \text{km}$, moving straight down at $v = 0.998c$. Its proper mean lifetime is $2.2\ \mu\text{s}$. (a) Using time dilation, find the mean lifetime as measured in Earth's frame, and the mean distance the muon travels before decaying in that frame. (b) Working instead in the muon's rest frame, use length contraction to find the depth of the $15\ \text{km}$ atmospheric layer as the muon measures it, and show your two calculations of whether the muon is likely to reach the ground agree.
+_Solution not yet written._
+:::
 
-5. Two spaceships approach each other, each moving at speed $0.75c$ relative to Earth, in opposite directions. (a) What speed does an observer on one ship measure for the other ship, using relativistic velocity addition? (b) Explain why simply adding $0.75c + 0.75c$ would give an unphysical answer, and identify which postulate this would violate.
+:::{exercise}
+:label: ex-special-relativity-2
 
-6. Sketch a spacetime diagram (axes $x$ and $ct$) in the rest frame $S$ of a laboratory. Draw the worldline of a particle at rest at $x = 2\ \text{m}$, the worldline of a particle moving at $v = 0.5c$ starting from the origin, and the worldline of a light pulse emitted from the origin at $t=0$. Identify the angle each worldline makes with the vertical axis.
+A meter stick at rest in frame $S'$ makes an angle such that it lies entirely along the direction of relative motion. If $S'$ moves at $v = 0.60c$ relative to $S$, what length is the stick measured to have in $S$?
+:::
 
-7. Twin Bob leaves Earth at $v = 0.80c$, travels to a star $8.0$ light-years away (in Earth's frame), immediately turns around, and returns at the same speed. (a) How much time elapses on Earth, according to Alice? (b) How much proper time elapses for Bob over the whole round trip? (c) Explain, referring specifically to Bob's turnaround, why it is Bob and not Alice who ages less, even though each twin sees the other's clock running slow during the constant-velocity legs of the trip.
+:::{solution} ex-special-relativity-2
+:label: sol-special-relativity-2
+:class: dropdown
 
-8. Two events are separated by $\Delta x = 5.0\times10^{8}\ \text{m}$ and $\Delta t = 1.0\ \text{s}$ in frame $S$. (a) Determine whether the interval between them is timelike, spacelike, or lightlike. (b) If it is spacelike, explain why no observer's disagreement about which event happened first can create a causality paradox. (c) Find the speed $v$ (as a fraction of $c$) of a frame $S'$ in which the two events are simultaneous, if such a frame exists.
+_Solution not yet written._
+:::
 
-9. Light travels through a block of glass with refractive index $n = 1.50$ moving at $v = 20\ \text{m/s}$ relative to the lab, in the same direction as the light. Using the relativistic velocity-addition formula (not the approximation), find the light's speed in the lab frame, and compare the result to the Fizeau-formula approximation $c/n + v(1-1/n^2)$.
+:::{exercise}
+:label: ex-special-relativity-3
 
-10. A wire carries equal and opposite densities of positive and negative charge moving at $\pm 0.90c$ relative to the lab frame (an exaggerated, but illustrative, speed), with the wire electrically neutral in the lab frame. (a) Qualitatively explain, using length contraction, why an observer moving alongside one species of charge carrier would measure a net charge density on the wire. (b) Explain why this observer must nonetheless agree with the lab-frame observer about whether a nearby test charge, initially at rest in the observer's frame, accelerates toward or away from the wire.
+Two events occur at the same time $t=0$ in frame $S$, at positions $x_1 = 0$ and $x_2 = 300\ \text{m}$. Frame $S'$ moves at $v = 0.50c$ relative to $S$ along the $x$-axis, with origins coinciding at $t=t'=0$. Use the Lorentz transformation to find $t_1'$ and $t_2'$, and confirm that the two events are not simultaneous in $S'$.
+:::
 
-11. A spacecraft recedes directly from Earth at $v = 0.60c$, transmitting a radio signal at proper frequency $f_0 = 100.0\ \text{MHz}$. (a) What frequency does a receiver on Earth measure? (b) If the same spacecraft instead approached Earth at the same speed, what frequency would be measured? (c) Explain why the approaching and receding frequencies are not simply related by $f_0(1\pm v/c)$, i.e., why they are not symmetric about $f_0$ the way the low-speed (classical) approximation would suggest.
+:::{solution} ex-special-relativity-3
+:label: sol-special-relativity-3
+:class: dropdown
 
-12. A star's light source moves in a circular orbit, at speed $v = 0.30c$, around a companion too dim to see, so that at one point in the orbit its velocity is purely transverse to the line of sight to Earth. (a) Find the fractional frequency shift, $(f_0 - f_{\text{obs}})/f_0$, expected at that instant from the transverse Doppler effect alone. (b) Explain why this shift is always a redshift (lower observed frequency), regardless of the direction of the transverse motion, unlike the ordinary (longitudinal) Doppler shift, which can be a redshift or blueshift depending on direction.
+_Solution not yet written._
+:::
 
-13. In Bell's spaceship paradox, both ships execute identical acceleration profiles as measured in frame $S$, so that their $S$-frame separation stays fixed at $L_0$. Explain why an observer riding along with either ship would nonetheless measure the *other* ship to be receding, at least for part of the trip, and connect this to the reason the connecting string comes under increasing tension. (You do not need to compute the tension quantitatively — a clear qualitative argument, referencing length contraction of the string versus the fixed $S$-frame separation of the ships, is sufficient.)
+:::{exercise}
+:label: ex-special-relativity-4
 
-(ex-special-relativity-14)=
-14. Outline the derivation of the relativistic Doppler formula for direct recession, by combining (a) the time-dilation factor $\gamma$ for the interval between successive wave crests as emitted, and (b) the classical light-travel-time stretching factor $(1+v/c)$ that arises because the source recedes an additional distance $v\Delta t$ between emitting successive crests. Show that multiplying these two factors and using $\Delta t_{\text{obs}} = \gamma(1+v/c)\Delta t_0$ reproduces $f_{\text{obs}} = f_0\sqrt{(1-v/c)/(1+v/c)}$.
+A cosmic-ray muon is created at an altitude of $15\ \text{km}$, moving straight down at $v = 0.998c$. Its proper mean lifetime is $2.2\ \mu\text{s}$. (a) Using time dilation, find the mean lifetime as measured in Earth's frame, and the mean distance the muon travels before decaying in that frame. (b) Working instead in the muon's rest frame, use length contraction to find the depth of the $15\ \text{km}$ atmospheric layer as the muon measures it, and show your two calculations of whether the muon is likely to reach the ground agree.
+:::
+
+:::{solution} ex-special-relativity-4
+:label: sol-special-relativity-4
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-special-relativity-5
+
+Two spaceships approach each other, each moving at speed $0.75c$ relative to Earth, in opposite directions. (a) What speed does an observer on one ship measure for the other ship, using relativistic velocity addition? (b) Explain why simply adding $0.75c + 0.75c$ would give an unphysical answer, and identify which postulate this would violate.
+:::
+
+:::{solution} ex-special-relativity-5
+:label: sol-special-relativity-5
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-special-relativity-6
+
+Sketch a spacetime diagram (axes $x$ and $ct$) in the rest frame $S$ of a laboratory. Draw the worldline of a particle at rest at $x = 2\ \text{m}$, the worldline of a particle moving at $v = 0.5c$ starting from the origin, and the worldline of a light pulse emitted from the origin at $t=0$. Identify the angle each worldline makes with the vertical axis.
+:::
+
+:::{solution} ex-special-relativity-6
+:label: sol-special-relativity-6
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-special-relativity-7
+
+Twin Bob leaves Earth at $v = 0.80c$, travels to a star $8.0$ light-years away (in Earth's frame), immediately turns around, and returns at the same speed. (a) How much time elapses on Earth, according to Alice? (b) How much proper time elapses for Bob over the whole round trip? (c) Explain, referring specifically to Bob's turnaround, why it is Bob and not Alice who ages less, even though each twin sees the other's clock running slow during the constant-velocity legs of the trip.
+:::
+
+:::{solution} ex-special-relativity-7
+:label: sol-special-relativity-7
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-special-relativity-8
+
+Two events are separated by $\Delta x = 5.0\times10^{8}\ \text{m}$ and $\Delta t = 1.0\ \text{s}$ in frame $S$. (a) Determine whether the interval between them is timelike, spacelike, or lightlike. (b) If it is spacelike, explain why no observer's disagreement about which event happened first can create a causality paradox. (c) Find the speed $v$ (as a fraction of $c$) of a frame $S'$ in which the two events are simultaneous, if such a frame exists.
+:::
+
+:::{solution} ex-special-relativity-8
+:label: sol-special-relativity-8
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-special-relativity-9
+
+Light travels through a block of glass with refractive index $n = 1.50$ moving at $v = 20\ \text{m/s}$ relative to the lab, in the same direction as the light. Using the relativistic velocity-addition formula (not the approximation), find the light's speed in the lab frame, and compare the result to the Fizeau-formula approximation $c/n + v(1-1/n^2)$.
+:::
+
+:::{solution} ex-special-relativity-9
+:label: sol-special-relativity-9
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-special-relativity-10
+
+A wire carries equal and opposite densities of positive and negative charge moving at $\pm 0.90c$ relative to the lab frame (an exaggerated, but illustrative, speed), with the wire electrically neutral in the lab frame. (a) Qualitatively explain, using length contraction, why an observer moving alongside one species of charge carrier would measure a net charge density on the wire. (b) Explain why this observer must nonetheless agree with the lab-frame observer about whether a nearby test charge, initially at rest in the observer's frame, accelerates toward or away from the wire.
+:::
+
+:::{solution} ex-special-relativity-10
+:label: sol-special-relativity-10
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-special-relativity-11
+
+A spacecraft recedes directly from Earth at $v = 0.60c$, transmitting a radio signal at proper frequency $f_0 = 100.0\ \text{MHz}$. (a) What frequency does a receiver on Earth measure? (b) If the same spacecraft instead approached Earth at the same speed, what frequency would be measured? (c) Explain why the approaching and receding frequencies are not simply related by $f_0(1\pm v/c)$, i.e., why they are not symmetric about $f_0$ the way the low-speed (classical) approximation would suggest.
+:::
+
+:::{solution} ex-special-relativity-11
+:label: sol-special-relativity-11
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-special-relativity-12
+
+A star's light source moves in a circular orbit, at speed $v = 0.30c$, around a companion too dim to see, so that at one point in the orbit its velocity is purely transverse to the line of sight to Earth. (a) Find the fractional frequency shift, $(f_0 - f_{\text{obs}})/f_0$, expected at that instant from the transverse Doppler effect alone. (b) Explain why this shift is always a redshift (lower observed frequency), regardless of the direction of the transverse motion, unlike the ordinary (longitudinal) Doppler shift, which can be a redshift or blueshift depending on direction.
+:::
+
+:::{solution} ex-special-relativity-12
+:label: sol-special-relativity-12
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-special-relativity-13
+
+In Bell's spaceship paradox, both ships execute identical acceleration profiles as measured in frame $S$, so that their $S$-frame separation stays fixed at $L_0$. Explain why an observer riding along with either ship would nonetheless measure the *other* ship to be receding, at least for part of the trip, and connect this to the reason the connecting string comes under increasing tension. (You do not need to compute the tension quantitatively — a clear qualitative argument, referencing length contraction of the string versus the fixed $S$-frame separation of the ships, is sufficient.)
+:::
+
+:::{solution} ex-special-relativity-13
+:label: sol-special-relativity-13
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-special-relativity-14
+
+Outline the derivation of the relativistic Doppler formula for direct recession, by combining (a) the time-dilation factor $\gamma$ for the interval between successive wave crests as emitted, and (b) the classical light-travel-time stretching factor $(1+v/c)$ that arises because the source recedes an additional distance $v\Delta t$ between emitting successive crests. Show that multiplying these two factors and using $\Delta t_{\text{obs}} = \gamma(1+v/c)\Delta t_0$ reproduces $f_{\text{obs}} = f_0\sqrt{(1-v/c)/(1+v/c)}$.
+:::
+
+:::{solution} ex-special-relativity-14
+:label: sol-special-relativity-14
+:class: dropdown
+
+_Solution not yet written._
+:::

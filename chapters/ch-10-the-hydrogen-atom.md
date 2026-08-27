@@ -316,22 +316,132 @@ $$
 
 ## Problems
 
-1. Using the Rydberg formula, compute the wavelength of the first line of the Lyman series ($n=2\to n=1$) and the Lyman series limit ($n\to\infty \to n=1$). State which portion of the electromagnetic spectrum both lie in, and explain why the entire Lyman series (unlike the Balmer series) is invisible to the human eye.
+:::{exercise}
+:label: ex-the-hydrogen-atom-1
 
-2. List all allowed $(\ell, m_\ell)$ combinations for $n=3$, count the total number of spatial states, and verify this equals $n^2=9$. Including spin, how many total quantum states share this energy?
+Using the Rydberg formula, compute the wavelength of the first line of the Lyman series ($n=2\to n=1$) and the Lyman series limit ($n\to\infty \to n=1$). State which portion of the electromagnetic spectrum both lie in, and explain why the entire Lyman series (unlike the Balmer series) is invisible to the human eye.
+:::
 
-3. Using the selection rule $\Delta\ell=\pm1$, determine which of the following single-photon transitions are allowed and which are forbidden: (a) $3d \to 2p$, (b) $3s \to 2s$, (c) $3p \to 1s$, (d) $2p \to 1s$.
+:::{solution} ex-the-hydrogen-atom-1
+:label: sol-the-hydrogen-atom-1
+:class: dropdown
 
-4. An electron in a hydrogen atom is in a $3d$ state ($\ell=2$). (a) Compute the magnitude of its orbital angular momentum in units of $\hbar$. (b) Compute the maximum possible $z$-component of its orbital magnetic moment, in units of the Bohr magneton.
+_Solution not yet written._
+:::
 
-5. In the Stern–Gerlach experiment, explain why silver atoms (rather than, say, helium atoms) were a good choice for demonstrating space quantization due to electron spin, referring to the electron configuration of the outermost electron (you may look ahead to [Chapter 11](#ch-many-electron-atoms)'s discussion of electron configurations, or simply reason from the fact that silver's single outer electron is in an $s$-state).
+:::{exercise}
+:label: ex-the-hydrogen-atom-2
 
-6. Show that the ground-state radial probability distribution of hydrogen, $P(r) = r^2|R_{10}(r)|^2 \propto r^2 e^{-2r/a_0}$, is maximized at $r=a_0$ by differentiating $P(r)$ with respect to $r$ and setting the result to zero.
+List all allowed $(\ell, m_\ell)$ combinations for $n=3$, count the total number of spatial states, and verify this equals $n^2=9$. Including spin, how many total quantum states share this energy?
+:::
 
-7. Doubly ionized lithium, $\text{Li}^{2+}$ ($Z=3$), is a one-electron hydrogenic ion. (a) Find its ground-state ionization energy. (b) Find the radius at which its ground-state radial probability distribution peaks. (c) Compare both results, as ratios, to hydrogen's, and confirm they follow the $Z^2$ and $1/Z$ scaling laws given in the text.
+:::{solution} ex-the-hydrogen-atom-2
+:label: sol-the-hydrogen-atom-2
+:class: dropdown
 
-8. A different Stern–Gerlach apparatus uses a field gradient $\partial B_z/\partial z = 15\ \text{T/m}$ over a magnet of length $L=0.20\ \text{m}$, with silver atoms ($m=1.79\times10^{-25}\ \text{kg}$) moving at $v=600\ \text{m/s}$, followed by a $D=0.40\ \text{m}$ drift to the screen. Using the method of the worked example, find the separation between the two spots.
+_Solution not yet written._
+:::
 
-9. A hydrogen discharge tube is placed in a magnetic field of $B=0.50\ \text{T}$. (a) Find the Zeeman energy splitting $\Delta E$ (in eV) between adjacent $m_\ell$ sublevels. (b) Find the corresponding frequency splitting $\Delta f$. (c) Using $\lambda=486.1\ \text{nm}$ (the $\text{H}_\beta$ line), estimate the wavelength splitting $\Delta\lambda$, and compare its order of magnitude to the $0.50\ \text{T}$ case's expected scaling relative to the $1.0\ \text{T}$ worked example in the text.
+:::{exercise}
+:label: ex-the-hydrogen-atom-3
 
-10. Estimate the order-of-magnitude fine-structure splitting of hydrogen's $n=3$ level, using $\Delta E_{\text{fine}}\sim\alpha^2|E_n|$. Compare your result to the $n=2$ estimate found in the text, and explain, in terms of the $|E_n|=13.6\ \text{eV}/n^2$ scaling, why fine structure becomes progressively harder to resolve at higher $n$.
+Using the selection rule $\Delta\ell=\pm1$, determine which of the following single-photon transitions are allowed and which are forbidden: (a) $3d \to 2p$, (b) $3s \to 2s$, (c) $3p \to 1s$, (d) $2p \to 1s$.
+:::
+
+:::{solution} ex-the-hydrogen-atom-3
+:label: sol-the-hydrogen-atom-3
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-the-hydrogen-atom-4
+
+An electron in a hydrogen atom is in a $3d$ state ($\ell=2$). (a) Compute the magnitude of its orbital angular momentum in units of $\hbar$. (b) Compute the maximum possible $z$-component of its orbital magnetic moment, in units of the Bohr magneton.
+:::
+
+:::{solution} ex-the-hydrogen-atom-4
+:label: sol-the-hydrogen-atom-4
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-the-hydrogen-atom-5
+
+In the Stern–Gerlach experiment, explain why silver atoms (rather than, say, helium atoms) were a good choice for demonstrating space quantization due to electron spin, referring to the electron configuration of the outermost electron (you may look ahead to [Chapter 11](#ch-many-electron-atoms)'s discussion of electron configurations, or simply reason from the fact that silver's single outer electron is in an $s$-state).
+:::
+
+:::{solution} ex-the-hydrogen-atom-5
+:label: sol-the-hydrogen-atom-5
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-the-hydrogen-atom-6
+
+Show that the ground-state radial probability distribution of hydrogen, $P(r) = r^2|R_{10}(r)|^2 \propto r^2 e^{-2r/a_0}$, is maximized at $r=a_0$ by differentiating $P(r)$ with respect to $r$ and setting the result to zero.
+:::
+
+:::{solution} ex-the-hydrogen-atom-6
+:label: sol-the-hydrogen-atom-6
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-the-hydrogen-atom-7
+
+Doubly ionized lithium, $\text{Li}^{2+}$ ($Z=3$), is a one-electron hydrogenic ion. (a) Find its ground-state ionization energy. (b) Find the radius at which its ground-state radial probability distribution peaks. (c) Compare both results, as ratios, to hydrogen's, and confirm they follow the $Z^2$ and $1/Z$ scaling laws given in the text.
+:::
+
+:::{solution} ex-the-hydrogen-atom-7
+:label: sol-the-hydrogen-atom-7
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-the-hydrogen-atom-8
+
+A different Stern–Gerlach apparatus uses a field gradient $\partial B_z/\partial z = 15\ \text{T/m}$ over a magnet of length $L=0.20\ \text{m}$, with silver atoms ($m=1.79\times10^{-25}\ \text{kg}$) moving at $v=600\ \text{m/s}$, followed by a $D=0.40\ \text{m}$ drift to the screen. Using the method of the worked example, find the separation between the two spots.
+:::
+
+:::{solution} ex-the-hydrogen-atom-8
+:label: sol-the-hydrogen-atom-8
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-the-hydrogen-atom-9
+
+A hydrogen discharge tube is placed in a magnetic field of $B=0.50\ \text{T}$. (a) Find the Zeeman energy splitting $\Delta E$ (in eV) between adjacent $m_\ell$ sublevels. (b) Find the corresponding frequency splitting $\Delta f$. (c) Using $\lambda=486.1\ \text{nm}$ (the $\text{H}_\beta$ line), estimate the wavelength splitting $\Delta\lambda$, and compare its order of magnitude to the $0.50\ \text{T}$ case's expected scaling relative to the $1.0\ \text{T}$ worked example in the text.
+:::
+
+:::{solution} ex-the-hydrogen-atom-9
+:label: sol-the-hydrogen-atom-9
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-the-hydrogen-atom-10
+
+Estimate the order-of-magnitude fine-structure splitting of hydrogen's $n=3$ level, using $\Delta E_{\text{fine}}\sim\alpha^2|E_n|$. Compare your result to the $n=2$ estimate found in the text, and explain, in terms of the $|E_n|=13.6\ \text{eV}/n^2$ scaling, why fine structure becomes progressively harder to resolve at higher $n$.
+:::
+
+:::{solution} ex-the-hydrogen-atom-10
+:label: sol-the-hydrogen-atom-10
+:class: dropdown
+
+_Solution not yet written._
+:::

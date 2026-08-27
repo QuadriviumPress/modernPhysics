@@ -241,26 +241,158 @@ The properties that make a laser beam distinctive — a single, precisely define
 
 ## Problems
 
-1. Write the ground-state electron configuration (using $n\ell^{\,x}$ notation, e.g. $1s^2\,2s^2\ldots$) for (a) carbon ($Z=6$), (b) sodium ($Z=11$), (c) iron ($Z=26$), using the filling order given in the text.
+:::{exercise}
+:label: ex-many-electron-atoms-1
 
-2. Using Hund's rule, sketch the orbital-filling diagram (boxes for each $m_\ell$ orbital, arrows for spin) for the $2p$ subshell of nitrogen ($Z=7$, configuration $1s^22s^22p^3$), and state the resulting total spin.
+Write the ground-state electron configuration (using $n\ell^{\,x}$ notation, e.g. $1s^2\,2s^2\ldots$) for (a) carbon ($Z=6$), (b) sodium ($Z=11$), (c) iron ($Z=26$), using the filling order given in the text.
+:::
 
-3. Explain why, in a multi-electron atom, a $4s$ electron can have lower energy than a $3d$ electron despite having a larger principal quantum number, using the concept of orbital penetration and screening.
+:::{solution} ex-many-electron-atoms-1
+:label: sol-many-electron-atoms-1
+:class: dropdown
 
-4. The measured $K_\alpha$ X-ray frequency of copper ($Z=29$) is $f = 1.94\times10^{18}\ \text{Hz}$. Using Moseley's law in the form $\sqrt{f} = A(Z-1)$ (i.e., $b=1$) with a single data point to determine $A$, predict the $K_\alpha$ frequency of nickel ($Z=28$), and compare qualitatively to what you would expect (higher or lower than copper's).
+_Solution not yet written._
+:::
 
-5. Explain, in terms of the exclusion principle, why the ground-state electron configuration of helium ($1s^2$) is chemically inert, while lithium ($1s^22s^1$) is highly reactive, referring to the energy required to remove the outermost electron in each case.
+:::{exercise}
+:label: ex-many-electron-atoms-2
 
-6. Explain why a three-level or four-level laser scheme requires a metastable intermediate state to sustain a population inversion, rather than pumping directly into the lower lasing level's excited partner state, using the relative decay rates implied by allowed versus forbidden transitions ([Chapter 10](#ch-the-hydrogen-atom)'s selection rule).
+Using Hund's rule, sketch the orbital-filling diagram (boxes for each $m_\ell$ orbital, arrows for spin) for the $2p$ subshell of nitrogen ($Z=7$, configuration $1s^22s^22p^3$), and state the resulting total spin.
+:::
 
-7. Using Slater's rules (the grouping $(1s)(2s,2p)(3s,3p)\ldots$ and the shielding constants $0.35$/same group, $0.85$/one shell lower, $1.00$/two or more shells lower), compute the effective nuclear charge $Z_{\text{eff}}$ felt by a $3s$ electron in magnesium ($Z=12$, configuration $1s^22s^22p^63s^2$). Compare your result to the text's values of $Z_{\text{eff}} = 2.20$ for sodium's $3s$ electron and $Z_{\text{eff}}=6.10$ for chlorine's $3p$ electron, and state whether magnesium's value is consistent with its position between them in the periodic table.
+:::{solution} ex-many-electron-atoms-2
+:label: sol-many-electron-atoms-2
+:class: dropdown
 
-8. Sulfur's first ionization energy ($10.36\ \text{eV}$) is slightly *lower* than phosphorus's ($10.49\ \text{eV}$), even though sulfur has one more proton. Using phosphorus's and sulfur's electron configurations ($[\text{Ne}]\,3s^23p^3$ and $[\text{Ne}]\,3s^23p^4$, respectively) and the exchange-energy argument given in the text for the analogous nitrogen/oxygen dip, explain this reversal.
+_Solution not yet written._
+:::
 
-9. Copper's $K_\alpha$ frequency is $f_{\text{Cu}} = 1.94\times10^{18}\ \text{Hz}$ ($Z=29$); molybdenum's measured $K_\alpha$ photon energy is $17.478\ \text{keV}$ ($Z=42$). (a) Using both data points in Moseley's law $\sqrt{f} = a(Z-b)$ (two equations, two unknowns $a$ and $b$), solve for $a$ and $b$, and compare $b$ to the approximate value $b\approx1$ quoted in the text for the $K_\alpha$ line. (b) Use your fitted $a$ and $b$ to predict the $K_\alpha$ photon energy of silver ($Z=47$).
+:::{exercise}
+:label: ex-many-electron-atoms-3
 
-10. A helium–neon laser emits a continuous beam at $\lambda = 632.8\ \text{nm}$ with an output power of $5.00\ \text{mW}$. (a) Find the energy of a single photon at this wavelength, in eV and in joules. (b) Find the number of photons emitted per second. (c) Explain briefly why this beam, despite its low power compared to an ordinary light bulb, can still be hazardous to the retina, referring to the spatial coherence discussed in the text.
+Explain why, in a multi-electron atom, a $4s$ electron can have lower energy than a $3d$ electron despite having a larger principal quantum number, using the concept of orbital penetration and screening.
+:::
 
-11. In your own words, explain why the Hartree self-consistent field method is "circular" — that is, why the effective potential $V_{\text{eff}}(r)$ needed to solve for an electron's wave function cannot simply be written down in advance — and describe the iterative procedure used to resolve that circularity, including what "self-consistent" means as a stopping criterion.
+:::{solution} ex-many-electron-atoms-3
+:label: sol-many-electron-atoms-3
+:class: dropdown
 
-12. Argon ($Z=18$, configuration $[\text{Ne}]\,3s^23p^6$) has a *smaller* atomic radius than the very next element, potassium ($Z=19$, configuration $[\text{Ar}]\,4s^1$), even though potassium has one more proton and one more electron. Using the concepts of principal quantum number $n$ and effective nuclear charge $Z_{\text{eff}}$ developed in this chapter, explain why adding a proton and an electron can *increase* atomic radius in this specific case, when it decreases atomic radius everywhere else within period 3.
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-many-electron-atoms-4
+
+The measured $K_\alpha$ X-ray frequency of copper ($Z=29$) is $f = 1.94\times10^{18}\ \text{Hz}$. Using Moseley's law in the form $\sqrt{f} = A(Z-1)$ (i.e., $b=1$) with a single data point to determine $A$, predict the $K_\alpha$ frequency of nickel ($Z=28$), and compare qualitatively to what you would expect (higher or lower than copper's).
+:::
+
+:::{solution} ex-many-electron-atoms-4
+:label: sol-many-electron-atoms-4
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-many-electron-atoms-5
+
+Explain, in terms of the exclusion principle, why the ground-state electron configuration of helium ($1s^2$) is chemically inert, while lithium ($1s^22s^1$) is highly reactive, referring to the energy required to remove the outermost electron in each case.
+:::
+
+:::{solution} ex-many-electron-atoms-5
+:label: sol-many-electron-atoms-5
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-many-electron-atoms-6
+
+Explain why a three-level or four-level laser scheme requires a metastable intermediate state to sustain a population inversion, rather than pumping directly into the lower lasing level's excited partner state, using the relative decay rates implied by allowed versus forbidden transitions ([Chapter 10](#ch-the-hydrogen-atom)'s selection rule).
+:::
+
+:::{solution} ex-many-electron-atoms-6
+:label: sol-many-electron-atoms-6
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-many-electron-atoms-7
+
+Using Slater's rules (the grouping $(1s)(2s,2p)(3s,3p)\ldots$ and the shielding constants $0.35$/same group, $0.85$/one shell lower, $1.00$/two or more shells lower), compute the effective nuclear charge $Z_{\text{eff}}$ felt by a $3s$ electron in magnesium ($Z=12$, configuration $1s^22s^22p^63s^2$). Compare your result to the text's values of $Z_{\text{eff}} = 2.20$ for sodium's $3s$ electron and $Z_{\text{eff}}=6.10$ for chlorine's $3p$ electron, and state whether magnesium's value is consistent with its position between them in the periodic table.
+:::
+
+:::{solution} ex-many-electron-atoms-7
+:label: sol-many-electron-atoms-7
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-many-electron-atoms-8
+
+Sulfur's first ionization energy ($10.36\ \text{eV}$) is slightly *lower* than phosphorus's ($10.49\ \text{eV}$), even though sulfur has one more proton. Using phosphorus's and sulfur's electron configurations ($[\text{Ne}]\,3s^23p^3$ and $[\text{Ne}]\,3s^23p^4$, respectively) and the exchange-energy argument given in the text for the analogous nitrogen/oxygen dip, explain this reversal.
+:::
+
+:::{solution} ex-many-electron-atoms-8
+:label: sol-many-electron-atoms-8
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-many-electron-atoms-9
+
+Copper's $K_\alpha$ frequency is $f_{\text{Cu}} = 1.94\times10^{18}\ \text{Hz}$ ($Z=29$); molybdenum's measured $K_\alpha$ photon energy is $17.478\ \text{keV}$ ($Z=42$). (a) Using both data points in Moseley's law $\sqrt{f} = a(Z-b)$ (two equations, two unknowns $a$ and $b$), solve for $a$ and $b$, and compare $b$ to the approximate value $b\approx1$ quoted in the text for the $K_\alpha$ line. (b) Use your fitted $a$ and $b$ to predict the $K_\alpha$ photon energy of silver ($Z=47$).
+:::
+
+:::{solution} ex-many-electron-atoms-9
+:label: sol-many-electron-atoms-9
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-many-electron-atoms-10
+
+A helium–neon laser emits a continuous beam at $\lambda = 632.8\ \text{nm}$ with an output power of $5.00\ \text{mW}$. (a) Find the energy of a single photon at this wavelength, in eV and in joules. (b) Find the number of photons emitted per second. (c) Explain briefly why this beam, despite its low power compared to an ordinary light bulb, can still be hazardous to the retina, referring to the spatial coherence discussed in the text.
+:::
+
+:::{solution} ex-many-electron-atoms-10
+:label: sol-many-electron-atoms-10
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-many-electron-atoms-11
+
+In your own words, explain why the Hartree self-consistent field method is "circular" — that is, why the effective potential $V_{\text{eff}}(r)$ needed to solve for an electron's wave function cannot simply be written down in advance — and describe the iterative procedure used to resolve that circularity, including what "self-consistent" means as a stopping criterion.
+:::
+
+:::{solution} ex-many-electron-atoms-11
+:label: sol-many-electron-atoms-11
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-many-electron-atoms-12
+
+Argon ($Z=18$, configuration $[\text{Ne}]\,3s^23p^6$) has a *smaller* atomic radius than the very next element, potassium ($Z=19$, configuration $[\text{Ar}]\,4s^1$), even though potassium has one more proton and one more electron. Using the concepts of principal quantum number $n$ and effective nuclear charge $Z_{\text{eff}}$ developed in this chapter, explain why adding a proton and an electron can *increase* atomic radius in this specific case, when it decreases atomic radius everywhere else within period 3.
+:::
+
+:::{solution} ex-many-electron-atoms-12
+:label: sol-many-electron-atoms-12
+:class: dropdown
+
+_Solution not yet written._
+:::

@@ -313,26 +313,132 @@ where the small, positive **anharmonicity constant** $x_e$ (typically a few perc
 
 ## Problems
 
-1. Determine the hybridization of the central atom and predict the molecular geometry for (a) $\text{NH}_3$ (three bonding pairs, one lone pair on N), (b) $\text{CO}_2$ (two double bonds, no lone pairs on C), (c) $\text{SF}_6$.
+:::{exercise}
+:label: ex-molecular-structure-1
 
-2. Construct the molecular orbital diagram for the nitrogen molecule $\text{N}_2$ (14 electrons total; consider only the valence $2s$ and $2p$ electrons, 10 of the 14, filling $\sigma_{2s}, \sigma_{2s}^*, \pi_{2p}$ (×2), $\sigma_{2p}$ in the order relevant for $\text{N}_2$). Determine the bond order and compare it to the triple bond expected from the Lewis structure $:\text{N}\!\equiv\!\text{N}:$.
+Determine the hybridization of the central atom and predict the molecular geometry for (a) $\text{NH}_3$ (three bonding pairs, one lone pair on N), (b) $\text{CO}_2$ (two double bonds, no lone pairs on C), (c) $\text{SF}_6$.
+:::
 
-3. Using the same style of reasoning applied to $\text{H}_2$ and $\text{He}_2$ in the text, determine the bond order predicted by MO theory for the hypothetical ion $\text{He}_2^+$ (three electrons: two in $\sigma_{1s}$, one in $\sigma_{1s}^*$), and state whether this ion is predicted to be (marginally) stable.
+:::{solution} ex-molecular-structure-1
+:label: sol-molecular-structure-1
+:class: dropdown
 
-(ex-molecular-structure-4)=
-4. The HCl molecule has an effective vibrational frequency $f = \omega/2\pi = 8.66\times10^{13}\ \text{Hz}$. Using $m_{\text{H}} = 1.008\ \text{u}$ and $m_{\text{Cl}} = 35.45\ \text{u}$ ($1\ \text{u} = 1.66\times10^{-27}\ \text{kg}$), compute (a) the reduced mass $\mu$, and (b) the zero-point vibrational energy $E_0 = \tfrac12\hbar\omega$ in eV.
+_Solution not yet written._
+:::
 
-(ex-molecular-structure-5)=
-5. The CO molecule has bond length $r_0 = 0.113\ \text{nm}$ and reduced mass $\mu = 6.86\ \text{u}$. Compute (a) its moment of inertia $I = \mu r_0^2$, and (b) the energy (in units of $10^{-4}\ \text{eV}$) of the $J=0\to J=1$ rotational transition.
+:::{exercise}
+:label: ex-molecular-structure-2
 
-(ex-molecular-structure-6)=
-6. Explain, using the concept of bond order, why $\text{O}_2^-$ (superoxide, one more electron than $\text{O}_2$) has a weaker, longer bond than neutral $\text{O}_2$, while $\text{O}_2^+$ (dioxygenyl, one fewer electron) has a stronger, shorter bond — referring to which type of orbital (bonding or antibonding) the added or removed electron occupies.
+Construct the molecular orbital diagram for the nitrogen molecule $\text{N}_2$ (14 electrons total; consider only the valence $2s$ and $2p$ electrons, 10 of the 14, filling $\sigma_{2s}, \sigma_{2s}^*, \pi_{2p}$ (×2), $\sigma_{2p}$ in the order relevant for $\text{N}_2$). Determine the bond order and compare it to the triple bond expected from the Lewis structure $:\text{N}\!\equiv\!\text{N}:$.
+:::
 
-7. Determine the hybridization of the central atom and predict the molecular geometry of $\text{SF}_4$ (four bonding pairs and one lone pair on S). Sketch, in words, where the lone pair sits relative to the five electron domains of the underlying trigonal-bipyramidal arrangement, and state the resulting molecular geometry. Compare your reasoning to the $\text{XeF}_4$ worked example above: why does one lone pair produce a very different-looking molecule than two lone pairs do?
+:::{solution} ex-molecular-structure-2
+:label: sol-molecular-structure-2
+:class: dropdown
 
-8. Using the same reasoning applied to $\text{N}_2$/$\text{N}_2^+$ in the text and to $\text{O}_2$/$\text{O}_2^{\pm}$ in [Problem 6](#ex-molecular-structure-6), construct the molecular orbital diagram for neutral $\text{F}_2$ (14 valence electrons, heavier-diatomic ordering: $\sigma_{2s}, \sigma_{2s}^*, \sigma_{2p}, \pi_{2p}\,(\times2), \pi_{2p}^*\,(\times2), \sigma_{2p}^*$), and determine its bond order. Then remove one electron to form $\text{F}_2^+$, identify which orbital it comes from, and state whether the ion's bond is predicted to be stronger or weaker (and shorter or longer) than neutral $\text{F}_2$'s, and whether the ion is paramagnetic or diamagnetic.
+_Solution not yet written._
+:::
 
-(ex-molecular-structure-9)=
-9. Using the reduced mass $\mu$ found in [Problem 4](#ex-molecular-structure-4)(a) for HCl and a bond length $r_0 = 127.5\ \text{pm}$, find (a) the moment of inertia $I$, (b) the rotational constant $B$ in eV, (c) the rovibrational line spacing $2B$ in $\text{cm}^{-1}$, and (d) the size of the gap (in $\text{cm}^{-1}$) at the band origin left by the missing $Q$ branch.
+:::{exercise}
+:label: ex-molecular-structure-3
 
-10. The boiling points of the halogens rise steadily down the group: $\text{F}_2$, $-188°\text{C}$; $\text{Cl}_2$, $-34°\text{C}$; $\text{Br}_2$, $59°\text{C}$; $\text{I}_2$, $184°\text{C}$. All four are nonpolar diatomic molecules with zero permanent dipole moment. Explain this trend using London dispersion forces, and state what physical property of the molecule is chiefly responsible for it.
+Using the same style of reasoning applied to $\text{H}_2$ and $\text{He}_2$ in the text, determine the bond order predicted by MO theory for the hypothetical ion $\text{He}_2^+$ (three electrons: two in $\sigma_{1s}$, one in $\sigma_{1s}^*$), and state whether this ion is predicted to be (marginally) stable.
+:::
+
+:::{solution} ex-molecular-structure-3
+:label: sol-molecular-structure-3
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-molecular-structure-4
+
+The HCl molecule has an effective vibrational frequency $f = \omega/2\pi = 8.66\times10^{13}\ \text{Hz}$. Using $m_{\text{H}} = 1.008\ \text{u}$ and $m_{\text{Cl}} = 35.45\ \text{u}$ ($1\ \text{u} = 1.66\times10^{-27}\ \text{kg}$), compute (a) the reduced mass $\mu$, and (b) the zero-point vibrational energy $E_0 = \tfrac12\hbar\omega$ in eV.
+:::
+
+:::{solution} ex-molecular-structure-4
+:label: sol-molecular-structure-4
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-molecular-structure-5
+
+The CO molecule has bond length $r_0 = 0.113\ \text{nm}$ and reduced mass $\mu = 6.86\ \text{u}$. Compute (a) its moment of inertia $I = \mu r_0^2$, and (b) the energy (in units of $10^{-4}\ \text{eV}$) of the $J=0\to J=1$ rotational transition.
+:::
+
+:::{solution} ex-molecular-structure-5
+:label: sol-molecular-structure-5
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-molecular-structure-6
+
+Explain, using the concept of bond order, why $\text{O}_2^-$ (superoxide, one more electron than $\text{O}_2$) has a weaker, longer bond than neutral $\text{O}_2$, while $\text{O}_2^+$ (dioxygenyl, one fewer electron) has a stronger, shorter bond — referring to which type of orbital (bonding or antibonding) the added or removed electron occupies.
+:::
+
+:::{solution} ex-molecular-structure-6
+:label: sol-molecular-structure-6
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-molecular-structure-7
+
+Determine the hybridization of the central atom and predict the molecular geometry of $\text{SF}_4$ (four bonding pairs and one lone pair on S). Sketch, in words, where the lone pair sits relative to the five electron domains of the underlying trigonal-bipyramidal arrangement, and state the resulting molecular geometry. Compare your reasoning to the $\text{XeF}_4$ worked example above: why does one lone pair produce a very different-looking molecule than two lone pairs do?
+:::
+
+:::{solution} ex-molecular-structure-7
+:label: sol-molecular-structure-7
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-molecular-structure-8
+
+Using the same reasoning applied to $\text{N}_2$/$\text{N}_2^+$ in the text and to $\text{O}_2$/$\text{O}_2^{\pm}$ in [Problem 6](#ex-molecular-structure-6), construct the molecular orbital diagram for neutral $\text{F}_2$ (14 valence electrons, heavier-diatomic ordering: $\sigma_{2s}, \sigma_{2s}^*, \sigma_{2p}, \pi_{2p}\,(\times2), \pi_{2p}^*\,(\times2), \sigma_{2p}^*$), and determine its bond order. Then remove one electron to form $\text{F}_2^+$, identify which orbital it comes from, and state whether the ion's bond is predicted to be stronger or weaker (and shorter or longer) than neutral $\text{F}_2$'s, and whether the ion is paramagnetic or diamagnetic.
+:::
+
+:::{solution} ex-molecular-structure-8
+:label: sol-molecular-structure-8
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-molecular-structure-9
+
+Using the reduced mass $\mu$ found in [Problem 4](#ex-molecular-structure-4)(a) for HCl and a bond length $r_0 = 127.5\ \text{pm}$, find (a) the moment of inertia $I$, (b) the rotational constant $B$ in eV, (c) the rovibrational line spacing $2B$ in $\text{cm}^{-1}$, and (d) the size of the gap (in $\text{cm}^{-1}$) at the band origin left by the missing $Q$ branch.
+:::
+
+:::{solution} ex-molecular-structure-9
+:label: sol-molecular-structure-9
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-molecular-structure-10
+
+The boiling points of the halogens rise steadily down the group: $\text{F}_2$, $-188°\text{C}$; $\text{Cl}_2$, $-34°\text{C}$; $\text{Br}_2$, $59°\text{C}$; $\text{I}_2$, $184°\text{C}$. All four are nonpolar diatomic molecules with zero permanent dipole moment. Explain this trend using London dispersion forces, and state what physical property of the molecule is chiefly responsible for it.
+:::
+
+:::{solution} ex-molecular-structure-10
+:label: sol-molecular-structure-10
+:class: dropdown
+
+_Solution not yet written._
+:::

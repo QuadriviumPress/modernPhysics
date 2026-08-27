@@ -241,28 +241,158 @@ Note that a Newtonian calculation of the speed from $K = \tfrac12 mu^2$ would gi
 
 ## Problems
 
-1. A proton (rest energy $938\ \text{MeV}$) moves at $u = 0.900c$. Find (a) $\gamma$, (b) its total energy $E$, (c) its kinetic energy $K$, and (d) its momentum $p$ (in $\text{MeV}/c$).
+:::{exercise}
+:label: ex-relativistic-dynamics-1
 
-2. Find the speed at which a particle's relativistic kinetic energy differs from the Newtonian prediction $\tfrac12 mu^2$ by 10%. (Hint: compute $K_{\text{rel}}/K_{\text{Newt}}$ as a function of $u/c$ and solve numerically or by successive approximation.)
+A proton (rest energy $938\ \text{MeV}$) moves at $u = 0.900c$. Find (a) $\gamma$, (b) its total energy $E$, (c) its kinetic energy $K$, and (d) its momentum $p$ (in $\text{MeV}/c$).
+:::
 
-(ex-relativistic-dynamics-3)=
-3. In electron–positron annihilation, an electron and a positron (each of rest energy $0.511\ \text{MeV}$), both essentially at rest, annihilate into two photons. (a) Use conservation of energy to find the energy of each photon, assuming they emerge with equal energies. (b) Use conservation of momentum to explain why the two photons must travel in exactly opposite directions.
+:::{solution} ex-relativistic-dynamics-1
+:label: sol-relativistic-dynamics-1
+:class: dropdown
 
-4. A pion at rest (rest energy $139.6\ \text{MeV}$) decays into a muon (rest energy $105.7\ \text{MeV}$) and a muon neutrino (treat as massless). Using conservation of energy and momentum together with $E^2 = (pc)^2+(mc^2)^2$, find the kinetic energy of the muon produced.
+_Solution not yet written._
+:::
 
-5. Show algebraically that $E^2 = (pc)^2 + (mc^2)^2$ follows from $\vec p = \gamma m \vec u$ and $E = \gamma mc^2$ by eliminating $u$ (use $\gamma^2(1 - u^2/c^2) = 1$).
+:::{exercise}
+:label: ex-relativistic-dynamics-2
 
-(ex-relativistic-dynamics-6)=
-6. The Sun radiates energy at a rate of about $3.8\times10^{26}\ \text{W}$. Use mass–energy equivalence to estimate the rate, in kg/s, at which the Sun is losing mass. Compare this rate, sustained for $4.6$ billion years, to the Sun's mass of about $2.0\times10^{30}\ \text{kg}$, and comment on whether this loss is significant over the Sun's lifetime so far.
+Find the speed at which a particle's relativistic kinetic energy differs from the Newtonian prediction $\tfrac12 mu^2$ by 10%. (Hint: compute $K_{\text{rel}}/K_{\text{Newt}}$ as a function of $u/c$ and solve numerically or by successive approximation.)
+:::
 
-7. Fill in the missing step in the derivation of relativistic momentum: starting from the requirement $m(u(A))\,u_y(A) = m(u(B))\,w_0$ and the transverse-velocity relation $u_y(A) = w_0/\gamma(v)$, verify that taking $w_0 \to 0$ gives $u(A) \to v$ and $u(B) \to 0$, and hence that $m(v) = \gamma(v)\,m$.
+:::{solution} ex-relativistic-dynamics-2
+:label: sol-relativistic-dynamics-2
+:class: dropdown
 
-8. Two identical lumps of putty, each of rest mass $m$ and speed $u = 0.60c$ (in the lab frame), collide head-on and stick together, forming a single composite lump at rest in the lab frame. (a) Using conservation of the energy–momentum four-vector, find the rest mass $M$ of the resulting composite lump, in terms of $m$. (b) Explain why $M \ne 2m$, and identify what has happened to the "missing" (or "extra") mass–energy.
+_Solution not yet written._
+:::
 
-9. A physicist wants to create a hypothetical new particle $X$, of rest mass $m_X = 10m_p$ (ten proton masses), via the fixed-target reaction $p + p \to p + p + X$, firing a proton beam at a stationary proton target. (a) Find the threshold beam kinetic energy, in units of $m_pc^2$, using the method of the worked example. (b) Find the threshold beam kinetic energy per proton if, instead, two beams of equal and opposite momentum collide head-on. (c) Compute the ratio of your two answers, and comment on why collider experiments are favored for producing very massive particles.
+:::{exercise}
+:label: ex-relativistic-dynamics-3
 
-10. A photon of energy $E_\gamma$ collides head-on with a stationary electron (rest mass $m$) and is absorbed, forming a single particle of some new rest mass $M$ at rest in the lab frame after the collision (an idealized, energy-non-conserving toy problem — real photon absorption by a free electron cannot conserve energy and momentum simultaneously unless the resulting particle recoils; ignore that subtlety here and simply find $M$ from four-vector conservation, treating the collision as perfectly inelastic). Express $M$ in terms of $m$, $E_\gamma$, and $c$.
+In electron–positron annihilation, an electron and a positron (each of rest energy $0.511\ \text{MeV}$), both essentially at rest, annihilate into two photons. (a) Use conservation of energy to find the energy of each photon, assuming they emerge with equal energies. (b) Use conservation of momentum to explain why the two photons must travel in exactly opposite directions.
+:::
 
-11. A tachyon is hypothesized to have real, finite energy and momentum despite traveling at $u = 1.5c$. (a) Show that the relation $E^2 = (pc)^2 + (mc^2)^2$ can only be satisfied for $u>c$ if $m^2 < 0$. (b) Explain, using the light-cone argument of [Chapter 2](#ch-special-relativity), why even setting aside the issue in (a), a signal carried by such a particle would create a causality paradox for some inertial observer.
+:::{solution} ex-relativistic-dynamics-3
+:label: sol-relativistic-dynamics-3
+:class: dropdown
 
-12. Verify the claim in the worked example on antiproton production that a naive estimate of $2mc^2$ (simply the rest-energy cost of the new proton–antiproton pair) undercounts the true threshold kinetic energy of $6mc^2$. Do this by computing the speed of the center-of-momentum frame at threshold (i.e., the velocity of the frame in which the total momentum is zero) as a fraction of $c$, and explain qualitatively, in terms of this CM-frame velocity, where the "extra" energy beyond $2mc^2$ goes.
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-relativistic-dynamics-4
+
+A pion at rest (rest energy $139.6\ \text{MeV}$) decays into a muon (rest energy $105.7\ \text{MeV}$) and a muon neutrino (treat as massless). Using conservation of energy and momentum together with $E^2 = (pc)^2+(mc^2)^2$, find the kinetic energy of the muon produced.
+:::
+
+:::{solution} ex-relativistic-dynamics-4
+:label: sol-relativistic-dynamics-4
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-relativistic-dynamics-5
+
+Show algebraically that $E^2 = (pc)^2 + (mc^2)^2$ follows from $\vec p = \gamma m \vec u$ and $E = \gamma mc^2$ by eliminating $u$ (use $\gamma^2(1 - u^2/c^2) = 1$).
+:::
+
+:::{solution} ex-relativistic-dynamics-5
+:label: sol-relativistic-dynamics-5
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-relativistic-dynamics-6
+
+The Sun radiates energy at a rate of about $3.8\times10^{26}\ \text{W}$. Use mass–energy equivalence to estimate the rate, in kg/s, at which the Sun is losing mass. Compare this rate, sustained for $4.6$ billion years, to the Sun's mass of about $2.0\times10^{30}\ \text{kg}$, and comment on whether this loss is significant over the Sun's lifetime so far.
+:::
+
+:::{solution} ex-relativistic-dynamics-6
+:label: sol-relativistic-dynamics-6
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-relativistic-dynamics-7
+
+Fill in the missing step in the derivation of relativistic momentum: starting from the requirement $m(u(A))\,u_y(A) = m(u(B))\,w_0$ and the transverse-velocity relation $u_y(A) = w_0/\gamma(v)$, verify that taking $w_0 \to 0$ gives $u(A) \to v$ and $u(B) \to 0$, and hence that $m(v) = \gamma(v)\,m$.
+:::
+
+:::{solution} ex-relativistic-dynamics-7
+:label: sol-relativistic-dynamics-7
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-relativistic-dynamics-8
+
+Two identical lumps of putty, each of rest mass $m$ and speed $u = 0.60c$ (in the lab frame), collide head-on and stick together, forming a single composite lump at rest in the lab frame. (a) Using conservation of the energy–momentum four-vector, find the rest mass $M$ of the resulting composite lump, in terms of $m$. (b) Explain why $M \ne 2m$, and identify what has happened to the "missing" (or "extra") mass–energy.
+:::
+
+:::{solution} ex-relativistic-dynamics-8
+:label: sol-relativistic-dynamics-8
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-relativistic-dynamics-9
+
+A physicist wants to create a hypothetical new particle $X$, of rest mass $m_X = 10m_p$ (ten proton masses), via the fixed-target reaction $p + p \to p + p + X$, firing a proton beam at a stationary proton target. (a) Find the threshold beam kinetic energy, in units of $m_pc^2$, using the method of the worked example. (b) Find the threshold beam kinetic energy per proton if, instead, two beams of equal and opposite momentum collide head-on. (c) Compute the ratio of your two answers, and comment on why collider experiments are favored for producing very massive particles.
+:::
+
+:::{solution} ex-relativistic-dynamics-9
+:label: sol-relativistic-dynamics-9
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-relativistic-dynamics-10
+
+A photon of energy $E_\gamma$ collides head-on with a stationary electron (rest mass $m$) and is absorbed, forming a single particle of some new rest mass $M$ at rest in the lab frame after the collision (an idealized, energy-non-conserving toy problem — real photon absorption by a free electron cannot conserve energy and momentum simultaneously unless the resulting particle recoils; ignore that subtlety here and simply find $M$ from four-vector conservation, treating the collision as perfectly inelastic). Express $M$ in terms of $m$, $E_\gamma$, and $c$.
+:::
+
+:::{solution} ex-relativistic-dynamics-10
+:label: sol-relativistic-dynamics-10
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-relativistic-dynamics-11
+
+A tachyon is hypothesized to have real, finite energy and momentum despite traveling at $u = 1.5c$. (a) Show that the relation $E^2 = (pc)^2 + (mc^2)^2$ can only be satisfied for $u>c$ if $m^2 < 0$. (b) Explain, using the light-cone argument of [Chapter 2](#ch-special-relativity), why even setting aside the issue in (a), a signal carried by such a particle would create a causality paradox for some inertial observer.
+:::
+
+:::{solution} ex-relativistic-dynamics-11
+:label: sol-relativistic-dynamics-11
+:class: dropdown
+
+_Solution not yet written._
+:::
+
+:::{exercise}
+:label: ex-relativistic-dynamics-12
+
+Verify the claim in the worked example on antiproton production that a naive estimate of $2mc^2$ (simply the rest-energy cost of the new proton–antiproton pair) undercounts the true threshold kinetic energy of $6mc^2$. Do this by computing the speed of the center-of-momentum frame at threshold (i.e., the velocity of the frame in which the total momentum is zero) as a fraction of $c$, and explain qualitatively, in terms of this CM-frame velocity, where the "extra" energy beyond $2mc^2$ goes.
+:::
+
+:::{solution} ex-relativistic-dynamics-12
+:label: sol-relativistic-dynamics-12
+:class: dropdown
+
+_Solution not yet written._
+:::

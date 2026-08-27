@@ -361,13 +361,13 @@ Compute the binding energy and binding energy per nucleon of $^{4}_{2}\text{He}$
 :label: sol-nuclear-physics-2
 :class: dropdown
 
-The separated-nucleon mass is $2m_p+2m_n=2(1.007276)+2(1.008665)=4.031882\ \text{u}$.  Thus
+The separated-nucleon mass is $2m_p+2m_n=2(1.007276)+2(1.008665)=4.031882\ \text{u}$.  Since $M(^4_2\text{He})$ is an *atomic* mass, it includes two orbital electrons, while $m_p$ is the bare nuclear proton mass; comparing them directly would omit two electron rest masses. Removing $2m_e=2(5.49\times10^{-4}\ \text{u})=0.001097\ \text{u}$ from the atomic mass (and neglecting the much smaller atomic electron binding energy, as instructed) gives the nuclear mass $M_{\rm nuc}=4.002602\ \text{u}-0.001097\ \text{u}=4.001505\ \text{u}$.  Thus
 
-$$\Delta m=4.031882\ \text{u}-4.002602\ \text{u}=0.029280\ \text{u},$$
+$$\Delta m=4.031882\ \text{u}-4.001505\ \text{u}=0.030377\ \text{u},$$
 
-$$E_B=(0.029280\ \text{u})(931.5\ \text{MeV}/\text{u})=27.28\ \text{MeV},\qquad \frac{E_B}{A}=\frac{27.28\ \text{MeV}}4=6.82\ \text{MeV/nucleon}.$$
+$$E_B=(0.030377\ \text{u})(931.5\ \text{MeV}/\text{u})=28.30\ \text{MeV},\qquad \frac{E_B}{A}=\frac{28.30\ \text{MeV}}4=7.07\ \text{MeV/nucleon}.$$
 
-Therefore, helium-4 has binding energy $27.3\ \text{MeV}$, or $6.82\ \text{MeV}$ per nucleon, under the stated mass approximation.
+Therefore, helium-4 has binding energy $28.3\ \text{MeV}$, or $7.07\ \text{MeV}$ per nucleon.
 :::
 
 :::{exercise}

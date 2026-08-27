@@ -294,7 +294,7 @@ Wien's law gives
 
 $$T=\frac{2.898\times10^{-3}\ \text{m K}}{500\times10^{-9}\ \text{m}}=5.80\times10^3\ \text{K}.$$
 
-The difference from $5778\ \text{K}$ is $22\ \text{K}$, or $0.4\%$.  Therefore, the peak wavelength estimates the solar surface temperature as about $5800\ \text{K}$, in excellent agreement with the stated value.
+The difference from $5778\ \text{K}$ is $18\ \text{K}$, or $0.3\%$.  Therefore, the peak wavelength estimates the solar surface temperature as about $5800\ \text{K}$, in excellent agreement with the stated value.
 :::
 
 :::{exercise}

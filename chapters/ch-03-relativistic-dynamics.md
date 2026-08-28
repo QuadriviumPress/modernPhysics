@@ -349,6 +349,13 @@ $$
 $$
 
 The initial total momentum is zero.  Each photon has momentum magnitude $p_\gamma=E_\gamma/c$, so two equal nonzero momentum vectors can sum to zero only if they point in opposite directions.  Therefore, the annihilation produces two photons of energy $0.511\ \text{MeV}$ each, traveling in exactly opposite directions.
+
+```{figure} ../images/ch03-sol-two-body-conservation.svg
+:label: fig:ch03-sol-two-body-conservation
+:alt: Diagrams of electron-positron annihilation and pion decay showing two products travelling in opposite directions.
+
+For any two-body process whose parent is at rest, momentum conservation fixes the products to have equal and opposite momenta. The right panel also previews the geometry used in the next solution.
+```
 :::
 
 :::{exercise}
@@ -394,6 +401,8 @@ E_\mu=\frac{(139.6\ \text{MeV})^2+(105.7\ \text{MeV})^2}{2(139.6\ \text{MeV})}
 $$
 
 Therefore, the muon's kinetic energy is $K_\mu=109.8\ \text{MeV}-105.7\ \text{MeV}=4.1\ \text{MeV}$.
+
+The pion-decay panel in {numref}`Figure %s <fig:ch03-sol-two-body-conservation>` shows why the muon and neutrino use the same momentum magnitude $p$ in the energy calculation.
 :::
 
 :::{exercise}
@@ -597,6 +606,13 @@ $$
 $$
 
 Therefore, the fixed-target threshold is $70m_pc^2$ of kinetic energy, the collider threshold is $5m_pc^2$ per beam proton, and colliders require fourteen times less kinetic energy per incident proton because the CM has no net forward motion.
+
+```{figure} ../images/ch03-sol-threshold-comparison.svg
+:label: fig:ch03-sol-threshold-comparison
+:alt: Comparison of a fixed-target collision with a head-on collider collision, showing centre-of-momentum motion only in the fixed-target case.
+
+In a fixed-target experiment, much of the beam energy remains as forward centre-of-momentum motion; in a collider, that energy is available to create new rest mass.
+```
 :::
 
 :::{exercise}
@@ -688,4 +704,6 @@ V=\frac{c^2(4\sqrt3\,mc)}{8mc^2}
 $$
 
 The final four-particle system has rest energy $4mc^2$ but lab energy $8mc^2$; its Lorentz factor in the lab is $\gamma_{\rm CM}=8mc^2/(4mc^2)=2$, consistent with $V=0.866c$.  Therefore, the naive $2mc^2$ counts only the new pair's rest energy, whereas the additional $4mc^2$ of the $6mc^2$ beam kinetic energy is unavoidable kinetic energy of the entire final system moving at $0.866c$ in the lab.
+
+The fixed-target panel of {numref}`Figure %s <fig:ch03-sol-threshold-comparison>` illustrates this forward-moving final centre of mass.
 :::

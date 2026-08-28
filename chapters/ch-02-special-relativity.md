@@ -476,6 +476,13 @@ t'=\frac{0.948\times10^3\ \text{m}}{(0.998)(3.00\times10^8\ \text{m/s})}
 $$
 
 Therefore, the Earth-frame mean range is $10.4\ \text{km}$, less than $15\ \text{km}$, and equivalently the ground takes $3.17\ \mu\text{s}$ to arrive in the muon frame, longer than the $2.2\ \mu\text{s}$ mean proper lifetime; reaching the ground is not typical but is quite possible for a surviving fraction of muons.
+
+```{figure} ../images/ch02-sol-muon-frames.svg
+:label: fig:ch02-sol-muon-frames
+:alt: Side-by-side diagrams of a muon crossing the atmosphere in the Earth frame and the muon frame.
+
+Time dilation in the Earth frame and length contraction in the muon frame describe the same physical crossing, with matching survival conclusion.
+```
 :::
 
 :::{exercise}
@@ -517,6 +524,13 @@ x=vt=(0.5c)t=0.5(ct),
 $$
 
 so its angle $\theta$ from vertical obeys $\tan\theta=\Delta x/\Delta(ct)=0.5$, giving $\theta=26.6^\circ$.  The light pulse obeys $x=ct$, so $\tan\theta=1$ and $\theta=45.0^\circ$.  Therefore, the requested sketch contains a vertical line at $x=2\ \text{m}$, a $26.6^\circ$-from-vertical line from the origin for the massive particle, and a $45.0^\circ$-from-vertical light ray from the origin.
+
+```{figure} ../images/ch02-sol-worldline-angles.svg
+:label: fig:ch02-sol-worldline-angles
+:alt: Spacetime diagram with a stationary worldline, a particle moving at half the speed of light, and a light ray.
+
+On equal $x$ and $ct$ scales, a worldline's angle from the vertical directly encodes $v/c$.
+```
 :::
 
 :::{exercise}
@@ -542,6 +556,13 @@ $$
 $$
 
 Therefore, Alice ages $20.0\ \text{years}$ while Bob ages $12.0\ \text{years}; Bob, unlike Alice, changes inertial frames at turnaround, so the apparent symmetry between their constant-velocity observations does not apply to the full trip.
+
+```{figure} ../images/ch02-sol-twin-worldlines.svg
+:label: fig:ch02-sol-twin-worldlines
+:alt: Earth-frame spacetime diagram of Alice remaining on Earth and Bob travelling to a star and returning.
+
+Bob's kinked worldline identifies the turnaround—the event that makes the two twins' complete histories physically different.
+```
 :::
 
 :::{exercise}

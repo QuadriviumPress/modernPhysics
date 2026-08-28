@@ -1,6 +1,6 @@
 # Figure generation
 
-Figures for Chapters 4, 5, and 10–14 are generated with matplotlib and written
+Figures for Chapters 1--14 are generated with matplotlib and written
 as SVG into [`../../images/`](../../images/). The rendered SVGs are
 **committed**, because the GitHub Pages workflow runs `myst build --html`
 only — there is no Python available at build time.
@@ -9,6 +9,9 @@ only — there is no Python available at build time.
 
 ```bash
 pip install matplotlib numpy scipy
+python3 scripts/figures/ch01_solutions.py    # figures embedded in ch. 1 worked solutions
+python3 scripts/figures/ch02_solutions.py    # figures embedded in ch. 2 worked solutions
+python3 scripts/figures/ch03_solutions.py    # figures embedded in ch. 3 worked solutions
 python3 scripts/figures/ch04_figures.py      # computed curves for ch. 4
 python3 scripts/figures/ch04_schematics.py   # diagrams for ch. 4
 python3 scripts/figures/ch04_solutions.py    # figures embedded in ch. 4 worked solutions
@@ -41,6 +44,9 @@ any change to the scripts, so the site and the source stay in step.
 | File | Contents |
 |---|---|
 | `figstyle.py` | Shared rcParams, color palette, `save()`, and the `fringe_strip()` helper that renders an intensity profile as the bright/dark bands seen on a screen |
+| `ch01_solutions.py` | Solution-only figures: river-crossing/Michelson-arm analogy and ether-signal scale comparison |
+| `ch02_solutions.py` | Solution-only figures: Earth-vs-muon-frame atmospheric crossing, worldline angles, twin-trip worldlines |
+| `ch03_solutions.py` | Solution-only figures: back-to-back two-body products and fixed-target-vs-collider threshold comparison |
 | `ch04_figures.py` | Two-slit and $N$-slit intensity, coherence wave trains, soap-film color vs. thickness |
 | `ch04_schematics.py` | Huygens wavelets, double-slit geometry, phasor addition, thin-film rays, Michelson interferometer |
 | `ch04_solutions.py` | Solution-only figures: six-slit principal maxima/zeros/secondary maxima, simulated Newton's-rings pattern, two-wavelength fringe-coincidence overlay, Case A/B thin-film ray diagrams |

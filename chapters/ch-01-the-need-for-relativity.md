@@ -303,6 +303,13 @@ $$
 $$
 
 Therefore, the upstream--downstream trip takes longer than the cross-river trip; this is precisely the classical ether prediction that the interferometer arm parallel to an ether wind has a longer round-trip light time than the perpendicular arm.
+
+```{figure} ../images/ch01-sol-river-arms.svg
+:label: fig:ch01-sol-river-arms
+:alt: Side-by-side river diagrams showing a swimmer's cross-river and upstream-downstream round trips.
+
+The river-current construction makes the key geometric difference explicit: holding a shore-fixed transverse path leaves a reduced crossing speed, while the parallel path has unequal upstream and downstream speeds.
+```
 :::
 
 :::{exercise}
@@ -427,6 +434,13 @@ v_{\max}=(3.0\times10^4\ \text{m/s})\sqrt{10^{-5}}
 $$
 
 Therefore, under the deliberately incorrect ether interpretation, the residual ether speed would be below about $95\ \text{m/s}$, which is about $3.2\times10^2$ times smaller than Earth's orbital speed.
+
+```{figure} ../images/ch01-sol-ether-shift-scale.svg
+:label: fig:ch01-sol-ether-shift-scale
+:alt: Logarithmic comparison of the 1887 predicted fringe shift, the predicted shift for a four kilometre apparatus, and a modern null upper bound.
+
+The logarithmic scale separates the large stationary-ether prediction from the tiny experimental bound; for a fixed apparatus, the signal varies as $v^2$.
+```
 :::
 
 :::{exercise}

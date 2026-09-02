@@ -26,6 +26,10 @@ Chapters [1](#ch-need-for-relativity)–[3](#ch-relativistic-dynamics) dismantle
 
 Any object at temperature $T$ emits electromagnetic radiation across a continuous range of wavelengths, with an intensity distribution depending on $T$. An idealized perfect absorber and emitter is called a **blackbody**; its emitted spectral distribution, the blackbody spectrum, depends only on temperature, not on the material. A good laboratory approximation is a small hole in the wall of an otherwise closed, heated cavity: radiation entering the hole is absorbed and re-emitted many times by the cavity walls before any of it can escape, so the radiation leaking out through the hole is, to excellent approximation, in thermal equilibrium with the cavity walls and independent of what the walls are made of.
 
+:::{margin}
+The Boltzmann constant, $k_B = 1.381\times10^{-23}\ \text{J/K}$, converts a temperature into a characteristic thermal energy scale $k_BT$. It recurs throughout this chapter's blackbody formulas precisely because the equipartition theorem assigns exactly this much average energy to each classical oscillator.
+:::
+
 ### The Ultraviolet Catastrophe
 
 Late-nineteenth-century classical physics attempted to compute this spectrum by treating the electromagnetic field inside the cavity as a superposition of standing-wave modes, each behaving as an independent harmonic oscillator, and invoking the equipartition theorem — every such oscillator, in thermal equilibrium at temperature $T$, should carry average energy $k_BT$, independent of its frequency. Counting the number of standing-wave modes per unit volume in a wavelength interval $d\lambda$ (a purely geometric problem, fixed by the cavity's size) and multiplying by $k_BT$ per mode gives the **Rayleigh–Jeans law**,
@@ -57,6 +61,10 @@ Max Planck resolved this in 1900 by a hypothesis with no classical justification
 $$
 E_n = nhf, \qquad n = 0, 1, 2, \ldots,
 $$
+
+:::{margin}
+Planck's constant is often quoted instead as $\hbar \equiv h/2\pi = 1.055\times10^{-34}\ \text{J}\cdot\text{s}$ ("h-bar"), the form that dominates the angular-momentum and wave-mechanics formulas of later chapters. This chapter sticks to $h$ throughout, since $E=hf$ and $p=h/\lambda$ are the natural forms for photon energy and momentum.
+:::
 
 where $f$ is the oscillator's frequency and $h$ is a new fundamental constant (**Planck's constant**), $h = 6.626\times 10^{-34}\ \text{J}\cdot\text{s}$. With this assumption, the average energy of a mode at frequency $f$ in thermal equilibrium at temperature $T$ is not $k_BT$ (the equipartition value, independent of $f$, which causes the catastrophe) but
 
@@ -118,6 +126,10 @@ Three experimental features of this effect resist any explanation in terms of cl
 2. **$K_{\max}$ depends linearly on frequency**, and there exists a sharp **threshold frequency** $f_0$, characteristic of the metal, below which no photoelectrons are emitted at all, regardless of intensity or exposure time. Classically, a wave of any frequency should eventually eject electrons if given enough time to deliver sufficient energy, so a hard threshold — and one depending on frequency rather than intensity — has no classical explanation.
 3. **Emission is (essentially) instantaneous**, with no observable time lag even at very low intensity. Classically, a dim wave should take a measurable time to deliver enough energy to an electron to free it; a rough classical estimate for a very weak source predicts delays of minutes to hours, yet no such delay is ever observed.
 
+:::{warning}
+A common misconception is to picture a brighter beam as made of more energetic photons, as if turning up a lamp's intensity somehow "speeds up" each photon. Intensity instead measures the *number* of photons arriving per second; each photon's energy $hf$ is fixed by the light's frequency alone and is completely indifferent to how bright the source is. That is exactly why $K_{\max}$ tracks frequency rather than intensity: doubling the intensity doubles the photocurrent (twice as many photoelectrons ejected per second) but leaves the kinetic energy of each individual electron unchanged.
+:::
+
 Einstein resolved all three in 1905 by proposing that light itself is quantized: it consists of discrete packets, **photons**, each carrying energy
 
 $$
@@ -132,6 +144,10 @@ $$
 
 the **photoelectric equation**. This immediately explains all three observations: $K_{\max}$ depends on $f$ (through the photon energy $hf$) but not on intensity, since intensity only changes the *number* of photons per second, not the energy of each one; the threshold frequency is $f_0 = \phi/h$, below which a single photon simply does not carry enough energy to free an electron, no matter how many photons arrive; and emission is instantaneous because each electron absorbs one photon's energy all at once, not gradually. A plot of $K_{\max}$ (equivalently, $eV_0$) versus $f$ is a straight line of slope $h$ and $y$-intercept $-\phi$, and Millikan's precise measurement of exactly this line (1916) provided both a direct experimental value of $h$ and strong confirmation of Einstein's photon hypothesis — for which, not for relativity, Einstein received the 1921 Nobel Prize in Physics.
 
+:::{note}
+Millikan spent nearly a decade trying to disprove Einstein's photon hypothesis, not confirm it. As a committed believer in the classical wave theory of light, he found the idea of discrete light quanta implausible and set out to show the photoelectric equation wrong experimentally. His painstaking measurements instead reproduced $K_{\max} = hf - \phi$ to within about half a percent across several metals, giving the first precise value of $h$ from a source entirely independent of Planck's blackbody-spectrum fit. Millikan later described the result as "the enormously improbable equation which I was unable to evade," and won his own Nobel Prize in 1923, in part for exactly this measurement.
+:::
+
 The three stubborn facts are best met in the order Lenard and Millikan met them, with the apparatus in front of you. In {numref}`Figure %s <fig:ch06-photoelectric-sim>` the light's intensity, its wavelength, the target metal, and the retarding voltage are all under control, and the photocurrent and stopping potential are read off directly. Turn the intensity up at fixed wavelength: the current rises and the stopping potential does not move. Shorten the wavelength instead: the stopping potential climbs, and a plot of $eV_0$ against $f$ — the simulation will accumulate one for you — is a straight line whose slope is $h$ and whose intercept names the metal. Cross the threshold from the long-wavelength side and the current stops altogether, at full intensity.
 
 ```{phet-legacy} photoelectric
@@ -141,9 +157,19 @@ The three stubborn facts are best met in the order Lenard and Millikan met them,
 The photoelectric apparatus: a photocathode, an adjustable light source, and a retarding voltage. (This is one of PhET's original Java simulations, run in the browser by CheerpJ; it downloads a Java runtime before it starts, so give it a few seconds on first load.)
 ```
 
+:::{tip}
+Before computing $K_{\max} = hf - \phi$, check whether the photon energy actually exceeds the work function — a negative result signals light below the threshold frequency (no photoelectrons at all), not a negative kinetic energy. Working consistently in electron-volts, with the shortcut $hc = 1240\ \text{eV}\cdot\text{nm}$, avoids most of the unit-conversion slips these problems invite; convert to joules or SI units only at the very end, if at all.
+:::
+
 ### Worked Example: The Photoelectric Effect in Cesium
 
-Cesium has one of the lowest work functions of any metal, $\phi = 2.14\ \text{eV}$, which is why it is used in the photocathodes of photomultiplier tubes and early photoelectric light meters. Ultraviolet light of wavelength $\lambda = 250\ \text{nm}$ illuminates a cesium surface. Using the convenient combination $hc = 1240\ \text{eV}\cdot\text{nm}$,
+Cesium has one of the lowest work functions of any metal, $\phi = 2.14\ \text{eV}$, which is why it is used in the photocathodes of photomultiplier tubes and early photoelectric light meters.
+
+:::{margin}
+One electron-volt, $1\ \text{eV} = 1.602\times10^{-19}\ \text{J}$, is the kinetic energy gained by a single electron accelerated through a $1\ \text{V}$ potential difference — far more convenient than the joule for atomic-scale quantities like photon energies and work functions, which is why this chapter reports them in eV throughout.
+:::
+
+Ultraviolet light of wavelength $\lambda = 250\ \text{nm}$ illuminates a cesium surface. Using the convenient combination $hc = 1240\ \text{eV}\cdot\text{nm}$,
 
 $$
 E_{\text{photon}} = \frac{hc}{\lambda} = \frac{1240\ \text{eV}\cdot\text{nm}}{250\ \text{nm}} = 4.96\ \text{eV}.
@@ -227,6 +253,22 @@ $$
 
 The constant $h/m_ec = 2.426\times 10^{-12}\ \text{m}$ is the **Compton wavelength** of the electron. The formula correctly predicts zero shift at $\theta = 0$ (forward, undeflected "scattering") and maximum shift $2h/m_ec$ at $\theta = 180°$ (photon backscattered), matches the observed angular dependence precisely, and — crucially — is independent of the incident wavelength $\lambda$ itself, matching experiment. Compton scattering is direct, quantitative confirmation that a photon carries momentum $p = h/\lambda$ and transfers it to a free electron exactly as one particle colliding with another.
 
+:::{dropdown} The Compton formula in terms of photon energy
+The wavelength form $\lambda' - \lambda = (h/m_ec)(1-\cos\theta)$ is the natural one for X-ray diffraction work, where wavelengths are measured directly, but gamma-ray spectroscopy — including the Compton-edge discussion below — more often calls for the scattered photon's *energy* $E' = hc/\lambda'$ directly in terms of the incident energy $E = hc/\lambda$. Substituting $\lambda = hc/E$ and $\lambda' = hc/E'$ into the Compton formula gives
+
+$$
+\frac{hc}{E'} - \frac{hc}{E} = \frac{h}{m_ec}(1-\cos\theta).
+$$
+
+Multiplying through by $EE'/(hc)$ and solving for $E'$ yields
+
+$$
+E' = \frac{E}{1 + \dfrac{E}{m_ec^2}(1-\cos\theta)}.
+$$
+
+Setting $\theta = 180°$ gives the *minimum* possible scattered-photon energy, $E'_{\min} = E/[1 + 2E/(m_ec^2)]$, and hence the *maximum* possible energy $\Delta E_{\max} = E - E'_{\min}$ that a single Compton-scattering event can deposit in a detector — the location of the Compton edge introduced below.
+:::
+
 ### Worked Example: Compton-Scattered Molybdenum X-Rays
 
 X-rays of wavelength $\lambda = 0.100\ \text{nm}$ (comparable to characteristic molybdenum $K_\alpha$ X-rays used in crystallography) Compton-scatter off free electrons at $\theta = 60°$. The wavelength shift is
@@ -254,6 +296,10 @@ requiring a photon energy of at least $2m_ec^2 = 1.022\ \text{MeV}$ (twice the e
 A nearby massive third body — typically an atomic nucleus — is required to conserve momentum. This can be seen directly from the energy–momentum four-vector formalism of [Chapter 3](#ch-relativistic-dynamics): an isolated photon of energy $E_\gamma$ has momentum $p_\gamma = E_\gamma/c$, but a resulting electron–positron pair with the *same* total energy $E_\gamma$ (by energy conservation) necessarily has total momentum strictly *less* than $E_\gamma/c$, because each massive particle satisfies $E^2 = (pc)^2+(mc^2)^2 > (pc)^2$, so $pc < E$ for each — the pair's combined momentum cannot match the photon's original momentum at the same total energy. A nucleus nearby can absorb the small difference in momentum (recoiling with negligible kinetic energy, because its mass is so much larger than $m_e$) while barely affecting the energy balance, resolving the mismatch; in a vacuum with no such third body available, momentum conservation alone forbids the process outright, regardless of how much energy the lone photon carries.
 
 The reverse process, **pair annihilation**, $e^- + e^+ \to 2\gamma$ (two photons are required, rather than one, to conserve momentum in the electron–positron center-of-momentum frame — see [Chapter 3](#ch-relativistic-dynamics), [Problem 3](#ex-relativistic-dynamics-3)), converts rest mass entirely back into photon energy and is used, for example, in positron-emission tomography (PET) imaging, where each annihilation of an injected positron-emitting tracer with a nearby atomic electron produces two back-to-back $511\ \text{keV}$ gamma rays that a ring of detectors uses to reconstruct the tracer's location.
+
+:::{seealso}
+The radioactive decays that produce gamma rays in the first place, and the nuclear physics behind tracers like the ones PET imaging relies on, are developed in [Chapter 13](#ch-nuclear-physics), which picks up where this chapter's photon–matter interactions leave off.
+:::
 
 ### Worked Example: Sharing Energy Above Pair-Production Threshold
 

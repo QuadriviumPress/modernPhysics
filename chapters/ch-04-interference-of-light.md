@@ -55,6 +55,10 @@ $$
 
 This proportionality is the single most important fact in the chapter. It means amplitudes add, and *then* you square; it is emphatically not true that intensities add. Two waves whose fields cancel produce zero intensity even though each alone carries energy, and (as the phasor section shows) two waves whose fields reinforce produce four times a single wave's intensity, not twice.
 
+:::{margin}
+The amplitude $E_0$ carries units of volts per meter, and the exact relation is $I = \tfrac12 c\epsilon_0 E_0^2$ for a wave in vacuum. Only the proportionality $I\propto E_0^2$ is used in this chapter, since every result here compares one intensity to another and the constant $\tfrac12 c\epsilon_0$ cancels.
+:::
+
 Why the time average? Visible light has $f \approx 5\times10^{14}\ \text{Hz}$, so one oscillation takes about $2\times10^{-15}\ \text{s}$. No detector — no photodiode, no photographic emulsion, and certainly not the eye — responds anywhere near that fast. Every measurement is an average over an enormous number of cycles, and what survives that average is the intensity.
 
 **Light slows down in matter, and its wavelength shrinks with it.** In a transparent medium of refractive index $n$, light travels at speed $v = c/n$. The frequency cannot change — the field at the boundary must oscillate in step on both sides — so the wavelength must:
@@ -175,6 +179,10 @@ Young's double-slit experiment. (a) The first slit produces a single wavefront t
 
 The first slit is not decoration. Its job is to guarantee that a single wavefront reaches both of the following slits, so that whatever the source does — however erratically it flickers — it does the same thing at $S_1$ and at $S_2$ at the same moment. The two slits then behave as **coherent** sources with a fixed phase relationship. Without that first slit, different parts of an extended source illuminate the two slits independently, and the pattern washes out. (The coherence section below makes this precise; a modern laser has enough built-in coherence that the first slit can be omitted, which is why the classroom demonstration looks so much easier than Young's original.)
 
+:::{note}
+Young's actual 1801–1803 experiments looked little like the tidy two-slit diagram of {numref}`Figure %s <fig:ch04-double-slit>`. He first produced two coherent beams by letting sunlight through a single pinhole fall on the two edges of a thin card held edge-on in the beam, and only later described the equivalent double-slit arrangement in print. Manufacturing two slits narrow and close enough to show clean fringes was, at the time, a serious feat of craftsmanship; Augustin-Jean Fresnel, extending the work a decade later, devised alternative ways to split a single wavefront — his double mirror, and his biprism, a single piece of glass ground into two shallow prisms back to back — that avoided a fragile double slit altogether while producing exactly the same fringe pattern. The physics is identical in all three arrangements: what matters is only that two coherent virtual sources end up separated by a controllable distance $d$.
+:::
+
 ### The Path Difference
 
 Consider a point $P$ on the screen, at angle $\theta$ from the central axis. Light reaching $P$ from $S_2$ has traveled farther than light from $S_1$. Because $L \gg d$ in any practical apparatus — $d$ is tens of micrometers, $L$ is a meter or more — the two rays heading for $P$ are very nearly parallel, and the geometry collapses to the small right triangle of {numref}`Figure %s(b) <fig:ch04-double-slit>`: drop a perpendicular from $S_1$ onto the ray from $S_2$, and the extra leg is
@@ -210,6 +218,10 @@ $$
 $$
 
 Three features of this result deserve comment. First, measuring $\Delta y$, $L$, and $d$ determines $\lambda$ — this was historically one of the first accurate measurements of the wavelength of visible light, and the first evidence that different colors correspond to different, specific wavelengths. Second, the fringes get *farther apart* as the slits get *closer together*: squeezing the apparatus stretches the pattern. This reciprocal relationship between a wave's confinement and its spread is a hallmark of wave phenomena, and it returns as the uncertainty principle in [Chapter 7](#ch-wave-properties-of-particles). Third, the small-angle form is an approximation; when $d$ is only a few wavelengths the fringes are not evenly spaced and $d\sin\theta = m\lambda$ must be used directly.
+
+:::{tip}
+Before using $\Delta y = \lambda L/d$, check the approximation numerically rather than by eye: compute $d/L$ and confirm it is small (a few times $10^{-4}$ or smaller is typical for a tabletop double slit), and check that the order $m$ of interest keeps $\sin\theta = m\lambda/d$ well under $1$. Both conditions hold comfortably in every worked example below, but a request for a high-order fringe, or an unusually large $d/L$, can push $\sin\theta$ far enough from $\theta$ that only the exact condition $d\sin\theta = m\lambda$ remains trustworthy.
+:::
 
 The reciprocal relationship in $\Delta y = \lambda L/d$ is easy to state and easy to get backwards, so it is worth watching it happen. In {numref}`Figure %s <fig:ch04-double-slit-sim>` the slit separation is a slider and the pattern responds live: closing the slits together spreads the fringes apart, and raising the frequency — shortening $\lambda$ — packs them closer. The simulation runs the same geometry with water waves, sound, and light, which is a useful reminder that nothing in the derivation used any property of light beyond its being a wave with a wavelength.
 
@@ -295,6 +307,10 @@ Two quantities measure how long a source stays predictable:
 
 - The **coherence time** $\tau_c$: roughly the duration of one uninterrupted wave train, the time over which the phase remains predictable.
 - The **coherence length** $\ell_c = c\,\tau_c$: the corresponding path-length difference over which fringes survive. If the two arms of an interference experiment differ by much more than $\ell_c$, the light recombining at the screen comes from two *different*, unrelated wave trains, and there is nothing stable to interfere.
+
+:::{margin}
+A source is called **quasi-monochromatic** when its spectral width satisfies $\Delta\lambda \ll \lambda$ — true, to greater or lesser degree, of every source in this section except the explicitly white-light examples. It is this condition that makes "the wavelength," singular, a meaningful thing to quote at all.
+:::
 
 Coherence length is set by the spectral purity of the source. A wave train of finite duration $\tau_c$ cannot be perfectly monochromatic — Fourier analysis gives it a spread of frequencies $\Delta f \sim 1/\tau_c$ — and converting to wavelength gives the useful estimate
 
@@ -432,6 +448,34 @@ I(\theta) = I_1\left[\frac{\sin(N\phi/2)}{\sin(\phi/2)}\right]^2, \qquad \phi = 
 $$
 
 where $I_1$ is the intensity from a single slit. Setting $N = 2$ recovers the two-slit result, since $\sin\phi/\sin(\phi/2) = 2\cos(\phi/2)$.
+
+:::{dropdown} Summing the $N$-slit phasor chain
+The total field at angle $\theta$ is the sum of $N$ equal-amplitude phasors, each rotated by $\phi$ from the last:
+
+$$
+E = E_0\left(1 + e^{i\phi} + e^{2i\phi} + \cdots + e^{i(N-1)\phi}\right) = E_0\sum_{k=0}^{N-1} e^{ik\phi}.
+$$
+
+This is a finite geometric series with common ratio $e^{i\phi}$, so
+
+$$
+E = E_0\,\frac{1 - e^{iN\phi}}{1 - e^{i\phi}} \qquad (\phi \ne 0).
+$$
+
+To get the magnitude, factor a half-angle phase out of both numerator and denominator: for any angle $\alpha$, $1 - e^{i\alpha} = e^{i\alpha/2}\left(e^{-i\alpha/2} - e^{i\alpha/2}\right) = -2i\,e^{i\alpha/2}\sin(\alpha/2)$. Applying this with $\alpha = N\phi$ in the numerator and $\alpha = \phi$ in the denominator,
+
+$$
+E = E_0\,\frac{-2i\,e^{iN\phi/2}\sin(N\phi/2)}{-2i\,e^{i\phi/2}\sin(\phi/2)} = E_0\,e^{i(N-1)\phi/2}\,\frac{\sin(N\phi/2)}{\sin(\phi/2)}.
+$$
+
+The prefactor $e^{i(N-1)\phi/2}$ has magnitude $1$ — it is only an overall phase, reflecting the arbitrary choice of the first slit as the phase origin — so the amplitude is
+
+$$
+|E| = E_0\left|\frac{\sin(N\phi/2)}{\sin(\phi/2)}\right|,
+$$
+
+exactly the result quoted in the main text. Squaring gives the $N$-slit intensity formula, and setting $N = 2$ recovers the two-slit result via the identity $\sin\phi = 2\sin(\phi/2)\cos(\phi/2)$.
+:::
 
 {numref}`Figure %s <fig:ch04-n-slit>` collects the consequences:
 
@@ -587,6 +631,10 @@ $$
 
 with a dark spot at the center. The rings crowd together as $m$ grows, since $r_m\propto\sqrt m$. Newton's rings remain a standard optical-shop test: any departure of the ring pattern from perfect circles reveals a departure of the surface from a perfect sphere, at a sensitivity of a fraction of a wavelength.
 
+:::{warning}
+The bright/dark conditions derived in this section describe light reflected back toward the source. Viewed in transmission instead — looking through the wedge or the lens rather than at its reflection — the same film shows the *complementary* pattern: wherever the reflected light is dark, the transmitted light is bright, and vice versa. This is not a separate phase-shift rule to memorize; it follows from energy conservation in a film that absorbs essentially nothing, so whatever fraction of the light is not reflected must be transmitted. A dark spot at the center of Newton's rings in reflection is therefore a bright spot at the center in transmission.
+:::
+
 ### Worked Example: Measuring a Wire with an Air Wedge
 
 Two flat glass plates $10.0\ \text{cm}$ long are in contact at one end and separated at the other by a thin wire. Illuminated from above with sodium light ($\lambda = 589\ \text{nm}$), the plates show $170$ dark fringes between the contact line and the wire. Find the wire's diameter.
@@ -615,6 +663,10 @@ A beam splitter — a half-silvered mirror — divides an incoming beam into two
 $$
 \Delta r = 2(L_1 - L_2).
 $$
+
+:::{margin}
+A "half-silvered" beam splitter need not split the light exactly $50/50$ in a real instrument. Nothing in the fringe-counting analysis of this section depends on the split ratio — only on the fact that both paths carry some of the original beam and recombine coherently at the end.
+:::
 
 Now translate one mirror through a distance $\delta$. That arm's round trip changes by $2\delta$, and the fringe pattern shifts by
 
@@ -672,6 +724,10 @@ so $n = 1.000293$ — the accepted value for dry air at standard conditions. The
 ## Looking Ahead: Interference One Photon at a Time
 
 Everything in this chapter treats light as a classical wave, and the treatment works. It is worth flagging now, though, that the story does not end here.
+
+:::{seealso}
+[](#ch-particle-properties-of-waves) picks up the single-photon result previewed here, developing the photon concept and the photoelectric effect that first forced physicists to take a particle picture of light seriously again.
+:::
 
 Turn the source in Young's experiment down. Not a little — down until the light is so faint that, on average, only one quantum of light is inside the apparatus at any moment. A $1\ \text{mW}$ helium–neon laser emits about $3\times10^{15}$ photons per second; light crosses a meter-long apparatus in about $3\ \text{ns}$; so a rate below roughly $10^{8}$ photons per second guarantees that each one arrives, passes the slits, and lands before the next is emitted. G. I. Taylor performed the experiment in 1909 using an attenuated gas flame and a three-month exposure, and it has been repeated countless times since with single-photon sources and imaging detectors.
 

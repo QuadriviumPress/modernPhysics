@@ -47,6 +47,10 @@ so nuclear *volume* is proportional to $A$ — each nucleon occupies, on average
 
 Nuclear stability is not explained by electromagnetism — the Coulomb force between two protons at nuclear separations, $\sim 1\ \text{fm}$, is enormously repulsive and would fly the nucleus apart if the electromagnetic force between nucleons were the whole story. Nuclei are held together by the **strong nuclear force**, an attractive interaction between nucleons (proton-proton, proton-neutron, and neutron-neutron alike, largely independent of charge) that is far stronger than the Coulomb repulsion at nuclear distances, but has an extremely short range (roughly $1$–$2\ \text{fm}$), falling off essentially to zero beyond a few fermis. This short range explains why nuclear binding, unlike Coulomb binding, saturates: a given nucleon interacts strongly only with its immediate neighbors, not with every other nucleon in the nucleus (unlike the long-range Coulomb repulsion, which every proton feels from every other proton, growing roughly as $Z^2$) — a key qualitative fact used below to explain both the shape of the binding-energy curve and, ultimately, nuclear fission and fusion.
 
+:::{margin}
+For scale, $1\ \text{fm}=10^{-15}\ \text{m}$ is about $10^5$ times smaller than a typical atomic radius ($\sim1\ \text{Å}=10^{-10}\ \text{m}$) — the same factor of $10^5$ flagged in the chapter introduction as the length scale separating nuclear from atomic physics.
+:::
+
 The measurement that started all of this is reconstructed in {numref}`Figure %s <fig:ch13-rutherford-sim>`. Alpha particles are fired at a nucleus of adjustable $Z$, and almost all of them pass through with a barely perceptible deflection — but a few come back. Rutherford's inference from that rare, large-angle scattering was that the positive charge is concentrated in a volume tiny compared with the atom, and the simulation makes the inference reproducible: shrink the nuclear charge and the sharp back-scattering disappears, while the plum-pudding screen shows what a diffuse charge distribution would have produced instead — no large deflections at all, at any impact parameter.
 
 ```{phet} rutherford-scattering
@@ -65,7 +69,15 @@ $$
 
 where $M(^A_ZX)$ is the measured nuclear mass (in practice, atomic masses, which include electrons, are tabulated and used consistently on both sides of this equation, since the electron masses and atomic binding energies very nearly cancel). It is generally more informative to consider the **binding energy per nucleon**, $E_B/A$, since this measures how tightly, on average, an individual nucleon is bound, independent of the nucleus's overall size.
 
+:::{margin}
+The **atomic mass unit** is defined as exactly $1/12$ the mass of a neutral $^{12}_6\text{C}$ atom, $1\ \text{u}=1.660539\times10^{-27}\ \text{kg}$, converting to energy as $1\ \text{u}\,c^2=931.494\ \text{MeV}$ — the conversion factor used throughout this chapter's worked examples.
+:::
+
 Plotting $E_B/A$ against $A$ for all known nuclides gives one of the most important curves in nuclear physics: $E_B/A$ rises sharply from very light nuclei, peaks at around $E_B/A \approx 8.7\ \text{MeV}$ near $A \approx 56$ (iron and its neighbors), and then decreases slowly for heavier nuclei. This shape is easiest to absorb by looking at it directly, plotted from real nuclear data, in {numref}`Figure %s <fig:ch13-binding-curve>`.
+
+:::{margin}
+The single most tightly bound nuclide per nucleon is actually $^{62}_{28}\text{Ni}$, not $^{56}_{26}\text{Fe}$, though the two are close enough ($8.7946$ vs. $8.7903\ \text{MeV/nucleon}$) that "the iron peak" remains the standard shorthand for this region of the curve.
+:::
 
 ```{figure} ../images/ch13-binding-energy-curve.svg
 :label: fig:ch13-binding-curve
@@ -105,6 +117,34 @@ Z_{\min}(A) \approx \frac{2a_A A}{4a_A + a_C A^{2/3}},
 $$
 
 the proton number that maximizes binding energy for that $A$. For $A=238$, this predicts $Z_{\min}\approx91.5$ — strikingly close to uranium's actual $Z=92$ — and, more generally, shows why the ratio $Z_{\min}/A$ decreases steadily below $1/2$ as $A$ grows: the Coulomb term's $Z^2$ growth increasingly outweighs the symmetry term's preference for $N=Z$, pushing the most stable nucleus for each $A$ toward greater neutron excess, exactly the neutron-rich bending of the stable band away from $N=Z$ seen in {numref}`Figure %s <fig:ch13-nucleus-sim>` below.
+
+:::{dropdown} Deriving the Line of Stability: Minimizing $E_B$ at Fixed $A$
+Only the Coulomb and symmetry terms depend on how a fixed $A$ is divided between $Z$ and $N$; the volume, surface, and (for this smooth, continuous-$Z$ treatment) pairing terms are dropped. Writing $E_B$ as a function of $Z$ alone at fixed $A$ and differentiating,
+
+$$
+\frac{\partial E_B}{\partial Z} = -a_C\frac{2Z-1}{A^{1/3}} + \frac{4a_A(A-2Z)}{A},
+$$
+
+using $\partial[Z(Z-1)]/\partial Z = 2Z-1$ and $\partial[(A-2Z)^2]/\partial Z = -4(A-2Z)$. Setting this to zero and approximating $2Z-1\approx2Z$ (an excellent approximation once $Z$ is more than a few units) gives
+
+$$
+\frac{2a_CZ}{A^{1/3}} = \frac{4a_A(A-2Z)}{A}.
+$$
+
+Multiplying both sides by $A$ and collecting every term proportional to $Z$ on the left,
+
+$$
+2a_CZA^{2/3} + 8a_AZ = 4a_AA \quad\Longrightarrow\quad Z\left(4a_A + a_CA^{2/3}\right) = 2a_AA,
+$$
+
+which rearranges directly into the formula quoted in the text,
+
+$$
+Z_{\min}(A) = \frac{2a_AA}{4a_A + a_CA^{2/3}}.
+$$
+
+Because this comes from setting a first derivative to zero, it locates a maximum of $E_B$ (equivalently, a minimum of the nuclear mass) at fixed $A$ — exactly the most stable nuclide for that mass number, which is what "the line of stability" means.
+:::
 
 The **pairing term** $\delta(A,Z)$ captures a purely quantum effect with no analog in the volume, surface, or Coulomb terms: nucleons of the same type couple preferentially in spin-paired twos (much as the two electrons of a filled atomic orbital pair their spins, [Chapter 11](#ch-many-electron-atoms)), each pair contributing extra binding beyond what the smooth terms above predict. An **even–even** nuclide (even $Z$, even $N$) has every nucleon paired and gains the full pairing bonus; an **odd–odd** nuclide has one unpaired proton and one unpaired neutron and loses it; an odd-$A$ nuclide (one odd, one even) is intermediate and conventionally assigned $\delta=0$. The consequence is stark and directly observable in the chart of the nuclides: of the roughly 260 stable nuclides, about 150 are even–even, roughly 100 are odd-$A$, and only four are odd–odd ($^2_1\text{H}$, $^6_3\text{Li}$, $^{10}_5\text{B}$, and $^{14}_7\text{N}$, all among the very lightest nuclei, where the symmetry term's cost of an odd-odd configuration is smallest) — essentially every heavier odd-odd combination is unstable, decaying by beta emission toward an even-even or odd-$A$ neighbor of lower mass.
 
@@ -154,7 +194,15 @@ $$
 T_{1/2} = \frac{\ln 2}{\lambda}, \qquad \tau = \frac{1}{\lambda} = \frac{T_{1/2}}{\ln 2}.
 $$
 
+:::{warning} A Half-Life Is Not a Countdown Timer
+It is tempting to picture a radioactive nucleus as "aging" toward its half-life, becoming more likely to decay the longer it has already survived — as if $T_{1/2}$ were a fuse burning down. It is not: the decay constant $\lambda$ is fixed and history-independent, so a nucleus that has already survived ten half-lives is exactly as likely to decay in the next second as one created a moment ago. A related error is treating $T_{1/2}$ and the mean lifetime $\tau$ as interchangeable — they are not. $\tau=T_{1/2}/\ln2\approx1.44\,T_{1/2}$ is *longer* than the half-life, because the relatively rare nuclei that survive far longer than typical pull the average up, even though the *median* survival time is exactly $T_{1/2}$.
+:::
+
 The **activity**, $\mathcal{A} \equiv -dN/dt = \lambda N(t) = \mathcal{A}_0 e^{-\lambda t}$, is the physically measured decay rate (in decays per second, or the traditional unit the curie), and decays with the same exponential form and the same $T_{1/2}$ as $N(t)$ itself, since $\mathcal A$ is simply proportional to $N$ at every instant.
+
+:::{margin}
+$1\ \text{curie (Ci)} \equiv 3.7\times10^{10}$ decays/s, originally defined to match the activity of exactly $1\ \text{g}$ of $^{226}\text{Ra}$ (verified explicitly in the worked example below). The SI unit is the **becquerel** (Bq), $1\ \text{Bq}\equiv1$ decay/s.
+:::
 
 The exponential law describes a population, not a nucleus, and the difference between those two statements is where intuition usually fails. {numref}`Figure %s <fig:ch13-decay-sim>` shows both at once: individual nuclei decaying at unpredictable moments with no memory of how long they have already waited, and the count of survivors nevertheless tracing a clean exponential once the sample is large enough. The same simulation puts the law to work in reverse — measuring the residual $^{14}\text{C}$ or $^{238}\text{U}$ fraction in a sample of unknown age and reading off the elapsed time — which is the argument by which the age of a bone, a lava flow, or the Earth itself is established.
 
@@ -229,6 +277,14 @@ Three principal decay modes connect unstable nuclides to more stable ones:
 
 **Beta decay** occurs in three related forms — $\beta^-$ decay ($n \to p + e^- + \bar\nu_e$, converting a neutron to a proton within the nucleus), $\beta^+$ decay ($p \to n + e^+ + \nu_e$), and electron capture ($p + e^- \to n + \nu_e$) — each mediated by the weak nuclear interaction ([Chapter 14](#ch-elementary-particles-and-the-standard-model)) and each moving a nucleus toward the more stable $N/Z$ ratio for its mass number. The **neutrino** ($\nu_e$) and **antineutrino** ($\bar\nu_e$) are required, not merely as bookkeeping devices, by conservation of energy, momentum, and angular momentum: without a third emitted particle, a two-body decay ($n \to p + e^-$ alone) would force the emitted electron to have one single, fixed energy for a given parent-daughter pair, but the observed electron energy spectrum in beta decay is continuous, spread over a range up to a fixed maximum — direct evidence (first argued by Pauli in 1930, on exactly these grounds) that a third, initially unobserved particle carries away the missing energy and momentum event by event.
 
+:::{note} From Pauli's "Desperate Remedy" to a Confirmed Particle
+Pauli's 1930 neutrino proposal — floated in an open letter to a nuclear physics conference he skipped, addressed to "Dear Radioactive Ladies and Gentlemen" — was, in his own words, a "desperate remedy" to rescue conservation of energy in beta decay, and he was privately doubtful it could ever be tested: the neutrino interacts so weakly that a typical one could pass through light-years of solid lead without interacting even once. It took until 1956, twenty-six years later, for Clyde Cowan and Frederick Reines to detect (anti)neutrinos directly, using the intense flux from a nuclear reactor and a target designed to catch the rare inverse-beta-decay event $\bar\nu_e+p\to n+e^+$ — a confirmation for which Reines shared the 1995 Nobel Prize in Physics (Cowan had died in 1974, and the Prize is never awarded posthumously).
+:::
+
+:::{seealso} The Weak Interaction, at the Quark Level
+This chapter treats $\beta^-$ decay at the nucleon level, $n\to p+e^-+\bar\nu_e$. [](#ch-elementary-particles-and-the-standard-model) goes one level deeper, showing the same transformation as a single down quark converting to an up quark — the only one of the four fundamental interactions that can change one flavor of quark into another — and develops the full conservation-law framework (charge, baryon number, lepton number) that the reaction above already silently obeys.
+:::
+
 **Gamma decay** ($^A_ZX^* \to {}^A_ZX + \gamma$, where the asterisk denotes an excited nuclear state) is the nuclear analog of atomic photon emission ([Chapter 10](#ch-the-hydrogen-atom)): a nucleus left in an excited state, often as the immediate product of a preceding alpha or beta decay, drops to a lower-energy (often the ground) state by emitting a photon, with energy set by the spacing between nuclear energy levels — typically keV to MeV, far larger than atomic transition energies, because the nuclear scale of confinement is so much smaller than the atomic scale (an application of the same uncertainty-principle confinement argument used in [Chapter 7](#ch-wave-properties-of-particles)).
 
 All three modes, and the reason a given nuclide chooses one of them, are laid out in {numref}`Figure %s <fig:ch13-nucleus-sim>`. Its chart of the nuclides is the useful part: stable nuclides form a narrow band that starts along $N = Z$ and bends toward neutron excess as $Z$ grows, and the decay mode of anything off that band is predictable from which side of it the nuclide sits on. Neutron-rich nuclides convert a neutron to a proton by $\beta^-$ and step toward the band; proton-rich ones go the other way by $\beta^+$ or electron capture; and beyond $Z \approx 83$ nothing is stable at all, so the heavy corner of the chart empties itself by alpha emission.
@@ -254,6 +310,10 @@ Q = \left[238.050788 - 234.043601 - 4.002602\right]\text{u} \times 931.494\ \tex
 $$
 
 in close agreement with the measured value. Because momentum must also be conserved and the thorium daughter recoils, the alpha particle itself carries slightly less than the full $Q$: momentum conservation splits $Q$ between the two products in inverse proportion to their masses, so the much lighter alpha particle ($m_\alpha \ll M_{\text{Th}}$) carries away the large majority of it, close to the experimentally observed $4.20\ \text{MeV}$ alpha kinetic energy for this decay, with the small remainder appearing as the recoiling thorium nucleus's kinetic energy.
+
+:::{tip} Track Electrons Before Plugging In a Mass
+Binding-energy and $Q$-value calculations mix "nuclear" bookkeeping (protons and neutrons) with tabulated *atomic* masses (nucleus plus electrons), and the two must be reconciled before any numbers go into a formula. The rule that keeps this honest: compare only mass values that carry the same total number of electrons. The $^{56}\text{Fe}$ binding-energy example above uses $m(^1\text{H})$ in place of a bare $m_p$ specifically so that all $26$ atomic electrons cancel exactly rather than approximately; the $^{238}\text{U}$ alpha-decay $Q$-value works directly from atomic masses with no correction at all, because the same $92$ electrons are present on both sides, split between the daughter thorium atom ($90$) and the emerging helium atom ($2$). Whenever the electron count does not match up this neatly, the mismatch has to be added back in by hand before the result can be trusted.
+:::
 
 ## Fission
 

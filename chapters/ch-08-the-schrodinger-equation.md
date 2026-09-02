@@ -33,6 +33,10 @@ $$
 
 For $\Psi$ to yield a sensible probability density, it (and, where the potential is finite, its first derivative) must be single-valued, finite, and continuous; discontinuities or divergences in $\Psi$ would correspond to ill-defined or infinite probability densities.
 
+::::{margin}
+Notation used throughout this chapter: capital $\Psi(x,t)$ denotes the full, time-dependent wave function, while lowercase $\psi(x)$ denotes only its spatial part, introduced below once time dependence is separated out. The two are related by $\Psi(x,t) = \psi(x)e^{-iEt/\hbar}$ for a stationary state, but $\psi(x)$ alone does not solve the full time-dependent equation.
+::::
+
 The Born rule is easy to state and easy to under-read, because probability is also what a classical physicist reaches for when describing ignorance about a definite fact. The two are not the same, and {numref}`Figure %s <fig:ch08-measurement-sim>` is built around the difference. Its first screen puts a classical coin under a cover beside a quantum one: both give heads half the time, but the classical coin already *is* heads or tails while it is hidden, and the quantum one is in a superposition of the two until it is looked at. Its later screens make the distinction operational — single photons through a polarizer arriving with probability $\cos^2\theta$, and spin-$\tfrac12$ particles through a chain of analyzers whose statistics no assignment of pre-existing values reproduces.
 
 ```{phet} quantum-measurement
@@ -40,6 +44,10 @@ The Born rule is easy to state and easy to under-read, because probability is al
 
 Measurement statistics for a classical coin, for single photons through a polarizer, and for spin-$\tfrac12$ particles. $|\Psi|^2$ is a probability, but not a probability about something already decided — the distinction this chapter's mathematics quietly assumes.
 ```
+
+::::{note}
+Max Born's probabilistic reading of $\Psi$, introduced almost as an aside in a 1926 paper on scattering theory, was deeply controversial even among the theory's founders. Schrödinger himself hoped $|\Psi|^2$ would describe a smoothly spread-out electron charge density rather than a probability distribution over discrete measurement outcomes, and Einstein never fully accepted it either, famously objecting that "God does not play dice with the universe." The interpretation nonetheless survived every experimental test it was put to, and Born received the Nobel Prize in Physics for it only in 1954 — nearly three decades after the fact, an unusually long wait for a result so central to the theory.
+::::
 
 ### Expectation Values and Operators
 
@@ -57,6 +65,10 @@ $$
 
 Expectation values are the quantities that connect the abstract wave function to numbers that can be compared with experiment: repeating a position (or momentum) measurement on many identically prepared copies of the same system and averaging the results reproduces $\langle x \rangle$ (or $\langle p \rangle$), while the statistical spread of those repeated measurements is exactly the $\Delta x$ (or $\Delta p$) appearing in the Heisenberg uncertainty principle of [Chapter 7](#ch-wave-properties-of-particles).
 
+::::{margin}
+The operators representing physical observables — position $x$, momentum $-i\hbar\,\partial/\partial x$, and others introduced in later chapters — are all **Hermitian**. That property is exactly what guarantees expectation values like $\langle x\rangle$ and $\langle p\rangle$ always come out real, as a measurable quantity must, even though $\Psi$ itself is complex.
+::::
+
 ### Ehrenfest's Theorem: Recovering Newton's Second Law on Average
 
 Although an individual quantum particle does not follow a definite classical trajectory, its *expectation values* obey equations strikingly close to the classical equations of motion. Differentiating $\langle x \rangle$ and $\langle p \rangle$ with respect to time and using the time-dependent Schrödinger equation to evaluate the results (a calculation carried out in more advanced treatments) gives **Ehrenfest's theorem**,
@@ -66,6 +78,34 @@ $$
 $$
 
 which are exactly Newton's second law, $F=ma$, written for expectation values rather than for a sharp classical position and momentum. This is a precise, quantitative statement of the correspondence principle developed later in this chapter: quantum mechanics does not contradict Newtonian mechanics but contains it, recovered as a statement about the *average* behavior of a quantum ensemble. For a wave packet narrow enough that $\langle dV/dx\rangle \approx \left.dV/dx\right|_{x=\langle x\rangle}$ (a good approximation whenever the potential varies slowly across the packet's width, typically satisfied for macroscopic objects but not necessarily for an electron confined to atomic dimensions), Ehrenfest's theorem shows that the packet's center moves, to excellent approximation, exactly like a classical particle obeying Newton's second law — which is precisely why macroscopic objects, whose wave packets are always narrow on any macroscopically relevant length scale, appear to move along sharp classical trajectories even though their underlying description is fully quantum mechanical.
+
+::::{dropdown} Deriving $d\langle x\rangle/dt = \langle p\rangle/m$ from the Schrödinger equation
+Differentiating $\langle x\rangle = \int \Psi^* x\Psi\,dx$ under the integral sign gives
+
+$$
+\frac{d\langle x\rangle}{dt} = \int \frac{\partial \Psi^*}{\partial t}\,x\,\Psi\,dx + \int \Psi^*\,x\,\frac{\partial \Psi}{\partial t}\,dx.
+$$
+
+Solving the time-dependent Schrödinger equation for $\partial\Psi/\partial t$, and its complex conjugate for $\partial\Psi^*/\partial t$ (using that $V$ is real), gives
+
+$$
+\frac{\partial \Psi}{\partial t} = \frac{i\hbar}{2m}\frac{\partial^2\Psi}{\partial x^2} - \frac{i}{\hbar}V\Psi, \qquad \frac{\partial \Psi^*}{\partial t} = -\frac{i\hbar}{2m}\frac{\partial^2\Psi^*}{\partial x^2} + \frac{i}{\hbar}V\Psi^*.
+$$
+
+Substituting both into the expression for $d\langle x\rangle/dt$, the two terms containing $V$ are identical in magnitude and opposite in sign ($\Psi^* V x\Psi$ either way, since $V$ and $x$ are ordinary multiplying functions), so they cancel exactly, leaving only
+
+$$
+\frac{d\langle x\rangle}{dt} = \frac{i\hbar}{2m}\left[\int \Psi^*\,x\,\frac{\partial^2\Psi}{\partial x^2}\,dx - \int \frac{\partial^2\Psi^*}{\partial x^2}\,x\,\Psi\,dx\right].
+$$
+
+Integrating each term by parts twice in $x$ — the boundary terms vanish because a normalizable $\Psi$ (and its derivative) must go to zero as $x\to\pm\infty$ — collapses the bracket to $-2\int \Psi^*\,(\partial\Psi/\partial x)\,dx$, so that
+
+$$
+\frac{d\langle x\rangle}{dt} = -\frac{i\hbar}{m}\int \Psi^*\frac{\partial \Psi}{\partial x}\,dx = \frac{1}{m}\int \Psi^*\left(-i\hbar\frac{\partial}{\partial x}\right)\Psi\,dx = \frac{\langle p\rangle}{m},
+$$
+
+recovering the first of Ehrenfest's equations directly from the postulated wave equation, with no additional assumption beyond normalizability. The second equation, $d\langle p\rangle/dt = \langle F\rangle$, follows from the same procedure applied to $\langle p\rangle$ instead of $\langle x\rangle$.
+::::
 
 ## The Time-Dependent Schrödinger Equation
 
@@ -94,6 +134,10 @@ Such solutions are called **stationary states**: although $\Psi(x,t)$ itself osc
 ## The Infinite Square Well
 
 The simplest confining potential is the **infinite square well**: $V(x) = 0$ for $0 < x < L$, and $V(x) = \infty$ elsewhere, representing a particle strictly confined to a box of width $L$ (an idealization of, e.g., an electron trapped between strong barriers). Since $\psi$ must vanish wherever $V = \infty$ (an infinite potential permits zero probability of the particle being found there), the boundary conditions are $\psi(0) = \psi(L) = 0$.
+
+::::{tip}
+Before matching boundary conditions at any interface, check whether the potential jump there is finite or infinite. Continuity of $\psi'$ (used below for the potential step and the finite well) is derived by integrating the Schrödinger equation across the boundary, a step that requires $V$ to stay finite there; it does not apply at an infinite wall. That is why the infinite well uses only $\psi(0)=\psi(L)=0$ — $\psi'$ is in fact discontinuous at each wall, jumping from a finite value inside to zero outside, where $\psi \equiv 0$ identically.
+::::
 
 Inside the well, the time-independent equation reduces to $\psi'' = -(2mE/\hbar^2)\psi$, with general solution $\psi(x) = A\sin(kx) + B\cos(kx)$, $k \equiv \sqrt{2mE}/\hbar$. The condition $\psi(0)=0$ forces $B=0$; the condition $\psi(L) = 0$ then forces $\sin(kL) = 0$, i.e. $kL = n\pi$ for a positive integer $n = 1, 2, 3, \ldots$ ($n=0$ is excluded, since it gives $\psi \equiv 0$ everywhere — no particle at all). Solving for the allowed energies,
 
@@ -167,6 +211,10 @@ so about $3\%$ of an incident beam of such electrons is reflected by the step, a
 
 A more physically realistic bound-state model replaces the infinitely high walls of the square well with walls of finite height $V_0$: $V(x) = 0$ for $0<x<L$ and $V(x) = V_0$ outside. For a bound state with $E < V_0$, the time-independent equation outside the well becomes $\psi'' = +\kappa^2\psi$ with $\kappa \equiv \sqrt{2m(V_0-E)}/\hbar$ real, whose normalizable solutions are decaying exponentials, $\psi(x) \propto e^{-\kappa|x|}$ moving away from the well, rather than the oscillatory sines and cosines found inside.
 
+::::{margin}
+For order-of-magnitude estimates in atomic and nuclear problems, it is often quicker to carry $\hbar c \approx 197.3\ \text{eV}\cdot\text{nm} = 197.3\ \text{MeV}\cdot\text{fm}$ as a single combined constant than to track $\hbar$ and $c$ separately — it turns a decay constant like $\kappa = \sqrt{2m(V_0-E)}/\hbar$ into an expression in rest energies $mc^2$ and $(V_0-E)$ alone, the trick used in several worked examples and problems below.
+::::
+
 This is the central qualitative difference from the infinite well: **the wave function does not vanish at the walls, but decays exponentially into the classically forbidden region** where $E < V(x)$ — a region a classical particle could never enter, since it would require negative kinetic energy there. Quantum mechanically, there is a small but nonzero probability of finding the particle just outside the well. Matching $\psi$ and $\psi'$ continuously at each wall (rather than forcing $\psi=0$ as in the infinite well) yields a transcendental equation for the allowed energies, which must generally be solved numerically or graphically. Choosing the well symmetrically, $V(x)=0$ for $-L/2<x<L/2$, exploits the potential's reflection symmetry to separate the bound-state solutions into two families: **even** solutions, $\psi(x) = A\cos(kx)$ inside the well ($k \equiv \sqrt{2mE}/\hbar$), for which matching to the exterior decay $\psi\propto e^{-\kappa|x|}$ gives the condition
 
 $$
@@ -225,13 +273,23 @@ This tiny number is not the final answer for a decay rate; it must be combined w
 
 A particle in a potential $V(x) = \tfrac12 kx^2$ (with $k$ here the spring constant, not a wave number) is the quantum analog of the classical simple harmonic oscillator, and it is important beyond this specific system because *any* smooth potential, expanded in a Taylor series about a point of stable equilibrium, is approximately parabolic near that minimum — the harmonic oscillator is the generic first approximation for small oscillations about equilibrium in essentially any bound system, including the vibrations of a diatomic molecule ([Chapter 12](#ch-molecular-structure)).
 
+::::{margin}
+Throughout this section $\omega$ is the **angular** frequency (rad/s) of the corresponding classical oscillator, $\omega=\sqrt{k/m}$, while the *ordinary* frequency used for photon energies elsewhere in this book is $f=\omega/2\pi$. The worked examples below convert between the two, since a spring constant is naturally expressed via $\omega$ but spectroscopic data is usually quoted as $f$.
+::::
+
 Solving the time-independent Schrödinger equation with this potential (the details require either a power-series method or an elegant operator technique, developed in more advanced treatments) yields an evenly spaced energy spectrum,
 
 $$
 E_n = \left(n + \tfrac12\right)\hbar\omega, \qquad n = 0, 1, 2, \ldots, \qquad \omega \equiv \sqrt{k/m},
 $$
 
-with $\omega$ the classical angular frequency of the corresponding classical oscillator. Two features stand out. First, unlike the square well, the spacing between adjacent levels, $\hbar\omega$, is the *same* for every $n$ — a distinctive signature of the parabolic potential. Second, the ground state ($n=0$) has energy $E_0 = \tfrac12\hbar\omega \ne 0$, called the **zero-point energy**: even in its lowest possible energy state, a quantum oscillator retains irreducible energy and motion, again a manifestation of the uncertainty principle (a particle at rest, at the exact bottom of the well, would have $\Delta x = \Delta p = 0$, forbidden by $\Delta x\,\Delta p \geq \hbar/2$). The ground-state wave function, $\psi_0(x) \propto e^{-m\omega x^2/2\hbar}$, is a Gaussian, peaked (unlike the classical oscillator, which spends most of its time near the turning points, where it moves slowest) at the center $x=0$ — another qualitative divergence from classical intuition that only disappears, via the correspondence principle, for large $n$, where the quantum probability distribution begins to average out to resemble the classical one.
+with $\omega$ the classical angular frequency of the corresponding classical oscillator. Two features stand out. First, unlike the square well, the spacing between adjacent levels, $\hbar\omega$, is the *same* for every $n$ — a distinctive signature of the parabolic potential. Second, the ground state ($n=0$) has energy $E_0 = \tfrac12\hbar\omega \ne 0$, called the **zero-point energy**: even in its lowest possible energy state, a quantum oscillator retains irreducible energy and motion, again a manifestation of the uncertainty principle (a particle at rest, at the exact bottom of the well, would have $\Delta x = \Delta p = 0$, forbidden by $\Delta x\,\Delta p \geq \hbar/2$).
+
+::::{warning}
+It is tempting to picture the zero-point energy $E_0 = \tfrac12\hbar\omega$ as ordinary thermal-like jiggling that persists even at absolute zero, and then to wonder whether it could be tapped as a source of free energy or whether it violates the third law of thermodynamics. Neither concern applies: $E_0$ is the *irreducible* energy of a single stationary state, present even though $\langle p \rangle = 0$ in that state (exactly as for the infinite well's ground state) — there is no net directed motion to extract as work, and no colder state available for heat to flow toward. Zero-point energy is a firm floor set by $\Delta x\,\Delta p \geq \hbar/2$, not leftover thermal agitation that a sufficiently cold environment could remove.
+::::
+
+The ground-state wave function, $\psi_0(x) \propto e^{-m\omega x^2/2\hbar}$, is a Gaussian, peaked (unlike the classical oscillator, which spends most of its time near the turning points, where it moves slowest) at the center $x=0$ — another qualitative divergence from classical intuition that only disappears, via the correspondence principle, for large $n$, where the quantum probability distribution begins to average out to resemble the classical one.
 
 Excited harmonic-oscillator wave functions follow the same node-counting pattern already seen for the infinite well: $\psi_n(x)$ has exactly $n$ nodes (points, other than the boundaries at infinity, where the wave function crosses zero), so $\psi_0$ (the Gaussian ground state) has none, $\psi_1$ has one node at $x=0$, $\psi_2$ has two nodes symmetric about the origin, and so on — a general feature of one-dimensional bound-state wave functions (also true of the infinite well, where $\psi_n$ has $n-1$ *interior* nodes in addition to the two required zeros at the walls themselves) that provides a quick, qualitative check on whether a proposed solution corresponds to the ground state, first excited state, or a higher state, without needing to solve the full equation.
 
@@ -258,6 +316,10 @@ a few percent of the bond's equilibrium length ($\approx 113\ \text{pm}$) — sm
 The three systems solved in this chapter — the infinite well, the finite well with tunneling, and the harmonic oscillator — share a common thread despite their different mathematical detail: each has a nonzero, quantized ground-state energy set by the uncertainty principle, each allows the particle to be found (with vanishing but nonzero probability, in the finite-well and barrier cases) in regions forbidden to a classical particle of the same energy, and each converges toward classical predictions in an appropriate limit. For the infinite well, closely spaced levels at large $n$ (where $E_n \propto n^2$ but the *fractional* spacing $\Delta E_n/E_n \to 0$) approach a quasi-continuous classical energy spectrum; for the harmonic oscillator, the large-$n$ probability distribution $|\psi_n(x)|^2$ develops peaks near the classical turning points, where a classical oscillator spends most of its time, rather than the single central peak seen for $n=0$. This is Bohr's **correspondence principle**: quantum predictions must merge smoothly into classical ones in the limit of large quantum numbers (equivalently, macroscopic action large compared to $\hbar$), and it serves as a valuable consistency check on any quantum-mechanical solution.
 
 The same principle explains why quantum effects are unobservable for everyday macroscopic objects even though, formally, every object obeys the Schrödinger equation. A macroscopic pendulum or block on a spring has an enormous effective quantum number $n$ (its total energy, measured in units of $\hbar\omega$, is astronomically large for ordinary masses, spring constants, and amplitudes), placing it deep in the correspondence-principle regime where quantized energy levels are spaced far too closely, relative to the total energy, to be distinguished from a continuum, and where the wave-packet spreading of [Chapter 7](#ch-wave-properties-of-particles) is negligible on any observable timescale. The three exactly solvable systems of this chapter are pedagogically valuable precisely because they are simple enough to solve exactly while still exhibiting, at small $n$, the full richness of specifically quantum behavior — behavior that becomes progressively harder to detect, though never strictly absent, as a system's size, mass, or energy grows toward the macroscopic scale.
+
+::::{seealso}
+[](#ch-quantum-mechanics-in-three-dimensions) extends exactly this program — solve the time-independent Schrödinger equation subject to boundary conditions, and let quantization emerge from requiring a normalizable solution — to three dimensions, where the same separation-of-variables strategy used here for stationary states produces the quantum numbers that organize the hydrogen atom of [Chapter 10](#ch-the-hydrogen-atom).
+::::
 
 ## Summary
 

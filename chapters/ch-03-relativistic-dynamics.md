@@ -63,9 +63,17 @@ $$
 
 where $m$ is the particle's **rest mass** — an intrinsic, frame-independent property of the particle, equal to the mass measured by an observer at rest relative to it — and $u$ is the particle's speed in the frame in question. For $u \ll c$, $\gamma \to 1$ and this reduces to the Newtonian $\vec p = m\vec u$. As $u \to c$, however, $\gamma \to \infty$, so $p \to \infty$ as well: **an infinite momentum, and correspondingly an infinite force applied for a finite time, would be needed to accelerate a massive particle to the speed of light.** This is the precise dynamical reason no massive object can reach or exceed $c$, complementing the kinematic argument of [Chapter 2](#ch-special-relativity) (relativistic velocity addition never produces $u \ge c$ from sub-light inputs).
 
+:::{warning}
+Many older textbooks (and Einstein himself, in some early writing) call the combination $\gamma m$ the particle's "relativistic mass," treating $p = m_{\text{rel}}u$ as formally identical to the Newtonian formula with an ordinary, speed-dependent mass substituted in. Modern usage in physics avoids this language: $m$ denotes only the single, frame-independent **rest mass**, and the factor of $\gamma$ is understood to belong to the *kinematics* of momentum and energy, not to a literally growing mass. "Relativistic mass" also fails to generalize cleanly — it does not, for instance, correctly describe how a moving object's inertia to *transverse* versus *longitudinal* forces differs — so treat it as a historical notational convenience at best, not a physical mass increase.
+:::
+
 ### Worked Example: Testing $p = \gamma m u$ Against Data
 
 The formula $\vec p = \gamma m \vec u$ is not merely a theoretical nicety; it has been tested directly by measuring the momentum and speed of fast electrons and protons independently — momentum from the radius of curvature in a known magnetic field ($p = qBr$), speed from time-of-flight over a measured distance. Historical experiments of exactly this kind (Rogers et al., 1940, for electrons; Zrelov et al., 1958, for protons, among others) confirm $p/(mu) = \gamma(u)$ to high precision across a wide range of speeds, and sharply rule out the Newtonian prediction $p/(mu) = 1$ at any appreciable fraction of $c$. For a proton with $u = 0.60c$, for instance, $\gamma = 1/\sqrt{1-0.36} = 1.25$, so the measured momentum is $25\%$ larger than the Newtonian formula would predict — a discrepancy easily resolved by 1950s particle-accelerator instrumentation, and one of the most direct confirmations that $m(u) = \gamma m$, not $m$, governs a moving particle's inertia.
+
+:::{tip}
+Before reaching for $\vec p = \gamma m\vec u$ or $K = (\gamma-1)mc^2$ in a problem, check where the given speed sits relative to $c$. If $u/c \lesssim 0.1$ or so, $\gamma \approx 1 + \tfrac12(u/c)^2$ is within about $0.5\%$ of unity, and the Newtonian formulas $p \approx mu$ and $K \approx \tfrac12mu^2$ are an excellent, much simpler approximation. If instead $u$ is a substantial fraction of $c$ — or if a kinetic energy $K$ is given that turns out to be comparable to or larger than the rest energy $mc^2$ — the relativistic expressions are mandatory; the worked example at the end of this chapter shows just how badly the Newtonian formula fails once $K \gtrsim mc^2$.
+:::
 
 ## Relativistic Energy
 
@@ -75,6 +83,34 @@ $$
 K = \gamma mc^2 - mc^2 = (\gamma - 1)mc^2.
 $$
 
+:::{dropdown} Deriving $K = (\gamma-1)mc^2$ from the work-energy theorem
+Start from the definition of kinetic energy as the work done accelerating a particle from rest to speed $u$ along a straight line:
+
+$$
+K = \int F\,dx = \int \frac{dp}{dt}\,dx = \int \frac{dp}{dt}\,u\,dt = \int u\,dp,
+$$
+
+using $dx = u\,dt$. With $p = \gamma m u = mu/\sqrt{1-u^2/c^2}$, differentiating with respect to $u$ gives
+
+$$
+\frac{dp}{du} = m\left[\frac{1}{\sqrt{1-u^2/c^2}} + \frac{u^2/c^2}{(1-u^2/c^2)^{3/2}}\right] = \frac{m}{(1-u^2/c^2)^{3/2}} = \gamma^3 m,
+$$
+
+so $dp = \gamma^3 m\,du$, and
+
+$$
+K = \int_0^u u'\,\gamma^3(u') m\,du' = m\int_0^u \frac{u'\,du'}{(1-u'^2/c^2)^{3/2}}.
+$$
+
+Substituting $s = 1 - u'^2/c^2$, $ds = -2u'\,du'/c^2$, the integral becomes elementary:
+
+$$
+K = mc^2\int_{1}^{1-u^2/c^2} \left(-\tfrac12\right)s^{-3/2}\,ds = mc^2\Big[s^{-1/2}\Big]_{1}^{1-u^2/c^2} = mc^2\left(\frac{1}{\sqrt{1-u^2/c^2}} - 1\right),
+$$
+
+which is exactly $K = (\gamma - 1)mc^2$ — confirming, by direct integration of the relativistic work-energy theorem, the result quoted in the main text.
+:::
+
 It is useful to expand this for $u \ll c$ using the binomial approximation $\gamma \approx 1 + \tfrac{1}{2}u^2/c^2 + \cdots$:
 
 $$
@@ -82,6 +118,10 @@ K \approx \left(1 + \frac{1}{2}\frac{u^2}{c^2}\right)mc^2 - mc^2 = \frac{1}{2}mu
 $$
 
 recovering the familiar Newtonian kinetic energy as the low-speed limit — a necessary consistency check, since Newtonian mechanics is extremely well tested at everyday speeds.
+
+:::{margin}
+The binomial approximation $(1-x)^n \approx 1 + nx$ for small $x$, used here with $n=-1/2$ and $x = u^2/c^2$, recurs throughout relativity whenever a low-speed limit is needed; keeping the next term, $\gamma \approx 1 + \tfrac12(u/c)^2 + \tfrac38(u/c)^4$, is what quantifies exactly how good the Newtonian approximation is at a given speed.
+:::
 
 The kinetic energy expression separates naturally into two terms: $\gamma mc^2$, and a constant $mc^2$ subtracted off. Einstein's insight was to take both terms seriously as *energy*, not just their difference. Define the **total energy**
 
@@ -97,6 +137,14 @@ $$
 
 Then $K = E - E_0$: kinetic energy is the energy *above and beyond* the energy $mc^2$ a particle possesses simply by virtue of having rest mass $m$, even at rest ($u=0$, $\gamma=1$). This is the celebrated **mass–energy equivalence**: rest mass is a form of energy, convertible (in principle and, in nuclear and particle processes, routinely in practice) into other forms of energy, and vice versa. The conversion factor $c^2 \approx 9\times 10^{16}\ \text{m}^2/\text{s}^2$ is enormous, which is why converting even a small amount of rest mass releases a very large amount of energy — the physical basis of the energy released in nuclear fission and fusion, examined in [Chapter 11](#ch-many-electron-atoms).
 
+:::{note}
+Einstein did not present $E=mc^2$ in his main June 1905 relativity paper; it appeared in a short follow-up note submitted that September, "Does the Inertia of a Body Depend Upon Its Energy Content?", which asked what happens to a body's mass when it emits energy as radiation. Einstein's argument there — analyzing a body emitting two equal light pulses in opposite directions, as measured in two different frames — concluded that a body losing energy $L$ must lose mass $L/c^2$, and he suggested, remarkably prescient for 1905, that this might one day be tested with radioactive salts like those Marie and Pierre Curie were studying. The clean experimental confirmation, precisely measuring the mass deficit of a nucleus against the kinetic energy released in its reactions, would not come until nuclear physics matured decades later.
+:::
+
+:::{seealso}
+[](#ch-nuclear-physics) uses mass–energy equivalence to compute nuclear binding energies and the energy released in fission and fusion reactions — the direct, large-scale application of the $E=mc^2$ relation introduced here.
+:::
+
 ## The Energy–Momentum Four-Vector
 
 Momentum and energy are not independent; eliminating $u$ and $\gamma$ between $\vec p = \gamma m\vec u$ and $E = \gamma mc^2$ gives the **energy–momentum invariant**,
@@ -105,7 +153,13 @@ $$
 E^2 = (pc)^2 + (mc^2)^2,
 $$ (eq:ch03-energy-momentum)
 
-a relation that holds for every particle, in every inertial frame. This is directly analogous to the invariant spacetime interval $(\Delta s)^2 = c^2\Delta t^2 - \Delta x^2$ of [Chapter 2](#ch-special-relativity), and the analogy is not superficial: just as $(ct, x, y, z)$ can be assembled into a single spacetime-displacement four-vector that transforms under a Lorentz boost according to the Lorentz transformation, the quadruple $(E/c, p_x, p_y, p_z)$ can be assembled into a single **energy–momentum four-vector**,
+a relation that holds for every particle, in every inertial frame.
+
+:::{margin}
+Because $pc$ has units of energy, particle physicists routinely quote momentum in units of $\text{MeV}/c$ (or $\text{GeV}/c$) rather than $\text{kg}\cdot\text{m/s}$ — a momentum of $500\ \text{MeV}/c$ means simply that multiplying by $c$ gives an energy of $500\ \text{MeV}$. Watch for this unit throughout the worked examples and problems below.
+:::
+
+This is directly analogous to the invariant spacetime interval $(\Delta s)^2 = c^2\Delta t^2 - \Delta x^2$ of [Chapter 2](#ch-special-relativity), and the analogy is not superficial: just as $(ct, x, y, z)$ can be assembled into a single spacetime-displacement four-vector that transforms under a Lorentz boost according to the Lorentz transformation, the quadruple $(E/c, p_x, p_y, p_z)$ can be assembled into a single **energy–momentum four-vector**,
 
 $$
 p^\mu = \left(\frac{E}{c},\, p_x,\, p_y,\, p_z\right),
@@ -142,6 +196,10 @@ The payoff of packaging $(E/c, \vec p)$ as a single object is that **the energy�
 **Electron–positron annihilation**, revisited: consider an electron and a positron (each of mass $m$), both essentially at rest, annihilating. Charge conservation alone would permit $e^- + e^+ \to \gamma$ (a single photon), but the four-vector of the initial state is $(2mc, 0,0,0)$ (both particles at rest, energies $mc^2$ each, zero total momentum), while any single photon's four-vector must satisfy $E=pc$, i.e., have equal, nonzero energy and momentum magnitude — it cannot have zero momentum unless its energy is also zero. A single outgoing photon is therefore impossible; conservation of the energy–momentum four-vector, not merely of energy or momentum separately, forces at least two photons, emitted back-to-back so that their momenta cancel, each carrying energy $mc^2$. This is the same conclusion reached by separate energy and momentum arguments in [Problem 3](#ex-relativistic-dynamics-3) below, but the four-vector language makes clear that both conservation laws are really a single, unified statement, and this is exactly the physical process (positron annihilation, producing two back-to-back $511\ \text{keV}$ gamma rays) exploited in medical positron-emission tomography (PET) scans to locate a radioactive tracer inside the body.
 
 ## Center-of-Momentum Frame and Threshold Energies
+
+:::{margin}
+The CM frame is sometimes called the "center-of-mass frame," a holdover from Newtonian mechanics; in relativity, "center-of-momentum" is the more accurate name, since it is defined by zero total momentum, not by any geometric mass-weighted position.
+:::
 
 Many practical problems in nuclear and particle physics — will one particle collision produce a new particle, or not? — are most easily solved by transforming to the **center-of-momentum (CM) frame**: the unique inertial frame in which the total three-momentum of a system is zero. Because $(E/c)^2 - p^2$ is Lorentz-invariant, the *total* invariant mass of a system of particles,
 

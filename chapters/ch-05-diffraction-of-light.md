@@ -61,7 +61,15 @@ $$
 F = \frac{a^2}{L\lambda},
 $$
 
+:::{margin}
+$F$ is dimensionless — $a^2$ and $L\lambda$ are both areas — so it can be compared directly to $1$ regardless of what length unit $a$, $L$, and $\lambda$ happen to be quoted in, as long as all three use the same one.
+:::
+
 where $a$ is the aperture size and $L$ the aperture-to-screen distance. Fraunhofer diffraction applies when $F \ll 1$; Fresnel diffraction when $F \gtrsim 1$. For a $0.05\ \text{mm}$ slit, $550\ \text{nm}$ light, and a screen $2\ \text{m}$ away, $F = (5\times10^{-5}\ \text{m})^2/[(2\ \text{m})(5.5\times10^{-7}\ \text{m})] = 2\times10^{-3}$, comfortably in the far field. Conveniently, a lens converts the far field into something you can put on a bench: any lens placed after the aperture brings the parallel bundles to a focus in its focal plane, so the Fraunhofer pattern appears there no matter how short the bench.
+
+:::{note}
+Joseph von Fraunhofer, the optician whose name now labels the entire far-field regime, made his most consequential discovery almost as a side effect. Testing prism spectrometers around 1814, he noticed that the Sun's spectrum was crossed by hundreds of sharp dark lines at fixed wavelengths — the Fraunhofer lines — and went on to rule some of the first precision diffraction gratings by hand, specifically to measure those wavelengths accurately. Decades later, Gustav Kirchhoff and Robert Bunsen explained the lines as absorption by specific elements in the Sun's outer atmosphere, founding the science of spectroscopy that the diffraction grating, later in this chapter, still serves.
+:::
 
 ## Single-Slit Diffraction
 
@@ -156,6 +164,10 @@ The first minimum requires $\sin\theta_1 = \lambda/a \le 1$, so it exists only i
 
 The pairing argument gives the zeros; getting the full curve requires actually doing the sum. The phasor picture of [Chapter 4](#ch-interference-of-light) makes this almost graphical.
 
+:::{seealso}
+The phasor construction used below is the continuous limit of the discrete $N$-slit phasor sum from [Chapter 4](#ch-interference-of-light): there, finitely many equal-length phasors are added tip-to-tail one at a time; here, infinitely many infinitesimal ones curl smoothly into an arc. Working through that chapter's phasor derivation first makes the "chord of a circular arc" argument below feel like the natural next step rather than a new trick.
+:::
+
 Divide the slit into $N$ narrow strips and let $N\to\infty$. Each strip contributes a tiny phasor of the same length, and each is rotated slightly relative to its neighbor, because it sits slightly farther along the slit and so contributes a slightly different path. Let $\beta$ be the *total* phase difference between the wavelet from one edge of the slit and the wavelet from the other:
 
 $$
@@ -184,6 +196,10 @@ I(\theta) = I_0\left[\frac{\sin(\beta/2)}{\beta/2}\right]^2, \qquad \beta = \fra
 $$
 
 The quantity in brackets is $\mathrm{sinc}(\beta/2)$, where $\mathrm{sinc}(x) \equiv \sin x / x$, so the pattern is often written $I = I_0\,\mathrm{sinc}^2(\beta/2)$.
+
+:::{margin}
+Two conventions for $\mathrm{sinc}$ circulate. The one used here, $\mathrm{sinc}(x) \equiv \sin x/x$, has its first zero at $x = \pi$. An engineering convention, common in signal-processing texts, instead defines $\mathrm{sinc}(x) \equiv \sin(\pi x)/(\pi x)$, with its first zero at $x = 1$. Check which one a source is using before comparing formulas across it.
+:::
 
 Three checks confirm this is the right answer:
 
@@ -277,6 +293,10 @@ so the spectrum spreads out more in higher orders and with finer rulings. It als
 
 Since $|\sin\theta| \le 1$, the highest order available is $m_{\max} = \lfloor d/\lambda\rfloor$ — a grating so fine that $d < \lambda$ produces no spectrum at all beyond $m = 0$.
 
+:::{tip}
+Before trusting any computed grating or Bragg angle, check that the sine you solved for is actually $\le 1$. Both $d\sin\theta = m\lambda$ and $n\lambda = 2d\sin\theta$ are linear in the order and carry no built-in ceiling, so plugging in one order too many silently returns a mathematically valid but physically nonexistent angle. Get in the habit of computing $m_{\max} = \lfloor d/\lambda\rfloor$ (or $n_{\max} = \lfloor 2d/\lambda\rfloor$ for Bragg reflection, later in this chapter) *before* solving for individual angles, so you already know which orders exist.
+:::
+
 ### Resolving Power
 
 The property that makes gratings scientific instruments rather than ornaments is their **resolving power**: the ability to display two nearly equal wavelengths as two separate lines rather than one blur.
@@ -340,6 +360,28 @@ $$
 
 Compare this with $\lambda/a$ for a slit. Nothing has changed except the $1.22$ — which is, in fact, the first zero of the Bessel function $J_1$ divided by $\pi$.
 
+:::{dropdown} Where the factor 1.22 comes from
+For a circular aperture of diameter $D$, the far-field amplitude at angle $\theta$ is proportional to the two-dimensional analog of the single-slit integral, evaluated over a disk instead of a line:
+
+$$
+E(\theta) \propto \frac{2J_1(kR\sin\theta)}{kR\sin\theta}, \qquad k = \frac{2\pi}{\lambda},\quad R = \frac{D}{2},
+$$
+
+where $J_1$ is the Bessel function of the first kind, order one — the circular-geometry replacement for the $\sin x/x$ that came from integrating across a slit. This combination plays exactly the role $\mathrm{sinc}(\beta/2)$ played in the single-slit case: it equals $1$ at zero argument, giving the central Airy peak, and has its first zero at the first zero of $J_1$ itself,
+
+$$
+kR\sin\theta_{\min} = 3.8317\ldots
+$$
+
+Substituting $k = 2\pi/\lambda$ and $R = D/2$ and solving for $\sin\theta_{\min}$,
+
+$$
+\sin\theta_{\min} = \frac{3.8317}{\pi}\,\frac{\lambda}{D} = 1.2197\,\frac{\lambda}{D} \approx 1.22\,\frac{\lambda}{D}.
+$$
+
+The extra factor, compared with a slit's plain $\lambda/D$, is a purely geometric consequence of integrating over a disk rather than a line. No new physics enters — only a different shape of aperture.
+:::
+
 ### The Rayleigh Criterion
 
 Two distant point sources — two stars, or two features on a microscope slide — each produce their own Airy pattern in the image. If the sources are close together in angle, the two patterns overlap and merge into a single blob. Lord Rayleigh proposed a workable convention for where to draw the line: two sources are **just resolved** when the center of one Airy disk falls on the first dark ring of the other. That is, when their angular separation equals
@@ -397,9 +439,17 @@ This example is worth keeping in mind whenever a diffraction limit is quoted: it
 
 Gratings work because their line spacing is comparable to the wavelength of the light. To probe the arrangement of atoms in a solid, spaced a few tenths of a nanometer apart, we would need a grating with that spacing — and nature supplies one, in the form of a crystal, provided we bring a wave with a matching wavelength. That means **X-rays**, with $\lambda \sim 0.1\ \text{nm}$.
 
+:::{margin}
+Crystallographers often quote spacings in **angstroms** ($1\ \text{Å} \equiv 10^{-10}\ \text{m} = 0.1\ \text{nm}$), a unit sized conveniently to typical interatomic distances. The copper $K_\alpha$ wavelength of $0.154\ \text{nm}$ used in the worked example below is equivalently $1.54\ \text{Å}$.
+:::
+
 Max von Laue proposed the experiment in 1912 and his collaborators Friedrich and Knipping performed it, obtaining a pattern of discrete spots from a copper sulfate crystal that established two things at once: that X-rays are waves, and that crystals are periodic arrays of atoms. Both had been conjectures until that afternoon.
 
 W. H. Bragg and his son W. L. Bragg supplied the simple picture that made the technique usable, shown in {numref}`Figure %s <fig:ch05-bragg>`. Regard the crystal as a stack of parallel atomic planes separated by $d$, and consider X-rays reflecting specularly from successive planes. By long-standing crystallographic convention, the angle $\theta$ is measured *from the plane itself*, not from the normal — a trap for anyone importing habits from optics.
+
+:::{warning}
+The Bragg angle $\theta$ is measured from the reflecting *plane*, not from the normal to it — the opposite of the convention used for mirrors and lenses elsewhere in optics. A beam that grazes the planes at nearly $0°$ corresponds to *small* $\theta$ in Bragg's law, not large. Carrying over the normal-incidence habit from geometric optics is the single most common source of a sine-versus-cosine error in Bragg's law calculations.
+:::
 
 ```{figure} ../images/ch05-bragg-law.svg
 :label: fig:ch05-bragg

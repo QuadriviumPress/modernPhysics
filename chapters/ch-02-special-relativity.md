@@ -89,6 +89,10 @@ $$
 
 is greater than or equal to $1$ for any $v < c$, and grows without bound as $v \to c$. This is **time dilation**: a clock moving at speed $v$ relative to an observer is measured by that observer to run slow, ticking out $\Delta t = \gamma \Delta t_0$ of the observer's own time for every $\Delta t_0$ of proper time it displays. The effect is symmetric — each of two observers in relative motion sees the *other's* clock as running slow, since each is equally entitled to regard themselves as at rest. Although derived here for a light clock, time dilation applies to time itself, and hence to every physical process — mechanical clocks, radioactive decay rates, biological aging — since two different physical clocks, built differently, must stay in agreement in every frame or their disagreement could be used to detect absolute motion, contradicting postulate 1.
 
+:::{margin}
+The dimensionless ratio $\beta \equiv v/c$ is standard shorthand throughout relativity; the Lorentz factor is then simply $\gamma = 1/\sqrt{1-\beta^2}$, and $\beta \to 1$ is the same limit as $v \to c$.
+:::
+
 The two clocks of that argument run side by side in {numref}`Figure %s <fig:ch02-light-clock-sim>`: one at rest in the laboratory, one gliding past at a speed you set, with the moving pulse's zigzag path drawn in. Nothing in the simulation makes the moving clock tick slowly by fiat. Both pulses travel at $c$; the moving one simply has a longer path to cover between reflections, and the two tick counts drift apart by exactly the factor $\gamma$ computed above.
 
 ```{openphysics} SpecialRelativity
@@ -112,6 +116,10 @@ The physical content of the paradox's resolution is this: there is no contradict
 
 Time dilation has a companion effect for lengths. Consider a rod of length $L_0$ at rest along the $x$-axis of frame $S$; call $L_0$ the **proper length** — the length measured in the frame where the rod is at rest. How long is this rod as measured by an observer in frame $S'$, moving at speed $v$ relative to $S$ along the rod's length?
 
+:::{tip}
+Before substituting into $\Delta t = \gamma\Delta t_0$ or $L = L_0/\gamma$, identify explicitly which observer measures the *proper* quantity: $\Delta t_0$ belongs to whichever frame has both events happen at the same location, and $L_0$ belongs to whichever frame the object is at rest in. Every other frame's value is obtained from that one by multiplying or dividing by $\gamma$ — never the reverse — and mixing up which frame is "proper" is the most common source of a factor-of-$\gamma$ error in these problems.
+:::
+
 To measure a moving rod's length, an observer must record the positions of both ends *at the same instant* in their own frame. Consider the muon example again, now from the muon's own rest frame, in which it is Earth's atmosphere that rushes past at speed $v$. In the muon's frame, the muon does not live any longer than its proper lifetime $\Delta t_0$; instead, it is the *distance* to Earth's surface that must be short enough to be crossed in that proper time, i.e., $L = v\Delta t_0$. Combining this with the Earth-frame result $\Delta t = \gamma \Delta t_0$ and $L_0 = v\Delta t$ (the proper atmospheric depth, as measured in Earth's frame) gives
 
 $$
@@ -125,6 +133,14 @@ L = \frac{L_0}{\gamma} = L_0\sqrt{1 - v^2/c^2}.
 $$
 
 This is **length contraction**: an object of proper length $L_0$, measured by an observer relative to whom it moves at speed $v$ along its own length, is found to have length $L = L_0/\gamma \le L_0$. Only lengths *along* the direction of relative motion contract; lengths perpendicular to the motion are unaffected (a consequence one can show is required for consistency between the two observers' descriptions of, e.g., a rod passing through a ring). Note the resemblance to the Fitzgerald–Lorentz contraction of [Chapter 1](#ch-need-for-relativity) — the same formula, but now derived as a necessary consequence of the postulates rather than invented to hide a null result.
+
+:::{dropdown} Why transverse lengths cannot contract
+Suppose, for contradiction, that lengths perpendicular to the relative motion did change with speed. Imagine a rigid ring of proper radius $R$, at rest in frame $S$ and lying in the $y$-$z$ plane centered on the $x$-axis, and a rod of that same proper length $R$ moving along the $x$-axis, oriented parallel to $y$ so that it just barely passes through the ring when both are momentarily at rest relative to each other. Now let the rod move through the ring at speed $v$ along $x$. If transverse lengths contracted with speed, an observer at rest in the ring's frame $S$ would say the moving rod's $y$-extent has shrunk below $R$, so the rod passes cleanly through; but an observer riding with the rod would instead say it is the *ring* that moves (at $-v$), so the ring's radius has shrunk, and the rod should catch on it. These are two different, physically incompatible outcomes — the rod either passes through or it does not, and every observer must agree on which — so a transverse length-contraction rule that flips with the sign of $v$ would make the theory self-contradictory. The only choice consistent with all observers agreeing on the same physical outcome is that transverse lengths do not change with $v$ at all, exactly as the Lorentz transformation states directly: $y'=y$ and $z'=z$, with no factor of $\gamma$ anywhere.
+:::
+
+:::{warning}
+Length contraction is a statement about a *measurement* — the positions of both ends of an object recorded simultaneously in the observer's frame — not a statement about what a fast-moving object would look like in an instantaneous photograph. A photograph also encodes differences in light-travel time from different parts of the object to the camera, and properly accounting for those shows that a rapidly moving object appears *rotated* rather than simply flattened (the Terrell–Penrose effect). "Measured length" and "visual appearance" are genuinely different questions, easy to conflate but with different answers.
+:::
 
 ### Application: Bell's Spaceship Paradox
 
@@ -160,6 +176,10 @@ which every inertial observer computes to be the same number, even though $\Delt
 
 ### Worked Example: Applying the Lorentz Transformation
 
+:::{margin}
+Multiplying a time by $c$ converts it to a length ($c\,\Delta t$), which is why spacetime-interval and Lorentz-transformation calculations are often easiest with both space and time expressed in meters, as in the worked example below.
+:::
+
 Two events occur in frame $S$: event 1 at $(x_1, t_1) = (0, 0)$, and event 2 at $(x_2, t_2) = (600\ \text{m}, 1.00\ \mu\text{s})$. Frame $S'$ moves at $v = 0.60c$ relative to $S$. Find the coordinates of both events in $S'$, and verify that the interval is the same in both frames.
 
 First, $\gamma = 1/\sqrt{1-0.36} = 1/\sqrt{0.64} = 1.25$. Event 1 is at the shared origin, so $(x_1', t_1') = (0,0)$ trivially. For event 2,
@@ -186,6 +206,10 @@ Albert Einstein in 1921. Photograph by Underwood & Underwood; public domain via 
 ```
 
 The Lorentz transformation permits the *order* of two events to reverse between frames, as the worked example above just demonstrated — but only for certain pairs of events, and understanding which pairs is essential to understanding why relativity does not undermine cause and effect.
+
+:::{margin}
+A handy number for quick estimates: light travels almost exactly $1\ \text{ft}$ (about $0.30\ \text{m}$) in $1\ \text{ns}$, so a light-travel time in nanoseconds converts to a distance in feet at a glance.
+:::
 
 Classify any two events by the sign of the interval between them, $(\Delta s)^2 = c^2(\Delta t)^2 - (\Delta x)^2 - (\Delta y)^2 - (\Delta z)^2$:
 
@@ -230,6 +254,10 @@ u_x \approx \left(\frac{c}{n} + v\right)\left(1 - \frac{v}{nc}\right) \approx \f
 $$
 
 dropping the term of order $v^2/c$, which is negligible for the modest flow speeds ($\sim$few m/s) used in the experiment. This is exactly Fizeau's measured result, with the drag coefficient $f = 1-1/n^2$ emerging directly from relativistic velocity addition applied to ordinary light propagation in a moving medium — no partial ether entrainment need be assumed at all.
+
+:::{seealso}
+[](#ch-need-for-relativity) works through Fizeau's original 1851 measurement and the ad hoc Fresnel drag coefficient it required under the ether hypothesis, along with the Michelson–Morley and Kennedy–Thorndike null results that motivated Einstein's postulates in the first place.
+:::
 
 ## The Relativistic Doppler Effect
 
@@ -285,6 +313,10 @@ so $v \approx 0.038c \approx 1.15\times 10^7\ \text{m/s}$, receding.
 ## Spacetime Diagrams
 
 A useful way to visualize these effects is a **spacetime diagram**: a plot with $x$ on the horizontal axis and $ct$ (rather than $t$, so both axes share units of length) on the vertical axis, drawn in a chosen frame $S$. A particle at rest at some fixed $x$ traces a vertical line (its **worldline**); a light ray traces a line at $45°$, since $x = ct$. An observer moving at speed $v$ in frame $S$ has a worldline tilted from vertical by an angle $\theta$ with $\tan\theta = v/c$.
+
+:::{note}
+The spacetime diagram itself is due to Hermann Minkowski, one of Einstein's former mathematics professors, who recast special relativity in this geometric language in a famous 1908 address: "Henceforth space by itself, and time by itself, are doomed to fade away into mere shadows, and only a kind of union of the two will preserve an independent reality." Minkowski's reformulation changed none of the 1905 theory's predictions, but it revealed the Lorentz transformation as nothing more exotic than a rotation of axes in a four-dimensional spacetime — a perspective that became indispensable for general relativity a decade later.
+:::
 
 In frame $S'$, that same moving observer's own $x'$ and $ct'$ axes are *not* perpendicular in the diagram as drawn in $S$: the $ct'$ axis coincides with the observer's own worldline, while the $x'$ axis — the locus of events simultaneous with the origin in $S'$ — tilts up from the $x$-axis by the same angle $\theta$ that the $ct'$ axis tilts from the $ct$-axis. This tilted-axis picture is a direct graphical statement of the relativity of simultaneity: the set of events an $S'$-observer calls "now" is not the same as the set an $S$-observer calls "now." Reading distances off a spacetime diagram requires care (the Lorentz-transformed axes are not orthogonal in the Euclidean sense), but the picture makes clear that simultaneity, not merely elapsed time, is the coordinate that differs between frames.
 

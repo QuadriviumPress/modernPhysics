@@ -25,6 +25,10 @@ Chapters [10](#ch-the-hydrogen-atom) and [11](#ch-many-electron-atoms) explained
 
 Chemical bonds form because a molecule can have lower total energy than its constituent separated atoms. Two limiting mechanisms produce this energy lowering. In **ionic bonding**, one atom (typically one with a low ionization energy, such as an alkali metal) transfers one or more electrons entirely to another atom (typically one with a high electron affinity, such as a halogen); the resulting oppositely charged ions are then held together by simple electrostatic (Coulomb) attraction. In **covalent bonding**, by contrast, one or more electron pairs are *shared* between two atoms, occupying a region of enhanced electron density between the two nuclei; both nuclei are then simultaneously attracted to this shared, concentrated negative charge, producing a net attractive bond. Most real bonds fall on a continuum between these two limits, described by varying degrees of bond **polarity**, depending on the difference in electronegativity between the bonded atoms; this chapter focuses on the covalent limit, whose treatment requires genuinely quantum-mechanical ideas beyond simple electrostatics.
 
+:::{margin}
+**Electronegativity**, on the dimensionless Pauling scale, runs from about $0.7$ (cesium) to $4.0$ (fluorine). A difference of roughly $1.7$ or more between two bonded atoms is the conventional (rough, not sharp) threshold above which a bond is usually described as "ionic" rather than "polar covalent."
+:::
+
 That continuum is a slider rather than a classification, and {numref}`Figure %s <fig:ch12-polarity-sim>` makes it one: set the electronegativity of each atom in a diatomic and watch the shared electron density slide from the midpoint toward the more electronegative partner, dragging a dipole moment with it. At equal electronegativity the bond is purely covalent and the dipole vanishes; at a large difference the electron is effectively transferred and what remains is a pair of ions attracting each other. Neither limit is a separate mechanism — they are the two ends of one.
 
 ```{phet} molecule-polarity
@@ -36,6 +40,10 @@ Bond polarity as a continuous function of the electronegativity difference betwe
 ## Valence Bond Theory and Orbital Overlap
 
 **Valence bond theory** treats covalent bond formation as arising from the overlap of a singly occupied atomic orbital on one atom with a singly occupied atomic orbital on another, the two electrons (one from each atom, necessarily of opposite spin, per the exclusion principle applied to the resulting shared, doubly occupied region) pairing up to form the bond. The simplest example is the hydrogen molecule $\text{H}_2$: as two hydrogen atoms approach, their $1s$ orbitals begin to overlap, and if the two electrons involved have opposite spin, the resulting overlap region between the nuclei has a high joint probability of finding both electrons — an enhanced electron density that lowers the system's total energy relative to two separate atoms, up to a certain optimal internuclear separation (the **bond length**, at which attractive and repulsive contributions to the energy balance). Bonds formed by orbitals overlapping directly along the internuclear axis, giving a cylindrically symmetric electron distribution about that axis, are called **sigma ($\sigma$) bonds**; bonds formed by the sideways overlap of parallel $p$ orbitals, with electron density concentrated above and below (rather than directly along) the internuclear axis, are called **pi ($\pi$) bonds**. A single bond is one $\sigma$ bond; a double bond is one $\sigma$ plus one $\pi$ bond; a triple bond is one $\sigma$ plus two (mutually perpendicular) $\pi$ bonds.
+
+:::{margin}
+The labels $\sigma$ and $\pi$ describe the *symmetry* of the orbital overlap about the bond axis, not the bond's strength or order directly: a single bond is always exactly one $\sigma$ bond, however the orbitals forming it are hybridized, and every bond beyond the first in a double or triple bond is necessarily a $\pi$ bond.
+:::
 
 ## Hybrid Orbitals
 
@@ -85,13 +93,31 @@ $$
 
 The symmetric combination, $\psi_{\text{MO}}^{+} = \psi_A + \psi_B$, adds constructively in the region between the two nuclei, producing enhanced electron density there and a lower energy than the separate atomic orbitals — a **bonding orbital**, denoted $\sigma_{1s}$. The antisymmetric combination, $\psi_{\text{MO}}^{-} = \psi_A - \psi_B$, has a node exactly at the midpoint between the nuclei, *depleting* electron density in the internuclear region and yielding a *higher* energy than the separate atomic orbitals — an **antibonding orbital**, denoted $\sigma_{1s}^{*}$. In general, combining $N$ atomic orbitals always produces exactly $N$ molecular orbitals (never more, never fewer) — a direct consequence of treating the LCAO expansion as a change of basis for the same underlying space of trial wave functions — split symmetrically about the original atomic-orbital energy into bonding (lower) and antibonding (higher) sets.
 
+:::{dropdown} Why the Antibonding Orbital Rises More Than the Bonding Orbital Falls
+The qualitative claim that $\psi_{\text{MO}}^+$ is lower in energy and $\psi_{\text{MO}}^-$ is higher can be made quantitative. Define three integrals: the **overlap integral** $S=\int\psi_A\psi_B\,d\tau$ (how much the two atomic orbitals overlap in space, $0\le S\le1$), the **Coulomb integral** $\alpha=\int\psi_A\hat H\psi_A\,d\tau=\int\psi_B\hat H\psi_B\,d\tau$ (essentially the original atomic-orbital energy, perturbed by the presence of the other nucleus), and the **resonance integral** $\beta=\int\psi_A\hat H\psi_B\,d\tau$ (negative, and nonzero only because the orbitals overlap). Normalizing $\psi_{\text{MO}}^{\pm}=(\psi_A\pm\psi_B)/\sqrt{2(1\pm S)}$ and evaluating $\langle\psi_{\text{MO}}^{\pm}|\hat H|\psi_{\text{MO}}^{\pm}\rangle$ gives
+
+$$
+E_{\pm} = \frac{\alpha \pm \beta}{1 \pm S}.
+$$
+
+Because $\beta<0$, $E_+=(\alpha+\beta)/(1+S)$ lies below $\alpha$ (bonding) and $E_-=(\alpha-\beta)/(1-S)$ lies above $\alpha$ (antibonding) — but the two shifts are **not equal in magnitude**. The $(1-S)$ in the antibonding denominator is smaller than the $(1+S)$ in the bonding denominator, so $E_-$ rises above $\alpha$ by more than $E_+$ falls below it. This asymmetry is the entire reason $\text{He}_2$ fails to bond: two electrons in $\sigma_{1s}$ and two in $\sigma_{1s}^*$ do not cancel to zero net energy change, because the antibonding pair's destabilization outweighs the bonding pair's stabilization, leaving $\text{He}_2$ at *higher* energy than two separate helium atoms — consistent with, and quantitatively explaining, the bond order of zero found by simple electron counting below.
+:::
+
 Filling the resulting molecular orbitals with the molecule's electrons, two at a time (spin-paired, per the exclusion principle applied now to molecular rather than atomic orbitals) from lowest to highest energy, gives a **molecular orbital diagram**, from which the **bond order** is computed as
 
 $$
 \text{bond order} = \frac{(\text{number of bonding electrons}) - (\text{number of antibonding electrons})}{2}.
 $$
 
+:::{margin}
+Bond order need not be an integer. Whenever an odd number of electrons occupies an antibonding level, the formula returns a half-integer, such as bond order $\tfrac12$ for $\text{He}_2^+$ or $\tfrac52$ for $\text{N}_2^+$ — a genuine prediction of MO theory, not a rounding artifact.
+:::
+
 A bond order of zero predicts an unstable molecule (no net energy lowering relative to separated atoms) that should not form; a bond order of $1, 2, 3, \ldots$ corresponds roughly to a single, double, triple, $\ldots$ bond, with higher bond order generally correlating with a shorter, stronger bond. For $\text{H}_2$ (two electrons, both in $\sigma_{1s}$), the bond order is $(2-0)/2 = 1$, consistent with the known stable single bond; for the hypothetical $\text{He}_2$ (four electrons, two in $\sigma_{1s}$ and two forced by the exclusion principle into $\sigma_{1s}^{*}$), the bond order is $(2-2)/2 = 0$ — correctly predicting that $\text{He}_2$ does not exist as a stable molecule, a conclusion valence bond theory (which has no natural way to place electrons in an antibonding orbital) does not straightforwardly reach. MO theory additionally predicts a molecule's magnetic behavior directly from its orbital diagram: any unpaired electrons (occurring, per Hund's rule applied to degenerate molecular orbitals, when a set of same-energy orbitals is only partially filled) make the molecule **paramagnetic** (weakly attracted into a magnetic field), while a fully paired configuration makes it **diamagnetic** (weakly repelled) — famously correctly predicting that $\text{O}_2$ is paramagnetic (two unpaired electrons in degenerate antibonding $\pi^*$ orbitals), a fact simple Lewis-structure/valence-bond reasoning does not anticipate.
+
+:::{warning} Antibonding Is Not the Same as Nonbonding
+It is tempting to think of an antibonding orbital as simply "not contributing" to the bond, the way a lone pair sitting in an uninvolved orbital does. That is wrong: an antibonding orbital actively *raises* the energy of an electron placed in it above the energy of the separated atomic orbitals, because destructive interference at the internuclear midpoint removes electron density from between the nuclei rather than merely failing to add any. A fully occupied antibonding orbital does not leave a bond unaffected — paired with a corresponding fully occupied bonding orbital, it cancels the bond outright, exactly as for $\text{He}_2$ above. "Antibonding" means actively destabilizing, not neutral.
+:::
 
 The bonding and antibonding pair are not a chemical convention; they are what the Schrödinger equation returns for two wells brought close together, and {numref}`Figure %s <fig:ch12-double-well-sim>` solves that problem directly. Start with two widely separated square wells: each has its own ground state, and the two are degenerate. Slide them together and the degeneracy lifts into exactly two states — one symmetric, with no node between the wells and an energy *below* the isolated-atom level, and one antisymmetric, with a node at the midpoint and an energy above it. That is $\sigma_{1s}$ and $\sigma_{1s}^*$, obtained without mentioning chemistry, and the splitting between them grows as the wells approach, which is why bond strength depends on overlap.
 
@@ -180,6 +206,10 @@ Bond order is a prediction about two directly measurable quantities: bond length
 
 Tripling the bond order roughly quintuples the dissociation energy while shortening the bond by nearly a quarter — and the relationship is not linear in dissociation energy: going from a single to a double bond adds $251\ \text{kJ/mol}$, while going from a double to a triple bond adds $524\ \text{kJ/mol}$, more than double the first increment, because the additional $\pi$ bonds of a multiple bond form between orbitals already held close together by the existing $\sigma$ bond and so overlap unusually well. This is also why $\text{N}_2$, held together by one of the strongest common bonds in chemistry, is so notoriously unreactive that converting it into a chemically usable form of nitrogen (the industrial Haber–Bosch process) is one of the most energy-intensive reactions carried out on Earth.
 
+:::{tip} Read the HOMO Before You Refill the Whole Diagram
+When a problem asks how ionizing (or reducing) a molecule changes its bond length or bond strength, there is rarely a need to refill an entire molecular orbital diagram from scratch. Identify only the **highest occupied molecular orbital (HOMO)** — the orbital the added or removed electron actually occupies — and ask whether it is bonding or antibonding. Removing an electron from a bonding HOMO weakens the bond (as for $\text{N}_2\to\text{N}_2^+$ below); removing one from an antibonding HOMO strengthens it (as for $\text{O}_2\to\text{O}_2^+$ in [Problem 6](#ex-molecular-structure-6)). That one fact settles the direction of the change before a bond order is ever computed.
+:::
+
 ### Worked Example: Ionizing Nitrogen — N₂ versus N₂⁺
 
 Removing an electron from $\text{N}_2$ to form the molecular ion $\text{N}_2^{+}$ (as happens, for example, when a fast electron or solar-wind particle strikes an atmospheric nitrogen molecule during an aurora) removes it from the highest-occupied orbital identified above — for $\text{N}_2$, the bonding $\sigma_{2p}$. That leaves $9$ valence electrons: $\sigma_{2s}$ (2), $\sigma_{2s}^{*}$ (2), $\pi_{2p}$ (4), $\sigma_{2p}$ (1), so
@@ -209,6 +239,10 @@ Butane ($\text{C}_4\text{H}_{10}$, nonpolar, molar mass $58.1\ \text{g/mol}$) an
 The same logic, pushed one step further, isolates hydrogen bonding specifically. Water ($\text{H}_2\text{O}$, molar mass $18\ \text{g/mol}$) boils at $100°\text{C}$, while hydrogen sulfide ($\text{H}_2\text{S}$, molar mass $34\ \text{g/mol}$, the next member down the same column of the periodic table) boils at $-60°\text{C}$ — even though the *heavier*, more polarizable $\text{H}_2\text{S}$ should, by dispersion forces alone, boil *higher* than water, not lower. Water's anomalously high boiling point is the signature of hydrogen bonding: each water molecule can form up to four hydrogen bonds (two through its own hydrogens, two through its oxygen's lone pairs), building an extended three-dimensional network that an ordinary dipole–dipole liquid like $\text{H}_2\text{S}$ — whose S–H bond is too weakly polar for effective hydrogen bonding — never forms.
 
 ## Vibrational and Rotational Energy Levels
+
+:::{note} Why Electrons and Nuclei Can Be Treated Separately: The Born–Oppenheimer Approximation
+Every molecular orbital diagram and hybridization argument earlier in this chapter implicitly treats the nuclei as fixed in place while the electrons rearrange around them, and the analysis that follows now treats the nuclei as vibrating and rotating about a bond length $r_0$ taken as already known, with no further reference to the electrons at all. This split is justified by the **Born–Oppenheimer approximation**, proposed by Max Born and J. Robert Oppenheimer in 1927: because a nucleus is thousands of times more massive than an electron (a lone proton alone outweighs an electron by a factor of about $1836$), the electrons respond to any change in nuclear position essentially instantaneously on the timescale of nuclear motion. The electronic structure problem can therefore be solved first, at each fixed internuclear separation, to obtain an effective potential energy curve for the nuclei — precisely the curve plotted in {numref}`Figure %s <fig:ch12-interatomic-sim>` below — after which the vibration and rotation of the nuclei on that curve become a separate, subsequent problem. Without this approximation, the full molecular Schrödinger equation, coupling every electron's motion to every nucleus's motion at once, would be intractable for all but the smallest molecules.
+:::
 
 Once bonded, a diatomic molecule is itself a quantum system with its own internal energy levels, in addition to the electronic energy levels associated with its bonding orbitals. Near the equilibrium bond length $r_0$ (where the molecular potential energy curve, as a function of internuclear separation, has its minimum), the potential is well approximated by a parabola, so small-amplitude **vibration** of the two nuclei about $r_0$ is, to good approximation, the quantum harmonic oscillator of [Chapter 8](#ch-the-schrodinger-equation), with quantized energies
 
@@ -267,6 +301,10 @@ A rovibrational absorption band. The $R$ branch ($\Delta J=+1$) and $P$ branch (
 
 Because $B$ depends only on the molecule's moment of inertia, measuring the line spacing in a single rovibrational (infrared) spectrum determines $I$ — and hence the bond length $r_0$ — directly, without needing a separate microwave (pure-rotation) measurement at all.
 
+:::{margin}
+A **wavenumber**, $\tilde\nu \equiv E/hc$, reports energy in units of $\text{cm}^{-1}$ — the number of wave cycles per centimeter for a photon of that energy. It is the conventional unit throughout infrared and microwave spectroscopy, chosen because a spectrometer directly measures wavelength or frequency, not joules.
+:::
+
 ### Worked Example: Line Spacing in the CO Rovibrational Spectrum
 
 Using the same carbon monoxide data as [Problem 5](#ex-molecular-structure-5) ($r_0 = 0.113\ \text{nm}$, $\mu = 6.86\ \text{u}$), find the rotational constant $B$ and the resulting rovibrational line spacing.
@@ -300,6 +338,10 @@ E_v \approx \left(v+\tfrac12\right)\hbar\omega - \left(v+\tfrac12\right)^2 x_e\h
 $$
 
 where the small, positive **anharmonicity constant** $x_e$ (typically a few percent, for real molecules) quantifies the departure from a perfect harmonic oscillator. The negative correction term grows with $v$, so **the levels crowd closer together at higher $v$** — an effect invisible near the bottom of the well, where the potential is well approximated by the parabola of the harmonic-oscillator treatment above, but increasingly important as $v$ climbs toward the dissociation limit, where the level spacing shrinks to zero exactly at the molecule's bond dissociation energy. Anharmonicity also relaxes the strict $\Delta v = \pm 1$ selection rule of the ideal harmonic oscillator, permitting weak **overtone** transitions with $\Delta v = \pm2, \pm3, \ldots$ — additional, much fainter absorption lines at roughly (but not exactly) integer multiples of the fundamental frequency. This is why a real vibrational spectrum shows one strong fundamental band accompanied by a series of progressively weaker overtones, rather than the single, perfectly sharp line the ideal harmonic oscillator of [Chapter 8](#ch-the-schrodinger-equation) would predict.
+
+:::{seealso} A Bound System Weighs Less Than Its Parts, Again
+A bond's dissociation energy — the energy needed to pull two bonded atoms apart to infinite separation — is the molecular-scale instance of a pattern that reappears, at a vastly different energy and length scale, when the same nuclei are pulled apart from *within*. See [](#ch-nuclear-physics) for the nuclear binding energy, where the same logic (a bound system has lower total energy, and hence lower total mass, than its separated constituents) explains why nuclei resist being split or fused apart, on a scale of $\text{MeV}$ rather than $\text{kJ/mol}$.
+:::
 
 ## Summary
 

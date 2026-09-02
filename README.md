@@ -43,6 +43,34 @@ admonitions, and cross-references — see the
 (`$...$` / `$$...$$` for math, `{figure}` for images, `{prf:theorem}` /
 `{prf:proof}` and similar for structured content, etc.).
 
+### Admonitions, margin notes, dropdowns, and tabs
+
+Beyond math, figures, and cross-references, chapters use a few more MyST
+directives for pedagogical asides. Use them sparingly — a handful per
+chapter, not per section — and only where there's a genuine fit:
+
+- **Admonitions** — one directive per intent:
+  - `` ```{note} `` — historical or contextual asides (who discovered what,
+    when).
+  - `` ```{tip} `` — problem-solving strategies (e.g. check units first, or
+    when a relativistic correction can be dropped).
+  - `` ```{warning} `` — a misconception or pitfall specific to that topic.
+  - `` ```{seealso} `` — a pointer to related material elsewhere in the book,
+    via `[](#label)`.
+- **Margin notes** (`` ```{margin} ``) — a short aside that would be a
+  distracting parenthetical inline: a unit reminder, a notation
+  clarification, a quick defining fact.
+- **Dropdowns** (`` ```{dropdown} Title ``) — an optional deep-dive: an
+  extended or alternate derivation, a "for the curious" tangent, or a proof
+  of a result asserted in the main text.
+- **Tabs** (`` ```{tab-set} `` / `` ```{tab-item} ``) — side-by-side
+  alternative treatments, used only where the book genuinely presents more
+  than one approach (two solution methods, SI vs. natural units,
+  non-relativistic vs. relativistic limits).
+
+These are additive — they don't replace or restructure the surrounding
+prose, headings, math, figures, or exercises.
+
 ## Interactive simulations
 
 Chapters can embed a running browser simulation with the `{openphysics}`,

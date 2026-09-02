@@ -25,6 +25,10 @@ By the 1890s, many physicists believed their subject was nearly finished. Newton
 
 That confidence concealed a handful of loose threads. This chapter follows one of them: Maxwell's equations predict a definite speed for light, $c \approx 3.00\times10^{8}\ \text{m/s}$, but they do not say *relative to what* that speed is measured. Every other wave known to nineteenth-century physics — sound, water waves, waves on a string — is a disturbance in a material medium, and its speed is fixed relative to that medium, not relative to an observer. It was natural to assume light must be the same: a wave in some all-pervading substance, the *luminiferous ether*, with $c$ being its speed relative to the ether alone. Observers moving through the ether should then measure a different speed for light, just as a swimmer's speed relative to the shore depends on whether they swim with or against a current. Two experiments designed to detect this effect — one that stubbornly refused to find it, and one that found something stranger still — are where this chapter begins, before turning to the radical reinterpretation Einstein proposed for both results at once.
 
+:::{margin}
+Today $c$ is *defined* to be exactly $299{,}792{,}458\ \text{m/s}$; the meter itself is defined in terms of it. In 1890 it was instead a measured quantity, and Maxwell's equations gave no reason to expect it to be measured the same by every observer.
+:::
+
 ## The Principle of Relativity, Before Einstein
 
 It is worth being precise about what was, and was not, already understood before 1905. Galileo had already argued, nearly three centuries earlier, that uniform motion is undetectable from the inside. In his *Dialogue Concerning the Two Chief World Systems* (1632), he imagined an observer sealed below the deck of a smoothly sailing ship, with no portholes: butterflies fly about the cabin, fish swim in a bowl, drops fall from a bottle into a jar beneath it. Galileo's point was that no mechanical experiment performed in that sealed cabin can tell you whether the ship is at rest in harbor or cruising at constant velocity across a calm sea. The butterflies do not pile up against the stern wall; the drops fall straight down into the jar exactly as they would in harbor. Only *changes* in the ship's velocity — a lurch, a turn — are detectable from inside, because those involve acceleration, and acceleration is not relative in the same way.
@@ -49,6 +53,10 @@ $$
 
 This is the rule that lets you add your walking speed to a moving walkway, or a thrown ball's speed to the speed of the train from which it is thrown. Applied to light, it makes a sharp prediction: if light travels at speed $c$ relative to the ether, and Earth moves through the ether at orbital speed $v \approx 3\times 10^4\ \text{m/s}$, then an observer on Earth measuring light traveling in the same direction as Earth's motion should get $c - v$, and light traveling in the opposite direction should give $c + v$. The effect is small — about one part in $10^4$ — but with an interferometer sensitive enough to detect a shift in the interference pattern of order that size, it should be measurable.
 
+:::{warning}
+It is easy to mix up the sign in $u_x' = u_x - v$: the rule subtracts the *frame's* velocity from the object's velocity, not the other way around. A quick check that costs nothing: if $S'$ moves in the $+x$ direction relative to $S$ ($v>0$) and the object is at rest in $S$ ($u_x = 0$), it must appear to drift in the $-x$ direction in $S'$ ($u_x' = -v$), exactly as the ground appears to slide backward beneath a forward-moving train.
+:::
+
 The assumption hiding inside that argument is worth making explicit, because every wave known to nineteenth-century physics encouraged it. A wave is a disturbance of *something*, and that something fixes the frame in which the wave has its textbook speed: {numref}`Figure %s <fig:ch01-waves-sim>` runs one oscillating source as a ripple on water, as a sound wave in air, and as light. On the first two screens the medium can be put on display directly — the water surface, and the individual air molecules being pushed back and forth — and it is relative to that medium that the disturbance travels at its stated speed. The ether hypothesis is the assumption that the third screen works like the first two, and that the medium there is merely one nobody had yet managed to detect.
 
 ```{phet} waves-intro
@@ -58,6 +66,10 @@ A single oscillating source seen as a water wave, a sound wave, and a light wave
 ```
 
 ## The Michelson–Morley Experiment
+
+:::{note}
+Albert Michelson, a graduate of the U.S. Naval Academy, built his first interferometer in 1881 (in Berlin, with support from Alexander Graham Bell) and refined it with Edward Morley at what is now Case Western Reserve University in 1887. Michelson went on to win the 1907 Nobel Prize in Physics — the first American laureate in the sciences — awarded for the precision of his optical instruments, notably this one, even though the experiment's headline result was a *null* one.
+:::
 
 Albert Michelson (and later Michelson working with Edward Morley) built exactly such an interferometer. Its principle is to split a beam of light into two perpendicular paths, reflect each off a mirror, recombine the beams, and observe the resulting interference pattern. If Earth moves through the ether, the round-trip travel time along the path parallel to that motion should differ slightly from the round-trip time along the perpendicular path, because a "cross-stream" trip and an "upstream–downstream" trip through a moving medium take different times even when the two paths have equal length — the same effect that makes a boat crossing a river directly and returning take less time than travelling the same distance upstream and back. The predicted difference is small, but the interferometer was sensitive enough to detect a shift of a small fraction of a fringe, and the apparatus was mounted on a stone slab floating on mercury so that it could be rotated smoothly to swap the roles of the two arms.
 
@@ -74,6 +86,10 @@ since it travels at $c-v$ relative to the apparatus going one way (against the e
 $$
 t_\perp = \frac{2L}{c}\left(1 - \frac{v^2}{c^2}\right)^{-1/2}.
 $$
+
+:::{tip}
+When a small parameter like $v/c$ appears, expand *before* subtracting, not after. Here $t_\parallel$ and $t_\perp$ individually differ from $2L/c$ only at order $(v/c)^2$; keeping just one or two terms of the binomial series for each is exactly precise enough to see that they don't cancel completely, while still being simple enough to work with by hand. Trying to compute $t_\parallel - t_\perp$ exactly first, then approximating, obscures the very cancellation that makes the leading term of order $(v/c)^2$ rather than $(v/c)$.
+:::
 
 For $v \ll c$, both expressions can be expanded with the binomial approximation, $(1-x)^{-1} \approx 1+x$ and $(1-x)^{-1/2} \approx 1 + x/2$:
 
@@ -137,6 +153,10 @@ The Kennedy–Thorndike null result rules out length contraction as a stand-alon
 
 The ether's troubles did not begin with Michelson and Morley. Decades earlier, in 1851, Hippolyte Fizeau performed a related but distinct experiment: rather than looking for an effect of Earth's motion through vacuum, he measured the speed of light *inside a moving medium* — water flowing rapidly through a pipe. Splitting a light beam so that one part traveled with the flow and the other against it, then recombining them interferometrically, Fizeau could measure how much the water's motion changed the light's speed compared to light in stationary water, $c/n$ (where $n\approx1.33$ is water's refractive index).
 
+:::{margin}
+The refractive index $n$ is defined so that light travels at speed $c/n$ in a stationary medium; $n>1$ for every ordinary transparent material, so $c/n<c$.
+:::
+
 The naive, purely mechanical expectation — light as a stream of particles, or the water fully "dragging" the ether along with it, either of which would give ordinary Galilean addition — predicts a shift of exactly $v$, the full speed of the flowing water:
 
 $$
@@ -152,6 +172,24 @@ $$
 The water drags the light along, but only *partially* — by a fraction $f = 1 - 1/n^2$ of its own speed, not the full speed $v$ predicted by simple addition, and not zero either (which is what a completely undragged, stationary ether unaffected by the moving medium would predict). This peculiar fractional drag coefficient had in fact been *predicted* in advance, in 1818, by Augustin-Jean Fresnel, on the strength of an equally peculiar ether model in which the ether inside a transparent medium is partially entrained in proportion to how much denser the medium's ether content is compared to vacuum's. The prediction matched Fizeau's measurement (and later, far more precise repetitions) to within experimental error — but it required inventing a specific, otherwise unmotivated rule for how much of the ether a given material drags along, a rule with no independent justification beyond fitting this one experiment.
 
 Fizeau's result sat alongside the Michelson–Morley null result as a second, independent puzzle: whatever the ether was doing, it was not doing anything as simple as being either fully dragged along by matter or entirely undisturbed by it. As will become clear in [Chapter 2](#ch-special-relativity), once relativistic velocity addition replaces the Galilean rule, Fresnel's fractional drag coefficient emerges automatically — with no separate assumption about entrainment at all — as the leading term of $u_x = (u_x' + v)/(1 + u_x'v/c^2)$ evaluated at $u_x' = c/n$. What looked like an ad hoc patch to the ether model turns out to be an exact, parameter-free consequence of the correct kinematics.
+
+:::{dropdown} Extracting the Fresnel coefficient from relativistic velocity addition
+This chapter has not yet derived the relativistic velocity-addition formula — that is the work of [Chapter 2](#ch-special-relativity) — but it is worth seeing, in advance, exactly how the "unmotivated" Fresnel coefficient falls out of it, since the calculation is short. Substitute $u_x' = c/n$ (light's speed in water at rest) into $u_x = (u_x' + v)/(1 + u_x'v/c^2)$:
+
+$$
+u_x = \frac{\dfrac{c}{n} + v}{1 + \dfrac{v}{nc}}.
+$$
+
+For $v \ll c$, expand the denominator with $(1+x)^{-1} \approx 1 - x$:
+
+$$
+u_x \approx \left(\frac{c}{n} + v\right)\left(1 - \frac{v}{nc}\right)
+\approx \frac{c}{n} + v - \frac{v}{n^2} + O(v^2)
+= \frac{c}{n} + v\left(1 - \frac{1}{n^2}\right),
+$$
+
+where the cross term $v^2/(nc)$ from the first factor's $v$ times the second factor's $-v/(nc)$ has been dropped as second order in $v/c$. This reproduces Fizeau's measured formula exactly, with the fractional drag coefficient $f = 1 - 1/n^2$ appearing automatically — not as a separate hypothesis about how much ether a medium entrains, but as the leading correction to ordinary velocity addition once the correct (relativistic) addition rule is used in place of the Galilean one.
+:::
 
 Fizeau is shown in a late-nineteenth-century portrait in {numref}`Figure %s <fig:ch01-fizeau-historical>`.
 
@@ -187,6 +225,10 @@ $$
 \tan\theta = \frac{v}{c} = \frac{3.0\times10^4\ \text{m/s}}{3.0\times10^8\ \text{m/s}} = 1.0\times10^{-4}.
 $$
 
+:::{margin}
+The ratio $v/c \sim 10^{-4}$ for Earth's orbital motion is the recurring small number of this chapter: it sets the size of the Michelson–Morley fringe shift, the aberration angle, and the fractional Galilean speed shift in Exercise 1 alike.
+:::
+
 Since this is a very small angle, $\theta \approx 1.0\times10^{-4}\ \text{rad}$. Converting to arcseconds (using $1\ \text{rad} = 206{,}265''$),
 
 $$
@@ -207,6 +249,10 @@ In 1905, Einstein proposed to stop patching Galilean relativity and instead take
 The first postulate was not new — as Galileo's ship illustrates, it already held for Newtonian mechanics, where no mechanical experiment can detect uniform motion (this is why you cannot feel the constant-velocity phase of a smooth flight, and why the butterflies in Galileo's cabin fly about undisturbed). Einstein's step was to insist that this postulate apply to *all* of physics, electromagnetism included, so that no experiment of any kind — mechanical or optical — can distinguish inertial frames; there is no preferred, ether-defined rest frame for anything, including light. The second postulate is the one that clashes head-on with Galilean relativity: if $u_x' = u_x - v$ held for light as it does for baseballs, two observers in relative motion could not both measure the same speed $c$ for the same light beam. Taken together, the postulates require that time and space themselves — not just the "aether wind" — behave differently than Galilean relativity assumes.
 
 This is a genuinely radical move. Rather than asking "what medium is light waving in?", Einstein asked what kinematics — what set of rules for relating space and time coordinates between observers — is consistent with light having the same speed for everyone. The answer is not the Galilean transformation but the *Lorentz transformation*, and working out its consequences — the relativity of simultaneity, time dilation, length contraction, and (as noted above) the Fizeau drag coefficient as a special case of velocity addition — is the subject of [Chapter 2](#ch-special-relativity).
+
+:::{seealso}
+[](#ch-special-relativity) derives the Lorentz transformation from these two postulates and works out its consequences in detail — time dilation and length contraction (the effects this chapter's ether patches had to invent piecemeal), the relativity of simultaneity, and the relativistic velocity-addition formula used above to recover the Fizeau coefficient.
+:::
 
 Einstein was not working in a vacuum: Lorentz had already written down transformation equations of essentially the same mathematical form (motivated, as noted above, by fitting the Michelson–Morley and Fizeau data rather than by a physical principle), and Henri Poincaré, in the same year, independently emphasized that the principle of relativity should be regarded as an exact law of nature rather than an approximate consequence of ether dynamics, and showed that the Lorentz transformations form a mathematical group — a property essential for consistency, since applying two velocity boosts in succession must itself be equivalent to some single valid transformation. What distinguished Einstein's paper was not the equations themselves but their derivation: rather than reverse-engineering a transformation to fit the data, he started from the two postulates and showed that the Lorentz transformation is the *unique* kinematic consequence of taking them seriously, with time dilation, length contraction, and the relativity of simultaneity following as necessary theorems rather than independently adjustable assumptions.
 

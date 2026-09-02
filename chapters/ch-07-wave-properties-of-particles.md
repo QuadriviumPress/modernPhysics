@@ -32,6 +32,18 @@ $$
 
 now called the **de Broglie wavelength**. For a nonrelativistic particle of mass $m$ and speed $u$, $p = mu$, so $\lambda = h/mu$; more generally, for a particle accelerated from rest through a potential difference $V$, $K = eV = p^2/2m$ gives $p = \sqrt{2meV}$ and hence $\lambda = h/\sqrt{2meV}$. Because $h$ is so small, the de Broglie wavelength of ordinary macroscopic objects is utterly negligible — a $1\ \text{g}$ mass moving at $1\ \text{m/s}$ has $\lambda \sim 10^{-31}\ \text{m}$, far too small to produce any observable wave effect — which is why matter waves went unnoticed until physicists deliberately looked for them in systems where $\lambda$ is not negligible, such as low-energy electrons, whose small mass makes $\lambda$ comparable to atomic and crystal-lattice spacings for accessible kinetic energies.
 
+:::{margin}
+$h = 6.626\times10^{-34}\ \text{J}\cdot\text{s}$, the same constant from Chapters [6](#ch-particle-properties-of-waves)'s photon relations. It is often quoted instead as $\hbar \equiv h/2\pi = 1.055\times10^{-34}\ \text{J}\cdot\text{s}$, the form used later in this chapter for wave packets and the uncertainty principle.
+:::
+
+:::{note}
+De Broglie's hypothesis first appeared not in a journal article but in his 1924 doctoral thesis, and his examiners at the Sorbonne were unsure what to make of a proposal with no direct experimental support. His advisor, Paul Langevin, sent a copy to Einstein for a second opinion; Einstein reportedly replied that de Broglie "has lifted a corner of the great veil" and urged that the thesis be taken seriously. De Broglie was awarded his doctorate, and the Nobel Prize in Physics followed just five years later, in 1929 — an unusually fast recognition for a hypothesis confirmed experimentally only in 1927 (see below).
+:::
+
+:::{tip}
+Before computing a de Broglie wavelength, check whether the particle's kinetic energy $K$ is small or large compared to its rest energy $mc^2$. If $K \ll mc^2$ (true for the 100 eV electrons below, since $m_ec^2 = 511\ \text{keV}$), the nonrelativistic relations $p = mu$ or $p = \sqrt{2mK}$ are accurate; once $K$ becomes comparable to or larger than $mc^2$ (as for MeV-scale protons or electrons), $\lambda = h/p$ still holds, but $p$ must instead be found from the relativistic relation $E^2 = (pc)^2 + (mc^2)^2$.
+:::
+
 ### Worked Example: De Broglie Wavelength of an Accelerated Electron
 
 An electron is accelerated from rest through a potential difference of $V = 100\ \text{V}$, a typical value in early electron-diffraction experiments. Its nonrelativistic momentum is
@@ -61,6 +73,10 @@ d\sin\theta = n\lambda,
 $$
 
 (with $d$ the crystal's known interplanar spacing) allowed Davisson and Germer to extract an experimental wavelength for the electrons — and it agreed, to good precision, with the de Broglie wavelength $\lambda = h/p$ computed from the electrons' known kinetic energy.
+
+:::{margin}
+This is the same **Bragg condition** used for X-ray diffraction from crystals: successive lattice planes reinforce a scattered wave only when the path difference $d\sin\theta$ between reflections off adjacent planes is a whole number of wavelengths. Davisson and Germer's result is exactly this condition, satisfied by an electron's matter wave instead of an X-ray photon.
+:::
 
 The experiment is reconstructed in {numref}`Figure %s <fig:ch07-davisson-germer-sim>`, where both sides of $d\sin\theta = n\lambda$ are under control: the electron gun's accelerating voltage, which fixes $p$ and hence $\lambda = h/p$, and the spacing of the target atoms, which fixes $d$. Raising the voltage shortens the wavelength and pulls the scattering maxima to smaller angles; widening the atomic spacing pushes them back out. Neither response is available to a stream of particles bouncing off a surface, and observing both is what settled the question.
 
@@ -124,6 +140,10 @@ Single particles sent through a double slit, one at a time, with the detection s
 
 Crucially, if a measurement is added to the apparatus that determines *which* slit each particle actually passed through — "which-path" information — the interference pattern disappears entirely, replaced by the simple sum of the two single-slit patterns, exactly as if the particles were classical objects going through one slit or the other. Acquiring which-path information is not a matter of clumsy experimental technique that could, with sufficient care, be avoided while preserving the fringes; the loss of interference is a direct, unavoidable consequence of the uncertainty principle (developed later in this chapter), since determining which slit a particle used necessarily disturbs its momentum by an amount sufficient to wash out the fringe spacing. It is tempting, but incorrect, to imagine that a photon or electron is "really" a tiny wave packet that sometimes behaves like a particle, or "really" a tiny particle that sometimes behaves like a wave; the two descriptions are complementary, and a full account of quantum behavior (developed starting in [Chapter 8](#ch-the-schrodinger-equation)) requires a mathematical object — the wave function — that reduces to particle-like or wave-like predictions depending on what is measured, without being fully captured by either classical picture on its own.
 
+:::{warning}
+The "measurement disturbs the momentum" language above is a useful first picture, but it is easy to over-read it as saying the uncertainty principle is merely a practical limitation of clumsy detectors that a sufficiently gentle measurement could someday evade. As the wave-packet discussion later in this chapter makes precise, the deeper reason is that a particle with a well-defined path through one specific slit cannot be described by a matter wave with a single well-defined wavelength; localizing the wave enough to carry which-path information *necessarily* broadens its spread in momentum. The trade-off lives in the mathematics of the wave itself, not in the clumsiness of any particular detector.
+:::
+
 ### Delayed Choice and the Quantum Eraser
 
 A particularly striking variant, proposed by John Wheeler in 1978 and since realized experimentally, asks whether the decision to measure which-path information can be postponed until *after* a particle has, in some naive classical sense, "already passed" through the slits. In a **delayed-choice experiment**, the choice of whether to record which-path information (destroying the interference pattern) or to erase it before the particle is detected (restoring the interference pattern) is made only at the very last possible moment — in some realizations, only after the particle has already traversed the region of the slits. Experiments of this kind confirm quantum mechanics' prediction exactly: interference reappears whenever which-path information is unavailable (or erased before it can be extracted) at the time of final detection, regardless of when in the experiment that choice is made. A related arrangement, the **quantum eraser**, first correlates each particle with a "marker" that could in principle reveal which path it took, then either reads that marker (destroying the interference pattern in the corresponding subset of detection events) or "erases" the marker's which-path information before it is read (restoring interference in that subset). Neither experiment allows sending a signal backward in time or violates causality; both instead show that the loss or restoration of interference tracks strictly whether which-path information is, at the moment of detection, available anywhere in the universe in principle — not whether a human experimenter has looked at it, and not whether the "choice" is made before or after the particle has traversed the apparatus. These results reinforce the same lesson as the ordinary double-slit experiment: a quantum system does not carry a hidden, predetermined trajectory waiting to be revealed, and complementarity is a statement about what information can coexist, not merely about the limits of measurement technology.
@@ -160,7 +180,13 @@ $$
 v_g = \frac{d\omega}{dk},
 $$
 
-which is, in general, different from the **phase velocity** $v_p = \omega/k$ at which the individual wave crests inside the envelope move. For a nonrelativistic free particle, the de Broglie relations $p = \hbar k$ and $E = \hbar\omega$, combined with the nonrelativistic kinetic-energy relation $E = p^2/2m$, give
+which is, in general, different from the **phase velocity** $v_p = \omega/k$ at which the individual wave crests inside the envelope move.
+
+:::{margin}
+A mnemonic: the **group** velocity is the speed of the **group** — the envelope, the localized "blob" that carries the particle and any information — while the **phase** velocity is the speed of the individual **phase** fronts (the crests) sliding along underneath that envelope. Only the first one is a particle speed.
+:::
+
+For a nonrelativistic free particle, the de Broglie relations $p = \hbar k$ and $E = \hbar\omega$, combined with the nonrelativistic kinetic-energy relation $E = p^2/2m$, give
 
 $$
 \omega(k) = \frac{\hbar k^2}{2m},
@@ -173,6 +199,22 @@ v_g = \frac{d\omega}{dk} = \frac{\hbar k}{m} = \frac{p}{m} = u,
 $$
 
 exactly the classical particle velocity — the wave packet's envelope, the physically observable, localized "blob" of probability, moves at precisely the speed a classical particle with the same momentum would have. The phase velocity, by contrast, is $v_p = \omega/k = \hbar k/2m = u/2$, exactly *half* the particle's actual speed: the individual crests inside the packet move at a different, less physically meaningful speed than the envelope itself, a reminder that it is the group velocity, not the phase velocity, that corresponds to the motion of the particle (and, for a light pulse in a dispersive medium, to the speed at which energy and information actually travel).
+
+:::{dropdown} Deriving the envelope speed from two superposed waves
+The group-velocity formula $v_g = d\omega/dk$ can be seen directly by adding just two component waves of equal amplitude, wave numbers $k \pm \Delta k/2$, and angular frequencies $\omega \pm \Delta\omega/2$:
+
+$$
+\cos\!\left[\left(k+\tfrac{\Delta k}{2}\right)x - \left(\omega+\tfrac{\Delta\omega}{2}\right)t\right] + \cos\!\left[\left(k-\tfrac{\Delta k}{2}\right)x - \left(\omega-\tfrac{\Delta\omega}{2}\right)t\right].
+$$
+
+Using the sum-to-product identity $\cos A + \cos B = 2\cos\!\left(\tfrac{A+B}{2}\right)\cos\!\left(\tfrac{A-B}{2}\right)$ with $A$ and $B$ the two bracketed phases gives
+
+$$
+2\cos(kx-\omega t)\,\cos\!\left(\frac{\Delta k}{2}x - \frac{\Delta\omega}{2}t\right).
+$$
+
+The first factor is a rapidly oscillating carrier wave moving at the phase velocity $\omega/k$; the second factor is a slowly varying envelope — the "beat" pattern familiar from superposing two close sound frequencies — whose crests (where the cosine argument is constant) move at speed $\Delta\omega/\Delta k$. Adding more and more component waves in a narrow band around $k$ sharpens this beat pattern into a single, well-localized wave packet, and in the limit $\Delta k \to 0$ the envelope speed $\Delta\omega/\Delta k$ becomes exactly $d\omega/dk$, the group velocity used in the main text.
+:::
 
 ### Wave Packet Spreading
 
@@ -187,6 +229,10 @@ $$
 $$
 
 where $\Delta x$ and $\Delta p_x$ are, more precisely, statistical spreads (standard deviations) in simultaneous measurements of position and momentum made on identically prepared systems. The **Heisenberg uncertainty principle** states that these two spreads cannot both be made arbitrarily small: the more precisely a particle's position is known, the less precisely its momentum can be known, and conversely. This is not a statement about the clumsiness of measuring instruments, correctable in principle by better technology — it is a consequence of the wave nature of matter itself, as the wave-packet argument above shows: a particle simply *does not possess* simultaneously well-defined position and momentum, in the same sense that a wave pulse of well-defined wavelength cannot also be localized to a point.
+
+:::{seealso}
+[](#ch-the-schrodinger-equation) puts this wave-packet picture on rigorous footing: the wave function $\Psi(x,t)$ introduced there replaces the qualitative superposition argument of this chapter with an exact quantum-mechanical object, from which $\Delta x\,\Delta p_x \geq \hbar/2$ can be derived precisely rather than estimated.
+:::
 
 An analogous relation holds between energy and time,
 

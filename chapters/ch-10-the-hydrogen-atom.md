@@ -39,7 +39,15 @@ $$
 E_n = -\frac{m_ee^4}{8\epsilon_0^2h^2}\,\frac{1}{n^2} = -\frac{13.6\ \text{eV}}{n^2}, \qquad n = 1, 2, 3,\ldots.
 $$
 
+:::{margin}
+**Reduced mass.** $E_n$ above technically uses the electron mass $m_e$ alone, an approximation that treats the proton as infinitely heavy and fixed. The exact two-body treatment replaces $m_e$ everywhere with the **reduced mass** $\mu = m_em_p/(m_e+m_p) \approx 0.9995\,m_e$, shifting every hydrogen level by about $0.05\%$ — small, but (see below) not unmeasurable.
+:::
+
 This agreement is a triumph for the Schrödinger equation — it reproduces a result that matched atomic spectroscopy to remarkable precision — but the derivation and interpretation are entirely different from Bohr's. Bohr postulated that the electron moves on definite circular orbits, with angular momentum quantized as $L = n\hbar$ by assumption. The Schrödinger treatment makes no such assumption about orbits at all; instead, $n$ emerges purely as an index counting the normalizable solutions of the radial equation, the electron has no well-defined trajectory, and — as shown below — the ground state ($n=1$) actually has **zero** orbital angular momentum, in direct contradiction to Bohr's $L=n\hbar$. The numerical agreement in $E_n$ is, in this sense, a coincidence specific to the particular form of the $1/r$ Coulomb potential, not a sign that the Bohr picture was substantially correct.
+
+:::{note}
+The reduced-mass correction is not just bookkeeping. In 1931–32, Harold Urey searched for a heavier isotope of hydrogen by looking for a faint companion line shifted slightly to the blue of each ordinary hydrogen line — exactly the shift predicted because a heavier nucleus pulls $\mu$ closer to $m_e$ and makes $|E_n|$ very slightly larger. Finding that predicted companion in a distilled hydrogen sample was the discovery of **deuterium**, and earned Urey the 1934 Nobel Prize in Chemistry — a case of a correction easy to dismiss as negligible turning out to carry real, measurable physics.
+:::
 
 The mechanism behind the discreteness is worth making explicit, since the same pattern recurs throughout quantum mechanics. Solving the radial equation for a trial (negative) energy $E$ produces a function that falls off as $e^{-\kappa r}$ at large $r$, with $\kappa = \sqrt{-2m_eE}/\hbar$, multiplied by an infinite series in powers of $r$; for almost any choice of $E$, that series itself grows fast enough that the full product still diverges as $r\to\infty$, exactly the unnormalizable blow-up that ruled out most trial energies in the finite square well of [Chapter 8](#ch-the-schrodinger-equation). Demanding a normalizable wave function forces the series to *terminate* after a finite number of terms — collapsing it from an infinite series into a finite polynomial — and this termination happens only when $1/\kappa a_0$ lands exactly on a positive integer, which is precisely the principal quantum number $n$. The same termination condition also caps the orbital quantum number: the polynomial's degree fixes a nonnegative integer $n_r = 0, 1, 2,\ldots$ (the number of interior radial nodes, discussed further below) related to $n$ and $\ell$ by $n = n_r + \ell + 1$, so that $n_r\ge0$ immediately forces $\ell \le n-1$ — and, for the ground state $n=1$, forces $n_r=\ell=0$ exactly, which is the direct algebraic reason the ground state must have zero orbital angular momentum, not merely an empirical fact to be taken on faith.
 
@@ -59,6 +67,10 @@ The models that agree on $E_n$ disagree entirely about where the electron is.
 ### Historical Context: Bohr's 1913 Model and Its Limits
 
 It is worth pausing on why a model built on postulates that turned out to be simply wrong — definite orbits, angular momentum quantized as $L=n\hbar$ — nonetheless earned Niels Bohr the 1922 Nobel Prize and remains the picture most people first encounter. In 1913, fourteen years before Schrödinger's equation existed, Bohr combined classical circular-orbit mechanics with a single ad hoc quantization rule and reproduced the empirical Rydberg formula for hydrogen's spectral lines essentially exactly, including its dependence on nuclear charge for hydrogenic ions (below) — a stunning success for a model with no derivation behind its central assumption. The de Broglie standing-wave argument of [Chapter 7](#ch-wave-properties-of-particles) later supplied a retroactive justification for $L=n\hbar$, which is part of why the Bohr model survived as long as it did before being fully superseded.
+
+:::{seealso}
+The de Broglie justification for $L=n\hbar$ works out concretely: demanding that an integer number of de Broglie wavelengths, $\lambda=h/p$ ([Chapter 7](#ch-wave-properties-of-particles)), fit exactly around a circular orbit of circumference $2\pi r$ gives $2\pi r = n\lambda = nh/p$, i.e. $L=rp=n\hbar$ — Bohr's quantization rule, recovered after the fact from wave interference rather than assumed outright.
+:::
 
 The model's failures, however, were just as instructive as its success. Extending Bohr's orbit-quantization scheme to **helium** — even with the refinements (elliptical orbits, relativistic orbit precession) added by Arnold Sommerfeld through the 1910s — never produced a correct ionization energy or a stable ground-state configuration for a two-electron atom; the semiclassical machinery simply had no consistent way to handle two mutually interacting orbiting electrons. The model also could not predict *which* transitions between levels actually occur (the selection rules developed later in this chapter), could not account for the relative brightness of spectral lines, and — as already emphasized above — gets the ground state's angular momentum flatly wrong: Bohr's $n=1$ orbit carries $L=\hbar$, while the true ground state has $L=0$ and no orbit, well-defined trajectory, or definite radius at all, only the probability cloud shown in {numref}`Figure %s <fig:ch10-hydrogen-models-sim>`. These failures, especially the inability to extend the model consistently beyond hydrogen, were a central motivation for the fully quantum-mechanical treatment developed in Chapters [8](#ch-the-schrodinger-equation)–[9](#ch-quantum-mechanics-in-three-dimensions) and specialized to hydrogen in this chapter — a treatment that, unlike Bohr's, generalizes cleanly to helium and every other atom in [Chapter 11](#ch-many-electron-atoms).
 
@@ -98,6 +110,16 @@ $$
 
 Because the energy $E_n$ depends *only* on $n$ — not on $\ell$ or $m_\ell$ — every state sharing a given $n$ is degenerate (equal in energy), regardless of its orbital angular momentum. Counting the total number of $(\ell, m_\ell)$ combinations for a given $n$ gives $n^2$ degenerate states (before accounting for electron spin, discussed below): for example, $n=2$ admits $\ell=0$ (one state, $m_\ell=0$) and $\ell=1$ (three states, $m_\ell=-1,0,1$), for $1+3=4=2^2$ states total. This $\ell$-independence of the energy is itself notable — it does *not* hold for multi-electron atoms ([Chapter 11](#ch-many-electron-atoms)), where the energy depends on $\ell$ as well as $n$, and is a special feature of the pure $1/r$ Coulomb potential (technically, a signature of a hidden extra symmetry, beyond ordinary rotational symmetry, unique to the $1/r$ potential).
 
+:::{dropdown} The Hidden Symmetry Behind ℓ-Independent Degeneracy
+Ordinary three-dimensional rotational symmetry guarantees that energy cannot depend on $m_\ell$, since no direction in space is special — but it says nothing about $\ell$. A generic central potential's energy levels *do* depend on $\ell$, and indeed they do for every atom with more than one electron ([Chapter 11](#ch-many-electron-atoms)). Hydrogen's extra, "accidental" $\ell$-independence traces back to a conserved quantity unique to the exact $1/r$ potential: the classical **Laplace–Runge–Lenz vector**,
+
+$$
+\vec A = \vec p\times\vec L - \frac{m_ee^2}{4\pi\epsilon_0}\,\hat r,
+$$
+
+which points from the focus of a classical Kepler orbit toward its perihelion and is constant in time only for a force that falls off as *exactly* $1/r^2$ — not $1/r^{2.01}$, not $1/r^{1.99}$. Quantum mechanically, $\vec A$ becomes an operator that commutes with the Hamiltonian and connects states of different $\ell$ at the same $n$, enlarging the symmetry governing hydrogen from ordinary three-dimensional rotations, $SO(3)$, to a larger four-dimensional rotation group, $SO(4)$, whose representations turn out to be exactly the $n^2$-fold degenerate multiplets observed. This is the same underlying fact about the $1/r^2$ force law that makes classical Kepler orbits close on themselves without precessing — the classical and quantum "accidents" are one and the same.
+:::
+
 ## Wave Functions and Probability Distributions
 
 The full wave functions, $\psi_{n\ell m_\ell}(r,\theta,\phi) = R_{n\ell}(r)\,Y_{\ell m_\ell}(\theta,\phi)$, have structure worth examining qualitatively even without their explicit algebraic form. The ground state, $\psi_{100}$, is spherically symmetric ($\ell=0$, so $Y_{00}$ is constant) and decays exponentially, $R_{10}(r) \propto e^{-r/a_0}$, where
@@ -107,6 +129,10 @@ a_0 = \frac{4\pi\epsilon_0\hbar^2}{m_ee^2} = 0.0529\ \text{nm}
 $$
 
 is the **Bohr radius** — reappearing here not as the radius of a Bohr orbit but as the natural length scale over which the ground-state probability density falls off. The **radial probability distribution**, $P(r) = r^2|R_{n\ell}(r)|^2$ (the probability per unit $r$ of finding the electron at distance $r$ from the nucleus, obtained by integrating $|\psi|^2$ over all angles at fixed $r$), peaks at $r = a_0$ for the ground state — the most probable electron-nucleus distance in hydrogen's ground state is exactly the Bohr radius, even though the electron has zero orbital angular momentum and hence, unlike in the Bohr picture, is not "orbiting" in any classical sense.
+
+:::{warning}
+"Most probable radius" is not the same thing as "average radius," and for hydrogen the two are not equal except by coincidence. The ground state's $P(r)$ peaks at $r=a_0$, but the curve falls off more gently on the outside of that peak than it rises on the inside, so the distribution is skewed toward larger $r$ — enough that the average $\langle r\rangle = \int_0^\infty rP(r)\,dr$ works out to $\tfrac32a_0$, fifty percent farther out than the peak. Don't assume a probability distribution is symmetric about its maximum just because it has a single, well-defined peak.
+:::
 
 Written out in full, with proper normalization, the lowest few radial wave functions are
 
@@ -128,6 +154,10 @@ Radial probability distributions $P(r)=r^2|R_{n\ell}(r)|^2$ for the six lowest d
 ```
 
 More generally, $R_{n\ell}(r)$ has $n-\ell-1$ radial nodes (points, other than $r=0$ and $r=\infty$, where the probability density vanishes), and the angular functions $Y_{\ell m_\ell}(\theta,\phi)$ have angular nodes (nodal planes or cones) whose count and shape depend on $\ell$ and $m_\ell$ — giving rise to the familiar $s$ (spherical), $p$ (dumbbell-shaped, with a single nodal plane through the origin), and $d$-orbital shapes used throughout chemistry ([Chapter 12](#ch-molecular-structure)) to describe electron distributions in atoms and molecules.
+
+:::{margin}
+**Where the letters come from.** $s,p,d,f$ for $\ell=0,1,2,3$ are historical leftovers from nineteenth-century spectroscopy, abbreviating **s**harp, **p**rincipal, **d**iffuse, and **f**undamental — descriptions of how the corresponding spectral lines *looked*, decades before anyone knew what $\ell$ was. Past $f$, the letters simply continue alphabetically ($g,h,\ldots$).
+:::
 
 ### The Effective Potential and the Centrifugal Barrier
 
@@ -157,6 +187,10 @@ The **Rydberg formula** is simply $E_n=-13.6\ \text{eV}/n^2$ rewritten as a wave
 $$
 \frac{1}{\lambda} = R\left(\frac{1}{n_f^2}-\frac{1}{n_i^2}\right), \qquad R = 1.097\times10^7\ \text{m}^{-1}.
 $$
+
+:::{margin}
+**Two different $R$'s.** The Rydberg constant $R$ used here is unrelated to the radial wave function $R_{n\ell}(r)$ used earlier in this chapter — an unfortunate but standard notational collision. A bare $R$ in a wavelength formula and an $R$ carrying two subscripts and an $r$-dependence are always distinguishable from context.
+:::
 
 Find (a) the wavelength of $\text{H}_\alpha$, the first (longest-wavelength) line of the Balmer series ($n_i=3\to n_f=2$), and (b) the Balmer series limit.
 
@@ -284,6 +318,10 @@ within about a factor of four of the measured value — entirely appropriate for
 
 The same coupling, applied to the *proton's* magnetic moment rather than the electron's, is the basis of magnetic resonance imaging, and {numref}`Figure %s <fig:ch10-mri-sim>` is a working model of it. A static field along $z$ splits the two spin orientations by $\Delta E = g\mu_N B$, which for a proton in a $1\ \text{T}$ field falls in the radio band; a transverse radio-frequency field tuned to exactly that frequency drives transitions between them, and the resonance is sharp enough that a deliberate spatial *gradient* in $B$ makes the resonant frequency a map of position. Everything in the sequence — the splitting proportional to $B$, the resonance condition $hf = \Delta E$, the return to equilibrium afterwards — is this section's physics with $\mu_B$ replaced by the nuclear magneton.
 
+:::{margin}
+**Nuclear magneton.** $\mu_N \equiv e\hbar/2m_p$, built the same way as the Bohr magneton $\mu_B$ but with the much larger proton mass $m_p$ in place of $m_e$. Since $m_p\approx1836\,m_e$, $\mu_N\approx\mu_B/1836$ — nuclear magnetic effects are intrinsically about a thousand times weaker than electronic ones, which is part of why MRI needs strong fields and sensitive receivers.
+:::
+
 ```{phet-legacy} mri
 :sim-name: Simplified MRI
 :label: fig:ch10-mri-sim
@@ -300,6 +338,10 @@ $$
 $$
 
 (with no similarly strict restriction on $\Delta n$). Transitions violating this rule (e.g., $2s \to 1s$, both $\ell=0$) are called **forbidden transitions** — not absolutely impossible, but strongly suppressed, occurring (if at all) only through much slower, higher-order processes. The selection rule is why, for instance, the observed hydrogen spectral series (Lyman, Balmer, Paschen, etc., corresponding to transitions ending on $n_f = 1, 2, 3,\ldots$) show specific line patterns rather than a line for every conceivable pair of levels.
+
+:::{tip}
+When checking whether a transition is allowed, check $\Delta\ell$ first and don't spend time on $\Delta n$ — the selection rule places no restriction on $n$ at all, only on $\ell$. A quick way to keep this straight while scanning a level diagram grouped by orbital letter: an allowed electric-dipole transition always moves exactly one letter over ($s\leftrightarrow p$, $p\leftrightarrow d$, etc.), never staying within the same letter and never skipping one, regardless of how far it jumps between $n$ values.
+:::
 
 ## Summary
 

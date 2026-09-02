@@ -32,6 +32,10 @@ $$
 
 or, compactly, $-\dfrac{\hbar^2}{2m}\nabla^2\psi + V\psi = E\psi$, where $\nabla^2$ is the Laplacian operator. As in one dimension, $|\psi(x,y,z)|^2\,dV$ gives the probability of finding the particle in the volume element $dV$ about $(x,y,z)$, and $\psi$ must be normalizable: $\int |\psi|^2\, dV = 1$.
 
+:::{margin}
+**The Laplacian.** $\nabla^2 = \dfrac{\partial^2}{\partial x^2}+\dfrac{\partial^2}{\partial y^2}+\dfrac{\partial^2}{\partial z^2}$ is a single, coordinate-independent operator; later in this chapter it reappears written in spherical coordinates, where it looks more complicated but means exactly the same thing.
+:::
+
 When the potential is **separable in Cartesian coordinates**, $V(x,y,z) = V_1(x) + V_2(y) + V_3(z)$, the equation can be solved by seeking product solutions $\psi(x,y,z) = X(x)Y(y)Z(z)$, which reduces the problem to three independent one-dimensional Schrödinger equations, one per coordinate, each solved exactly as in [Chapter 8](#ch-the-schrodinger-equation). For a **3D infinite box** of side lengths $L_x, L_y, L_z$ (a direct generalization of the infinite square well), this gives
 
 $$
@@ -39,6 +43,10 @@ E_{n_x,n_y,n_z} = \frac{h^2}{8m}\left(\frac{n_x^2}{L_x^2} + \frac{n_y^2}{L_y^2} 
 $$ (eq:ch09-box-energy)
 
 with three independent quantum numbers, one per dimension. A notable feature not seen in one dimension: for a cubic box ($L_x=L_y=L_z=L$), distinct combinations of $(n_x,n_y,n_z)$ — e.g., $(2,1,1)$, $(1,2,1)$, $(1,1,2)$ — can give the *same* total energy. This is called **degeneracy**, and it is a recurring feature of higher-dimensional quantum systems, generally traceable to an underlying symmetry of the potential (here, the equivalence of the three directions in a cube).
+
+:::{tip}
+Before grinding through a degeneracy count case by case, look at the potential's symmetry first. A cubic box ($L_x=L_y=L_z$) is invariant under permuting $x, y, z$, so energies depend only on the *set* $\{n_x,n_y,n_z\}$, and permutations of a given triple are automatically degenerate — no need to check them one at a time. If only two sides are equal, only swaps of those two are guaranteed to be degenerate; if all three sides differ, don't expect any exact degeneracies at all beyond numerical coincidence.
+:::
 
 ### Worked Example: A Rectangular Quantum Dot
 
@@ -70,6 +78,10 @@ $$
 
 and already illustrate the general pattern. The $\ell=0$ harmonic, $Y_0^0$, is completely independent of $\theta$ and $\phi$ — an $s$-state wave function is **spherically symmetric**, with a probability density depending only on $r$, the same in every direction from the center. The $\ell=1$ harmonics depend on angle: $Y_1^0$, proportional to $\cos\theta$, is largest along the $\pm z$-axis and vanishes in the $xy$-plane (a $p_z$-type angular distribution, in the language used for atomic orbitals in [Chapter 10](#ch-the-hydrogen-atom)), while $Y_1^{\pm1}$, proportional to $\sin\theta\,e^{\pm i\phi}$, is largest in the $xy$-plane and vanishes along the $z$-axis. Each higher $\ell$ introduces additional angular structure — more lobes, more angular nodes — but, crucially, the same three functions $Y_1^0, Y_1^{+1}, Y_1^{-1}$ describe the angular dependence of a $p$-state electron in hydrogen, a $p$-state neutron in a nuclear shell-model potential, or a $p$-state particle in the isotropic oscillator discussed later in this chapter, since (as already emphasized) the angular equation and its solutions never reference $V(r)$ at all.
 
+:::{margin}
+**Counting nodes.** The number of angular nodes (surfaces on which $Y_\ell^{m_\ell}=0$) in a spherical harmonic is exactly $\ell$: zero for $Y_0^0$, one for each $Y_1^{m_\ell}$, and so on — the same node-counting logic used for 1D bound states in [Chapter 8](#ch-the-schrodinger-equation).
+:::
+
 ### The Radial Equation and the Centrifugal Barrier
 
 Substituting $\psi = R(r)Y(\theta,\phi)$ into the full Schrödinger equation and separating variables reduces the radial part to an ordinary differential equation for $R(r)$. It is standard, and illuminating, to write this in terms of $u(r) \equiv rR(r)$, in which case the radial equation takes a form directly analogous to a *one-dimensional* Schrödinger equation for $u(r)$ on the half-line $r>0$:
@@ -79,6 +91,28 @@ $$
 $$
 
 where $\ell$ is the orbital angular momentum quantum number introduced below. The extra term, $\hbar^2\ell(\ell+1)/2mr^2$, is called the **centrifugal barrier**: it behaves as an additional repulsive potential that grows without bound as $r\to 0$ (for any $\ell>0$), pushing the particle's radial probability density away from the origin — the quantum-mechanical counterpart of the classical fact that a particle with nonzero angular momentum orbiting a center cannot pass through that center without first radiating away or otherwise losing its angular momentum. For $\ell=0$ (an **s-state**, in the spectroscopic notation below), the centrifugal barrier vanishes entirely, and only $\ell=0$ states can have a nonvanishing probability density exactly at $r=0$ — a fact used directly in [Chapter 10](#ch-the-hydrogen-atom) to explain, for instance, which hydrogen atomic states can undergo processes that require the electron to overlap with the nucleus.
+
+:::{dropdown} Deriving the Radial Equation for u(r) = rR(r)
+Separating $\psi=R(r)Y(\theta,\phi)$ in the full Schrödinger equation leaves $R(r)$ obeying
+
+$$
+-\frac{\hbar^2}{2m}\frac{1}{r^2}\frac{d}{dr}\!\left(r^2\frac{dR}{dr}\right) + \left[V(r)+\frac{\hbar^2\ell(\ell+1)}{2mr^2}\right]R = ER,
+$$
+
+with the $\ell(\ell+1)$ eigenvalue supplied by the angular equation. The first term mixes a first and second derivative of $R$, which is exactly what the substitution $u(r)\equiv rR(r)$, i.e. $R=u/r$, is designed to clean up:
+
+$$
+\frac{d}{dr}\!\left(r^2 \frac{dR}{dr}\right) = \frac{d}{dr}\!\left[r^2\frac{d}{dr}\left(\frac{u}{r}\right)\right] = \frac{d}{dr}\!\left(r\frac{du}{dr}-u\right) = r\frac{d^2u}{dr^2}.
+$$
+
+Dividing the radial equation by $r$ and substituting this result gives
+
+$$
+-\frac{\hbar^2}{2m}\frac{d^2u}{dr^2} + \left[V(r)+\frac{\hbar^2\ell(\ell+1)}{2mr^2}\right]u = Eu,
+$$
+
+exactly the one-dimensional-looking form quoted in the main text. The simplification comes with a boundary condition: since $R(r)=u(r)/r$ must stay finite as $r\to0$, normalizability requires $u(0)=0$ — playing the same role here that $\psi(0)=0$ plays at the rigid wall of a one-dimensional infinite well.
+:::
 
 ## Orbital Angular Momentum
 
@@ -94,6 +128,10 @@ $$
 
 where $\ell$ is the **orbital angular momentum quantum number** and $m_\ell$ is the **magnetic quantum number**, so named because $L_z$ determines how the system's energy shifts in an external magnetic field ([Chapter 11](#ch-many-electron-atoms)). For a given $\ell$, there are $2\ell+1$ allowed values of $m_\ell$, corresponding to $2\ell+1$ distinct orientations of the angular momentum vector relative to the chosen $z$-axis — a specific, testable manifestation of **space quantization**: the orbital angular momentum vector does not merely have a quantized *length*, it can only point in a discrete set of directions relative to an external axis, rather than any direction whatsoever as classical mechanics would allow.
 
+:::{warning}
+The bound $\ell \le n-1$ quoted above is easy to mistake for a universal law of quantum mechanics — it isn't. That particular relationship between $n$ and $\ell$ is a special feature of the Coulomb potential, worked out in [Chapter 10](#ch-the-hydrogen-atom), where the radial equation happens to tie the two labels together. For a generic central potential, $\ell$ simply runs over $0,1,2,\ldots$ with no ceiling imposed by $n$; the isotropic harmonic oscillator later in this chapter is a clean counterexample, where $n_r$ and $\ell$ combine into $N=2n_r+\ell$ rather than one bounding the other.
+:::
+
 Two features are worth emphasizing, since both run against classical intuition. First, $L = \sqrt{\ell(\ell+1)}\hbar$, not $\ell\hbar$ — the "extra" factor means the angular momentum vector's length is always slightly *larger* than its maximum possible $z$-component, $m_{\ell,\max}\hbar = \ell\hbar$; the vector can never point exactly along the $z$-axis. Second, because $L_x$ and $L_y$ are not simultaneously measurable with $L_z$, only the magnitude $L$ and a single component $L_z$ can be assigned definite values at once — the other two components remain fundamentally indeterminate, consistent with the vector never lying exactly along any single axis.
 
 Historically, states of a given $\ell$ are labeled by spectroscopic letters inherited from early atomic spectroscopy: $\ell = 0,1,2,3,4,\ldots$ are denoted $s, p, d, f, g,\ldots$ respectively — a labeling convention used throughout atomic physics (Chapters [10](#ch-the-hydrogen-atom)–[11](#ch-many-electron-atoms)) and retained today purely by tradition.
@@ -107,6 +145,10 @@ $$
 $$
 
 for an electron of charge $-e$, directed opposite to $\vec L$ because the electron's charge is negative. Placed in an external magnetic field $\vec B$ along the $z$-axis, this moment contributes an additional term to the electron's energy, $-\vec\mu_L\cdot\vec B \propto m_\ell$, proportional directly to the magnetic quantum number: each of the $2\ell+1$ otherwise energy-degenerate orientations of $\vec L$ acquires a distinct energy shift once a magnetic field is applied, splitting a single spectral line into $2\ell+1$ closely spaced components. This splitting — the (normal) **Zeeman effect** — was observed spectroscopically well before quantum mechanics existed and is precisely why $m_\ell$ earned its name: it is the quantum number that controls how atomic energy levels respond to an external magnetic field, a connection developed quantitatively in [Chapter 10](#ch-the-hydrogen-atom) and [Chapter 11](#ch-many-electron-atoms), alongside the further complication (electron spin) required to explain the full richness of observed atomic spectra in a magnetic field.
+
+:::{margin}
+**Same letter, two meanings.** In $\vec\mu_L=-\dfrac{e}{2m}\vec L$, the $m$ is the electron's *mass*; the magnetic quantum number $m_\ell$, used throughout this chapter, is a completely different, dimensionless number specifying orientation. Watch for both letters sitting side by side in expressions like this one.
+:::
 
 That a magnetic field sorts a beam into a discrete number of orientations —
 rather than the continuum a classical dipole would give — is the content of
@@ -122,6 +164,10 @@ Monte Carlo counts accumulate alongside the analytic quantum prediction, so the
 $2\ell+1$ (or, for spin, $2s+1$) discrete outcomes can be checked against the
 statistics.
 ```
+
+:::{note}
+When Otto Stern and Walther Gerlach ran this experiment in 1922, quantum spin had not yet been proposed — Uhlenbeck and Goudsmit would not put it forward until 1925. Stern and Gerlach interpreted their two discrete silver-atom deflections as direct evidence for the *orbital* space quantization derived above, and the result was celebrated for exactly that reason. It later became clear that a silver atom's outer electron is in an $s$-state ($\ell=0$, hence zero orbital magnetic moment — see the problems at the end of this chapter); the splitting Stern and Gerlach actually observed comes entirely from electron spin, a genuinely new form of angular momentum with no classical analog, introduced properly in [Chapter 10](#ch-the-hydrogen-atom).
+:::
 
 ### Worked Example: The Vector Model for $\ell=2$
 
@@ -157,6 +203,10 @@ $$
 
 (a cyclic pattern in $x\to y\to z\to x$), together with $[\hat L^2, \hat L_z] = 0$. Two operators that do not commute cannot, in general, have simultaneous eigenstates — precisely the mathematical statement of the uncertainty principle applied to angular momentum, directly analogous to the position–momentum commutator underlying the Heisenberg relation of [Chapter 7](#ch-wave-properties-of-particles). Because $\hat L^2$ commutes with $\hat L_z$ (but not with $\hat L_x$ or $\hat L_y$ individually), a quantum state can be prepared with simultaneously sharp values of $L$ and $L_z$ — exactly the states labeled by $\ell$ and $m_\ell$ above — but never with sharp values of $L$, $L_z$, and $L_x$ all at once.
 
+:::{seealso}
+The impossibility of jointly sharp $L_x$, $L_y$, $L_z$ is the same phenomenon, in different clothing, as the position–momentum uncertainty relation built from $[\hat x,\hat p_x]=i\hbar$ in [Chapter 7](#ch-wave-properties-of-particles): in both cases it is the failure of two operators to commute that forbids any state from having simultaneously sharp values of the corresponding observables.
+:::
+
 ## The Three Quantum Numbers of a Central-Potential Bound State
 
 Solving the full three-dimensional problem for a bound state in a central potential $V(r)$ produces exactly three quantum numbers, each arising from a separate boundary condition in the separation of variables:
@@ -176,6 +226,10 @@ E_{n_x,n_y,n_z} = \left(n_x+n_y+n_z+\tfrac32\right)\hbar\omega \equiv \left(N + 
 $$
 
 depending only on the *sum* $N$, not on how it is distributed among $n_x$, $n_y$, $n_z$ individually — a much higher degree of degeneracy than the cubic infinite box, precisely because the isotropic oscillator has continuous rotational symmetry (any direction is equivalent to any other) rather than merely the discrete symmetry of a cube's faces. The same energy levels can equally well be labeled, via the spherical-coordinate separation of this chapter, by a radial quantum number and $\ell$, with $N = 2n_r+\ell$; the two labeling schemes describe the same physical states, related by a change of basis, and the total degeneracy of a given level $N$ works out to $(N+1)(N+2)/2$.
+
+:::{margin}
+**Where $(N+1)(N+2)/2$ comes from.** This is the number of ways to write a fixed total $N$ as an ordered sum of three non-negative integers, $n_x+n_y+n_z=N$ — a standard "stars and bars" counting result, independent of any physics.
+:::
 
 This may look like a mathematical curiosity, but the isotropic harmonic oscillator is directly useful: it is the starting point for the nuclear **shell model** ([Chapter 13](#ch-nuclear-physics)), in which each nucleon moves, to a first approximation, in an average central potential produced by all the other nucleons — a potential that resembles a finite well but is often approximated, for the purpose of a first, analytically tractable calculation, by an isotropic harmonic oscillator. The oscillator's degenerate energy levels, once a spin-orbit correction (introduced in [Chapter 13](#ch-nuclear-physics)) is added, reproduce the empirically observed nuclear **magic numbers** — proton or neutron counts (2, 8, 20, 28, 50, 82, 126) at which nuclei are unusually stable — in much the same way that filled electron shells explain the chemical stability of the noble gases ([Chapter 11](#ch-many-electron-atoms)).
 

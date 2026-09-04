@@ -8,8 +8,12 @@
   },
   "description": "MyST Markdown textbook on Modern Physics",
   "scripts": {
+    "check:toolchain": "node scripts/check-toolchain.mjs",
+    "prestart": "npm run check:toolchain",
     "start": "myst start",
+    "prebuild": "npm run check:toolchain",
     "build": "myst build --html",
+    "precheck": "npm run check:toolchain",
     "check": "npm run check:project && npm test && npm run build -- --check-links",
     "check:project": "node scripts/validate-project.mjs",
     "check:figures": "scripts/check-figures.sh",

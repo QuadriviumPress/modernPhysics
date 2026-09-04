@@ -173,8 +173,7 @@ rather than a break, but it is why the stylesheet is registered in `myst.yml`.
 `{openphysics}` uses `Baton/screenshots/<Repo>.png`, not the `screenshots/wide.png`
 each simulation publishes on its own Pages site. The latter is the PWA manifest
 asset — a generic splash screen, byte-identical across most of the fleet. Baton's
-are captures of the running simulation, refreshed by its own workflow, and cover
-all 37 catalogued simulations one for one.
+are captures of the running simulations, refreshed by Baton's own workflow.
 
 `{phet}` uses `<sim>-600.png`, which is the largest size PhET publishes.
 `{phet-legacy}` uses the same name from the project directory rather than from
@@ -225,13 +224,13 @@ or PhET changes its Pages layout, `PROVIDERS` is the only thing to update.
 `Unhandled LaTeX conversion for node of "<type>"` — then drops it. Five of the
 types this book leans on are not in that set:
 
-| Node | Written as | Count | Without the plugin |
-|---|---|---|---|
-| `exercise` | `:::{exercise}` | 210 | every chapter's Problems section vanishes |
-| `solution` | `:::{solution}` | 210 | every worked solution vanishes |
-| `aside` | `:::{margin}` | 49 | every margin note vanishes |
-| `details` | `:::{dropdown}` | 14 | every dropdown body vanishes |
-| `iframe` | the simulation directives | 41 | intended — the sibling screenshot carries it |
+| Node | Written as | Without the plugin |
+|---|---|---|
+| `exercise` | `:::{exercise}` | every chapter's Problems section vanishes |
+| `solution` | `:::{solution}` | every worked solution vanishes |
+| `aside` | `:::{margin}` | every margin note vanishes |
+| `details` | `:::{dropdown}` | every dropdown body vanishes |
+| `iframe` | the simulation directives | intended — the sibling screenshot carries it |
 
 Since a plugin cannot supply a renderer, `export.mjs` rewrites those nodes into
 ones the renderer already understands, and only while an export is being built:
@@ -267,7 +266,7 @@ Two environment variables steer it. Neither is set for `myst start` or
 
 | Variable | Values | Effect |
 |---|---|---|
-| `MYST_PRINT` | `full`, `student` | Which edition. `student` drops all 210 solutions. Unset means the website — the plugin does nothing. |
+| `MYST_PRINT` | `full`, `student` | Which edition. `student` drops all solutions. Unset means the website — the plugin does nothing. |
 | `MYST_SITE_URL` | a base URL | Only for chapter offprints. An offprint holds one chapter, so its "see Chapter 7" references leave the file and point at the website. Leave unset for the whole book, where the jump should stay inside the PDF. |
 
 `../scripts/build-exports.sh` sets both correctly for each artifact; prefer it
@@ -275,8 +274,8 @@ to calling `myst build` by hand.
 
 ## Cross-references in the PDF
 
-The book says "see Chapter 7" 251 times, and MyST resolves each one to a `link`
-node carrying both the target's identifier and its *website* URL. Left alone,
+The book contains many cross-chapter references, and MyST resolves each one to
+a `link` node carrying both the target's identifier and its *website* URL. Left alone,
 `myst-to-tex` writes the URL — `\href{/ch-07-wave-properties-of-particles}{...}`
 — which in a PDF is a dead relative path. `export.mjs` rewrites them to
 `\hyperref`, and puts a matching `\label` at the top of each chapter, taken from

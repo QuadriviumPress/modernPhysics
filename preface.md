@@ -42,7 +42,7 @@ The website is the primary edition. From the same source the book also builds a 
 
 ## License and sources
 
-This book is released under the Creative Commons Attribution–NonCommercial–ShareAlike 4.0 International License. It adapts openly licensed material — principally OpenStax *University Physics Volume 3* and *Chemistry 2e*, together with several texts from Benjamin Crowell's Light and Matter series and Paul D'Alessandris's *Spiral Modern Physics* — rewritten, reorganized, and extended rather than copied. The per-chapter attribution ledger is the file `SOURCES.md` in the book's repository. The figures are original; the simulations remain under the licences of their publishers.
+This book is released under the Creative Commons Attribution–NonCommercial–ShareAlike 4.0 International License. It adapts openly licensed material — principally OpenStax *University Physics Volume 3* and *Chemistry 2e*, together with several texts from Benjamin Crowell's Light and Matter series and Paul D'Alessandris's *Spiral Modern Physics* — rewritten, reorganized, and extended rather than copied. The per-chapter attribution ledger is the file `SOURCES.md` in the book's repository. Diagrams and computed figures created for the book share its license; historical photographs and simulations retain the licenses stated in that ledger.
 
 Corrections and suggestions are welcome. An open textbook is a draft that happens to be useful, and it improves when its readers say so.
 

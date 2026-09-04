@@ -72,8 +72,7 @@ const PROVIDERS = {
      * `screenshots/wide.png`, but that is the PWA manifest asset -- a generic
      * splash screen, byte-identical across most of the fleet. Baton's
      * `screenshots/<Repo>.png` are captures of the running simulation, kept
-     * current by its refresh-screenshots workflow, and cover all 37 catalogued
-     * simulations one-for-one.
+     * current by its refresh-screenshots workflow.
      *
      * @param {string} id - Repository name, e.g. `SpecialRelativity`.
      * @param {Object} opts - Resolved directive options.

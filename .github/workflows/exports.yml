@@ -4,8 +4,8 @@
 # This is the only place they are built. deploy.yml used to run the same steps
 # on every push to main, which cost every one-word prose fix a TeX Live install
 # and a XeLaTeX pass; it now downloads this workflow's most recent successful
-# artifacts instead. So the download menu on the published site tracks the last
-# tag (or the last manual run here), not the tip of main.
+# artifacts instead. So the download menu on the published site tracks the most
+# recent monthly, tagged, or manually requested export, not every commit.
 #
 # Keeping it out of ci.yml also keeps pull request feedback fast and HTML-only:
 # the TeX Live and Inkscape install alone is a few minutes.
@@ -16,8 +16,9 @@ name: Exports
 on:
   workflow_dispatch:
   schedule:
-    # Refresh downloadable artifacts before GitHub's 90-day expiry.
-    - cron: '17 4 1 */2 *'
+    # Build once per month and keep the downloadable editions reasonably fresh
+    # without installing the large print toolchain on ordinary pushes.
+    - cron: '17 4 1 * *'
   push:
     tags: ['v*']
 

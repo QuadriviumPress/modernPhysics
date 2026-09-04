@@ -29,8 +29,6 @@ before use, even for sources listed here.
 
 ## Per-chapter attribution
 
-Fill in the exact sections adapted as each chapter is drafted.
-
 | Chapter | Primary source | Section(s) | Secondary source(s) |
 |---|---|---|---|
 | 1. The Need for Relativity | Crowell, *Modern Revolution in Physics*, ch. 1 "Relativity" | Historical motivation, Galilean relativity, Michelson–Morley experiment, ether-rescue attempts, Einstein's postulates | OpenStax Vol. 3 §5.1–5.2. Kennedy–Thorndike experiment, Fizeau experiment, and stellar-aberration derivation are standard historical/textbook material not drawn from a specific licensed source. |
@@ -50,14 +48,17 @@ Fill in the exact sections adapted as each chapter is drafted.
 
 ## Figures
 
-Static figures are original SVG schematics created for this book by Martin Veillette and are
-redrawn rather than copied from source page images. They are included under the book's
-CC-BY-NC-SA-4.0 license.
+Static diagrams and computed figures created for this book by Martin Veillette
+are drawn from scratch rather than copied from source page images. They are
+included under the book's CC-BY-NC-SA-4.0 license.
 
-Figures for Chapters 4, 5, and 10–14 are generated programmatically with matplotlib rather than
-drawn by hand. The generating source lives in [`scripts/figures/`](scripts/figures/) and the
-resulting SVGs are committed to [`images/`](images/), because the GitHub Pages build runs
-`myst build --html` only and has no Python available. Regenerate them with:
+Computed plots, schematics, solution diagrams, simulation fallbacks, and brand
+assets are generated programmatically. The source lives in
+[`scripts/figures/`](scripts/figures/) and the results are committed to
+[`images/`](images/), because the GitHub Pages build runs `myst build --html`
+only and has no Python available. The complete command inventory and figure
+conventions are maintained in [`scripts/figures/README.md`](scripts/figures/README.md).
+Typical chapter-figure commands include:
 
 ```bash
 python3 scripts/figures/ch04_figures.py
@@ -74,13 +75,13 @@ python3 scripts/figures/ch14_figures.py
 Both the scripts and their output are original work by the author, released under the book's
 CC-BY-NC-SA-4.0 license. No figure is traced from or derived from a source image; each is
 computed directly from the formula it illustrates, or drawn from scratch as a schematic.
-Historical photographs added to Chapters 1–3, 10–11, and 13–14 are used under their stated
+Historical photographs added to Chapters 1–3 and 11–14 are used under their stated
 public-domain or Creative Commons terms:
 
-- *Michelson morley experiment 1887.jpg*: Case Western Reserve University, circa 1887; public domain, [Wikimedia Commons file page](https://commons.wikimedia.org/wiki/File:Michelson_morley_experiment_1887.jpg).
-- *Hippolyte Fizeau.jpg*: Charles Reutlinger, before 1896; Académie des Sciences / Smithsonian Institution Libraries; public domain, [Wikimedia Commons file page](https://commons.wikimedia.org/wiki/File:Hippolyte_Fizeau.jpg).
-- *Albert Einstein photo 1921.jpg*: Underwood & Underwood, 1921; Library of Congress / Wikimedia Commons; public domain, [Wikimedia Commons file page](https://commons.wikimedia.org/wiki/File:Albert_Einstein_photo_1921.jpg).
-- *Bevatron interior (4675235347).jpg*: Daniel Parks, 2010; CC BY 2.0, [Wikimedia Commons file page](https://commons.wikimedia.org/wiki/File:Bevatron_interior_(4675235347).jpg).
+- *historical-michelson-morley-1887.jpg*: Case Western Reserve University, circa 1887; public domain, [Wikimedia Commons file page](https://commons.wikimedia.org/wiki/File:Michelson_morley_experiment_1887.jpg).
+- *historical-fizeau.jpg*: Charles Reutlinger, before 1896; Académie des Sciences / Smithsonian Institution Libraries; public domain, [Wikimedia Commons file page](https://commons.wikimedia.org/wiki/File:Hippolyte_Fizeau.jpg).
+- *historical-einstein-1921.jpg*: Underwood & Underwood, 1921; Library of Congress / Wikimedia Commons; public domain, [Wikimedia Commons file page](https://commons.wikimedia.org/wiki/File:Albert_Einstein_photo_1921.jpg).
+- *historical-bevatron.jpg*: Daniel Parks, 2010; CC BY 2.0, [Wikimedia Commons file page](https://commons.wikimedia.org/wiki/File:Bevatron_interior_(4675235347).jpg).
 - *historical-moseley.jpg*: AIP Emilio Segrè Visual Archives, W. F. Meggers Gallery of Nobel Laureates, circa 1914; public domain (CC Public Domain Mark 1.0), [Wikimedia Commons file page](https://commons.wikimedia.org/wiki/File:Henry_Moseley_(1887-1915).jpg).
 - *historical-linus-pauling-1962.jpg*: Nobel Foundation, 1962; public domain in Sweden (pre-1976, does not meet the Swedish threshold of originality), [Wikimedia Commons file page](https://commons.wikimedia.org/wiki/File:Linus_Pauling_1962.jpg).
 - *historical-becquerel.jpg*: Photograph of Henri Becquerel by Paul Nadar, before 1908; Smithsonian Institution Libraries (Dibner Library collection); public domain in the United States, [Wikimedia Commons file page](https://commons.wikimedia.org/wiki/File:Portrait_of_Antoine-Henri_Becquerel_(1852-1908),_Physicist.jpg).

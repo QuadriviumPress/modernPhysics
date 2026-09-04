@@ -11,9 +11,10 @@
 #         npm run build:exports            (all of it)
 #         npm run build:pdf                (the two book PDFs only)
 #
-# Requires: node + npm ci, a TeX Live with XeLaTeX and latexmk, Inkscape (MyST
-# converts the 89 SVG figures to PDF with it and with nothing else), and -- for
-# the DOCX -- pandoc and ImageMagick. See README.md.
+# Requires: Node 22 + npm 10, a TeX Live with XeLaTeX and latexmk, and Inkscape
+# (MyST converts SVG figures to PDF with it and with nothing else). The DOCX
+# additionally needs pandoc and poppler-utils; ImageMagick is an optional local
+# fallback for rasterization. See README.md.
 #
 # Two environment variables steer plugins/export.mjs; neither is set for the
 # website build, where the plugin is inert:
@@ -42,7 +43,7 @@ build_book() {
   # PDF, and it leaves behind the .tex that the DOCX is built from. Passing no
   # files would also rebuild all fourteen offprints.
   # MYST_SITE_URL is emptied, not just left alone: CI exports it for the
-  # offprint step, and inheriting it here would push all 251 of the book's own
+  # offprint step, and inheriting it here would push the book's own
   # chapter cross-references out to the web instead of jumping within the PDF.
   MYST_PRINT=full MYST_SITE_URL= npx myst build --tex
 }
@@ -64,7 +65,7 @@ build_chapters() {
 
 build_docx() {
   # Always rebuild the .tex first. Both editions write to the same directory, so
-  # whichever ran last owns it -- and a Word file silently missing all 210
+  # whichever ran last owns it -- and a Word file silently missing all
   # solutions is not a failure anyone would notice.
   build_book
   step "Word edition"

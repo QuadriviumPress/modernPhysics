@@ -20,15 +20,14 @@ Preview with `npm start`. Before submitting a change, run:
 npm run check
 ```
 
-This validates the hand-maintained sidebar against the chapter headings, tests
-the custom export transform, builds the site, and checks links.
+This validates chapter ordering and metadata, tests the custom export
+transform, builds the site, and checks links.
 
 ## Editing chapters
 
-Follow the heading, directive, and exercise conventions in `README.md`. If a
-numbered `##` heading changes, update its child entry in `myst.yml`; the project
-validator will report any mismatch. Every figure needs useful `:alt:` text and
-every reusable target needs a unique label.
+Follow the heading, directive, and exercise conventions in `README.md`. The
+page outline is derived from the numbered `##` headings automatically. Every
+figure needs useful `:alt:` text and every reusable target needs a unique label.
 
 Keep source attribution current in `SOURCES.md`. Record the source and license
 when adding adapted prose, data, photographs, or simulations.
@@ -50,7 +49,8 @@ The complete export toolchain is documented in `README.md`. Changes to
 `plugins/`, `templates/`, `scripts/build-exports.sh`, or `scripts/tex-to-docx.py`
 should be checked with at least one chapter offprint locally. The tagged-release
 workflow builds all editions and publishes the three book-level downloads as
-durable GitHub Release assets.
+durable GitHub Release assets. A separate monthly run refreshes workflow
+artifacts without rebuilding the print editions on ordinary pushes.
 
 ## Release checklist
 

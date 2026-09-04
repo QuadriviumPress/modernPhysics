@@ -5,8 +5,10 @@ theory, atomic and molecular structure, and nuclear and particle physics —
 written for a first course in modern physics following an introductory
 calculus-based physics sequence.
 
-This is an original work in progress, not a conversion of an existing
-published book.
+This is an open work in progress assembled in MyST rather than a conversion of
+an existing book. Its prose and problems adapt the openly licensed sources
+listed in `SOURCES.md`; its original diagrams and generated figures are created
+for this project.
 
 ## Structure
 
@@ -22,9 +24,9 @@ published book.
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — development, checks, and release checklist
 
 The book is organized into five parts (printed as `\part` dividers in the
-PDF; listed here for orientation). The website sidebar lists the preface,
-then the chapters — no part groupings — with each chapter’s numbered
-sections expandable underneath:
+PDF; listed here for orientation). The website sidebar lists the preface and
+chapters without part groupings. Numbered sections appear in each page's
+automatically generated outline:
 
 - **Part I — Relativity**: the need for relativity, special relativity,
   relativistic dynamics
@@ -37,10 +39,10 @@ sections expandable underneath:
 - **Part V — Nuclear and Particle Physics**: nuclear physics, elementary
   particles and the Standard Model
 
-Feel free to reorder, split, merge, or rename chapters in `myst.yml` as
-the material takes shape. If you rename a `##` reading section, update
-the matching sidebar entry under that chapter in `myst.yml` as well
-(`npm run check:project` reports mismatches).
+Chapter files are the source of truth for chapter order and membership. If a
+chapter is added, removed, or renamed, update both the website `toc` and the
+print export list in `myst.yml`; `npm run check:project` reports any mismatch.
+Section titles need no duplicate navigation entry.
 
 The printed book does not use `index.md`. It opens with the title and
 copyright pages from [`templates/book/template.tex`](templates/book/template.tex),
@@ -165,7 +167,7 @@ a set of chapter offprints, and a Word document — all into `exports/`, which i
 not committed.
 
 ```bash
-npm run build:exports    # everything below, about a minute
+npm run build:exports    # everything below; duration depends on the TeX toolchain
 npm run build:pdf        # the two book PDFs only
 npm run build:chapters   # the fourteen chapter offprints only
 npm run build:docx       # the Word edition only
@@ -221,14 +223,14 @@ the Word edition.
 
 Exports are built by
 [`.github/workflows/exports.yml`](.github/workflows/exports.yml), which runs on
-`v*` tags, every two months, and on demand — not on every push, since installing
+`v*` tags, monthly, and on demand — not on every push, since installing
 TeX Live and running XeLaTeX is comparatively expensive. Tagged builds publish
-the book-level files as durable GitHub Release assets; scheduled builds refresh
-the workflow artifacts used by sites without a tagged release.
-[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) prefers the latest
-release and falls back to the most recent successful export artifacts before
-building the site. Thus the downloads track the last release or export run,
-rather than every commit on `main`.
+the book-level files as durable GitHub Release assets; monthly builds refresh
+the workflow artifacts. [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)
+prefers the most recent successful export artifacts and falls back to the latest
+release if those artifacts are missing or expired. Thus the downloads are
+refreshed at most monthly unless a tag is pushed or an export is requested
+manually; ordinary pushes to `main` build HTML only.
 
 Development and release procedures are collected in
 [`CONTRIBUTING.md`](CONTRIBUTING.md).

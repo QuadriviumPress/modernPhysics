@@ -42,16 +42,20 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # These checks are fast and require no TeX, Inkscape, or Pandoc. Running
+      # them here also protects direct pushes to main that did not pass through
+      # pull-request CI.
+      - name: Validate project metadata and plugins
+        run: npm run check:project && npm test
+
       # `downloads:` in myst.yml points at exports/, so the PDFs and the Word
       # file have to be on disk before MyST builds the site or the download menu
       # comes out empty (a warning, not an error -- see the
       # static-action-file-copied rule).
       #
-      # They are no longer rebuilt from source on every push. Exports runs on
-      # `v*` tags and on demand; this takes the artifacts from its most recent
-      # successful run, whichever commit that was. So the site's download menu
-      # tracks the last release, not the tip of main -- push a tag, or run
-      # Exports by hand, when the print editions need to catch up.
+      # They are never rebuilt by this workflow. Exports runs monthly, on `v*`
+      # tags, and on demand. Prefer its newest unexpired artifacts so a monthly
+      # refresh can reach the site; a tagged release is the durable fallback.
       - name: Fetch the print editions from the last Exports run
         id: exports
         env:
@@ -59,25 +63,6 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p exports
-
-          # Release assets do not expire. Prefer them, then fall back to the
-          # latest workflow artifacts for repositories with no release yet.
-          release_dir=$(mktemp -d)
-          if gh release download --repo "$GITHUB_REPOSITORY" \
-            --pattern 'modern-physics.pdf' \
-            --pattern 'modern-physics-student.pdf' \
-            --pattern 'modern-physics.docx' \
-            --dir "$release_dir" \
-            && [ -f "$release_dir/modern-physics.pdf" ] \
-            && [ -f "$release_dir/modern-physics-student.pdf" ] \
-            && [ -f "$release_dir/modern-physics.docx" ]; then
-            mv "$release_dir"/* exports/
-            rm -rf "$release_dir"
-            echo "found=true" >> "$GITHUB_OUTPUT"
-            echo "source=latest GitHub release" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-          rm -rf "$release_dir"
 
           run_id=$(gh run list \
             --repo "$GITHUB_REPOSITORY" \
@@ -87,33 +72,55 @@ jobs:
             --json databaseId \
             --jq '.[0].databaseId // empty')
 
-          if [ -z "$run_id" ]; then
-            echo "::warning::No successful Exports run found. The site will build without its PDF and Word downloads; push a v* tag or run the Exports workflow to populate them."
-            echo "found=false" >> "$GITHUB_OUTPUT"
+          # Download each named artifact into a temporary directory first, so
+          # an expired or incomplete run cannot leave a mixed export set.
+          artifact_dir=$(mktemp -d)
+          if [ -n "$run_id" ]; then
+            artifacts_ok=true
+            for name in modern-physics-exports modern-physics-docx; do
+              gh run download "$run_id" \
+                --repo "$GITHUB_REPOSITORY" \
+                --name "$name" \
+                --dir "$artifact_dir" \
+                || artifacts_ok=false
+            done
+            if [ "$artifacts_ok" = true ] \
+              && [ -f "$artifact_dir/modern-physics.pdf" ] \
+              && [ -f "$artifact_dir/modern-physics-student.pdf" ] \
+              && [ -f "$artifact_dir/modern-physics.docx" ]; then
+              mv "$artifact_dir"/* exports/
+              rm -rf "$artifact_dir"
+              echo "found=true" >> "$GITHUB_OUTPUT"
+              echo "source=latest Exports workflow artifacts" >> "$GITHUB_OUTPUT"
+              echo "source_url=$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$run_id" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+          fi
+          rm -rf "$artifact_dir"
+
+          # Release assets do not expire, so retain them as the fallback if the
+          # newest workflow artifacts are absent, incomplete, or expired.
+          release_dir=$(mktemp -d)
+          if gh release download --repo "$GITHUB_REPOSITORY" \
+            --pattern 'modern-physics.pdf' \
+            --pattern 'modern-physics-student.pdf' \
+            --pattern 'modern-physics.docx' \
+            --dir "$release_dir" \
+            && [ -f "$release_dir/modern-physics.pdf" ] \
+            && [ -f "$release_dir/modern-physics-student.pdf" ] \
+            && [ -f "$release_dir/modern-physics.docx" ]; then
+            release_url=$(gh release view --repo "$GITHUB_REPOSITORY" --json url --jq '.url')
+            mv "$release_dir"/* exports/
+            rm -rf "$release_dir"
+            echo "found=true" >> "$GITHUB_OUTPUT"
+            echo "source=latest GitHub release" >> "$GITHUB_OUTPUT"
+            echo "source_url=$release_url" >> "$GITHUB_OUTPUT"
             exit 0
           fi
+          rm -rf "$release_dir"
 
-          # One `-n` per artifact on purpose: `gh run download` given a pattern
-          # nests each artifact in a directory named after it, and myst.yml
-          # expects the files directly under exports/.
-          for name in modern-physics-exports modern-physics-docx; do
-            gh run download "$run_id" \
-              --repo "$GITHUB_REPOSITORY" \
-              --name "$name" \
-              --dir exports \
-              || echo "::warning::Artifact $name is missing from Exports run $run_id (expired, or that run predates it)."
-          done
-
-          found=false
-          if [ -f exports/modern-physics.pdf ] \
-            && [ -f exports/modern-physics-student.pdf ] \
-            && [ -f exports/modern-physics.docx ]; then
-            found=true
-          fi
-          echo "found=$found" >> "$GITHUB_OUTPUT"
-          echo "source=Exports workflow artifacts" >> "$GITHUB_OUTPUT"
-          echo "run_id=$run_id" >> "$GITHUB_OUTPUT"
-          echo "run_url=$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$run_id" >> "$GITHUB_OUTPUT"
+          echo "::warning::No complete export set was found. Run the Exports workflow once to populate the site's PDF and Word downloads."
+          echo "found=false" >> "$GITHUB_OUTPUT"
 
       - name: Build HTML
         run: npx myst build --html --check-links
@@ -130,7 +137,7 @@ jobs:
             echo "## Print editions on this deploy"
             echo
             if [ "${{ steps.exports.outputs.found }}" = "true" ]; then
-              echo "Taken from [Exports run ${{ steps.exports.outputs.run_id }}](${{ steps.exports.outputs.run_url }})."
+              echo "Taken from [${{ steps.exports.outputs.source }}](${{ steps.exports.outputs.source_url }})."
               echo
               echo "| File | Size |"
               echo "|------|------|"

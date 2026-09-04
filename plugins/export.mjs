@@ -5,11 +5,11 @@
  * `Unhandled LaTeX conversion for node of "<type>"` -- then drops it. Five of
  * the types this book leans on are not in that set:
  *
- *   exercise   210   the entire Problems section of every chapter
- *   solution   210   every worked solution
- *   aside       49   every `{margin}` note
- *   details     14   every `{dropdown}`
- *   iframe      41   every simulation (intentional; see plugins/simulation.mjs)
+ *   exercise          the entire Problems section of every chapter
+ *   solution          every worked solution
+ *   aside             every `{margin}` note
+ *   details           every `{dropdown}`
+ *   iframe            every simulation (intentional; see plugins/simulation.mjs)
  *
  * Without this plugin a PDF of the book is missing all of them, silently apart
  * from a wall of build errors.
@@ -29,7 +29,7 @@
  *   resolved. Rewriting node types at document stage would lose both.
  * - **`MYST_PRINT` gates it.** The variable is unset for `myst build --html`
  *   and `myst start`, so the website is byte-for-byte unaffected. Set it to
- *   `full` or `student` for an export; `student` additionally drops all 210
+ *   `full` or `student` for an export; `student` additionally drops all
  *   solutions, which is the only difference between the two printed editions.
  *
  * Two things a naive rewrite gets wrong, and this one does not:
@@ -245,7 +245,7 @@ function rewrite( node ) {
     // its *website* URL, and the tex renderer writes the URL --
     // `\href{/ch-07-wave-properties-of-particles}{Chapter 7}` -- which in a PDF
     // is a dead relative path. Rewrite it to an internal jump instead. This is
-    // the single most-used cross-reference in the book: 251 of them, one for
+    // a frequently used cross-reference in the book, one for
     // every "see Chapter N" in the prose.
     //
     // A `{numref}` or `{eq}` reference is a `crossReference` rather than a
@@ -398,7 +398,7 @@ const exportTransform = {
     // Anchor the chapter. The renderer emits `\chapter{...}` immediately before
     // this content, so a `\label` at the very top of the body records the
     // chapter number and puts the hyperref anchor on the chapter's first page --
-    // which is where the 251 rewritten `link` nodes above expect to land.
+    // which is where the rewritten `link` nodes above expect to land.
     const label = pageLabel( vfile );
     if ( label && Array.isArray( node.children ) ) {
       node.children.unshift( tex( `\\label{${ label }}\n` ) );

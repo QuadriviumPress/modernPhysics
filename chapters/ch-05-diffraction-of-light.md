@@ -272,7 +272,7 @@ $$
 
 that is, whenever $m\,(a/d)$ is an integer. If $d/a$ is itself an integer, every $(d/a)$-th order is missing — for $d = 5a$ the missing orders are $m = \pm5, \pm10, \pm15,\ldots$, exactly as in the figure. If $d/a$ is a ratio of small integers, say $d/a = 5/2$, orders that are multiples of $5$ still vanish but nothing else does. If $d/a$ is irrational, no order is exactly missing, though those near an envelope zero are suppressed almost to nothing.
 
-**Missing orders are a measurement, not a curiosity.** Counting how many interference fringes fit inside the central diffraction maximum tells you $d/a$ directly, without measuring either $d$ or $a$: the central envelope spans $|\sin\theta| < \lambda/a$ and fringes are spaced by $\lambda/d$ in $\sin\theta$, so the visible orders are those with $|m| \le d/a - 1$ — that is, $2(d/a) - 1$ bright fringes inside the central envelope, with the orders at $|m| = d/a$ missing at its edges. Looking at a laboratory double-slit pattern and counting bright fringes between the first envelope zeros is therefore a genuine measurement of a ratio of two dimensions far too small to measure with a ruler.
+**Missing orders are a measurement, not a curiosity.** Counting how many interference fringes fit inside the central diffraction maximum can reveal $d/a$, without measuring either $d$ or $a$: the central envelope spans $|\sin\theta| < \lambda/a$ and fringes are spaced by $\lambda/d$ in $\sin\theta$. When $d/a=q$ is an integer, the visible orders are $|m|\le q-1$, giving $2q-1$ bright fringes inside the central envelope; the orders at $|m|=q$ are missing at its edges. For a noninteger ratio, use the integer orders satisfying $|m|<d/a$ instead; the count then gives the corresponding integer bound, while the missing-order pattern can identify a rational ratio. Looking at a laboratory double-slit pattern and counting bright fringes between the first envelope zeros is therefore a genuine measurement of a ratio of two dimensions far too small to measure with a ruler.
 
 #### Worked Example: Reading a Double-Slit Pattern
 
@@ -294,7 +294,7 @@ $$
 d\sin\theta = m\lambda, \qquad m = 0, \pm1, \pm2,\ldots
 $$
 
-with $d$ the spacing between adjacent rulings; their width scales as $1/N$ and their peak intensity as $N^2$. What is new is only that $N$ is now enormous — a $1\ \text{cm}$ beam on a grating with $600$ lines per millimeter illuminates $6000$ lines at once — so the maxima are not fringes but needle-sharp spectral lines. And of course the finite width of each ruling imposes a diffraction envelope, exactly as for the double slit, so some orders are weak or missing. (Precision gratings are *blazed*: each groove is cut at an angle chosen to steer the envelope's peak into a chosen order, so that most of the light ends up where it is wanted rather than in the useless $m = 0$ direction.)
+with $d$ the spacing between adjacent rulings; their width scales as $1/N$ and their peak intensity as $N^2$. What is new is only that $N$ is now enormous — a $1\ \text{cm}$ beam on a grating with $600$ lines per millimeter illuminates $6000$ lines at once — so the maxima are not fringes but needle-sharp spectral lines. And of course the finite width of each opening imposes a diffraction envelope, exactly as for the double slit, so some orders are weak or missing. (Precision gratings are *blazed*: each groove is cut at an angle chosen to steer the envelope's peak into a chosen order, so that most of the light ends up where it is wanted rather than in the useless $m = 0$ direction.)
 
 #### Dispersion
 
@@ -306,7 +306,7 @@ $$
 
 so the spectrum spreads out more in higher orders and with finer rulings. It also shows that the orders eventually overlap: the red end of order $m$ can fall on top of the blue end of order $m+1$, which is why spectrometers often place a coarse filter in front of the detector to isolate a single order.
 
-Since $|\sin\theta| \le 1$, the highest order available is $m_{\max} = \lfloor d/\lambda\rfloor$ — a grating so fine that $d < \lambda$ produces no spectrum at all beyond $m = 0$.
+Since $|\sin\theta| \le 1$, the mathematical upper bound on the order is $m_{\max} = \lfloor d/\lambda\rfloor$ — a grating so fine that $d < \lambda$ produces no spectrum at all beyond $m = 0$. If $d/\lambda$ is exactly an integer, that limiting order is at grazing angle ($\theta=90^\circ$) and is not usable in an ordinary detector geometry.
 
 :::{tip}
 Before trusting any computed grating or Bragg angle, check that the sine you solved for is actually $\le 1$. Both $d\sin\theta = m\lambda$ and $n\lambda = 2d\sin\theta$ are linear in the order and carry no built-in ceiling, so plugging in one order too many silently returns a mathematically valid but physically nonexistent angle. Get in the habit of computing $m_{\max} = \lfloor d/\lambda\rfloor$ (or $n_{\max} = \lfloor 2d/\lambda\rfloor$ for Bragg reflection, later in this chapter) *before* solving for individual angles, so you already know which orders exist.
@@ -349,7 +349,7 @@ $$
 N = \frac{R}{m} = 982\ \text{lines}.
 $$
 
-On a grating with $600$ lines per millimeter this needs a beam only $1.64\ \text{mm}$ wide — trivially met by any laboratory setup, which is why the sodium doublet is a standard first-week demonstration. In second order only $491$ lines would be needed. By contrast, resolving the hyperfine structure *within* one of those lines, where $\Delta\lambda \sim 2\times10^{-5}\ \text{nm}$, would demand $R \sim 3\times10^7$ — far beyond any ruled grating, and the reason such measurements use interferometric methods instead.
+On a grating with $600$ lines per millimeter this needs a beam only $1.64\ \text{mm}$ wide — trivially met by any laboratory setup, which is why the sodium doublet is a standard first-week demonstration. In second order only $491$ lines would be needed. By contrast, resolving the hyperfine structure *within* one of those lines requires a much larger resolving power than resolving the doublet — far beyond this simple demonstration and typically measured with specialized spectroscopic methods instead.
 
 #### Worked Example: A Grating Spectrum
 
@@ -407,7 +407,7 @@ $$
 \theta_{\min} = 1.22\,\frac{\lambda}{D} \qquad (\textbf{Rayleigh criterion}).
 $$
 
-{numref}`Figure %s <fig:ch05-rayleigh>` shows what this looks like. At the criterion there is a shallow dip between the two peaks — about $26\%$ down from the maxima — which is roughly the smallest contrast a human observer can pick out reliably. The criterion is a convention, not a law of nature: with a high signal-to-noise ratio and a known point-spread function, computational methods routinely do better, and modern super-resolution fluorescence microscopy beats it by orders of magnitude using tricks that exploit the *non*-simultaneity of individual emitters. But as an estimate of what an instrument can do, it is excellent.
+{numref}`Figure %s <fig:ch05-rayleigh>` shows what this looks like. At the criterion there is a shallow dip between the two peaks — about $26\%$ below the maxima. The criterion is a convention, not a law of nature: with a high signal-to-noise ratio and a known point-spread function, computational methods can do better, and some super-resolution fluorescence methods exploit temporal control or sparse emitters to distinguish features closer together than the Rayleigh separation. But as an estimate of what an instrument can do, it is excellent.
 
 ```{figure} ../images/ch05-airy-rayleigh.svg
 :label: fig:ch05-rayleigh
@@ -718,7 +718,7 @@ For first order, $\sin\theta=\lambda/d=(500\ \text{nm})/(2000\ \text{nm})=0.250$
 
 $$\frac{d\theta}{d\lambda}=\frac{m}{d\cos\theta}=5.16\times10^5\ \text{rad/m}=0.0296^\circ/\text{nm}.$$
 
-Therefore, the spacing is $2.00\ \mu\text{m}$, the first-order angle is $14.5^\circ$, the highest order is $4$, and the first-order dispersion is $0.0296^\circ/\text{nm}$.
+Therefore, the spacing is $2.00\ \mu\text{m}$, the first-order angle is $14.5^\circ$, the mathematical upper-bound order is $4$, and the first-order dispersion is $0.0296^\circ/\text{nm}$. The fourth order is at grazing angle, so the highest usable order is $3$.
 :::
 
 :::{exercise}
@@ -750,7 +750,7 @@ A grating with $600$ lines per millimeter is illuminated with white light ($400$
 
 The spacing is $d=(600\ \text{mm}^{-1})^{-1}=1.667\ \mu\text{m}$.  In first order the endpoint angles are $\sin^{-1}(400/1667)=13.9^\circ$ and $\sin^{-1}(700/1667)=24.8^\circ$, so the width is $10.9^\circ$.  In second order they are $\sin^{-1}(0.480)=28.7^\circ$ and $\sin^{-1}(0.840)=57.1^\circ$, so the width is $28.4^\circ$.
 
-Overlap begins where $2\lambda_2=3\lambda_3$.  The first common direction occurs for $\lambda_2=600\ \text{nm}$ and $\lambda_3=400\ \text{nm}$, at $\sin\theta=0.720$ or $\theta=46.1^\circ$.
+Overlap begins where $2\lambda_2=3\lambda_3$. The first common direction occurs for $\lambda_2=600\ \text{nm}$ and $\lambda_3=400\ \text{nm}$, at $\sin\theta=0.720$ or $\theta=46.1^\circ$. The overlap ends where the second-order red limit is reached, at $\lambda_2=700\ \text{nm}$ and $\theta=57.1^\circ$ (which corresponds to $\lambda_3=466.7\ \text{nm}$ in third order).
 
 ```{figure} ../images/ch05-sol-order-overlap.svg
 :label: fig:ch05-sol-order-overlap
@@ -759,7 +759,7 @@ Overlap begins where $2\lambda_2=3\lambda_3$.  The first common direction occurs
 The three orders' angular ranges as $\lambda$ sweeps across the visible spectrum. The shaded band is where 2nd- and 3rd-order light arrive at the same angle; it begins where the 2nd order's $600\ \text{nm}$ meets the 3rd order's $400\ \text{nm}$, both at $46.1^\circ$.
 ```
 
-Therefore, the first- and second-order widths are $10.9^\circ$ and $28.4^\circ$, and second and third orders overlap from $46.1^\circ$ onward.
+Therefore, the first- and second-order widths are $10.9^\circ$ and $28.4^\circ$, and second and third orders overlap from $46.1^\circ$ to $57.1^\circ$.
 :::
 
 :::{exercise}
@@ -793,7 +793,7 @@ Using $s=L\theta_{\min}$,
 
 $$L_{\max}=\frac{1.3\ \text{m}}{1.68\times10^{-4}\ \text{rad}}=7.75\times10^3\ \text{m}=7.8\ \text{km}.$$
 
-Therefore, diffraction alone would permit resolution to roughly $7.8\ \text{km}$, but atmospheric turbulence, aberrations, contrast loss, and retinal sampling make the practical distance much shorter.
+Therefore, diffraction alone would permit resolution to roughly $7.8\ \text{km}$. In ordinary viewing, the eye's aberrations and retinal sampling usually make the practical limit less favorable; atmospheric turbulence can add further blur over long paths.
 :::
 
 :::{exercise}
@@ -819,11 +819,11 @@ A microscope objective of diameter $5.0\ \text{mm}$ has a working distance of $8
 :label: sol-diffraction-of-light-13
 :class: dropdown
 
-The aperture numerical angle is approximately $\mathrm{NA}=D/(2L)=5.0/(16.0)=0.313$.  Thus
+The half-angle subtended by the objective is $\alpha=\arctan[(D/2)/L]=\arctan(2.5/8.0)=17.4^\circ$, so in air its numerical aperture is $\mathrm{NA}=\sin\alpha=0.298$ (the small-angle estimate $D/(2L)=0.313$ is close). Thus
 
-$$d_{\min}\simeq\frac{0.61\lambda}{\mathrm{NA}}=\frac{0.61(550\ \text{nm})}{0.313}=1.07\ \mu\text{m}.$$
+$$d_{\min}\simeq\frac{0.61\lambda}{\mathrm{NA}}=\frac{0.61(550\ \text{nm})}{0.298}=1.13\ \mu\text{m}.$$
 
-At the same aperture angle, replacing $550\ \text{nm}$ by $4.0\ \text{pm}$ gives $d_{\min}=7.8\ \text{pm}$, an improvement by $550\ \text{nm}/4.0\ \text{pm}=1.38\times10^5$.  Therefore, the light microscope resolves about $1.1\ \mu\text{m}$ and the electron microscope about $8\ \text{pm}$ under the stated idealized comparison.
+At the same aperture angle, replacing $550\ \text{nm}$ by $4.0\ \text{pm}$ gives $d_{\min}=8.2\ \text{pm}$, an improvement by $550\ \text{nm}/4.0\ \text{pm}=1.38\times10^5$. Therefore, the light microscope resolves about $1.1\ \mu\text{m}$ and the electron microscope about $8\ \text{pm}$ under the stated idealized comparison.
 :::
 
 :::{exercise}

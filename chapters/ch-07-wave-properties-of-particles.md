@@ -54,7 +54,7 @@ De Broglie's hypothesis first appeared not in a journal article but in his 1924 
 :::
 
 :::{tip}
-Before computing a de Broglie wavelength, check whether the particle's kinetic energy $K$ is small or large compared to its rest energy $mc^2$. If $K \ll mc^2$ (true for the 100 eV electrons below, since $m_ec^2 = 511\ \text{keV}$), the nonrelativistic relations $p = mu$ or $p = \sqrt{2mK}$ are accurate; once $K$ becomes comparable to or larger than $mc^2$ (as for MeV-scale protons or electrons), $\lambda = h/p$ still holds, but $p$ must instead be found from the relativistic relation $E^2 = (pc)^2 + (mc^2)^2$.
+Before computing a de Broglie wavelength, check whether the particle's kinetic energy $K$ is small or large compared to its rest energy $mc^2$. If $K \ll mc^2$ (true for the 100 eV electrons below, since $m_ec^2 = 511\ \text{keV}$), the nonrelativistic relations $p = mu$ or $p = \sqrt{2mK}$ are accurate; once $K$ becomes comparable to or larger than $mc^2$ (as for MeV-scale electrons or GeV-scale protons), $\lambda = h/p$ still holds, but $p$ must instead be found from the relativistic relation $E^2 = (pc)^2 + (mc^2)^2$.
 :::
 
 #### Worked Example: De Broglie Wavelength of an Accelerated Electron
@@ -82,16 +82,16 @@ De Broglie did not simply guess $\lambda = h/p$; he arrived at it by demanding c
 Direct confirmation came in 1927, when Clinton Davisson and Lester Germer, studying electron scattering from a nickel crystal (originally for an unrelated purpose), observed that the intensity of electrons scattered from the crystal surface showed sharp maxima at specific angles, depending on the electrons' kinetic energy — exactly the pattern expected from **diffraction** of a wave by the regularly spaced planes of atoms in the crystal, analogous to X-ray diffraction from a crystal lattice (Bragg diffraction). Measuring the angles of the diffraction maxima and applying the same diffraction condition used for X-rays,
 
 $$
-d\sin\theta = n\lambda,
+n\lambda = 2d\sin\theta,
 $$
 
-(with $d$ the crystal's known interplanar spacing) allowed Davisson and Germer to extract an experimental wavelength for the electrons — and it agreed, to good precision, with the de Broglie wavelength $\lambda = h/p$ computed from the electrons' known kinetic energy.
+(with $d$ the crystal's known interplanar spacing and $\theta$ measured from the planes) allowed Davisson and Germer to extract an experimental wavelength for the electrons — and it agreed, to good precision, with the de Broglie wavelength $\lambda = h/p$ computed from the electrons' known kinetic energy.
 
 :::{margin}
-This is the same **Bragg condition** used for X-ray diffraction from crystals: successive lattice planes reinforce a scattered wave only when the path difference $d\sin\theta$ between reflections off adjacent planes is a whole number of wavelengths. Davisson and Germer's result is exactly this condition, satisfied by an electron's matter wave instead of an X-ray photon.
+This is the same **Bragg condition** used for X-ray diffraction from crystals: successive lattice planes reinforce a scattered wave only when the total path difference $2d\sin\theta$ between reflections off adjacent planes is a whole number of wavelengths. Davisson and Germer's result is exactly this condition, satisfied by an electron's matter wave instead of an X-ray photon.
 :::
 
-The experiment is reconstructed in {numref}`Figure %s <fig:ch07-davisson-germer-sim>`, where both sides of $d\sin\theta = n\lambda$ are under control: the electron gun's accelerating voltage, which fixes $p$ and hence $\lambda = h/p$, and the spacing of the target atoms, which fixes $d$. Raising the voltage shortens the wavelength and pulls the scattering maxima to smaller angles; widening the atomic spacing pushes them back out. Neither response is available to a stream of particles bouncing off a surface, and observing both is what settled the question.
+The experiment is reconstructed in {numref}`Figure %s <fig:ch07-davisson-germer-sim>`, where both sides of $n\lambda = 2d\sin\theta$ are under control: the electron gun's accelerating voltage, which fixes $p$ and hence $\lambda = h/p$, and the spacing of the target atoms, which fixes $d$. Raising the voltage shortens the wavelength and pulls the scattering maxima to smaller angles; widening the atomic spacing pushes them back out. Neither response is available to a stream of particles bouncing off a surface, and observing both is what settled the question.
 
 ```{phet-legacy} quantum-wave-interference/davisson-germer
 :sim-name: Davisson–Germer: Electron Diffraction
@@ -102,7 +102,7 @@ Electrons scattering from a crystal surface, with the beam energy and the atomic
 
 That same year, working independently in Britain, George Paget Thomson fired higher-energy electrons through thin polycrystalline metal foils and observed concentric diffraction rings on a photographic plate — the electron analog of the ring patterns produced by X-ray diffraction through a powdered crystalline sample — providing an independent confirmation using a completely different experimental geometry. Thomson's result carries a particular irony: his father, J. J. Thomson, had won the 1906 Nobel Prize for discovering the electron and demonstrating that it is a particle with a definite charge-to-mass ratio; the son shared the 1937 Nobel Prize (with Davisson) for demonstrating that the very same particle also behaves as a wave — both experiments correct, neither in conflict with the other, once wave–particle duality is properly understood.
 
-Electrons, unambiguously particles in every other respect (they have definite charge and mass, and leave localized tracks and point-like impacts on a detector), diffract like waves when their de Broglie wavelength is comparable to the spacing of the diffracting structure. The effect has since been confirmed for neutrons, atoms, and — in experiments beginning in the late 1990s — even large molecules: neutron diffraction is now a standard tool for probing crystal and magnetic structure (complementing X-ray diffraction, since neutrons, being uncharged, scatter primarily from nuclei rather than electron clouds), and a landmark 1999 experiment by Arndt, Zeilinger, and collaborators observed diffraction of $C_{60}$ "buckyball" molecules — each containing 60 carbon atoms, with a mass some $10^5$ times that of a single electron — through a microfabricated grating, with a measured de Broglie wavelength of only a few picometers, far smaller than the molecule itself, yet still large enough to produce a measurable diffraction pattern. Matter-wave interference is not a special property of electrons; it is a universal feature of quantum objects, observable whenever a system can be prepared with a de Broglie wavelength comparable to some accessible length scale. The same phenomenon is the operating principle of the electron microscope, whose resolution — set by the wavelength of the imaging "light," per ordinary diffraction limits ([Chapter 5](#ch-diffraction-of-light)) — can be far finer than any visible-light microscope because electron de Broglie wavelengths, as the worked example above shows, can be made far shorter than visible wavelengths simply by choosing a sufficiently large accelerating voltage.
+Electrons, unambiguously particles in every other respect (they have definite charge and mass, and leave localized tracks and point-like impacts on a detector), diffract like waves when their de Broglie wavelength is comparable to the spacing of the diffracting structure. The effect has since been confirmed for neutrons, atoms, and — in experiments beginning in the late 1990s — even large molecules: neutron diffraction is now a standard tool for probing crystal and magnetic structure (complementing X-ray diffraction, since neutrons, being uncharged, scatter primarily from nuclei rather than electron clouds), and a landmark 1999 experiment by Arndt, Zeilinger, and collaborators observed diffraction of $C_{60}$ "buckyball" molecules — each containing 60 carbon atoms, with a mass roughly $10^6$ times that of a single electron — through a microfabricated grating, with a measured de Broglie wavelength of only a few picometers, far smaller than the molecule itself, yet still large enough to produce a measurable diffraction pattern. Matter-wave interference is not a special property of electrons; it is a universal feature of quantum objects, observable whenever a system can be prepared with a de Broglie wavelength comparable to some accessible length scale. The same phenomenon is the operating principle of the electron microscope, whose resolution — set by the wavelength of the imaging "light," per ordinary diffraction limits ([Chapter 5](#ch-diffraction-of-light)) — can be far finer than any visible-light microscope because electron de Broglie wavelengths, as the worked example above shows, can be made far shorter than visible wavelengths simply by choosing a sufficiently large accelerating voltage.
 
 #### Neutron Interferometry
 
@@ -153,7 +153,7 @@ That accumulation is the thing to watch, and it is what {numref}`Figure %s <fig:
 Single particles sent through a double slit, one at a time, with the detection screen accumulating hits. The wave function is displayed alongside the record of impacts: one object, propagating as a wave and detected as a particle.
 ```
 
-Crucially, if a measurement is added to the apparatus that determines *which* slit each particle actually passed through — "which-path" information — the interference pattern disappears entirely, replaced by the simple sum of the two single-slit patterns, exactly as if the particles were classical objects going through one slit or the other. Acquiring which-path information is not a matter of clumsy experimental technique that could, with sufficient care, be avoided while preserving the fringes; the loss of interference is a direct, unavoidable consequence of the uncertainty principle (developed later in this chapter), since determining which slit a particle used necessarily disturbs its momentum by an amount sufficient to wash out the fringe spacing. It is tempting, but incorrect, to imagine that a photon or electron is "really" a tiny wave packet that sometimes behaves like a particle, or "really" a tiny particle that sometimes behaves like a wave; the two descriptions are complementary, and a full account of quantum behavior (developed starting in [Chapter 8](#ch-the-schrodinger-equation)) requires a mathematical object — the wave function — that reduces to particle-like or wave-like predictions depending on what is measured, without being fully captured by either classical picture on its own.
+Crucially, if a measurement is added to the apparatus that determines *which* slit each particle actually passed through — "which-path" information — the interference pattern disappears entirely, replaced by the simple sum of the two single-slit patterns, exactly as if the particles were classical objects going through one slit or the other. The loss of interference is not limited to a literal momentum kick: a which-path detector can also mark the alternatives by entangling the particle with another degree of freedom, such as polarization or an internal detector state. Once those alternatives are distinguishable even in principle, their amplitudes no longer combine to produce interference; an uncertainty-principle momentum disturbance is one important realization, not the general explanation. It is tempting, but incorrect, to imagine that a photon or electron is "really" a tiny wave packet that sometimes behaves like a particle, or "really" a tiny particle that sometimes behaves like a wave; the two descriptions are complementary, and a full account of quantum behavior (developed starting in [Chapter 8](#ch-the-schrodinger-equation)) requires a mathematical object — the wave function — that reduces to particle-like or wave-like predictions depending on what is measured, without being fully captured by either classical picture on its own.
 
 :::{warning}
 The "measurement disturbs the momentum" language above is a useful first picture, but it is easy to over-read it as saying the uncertainty principle is merely a practical limitation of clumsy detectors that a sufficiently gentle measurement could someday evade. As the wave-packet discussion later in this chapter makes precise, the deeper reason is that a particle with a well-defined path through one specific slit cannot be described by a matter wave with a single well-defined wavelength; localizing the wave enough to carry which-path information *necessarily* broadens its spread in momentum. The trade-off lives in the mathematics of the wave itself, not in the clumsiness of any particular detector.
@@ -161,7 +161,7 @@ The "measurement disturbs the momentum" language above is a useful first picture
 
 #### Delayed Choice and the Quantum Eraser
 
-A particularly striking variant, proposed by John Wheeler in 1978 and since realized experimentally, asks whether the decision to measure which-path information can be postponed until *after* a particle has, in some naive classical sense, "already passed" through the slits. In a **delayed-choice experiment**, the choice of whether to record which-path information (destroying the interference pattern) or to erase it before the particle is detected (restoring the interference pattern) is made only at the very last possible moment — in some realizations, only after the particle has already traversed the region of the slits. Experiments of this kind confirm quantum mechanics' prediction exactly: interference reappears whenever which-path information is unavailable (or erased before it can be extracted) at the time of final detection, regardless of when in the experiment that choice is made. A related arrangement, the **quantum eraser**, first correlates each particle with a "marker" that could in principle reveal which path it took, then either reads that marker (destroying the interference pattern in the corresponding subset of detection events) or "erases" the marker's which-path information before it is read (restoring interference in that subset). Neither experiment allows sending a signal backward in time or violates causality; both instead show that the loss or restoration of interference tracks strictly whether which-path information is, at the moment of detection, available anywhere in the universe in principle — not whether a human experimenter has looked at it, and not whether the "choice" is made before or after the particle has traversed the apparatus. These results reinforce the same lesson as the ordinary double-slit experiment: a quantum system does not carry a hidden, predetermined trajectory waiting to be revealed, and complementarity is a statement about what information can coexist, not merely about the limits of measurement technology.
+A particularly striking variant, proposed by John Wheeler in 1978 and since realized experimentally, asks whether the decision to measure which-path information can be postponed until *after* a particle has, in some naive classical sense, "already passed" through the slits. In a **delayed-choice experiment**, the choice of whether to record which-path information (destroying the interference pattern) or to erase it before the particle is detected (restoring the interference pattern) is made only at the very last possible moment — in some realizations, only after the particle has already traversed the region of the slits. Experiments of this kind confirm quantum mechanics' prediction exactly: interference reappears in the appropriate measurement outcomes whenever the alternatives are made indistinguishable, regardless of when in the experiment that choice is made. A related arrangement, the **quantum eraser**, first correlates each particle with a "marker" that could reveal which path it took, then either reads that marker (destroying the interference pattern in the corresponding subset of detection events) or measures it in a basis that erases the path distinction (revealing interference only in appropriately sorted subsets). Neither experiment allows sending a signal backward in time or violates causality. If the marker result is ignored, the unconditional detection pattern remains interference-free; the fringes in a sorted subset become visible only after the corresponding marker records are compared. These results reinforce the same lesson as the ordinary double-slit experiment: a quantum system does not carry a hidden, predetermined trajectory waiting to be revealed, and complementarity is a statement about what information can coexist, not merely about the limits of measurement technology.
 
 ### Wave Packets
 
@@ -323,18 +323,18 @@ Therefore, electron waves can diffract from atomic crystal planes, proton waves 
 :::{exercise}
 :label: ex-wave-properties-of-particles-2
 
-In the Davisson–Germer experiment, a diffraction maximum for 54 eV electrons was observed at $\theta = 50°$ from a nickel crystal. Using $\lambda = h/p$ for the electrons' de Broglie wavelength and the diffraction condition $d\sin\theta = \lambda$ (first order, $n=1$), find the effective interplanar spacing $d$ of the nickel crystal consistent with this observation.
+In the Davisson–Germer experiment, a diffraction maximum for 54 eV electrons was observed at $\theta = 50°$ from a nickel crystal. Using $\lambda = h/p$ for the electrons' de Broglie wavelength and the Bragg condition $2d\sin\theta = n\lambda$ (first order, $n=1$), find the effective interplanar spacing $d$ of the nickel crystal consistent with this observation.
 :::
 
 :::{solution} ex-wave-properties-of-particles-2
 :label: sol-wave-properties-of-particles-2
 :class: dropdown
 
-The $54\ \text{eV}$ electron wavelength from Problem 1 is $0.167\ \text{nm}$.  First-order diffraction gives
+The $54\ \text{eV}$ electron wavelength from Problem 1 is $0.167\ \text{nm}$. First-order Bragg diffraction gives
 
-$$d=\frac{\lambda}{\sin50^\circ}=\frac{0.167\ \text{nm}}{0.766}=0.218\ \text{nm}.$$
+$$d=\frac{\lambda}{2\sin50^\circ}=\frac{0.167\ \text{nm}}{2(0.766)}=0.109\ \text{nm}.$$
 
-Therefore, the observed Davisson--Germer maximum corresponds to an effective nickel-plane spacing of $0.218\ \text{nm}$.
+Therefore, the observed Davisson--Germer maximum corresponds to an effective nickel-plane spacing of $0.109\ \text{nm}$ under this Bragg-angle convention.
 :::
 
 :::{exercise}
@@ -420,24 +420,32 @@ A proton is confined to a nucleus of diameter $1.0\times10^{-14}\ \text{m}$. Use
 :label: sol-wave-properties-of-particles-7
 :class: dropdown
 
-Taking $\Delta x\sim10^{-14}\ \text{m}$ gives $\Delta p\sim h/\Delta x=6.63\times10^{-20}\ \text{kg m/s}$.  The minimum kinetic energy is
+Taking $\Delta x\sim10^{-14}\ \text{m}$ gives the uncertainty-principle lower bound
 
-$$K\sim\frac{(\Delta p)^2}{2m_p}=\frac{(6.63\times10^{-20})^2}{2(1.673\times10^{-27})}=1.31\times10^{-12}\ \text{J}=8.2\ \text{MeV}.$$
+$$
+\Delta p\gtrsim\frac{\hbar}{2\Delta x}=5.3\times10^{-21}\ \text{kg}\cdot\text{m/s}.
+$$
 
-Therefore, nuclear confinement requires proton kinetic energies of order several MeV, comparable to nuclear binding energies.
+Here $\Delta p\,c\approx9.9\ \text{MeV}$ is much smaller than the proton rest energy $m_pc^2\approx938\ \text{MeV}$, so the nonrelativistic estimate is adequate. The corresponding minimum kinetic-energy scale is
+
+$$
+K\sim\frac{(\Delta p)^2}{2m_p}=\frac{(5.3\times10^{-21})^2}{2(1.673\times10^{-27})}=8.3\times10^{-15}\ \text{J}=0.052\ \text{MeV}.
+$$
+
+The strict uncertainty-principle estimate is therefore a lower bound of roughly $0.05\ \text{MeV}$, below the several-MeV nuclear binding-energy scale. A particle-in-a-box estimate uses the stronger boundary-condition scale $p\sim\pi\hbar/L$ and gives a characteristic ground-state energy of order $2\ \text{MeV}$ for $L=10^{-14}\ \text{m}$, illustrating why the numerical result depends on the confinement geometry; the uncertainty estimate by itself should not be presented as a several-MeV requirement.
 :::
 
 :::{exercise}
 :label: ex-wave-properties-of-particles-8
 
-An excited atomic state has a mean lifetime of $\Delta t = 1.0\times10^{-8}\ \text{s}$. (a) Use the energy–time uncertainty relation to estimate the minimum energy spread $\Delta E$ of this state, in eV. (b) If the state decays by emitting a photon of wavelength $500\ \text{nm}$, estimate the corresponding spread (linewidth) $\Delta\lambda$ in the emitted wavelength.
+An excited atomic state has a mean lifetime of $\Delta t = 1.0\times10^{-8}\ \text{s}$. (a) Use the energy–time uncertainty relation to estimate the energy spread $\Delta E$ of this state, in eV. (b) If the state decays by emitting a photon of wavelength $500\ \text{nm}$, estimate the corresponding spread (linewidth) $\Delta\lambda$ in the emitted wavelength.
 :::
 
 :::{solution} ex-wave-properties-of-particles-8
 :label: sol-wave-properties-of-particles-8
 :class: dropdown
 
-The energy--time uncertainty estimate is
+Using the common order-of-magnitude convention $\Delta E\sim\hbar/(2\Delta t)$,
 
 $$\Delta E\sim\frac{\hbar}{2\Delta t}=\frac{1.055\times10^{-34}\ \text{J s}}{2(1.0\times10^{-8}\ \text{s})}=5.28\times10^{-27}\ \text{J}=3.29\times10^{-8}\ \text{eV}.$$
 
@@ -450,7 +458,7 @@ Since $E=hc/\lambda$, $|\Delta\lambda|\simeq\lambda^2\Delta E/(hc)$, giving $\De
 A finite-lifetime state cannot have a perfectly sharp energy: the emitted line has a Lorentzian shape whose width is set by $\Delta E\sim\hbar/(2\Delta t)$.
 ```
 
-Therefore, the lifetime implies a minimum width of about $3.3\times10^{-8}\ \text{eV}$ or $6.6\times10^{-6}\ \text{nm}$.
+Therefore, the lifetime implies an energy-spread estimate of about $3.3\times10^{-8}\ \text{eV}$ or $6.6\times10^{-6}\ \text{nm}$ in wavelength. The precise linewidth and its numerical factor depend on the line-shape and width convention; the uncertainty relation fixes the scale rather than a universal FWHM.
 :::
 
 :::{exercise}
@@ -527,11 +535,11 @@ Estimate, using the uncertainty principle in the same manner as the atomic-scale
 :label: sol-wave-properties-of-particles-13
 :class: dropdown
 
-For confinement to $L=10\ \text{nm}=10^{-8}\ \text{m}$, take $p\sim h/L$.  Then
+For confinement to $L=10\ \text{nm}=10^{-8}\ \text{m}$, use the same uncertainty estimate as in the worked example, $\Delta p\sim\hbar/(2L)$. Then
 
-$$K\sim\frac{h^2}{2m_eL^2}=\frac{(6.626\times10^{-34})^2}{2(9.109\times10^{-31})(10^{-8})^2}=2.41\times10^{-21}\ \text{J}=0.015\ \text{eV}.$$
+$$K\sim\frac{(\Delta p)^2}{2m_e}=\frac{\hbar^2}{8m_eL^2}=\frac{(1.055\times10^{-34})^2}{8(9.109\times10^{-31})(10^{-8})^2}=1.52\times10^{-23}\ \text{J}=9.5\times10^{-5}\ \text{eV}.$$
 
-An atom-scale $0.1\ \text{nm}$ confinement is $10^2$ smaller in length and therefore $10^4$ larger in energy.  Therefore, a $10\ \text{nm}$ quantum dot has a characteristic confinement energy of order $10^{-2}\ \text{eV}$, far below atomic-scale energies.
+An atom-scale $0.1\ \text{nm}$ confinement is $10^2$ smaller in length and therefore $10^4$ larger in energy. Thus the strict uncertainty-principle lower bound for a $10\ \text{nm}$ quantum dot is of order $10^{-4}\ \text{eV}$. For comparison, a one-dimensional infinite-well model gives $E_1=\pi^2\hbar^2/(2m_eL^2)\approx3.8\times10^{-3}\ \text{eV}$, a more representative characteristic scale for that geometry. The numerical factor depends on the confinement model, but the $1/L^2$ scaling—and the much smaller energy than at atomic dimensions—does not.
 :::
 
 :::{exercise}
@@ -544,7 +552,7 @@ A double-slit experiment is performed with electrons at a rate of one electron a
 :label: sol-wave-properties-of-particles-14
 :class: dropdown
 
-Determining a slit position to uncertainty $\Delta y\sim a$ necessarily gives a transverse momentum disturbance $\Delta p_y\gtrsim\hbar/(2a)$ (of order $h/a$).  This random transverse kick changes the relative phase between paths; when its associated angular spread is comparable with the interference angle $\lambda/d$, the fringe correlation is lost.  Therefore, a sufficiently precise which-path measurement necessarily supplies enough momentum uncertainty to wash out the two-slit interference pattern.
+Determining a slit position to uncertainty $\Delta y\sim a$ gives a transverse momentum spread of at least $\Delta p_y\gtrsim\hbar/(2a)$, or of order $h/a$ when only the diffraction scale is required. This corresponds to an angular spread of order $\lambda/a$; for the usual geometry $d\gtrsim a$, it is at least comparable to the fringe angle $\lambda/d$ and washes out the fringes. More generally, the detector can destroy interference by entangling the particle with a path marker without a substantial momentum kick: the essential condition is that the two paths become distinguishable, not that every which-path measurement impart the same mechanical disturbance.
 :::
 
 :::{exercise}
@@ -602,14 +610,14 @@ Without consulting the marker result, detections in any one output channel form 
 :::{exercise}
 :label: ex-wave-properties-of-particles-18
 
-A beam of electrons, each with the same de Broglie wavelength $\lambda = h/p$, is used in a Davisson–Germer-type experiment. Explain, using the standing-wave condition of the "Bohr Quantization Condition Revisited" subsection as an analogy, why a diffraction condition $d\sin\theta = n\lambda$ (rather than an arbitrary relation between $\theta$ and $\lambda$) is required for a diffraction maximum, drawing the parallel between constructive interference around a crystal lattice and constructive interference around a closed atomic orbit.
+A beam of electrons, each with the same de Broglie wavelength $\lambda = h/p$, is used in a Davisson–Germer-type experiment. Explain, using the standing-wave condition of the "Bohr Quantization Condition Revisited" subsection as an analogy, why a diffraction condition $2d\sin\theta = n\lambda$ (rather than an arbitrary relation between $\theta$ and $\lambda$) is required for a diffraction maximum, drawing the parallel between constructive interference around a crystal lattice and constructive interference around a closed atomic orbit.
 :::
 
 :::{solution} ex-wave-properties-of-particles-18
 :label: sol-wave-properties-of-particles-18
 :class: dropdown
 
-Waves from successive crystal planes differ in path by $d\sin\theta$.  They reinforce only when this difference is an integer number of wavelengths, $d\sin\theta=n\lambda$; otherwise their phases cancel in the sum.  This is directly analogous to an atomic orbit, where a matter wave survives only when its circumference contains an integer number of wavelengths.  Therefore, a diffraction maximum is a standing-wave condition imposed across the periodic crystal lattice.
+Waves reflecting from successive crystal planes differ in total path by $2d\sin\theta$: one extra segment on the way in and one on the way out. They reinforce only when this difference is an integer number of wavelengths, $2d\sin\theta=n\lambda$; otherwise their phases cancel in the sum. This is directly analogous to an atomic orbit, where a matter wave survives only when its circumference contains an integer number of wavelengths. Therefore, a diffraction maximum is a standing-wave condition imposed across the periodic crystal lattice.
 :::
 
 :::{exercise}

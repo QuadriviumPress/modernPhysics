@@ -448,7 +448,7 @@ $$
 y = \frac{6.55\ \text{mm}}{4} = 1.64\ \text{mm}.
 $$
 
-The full width at half maximum of each fringe is therefore $2y = 3.28\ \text{mm}$, exactly half the fringe spacing. Two-slit fringes are broad and sinusoidal — which, as the next section shows, is precisely what more slits fix.
+The full width at half maximum of each fringe is therefore $2y = 3.28\ \text{mm}$, exactly half the fringe spacing in this small-angle approximation. Two-slit fringes are broad and sinusoidal — which, as the next section shows, is precisely what more slits fix.
 
 ### Three Slits, and Then $N$
 
@@ -521,7 +521,7 @@ $$
 \sin\theta = \frac{p\lambda}{Nd} = \frac{p(500\ \text{nm})}{5(2000\ \text{nm})} = 0.0500\,p ,
 $$
 
-for $p = 1,2,3,4$ (the value $p = 5$ is excluded — it is the first-order principal maximum). The four zeros lie at $\sin\theta = 0.050, 0.100, 0.150, 0.200$, and between them sit $N - 2 = 3$ secondary maxima. Note that the first zero is at $\sin\theta = 0.050$, one fifth of the way to the first principal maximum at $0.250$: the central peak is five times narrower than the two-slit peak would be.
+for $p = 1,2,3,4$ (the value $p = 5$ is excluded — it is the first-order principal maximum). The four zeros lie at $\sin\theta = 0.050, 0.100, 0.150, 0.200$, and between them sit $N - 2 = 3$ secondary maxima. Note that the first zero is at $\sin\theta = 0.050$, one fifth of the way to the first principal maximum at $0.250$. For comparison, the first zero of the two-slit pattern is halfway to that maximum, so this five-slit central peak is $2.5$ times narrower than the corresponding two-slit peak.
 
 ## Thin Films and Interferometers
 
@@ -748,9 +748,9 @@ Everything in this chapter treats light as a classical wave, and the treatment w
 [](#ch-particle-properties-of-waves) picks up the single-photon result previewed here, developing the photon concept and the photoelectric effect that first forced physicists to take a particle picture of light seriously again.
 :::
 
-Turn the source in Young's experiment down. Not a little — down until the light is so faint that, on average, only one quantum of light is inside the apparatus at any moment. A $1\ \text{mW}$ helium–neon laser emits about $3\times10^{15}$ photons per second; light crosses a meter-long apparatus in about $3\ \text{ns}$; so a rate below roughly $10^{8}$ photons per second guarantees that each one arrives, passes the slits, and lands before the next is emitted. G. I. Taylor performed the experiment in 1909 using an attenuated gas flame and a three-month exposure, and it has been repeated countless times since with single-photon sources and imaging detectors.
+Turn the source in Young's experiment down. Not a little — down until the light is so faint that, on average, only one quantum of light is inside the apparatus at any moment. A $1\ \text{mW}$ helium–neon laser emits about $3\times10^{15}$ photons per second; light crosses a meter-long apparatus in about $3\ \text{ns}$. A rate below roughly $10^{8}$ photons per second keeps the mean number of photons in the apparatus below about $0.3$; individual emission intervals are still random, but simultaneous photons are then uncommon. G. I. Taylor performed the experiment in 1909 using an attenuated gas flame and a three-month exposure, and it has been repeated countless times since with single-photon sources and imaging detectors.
 
-The result is that the screen records individual, localized hits — dots, one at a time, apparently at random. But as the dots accumulate over hours, they build up precisely the $\cos^2$ fringe pattern derived in this chapter. Each photon interferes with itself; there is no second photon for it to interfere with. That fact cannot be accommodated by any picture in which the photon simply goes through one slit or the other, and it is the central puzzle that [Chapters 6](#ch-particle-properties-of-waves) and [7](#ch-wave-properties-of-particles) take up.
+The result is that the screen records individual, localized hits — dots, one at a time, apparently at random. But as the dots accumulate over hours, they build up precisely the $\cos^2$ fringe pattern derived in this chapter. The probability amplitude associated with each photon interferes between the two paths; there is no second photon for it to interfere with. That fact cannot be accommodated by any picture in which the photon simply goes through one slit or the other, and it is the central puzzle that [Chapters 6](#ch-particle-properties-of-waves) and [7](#ch-wave-properties-of-particles) take up.
 
 For now, the wave description stands on its own, and the next chapter completes it.
 
@@ -906,7 +906,7 @@ Therefore, the laser can show about $30{,}000$ fringes over a $1.8\ \text{cm}$ p
 :::{exercise}
 :label: ex-interference-of-light-7
 
-Starting from $I = I_0\cos^2(\phi/2)$ with $\phi = (2\pi/\lambda)d\sin\theta$, show that the full width at half maximum of each fringe is exactly half the fringe spacing, independent of $\lambda$, $d$, and $L$.
+Starting from $I = I_0\cos^2(\phi/2)$ with $\phi = (2\pi/\lambda)d\sin\theta$, show that, in the small-angle approximation, the full width at half maximum of each fringe is exactly half the fringe spacing, independent of $\lambda$, $d$, and $L$.
 :::
 
 :::{solution} ex-interference-of-light-7
@@ -917,7 +917,7 @@ At half maximum, $\cos^2(\phi/2)=1/2$, so the two nearest values are $\phi/2=\pm
 
 $$d\sin\theta=\pm\frac{\lambda}{4}.$$
 
-Their separation is $\Delta(d\sin\theta)=\lambda/2$.  Adjacent bright fringes differ by $\Delta(d\sin\theta)=\lambda$, so the FWHM is $\lambda/2$ in this coordinate, exactly one-half of the fringe spacing.  Therefore, the FWHM is one-half the bright-fringe spacing, independently of $\lambda$, $d$, and $L$.
+Their separation is $\Delta(d\sin\theta)=\lambda/2$.  Adjacent bright fringes differ by $\Delta(d\sin\theta)=\lambda$, so the FWHM is $\lambda/2$ in this coordinate, exactly one-half of the fringe spacing.  In the small-angle approximation, $d\sin\theta\approx dy/L$, so the same ratio holds on the screen: the FWHM is one-half the bright-fringe spacing, independently of $\lambda$, $d$, and $L$. At larger angles the exact screen-coordinate widths and spacings are not uniform.
 :::
 
 :::{exercise}
@@ -955,7 +955,7 @@ The allowed orders are $m=0,\pm1,\pm2,\pm3,\pm4,\pm5$, with $\sin\theta=0,\pm0.2
 
 ```{figure} ../images/ch04-sol-six-slit.svg
 :label: fig:ch04-sol-six-slit
-:alt: Six-slit interference pattern showing ten principal maxima across the full range of sin(theta), with a zoomed panel between the m=0 and m=1 maxima showing five zeros and four secondary maxima.
+:alt: Six-slit interference pattern showing eleven principal maxima across the full range of sin(theta), with a zoomed panel between the m=0 and m=1 maxima showing five zeros and four secondary maxima.
 
 Six-slit pattern for $d=3.00\ \mu\text{m}$, $\lambda=600\ \text{nm}$. Top: principal maxima at $\sin\theta=0.200m$. Bottom: zoom between $m=0$ and $m=1$, showing the five zeros and four secondary maxima predicted above.
 ```
@@ -1122,7 +1122,7 @@ Explain, using the concept of optical path length, why the thin-film conditions 
 :label: sol-interference-of-light-17
 :class: dropdown
 
-Inside a film the wavelength is $\lambda/n$, so a round-trip geometric distance $2t$ contains $2t/(\lambda/n)=2nt/\lambda$ wavelengths; this is why the optical path is $2nt$.  Omitting $n=1.33$ for a $100\ \text{nm}$ soap film would predict a phase corresponding to $2t=200\ \text{nm}$ rather than $2nt=266\ \text{nm}$, an error of $66\ \text{nm}$ in optical path, or $66/500\approx0.13$ of a visible-light wavelength near $500\ \text{nm}$.  Therefore, dropping $n$ produces a substantial phase and color error, not a small correction.
+Inside a film the wavelength is $\lambda/n$, so a round-trip geometric distance $2t$ contains $2t/(\lambda/n)=2nt/\lambda$ wavelengths; this is why the optical path is $2nt$.  Omitting $n=1.33$ for a $100\ \text{nm}$ soap film would predict a phase corresponding to $2t=200\ \text{nm}$ rather than $2nt=266\ \text{nm}$, an error of $66\ \text{nm}$ in optical path, or $66/500\approx0.13$ of a visible-light wavelength near $500\ \text{nm}$.  More concretely, the correct lowest-order bright wavelength is $2nt/(1/2)=532\ \text{nm}$, whereas dropping $n$ would predict $2t/(1/2)=400\ \text{nm}$, shifting the prediction from green to violet.  Therefore, dropping $n$ produces a substantial phase and color error, not a small correction.
 :::
 
 :::{exercise}

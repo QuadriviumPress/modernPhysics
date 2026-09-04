@@ -24,7 +24,7 @@ By the end of this chapter, you should be able to:
 - Write the time-independent Schrödinger equation in three dimensions and apply it to separable Cartesian potentials such as the 3D infinite box, including cases of partial and full degeneracy.
 - Explain why central (spherically symmetric) potentials are naturally treated in spherical coordinates, and describe the separation of variables $\psi(r,\theta,\phi) = R(r)Y(\theta,\phi)$.
 - Explain the origin and physical meaning of the centrifugal barrier term in the radial equation for a central potential.
-- Identify the three quantum numbers ($n$, $\ell$, $m_\ell$) that arise from solving a central-potential problem and state the physical quantity each one labels.
+- Identify the three quantum numbers ($n_r$, $\ell$, $m_\ell$) that arise from solving a central-potential problem and state the physical quantity each one labels; for the Coulomb potential, relate the radial quantum number to the principal quantum number $n$.
 - State the quantization of orbital angular momentum magnitude and $z$-component, and explain the physical meaning of each, including the commutation relations that forbid simultaneous knowledge of more than one Cartesian component.
 - Describe the isotropic three-dimensional harmonic oscillator as a second exactly solvable central potential and relate its degeneracy structure to the nuclear shell model.
 - Explain why the three-dimensional treatment is the necessary foundation for the hydrogen atom, developed in [Chapter 10](#ch-the-hydrogen-atom).
@@ -73,7 +73,7 @@ a confinement energy of a few tens of millielectronvolts, comparable to $k_BT$ a
 
 ### Central Potentials and Spherical Coordinates
 
-The Coulomb potential, and most potentials of physical interest in atomic and nuclear physics, depend only on the distance from a fixed point: $V(x,y,z) = V(r)$, where $r = \sqrt{x^2+y^2+z^2}$. Such a potential is not separable in Cartesian coordinates, but it *is* separable in **spherical coordinates** $(r,\theta,\phi)$, precisely because its symmetry matches that coordinate system. Written in spherical coordinates, the Schrödinger equation for a central potential admits solutions of the separable form
+The Coulomb potential, and most potentials of physical interest in atomic and nuclear physics, depend only on the distance from a fixed point: $V(x,y,z) = V(r)$, where $r = \sqrt{x^2+y^2+z^2}$. Such a potential is generally not separable in Cartesian coordinates (the isotropic oscillator discussed later is an important exception), but it *is* separable in **spherical coordinates** $(r,\theta,\phi)$, precisely because its symmetry matches that coordinate system. Written in spherical coordinates, the Schrödinger equation for a central potential admits solutions of the separable form
 
 $$
 \psi(r,\theta,\phi) = R(r)\, Y(\theta,\phi),
@@ -92,7 +92,7 @@ $$
 and already illustrate the general pattern. The $\ell=0$ harmonic, $Y_0^0$, is completely independent of $\theta$ and $\phi$ — an $s$-state wave function is **spherically symmetric**, with a probability density depending only on $r$, the same in every direction from the center. The $\ell=1$ harmonics depend on angle: $Y_1^0$, proportional to $\cos\theta$, is largest along the $\pm z$-axis and vanishes in the $xy$-plane (a $p_z$-type angular distribution, in the language used for atomic orbitals in [Chapter 10](#ch-the-hydrogen-atom)), while $Y_1^{\pm1}$, proportional to $\sin\theta\,e^{\pm i\phi}$, is largest in the $xy$-plane and vanishes along the $z$-axis. Each higher $\ell$ introduces additional angular structure — more lobes, more angular nodes — but, crucially, the same three functions $Y_1^0, Y_1^{+1}, Y_1^{-1}$ describe the angular dependence of a $p$-state electron in hydrogen, a $p$-state neutron in a nuclear shell-model potential, or a $p$-state particle in the isotropic oscillator discussed later in this chapter, since (as already emphasized) the angular equation and its solutions never reference $V(r)$ at all.
 
 :::{margin}
-**Counting nodes.** The number of angular nodes (surfaces on which $Y_\ell^{m_\ell}=0$) in a spherical harmonic is exactly $\ell$: zero for $Y_0^0$, one for each $Y_1^{m_\ell}$, and so on — the same node-counting logic used for 1D bound states in [Chapter 8](#ch-the-schrodinger-equation).
+**Counting nodes.** A real orbital with angular quantum number $\ell$ has $\ell$ angular nodes in total. For the complex spherical harmonic $Y_\ell^{m_\ell}$ itself, the associated Legendre factor gives $\ell-|m_\ell|$ polar nodes; the phase factor $e^{im_\ell\phi}$ does not create additional zeros. Real combinations such as $p_x$, $p_y$, and $p_z$ redistribute the nodes into familiar nodal planes — the same node-counting logic used for 1D bound states in [Chapter 8](#ch-the-schrodinger-equation).
 :::
 
 #### The Radial Equation and the Centrifugal Barrier
@@ -103,7 +103,7 @@ $$
 -\frac{\hbar^2}{2m}\frac{d^2u}{dr^2} + \left[V(r) + \frac{\hbar^2\,\ell(\ell+1)}{2mr^2}\right] u = Eu,
 $$
 
-where $\ell$ is the orbital angular momentum quantum number introduced below. The extra term, $\hbar^2\ell(\ell+1)/2mr^2$, is called the **centrifugal barrier**: it behaves as an additional repulsive potential that grows without bound as $r\to 0$ (for any $\ell>0$), pushing the particle's radial probability density away from the origin — the quantum-mechanical counterpart of the classical fact that a particle with nonzero angular momentum orbiting a center cannot pass through that center without first radiating away or otherwise losing its angular momentum. For $\ell=0$ (an **s-state**, in the spectroscopic notation below), the centrifugal barrier vanishes entirely, and only $\ell=0$ states can have a nonvanishing probability density exactly at $r=0$ — a fact used directly in [Chapter 10](#ch-the-hydrogen-atom) to explain, for instance, which hydrogen atomic states can undergo processes that require the electron to overlap with the nucleus.
+where $\ell$ is the orbital angular momentum quantum number introduced below. The extra term, $\hbar^2\ell(\ell+1)/2mr^2$, is called the **centrifugal barrier**: it behaves as an additional repulsive potential that grows without bound as $r\to 0$ (for any $\ell>0$), pushing the particle's radial probability density away from the origin. This is the quantum-mechanical counterpart of the classical fact that a particle with nonzero angular momentum cannot reach the force center while its angular momentum remains nonzero. For $\ell=0$ (an **s-state**, in the spectroscopic notation below), the centrifugal barrier vanishes entirely, and for the usual regular central potentials only $\ell=0$ states can have a nonvanishing probability density exactly at $r=0$ — a fact used directly in [Chapter 10](#ch-the-hydrogen-atom) to explain, for instance, which hydrogen atomic states can undergo processes that require the electron to overlap with the nucleus.
 
 :::{dropdown} Deriving the Radial Equation for u(r) = rR(r)
 Separating $\psi=R(r)Y(\theta,\phi)$ in the full Schrödinger equation leaves $R(r)$ obeying
@@ -118,13 +118,13 @@ $$
 \frac{d}{dr}\!\left(r^2 \frac{dR}{dr}\right) = \frac{d}{dr}\!\left[r^2\frac{d}{dr}\left(\frac{u}{r}\right)\right] = \frac{d}{dr}\!\left(r\frac{du}{dr}-u\right) = r\frac{d^2u}{dr^2}.
 $$
 
-Dividing the radial equation by $r$ and substituting this result gives
+Multiplying the radial equation by $r$ and substituting this result gives
 
 $$
 -\frac{\hbar^2}{2m}\frac{d^2u}{dr^2} + \left[V(r)+\frac{\hbar^2\ell(\ell+1)}{2mr^2}\right]u = Eu,
 $$
 
-exactly the one-dimensional-looking form quoted in the main text. The simplification comes with a boundary condition: since $R(r)=u(r)/r$ must stay finite as $r\to0$, normalizability requires $u(0)=0$ — playing the same role here that $\psi(0)=0$ plays at the rigid wall of a one-dimensional infinite well.
+exactly the one-dimensional-looking form quoted in the main text. The simplification comes with a boundary condition: for a usual regular central potential, physical regularity requires $R(r)=u(r)/r$ to stay finite as $r\to0$, and hence $u(0)=0$ — playing the same role here that $\psi(0)=0$ plays at the rigid wall of a one-dimensional infinite well.
 :::
 
 ## Orbital Angular Momentum
@@ -132,7 +132,7 @@ exactly the one-dimensional-looking form quoted in the main text. The simplifica
 The separation above is not a mathematical accident: it reflects the fact that a central potential exerts no torque about the force center (the force is always radial), so **orbital angular momentum**, $\vec L = \vec r\times\vec p$, is conserved, exactly as in classical central-force motion (e.g., Kepler orbits). Solving the angular equation subject to the single-valuedness of $Y(\theta,\phi)$ shows that the magnitude and one Cartesian component (conventionally the $z$-component) of $\vec L$ are simultaneously quantized:
 
 $$
-L = \sqrt{\ell(\ell+1)}\,\hbar, \qquad \ell = 0, 1, 2, \ldots, n-1,
+L = \sqrt{\ell(\ell+1)}\,\hbar, \qquad \ell = 0, 1, 2, \ldots,
 $$
 
 $$
@@ -142,10 +142,10 @@ $$
 where $\ell$ is the **orbital angular momentum quantum number** and $m_\ell$ is the **magnetic quantum number**, so named because $L_z$ determines how the system's energy shifts in an external magnetic field ([Chapter 11](#ch-many-electron-atoms)). For a given $\ell$, there are $2\ell+1$ allowed values of $m_\ell$, corresponding to $2\ell+1$ distinct orientations of the angular momentum vector relative to the chosen $z$-axis — a specific, testable manifestation of **space quantization**: the orbital angular momentum vector does not merely have a quantized *length*, it can only point in a discrete set of directions relative to an external axis, rather than any direction whatsoever as classical mechanics would allow.
 
 :::{warning}
-The bound $\ell \le n-1$ quoted above is easy to mistake for a universal law of quantum mechanics — it isn't. That particular relationship between $n$ and $\ell$ is a special feature of the Coulomb potential, worked out in [Chapter 10](#ch-the-hydrogen-atom), where the radial equation happens to tie the two labels together. For a generic central potential, $\ell$ simply runs over $0,1,2,\ldots$ with no ceiling imposed by $n$; the isotropic harmonic oscillator later in this chapter is a clean counterexample, where $n_r$ and $\ell$ combine into $N=2n_r+\ell$ rather than one bounding the other.
+The bound $\ell \le n-1$ that holds for Coulomb bound states is easy to mistake for a universal law of quantum mechanics — it isn't. That particular relationship between $n$ and $\ell$ is a special feature of the Coulomb potential, worked out in [Chapter 10](#ch-the-hydrogen-atom), where the radial equation happens to tie the two labels together. For a generic central potential, $\ell$ simply runs over $0,1,2,\ldots$ with no corresponding ceiling; the isotropic harmonic oscillator later in this chapter is a clean counterexample, where $n_r$ and $\ell$ combine into $N=2n_r+\ell$ rather than one bounding the other.
 :::
 
-Two features are worth emphasizing, since both run against classical intuition. First, $L = \sqrt{\ell(\ell+1)}\hbar$, not $\ell\hbar$ — the "extra" factor means the angular momentum vector's length is always slightly *larger* than its maximum possible $z$-component, $m_{\ell,\max}\hbar = \ell\hbar$; the vector can never point exactly along the $z$-axis. Second, because $L_x$ and $L_y$ are not simultaneously measurable with $L_z$, only the magnitude $L$ and a single component $L_z$ can be assigned definite values at once — the other two components remain fundamentally indeterminate, consistent with the vector never lying exactly along any single axis.
+Two features are worth emphasizing, since both run against classical intuition. First, $L = \sqrt{\ell(\ell+1)}\hbar$, not $\ell\hbar$ — the "extra" factor means that for any $\ell>0$ the angular momentum vector's length is slightly *larger* than its maximum possible $z$-component, $m_{\ell,\max}\hbar = \ell\hbar$; the vector can never point exactly along the $z$-axis. Second, because $L_x$ and $L_y$ are not simultaneously measurable with $L_z$, only the magnitude $L$ and a single component $L_z$ can be assigned definite values at once — the other two components remain fundamentally indeterminate, consistent with the vector never lying exactly along any single axis.
 
 Historically, states of a given $\ell$ are labeled by spectroscopic letters inherited from early atomic spectroscopy: $\ell = 0,1,2,3,4,\ldots$ are denoted $s, p, d, f, g,\ldots$ respectively — a labeling convention used throughout atomic physics (Chapters [10](#ch-the-hydrogen-atom)–[11](#ch-many-electron-atoms)) and retained today purely by tradition.
 
@@ -214,7 +214,7 @@ $$
 [\hat L_x, \hat L_y] = i\hbar \hat L_z, \qquad [\hat L_y,\hat L_z] = i\hbar \hat L_x, \qquad [\hat L_z,\hat L_x] = i\hbar \hat L_y
 $$
 
-(a cyclic pattern in $x\to y\to z\to x$), together with $[\hat L^2, \hat L_z] = 0$. Two operators that do not commute cannot, in general, have simultaneous eigenstates — precisely the mathematical statement of the uncertainty principle applied to angular momentum, directly analogous to the position–momentum commutator underlying the Heisenberg relation of [Chapter 7](#ch-wave-properties-of-particles). Because $\hat L^2$ commutes with $\hat L_z$ (but not with $\hat L_x$ or $\hat L_y$ individually), a quantum state can be prepared with simultaneously sharp values of $L$ and $L_z$ — exactly the states labeled by $\ell$ and $m_\ell$ above — but never with sharp values of $L$, $L_z$, and $L_x$ all at once.
+(a cyclic pattern in $x\to y\to z\to x$), together with $[\hat L^2, \hat L_z] = 0$. Two operators that do not commute cannot, in general, have simultaneous eigenstates — precisely the mathematical statement of the uncertainty principle applied to angular momentum, directly analogous to the position–momentum commutator underlying the Heisenberg relation of [Chapter 7](#ch-wave-properties-of-particles). Because $\hat L^2$ commutes with $\hat L_z$ (and likewise with $\hat L_x$ and $\hat L_y$), a quantum state can be prepared with simultaneously sharp values of $L$ and one chosen component — exactly the states labeled by $\ell$ and $m_\ell$ above — but, for $\ell>0$, never with sharp values of $L$, $L_z$, and $L_x$ all at once.
 
 :::{seealso}
 The impossibility of jointly sharp $L_x$, $L_y$, $L_z$ is the same phenomenon, in different clothing, as the position–momentum uncertainty relation built from $[\hat x,\hat p_x]=i\hbar$ in [Chapter 7](#ch-wave-properties-of-particles): in both cases it is the failure of two operators to commute that forbids any state from having simultaneously sharp values of the corresponding observables.
@@ -224,13 +224,13 @@ The impossibility of jointly sharp $L_x$, $L_y$, $L_z$ is the same phenomenon, i
 
 ### The Three Quantum Numbers of a Central-Potential Bound State
 
-Solving the full three-dimensional problem for a bound state in a central potential $V(r)$ produces exactly three quantum numbers, each arising from a separate boundary condition in the separation of variables:
+Solving the full three-dimensional problem for a bound state in a central potential $V(r)$ produces three quantum numbers, each arising from a separate boundary condition in the separation of variables:
 
-- $n$, the **principal quantum number**, arising from solving the radial equation subject to normalizability, and primarily governing the energy (in a form depending on the specific $V(r)$; for the Coulomb potential this dependence takes an especially simple form, worked out in [Chapter 10](#ch-the-hydrogen-atom));
-- $\ell$, the **orbital angular momentum quantum number**, $\ell = 0, 1, \ldots, n-1$, governing the magnitude of orbital angular momentum;
+- $n_r$, the **radial quantum number**, $n_r=0,1,2,\ldots$, counting the radial nodes and arising from solving the radial equation subject to normalizability. The energy generally depends on both $n_r$ and $\ell$; for the Coulomb potential it is convenient to replace $n_r$ and $\ell$ by the principal quantum number $n=n_r+\ell+1$, as shown in [Chapter 10](#ch-the-hydrogen-atom);
+- $\ell$, the **orbital angular momentum quantum number**, $\ell = 0, 1, 2, \ldots$, governing the magnitude of orbital angular momentum;
 - $m_\ell$, the **magnetic quantum number**, $m_\ell = -\ell,\ldots,\ell$, governing the orientation of orbital angular momentum relative to a chosen axis.
 
-This same trio of quantum numbers, with the same allowed ranges and the same physical meaning, appears in every central-potential problem in this book — it is a consequence of three-dimensional rotational symmetry, not a special feature of any one potential — and [Chapter 10](#ch-the-hydrogen-atom) specializes this general machinery to the specific radial equation of the hydrogen atom's Coulomb potential.
+This trio of labels, with the same angular ranges and physical meanings, appears in every central-potential problem in this book — it is a consequence of three-dimensional rotational symmetry, not a special feature of any one potential. Only the Coulomb problem promotes the combination $n_r+\ell+1$ to a principal quantum number whose energy is independent of $\ell$; [Chapter 10](#ch-the-hydrogen-atom) specializes the general machinery to that case.
 
 ### A Second Exactly Solvable Central Potential: The Isotropic Harmonic Oscillator
 
@@ -240,7 +240,7 @@ $$
 E_{n_x,n_y,n_z} = \left(n_x+n_y+n_z+\tfrac32\right)\hbar\omega \equiv \left(N + \tfrac32\right)\hbar\omega, \qquad N \equiv n_x+n_y+n_z = 0,1,2,\ldots,
 $$
 
-depending only on the *sum* $N$, not on how it is distributed among $n_x$, $n_y$, $n_z$ individually — a much higher degree of degeneracy than the cubic infinite box, precisely because the isotropic oscillator has continuous rotational symmetry (any direction is equivalent to any other) rather than merely the discrete symmetry of a cube's faces. The same energy levels can equally well be labeled, via the spherical-coordinate separation of this chapter, by a radial quantum number and $\ell$, with $N = 2n_r+\ell$; the two labeling schemes describe the same physical states, related by a change of basis, and the total degeneracy of a given level $N$ works out to $(N+1)(N+2)/2$.
+depending only on the *sum* $N$, not on how it is distributed among $n_x$, $n_y$, $n_z$ individually. The isotropic oscillator has continuous rotational symmetry, which guarantees the $2\ell+1$ degeneracy of each angular-momentum multiplet; its larger degeneracy across different $\ell$ values at fixed $N$ reflects an additional oscillator symmetry. The same energy levels can equally well be labeled, via the spherical-coordinate separation of this chapter, by a radial quantum number and $\ell$, with $N = 2n_r+\ell$; the two labeling schemes describe the same physical states, related by a change of basis, and the total degeneracy of a given level $N$ works out to $(N+1)(N+2)/2$.
 
 :::{margin}
 **Where $(N+1)(N+2)/2$ comes from.** This is the number of ways to write a fixed total $N$ as an ordered sum of three non-negative integers, $n_x+n_y+n_z=N$ — a standard "stars and bars" counting result, independent of any physics.
@@ -250,15 +250,15 @@ This may look like a mathematical curiosity, but the isotropic harmonic oscillat
 
 #### Comparing Degeneracy Across Three Central Potentials
 
-It is worth pausing to compare the degeneracy patterns of the three central (or Cartesian-separable) potentials encountered so far, since the comparison sharpens exactly what "degeneracy reflects underlying symmetry" means in practice. The cubic infinite box has a *discrete* symmetry (the box is invariant only under swapping $x$, $y$, $z$ and reflections, not under arbitrary rotations), and correspondingly modest degeneracies, arising only from specific numerical coincidences among sums of squares of integers. The isotropic harmonic oscillator has full continuous rotational symmetry, and correspondingly much richer degeneracy, with every state of a given $N=n_x+n_y+n_z$ degenerate regardless of how $N$ is partitioned among the three Cartesian directions. The hydrogen atom's Coulomb potential ([Chapter 10](#ch-the-hydrogen-atom)) is the most degenerate of all the central potentials commonly encountered: not only is the energy independent of $m_\ell$ (true for *any* central potential, since no central potential singles out a preferred direction in space), but for the Coulomb potential specifically, the energy is *also* independent of $\ell$ for fixed $n$ — an extra, "accidental" degeneracy not explained by rotational symmetry alone, and one of the most distinctive mathematical features of the $1/r$ potential, examined further in [Chapter 10](#ch-the-hydrogen-atom).
+It is worth pausing to compare the degeneracy patterns of the three central (or Cartesian-separable) potentials encountered so far, since the comparison sharpens exactly what "degeneracy reflects underlying symmetry" means in practice. The cubic infinite box has a *discrete* symmetry (the box is invariant only under swapping $x$, $y$, $z$ and reflections, not under arbitrary rotations), and correspondingly modest degeneracies, arising only from specific numerical coincidences among sums of squares of integers. The isotropic harmonic oscillator has full continuous rotational symmetry plus an additional symmetry responsible for its larger degeneracy across different $\ell$ values at fixed $N=n_x+n_y+n_z$. The hydrogen atom's Coulomb potential ([Chapter 10](#ch-the-hydrogen-atom)) has an additional degeneracy as well: not only is the energy independent of $m_\ell$ (true for *any* central potential, since no central potential singles out a preferred direction in space), but for the Coulomb potential specifically, the energy is also independent of $\ell$ for fixed principal $n$ — an extra, "accidental" degeneracy not explained by rotational symmetry alone, and one of the most distinctive mathematical features of the $1/r$ potential, examined further in [Chapter 10](#ch-the-hydrogen-atom).
 
 ## Summary
 
 - The 3D Schrödinger equation, $-\dfrac{\hbar^2}{2m}\nabla^2\psi + V\psi = E\psi$, reduces to three independent 1D equations for a Cartesian-separable potential (e.g., the 3D infinite box), which can produce **degeneracy** — distinct quantum states sharing the same energy — as a signature of underlying symmetry; a box with partial symmetry (e.g., a square cross-section but different height) shows partial degeneracy, while a fully generic box shows none.
 - A **central potential**, $V(r)$, is separable in spherical coordinates as $\psi(r,\theta,\phi)=R(r)Y(\theta,\phi)$; the angular part $Y(\theta,\phi)$ is universal, independent of the specific form of $V(r)$, while the radial equation for $u(r)=rR(r)$ contains a repulsive **centrifugal barrier** term $\hbar^2\ell(\ell+1)/2mr^2$ that vanishes only for $\ell=0$.
-- Orbital angular momentum is quantized in both magnitude, $L = \sqrt{\ell(\ell+1)}\hbar$ ($\ell = 0,1,\ldots,n-1$), and $z$-component, $L_z = m_\ell\hbar$ ($m_\ell = -\ell,\ldots,\ell$) — **space quantization** — with $2\ell+1$ allowed orientations for each $\ell$. The commutation relations $[\hat L_x,\hat L_y]=i\hbar\hat L_z$ (and cyclic permutations) show algebraically why $L_x$ and $L_y$ remain simultaneously indeterminate once $L$ and $L_z$ are sharp.
+- Orbital angular momentum is quantized in both magnitude, $L = \sqrt{\ell(\ell+1)}\hbar$ ($\ell = 0,1,2,\ldots$), and $z$-component, $L_z = m_\ell\hbar$ ($m_\ell = -\ell,\ldots,\ell$) — **space quantization** — with $2\ell+1$ allowed orientations for each $\ell$. The commutation relations $[\hat L_x,\hat L_y]=i\hbar\hat L_z$ (and cyclic permutations) show algebraically why $L_x$ and $L_y$ remain simultaneously indeterminate once $L$ and $L_z$ are sharp.
 - The **spherical harmonics** $Y_\ell^{m_\ell}(\theta,\phi)$ are the universal angular wave functions of any central potential; the $\ell=0$ harmonic is spherically symmetric, while $\ell=1$ harmonics have the angular shape familiar from $p$-orbitals in [Chapter 10](#ch-the-hydrogen-atom).
-- Three quantum numbers, $n$, $\ell$, $m_\ell$, universally characterize a bound state in any central potential; states are conventionally labeled $s,p,d,f,\ldots$ for $\ell=0,1,2,3,\ldots$. The magnetic quantum number $m_\ell$ controls how a state's energy shifts in an external magnetic field (the Zeeman effect), which is the origin of its name.
+- Three quantum numbers, $n_r$, $\ell$, $m_\ell$, characterize a bound state in a central potential; for the Coulomb potential, the radial and angular labels are often reorganized as $n=n_r+\ell+1$, $\ell$, $m_\ell$. States are conventionally labeled $s,p,d,f,\ldots$ for $\ell=0,1,2,3,\ldots$. The magnetic quantum number $m_\ell$ controls how a state's energy shifts in an external magnetic field (the Zeeman effect), which is the origin of its name.
 - The **isotropic 3D harmonic oscillator**, $V(r)=\tfrac12m\omega^2r^2$, is a second exactly solvable central potential, with energies $E_N=(N+\tfrac32)\hbar\omega$ depending only on $N=n_x+n_y+n_z=2n_r+\ell$ and highly degenerate levels — the starting point for the nuclear shell model of [Chapter 13](#ch-nuclear-physics).
 
 ## Problems
@@ -318,14 +318,14 @@ Therefore, the allowed $m_\ell$ values are $-2$ through $+2$, and even the large
 :::{exercise}
 :label: ex-quantum-mechanics-in-three-dimensions-4
 
-How many distinct $(\ell, m_\ell)$ combinations are allowed for principal quantum number $n=3$? List them, grouped by $\ell$, and give the spectroscopic letter for each $\ell$ value.
+How many distinct $(\ell, m_\ell)$ combinations are allowed in the hydrogen-like (Coulomb) shell with principal quantum number $n=3$? List them, grouped by $\ell$, and give the spectroscopic letter for each $\ell$ value.
 :::
 
 :::{solution} ex-quantum-mechanics-in-three-dimensions-4
 :label: sol-quantum-mechanics-in-three-dimensions-4
 :class: dropdown
 
-For $n=3$, $\ell=0,1,2$.  The combinations are $s:(0,0)$; $p:(1,-1),(1,0),(1,1)$; and $d:(2,-2),(2,-1),(2,0),(2,1),(2,2)$.  Their total is $1+3+5=9$.  Therefore, there are nine allowed $(\ell,m_\ell)$ states for $n=3$.
+For a Coulomb bound state with $n=3$, $\ell=0,1,2$.  The combinations are $s:(0,0)$; $p:(1,-1),(1,0),(1,1)$; and $d:(2,-2),(2,-1),(2,0),(2,1),(2,2)$.  Their total is $1+3+5=9$.  Therefore, there are nine allowed $(\ell,m_\ell)$ states in the $n=3$ shell.
 :::
 
 :::{exercise}
@@ -344,14 +344,14 @@ Because $[L_x,L_z]= -i\hbar L_y$ is generally nonzero, exact values of $L_x$ and
 :::{exercise}
 :label: ex-quantum-mechanics-in-three-dimensions-6
 
-A particle is in a central-potential bound state with $n=4$. What is the maximum possible orbital angular momentum quantum number $\ell$ it can have, and how many total $(\ell,m_\ell)$ states are available at that $n$ (summed over all allowed $\ell$)?
+A particle is in a hydrogen-like (Coulomb) bound state with principal quantum number $n=4$. What is the maximum possible orbital angular momentum quantum number $\ell$ it can have, and how many total $(\ell,m_\ell)$ states are available in that $n$ shell (summed over all allowed $\ell$)?
 :::
 
 :::{solution} ex-quantum-mechanics-in-three-dimensions-6
 :label: sol-quantum-mechanics-in-three-dimensions-6
 :class: dropdown
 
-At $n=4$, $\ell$ can be $0,1,2,3$, so the maximum is $\ell=3$.  The total number is $\sum_{\ell=0}^{3}(2\ell+1)=1+3+5+7=16=n^2$.  Therefore, $n=4$ permits maximum orbital quantum number $3$ and contains sixteen $(\ell,m_\ell)$ states.
+For a Coulomb state with $n=4$, $\ell$ can be $0,1,2,3$, so the maximum is $\ell=3$.  The total number is $\sum_{\ell=0}^{3}(2\ell+1)=1+3+5+7=16=n^2$.  Therefore, the $n=4$ shell permits maximum orbital quantum number $3$ and contains sixteen $(\ell,m_\ell)$ states.
 :::
 
 :::{exercise}
@@ -470,14 +470,14 @@ Therefore, the simple oscillator model reproduces the first three nuclear magic 
 :::{exercise}
 :label: ex-quantum-mechanics-in-three-dimensions-14
 
-A particle in a central potential is in a state with $n=2$. (a) List the allowed $(\ell, m_\ell)$ combinations. (b) If a measurement of $L_z$ yields the maximum possible value for the largest allowed $\ell$ at this $n$, state the values of $\ell$ and $m_\ell$, and compute $L$ and the angle between $\vec L$ and the $z$-axis.
+A particle in a hydrogen-like (Coulomb) potential is in a state with principal quantum number $n=2$. (a) List the allowed $(\ell, m_\ell)$ combinations. (b) If a measurement of $L_z$ yields the maximum possible value for the largest allowed $\ell$ at this $n$, state the values of $\ell$ and $m_\ell$, and compute $L$ and the angle between $\vec L$ and the $z$-axis.
 :::
 
 :::{solution} ex-quantum-mechanics-in-three-dimensions-14
 :label: sol-quantum-mechanics-in-three-dimensions-14
 :class: dropdown
 
-For $n=2$, the states are $(0,0)$ and $(1,-1),(1,0),(1,1)$.  The maximum $L_z$ is therefore obtained for $\ell=1$, $m_\ell=1$.  Then $L=\sqrt2\hbar$ and $\cos\theta=\hbar/(\sqrt2\hbar)=1/\sqrt2$, so $\theta=45^\circ$.  Therefore, the maximum-projection state has $(\ell,m_\ell)=(1,1)$, $L=\sqrt2\hbar$, and a $45^\circ$ angle to $z$.
+For the Coulomb $n=2$ shell, the states are $(0,0)$ and $(1,-1),(1,0),(1,1)$.  The maximum $L_z$ is therefore obtained for $\ell=1$, $m_\ell=1$.  Then $L=\sqrt2\hbar$ and $\cos\theta=\hbar/(\sqrt2\hbar)=1/\sqrt2$, so $\theta=45^\circ$.  Therefore, the maximum-projection state has $(\ell,m_\ell)=(1,1)$, $L=\sqrt2\hbar$, and a $45^\circ$ angle to $z$.
 :::
 
 :::{exercise}
@@ -544,14 +544,14 @@ Each independent one-dimensional coordinate contributes $\tfrac12\hbar\omega$.  
 :::{exercise}
 :label: ex-quantum-mechanics-in-three-dimensions-18
 
-Explain, referring to the "accidental" degeneracy discussed in the text, what would have to be true of a central potential $V(r)$ for its energy levels to depend on $\ell$ as well as $n$ — i.e., for the extra Coulomb-specific degeneracy to be absent — and state whether you would expect the isotropic harmonic oscillator (whose levels depend on $N=2n_r+\ell$, not on $n_r$ and $\ell$ separately) to show this same kind of extra degeneracy.
+Explain, referring to the "accidental" degeneracy discussed in the text, what would have to be true of a central potential $V(r)$ for its energy levels to depend separately on $n_r$ and $\ell$ — i.e., for the extra Coulomb-specific degeneracy to be absent — and state whether you would expect the isotropic harmonic oscillator (whose levels depend on $N=2n_r+\ell$, not on $n_r$ and $\ell$ separately) to show this same kind of extra degeneracy.
 :::
 
 :::{solution} ex-quantum-mechanics-in-three-dimensions-18
 :label: sol-quantum-mechanics-in-three-dimensions-18
 :class: dropdown
 
-For a general central potential, the radial equation can yield energies that depend separately on radial and angular quantum numbers; then states of equal principal $n$ but different $\ell$ are no longer degenerate.  Coulomb's $1/r$ potential is special in giving energy depending only on $n$.  The isotropic oscillator instead depends on $N=2n_r+\ell$, so it has degeneracy among different $(n_r,\ell)$ combinations but not the Coulomb all-$\ell$ degeneracy at fixed $n$.  Therefore, its degeneracy is special but not the same Coulomb accidental degeneracy.
+For a general central potential, the radial equation can yield energies that depend separately on the radial and angular quantum numbers, $E=E(n_r,\ell)$; then the extra degeneracy among different $\ell$ values found in a Coulomb shell is absent.  Coulomb's $1/r$ potential is special in giving energy depending only on $n=n_r+\ell+1$.  The isotropic oscillator instead depends on $N=2n_r+\ell$, so it has degeneracy among different $(n_r,\ell)$ combinations but not the Coulomb all-$\ell$ degeneracy at fixed $n$.  Therefore, its degeneracy is special but not the same Coulomb accidental degeneracy.
 :::
 
 :::{exercise}

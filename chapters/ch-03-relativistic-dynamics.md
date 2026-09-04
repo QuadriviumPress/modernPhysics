@@ -40,19 +40,19 @@ By the end of this chapter, you should be able to:
 
 Rather than simply asserting the corrected formula, it is worth seeing exactly where it comes from, because the argument is a direct descendant of the light-clock argument used to derive time dilation in [Chapter 2](#ch-special-relativity), and it makes clear that the correction is forced on us by the Lorentz transformation, not chosen for convenience.
 
-Set up two identical particles, $A$ and $B$, each of rest mass $m$, in a symmetric elastic collision designed so that ordinary Newtonian intuition about "before" and "after" still applies to the parts of the motion parallel to the particles' relative velocity, while only the *perpendicular* (transverse) motion is used to track momentum. Let frame $S'$ move at speed $v$ along the $x$-axis relative to frame $S$. Particle $B$ is permanently at rest in $S$ except for a small transverse "bounce": as measured in $S$, $B$ moves with a small speed $w_0$ in the $+y$ direction, collides elastically with $A$ at the origin, and rebounds with speed $w_0$ in the $-y$ direction — a purely transverse, symmetric bounce, as measured in $S$. Particle $A$ undergoes the mirror-image motion, but as measured in *its own* rest frame $S'$: $A$ moves with speed $w_0$ in the $-y'$ direction, bounces elastically off $B$, and rebounds at $+w_0$ in $y'$, as measured in $S'$. Since $S'$ moves at speed $v$ relative to $S$, particle $A$'s velocity as measured in frame $S$ has an $x$-component of $v$ (the frame's relative velocity) and a $y$-component obtained from the velocity-transformation rule for the direction perpendicular to the boost: because $\Delta y = \Delta y'$ while $\Delta t = \gamma(v)\left(\Delta t' + v\Delta x'/c^2\right) = \gamma(v)\Delta t'$ for a particle with $\Delta x' = 0$, the transverse speed measured in $S$ is reduced by a factor of $\gamma(v)$ compared to the transverse speed $w_0$ measured in $S'$:
+Consider two identical particles, $A$ and $B$, each of rest mass $m$, in an idealized elastic scattering event. Choose the incoming and outgoing velocities so that the $x$ components are unchanged while each particle's $y$ component reverses sign. In frame $S$, let $B$'s transverse speed be $w_0$. Let $S'$ move at speed $v$ along the $x$-axis relative to $S$, and choose $S'$ so that $A$ has no $x'$ motion. In $S'$, let $A$'s transverse speed be the same $w_0$. Because $\Delta y = \Delta y'$ while $\Delta t = \gamma(v)\left(\Delta t' + v\Delta x'/c^2\right) = \gamma(v)\Delta t'$ for $A$ with $\Delta x' = 0$, the transverse speed measured in $S$ is reduced by a factor of $\gamma(v)$:
 
 $$
 u_y(A) = \frac{w_0}{\gamma(v)}, \qquad \text{as measured in } S.
 $$
 
-Now demand that the total $y$-momentum, as measured in frame $S$, be conserved by this collision — indeed, by the mirror symmetry of the setup (swapping the labels $A \leftrightarrow B$ together with $y \to -y$ maps the "before" configuration onto an equivalent "before" configuration), the total transverse momentum measured in $S$ must equal exactly zero, both before and after the bounce. Writing the momentum of a particle moving at speed $u$ as $p = m(u)\,u$, for some as-yet-undetermined function $m(u)$ that reduces to the particle's ordinary mass at $u=0$, this symmetry condition reads
+In $S$, $A$ therefore has an $x$ component $v$ and a $y$ component $-w_0/\gamma(v)$ before the bounce, while $B$ has a $y$ component $+w_0$. After the bounce, both $y$ components reverse sign. Writing the momentum of a particle moving at speed $u$ as $p = m(u)\,u$, for some as-yet-undetermined function $m(u)$ that reduces to the particle's ordinary mass at $u=0$, conservation of $y$ momentum says that the incoming and outgoing transverse momenta are equal. Since the outgoing total is the negative of the incoming total, each must be zero; hence
 
 $$
-m\big(u(A)\big)\, u_y(A) \;-\; m\big(u(B)\big)\, w_0 \;=\; 0,
+m\big(u(A)\big)\, |u_y(A)| \;-\; m\big(u(B)\big)\, |u_y(B)| \;=\; 0,
 $$
 
-where $u(A)$ and $u(B)$ denote the total (not just transverse) speeds of $A$ and $B$ in frame $S$. Substituting $u_y(A) = w_0/\gamma(v)$ and cancelling the common factor of $w_0$,
+where $u(A)$ and $u(B)$ denote the total (not just transverse) speeds of $A$ and $B$ in frame $S$. Substituting the magnitudes $|u_y(A)| = w_0/\gamma(v)$ and $|u_y(B)| = w_0$, and cancelling the common factor of $w_0$,
 
 $$
 \frac{m\big(u(A)\big)}{\gamma(v)} = m\big(u(B)\big).
@@ -74,7 +74,7 @@ $$
 \vec p = \gamma m \vec u = \frac{m\vec u}{\sqrt{1 - u^2/c^2}},
 $$
 
-where $m$ is the particle's **rest mass** — an intrinsic, frame-independent property of the particle, equal to the mass measured by an observer at rest relative to it — and $u$ is the particle's speed in the frame in question. For $u \ll c$, $\gamma \to 1$ and this reduces to the Newtonian $\vec p = m\vec u$. As $u \to c$, however, $\gamma \to \infty$, so $p \to \infty$ as well: **an infinite momentum, and correspondingly an infinite force applied for a finite time, would be needed to accelerate a massive particle to the speed of light.** This is the precise dynamical reason no massive object can reach or exceed $c$, complementing the kinematic argument of [Chapter 2](#ch-special-relativity) (relativistic velocity addition never produces $u \ge c$ from sub-light inputs).
+where $m$ is the particle's **rest mass** — an intrinsic, frame-independent property of the particle, equal to the mass measured by an observer at rest relative to it — and $u$ is the particle's speed in the frame in question. For $u \ll c$, $\gamma \to 1$ and this reduces to the Newtonian $\vec p = m\vec u$. As $u \to c$, however, $\gamma \to \infty$, so $p \to \infty$ as well: **a finite force acting for a finite time supplies only a finite impulse, whereas reaching the speed of light would require an unbounded impulse and work.** This is the precise dynamical reason no massive object can reach or exceed $c$, complementing the kinematic argument of [Chapter 2](#ch-special-relativity) (relativistic velocity addition never produces $u \ge c$ from sub-light inputs).
 
 :::{warning}
 Many older textbooks (and Einstein himself, in some early writing) call the combination $\gamma m$ the particle's "relativistic mass," treating $p = m_{\text{rel}}u$ as formally identical to the Newtonian formula with an ordinary, speed-dependent mass substituted in. Modern usage in physics avoids this language: $m$ denotes only the single, frame-independent **rest mass**, and the factor of $\gamma$ is understood to belong to the *kinematics* of momentum and energy, not to a literally growing mass. "Relativistic mass" also fails to generalize cleanly — it does not, for instance, correctly describe how a moving object's inertia to *transverse* versus *longitudinal* forces differs — so treat it as a historical notational convenience at best, not a physical mass increase.
@@ -82,7 +82,7 @@ Many older textbooks (and Einstein himself, in some early writing) call the comb
 
 #### Worked Example: Testing $p = \gamma m u$ Against Data
 
-The formula $\vec p = \gamma m \vec u$ is not merely a theoretical nicety; it has been tested directly by measuring the momentum and speed of fast electrons and protons independently — momentum from the radius of curvature in a known magnetic field ($p = qBr$), speed from time-of-flight over a measured distance. Historical experiments of exactly this kind (Rogers et al., 1940, for electrons; Zrelov et al., 1958, for protons, among others) confirm $p/(mu) = \gamma(u)$ to high precision across a wide range of speeds, and sharply rule out the Newtonian prediction $p/(mu) = 1$ at any appreciable fraction of $c$. For a proton with $u = 0.60c$, for instance, $\gamma = 1/\sqrt{1-0.36} = 1.25$, so the measured momentum is $25\%$ larger than the Newtonian formula would predict — a discrepancy easily resolved by 1950s particle-accelerator instrumentation, and one of the most direct confirmations that $m(u) = \gamma m$, not $m$, governs a moving particle's inertia.
+The formula $\vec p = \gamma m \vec u$ is not merely a theoretical nicety; it has been tested directly by measuring the momentum and speed of fast electrons and protons independently — momentum from the radius of curvature in a known magnetic field ($p = qBr$), speed from time-of-flight over a measured distance. Measurements of this kind confirm $p/(mu) = \gamma(u)$ across a wide range of speeds and rule out the Newtonian prediction $p/(mu) = 1$ at appreciable fractions of $c$. For a proton with $u = 0.60c$, for instance, $\gamma = 1/\sqrt{1-0.36} = 1.25$, so the relativistic momentum is $25\%$ larger than the Newtonian formula predicts.
 
 :::{tip}
 Before reaching for $\vec p = \gamma m\vec u$ or $K = (\gamma-1)mc^2$ in a problem, check where the given speed sits relative to $c$. If $u/c \lesssim 0.1$ or so, $\gamma \approx 1 + \tfrac12(u/c)^2$ is within about $0.5\%$ of unity, and the Newtonian formulas $p \approx mu$ and $K \approx \tfrac12mu^2$ are an excellent, much simpler approximation. If instead $u$ is a substantial fraction of $c$ — or if a kinetic energy $K$ is given that turns out to be comparable to or larger than the rest energy $mc^2$ — the relativistic expressions are mandatory; the worked example at the end of this chapter shows just how badly the Newtonian formula fails once $K \gtrsim mc^2$.
@@ -148,7 +148,7 @@ $$
 E_0 = mc^2.
 $$
 
-Then $K = E - E_0$: kinetic energy is the energy *above and beyond* the energy $mc^2$ a particle possesses simply by virtue of having rest mass $m$, even at rest ($u=0$, $\gamma=1$). This is the celebrated **mass–energy equivalence**: rest mass is a form of energy, convertible (in principle and, in nuclear and particle processes, routinely in practice) into other forms of energy, and vice versa. The conversion factor $c^2 \approx 9\times 10^{16}\ \text{m}^2/\text{s}^2$ is enormous, which is why converting even a small amount of rest mass releases a very large amount of energy — the physical basis of the energy released in nuclear fission and fusion, examined in [Chapter 11](#ch-many-electron-atoms).
+Then $K = E - E_0$: kinetic energy is the energy *above and beyond* the energy $mc^2$ a particle possesses simply by virtue of having rest mass $m$, even at rest ($u=0$, $\gamma=1$). This is the celebrated **mass–energy equivalence**: rest mass is a form of energy, convertible (in principle and, in nuclear and particle processes, routinely in practice) into other forms of energy, and vice versa. The conversion factor $c^2 \approx 9\times 10^{16}\ \text{m}^2/\text{s}^2$ is enormous, which is why converting even a small amount of rest mass releases a very large amount of energy — the physical basis of the energy released in nuclear fission and fusion, examined in [Chapter 13](#ch-nuclear-physics).
 
 :::{note}
 Einstein did not present $E=mc^2$ in his main June 1905 relativity paper; it appeared in a short follow-up note submitted that September, "Does the Inertia of a Body Depend Upon Its Energy Content?", which asked what happens to a body's mass when it emits energy as radiation. Einstein's argument there — analyzing a body emitting two equal light pulses in opposite directions, as measured in two different frames — concluded that a body losing energy $L$ must lose mass $L/c^2$, and he suggested, remarkably prescient for 1905, that this might one day be tested with radioactive salts like those Marie and Pierre Curie were studying. The clean experimental confirmation, precisely measuring the mass deficit of a nucleus against the kinetic energy released in its reactions, would not come until nuclear physics matured decades later.
@@ -186,7 +186,7 @@ $$
 \left(\frac{E}{c}\right)^2 - p_x^2 - p_y^2 - p_z^2 = (mc)^2,
 $$
 
-which is precisely the energy–momentum relation in Equation {eq}`eq:ch03-energy-momentum`, rearranged; the rest mass $m$ plays the same role for the energy–momentum four-vector that the invariant interval plays for the spacetime-displacement four-vector — a quantity every observer computes to be the same, regardless of the frame in which $E$ and $\vec p$ individually are measured. Because $E/c$ and $\vec p$ transform together, an object's energy–momentum four-vector is always parallel to its worldline on a spacetime diagram of the $(ct, x)$ plane extended to include $(E/c, p_x)$: a slower particle has a "steeper" four-vector (larger $E/c$ relative to $p_x$), and the ratio $v/c = p_xc/E$ recovers the particle's ordinary velocity.
+which is precisely the energy–momentum relation in Equation {eq}`eq:ch03-energy-momentum`, rearranged; the rest mass $m$ plays the same role for the energy–momentum four-vector that the invariant interval plays for the spacetime-displacement four-vector — a quantity every observer computes to be the same, regardless of the frame in which $E$ and $\vec p$ individually are measured. For a massive particle, the energy–momentum four-vector is proportional to its four-velocity. Its component ratio therefore gives the ordinary velocity, $v_x = p_xc^2/E$ (and similarly for the other components). A slower particle has a larger ratio of $E/c$ to its momentum, as this expression requires.
 
 The relation can be read geometrically as a right triangle, as shown in {numref}`Figure %s <fig:ch03-energy-momentum>`: the total-energy term is the hypotenuse, while rest energy and momentum provide the two legs.
 
@@ -201,6 +201,7 @@ Two limits of the energy–momentum relation are worth committing to memory:
 
 - **Massive particle at rest** ($p = 0$): $E = mc^2$, the rest energy alone.
 - **Massless particle** ($m = 0$), such as a photon: $E = pc$. Massless particles carry momentum and energy but no rest energy, and — consistent with the momentum argument above, which forbids a *massive* particle from reaching $u=c$ — they travel at exactly $c$ in every inertial frame.
+- **Ultrarelativistic massive particle** ($pc \gg mc^2$, equivalently $K \gg mc^2$): $E \approx pc$ and $u \approx c$. The massless relation is therefore also an excellent approximation for a sufficiently energetic massive particle.
 
 The energy–momentum relation is often more convenient than working with $u$ and $\gamma$ directly, particularly for high-energy particles and for photons, where speed is fixed at $c$ and carries no information about energy.
 
@@ -222,7 +223,7 @@ $$
 (Mc^2)^2 \equiv E_{\text{total}}^2 - (p_{\text{total}}c)^2,
 $$
 
-is the same number whether computed in the lab frame or in the CM frame — but in the CM frame, where $p_{\text{total}} = 0$ by definition, it simplifies to $Mc^2 = E_{\text{total,CM}}$: the total CM-frame energy alone. This invariant $M$ is exactly the quantity that determines whether a given reaction can occur at all: by conservation of the energy-momentum four-vector, a reaction that produces a set of final-state particles with total rest mass $\sum m_f$ is only possible if the *available* energy in the CM frame is at least $\left(\sum m_f\right)c^2$ — i.e., if $M \ge \sum m_f$. The **threshold** condition is $M = \sum m_f$ exactly, corresponding to all final-state particles created at rest relative to the CM frame (and hence relative to each other), with no leftover kinetic energy to spare.
+is the same number whether computed in the lab frame or in the CM frame — but in the CM frame, where $p_{\text{total}} = 0$ by definition, it simplifies to $Mc^2 = E_{\text{total,CM}}$: the total CM-frame energy alone. This invariant $M$ determines whether a reaction is kinematically possible: by conservation of the energy-momentum four-vector, a reaction that produces a set of final-state particles with total rest mass $\sum m_f$ is only possible if the *available* energy in the CM frame is at least $\left(\sum m_f\right)c^2$ — i.e., if $M \ge \sum m_f$. Other conservation laws and interaction probabilities can still forbid or suppress a reaction. The **threshold** condition is $M = \sum m_f$ exactly, corresponding, for massive final-state particles, to all of them being at rest relative to the CM frame (and hence relative to each other), with no leftover kinetic energy to spare.
 
 The CM frame is not a relativistic invention, and it is worth recovering the non-relativistic intuition before leaning on it. {numref}`Figure %s <fig:ch03-collision-sim>` runs elastic and inelastic collisions in one and two dimensions, with the center of mass drawn on the screen and a momentum diagram beside it. Whatever the pucks do, that marker glides on at constant velocity — the collision cannot touch it, because the internal forces cancel in pairs — which is what makes its rest frame a natural place to do the bookkeeping. Choose the masses and velocities so that the marker stands still, and the momentum diagram shows what has been bought: two arrows equal and opposite before the collision, two arrows equal and opposite after it, however much kinetic energy was lost in between. The relativistic version below keeps that structure exactly, replacing $m\vec u$ by $\gamma m \vec u$ and the total mass by the invariant $M$; what changes is that $M$ is no longer the sum of the parts.
 
@@ -280,7 +281,7 @@ Interior of the former Bevatron building at Lawrence Berkeley National Laborator
 
 [Chapter 2](#ch-special-relativity) argued, from causality alone, that no signal or influence can travel faster than $c$ without permitting effects to precede their causes in some valid inertial frame. This chapter's momentum formula, $p = \gamma m u$, gives an independent, purely dynamical reason a *massive* particle in particular can never reach or exceed $c$: as $u \to c^-$, $\gamma \to \infty$, so accelerating a massive particle arbitrarily close to $c$ requires arbitrarily large — and, at $u=c$ itself, literally infinite — momentum and energy. No finite amount of work can supply this, so $c$ is a strict, unreachable asymptote for any object with $m>0$, approached but never attained no matter how long or how powerfully it is accelerated.
 
-It is sometimes asked whether a hypothetical particle might simply be *born* moving faster than $c$, without ever having to accelerate through $c$ — such a hypothetical particle is called a **tachyon**. Formally, applying $E^2 = (pc)^2+(mc^2)^2$ at $u>c$ requires $\gamma^2 = 1/(1-u^2/c^2)$ to be negative, so consistency would force $m^2$ itself to be negative (an "imaginary rest mass"), a mathematical possibility with no known physical instantiation. More importantly, even setting this oddity aside, a tachyon would necessarily connect spacelike-separated events ([Chapter 2](#ch-special-relativity)) — and the causality argument there shows that *some* inertial observer would measure any spacelike-connecting signal to travel backward in time, arriving before it was sent. No experiment has ever detected a particle exceeding $c$, and every attempt to build a fully self-consistent theory of tachyons that avoids these causal paradoxes has failed; the mass–energy relation of this chapter and the light-cone causality argument of [Chapter 2](#ch-special-relativity) are two independent, mutually reinforcing reasons $c$ is an absolute speed limit for anything that can carry energy or information.
+It is sometimes asked whether a hypothetical particle might simply be *born* moving faster than $c$, without ever having to accelerate through $c$ — such a hypothetical particle is called a **tachyon**. Formally, applying the energy–momentum relation at $u>c$ gives a spacelike four-momentum, so the invariant mass-squared would be negative (often described informally as an "imaginary rest mass"). This is not the rest mass of an ordinary particle, and no such particle has been observed. More importantly, a tachyon would connect spacelike-separated events ([Chapter 2](#ch-special-relativity)) — and the causality argument there shows that *some* inertial observer would measure any spacelike-connecting signal to travel backward in time, arriving before it was sent. Thus the mass–energy relation excludes faster-than-light motion for ordinary massive particles, while the light-cone argument gives a separate causal reason that controllable faster-than-light signals cannot exist.
 
 ### Worked Example: An Electron Accelerated Through a Potential Difference
 
@@ -307,9 +308,10 @@ Note that a Newtonian calculation of the speed from $K = \tfrac12 mu^2$ would gi
 - Relativistic kinetic energy is $K = (\gamma - 1)mc^2$, which reduces to $\tfrac12 mu^2$ for $u \ll c$.
 - **Total energy** $E = \gamma mc^2$ and **rest energy** $E_0 = mc^2$ satisfy $K = E - E_0$: mass is a form of energy (mass–energy equivalence), convertible to and from other forms of energy.
 - The **energy–momentum invariant** $E^2 = (pc)^2 + (mc^2)^2$ holds for all particles in all frames; it reduces to $E = mc^2$ for a particle at rest and to $E = pc$ for a massless particle such as a photon, which necessarily travels at $c$.
+- For an ultrarelativistic massive particle with $pc \gg mc^2$, the same invariant gives $E \approx pc$ and $u \approx c$.
 - Energy and momentum combine into a single **energy–momentum four-vector**, $p^\mu = (E/c, p_x, p_y, p_z)$, which transforms like $(ct,x,y,z)$ under a Lorentz boost and whose invariant magnitude is the rest mass, $(E/c)^2 - p^2 = (mc)^2$. Conservation of energy and momentum together is equivalent to conservation of this single four-vector.
 - The **center-of-momentum (CM) frame** is the frame in which total momentum is zero; the invariant total mass $M$ of a system, computed from $M^2c^4 = E_{\text{total}}^2 - (p_{\text{total}}c)^2$, sets the **threshold** condition, $M = \sum m_f$, for whether a reaction producing a given set of final-state particles is energetically possible, and fixed-target reactions require substantially more beam kinetic energy than head-on collider reactions to reach the same threshold.
-- Combining the divergence of $p=\gamma m u$ as $u\to c$ with the causality argument of [Chapter 2](#ch-special-relativity) rules out faster-than-light massive particles (and hypothetical "tachyons") on two independent grounds.
+- Combining the divergence of $p=\gamma m u$ as $u\to c$ with the causality argument of [Chapter 2](#ch-special-relativity) rules out faster-than-light motion for ordinary massive particles and shows why controllable faster-than-light signals would create causal paradoxes.
 - Newtonian expressions for momentum and kinetic energy are the $u \ll c$ (equivalently $K \ll mc^2$) limit of the relativistic expressions and must not be used when this condition fails.
 
 ## Problems
@@ -357,7 +359,7 @@ Therefore, the proton has $\gamma=2.294$, $E=2.15\times10^3\ \text{MeV}$, $K=1.2
 :::{exercise}
 :label: ex-relativistic-dynamics-2
 
-Find the speed at which a particle's relativistic kinetic energy differs from the Newtonian prediction $\tfrac12 mu^2$ by 10%. (Hint: compute $K_{\text{rel}}/K_{\text{Newt}}$ as a function of $u/c$ and solve numerically or by successive approximation.)
+Find the speed at which a particle's relativistic kinetic energy is 10% larger than the Newtonian prediction $\tfrac12 mu^2$. (Hint: compute $K_{\text{rel}}/K_{\text{Newt}}$ as a function of $u/c$ and solve numerically or by successive approximation.)
 :::
 
 :::{solution} ex-relativistic-dynamics-2
@@ -691,14 +693,14 @@ In a fixed-target experiment, much of the beam energy remains as forward centre-
 :::{exercise}
 :label: ex-relativistic-dynamics-10
 
-A photon of energy $E_\gamma$ collides head-on with a stationary electron (rest mass $m$) and is absorbed, forming a single particle of some new rest mass $M$ at rest in the lab frame after the collision (an idealized, energy-non-conserving toy problem — real photon absorption by a free electron cannot conserve energy and momentum simultaneously unless the resulting particle recoils; ignore that subtlety here and simply find $M$ from four-vector conservation, treating the collision as perfectly inelastic). Express $M$ in terms of $m$, $E_\gamma$, and $c$.
+In an idealized absorption reaction, a photon of energy $E_\gamma$ collides head-on with a stationary electron of rest mass $m$ and is absorbed, forming a single recoiling particle of rest mass $M$. Use four-vector conservation to express $M$ in terms of $m$, $E_\gamma$, and $c$. What is the particle's momentum in the lab frame?
 :::
 
 :::{solution} ex-relativistic-dynamics-10
 :label: sol-relativistic-dynamics-10
 :class: dropdown
 
-There is an inconsistency in the phrase “at rest in the lab frame”: the incident photon has momentum $p_\gamma=E_\gamma/c$, so four-momentum conservation requires the final particle to recoil with that momentum.  The invariant mass of the one-particle final state is nevertheless found from the initial four-vector:
+The initial photon and electron have total momentum $p_\gamma=E_\gamma/c$ in the photon direction, so the final particle must recoil with that momentum. The invariant mass of the one-particle final state follows from the initial four-vector:
 
 $$
 \begin{aligned}
@@ -714,7 +716,7 @@ $$
 M=\sqrt{m^2+\frac{2mE_\gamma}{c^2}}.
 $$
 
-Therefore, a momentum-conserving perfectly inelastic collision produces a recoiling particle with rest mass $M=\sqrt{m^2+2mE_\gamma/c^2}$; a final particle at rest is impossible unless $E_\gamma=0$.
+Therefore, the final particle has momentum $p=E_\gamma/c$ and rest mass $M=\sqrt{m^2+2mE_\gamma/c^2}$. Its total energy is $mc^2+E_\gamma$, as required by energy conservation.
 :::
 
 :::{exercise}

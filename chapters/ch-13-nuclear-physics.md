@@ -58,7 +58,15 @@ $$
 
 so nuclear *volume* is proportional to $A$ — each nucleon occupies, on average, the same volume regardless of the size of the nucleus it belongs to, exactly as one would expect for an (nearly) incompressible fluid of tightly packed, closely spaced constituents. This is the empirical basis of the **liquid-drop model** of the nucleus, in which the nucleus is treated, for many purposes, as a droplet of incompressible nuclear fluid.
 
-Nuclear stability is not explained by electromagnetism — the Coulomb force between two protons at nuclear separations, $\sim 1\ \text{fm}$, is enormously repulsive and would fly the nucleus apart if the electromagnetic force between nucleons were the whole story. Nuclei are held together by the **strong nuclear force**, an attractive interaction between nucleons (proton-proton, proton-neutron, and neutron-neutron alike, largely independent of charge) that is far stronger than the Coulomb repulsion at nuclear distances, but has an extremely short range (roughly $1$–$2\ \text{fm}$), falling off essentially to zero beyond a few fermis. This short range explains why nuclear binding, unlike Coulomb binding, saturates: a given nucleon interacts strongly only with its immediate neighbors, not with every other nucleon in the nucleus (unlike the long-range Coulomb repulsion, which every proton feels from every other proton, growing roughly as $Z^2$) — a key qualitative fact used below to explain both the shape of the binding-energy curve and, ultimately, nuclear fission and fusion.
+The corresponding mass density is therefore nearly independent of $A$:
+
+$$
+\rho \approx \frac{A m_n}{(4\pi/3)R^3} = \frac{3m_n}{4\pi R_0^3} \approx 2.3\times10^{17}\ \text{kg/m}^3 \approx 0.14\ \text{nucleons/fm}^3.
+$$
+
+This enormous but nearly constant density is one of the clearest signs that nuclei behave like an incompressible nuclear fluid rather than like dilute collections of independently orbiting particles.
+
+Nuclear stability is not explained by electromagnetism — the Coulomb force between two protons at nuclear separations, $\sim 1\ \text{fm}$, is enormously repulsive and would fly the nucleus apart if the electromagnetic force between nucleons were the whole story. Nuclei are held together by the **strong nuclear force**, an attractive interaction between nucleons at typical nuclear separations (proton-proton, proton-neutron, and neutron-neutron alike, largely independent of charge) that is far stronger than the Coulomb repulsion at nuclear distances. It has an extremely short range (roughly $1$–$2\ \text{fm}$), falling off essentially to zero beyond a few fermis; at still shorter separations, the nuclear interaction also has a repulsive core that prevents the nucleus from collapsing. This short range explains why nuclear binding, unlike Coulomb binding, saturates: a given nucleon interacts strongly only with its immediate neighbors, not with every other nucleon in the nucleus (unlike the long-range Coulomb repulsion, which every proton feels from every other proton, growing roughly as $Z^2$) — a key qualitative fact used below to explain both the shape of the binding-energy curve and, ultimately, nuclear fission and fusion.
 
 :::{margin}
 For scale, $1\ \text{fm}=10^{-15}\ \text{m}$ is about $10^5$ times smaller than a typical atomic radius ($\sim1\ \text{Å}=10^{-10}\ \text{m}$) — the same factor of $10^5$ flagged in the chapter introduction as the length scale separating nuclear from atomic physics.
@@ -74,13 +82,19 @@ Alpha particles scattering from a nucleus of adjustable charge, with a diffuse-c
 
 ### Binding Energy
 
-The mass of a bound nucleus is always *less* than the sum of the masses of its separated constituent protons and neutrons — a direct manifestation of mass–energy equivalence ([Chapter 3](#ch-relativistic-dynamics)): energy must be supplied to pull the nucleus apart into free nucleons, so the bound system, having lower total energy, has correspondingly lower total mass. The **binding energy** is defined as
+The mass of a bound nucleus is always *less* than the sum of the masses of its separated constituent protons and neutrons — a direct manifestation of mass–energy equivalence ([Chapter 3](#ch-relativistic-dynamics)): energy must be supplied to pull the nucleus apart into free nucleons, so the bound system, having lower total energy, has correspondingly lower total mass. In terms of **nuclear** masses, the **binding energy** is defined as
 
 $$
-E_B = \left[Zm_p + Nm_n - M(^A_ZX)\right]c^2,
+E_B = \left[Zm_p + Nm_n - M_\mathrm{nuc}(^A_ZX)\right]c^2,
 $$
 
-where $M(^A_ZX)$ is the measured nuclear mass (in practice, atomic masses, which include electrons, are tabulated and used consistently on both sides of this equation, since the electron masses and atomic binding energies very nearly cancel). It is generally more informative to consider the **binding energy per nucleon**, $E_B/A$, since this measures how tightly, on average, an individual nucleon is bound, independent of the nucleus's overall size.
+where $M_\mathrm{nuc}(^A_ZX)$ is the nuclear mass. Since mass tables usually give **atomic** masses, the equivalent form that can be evaluated directly from those tables is
+
+$$
+E_B = \left[Z m(^1\text{H}) + N m_n - M_\mathrm{atom}(^A_ZX)\right]c^2,
+$$
+
+neglecting the tiny differences in atomic electron-binding energies. The hydrogen-atom mass replaces the bare proton mass so that the $Z$ electron masses cancel. It is generally more informative to consider the **binding energy per nucleon**, $E_B/A$, since this measures how tightly, on average, an individual nucleon is bound, independent of the nucleus's overall size.
 
 :::{margin}
 The **atomic mass unit** is defined as exactly $1/12$ the mass of a neutral $^{12}_6\text{C}$ atom, $1\ \text{u}=1.660539\times10^{-27}\ \text{kg}$, converting to energy as $1\ \text{u}\,c^2=931.494\ \text{MeV}$ — the conversion factor used throughout this chapter's worked examples.
@@ -123,7 +137,7 @@ $$
 
 (Different published fits to the mass table give somewhat different coefficients — a reminder that this is a phenomenological model fit to data, not derived from first principles — but all agree on the same five terms and roughly the same magnitudes.) Each term has already been motivated qualitatively above: the **volume term** $a_VA$ reflects the short-range, saturating strong force acting equally on every nucleon, as if each contributed a fixed amount of binding independent of $A$; the **surface term** $-a_SA^{2/3}$ subtracts binding from the nucleons at the nuclear surface (proportional to surface area, $\propto R^2 \propto A^{2/3}$), which have fewer strong-force neighbors than an interior nucleon; the **Coulomb term** $-a_C Z(Z-1)/A^{1/3}$ is the electrostatic self-energy of $Z$ mutually repelling protons packed into a sphere of radius $R\propto A^{1/3}$, reducing binding as the number of proton pairs, $\sim Z^2$, grows.
 
-The **symmetry term** $-a_A(A-2Z)^2/A$ is new here: it penalizes any departure from $N=Z$, and follows from the Pauli exclusion principle rather than from either the strong or Coulomb force directly — protons and neutrons fill separate sets of momentum states (each a distinct kind of fermion, [Chapter 11](#ch-many-electron-atoms)), so for fixed $A$, forcing $N$ and $Z$ apart pushes some nucleons into higher-energy states than a balanced $N=Z$ filling would require, exactly as forcing electrons into higher shells costs energy in a many-electron atom. Minimizing $E_B$ with respect to $Z$ at fixed $A$ (differentiating the Coulomb and symmetry terms, the only two that depend on how a fixed $A$ is divided between $Z$ and $N$, and setting the result to zero) gives, for large $A$,
+The **symmetry term** $-a_A(A-2Z)^2/A$ is new here: it penalizes any departure from $N=Z$, and follows from the Pauli exclusion principle rather than from either the strong or Coulomb force directly — protons and neutrons fill separate sets of momentum states (each a distinct kind of fermion, [Chapter 11](#ch-many-electron-atoms)), so for fixed $A$, forcing $N$ and $Z$ apart pushes some nucleons into higher-energy states than a balanced $N=Z$ filling would require, exactly as forcing electrons into higher shells costs energy in a many-electron atom. Maximizing $E_B$ with respect to $Z$ at fixed $A$ (equivalently, minimizing the nuclear mass) gives, for large $A$,
 
 $$
 Z_{\min}(A) \approx \frac{2a_A A}{4a_A + a_C A^{2/3}},
@@ -131,7 +145,7 @@ $$
 
 the proton number that maximizes binding energy for that $A$. For $A=238$, this predicts $Z_{\min}\approx91.5$ — strikingly close to uranium's actual $Z=92$ — and, more generally, shows why the ratio $Z_{\min}/A$ decreases steadily below $1/2$ as $A$ grows: the Coulomb term's $Z^2$ growth increasingly outweighs the symmetry term's preference for $N=Z$, pushing the most stable nucleus for each $A$ toward greater neutron excess, exactly the neutron-rich bending of the stable band away from $N=Z$ seen in {numref}`Figure %s <fig:ch13-nucleus-sim>` below.
 
-:::{dropdown} Deriving the Line of Stability: Minimizing $E_B$ at Fixed $A$
+:::{dropdown} Deriving the Line of Stability: Maximizing $E_B$ at Fixed $A$
 Only the Coulomb and symmetry terms depend on how a fixed $A$ is divided between $Z$ and $N$; the volume, surface, and (for this smooth, continuous-$Z$ treatment) pairing terms are dropped. Writing $E_B$ as a function of $Z$ alone at fixed $A$ and differentiating,
 
 $$
@@ -147,7 +161,7 @@ $$
 Multiplying both sides by $A$ and collecting every term proportional to $Z$ on the left,
 
 $$
-2a_CZA^{2/3} + 8a_AZ = 4a_AA \quad\Longrightarrow\quad Z\left(4a_A + a_CA^{2/3}\right) = 2a_AA,
+a_CZA^{2/3} + 4a_AZ = 2a_AA \quad\Longrightarrow\quad Z\left(4a_A + a_CA^{2/3}\right) = 2a_AA,
 $$
 
 which rearranges directly into the formula quoted in the text,
@@ -159,7 +173,7 @@ $$
 Because this comes from setting a first derivative to zero, it locates a maximum of $E_B$ (equivalently, a minimum of the nuclear mass) at fixed $A$ — exactly the most stable nuclide for that mass number, which is what "the line of stability" means.
 :::
 
-The **pairing term** $\delta(A,Z)$ captures a purely quantum effect with no analog in the volume, surface, or Coulomb terms: nucleons of the same type couple preferentially in spin-paired twos (much as the two electrons of a filled atomic orbital pair their spins, [Chapter 11](#ch-many-electron-atoms)), each pair contributing extra binding beyond what the smooth terms above predict. An **even–even** nuclide (even $Z$, even $N$) has every nucleon paired and gains the full pairing bonus; an **odd–odd** nuclide has one unpaired proton and one unpaired neutron and loses it; an odd-$A$ nuclide (one odd, one even) is intermediate and conventionally assigned $\delta=0$. The consequence is stark and directly observable in the chart of the nuclides: of the roughly 260 stable nuclides, about 150 are even–even, roughly 100 are odd-$A$, and only four are odd–odd ($^2_1\text{H}$, $^6_3\text{Li}$, $^{10}_5\text{B}$, and $^{14}_7\text{N}$, all among the very lightest nuclei, where the symmetry term's cost of an odd-odd configuration is smallest) — essentially every heavier odd-odd combination is unstable, decaying by beta emission toward an even-even or odd-$A$ neighbor of lower mass.
+The **pairing term** $\delta(A,Z)$ captures a purely quantum effect with no analog in the volume, surface, or Coulomb terms: nucleons of the same type couple preferentially in spin-paired twos (much as the two electrons of a filled atomic orbital pair their spins, [Chapter 11](#ch-many-electron-atoms)), each pair contributing extra binding beyond what the smooth terms above predict. An **even–even** nuclide (even $Z$, even $N$) has every nucleon paired and gains the full pairing bonus; an **odd–odd** nuclide has one unpaired proton and one unpaired neutron and loses it; an odd-$A$ nuclide (one odd, one even) is intermediate and conventionally assigned $\delta=0$. The consequence is stark and directly observable in the chart of the nuclides: of the roughly 260 stable nuclides, about 150 are even–even, roughly 100 are odd-$A$, and only four are odd–odd ($^2_1\text{H}$, $^6_3\text{Li}$, $^{10}_5\text{B}$, and $^{14}_7\text{N}$, all among the very lightest nuclei, where the Coulomb penalty for the proton-rich $N=Z$ arrangement is still modest) — essentially every heavier odd–odd combination is unstable, decaying by beta emission toward an even–even or odd-$A$ neighbor of lower mass.
 
 #### Worked Example: Binding Energy from the Semi-Empirical Mass Formula
 
@@ -214,7 +228,7 @@ It is tempting to picture a radioactive nucleus as "aging" toward its half-life,
 The **activity**, $\mathcal{A} \equiv -dN/dt = \lambda N(t) = \mathcal{A}_0 e^{-\lambda t}$, is the physically measured decay rate (in decays per second, or the traditional unit the curie), and decays with the same exponential form and the same $T_{1/2}$ as $N(t)$ itself, since $\mathcal A$ is simply proportional to $N$ at every instant.
 
 :::{margin}
-$1\ \text{curie (Ci)} \equiv 3.7\times10^{10}$ decays/s, originally defined to match the activity of exactly $1\ \text{g}$ of $^{226}\text{Ra}$ (verified explicitly in the worked example below). The SI unit is the **becquerel** (Bq), $1\ \text{Bq}\equiv1$ decay/s.
+$1\ \text{curie (Ci)} \equiv 3.7\times10^{10}$ decays/s, originally chosen to approximate the activity of $1\ \text{g}$ of $^{226}\text{Ra}$ (verified explicitly in the worked example below). The SI unit is the **becquerel** (Bq), $1\ \text{Bq}\equiv1$ decay/s.
 :::
 
 The exponential law describes a population, not a nucleus, and the difference between those two statements is where intuition usually fails. {numref}`Figure %s <fig:ch13-decay-sim>` shows both at once: individual nuclei decaying at unpredictable moments with no memory of how long they have already waited, and the count of survivors nevertheless tracing a clean exponential once the sample is large enough. The same simulation puts the law to work in reverse — measuring the residual $^{14}\text{C}$ or $^{238}\text{U}$ fraction in a sample of unknown age and reading off the elapsed time — which is the argument by which the age of a bone, a lava flow, or the Earth itself is established.
@@ -241,7 +255,7 @@ Marie Skłodowska Curie, joined by her husband Pierre, took up the puzzle as a d
 
 #### A Decay Chain: Uranium-238 to Lead-206
 
-A single alpha or beta decay usually does not, by itself, produce a stable nuclide: the daughter is often itself radioactive, decaying again, and again, until a stable nuclide is finally reached. Such a sequence is a **decay chain** (or decay series). The longest and most geologically important chain starts at $^{238}_{92}\text{U}$ and ends, fourteen decays later, at stable $^{206}_{82}\text{Pb}$, alternating alpha and beta decays; its first several steps are
+A single alpha or beta decay usually does not, by itself, produce a stable nuclide: the daughter is often itself radioactive, decaying again, and again, until a stable nuclide is finally reached. Such a sequence is a **decay chain** (or decay series). The longest and most geologically important chain starts at $^{238}_{92}\text{U}$ and ends, fourteen decays later, at stable $^{206}_{82}\text{Pb}$, through a sequence of alpha and beta decays; its first several steps are
 
 $$
 {}^{238}_{92}\text{U} \xrightarrow{\alpha} {}^{234}_{90}\text{Th} \xrightarrow{\beta^-} {}^{234}_{91}\text{Pa} \xrightarrow{\beta^-} {}^{234}_{92}\text{U} \xrightarrow{\alpha} {}^{230}_{90}\text{Th} \xrightarrow{\alpha} {}^{226}_{88}\text{Ra} \xrightarrow{\alpha} {}^{222}_{86}\text{Rn} \xrightarrow{\alpha} \cdots \longrightarrow {}^{206}_{82}\text{Pb}.
@@ -253,7 +267,7 @@ Because every step in a chain like this decays at its own fixed rate while simul
 
 #### Worked Example: Activity of a Radium-226 Sample
 
-$^{226}_{88}\text{Ra}$ (half-life $T_{1/2}=1600\ \text{years}$), a step in the uranium-238 chain above, is the isotope Marie Curie isolated and the one for which the **curie** unit of activity was originally defined: $1\ \text{Ci} \equiv 3.7\times10^{10}$ decays/s, chosen to match the activity of exactly $1\ \text{g}$ of $^{226}\text{Ra}$. Verify this using the decay law. The number of nuclei in $1.00\ \text{g}$ of $^{226}\text{Ra}$ (molar mass $\approx226\ \text{g/mol}$) is
+$^{226}_{88}\text{Ra}$ (half-life $T_{1/2}=1600\ \text{years}$), a step in the uranium-238 chain above, is the isotope Marie Curie isolated and the one for which the **curie** unit of activity was originally defined: $1\ \text{Ci} \equiv 3.7\times10^{10}$ decays/s, chosen to approximate the activity of $1\ \text{g}$ of $^{226}\text{Ra}$. Verify this using the decay law. The number of nuclei in $1.00\ \text{g}$ of $^{226}\text{Ra}$ (molar mass $\approx226\ \text{g/mol}$) is
 
 $$
 N = \frac{(1.00\ \text{g})(6.022\times10^{23}\ \text{mol}^{-1})}{226\ \text{g/mol}} = 2.665\times10^{21},
@@ -287,7 +301,7 @@ The artifact is roughly $3190$ years old. This is exactly the calculation, worke
 
 Three principal decay modes connect unstable nuclides to more stable ones:
 
-**Alpha decay** ($^A_ZX \to {}^{A-4}_{Z-2}Y + \alpha$, where $\alpha = {}^4_2\text{He}$) occurs predominantly among heavy nuclei, where it is energetically favorable (the parent's mass exceeds the combined daughter-plus-alpha mass) largely because of the Coulomb term discussed above. Classically, the alpha particle is confined within the nucleus by a potential well combining the short-range attractive strong force and, outside the nuclear radius, the repulsive Coulomb barrier — a barrier typically well above the alpha particle's actual kinetic energy once emitted, so classically the particle could never escape. Alpha decay is understood, quantitatively, as **quantum tunneling** ([Chapter 8](#ch-the-schrodinger-equation)) of the alpha particle through this Coulomb barrier: the measured strong sensitivity of half-life to alpha particle energy (the **Geiger–Nuttall relation**, an empirical pattern in which small changes in emitted alpha energy correspond to enormous changes in half-life, spanning many orders of magnitude across known alpha emitters) is explained quantitatively by the exponential dependence of the tunneling probability on barrier height and width worked out in [Chapter 8](#ch-the-schrodinger-equation), making alpha decay one of the most direct large-scale confirmations of quantum tunneling. Concretely, for a heavy alpha emitter the Coulomb barrier peaks at a height of order $30$–$40\ \text{MeV}$ (roughly the Coulomb repulsion of the departing alpha particle and daughter nucleus evaluated at the nuclear radius) while the emitted alpha particle typically carries away only $4$–$9\ \text{MeV}$ of kinetic energy, so the barrier the alpha particle must tunnel through is tens of MeV high and a few femtometers wide once its outer classical turning point is reached — the illustrative rectangular-barrier tunneling estimate worked out in [Chapter 8](#ch-the-schrodinger-equation) ($\Delta E \approx 20\ \text{MeV}$, $L\approx7\ \text{fm}$, giving $T\approx e^{-2\kappa L}$ with $\kappa=\sqrt{2m_\alpha\Delta E}/\hbar$) uses numbers of exactly this order. Because $T$ depends *exponentially* on both $\Delta E$ and $L$, a modest change in the alpha particle's energy routinely changes the predicted half-life by ten or more orders of magnitude — exactly the pattern captured empirically by the Geiger–Nuttall relation.
+**Alpha decay** ($^A_ZX \to {}^{A-4}_{Z-2}Y + \alpha$, where $\alpha = {}^4_2\text{He}$) occurs predominantly among heavy nuclei, where it is energetically favorable (the parent's mass exceeds the combined daughter-plus-alpha mass) largely because of the Coulomb term discussed above. Classically, the alpha particle is confined within the nucleus by a potential well combining the short-range attractive strong force and, outside the nuclear radius, the repulsive Coulomb barrier — a barrier typically well above the alpha particle's actual kinetic energy once emitted, so classically the particle could never escape. Alpha decay is understood, quantitatively, as **quantum tunneling** ([Chapter 8](#ch-the-schrodinger-equation)) of the alpha particle through this Coulomb barrier: the measured strong sensitivity of half-life to alpha particle energy (the **Geiger–Nuttall relation**, an empirical pattern in which small changes in emitted alpha energy correspond to enormous changes in half-life, spanning many orders of magnitude across known alpha emitters) is explained quantitatively by the exponential dependence of the tunneling probability on barrier height and width worked out in [Chapter 8](#ch-the-schrodinger-equation), making alpha decay one of the most direct large-scale confirmations of quantum tunneling. Concretely, for a heavy alpha emitter the Coulomb barrier peaks at a height of order $30$–$40\ \text{MeV}$ (roughly the Coulomb repulsion of the departing alpha particle and daughter nucleus evaluated at the nuclear radius) while the emitted alpha particle typically carries away only $4$–$9\ \text{MeV}$ of kinetic energy, so the barrier the alpha particle must tunnel through is tens of MeV high and, for a heavy emitter, typically several tens of femtometers wide between the nuclear surface and the outer classical turning point. The illustrative rectangular-barrier tunneling estimate worked out in [Chapter 8](#ch-the-schrodinger-equation) ($\Delta E \approx 20\ \text{MeV}$, $L\approx7\ \text{fm}$, giving $T\approx e^{-2\kappa L}$ with $\kappa=\sqrt{2m_\alpha\Delta E}/\hbar$) is a deliberately simplified barrier with parameters of the same broad scale, not a literal width for every alpha emitter. Because $T$ depends *exponentially* on both $\Delta E$ and $L$, a modest change in the alpha particle's energy routinely changes the predicted half-life by ten or more orders of magnitude — exactly the pattern captured empirically by the Geiger–Nuttall relation.
 
 **Beta decay** occurs in three related forms — $\beta^-$ decay ($n \to p + e^- + \bar\nu_e$, converting a neutron to a proton within the nucleus), $\beta^+$ decay ($p \to n + e^+ + \nu_e$), and electron capture ($p + e^- \to n + \nu_e$) — each mediated by the weak nuclear interaction ([Chapter 14](#ch-elementary-particles-and-the-standard-model)) and each moving a nucleus toward the more stable $N/Z$ ratio for its mass number. The **neutrino** ($\nu_e$) and **antineutrino** ($\bar\nu_e$) are required, not merely as bookkeeping devices, by conservation of energy, momentum, and angular momentum: without a third emitted particle, a two-body decay ($n \to p + e^-$ alone) would force the emitted electron to have one single, fixed energy for a given parent-daughter pair, but the observed electron energy spectrum in beta decay is continuous, spread over a range up to a fixed maximum — direct evidence (first argued by Pauli in 1930, on exactly these grounds) that a third, initially unobserved particle carries away the missing energy and momentum event by event.
 
@@ -379,7 +393,7 @@ $$
 {}^2_1\text{H} + {}^3_1\text{H} \to {}^4_2\text{He} + n,
 $$
 
-pursued in magnetic-confinement **tokamak** reactors such as ITER, currently under construction in France — a fundamentally different confinement strategy from the Sun's, which needs no physical confinement at all beyond its own gravity, and instead uses strong magnetic fields to hold a plasma far too hot ($\sim10^8\ \text{K}$, hotter than the Sun's core, needed to compensate for the much lower particle density achievable in a laboratory) for any physical vessel to contain directly.
+pursued in magnetic-confinement **tokamak** reactors such as the ITER project in France — a fundamentally different confinement strategy from the Sun's, which needs no physical confinement at all beyond its own gravity, and instead uses strong magnetic fields to hold a plasma far too hot ($\sim10^8\ \text{K}$, hotter than the Sun's core, needed to compensate for the much lower particle density achievable in a laboratory) for any physical vessel to contain directly.
 
 #### Worked Example: Energy Released in Deuterium–Tritium Fusion
 
@@ -488,7 +502,7 @@ Conservation of mass number and charge gives
 
 $$^{238}_{92}\text{U}\longrightarrow{}^{234}_{90}\text{Th}+{}^{4}_{2}\text{He}+Q.$$
 
-An alpha particle is an exceptionally tightly bound cluster, and its emission moves a very heavy nucleus toward a region of higher binding energy per nucleon while reducing its Coulomb repulsion.  A single proton is much less tightly bound as an emitted fragment and would leave a less favorable daughter.  This is precisely the physics drawn on the right-hand flank of {numref}`Figure %s <fig:ch13-binding-curve>`: heavy nuclei sit below the peak, and shedding a tightly-bound alpha cluster moves the daughter closer to it.  Therefore, uranium-238 alpha-decays to thorium-234 plus helium-4 because this channel lowers the total mass more effectively than single-proton emission.
+An alpha particle is an exceptionally tightly bound cluster, and its emission moves a very heavy nucleus toward a region of higher binding energy per nucleon while reducing its Coulomb repulsion. A single proton has no internal binding and, for $^{238}_{92}\text{U}$, proton emission is not energetically allowed; among the charged-particle channels that can be open, alpha emission is favored by the alpha particle's large internal binding. This is the qualitative physics drawn on the right-hand flank of {numref}`Figure %s <fig:ch13-binding-curve>`: heavy nuclei sit below the peak, and shedding a tightly bound alpha cluster moves the daughter closer to it. Therefore, uranium-238 alpha-decays to thorium-234 plus helium-4 because this channel lowers the total mass, whereas single-proton emission does not.
 :::
 
 :::{exercise}

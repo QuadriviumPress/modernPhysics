@@ -133,7 +133,7 @@ Time dilation has a companion effect for lengths. Consider a rod of length $L_0$
 Before substituting into $\Delta t = \gamma\Delta t_0$ or $L = L_0/\gamma$, identify explicitly which observer measures the *proper* quantity: $\Delta t_0$ belongs to whichever frame has both events happen at the same location, and $L_0$ belongs to whichever frame the object is at rest in. Every other frame's value is obtained from that one by multiplying or dividing by $\gamma$ — never the reverse — and mixing up which frame is "proper" is the most common source of a factor-of-$\gamma$ error in these problems.
 :::
 
-To measure a moving rod's length, an observer must record the positions of both ends *at the same instant* in their own frame. Consider the muon example again, now from the muon's own rest frame, in which it is Earth's atmosphere that rushes past at speed $v$. In the muon's frame, the muon does not live any longer than its proper lifetime $\Delta t_0$; instead, it is the *distance* to Earth's surface that must be short enough to be crossed in that proper time, i.e., $L = v\Delta t_0$. Combining this with the Earth-frame result $\Delta t = \gamma \Delta t_0$ and $L_0 = v\Delta t$ (the proper atmospheric depth, as measured in Earth's frame) gives
+To measure a moving rod's length, an observer must record the positions of both ends *at the same instant* in their own frame. Consider the muon example again, now from the muon's own rest frame, in which Earth's atmosphere rushes past at speed $v$. During the muon's mean proper lifetime $\Delta t_0$, a layer of atmosphere of thickness $L=v\Delta t_0$ passes it. In Earth's frame, that same layer is at rest, so its proper thickness is $L_0=v\Delta t$, where $\Delta t=\gamma\Delta t_0$ is the muon's mean lifetime in that frame. Therefore,
 
 $$
 L = v\Delta t_0 = \frac{v \Delta t}{\gamma} = \frac{L_0}{\gamma},
@@ -148,7 +148,14 @@ $$
 This is **length contraction**: an object of proper length $L_0$, measured by an observer relative to whom it moves at speed $v$ along its own length, is found to have length $L = L_0/\gamma \le L_0$. Only lengths *along* the direction of relative motion contract; lengths perpendicular to the motion are unaffected (a consequence one can show is required for consistency between the two observers' descriptions of, e.g., a rod passing through a ring). Note the resemblance to the Fitzgerald–Lorentz contraction of [Chapter 1](#ch-need-for-relativity) — the same formula, but now derived as a necessary consequence of the postulates rather than invented to hide a null result.
 
 :::{dropdown} Why transverse lengths cannot contract
-Suppose, for contradiction, that lengths perpendicular to the relative motion did change with speed. Imagine a rigid ring of proper radius $R$, at rest in frame $S$ and lying in the $y$-$z$ plane centered on the $x$-axis, and a rod of that same proper length $R$ moving along the $x$-axis, oriented parallel to $y$ so that it just barely passes through the ring when both are momentarily at rest relative to each other. Now let the rod move through the ring at speed $v$ along $x$. If transverse lengths contracted with speed, an observer at rest in the ring's frame $S$ would say the moving rod's $y$-extent has shrunk below $R$, so the rod passes cleanly through; but an observer riding with the rod would instead say it is the *ring* that moves (at $-v$), so the ring's radius has shrunk, and the rod should catch on it. These are two different, physically incompatible outcomes — the rod either passes through or it does not, and every observer must agree on which — so a transverse length-contraction rule that flips with the sign of $v$ would make the theory self-contradictory. The only choice consistent with all observers agreeing on the same physical outcome is that transverse lengths do not change with $v$ at all, exactly as the Lorentz transformation states directly: $y'=y$ and $z'=z$, with no factor of $\gamma$ anywhere.
+The light-clock argument also rules out a transverse contraction. Let a light clock have mirror separation $L_0$ perpendicular to the relative motion. In the clock's rest frame its proper tick time is $\Delta t_0=2L_0/c$. Suppose, temporarily, that the separation perpendicular to the motion were $kL_0$ in a frame where the clock moves at speed $v$. In that frame,
+
+$$
+\left(\frac{c\Delta t}{2}\right)^2
+ = \left(\frac{v\Delta t}{2}\right)^2+(kL_0)^2.
+$$
+
+Using the already established time-dilation result $\Delta t=\gamma\Delta t_0$ and $\Delta t_0=2L_0/c$ gives $k^2=\gamma^2(1-v^2/c^2)=1$. Therefore $k=1$: $y'=y$ and $z'=z$, as the Lorentz transformation states directly. Only the component parallel to the relative motion contracts.
 :::
 
 :::{warning}
@@ -159,7 +166,7 @@ Length contraction is a statement about a *measurement* — the positions of bot
 
 Length contraction raises a subtle question about rigid bodies that is worth working through carefully, since getting it wrong is a common source of confusion. Consider two identical spaceships, initially at rest a fixed distance $L_0$ apart in some frame $S$, connected by a taut string of exactly that length. At $t=0$ (in $S$), both ships fire identical engines, executing identical acceleration profiles, so that at every later instant in $S$ each ship has exactly the same velocity as the other. Does the string, stretched between them, break?
 
-The naive answer is "no": since both ships always move identically, the distance between them, measured in $S$, never changes from $L_0$. But this overlooks what happens to the string. The string is a physical object with its own proper length, and *in the frame in which it is momentarily at rest*, that proper length must be shrinking, not staying fixed — because the string's own rest frame changes as it accelerates, and simultaneously requiring the ships to keep the *same* $S$-frame separation $L_0$ is a different condition from requiring their separation to stay constant *as measured by the string itself*. Since the ships' separation, measured in $S$, stays exactly $L_0$ while the ships (and any observer moving with them) are increasingly length-contracted relative to $S$, the string's own rest-frame length must actually *increase* to keep up — equivalently, the distance between the ships, measured in the ships' own instantaneous rest frame, grows beyond $L_0$ as their common speed increases. A string of fixed material length cannot stretch to match this demand, and it snaps.
+The naive answer is "no": since both ships always move identically, the distance between them, measured in $S$, never changes from $L_0$. But this overlooks what happens to the string. The string is a physical object with its own proper length, and *in the frame in which it is momentarily at rest*, the separation of its endpoints must grow, not stay fixed — because the string's own rest frame changes as it accelerates, and simultaneously requiring the ships to keep the *same* $S$-frame separation $L_0$ is a different condition from requiring their separation to stay constant *as measured by the string itself*. Since the ships' separation, measured in $S$, stays exactly $L_0$ while the ships (and any observer moving with them) are increasingly length-contracted relative to $S$, the string's own rest-frame length would have to *increase* to keep up — equivalently, the distance between the ships, measured in the ships' own instantaneous rest frame, grows beyond $L_0$ as their common speed increases. A string of fixed material length cannot stretch to match this demand, and it snaps.
 
 The paradox dissolves once it is clear that "the two ships have identical velocity at every instant of $S$-time" is a statement *specific to frame $S$*; it does not mean the ships are relatively at rest, nor does it mean the string, whose integrity depends on physics internal to its own rest frame, experiences no strain. This scenario (due to John Bell, 1976, who reported that it caused genuine disagreement even among professional physicists at CERN) is a useful check on intuition: length contraction is a real, physical effect with real, physical (and sometimes destructive) consequences for extended objects undergoing acceleration, not merely a bookkeeping artifact of coordinate choices.
 
@@ -233,7 +240,7 @@ Classify any two events by the sign of the interval between them, $(\Delta s)^2 
 - **Spacelike** separation, $(\Delta s)^2 < 0$: the events are separated by more space than light could cross in the available time, $|\Delta x|/|\Delta t| > c$. No signal, of any kind consistent with the postulates, can connect them; neither event can be the cause of the other.
 - **Lightlike** (or null) separation, $(\Delta s)^2 = 0$: the events lie exactly on each other's light cone, connectible only by a signal moving at precisely $c$.
 
-Because $(\Delta s)^2$ is Lorentz-invariant, every inertial observer agrees on which of these three categories a given pair of events falls into, even though they may disagree on $\Delta t$ and $\Delta x$ individually. This is the resolution of the apparent puzzle in the worked example above: event 2 was found to occur *before* event 1 in $S'$ despite occurring after it in $S$, but a direct calculation shows the interval between them, $-270{,}000\ \text{m}^2$, is negative — the events are spacelike separated ($|\Delta x| = 600\ \text{m}$ is covered by light in only $2.0\times10^{-6}\ \text{s}$, less than the $\Delta t$ needed... actually here $\Delta x/c = 2.0\ \mu\text{s} > \Delta t = 1.0\ \mu\text{s}$, confirming spacelike separation). Because no signal could have traveled from event 1 to event 2 in the first place, no observer's disagreement about their time-ordering creates any physical contradiction: neither event could possibly have caused the other, in any frame.
+Because $(\Delta s)^2$ is Lorentz-invariant, every inertial observer agrees on which of these three categories a given pair of events falls into, even though they may disagree on $\Delta t$ and $\Delta x$ individually. This is the resolution of the apparent puzzle in the worked example above: event 2 was found to occur *before* event 1 in $S'$ despite occurring after it in $S$, but a direct calculation shows the interval between them, $-270{,}000\ \text{m}^2$, is negative — the events are spacelike separated. Indeed, light would need $|\Delta x|/c = 2.0\ \mu\text{s}$ to cross the $600\ \text{m}$ separation, longer than the $\Delta t = 1.0\ \mu\text{s}$ between the events. Because no signal could have traveled from event 1 to event 2 in the first place, no observer's disagreement about their time-ordering creates any physical contradiction: neither event could possibly have caused the other, in any frame.
 
 The full set of events timelike-separated from a given event $x$ and in its future is called $x$'s **future light cone**; the analogous set in the past is its **past light cone**. Events in $x$'s future light cone are exactly the events $x$ could causally influence; events in its past light cone are exactly the events that could have influenced $x$. All observers agree on the light cone structure of any event, because it is built entirely from the invariant interval.
 
@@ -247,13 +254,13 @@ $$
 u_x = \frac{u_x' + v}{1 + \dfrac{u_x' v}{c^2}}.
 $$
 
-For $u_x', v \ll c$, the denominator is nearly $1$ and this reduces to the familiar Galilean rule $u_x \approx u_x' + v$. But for $u_x' = c$ (light, in the particle's own frame), the formula gives
+For $u_x', v \ll c$, the denominator is nearly $1$ and this reduces to the familiar Galilean rule $u_x \approx u_x' + v$. But for $u_x' = c$ (light propagating in the $+x'$ direction), the formula gives
 
 $$
 u_x = \frac{c + v}{1 + v/c} = c,
 $$
 
-for *any* $v < c$ — exactly consistent with the second postulate: adding any sub-light velocity to $c$ still gives $c$. More generally, one can show that if $u_x' < c$ and $v < c$, then $u_x < c$ always: no combination of sub-light velocities, added relativistically, ever reaches or exceeds $c$.
+for *any* $v < c$ — exactly consistent with the second postulate: adding any sub-light velocity to $c$ still gives $c$. More generally, if $|u_x'|<c$ and $|v|<c$, then $|u_x|<c$ always: no combination of sub-light velocities, added relativistically, ever reaches or exceeds $c$.
 
 #### Worked Example: Explaining the Fizeau Coefficient
 
@@ -314,7 +321,7 @@ $$
 
 a direct consequence of time dilation alone, with no light-travel-time contribution. This effect was confirmed with high precision by Ives and Stilwell (1938), who measured the frequency of light emitted by fast-moving hydrogen atoms viewed from the side, finding exactly the $1/\gamma$ shift predicted by time dilation and none of the shift a purely classical (source-frame) Doppler picture would have predicted.
 
-The relativistic Doppler effect is not a laboratory curiosity: the cosmological redshift of light from distant galaxies, $1+z \equiv f_0/f_{\text{obs}}$, is precisely this formula (generalized to an expanding spacetime), and the same physics, applied to radio signals rather than light, is a correction that must be built into GPS satellite transmissions alongside the time-dilation correction already discussed.
+The relativistic Doppler effect is not a laboratory curiosity. The cosmological redshift of light from distant galaxies is also a redshift, conventionally written $1+z \equiv f_0/f_{\text{obs}}$, but it must be calculated using the expansion of spacetime rather than by applying this special-relativistic formula to arbitrarily distant galaxies. The same special-relativistic physics, applied to radio signals rather than light, is a correction that must be built into GPS satellite transmissions alongside the time-dilation correction already discussed.
 
 #### Worked Example: Redshift from a Receding Galaxy
 
@@ -368,11 +375,11 @@ close on the $45°$ light-cone lines without ever reaching them.
 
 It may seem that special relativity, having explained a handful of subtle high-precision optical experiments, is otherwise disconnected from everyday electromagnetism. In fact one of the most familiar phenomena in electromagnetism — magnetism itself — can be understood as a direct consequence of length contraction applied to electric charge.
 
-Consider a lone charged particle sitting next to a long, electrically neutral wire that carries a current: equal densities of positive and negative charge, moving in opposite directions along the wire, so that the wire's *net* charge density is zero. In the frame in which the wire's charges (of both signs) move at equal and opposite speeds, the two charge densities are, by symmetry, equally length-contracted, so the linear charge density of positive charge exactly cancels that of negative charge at every point — the wire really does look uncharged, and the lone external particle feels no *electric* force from it. Textbook electromagnetism instead attributes any force on the lone particle (if it happens to be moving parallel to the current) to the *magnetic* field generated by the current.
+Consider an idealized long wire with equal positive and negative linear charge densities moving in opposite directions along the wire, so that the wire's *net* charge density is zero in the lab frame. In that frame the wire carries a current. A test charge moving parallel to the wire can therefore experience a magnetic force, even though the wire produces no net electric field outside it. In the frame in which the two charge species move at equal and opposite speeds, their density changes by the same length-contraction factor, so their charge densities still cancel. If the test charge is moving in this frame, the magnetic field accounts for its force.
 
-Now view the same situation from a frame in which the lone particle is at rest (equivalently, an observer moving alongside it). In this frame, by relativistic velocity addition, the two species of charge carriers in the wire no longer move at equal speeds relative to the observer — one is sped up and the other slowed down, since velocities do not add in relativity the way lengths and velocities might naively suggest. Because length contraction depends on speed, the two charge densities, both boosted by different amounts, are no longer equal: the wire acquires a small net linear charge density in this frame, of just the right sign and magnitude to produce, via an ordinary electric field, exactly the same force on the (now stationary) lone particle that the magnetic field produced in the original frame.
+Now view the same situation from a frame in which the test charge is at rest (equivalently, an observer moving alongside it). By relativistic velocity addition, the two species of charge carriers in the wire no longer move at equal speeds relative to this observer—one is sped up and the other slowed down. Because length contraction depends on speed, their charge densities are no longer equal: the wire acquires a net linear charge density in this frame and therefore an electric field. That electric field produces the same physical deflection of the test charge that the magnetic field produced in the original frame; electric and magnetic fields have mixed under the change of frame.
 
-Both descriptions — "magnetic force in the wire's rest frame" and "electric force from a net charge density in the particle's rest frame" — refer to the same underlying physical event (the particle accelerating, or not, toward the wire), and both observers must agree on that concrete outcome. Requiring this agreement is what forces the electric and magnetic fields to mix into one another under a change of frame, in a way that is fully consistent with, and in fact required by, the Lorentz transformation. Magnetism is not a separate, additional force bolted onto electricity; it is what electric forces look like when viewed from a frame in which the source charges are in motion. This unification is one of the clearest illustrations that relativity is not a remote, exotic correction confined to particle accelerators and GPS satellites, but a structural feature of the electromagnetic force that operates, imperceptibly, in every electric motor and every compass needle.
+Both descriptions—magnetic force in one frame and electric force from a net charge density in another—refer to the same underlying physical event, and both observers must agree on the test charge's worldline. Requiring this agreement forces the electric and magnetic fields to mix under a change of frame, consistently with the Lorentz transformation. In this setup, magnetism is the part of the electromagnetic interaction that appears when charges and the observer are in relative motion; electric and magnetic fields are not separate forces but frame-dependent components of one electromagnetic field. This unification is one of the clearest illustrations that relativity is not a remote, exotic correction confined to particle accelerators and GPS satellites, but a structural feature of the electromagnetic force that operates, imperceptibly, in every electric motor and every compass needle.
 
 ## Summary
 
@@ -421,7 +428,7 @@ Therefore, $\gamma=1.67$, and the Earth observer measures a time interval of $1.
 :::{exercise}
 :label: ex-special-relativity-2
 
-A meter stick at rest in frame $S'$ makes an angle such that it lies entirely along the direction of relative motion. If $S'$ moves at $v = 0.60c$ relative to $S$, what length is the stick measured to have in $S$?
+A meter stick at rest in frame $S'$ is oriented entirely along the direction of relative motion. If $S'$ moves at $v = 0.60c$ relative to $S$, what length is the stick measured to have in $S$?
 :::
 
 :::{solution} ex-special-relativity-2
@@ -525,7 +532,15 @@ t'=\frac{0.948\times10^3\ \text{m}}{(0.998)(3.00\times10^8\ \text{m/s})}
 =3.17\ \mu\text{s}.
 $$
 
-Therefore, the Earth-frame mean range is $10.4\ \text{km}$, less than $15\ \text{km}$, and equivalently the ground takes $3.17\ \mu\text{s}$ to arrive in the muon frame, longer than the $2.2\ \mu\text{s}$ mean proper lifetime; reaching the ground is not typical but is quite possible for a surviving fraction of muons.
+Therefore, the Earth-frame mean range is $10.4\ \text{km}$, less than $15\ \text{km}$, and equivalently the ground takes $3.17\ \mu\text{s}$ to arrive in the muon frame, longer than the $2.2\ \mu\text{s}$ mean proper lifetime. Quantitatively, both frames predict the same survival fraction,
+
+$$
+P(\text{reach ground})=e^{-15.0\ \text{km}/10.4\ \text{km}}
+  =e^{-3.17\ \mu\text{s}/2.2\ \mu\text{s}}
+  \approx 0.24.
+$$
+
+Reaching the ground is therefore not typical, but is quite possible for this surviving fraction of muons.
 
 ```{figure} ../images/ch02-sol-muon-frames.svg
 :label: fig:ch02-sol-muon-frames

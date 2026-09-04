@@ -95,7 +95,7 @@ $$
 E_n(Z) = -Z^2\,\frac{13.6\ \text{eV}}{n^2}, \qquad a_n(Z) = \frac{n^2}{Z}\,a_0,
 $$
 
-where $a_n(Z)$ is the length scale (generalizing the Bohr radius) over which the radial probability distribution of the $n$-th shell peaks. Both dependences make direct physical sense: a larger nuclear charge attracts the electron more strongly, pulling its orbit *inward* (radius shrinks as $1/Z$) while binding it *more tightly* — and because the potential energy itself scales as $Z$ while the resulting spatial compression compounds that scaling once more, the binding energy grows as $Z^2$, not simply $Z$. This $Z^2$ scaling reappears with direct experimental consequence in [Chapter 11](#ch-many-electron-atoms), where it underlies Moseley's law for the energies of characteristic X-ray transitions in multi-electron atoms.
+where $a_n(Z)$ is the characteristic Bohr length scale of the $n$-th shell. It is useful for comparing orbital sizes, but it is not the exact radial-probability peak for every $(n,\ell)$ state; those peak positions also depend on $\ell$. Both dependences make direct physical sense: a larger nuclear charge attracts the electron more strongly, pulling its orbit *inward* (radius shrinks as $1/Z$) while binding it *more tightly* — and because the potential energy itself scales as $Z$ while the resulting spatial compression compounds that scaling once more, the binding energy grows as $Z^2$, not simply $Z$. This $Z^2$ scaling reappears with direct experimental consequence in [Chapter 11](#ch-many-electron-atoms), where it underlies Moseley's law for the energies of characteristic X-ray transitions in multi-electron atoms.
 
 #### Worked Example: The Ionization Energy and Orbital Size of He⁺
 
@@ -182,7 +182,7 @@ $$
 V_{\text{eff}}(r) = V(r) + \frac{\hbar^2\,\ell(\ell+1)}{2m_er^2} = -\frac{e^2}{4\pi\epsilon_0 r} + \frac{\hbar^2\,\ell(\ell+1)}{2m_er^2},
 $$
 
-the attractive Coulomb term plus the repulsive **centrifugal barrier** introduced there. For $\ell=0$ ($s$-states), $V_{\text{eff}}(r)=V(r)$: nothing but the bare attractive well, all the way in to $r=0$, which is exactly why only $\ell=0$ states have nonzero probability density at the nucleus — the $1s$, $2s$, and $3s$ curves in {numref}`Figure %s <fig:ch10-radial-probability>` all rise from zero right at the origin with no barrier in the way. For $\ell>0$, the centrifugal term ($\propto 1/r^2$) dominates the attractive term ($\propto 1/r$) at small $r$ and produces a genuine barrier that pushes the wave function away from the nucleus; the larger $\ell$ is, the taller that barrier and the farther out the first significant probability appears, exactly as seen in the figure, where $2p$, $3p$, and $3d$ all start at zero and rise more gradually than their same-$n$ $s$-state counterparts, and where $3d$ — the largest $\ell$ at $n=3$ — peaks farthest from the origin of the three $n=3$ curves. This $\ell$-dependent "penetration" toward the nucleus is purely qualitative for hydrogen's single electron, but it becomes quantitatively essential in [Chapter 11](#ch-many-electron-atoms), where it explains why an $s$-electron in a multi-electron atom is attracted more strongly by (and screens other electrons from) the nuclear charge than a $p$- or $d$-electron of the same $n$ — the mechanism that breaks hydrogen's accidental $\ell$-independent degeneracy once more than one electron is present.
+the attractive Coulomb term plus the repulsive **centrifugal barrier** introduced there. For $\ell=0$ ($s$-states), $V_{\text{eff}}(r)=V(r)$: nothing but the bare attractive well, all the way in to $r=0$. This is why only $\ell=0$ states can have a nonzero **probability density** $|\psi(0)|^2$ at the nucleus. The radial probability $P(r)=r^2|R(r)|^2$, however, is zero at $r=0$ for every state because the spherical volume element contributes the factor $r^2$; accordingly, the $1s$, $2s$, and $3s$ curves in {numref}`Figure %s <fig:ch10-radial-probability>` all rise from zero at the origin even though their wave functions themselves need not. For $\ell>0$, the centrifugal term ($\propto 1/r^2$) dominates the attractive term ($\propto 1/r$) at small $r$ and produces a genuine barrier that pushes the wave function away from the nucleus; the larger $\ell$ is, the taller that barrier and the farther out the first significant probability appears, exactly as seen in the figure, where $2p$, $3p$, and $3d$ all start at zero and rise more gradually than their same-$n$ $s$-state counterparts, and where $3d$ — the largest $\ell$ at $n=3$ — peaks farthest from the origin of the three $n=3$ curves. This $\ell$-dependent "penetration" toward the nucleus is purely qualitative for hydrogen's single electron, but it becomes quantitatively essential in [Chapter 11](#ch-many-electron-atoms), where it explains why an $s$-electron in a multi-electron atom is attracted more strongly by (and screens other electrons from) the nuclear charge than a $p$- or $d$-electron of the same $n$ — the mechanism that breaks hydrogen's accidental $\ell$-independent degeneracy once more than one electron is present.
 
 ### Spectral Series and the Energy-Level Diagram
 
@@ -291,7 +291,7 @@ $$
 \Delta E = (m_\ell + g_sm_s)\,\mu_B B \approx (m_\ell + 2m_s)\,\mu_B B,
 $$
 
-so that sublevels differing by $\Delta m_\ell = \pm1$ — the only orbital transitions the selection rule below permits — are split, orbitally, by exactly $\mu_BB$. Historically, it was the *observed* splitting pattern (sometimes the simple three-line "normal" Zeeman pattern predicted by $m_\ell$ alone, but more often a more complicated "anomalous" pattern explainable only once spin and its distinct $g$-factor were included) that provided some of the earliest indirect evidence for electron spin, years before Stern and Gerlach identified its direct mechanical signature.
+so that adjacent orbital sublevels are separated by exactly $\mu_BB$. For electric-dipole transitions, the corresponding magnetic quantum-number rule is $\Delta m_\ell=0,\pm1$: the $\Delta m_\ell=\pm1$ transitions produce the two side components, while $\Delta m_\ell=0$ produces the central component of the normal Zeeman triplet. Historically, it was the *observed* splitting pattern (sometimes the simple three-line "normal" Zeeman pattern predicted by $m_\ell$ alone, but more often a more complicated "anomalous" pattern explainable only once spin and its distinct $g$-factor were included) that provided some of the earliest indirect evidence for electron spin, years before Stern and Gerlach identified its direct mechanical signature.
 
 #### Worked Example: Zeeman Splitting Frequency in a 1 T Field
 
@@ -315,7 +315,7 @@ about $30{,}000$ times smaller than the line's own wavelength — invisible by e
 
 #### Fine Structure: Spin–Orbit Coupling
 
-Even with no external field at all, the energies $E_n=-13.6\ \text{eV}/n^2$ are not quite the whole story. In the electron's own rest frame, the orbiting (positively charged) nucleus constitutes a circulating current that produces a magnetic field at the electron's location, and that internal field couples to the electron's own spin magnetic moment exactly as an external field does in the Zeeman effect above — an interaction called **spin–orbit coupling**, whose strength depends on the relative orientation of $\vec L$ and $\vec S$ (equivalently, on the total angular momentum $\vec J = \vec L+\vec S$, a full treatment of which requires relativistic corrections beyond the nonrelativistic Schrödinger equation used throughout this book). What matters here is the *size* of the resulting **fine-structure** splitting of each $(n,\ell)$ level (other than $\ell=0$, where there is no orbital field to couple to):
+Even with no external field at all, the energies $E_n=-13.6\ \text{eV}/n^2$ are not quite the whole story. A useful semiclassical picture is that, in the electron's rest frame, the orbiting (positively charged) nucleus constitutes a circulating current that produces a magnetic field at the electron's location. That internal field couples to the electron's spin magnetic moment, with the necessary relativistic treatment—including Thomas precession—giving the interaction called **spin–orbit coupling**. Its strength depends on the relative orientation of $\vec L$ and $\vec S$ (equivalently, on the total angular momentum $\vec J = \vec L+\vec S$). Spin–orbit coupling vanishes for $\ell=0$, but the full **fine structure** also includes relativistic kinetic-energy and Darwin corrections, so $s$-states can receive fine-structure shifts as well. A complete treatment requires relativistic quantum mechanics beyond the nonrelativistic Schrödinger equation used throughout this book. What matters here is the *size* of the resulting fine-structure correction:
 
 $$
 \Delta E_{\text{fine}} \sim \alpha^2\,|E_n|, \qquad \alpha \equiv \frac{e^2}{4\pi\epsilon_0\hbar c} \approx \frac{1}{137.0} \approx 7.30\times10^{-3},
@@ -348,16 +348,16 @@ Proton spins in a magnetic field: Zeeman splitting, resonant absorption of a rad
 
 ### Selection Rules
 
-Not every pair of hydrogen energy levels is connected by an observable spectral line. An electron making a transition between stationary states typically does so by emitting or absorbing a single photon, and conservation of the photon's own angular momentum (it carries one unit, $\hbar$, of angular momentum along its propagation direction) restricts which transitions can occur via this single-photon (electric dipole) process to those satisfying the **selection rule**
+Not every pair of hydrogen energy levels is connected by an observable spectral line. An electron making a transition between stationary states typically does so by emitting or absorbing a single photon, and conservation of angular momentum and parity restricts which transitions can occur via this single-photon (electric dipole) process. The principal orbital **selection rule** is
 
 $$
 \Delta \ell = \pm 1,
 $$
 
-(with no similarly strict restriction on $\Delta n$). Transitions violating this rule (e.g., $2s \to 1s$, both $\ell=0$) are called **forbidden transitions** — not absolutely impossible, but strongly suppressed, occurring (if at all) only through much slower, higher-order processes. The selection rule is why, for instance, the observed hydrogen spectral series (Lyman, Balmer, Paschen, etc., corresponding to transitions ending on $n_f = 1, 2, 3,\ldots$) show specific line patterns rather than a line for every conceivable pair of levels.
+and the magnetic quantum number must obey $\Delta m_\ell=0,\pm1$; the electron's spin projection is unchanged, $\Delta m_s=0$. There is no similarly strict restriction on $\Delta n$, but the electric-dipole transition must change parity, which the $\Delta\ell=\pm1$ rule already guarantees for hydrogen orbitals. Transitions violating these rules (e.g., $2s \to 1s$, both $\ell=0$) are called **forbidden transitions** — not absolutely impossible, but strongly suppressed, occurring (if at all) only through much slower, higher-order processes. The selection rules are why, for instance, the observed hydrogen spectral series (Lyman, Balmer, Paschen, etc., corresponding to transitions ending on $n_f = 1, 2, 3,\ldots$) show specific line patterns rather than a line for every conceivable pair of levels.
 
 :::{tip}
-When checking whether a transition is allowed, check $\Delta\ell$ first and don't spend time on $\Delta n$ — the selection rule places no restriction on $n$ at all, only on $\ell$. A quick way to keep this straight while scanning a level diagram grouped by orbital letter: an allowed electric-dipole transition always moves exactly one letter over ($s\leftrightarrow p$, $p\leftrightarrow d$, etc.), never staying within the same letter and never skipping one, regardless of how far it jumps between $n$ values.
+When checking whether a transition is allowed, check $\Delta\ell$ first and don't spend time on $\Delta n$ — the principal selection rule places no restriction on $n$. Then check $\Delta m_\ell$ if the magnetic sublevels are specified. A quick way to keep this straight while scanning a level diagram grouped by orbital letter: an allowed electric-dipole transition always moves exactly one letter over ($s\leftrightarrow p$, $p\leftrightarrow d$, etc.), never staying within the same letter and never skipping one, regardless of how far it jumps between $n$ values.
 :::
 
 ## Summary
@@ -367,11 +367,11 @@ When checking whether a transition is allowed, check $\Delta\ell$ first and don'
 - **Hydrogenic ions** (e.g. $\text{He}^+$, $\text{Li}^{2+}$) follow $E_n(Z) = -Z^2(13.6\ \text{eV})/n^2$ and $a_n(Z) = n^2a_0/Z$: binding energy scales as $Z^2$, orbital size as $1/Z$.
 - Hydrogen states are labeled by $n$, $\ell = 0,\ldots,n-1$, $m_\ell = -\ell,\ldots,\ell$; because $E_n$ depends only on $n$, there are $n^2$ degenerate spatial states per $n$ — a special feature of the pure Coulomb potential.
 - Explicit radial wave functions $R_{10}$, $R_{20}$, $R_{21}$, and the radial probability distributions $P(r) = r^2|R_{n\ell}|^2$ they generate, show the $n-\ell-1$ node count directly; angular nodal structure gives rise to the characteristic $s$, $p$, $d$ orbital shapes. The Bohr radius $a_0$ reappears as the most probable electron-nucleus separation in the ground state.
-- The **effective potential** $V_{\text{eff}}(r)=V(r)+\hbar^2\ell(\ell+1)/2m_er^2$ shows that only $\ell=0$ states have nonzero probability density at the nucleus; higher $\ell$ states are held away from the origin by the centrifugal barrier, a penetration effect central to screening in [Chapter 11](#ch-many-electron-atoms).
+- The **effective potential** $V_{\text{eff}}(r)=V(r)+\hbar^2\ell(\ell+1)/2m_er^2$ shows that only $\ell=0$ states have nonzero probability density at the nucleus (although the radial probability $P(r)$ vanishes there for every state); higher $\ell$ states are held away from the origin by the centrifugal barrier, a penetration effect central to screening in [Chapter 11](#ch-many-electron-atoms).
 - The **Lyman**, **Balmer**, and **Paschen** series (transitions ending on $n_f=1,2,3$) each converge to a series limit at $n_i\to\infty$; the Rydberg formula $1/\lambda=R(1/n_f^2-1/n_i^2)$ gives their wavelengths, with the Balmer series ($364.6$–$656.3\ \text{nm}$) spanning most of the visible range.
 - The **Stern–Gerlach experiment** revealed **electron spin**, an intrinsic angular momentum with quantum number $s=\tfrac12$ and $m_s = \pm\tfrac12$, doubling the degenerate state count to $2n^2$ and requiring four quantum numbers $(n,\ell,m_\ell,m_s)$ to fully specify a state. The inhomogeneous-field force $F_z=\mu_z\,\partial B_z/\partial z$ converts the two spin orientations into two discrete beam deflections.
 - Orbital and spin angular momentum each produce a magnetic moment, in units of the Bohr magneton $\mu_B$; the spin moment carries an extra $g$-factor $\approx 2$. In an external field, the (normal) **Zeeman effect** shifts sublevels by $\Delta E \approx (m_\ell+2m_s)\mu_BB$; even with no external field, **spin–orbit coupling** produces **fine-structure** splitting of order $\alpha^2|E_n|$, where $\alpha\approx1/137$ is the fine-structure constant.
-- Single-photon transitions obey the selection rule $\Delta\ell = \pm1$, explaining the observed pattern of hydrogen spectral lines.
+- Single-photon electric-dipole transitions obey $\Delta\ell = \pm1$, $\Delta m_\ell=0,\pm1$, and $\Delta m_s=0$, explaining the observed pattern of hydrogen spectral lines.
 
 ## Problems
 
@@ -415,7 +415,7 @@ Using the selection rule $\Delta\ell=\pm1$, determine which of the following sin
 :label: sol-the-hydrogen-atom-3
 :class: dropdown
 
-The changes in $\ell$ are: (a) $2\to1$, so $\Delta\ell=-1$ and allowed; (b) $0\to0$, so forbidden; (c) $1\to0$, so allowed; and (d) $1\to0$, so allowed.
+The changes in $\ell$ are: (a) $2\to1$, so $\Delta\ell=-1$ and allowed; (b) $0\to0$, so forbidden; (c) $1\to0$, so allowed; and (d) $1\to0$, so allowed. Because no $m_\ell$ values are specified, this classification asks whether the orbital transition has any allowed magnetic-sublevel components; those components must also satisfy $\Delta m_\ell=0,\pm1$.
 
 ```{figure} ../images/ch10-sol-selection-rule-transitions.svg
 :label: fig:ch10-sol-selection-rule-transitions
@@ -430,7 +430,7 @@ Therefore, only $3s\to2s$ is forbidden by the electric-dipole selection rule.
 :::{exercise}
 :label: ex-the-hydrogen-atom-4
 
-An electron in a hydrogen atom is in a $3d$ state ($\ell=2$). (a) Compute the magnitude of its orbital angular momentum in units of $\hbar$. (b) Compute the maximum possible $z$-component of its orbital magnetic moment, in units of the Bohr magneton.
+An electron in a hydrogen atom is in a $3d$ state ($\ell=2$). (a) Compute the magnitude of its orbital angular momentum in units of $\hbar$. (b) Compute the largest possible magnitude of its $z$-component orbital magnetic moment, in units of the Bohr magneton.
 :::
 
 :::{solution} ex-the-hydrogen-atom-4
@@ -441,7 +441,7 @@ For $\ell=2$,
 
 $$L=\sqrt{\ell(\ell+1)}\hbar=\sqrt6\hbar.$$
 
-The largest $m_\ell$ is $+2$, and $\mu_{L,z}=-m_\ell\mu_B=-2\mu_B$, whose maximum magnitude is $2\mu_B$.  Therefore, the $3d$ electron has orbital angular momentum $\sqrt6\hbar$ and maximum $z$-component magnetic-moment magnitude $2\mu_B$.
+The largest magnitude of $m_\ell$ is $2$, and $|\mu_{L,z}|=|m_\ell|\mu_B=2\mu_B$ (the sign is opposite to that of $m_\ell$ for an electron). Therefore, the $3d$ electron has orbital angular momentum $\sqrt6\hbar$ and maximum $z$-component magnetic-moment magnitude $2\mu_B$.
 :::
 
 :::{exercise}

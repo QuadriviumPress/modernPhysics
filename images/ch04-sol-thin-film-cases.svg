@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-08-27T06:58:52.303863</dc:date>
+    <dc:date>2026-01-01</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -35,7 +35,7 @@ L 205.56973 148.318919
 L 205.56973 88.643243 
 L 26.542703 88.643243 
 z
-" clip-path="url(#p2d9eab6274)" style="fill: #cfe3f2; stroke: #1769aa; stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#pc6f2ac8e06)" style="fill: #cfe3f2; stroke: #1769aa; stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
     <!-- $n_0=1.00$ (air) -->
@@ -591,7 +591,7 @@ z
     </g>
    </g>
    <g id="text_6">
-    <!-- $t_{\min}=\dfrac{\lambda}{4n}=103\ \text{nm}$ -->
+    <!-- $t_{\min}=\dfrac{\lambda}{4n}=103\ \mathrm{nm}$ -->
     <g style="fill: #333333" transform="translate(63.531216 216.945946) scale(0.11 -0.11)">
      <defs>
       <path id="DejaVuSans-Oblique-57" d="M 2706 3500 
@@ -980,7 +980,7 @@ L 497.991538 148.318919
 L 497.991538 88.643243 
 L 318.964511 88.643243 
 z
-" clip-path="url(#p9cd655a018)" style="fill: #cfe3f2; stroke: #1769aa; stroke-width: 1.2; stroke-linejoin: miter"/>
+" clip-path="url(#p8a89d39e8e)" style="fill: #cfe3f2; stroke: #1769aa; stroke-width: 1.2; stroke-linejoin: miter"/>
    </g>
    <g id="text_8">
     <!-- $n_0=1.00$ (air) -->
@@ -1127,7 +1127,7 @@ z
     </g>
    </g>
    <g id="text_13">
-    <!-- $t_{\min}=\dfrac{\lambda}{2n}=207\ \text{nm}$ -->
+    <!-- $t_{\min}=\dfrac{\lambda}{2n}=207\ \mathrm{nm}$ -->
     <g style="fill: #333333" transform="translate(355.953025 216.945946) scale(0.11 -0.11)">
      <defs>
       <path id="DejaVuSans-1a" d="M 525 4666 
@@ -1227,10 +1227,10 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p2d9eab6274">
+  <clipPath id="pc6f2ac8e06">
    <rect x="8.64" y="23" width="226.767568" height="220.8"/>
   </clipPath>
-  <clipPath id="p9cd655a018">
+  <clipPath id="p8a89d39e8e">
    <rect x="301.061808" y="23" width="226.767568" height="220.8"/>
   </clipPath>
  </defs>

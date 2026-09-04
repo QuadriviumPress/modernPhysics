@@ -21,13 +21,13 @@ def infinite_well_levels():
 
     ax.annotate("", xy=(0.5, E1), xytext=(0.5, 4 * E1),
                 arrowprops=dict(arrowstyle="-|>", color=RED, lw=2.2))
-    ax.text(0.35, 2.5 * E1, r"$28.2\ \text{eV}$" "\nphoton", color=RED, ha="right", fontsize=10)
+    ax.text(0.35, 2.5 * E1, r"$28.2\ \mathrm{eV}$" "\nphoton", color=RED, ha="right", fontsize=10)
 
     ax.set_xlim(-0.1, 2.6)
     ax.set_ylim(0, 17 * E1)
     ax.set_xticks([])
     ax.set_ylabel("energy (eV)")
-    ax.set_title(r"Infinite well, $L=0.20\ \text{nm}$: $E_n=n^2E_1$")
+    ax.set_title(r"Infinite well, $L=0.20\ \mathrm{nm}$: $E_n=n^2E_1$")
     save(fig, "ch08-sol-infinite-well-levels")
 
 
@@ -49,7 +49,7 @@ def step_reflection():
     ax.set_ylim(0, 0.5)
     ax.set_xlabel(r"$V_0/E$")
     ax.set_ylabel(r"reflection coefficient $R$")
-    ax.set_title(r"$E=3.00\ \text{eV}$: $R\to0$ smoothly as the step height $V_0\to0$")
+    ax.set_title(r"$E=3.00\ \mathrm{eV}$: $R\to0$ smoothly as the step height $V_0\to0$")
     save(fig, "ch08-sol-step-reflection")
 
 
@@ -62,7 +62,7 @@ def tunneling_barrier():
 
     fig, ax = plt.subplots(figsize=(7.6, 4.0))
     ax.axvspan(0, L, color="#eee0c9", alpha=0.7, lw=0)
-    ax.text(L / 2, 1.18, r"barrier, $V_0=10.0\ \text{MeV}$", ha="center", fontsize=10, color=DARK)
+    ax.text(L / 2, 1.18, r"barrier, $V_0=10.0\ \mathrm{MeV}$", ha="center", fontsize=10, color=DARK)
 
     for kappa, color, label in [(kappa_p, BLUE, "proton"), (kappa_a, RED, "alpha")]:
         env = np.ones_like(x)
@@ -71,7 +71,7 @@ def tunneling_barrier():
         env = np.where(inside, np.exp(-kappa * x), env)
         amp_at_L = np.exp(-kappa * L)
         env = np.where(beyond, amp_at_L, env)
-        ax.plot(x, env, color=color, lw=1.8, label=rf"{label}: $\kappa={kappa}\ \text{{fm}}^{{-1}}$")
+        ax.plot(x, env, color=color, lw=1.8, label=rf"{label}: $\kappa={kappa}\ \mathrm{{fm}}^{{-1}}$")
 
     ax.set_xlim(-1.5, L + 1.5)
     ax.set_ylim(0, 1.3)
@@ -108,7 +108,7 @@ def oscillator_ladder_and_spread():
     ax1.axvspan(0, 74, color=GREEN, alpha=0.15, lw=0)
     ax1.annotate("", xy=(0, 0.55), xytext=(74, 0.55),
                  arrowprops=dict(arrowstyle="<->", color=GREEN, lw=1.2))
-    ax1.text(37, 0.62, r"H$_2$ bond length, $74\ \text{pm}$", ha="center", fontsize=9.5, color=GREEN)
+    ax1.text(37, 0.62, r"H$_2$ bond length, $74\ \mathrm{pm}$", ha="center", fontsize=9.5, color=GREEN)
     gauss = 0.62 * np.exp(-x ** 2 / (2 * 8.7 ** 2))
     ax1.plot(x, gauss, color=BLUE, lw=1.8)
     ax1.annotate("", xy=(-8.7, 0.30), xytext=(8.7, 0.30),
@@ -118,7 +118,7 @@ def oscillator_ladder_and_spread():
     ax1.set_ylim(0, 0.75)
     ax1.set_yticks([])
     ax1.set_xlabel("position (pm)")
-    ax1.set_title(r"$\text{H}_2$ zero-point spread is $\sim$12% of the bond length", fontsize=11)
+    ax1.set_title(r"$\mathrm{H}_2$ zero-point spread is $\sim$12% of the bond length", fontsize=11)
 
     fig.tight_layout()
     save(fig, "ch08-sol-oscillator-ladder-spread")

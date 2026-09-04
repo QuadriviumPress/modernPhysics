@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-08-26T17:33:35.025733</dc:date>
+    <dc:date>2026-01-01</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -40,7 +40,7 @@ z
    <g id="line2d_1">
     <path d="M 25.622578 87.45877 
 L 531.382578 87.45877 
-" clip-path="url(#p934b6fa389)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #555555"/>
+" clip-path="url(#pcab2450703)" style="fill: none; stroke-dasharray: 3.7,1.6; stroke-dashoffset: 0; stroke: #555555"/>
    </g>
    <g id="matplotlib.axis_1"/>
    <g id="matplotlib.axis_2">
@@ -784,7 +784,7 @@ L 531.382578 517.438125
    <g id="line2d_2">
     <path d="M 97.271911 485.587802 
 L 274.287911 485.587802 
-" clip-path="url(#p934b6fa389)" style="fill: none; stroke: #333333; stroke-width: 2; stroke-linecap: square"/>
+" clip-path="url(#pcab2450703)" style="fill: none; stroke: #333333; stroke-width: 2; stroke-linecap: square"/>
    </g>
    <g id="text_2">
     <!-- $n=1$,  $E_{1}=-13.60$ eV -->
@@ -835,7 +835,7 @@ z
    <g id="line2d_3">
     <path d="M 97.271911 286.523286 
 L 274.287911 286.523286 
-" clip-path="url(#p934b6fa389)" style="fill: none; stroke: #333333; stroke-width: 2; stroke-linecap: square"/>
+" clip-path="url(#pcab2450703)" style="fill: none; stroke: #333333; stroke-width: 2; stroke-linecap: square"/>
    </g>
    <g id="text_3">
     <!-- $n=2$,  $E_{2}=-3.40$ eV -->
@@ -883,7 +883,7 @@ z
    <g id="line2d_4">
     <path d="M 97.271911 220.168448 
 L 274.287911 220.168448 
-" clip-path="url(#p934b6fa389)" style="fill: none; stroke: #333333; stroke-width: 2; stroke-linecap: square"/>
+" clip-path="url(#pcab2450703)" style="fill: none; stroke: #333333; stroke-width: 2; stroke-linecap: square"/>
    </g>
    <g id="text_4">
     <!-- $n=3$,  $E_{3}=-1.51$ eV -->
@@ -937,7 +937,7 @@ z
    <g id="line2d_5">
     <path d="M 97.271911 186.991028 
 L 274.287911 186.991028 
-" clip-path="url(#p934b6fa389)" style="fill: none; stroke: #333333; stroke-width: 2; stroke-linecap: square"/>
+" clip-path="url(#pcab2450703)" style="fill: none; stroke: #333333; stroke-width: 2; stroke-linecap: square"/>
    </g>
    <g id="text_5">
     <!-- $n=4$,  $E_{4}=-0.85$ eV -->
@@ -1005,7 +1005,7 @@ z
    <g id="line2d_6">
     <path d="M 97.271911 167.084577 
 L 274.287911 167.084577 
-" clip-path="url(#p934b6fa389)" style="fill: none; stroke: #333333; stroke-width: 2; stroke-linecap: square"/>
+" clip-path="url(#pcab2450703)" style="fill: none; stroke: #333333; stroke-width: 2; stroke-linecap: square"/>
    </g>
    <g id="text_6">
     <!-- $n=5$,  $E_{5}=-0.54$ eV -->
@@ -1697,7 +1697,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p934b6fa389">
+  <clipPath id="pcab2450703">
    <rect x="25.622578" y="23.758125" width="505.76" height="493.68"/>
   </clipPath>
  </defs>

@@ -74,7 +74,7 @@ def stern_gerlach_schematic():
     z1 = 2.16e-4
     fig, ax = plt.subplots(figsize=(7.6, 3.4))
     ax.add_patch(plt.Rectangle((0, -0.35), L, 0.7, facecolor="#eee0c9", edgecolor=DARK, lw=1.0))
-    ax.text(L / 2, 0.55, r"magnet, $\partial B_z/\partial z=15\ \text{T/m}$", ha="center", fontsize=9.5, color=DARK)
+    ax.text(L / 2, 0.55, r"magnet, $\partial B_z/\partial z=15\ \mathrm{T/m}$", ha="center", fontsize=9.5, color=DARK)
 
     x_screen = L + D
     ax.axvline(x_screen, color=DARK, lw=2.0)

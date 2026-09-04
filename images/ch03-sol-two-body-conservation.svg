@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-08-27T22:28:06.401983</dc:date>
+    <dc:date>2026-01-01</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -40,7 +40,7 @@ C 144.47157 144.36999 142.862936 151.107309 142.862936 158.13137
 C 142.862936 165.155431 144.47157 171.89275 147.334556 176.859511 
 C 150.197541 181.826272 154.081127 184.616961 158.13 184.616961 
 z
-" clip-path="url(#p2de35eb91d)" style="fill: #f4d6d6; stroke: #b33a3a; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p9ed0bccb4f)" style="fill: #f4d6d6; stroke: #b33a3a; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
     <!-- $e^-e^+$ -->
@@ -763,7 +763,7 @@ C 454.193368 143.223208 452.450681 150.521971 452.450681 158.13137
 C 452.450681 165.740769 454.193368 173.039532 457.294935 178.42019 
 C 460.396503 183.800847 464.603721 186.824094 468.99 186.824094 
 z
-" clip-path="url(#p92af8d8533)" style="fill: #d7e8f4; stroke: #1769aa; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p16854c271a)" style="fill: #d7e8f4; stroke: #1769aa; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="text_6">
     <!-- $\pi^+$ at rest -->
@@ -1617,10 +1617,10 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p2de35eb91d">
+  <clipPath id="p9ed0bccb4f">
    <rect x="8.64" y="64.328234" width="298.98" height="204.159766"/>
   </clipPath>
-  <clipPath id="p92af8d8533">
+  <clipPath id="p16854c271a">
    <rect x="319.5" y="64.328234" width="298.98" height="204.159766"/>
   </clipPath>
  </defs>

@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-08-27T07:07:14.956192</dc:date>
+    <dc:date>2026-01-01</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -32,12 +32,12 @@ z
    <g id="line2d_1">
     <path d="M 70.818822 156.814125 
 L 70.818822 23.758125 
-" clip-path="url(#p8025609f57)" style="fill: none; stroke: #333333; stroke-linecap: square"/>
+" clip-path="url(#p811b43b6e9)" style="fill: none; stroke: #333333; stroke-linecap: square"/>
    </g>
    <g id="line2d_2">
     <path d="M 478.588053 156.814125 
 L 478.588053 23.758125 
-" clip-path="url(#p8025609f57)" style="fill: none; stroke: #333333; stroke-linecap: square"/>
+" clip-path="url(#p811b43b6e9)" style="fill: none; stroke: #333333; stroke-linecap: square"/>
    </g>
    <g id="patch_2">
     <path d="M 70.818822 96.724319 
@@ -45,7 +45,7 @@ L 154.166853 96.724319
 L 154.166853 45.21877 
 L 70.818822 45.21877 
 z
-" clip-path="url(#p8025609f57)" style="fill: #1769aa; stroke: #333333; stroke-linejoin: miter"/>
+" clip-path="url(#p811b43b6e9)" style="fill: #1769aa; stroke: #333333; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
     <!-- $e^-$ rest -->
@@ -278,7 +278,7 @@ L 237.514884 96.724319
 L 237.514884 45.21877 
 L 154.166853 45.21877 
 z
-" clip-path="url(#p8025609f57)" style="fill: #6a4c93; stroke: #333333; stroke-linejoin: miter"/>
+" clip-path="url(#p811b43b6e9)" style="fill: #6a4c93; stroke: #333333; stroke-linejoin: miter"/>
    </g>
    <g id="text_2">
     <!-- $e^+$ rest -->
@@ -323,7 +323,7 @@ L 358.051468 96.724319
 L 358.051468 45.21877 
 L 237.514884 45.21877 
 z
-" clip-path="url(#p8025609f57)" style="fill: #2e7d5b; stroke: #333333; stroke-linejoin: miter"/>
+" clip-path="url(#p811b43b6e9)" style="fill: #2e7d5b; stroke: #333333; stroke-linejoin: miter"/>
    </g>
    <g id="text_3">
     <!-- $e^-$ KE -->
@@ -454,7 +454,7 @@ L 478.588053 96.724319
 L 478.588053 45.21877 
 L 358.051468 45.21877 
 z
-" clip-path="url(#p8025609f57)" style="fill: #d97706; stroke: #333333; stroke-linejoin: miter"/>
+" clip-path="url(#p811b43b6e9)" style="fill: #d97706; stroke: #333333; stroke-linejoin: miter"/>
    </g>
    <g id="text_4">
     <!-- $e^+$ KE -->
@@ -488,7 +488,7 @@ L 78.33982 115.984964
 " style="fill: none; stroke: #333333; stroke-linecap: round"/>
    </g>
    <g id="text_5">
-    <!-- incident photon, $E_\gamma=2.50\ \text{MeV}$ -->
+    <!-- incident photon, $E_\gamma=2.50\ \mathrm{MeV}$ -->
     <g style="fill: #333333" transform="translate(197.153437 137.928757) scale(0.1 -0.1)">
      <defs>
       <path id="DejaVuSans-4c" d="M 603 3500 
@@ -1243,7 +1243,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p8025609f57">
+  <clipPath id="p811b43b6e9">
    <rect x="62.663437" y="23.758125" width="424.08" height="133.056"/>
   </clipPath>
  </defs>

@@ -8,7 +8,8 @@
 %%      and solution with. Neither may be boxed -- see the comment there.
 %%   2. Sectioning depth pinned to match the website's numbering exactly.
 %%   3. Page geometry and running heads for something meant to be printed.
-%%   4. A copyright page, because index.md is not part of the printed book.
+%%   4. A copyright page and a preface in \frontmatter, because index.md is not
+%%      part of the printed book and the preface must stay unnumbered.
 %%   5. The `chapter` option, which turns the same source into a standalone
 %%      single-chapter offprint numbered as it is in the full book.
 %%
@@ -239,8 +240,10 @@ running simulation.
 
 \tableofcontents
 
-\mainmatter
-
+%% Stay in \frontmatter through the preface (the first article). In book class a
+%% \chapter issued here is unnumbered but still enters the TOC, which is what a
+%% preface wants. preface.md ends with `{raw:latex}\mainmatter`, so Chapter 1 is
+%% the first numbered chapter and the part dividers land in \mainmatter.
 [- CONTENT -]
 [# endif #]
 

@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-08-27T07:21:33.920429</dc:date>
+    <dc:date>2026-01-01</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -42,18 +42,18 @@ z
    <g id="LineCollection_1">
     <path d="M 28.315385 151.712 
 L 93.9 151.712 
-" clip-path="url(#p5bc901eeaa)" style="fill: none; stroke: #1769aa; stroke-width: 2.4"/>
+" clip-path="url(#pff7aa1ba46)" style="fill: none; stroke: #1769aa; stroke-width: 2.4"/>
    </g>
    <g id="LineCollection_2">
     <path d="M 133.250769 222.412 
 L 198.835385 222.412 
-" clip-path="url(#p5bc901eeaa)" style="fill: none; stroke: #b33a3a; stroke-width: 2.4"/>
+" clip-path="url(#pff7aa1ba46)" style="fill: none; stroke: #b33a3a; stroke-width: 2.4"/>
     <path d="M 133.250769 151.712 
 L 198.835385 151.712 
-" clip-path="url(#p5bc901eeaa)" style="fill: none; stroke: #2e7d5b; stroke-width: 2.4"/>
+" clip-path="url(#pff7aa1ba46)" style="fill: none; stroke: #2e7d5b; stroke-width: 2.4"/>
     <path d="M 133.250769 81.012 
 L 198.835385 81.012 
-" clip-path="url(#p5bc901eeaa)" style="fill: none; stroke: #6a4c93; stroke-width: 2.4"/>
+" clip-path="url(#pff7aa1ba46)" style="fill: none; stroke: #6a4c93; stroke-width: 2.4"/>
    </g>
    <g id="patch_3">
     <path d="M 8.64 293.112 
@@ -411,12 +411,12 @@ z
    <g id="LineCollection_3">
     <path d="M 295.975385 151.712 
 L 361.56 151.712 
-" clip-path="url(#pb0b3858a3e)" style="fill: none; stroke: #1769aa; stroke-width: 2.4"/>
+" clip-path="url(#pb3bfa21de1)" style="fill: none; stroke: #1769aa; stroke-width: 2.4"/>
    </g>
    <g id="LineCollection_4">
     <path d="M 400.910769 151.712 
 L 466.495385 151.712 
-" clip-path="url(#pb0b3858a3e)" style="fill: none; stroke: #1769aa; stroke-width: 2.4"/>
+" clip-path="url(#pb3bfa21de1)" style="fill: none; stroke: #1769aa; stroke-width: 2.4"/>
    </g>
    <g id="patch_7">
     <path d="M 276.3 293.112 
@@ -941,10 +941,10 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p5bc901eeaa">
+  <clipPath id="pff7aa1ba46">
    <rect x="8.64" y="38.592" width="255.78" height="254.52"/>
   </clipPath>
-  <clipPath id="pb0b3858a3e">
+  <clipPath id="pb3bfa21de1">
    <rect x="276.3" y="38.592" width="255.78" height="254.52"/>
   </clipPath>
  </defs>

@@ -88,7 +88,9 @@ project:
   # titled `level: -1` entries are the part dividers for the printed book only
   # (the website `toc:` below is a flat chapter list). index.md is the website's
   # landing page and is not one of them -- the printed book opens with the title
-  # and copyright pages in templates/book/template.tex instead.
+  # and copyright pages in templates/book/template.tex, then the preface (below)
+  # while still in LaTeX \frontmatter. preface.md ends with a raw \mainmatter so
+  # Chapter 1 is the first numbered chapter.
   exports:
     - id: book
       # `pdf+tex` keeps the intermediate .tex, which scripts/tex-to-docx.sh
@@ -98,6 +100,8 @@ project:
       template: ./templates/book
       output: exports/modern-physics.pdf
       articles:
+        - file: preface.md
+          level: 0
         - title: Relativity
           level: -1
         - file: chapters/ch-01-the-need-for-relativity.md
@@ -143,6 +147,7 @@ project:
   # `numbering.heading_1` in each chapter's frontmatter.
   toc:
     - file: index.md
+    - file: preface.md
     - file: chapters/ch-01-the-need-for-relativity.md
       children:
         - title: "1.1 The Ether Hypothesis and Michelson–Morley"

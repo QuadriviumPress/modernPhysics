@@ -58,7 +58,7 @@ def bragg_order_limit():
     ax.set_xlabel("order $m$")
     ax.set_ylabel(r"$\sin\theta_m=m\lambda/2d$")
     ax.set_ylim(0, 1.35)
-    ax.set_title(r"$d=0.137\ \text{nm}$, $\lambda=0.0709\ \text{nm}$: orders $m=1,2,3$ exist, $m\geq4$ do not")
+    ax.set_title(r"$d=0.137\ \mathrm{nm}$, $\lambda=0.0709\ \mathrm{nm}$: orders $m=1,2,3$ exist, $m\geq4$ do not")
     save(fig, "ch05-sol-bragg-order-limit")
 
 
@@ -72,10 +72,10 @@ def eht_resolution():
     ax.loglog(D, theta_arcsec, color=BLUE, lw=1.8)
 
     ax.axhline(40e-6, color=RED, lw=1.2, ls="--")
-    ax.text(1.3, 40e-6 * 1.6, r"M87 shadow, $40\ \mu\text{arcsec}$", color=RED, fontsize=9)
+    ax.text(1.3, 40e-6 * 1.6, r"M87 shadow, $40\ \mu\mathrm{arcsec}$", color=RED, fontsize=9)
 
-    for Dval, label, color in [(100, "large single dish\n($D\\sim100\\ \\text{m}$)", ORANGE),
-                                (1.0e7, "Earth-scale array\n($D\\sim10^7\\ \\text{m}$)", GREEN)]:
+    for Dval, label, color in [(100, "large single dish\n($D\\sim100\\ \\mathrm{m}$)", ORANGE),
+                                (1.0e7, "Earth-scale array\n($D\\sim10^7\\ \\mathrm{m}$)", GREEN)]:
         th = np.degrees(1.22 * lam / Dval) * 3600
         ax.plot([Dval], [th], marker="o", ms=7, color=color, zorder=5)
         ax.annotate(label, xy=(Dval, th), xytext=(Dval * 0.12, th * 6),
@@ -84,7 +84,7 @@ def eht_resolution():
 
     ax.set_xlabel("aperture diameter $D$ (m)")
     ax.set_ylabel(r"$\theta_{\min}=1.22\lambda/D$ (arcsec)")
-    ax.set_title(r"At $\lambda=1.3\ \text{mm}$, only an Earth-sized aperture resolves the shadow")
+    ax.set_title(r"At $\lambda=1.3\ \mathrm{mm}$, only an Earth-sized aperture resolves the shadow")
     save(fig, "ch05-sol-eht-resolution")
 
 
@@ -94,8 +94,8 @@ def cd_dvd_orders():
     m = np.arange(1, 4)
     fig, ax = plt.subplots(figsize=(6.8, 4.0))
     width = 0.35
-    for offset, (d, label, color) in zip([-1, 1], [(1600.0, "CD, $d=1.6\\ \\mu\\text{m}$", BLUE),
-                                                     (740.0, "DVD, $d=0.74\\ \\mu\\text{m}$", RED)]):
+    for offset, (d, label, color) in zip([-1, 1], [(1600.0, "CD, $d=1.6\\ \\mu\\mathrm{m}$", BLUE),
+                                                     (740.0, "DVD, $d=0.74\\ \\mu\\mathrm{m}$", RED)]):
         arg = m * lam / d
         valid = arg <= 1.0
         theta = np.degrees(np.arcsin(np.clip(arg, None, 1.0)))

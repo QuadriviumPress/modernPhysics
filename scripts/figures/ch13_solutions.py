@@ -83,7 +83,7 @@ def fusion_energy_sharing():
     ax.text(K_alpha + K_n / 2, 0, r"$n$: $14.1$ MeV" "\n" r"$m_n\approx1.01$ u", ha="center", va="center",
             fontsize=9.5, color="white", fontweight="bold")
     ax.annotate("", xy=(0, -0.55), xytext=(Q, -0.55), arrowprops=dict(arrowstyle="<->", color=DARK, lw=1.0))
-    ax.text(Q / 2, -0.78, r"$Q=17.6\ \text{MeV}$ total", ha="center", fontsize=10, color=DARK)
+    ax.text(Q / 2, -0.78, r"$Q=17.6\ \mathrm{MeV}$ total", ha="center", fontsize=10, color=DARK)
     ax.set_xlim(-0.3, Q + 0.3)
     ax.set_ylim(-1.0, 0.55)
     ax.axis("off")

@@ -54,6 +54,8 @@ RC = {
     "lines.linewidth": 1.8,
     "mathtext.fontset": "dejavusans",
     "svg.fonttype": "path",
+    # Stable element ids make regenerated SVGs byte-for-byte comparable in CI.
+    "svg.hashsalt": "modern-physics",
     "path.simplify": True,
     "path.simplify_threshold": 1.0,
 }
@@ -67,7 +69,13 @@ def save(fig, name):
     """Save *fig* as ``images/<name>.svg`` and report the byte size."""
     IMAGES.mkdir(exist_ok=True)
     path = IMAGES / f"{name}.svg"
-    fig.savefig(path, format="svg", bbox_inches="tight", pad_inches=0.12)
+    fig.savefig(
+        path,
+        format="svg",
+        bbox_inches="tight",
+        pad_inches=0.12,
+        metadata={"Date": "2026-01-01"},
+    )
     plt.close(fig)
     print(f"  wrote {path.relative_to(IMAGES.parent)}  ({path.stat().st_size // 1024} KB)")
     return path

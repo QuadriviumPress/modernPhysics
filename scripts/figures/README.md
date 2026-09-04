@@ -8,7 +8,7 @@ only — there is no Python available at build time.
 ## Regenerating
 
 ```bash
-pip install matplotlib numpy scipy
+python3 -m pip install -r requirements-figures.txt
 python3 scripts/figures/ch01_solutions.py    # figures embedded in ch. 1 worked solutions
 python3 scripts/figures/ch02_solutions.py    # figures embedded in ch. 2 worked solutions
 python3 scripts/figures/ch03_solutions.py    # figures embedded in ch. 3 worked solutions

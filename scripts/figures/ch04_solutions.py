@@ -32,7 +32,7 @@ def six_slit_pattern():
     ax0.set_ylim(0, 1.15)
     ax0.set_xlabel(r"$\sin\theta$")
     ax0.set_ylabel(r"$I/I_{\max}$")
-    ax0.set_title(r"Six slits, $d=3.00\ \mu\text{m}$, $\lambda=600\ \text{nm}$: principal maxima at $\sin\theta=0.200\,m$")
+    ax0.set_title(r"Six slits, $d=3.00\ \mu\mathrm{m}$, $\lambda=600\ \mathrm{nm}$: principal maxima at $\sin\theta=0.200\,m$")
 
     ax1 = fig.add_subplot(gs[1])
     mask = (x >= -0.02) & (x <= 0.22)
@@ -72,7 +72,7 @@ def newton_rings():
     circle_theta = np.linspace(0, 2 * np.pi, 300)
     ax.plot(r10 * 1e3 * np.cos(circle_theta), r10 * 1e3 * np.sin(circle_theta),
             color="white", lw=1.2, ls="--")
-    ax.annotate(r"$r_{10}=3.43\ \text{mm}$", xy=(r10 * 1e3 * np.cos(0.9), r10 * 1e3 * np.sin(0.9)),
+    ax.annotate(r"$r_{10}=3.43\ \mathrm{mm}$", xy=(r10 * 1e3 * np.cos(0.9), r10 * 1e3 * np.sin(0.9)),
                 xytext=(span * 1e3 * 0.55, span * 1e3 * 0.85), color="white", fontsize=10,
                 arrowprops=dict(arrowstyle="-", color="white", lw=0.9))
     ax.set_xlabel("mm")
@@ -95,8 +95,8 @@ def wavelength_coincidence():
 
     fig, axes = plt.subplots(2, 1, figsize=(7.6, 4.2), sharex=True,
                               gridspec_kw=dict(height_ratios=[1, 1], hspace=0.12))
-    axes[0].plot(y * 100, I1, color=BLUE, lw=1.3, label=r"$\lambda_1=480\ \text{nm}$")
-    axes[0].plot(y * 100, I2, color=RED, lw=1.3, label=r"$\lambda_2=600\ \text{nm}$")
+    axes[0].plot(y * 100, I1, color=BLUE, lw=1.3, label=r"$\lambda_1=480\ \mathrm{nm}$")
+    axes[0].plot(y * 100, I2, color=RED, lw=1.3, label=r"$\lambda_2=600\ \mathrm{nm}$")
     axes[0].legend(loc="upper right", fontsize=9, ncol=2)
     axes[0].set_ylabel(r"$I/I_0$")
     axes[0].set_yticks([0, 1])
@@ -121,9 +121,9 @@ def thin_film_cases():
 
     layers = [
         (axes[0], "Case A: oil on water", 1.00, 1.45, 1.33, r"$\pi$ shift", "no shift",
-         r"$t_{\min}=\dfrac{\lambda}{4n}=103\ \text{nm}$"),
+         r"$t_{\min}=\dfrac{\lambda}{4n}=103\ \mathrm{nm}$"),
         (axes[1], "Case B: oil on $n=1.60$", 1.00, 1.45, 1.60, r"$\pi$ shift", r"$\pi$ shift",
-         r"$t_{\min}=\dfrac{\lambda}{2n}=207\ \text{nm}$"),
+         r"$t_{\min}=\dfrac{\lambda}{2n}=207\ \mathrm{nm}$"),
     ]
     for ax, title, n0, n1, n2, shift_top, shift_bot, formula in layers:
         ax.add_patch(Rectangle((-1.5, 0), 3.0, 1.0, facecolor="#cfe3f2", edgecolor=BLUE, lw=1.2))

@@ -1,10 +1,19 @@
 {
   "name": "modern-physics",
   "private": true,
+  "packageManager": "npm@10.9.8",
+  "engines": {
+    "node": "22.x",
+    "npm": ">=10 <11"
+  },
   "description": "MyST Markdown textbook on Modern Physics",
   "scripts": {
     "start": "myst start",
     "build": "myst build --html",
+    "check": "npm run check:project && npm test && npm run build -- --check-links",
+    "check:project": "node scripts/validate-project.mjs",
+    "check:figures": "scripts/check-figures.sh",
+    "test": "node tests/export-plugin.test.mjs",
     "build:exports": "scripts/build-exports.sh all",
     "build:pdf": "scripts/build-exports.sh pdf",
     "build:chapters": "scripts/build-exports.sh chapters",

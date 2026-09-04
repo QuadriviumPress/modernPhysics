@@ -30,7 +30,7 @@ def tungsten_spectrum():
 
     lam_peak = 2.898e-3 / T * 1e9
     ax.axvline(lam_peak, color=GRAY, lw=1.0, ls="--")
-    ax.annotate(rf"$\lambda_{{\max}}={lam_peak:.0f}\ \text{{nm}}$ (Wien's law)",
+    ax.annotate(rf"$\lambda_{{\max}}={lam_peak:.0f}\ \mathrm{{nm}}$ (Wien's law)",
                 xy=(lam_peak, 1.0), xytext=(lam_peak + 250, 1.08),
                 fontsize=9.5, color=DARK, arrowprops=dict(arrowstyle="->", color=GRAY, lw=0.9))
 
@@ -38,7 +38,7 @@ def tungsten_spectrum():
     ax.set_ylim(0, 1.18)
     ax.set_xlabel(r"wavelength (nm)")
     ax.set_ylabel(r"spectral radiance (normalized to peak)")
-    ax.set_title(r"Tungsten filament at $T=2900\ \text{K}$: most output is invisible infrared")
+    ax.set_title(r"Tungsten filament at $T=2900\ \mathrm{K}$: most output is invisible infrared")
     save(fig, "ch06-sol-tungsten-spectrum")
 
 
@@ -129,7 +129,7 @@ def pair_production_budget():
     ax.axvline(2.50, color=DARK, lw=1.0)
     ax.annotate("", xy=(0, -0.55), xytext=(2.50, -0.55),
                 arrowprops=dict(arrowstyle="<->", color=DARK, lw=1.0))
-    ax.text(1.25, -0.78, r"incident photon, $E_\gamma=2.50\ \text{MeV}$", ha="center", fontsize=10, color=DARK)
+    ax.text(1.25, -0.78, r"incident photon, $E_\gamma=2.50\ \mathrm{MeV}$", ha="center", fontsize=10, color=DARK)
     ax.set_xlim(-0.05, 2.55)
     ax.set_ylim(-1.0, 0.55)
     ax.axis("off")

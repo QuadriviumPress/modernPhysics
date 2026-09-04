@@ -58,7 +58,7 @@ def moseley_plot():
                 xytext=(-125, -30), fontsize=9, color=BLUE)
 
     ax.set_xlabel("$Z$")
-    ax.set_ylabel(r"$\sqrt{f}$  ($10^9\ \sqrt{\text{Hz}}$)")
+    ax.set_ylabel(r"$\sqrt{f}$  ($10^9\ \sqrt{\mathrm{Hz}}$)")
     ax.set_ylim(0.85, 2.75)
     ax.legend(loc="upper left", fontsize=9)
     ax.set_title(r"Moseley's law $\sqrt{f}=a(Z-b)$: one point can only assume $b$; two points fit it")

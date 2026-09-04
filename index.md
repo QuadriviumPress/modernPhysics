@@ -8,7 +8,9 @@ the late nineteenth and early twentieth centuries and that underlies our
 current understanding of nature: special relativity, the quantum theory of
 light and matter, the structure of atoms and molecules, and nuclear and
 particle physics. It is written for a first course in modern physics
-following an introductory calculus-based physics sequence.
+following an introductory calculus-based physics sequence. See the
+[Preface](preface.md) for audience, organization, and how the editions
+differ.
 
 +++ { "tags": ["no-pdf"] }
 

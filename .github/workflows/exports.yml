@@ -15,11 +15,14 @@ name: Exports
 
 on:
   workflow_dispatch:
+  schedule:
+    # Refresh downloadable artifacts before GitHub's 90-day expiry.
+    - cron: '17 4 1 */2 *'
   push:
     tags: ['v*']
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: exports-${{ github.ref }}
@@ -46,6 +49,19 @@ jobs:
           path: exports/*.pdf
           if-no-files-found: error
           retention-days: 90
+
+      - name: Publish durable release downloads
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1 || \
+            gh release create "$GITHUB_REF_NAME" --generate-notes --title "$GITHUB_REF_NAME"
+          gh release upload "$GITHUB_REF_NAME" \
+            exports/modern-physics.pdf \
+            exports/modern-physics-student.pdf \
+            exports/modern-physics.docx \
+            --clobber
 
       - uses: actions/upload-artifact@v7
         with:

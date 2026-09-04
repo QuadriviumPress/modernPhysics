@@ -415,3 +415,7 @@ const plugin = {
 };
 
 export default plugin;
+
+// Named exports keep the transformation logic independently testable. MyST
+// continues to consume only the default plugin export.
+export { openDetails, rewrite, walk, pageLabel, tex, toBlock };

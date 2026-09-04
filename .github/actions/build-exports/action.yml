@@ -38,8 +38,8 @@ runs:
           pandoc \
           poppler-utils
         # Not a nicety: MyST converts SVG to PDF with Inkscape and with nothing
-        # else (`svgToPdf` in myst-cli falls back to a warning), and 89 of the
-        # book's 97 figures are SVG. Without it every one of them is missing.
+        # else (`svgToPdf` in myst-cli falls back to a warning). Most book
+        # figures are SVG, so without it they are missing.
         inkscape --version
         # poppler's pdftoppm rasterizes the figures for the Word file. Ubuntu's
         # ImageMagick policy refuses to read PDF, so it is not an alternative here.

@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-08-27T07:39:14.580468</dc:date>
+    <dc:date>2026-01-01</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -35,7 +35,7 @@ L 140.568019 90.643802
 L 140.568019 43.430383 
 L 63.30648 43.430383 
 z
-" clip-path="url(#p2adfdb0b65)" style="fill: #1769aa; stroke: #333333; stroke-linejoin: miter"/>
+" clip-path="url(#p75cf09738c)" style="fill: #1769aa; stroke: #333333; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 140.568019 90.643802 
@@ -43,7 +43,7 @@ L 451.821645 90.643802
 L 451.821645 43.430383 
 L 140.568019 43.430383 
 z
-" clip-path="url(#p2adfdb0b65)" style="fill: #b33a3a; stroke: #333333; stroke-linejoin: miter"/>
+" clip-path="url(#p75cf09738c)" style="fill: #b33a3a; stroke: #333333; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
     <!-- $\alpha$: $3.5$ MeV -->
@@ -457,7 +457,7 @@ L 70.826797 108.11606
 " style="fill: none; stroke: #333333; stroke-linecap: round"/>
    </g>
    <g id="text_3">
-    <!-- $Q=17.6\ \text{MeV}$ total -->
+    <!-- $Q=17.6\ \mathrm{MeV}$ total -->
     <g style="fill: #333333" transform="translate(210.864062 128.414538) scale(0.1 -0.1)">
      <defs>
       <path id="DejaVuSans-Oblique-34" d="M 2309 -84 
@@ -1171,7 +1171,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p2adfdb0b65">
+  <clipPath id="p75cf09738c">
    <rect x="56.684062" y="23.758125" width="401.76" height="121.968"/>
   </clipPath>
  </defs>

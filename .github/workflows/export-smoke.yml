@@ -1,0 +1,45 @@
+name: Export smoke test
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'plugins/**'
+      - 'templates/**'
+      - 'scripts/build-exports.sh'
+      - 'scripts/tex-to-docx.py'
+      - 'myst.yml'
+      - 'package*.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: export-smoke-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  chapter:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install PDF toolchain
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends \
+            inkscape latexmk texlive-xetex texlive-latex-base \
+            texlive-latex-recommended texlive-latex-extra \
+            texlive-fonts-recommended texlive-plain-generic
+      - run: npm ci
+      - run: npm test
+      - name: Build representative chapter offprint
+        env:
+          MYST_PRINT: full
+          MYST_SITE_URL: https://quadriviumpress.github.io/modernPhysics
+        run: npx myst build --pdf chapters/ch-04-interference-of-light.md

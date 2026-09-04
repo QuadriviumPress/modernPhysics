@@ -5,6 +5,16 @@ label: ch-nuclear-physics
 numbering:
   enumerator: "13.%s"
   heading_2: true
+exports:
+  # A standalone offprint of this chapter, for students who want to print
+  # or work from one chapter. `chapter:` is a templates/book option: it
+  # switches the class to article and starts the section counter, so the
+  # reading sections stay numbered 13.1, 13.2 ... as in the full book.
+  - id: chapter-pdf
+    format: pdf
+    template: ../templates/book
+    output: ../exports/ch-13-nuclear-physics.pdf
+    chapter: 13
 ---
 
 ### Learning Objectives
@@ -220,6 +230,7 @@ Radioactive decay watched nucleus by nucleus and in bulk, then applied to dating
 Radioactivity was discovered by accident. In early 1896, prompted by Wilhelm Röntgen's announcement of X-rays only weeks before, Henri Becquerel was investigating whether phosphorescent materials (which glow after exposure to light) might also emit penetrating, photographic-plate-fogging radiation, using uranium salts as his test material. An overcast Paris sky in late February 1896 forced him to store an unexposed sample — uranium salt sitting atop a wrapped photographic plate, with no sunlight available to trigger any phosphorescence — in a dark drawer for several days. When he developed the plate anyway on March 1, expecting at most a faint trace, he found a strong image instead: the uranium was emitting penetrating radiation entirely on its own, with no light exposure needed to trigger it. Becquerel had discovered **radioactivity**, a spontaneous nuclear process, without initially recognizing what he had found (he first suspected an unusually persistent, invisible form of phosphorescence). Becquerel himself is shown in a portrait from around the time of the discovery in {numref}`Figure %s <fig:ch13-becquerel-historical>`.
 
 ```{figure} ../images/historical-becquerel.jpg
+:width: 45%
 :label: fig:ch13-becquerel-historical
 :alt: Historical portrait photograph of physicist Henri Becquerel.
 
@@ -411,7 +422,7 @@ Estimate the nuclear radius of $^{238}_{92}\text{U}$ and of $^{4}_{2}\text{He}$ 
 
 Using $R=R_0A^{1/3}$ with $R_0=1.2\ \text{fm}$,
 
-$$R_{\rm U}=1.2(238)^{1/3}\ \text{fm}=7.44\ \text{fm},\qquad R_{\rm He}=1.2(4)^{1/3}\ \text{fm}=1.90\ \text{fm}.$$
+$$R_\mathrm{U}=1.2(238)^{1/3}\ \text{fm}=7.44\ \text{fm},\qquad R_\mathrm{He}=1.2(4)^{1/3}\ \text{fm}=1.90\ \text{fm}.$$
 
 Their ratio is $7.44/1.90=3.91$, while $(238/4)^{1/3}=3.90$.  Therefore, uranium's radius is about $7.4\ \text{fm}$ and helium's is about $1.9\ \text{fm}$, fully consistent with $A^{1/3}$ scaling.
 :::
@@ -426,7 +437,7 @@ Compute the binding energy and binding energy per nucleon of $^{4}_{2}\text{He}$
 :label: sol-nuclear-physics-2
 :class: dropdown
 
-The separated-nucleon mass is $2m_p+2m_n=2(1.007276)+2(1.008665)=4.031882\ \text{u}$.  Since $M(^4_2\text{He})$ is an *atomic* mass, it includes two orbital electrons, while $m_p$ is the bare nuclear proton mass; comparing them directly would omit two electron rest masses. Removing $2m_e=2(5.49\times10^{-4}\ \text{u})=0.001097\ \text{u}$ from the atomic mass (and neglecting the much smaller atomic electron binding energy, as instructed) gives the nuclear mass $M_{\rm nuc}=4.002602\ \text{u}-0.001097\ \text{u}=4.001505\ \text{u}$.  Thus
+The separated-nucleon mass is $2m_p+2m_n=2(1.007276)+2(1.008665)=4.031882\ \text{u}$.  Since $M(^4_2\text{He})$ is an *atomic* mass, it includes two orbital electrons, while $m_p$ is the bare nuclear proton mass; comparing them directly would omit two electron rest masses. Removing $2m_e=2(5.49\times10^{-4}\ \text{u})=0.001097\ \text{u}$ from the atomic mass (and neglecting the much smaller atomic electron binding energy, as instructed) gives the nuclear mass $M_\mathrm{nuc}=4.002602\ \text{u}-0.001097\ \text{u}=4.001505\ \text{u}$.  Thus
 
 $$\Delta m=4.031882\ \text{u}-4.001505\ \text{u}=0.030377\ \text{u},$$
 
@@ -547,7 +558,7 @@ In the uranium-238 decay chain, $^{226}_{88}\text{Ra}$ (half-life $1600\ \text{y
 :label: sol-nuclear-physics-8
 :class: dropdown
 
-In secular equilibrium the daughter production rate equals its decay rate, so $A_{\rm Rn}=A_{\rm Ra}$.  The worked example gives $A_{\rm Ra}=3.7\times10^{10}\ \text{Bq}$ for $1.00\ \text{g}$ of radium-226.
+In secular equilibrium the daughter production rate equals its decay rate, so $A_\mathrm{Rn}=A_\mathrm{Ra}$.  The worked example gives $A_\mathrm{Ra}=3.7\times10^{10}\ \text{Bq}$ for $1.00\ \text{g}$ of radium-226.
 
 ```{figure} ../images/ch13-sol-secular-equilibrium.svg
 :label: fig:ch13-sol-secular-equilibrium

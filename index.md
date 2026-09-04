@@ -10,11 +10,15 @@ light and matter, the structure of atoms and molecules, and nuclear and
 particle physics. It is written for a first course in modern physics
 following an introductory calculus-based physics sequence.
 
++++ { "tags": ["no-pdf"] }
+
 ## Contents
 
 :::{toc}
 :context: project
 :::
+
++++
 
 ## License
 

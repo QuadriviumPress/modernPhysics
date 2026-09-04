@@ -14,8 +14,10 @@ published book.
 - [`index.md`](index.md) — book landing page
 - [`chapters/`](chapters/) — chapter content
 - [`images/`](images/) — figures and diagrams
-- [`plugins/`](plugins/) — the MyST plugin that embeds interactive simulations
+- [`plugins/`](plugins/) — the MyST plugins that embed interactive simulations and that make the book survive a static export
+- [`templates/book/`](templates/book/) — the LaTeX template for the printed editions
 - [`scripts/figures/`](scripts/figures/) — matplotlib sources for the computed figures
+- [`scripts/build-exports.sh`](scripts/build-exports.sh) — builds every PDF and the Word edition
 
 The current table of contents (see [`myst.yml`](myst.yml)) is a scaffold:
 
@@ -143,6 +145,72 @@ npm run build          # static site in _build/html/
 Generated output is written to `_build/` and is not committed. CI runs on
 pull requests (`.github/workflows/ci.yml`); pushes to `main` deploy via
 [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
+
+## Print and Word editions
+
+The website is the primary edition, but the same source builds a printable book,
+a set of chapter offprints, and a Word document — all into `exports/`, which is
+not committed.
+
+```bash
+npm run build:exports    # everything below, about a minute
+npm run build:pdf        # the two book PDFs only
+npm run build:chapters   # the fourteen chapter offprints only
+npm run build:docx       # the Word edition only
+```
+
+| File | What it is |
+|---|---|
+| `modern-physics.pdf` | The whole book, worked solutions included |
+| `modern-physics-student.pdf` | The whole book, exercises but no solutions |
+| `modern-physics.docx` | The complete edition as a Word document |
+| `ch-NN-<slug>.pdf` | One standalone offprint per chapter |
+
+Everything stays clickable. A "see Chapter 7" jumps to Chapter 7 inside the PDF,
+`{numref}` and `{eq}` references jump to the figure or equation, and every
+simulation's caption links out to the running simulation on the web. In a
+chapter offprint — which contains only its own chapter — the cross-chapter
+references point at the website instead.
+
+Interactive simulations cannot run on paper, so each one becomes the screenshot
+and caption link that [`plugins/simulation.mjs`](plugins/simulation.mjs) already
+emits beside the live iframe. Nothing in a chapter needs to change for this.
+
+### Toolchain
+
+Beyond Node, the print build needs:
+
+```bash
+sudo apt-get install -y --no-install-recommends \
+  inkscape latexmk texlive-xetex texlive-latex-base texlive-latex-recommended \
+  texlive-latex-extra texlive-fonts-recommended texlive-plain-generic \
+  pandoc poppler-utils
+```
+
+**Inkscape is not optional.** MyST converts SVG to PDF with Inkscape and with
+nothing else, and 89 of the book's 97 figures are SVG; without it every one of
+them is missing from the PDF. `pandoc` and `poppler-utils` are needed only for
+the Word edition.
+
+### How it works
+
+- [`plugins/export.mjs`](plugins/export.mjs) rewrites the handful of node types
+  that no export renderer handles — exercises, solutions, margin notes,
+  dropdowns — into ones that every renderer does. It is inert unless
+  `MYST_PRINT` is set, so `myst start` and the website build are untouched.
+- [`templates/book/`](templates/book/) is a local jtex template: the whole book
+  as a `book`, or one chapter as an offprint via its `chapter` option.
+- The Word edition goes through pandoc rather than `myst build --docx`, because
+  MyST's own DOCX renderer writes each equation as a raw LaTeX *string* inside a
+  Word equation field. Pandoc converts the same math to OMML, which Word renders
+  and edits natively — 7,561 real equations rather than 7,561 lines of
+  `\frac{...}{...}`. See [`scripts/tex-to-docx.py`](scripts/tex-to-docx.py).
+
+Exports are built by
+[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) before the site,
+so every page carries a download menu, and by
+[`.github/workflows/exports.yml`](.github/workflows/exports.yml) on demand or on
+a tag.
 
 ## Content sources
 

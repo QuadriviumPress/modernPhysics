@@ -1,0 +1,59 @@
+# Build the printable editions -- the two book PDFs, the fourteen chapter
+# offprints, and the Word document -- and keep them as workflow artifacts.
+#
+# Kept separate from ci.yml so pull requests still get fast HTML-only feedback:
+# the TeX Live and Inkscape install alone is a few minutes. Run it by hand from
+# the Actions tab, or on a tag, when you want to check the print edition.
+#
+# The same steps run inside deploy.yml, where the artifacts are folded into the
+# published site as download links; the composite action they share lives in
+# .github/actions/build-exports.
+name: Exports
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: read
+
+concurrency:
+  group: exports-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build PDF and DOCX
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ./.github/actions/build-exports
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: modern-physics-exports
+          path: exports/*.pdf
+          if-no-files-found: error
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: modern-physics-docx
+          path: exports/*.docx
+          if-no-files-found: error
+
+      - name: Write build summary
+        if: always()
+        run: |
+          {
+            echo "## Print editions"
+            echo
+            echo "| File | Size |"
+            echo "|------|------|"
+            for f in exports/*.pdf exports/*.docx; do
+              [ -e "$f" ] || continue
+              printf '| `%s` | %s |\n' "$(basename "$f")" "$(du -h "$f" | cut -f1)"
+            done
+          } >> "$GITHUB_STEP_SUMMARY"

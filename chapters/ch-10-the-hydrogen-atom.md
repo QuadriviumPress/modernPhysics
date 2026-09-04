@@ -5,6 +5,16 @@ label: ch-the-hydrogen-atom
 numbering:
   enumerator: "10.%s"
   heading_2: true
+exports:
+  # A standalone offprint of this chapter, for students who want to print
+  # or work from one chapter. `chapter:` is a templates/book option: it
+  # switches the class to article and starts the section counter, so the
+  # reading sections stay numbered 10.1, 10.2 ... as in the full book.
+  - id: chapter-pdf
+    format: pdf
+    template: ../templates/book
+    output: ../exports/ch-10-the-hydrogen-atom.pdf
+    chapter: 10
 ---
 
 ### Learning Objectives
@@ -552,7 +562,7 @@ Estimate the order-of-magnitude fine-structure splitting of hydrogen's $n=3$ lev
 
 For $n=3$, $|E_3|=13.6/9=1.51\ \text{eV}$ and $\alpha^2=(1/137)^2=5.33\times10^{-5}$.  Thus
 
-$$\Delta E_{\rm fine}\sim\alpha^2|E_3|=(5.33\times10^{-5})(1.51\ \text{eV})=8.1\times10^{-5}\ \text{eV}.$$
+$$\Delta E_\mathrm{fine}\sim\alpha^2|E_3|=(5.33\times10^{-5})(1.51\ \text{eV})=8.1\times10^{-5}\ \text{eV}.$$
 
 This is $4/9$ of the $n=2$ estimate because $|E_n|\propto1/n^2$.  Therefore, the $n=3$ fine splitting is of order $8\times10^{-5}\ \text{eV}$ and becomes harder to resolve as $n$ rises.
 :::

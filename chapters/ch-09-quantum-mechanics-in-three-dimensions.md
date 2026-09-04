@@ -5,6 +5,16 @@ label: ch-quantum-mechanics-in-three-dimensions
 numbering:
   enumerator: "9.%s"
   heading_2: true
+exports:
+  # A standalone offprint of this chapter, for students who want to print
+  # or work from one chapter. `chapter:` is a templates/book option: it
+  # switches the class to article and starts the section counter, so the
+  # reading sections stay numbered 9.1, 9.2 ... as in the full book.
+  - id: chapter-pdf
+    format: pdf
+    template: ../templates/book
+    output: ../exports/ch-09-quantum-mechanics-in-three-dimensions.pdf
+    chapter: 9
 ---
 
 ### Learning Objectives

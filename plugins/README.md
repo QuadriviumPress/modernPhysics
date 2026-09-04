@@ -1,17 +1,23 @@
-# Interactive simulation plugin
+# MyST plugins
 
-A MyST plugin that embeds a running browser simulation on the website and falls
-back to a screenshot, a caption, and a link everywhere else.
+Two plugins, both about the same problem: the website can do things paper
+cannot, and the book has to survive being printed anyway.
 
-- [`simulation.mjs`](simulation.mjs) — the plugin: `{simulation}`, `{openphysics}`, `{phet}`, `{phet-legacy}`
-- [`simulation.css`](simulation.css) — hides the fallback on screen, restores it for print
+- [`simulation.mjs`](simulation.mjs) — embeds a running browser simulation on
+  the website and falls back to a screenshot, a caption, and a link everywhere
+  else. Provides `{simulation}`, `{openphysics}`, `{phet}`, `{phet-legacy}`.
+- [`simulation.css`](simulation.css) — hides the fallback on screen, restores it
+  for browser print.
+- [`export.mjs`](export.mjs) — rewrites the node types no export renderer
+  handles into ones every renderer handles. Inert unless `MYST_PRINT` is set.
 
-Both are registered in [`../myst.yml`](../myst.yml):
+All three are registered in [`../myst.yml`](../myst.yml):
 
 ```yaml
 project:
   plugins:
     - plugins/simulation.mjs
+    - plugins/export.mjs
 site:
   options:
     style: plugins/simulation.css
@@ -19,6 +25,8 @@ site:
 
 Edits to a `.mjs` plugin do **not** hot-reload. Restart `myst start` after
 changing it.
+
+# The simulation plugin
 
 ## Usage
 
@@ -122,9 +130,11 @@ by nothing else. `myst-to-tex` and `myst-to-docx` have no handler for it at all.
 
 MyST plugins cannot supply renderers for export formats — that part of the
 plugin API is documented as planned, not implemented — and transforms run at the
-`document`/`project` stage, before any format-specific rendering, so a plugin
-cannot branch on the output format either. The fallback therefore has to be
-structural.
+`document`/`project` stage, before any format-specific rendering, so nothing in
+the tree can tell a plugin which format is being built. The fallback therefore
+has to be structural. (`export.mjs` sidesteps the same limitation from the other
+side, by reading an environment variable the build script sets; that works for a
+whole build, not for one node in one format.)
 
 Each directive emits **both** an `iframe` node and a plain `image` node as
 siblings inside one `figure` container, and each renderer keeps whichever of the
@@ -209,26 +219,73 @@ If the aspect ratio is not already in `simulation.css`, add a rule for it there.
 These URL patterns are conventions of the hosts, not contracts — if OpenPhysics
 or PhET changes its Pages layout, `PROVIDERS` is the only thing to update.
 
-## Expected export messages
+# The export plugin
 
-Exporting to LaTeX or DOCX reports the dropped iframe:
+`myst-to-tex` renders a fixed set of node types and reports anything else as
+`Unhandled LaTeX conversion for node of "<type>"` — then drops it. Five of the
+types this book leans on are not in that set:
 
-```
-⛔️ Unhandled LaTeX conversion for node of "iframe"
-⛔️ Node of type "iframe" is not supported by docx renderer
-```
+| Node | Written as | Count | Without the plugin |
+|---|---|---|---|
+| `exercise` | `:::{exercise}` | 210 | every chapter's Problems section vanishes |
+| `solution` | `:::{solution}` | 210 | every worked solution vanishes |
+| `aside` | `:::{margin}` | 49 | every margin note vanishes |
+| `details` | `:::{dropdown}` | 14 | every dropdown body vanishes |
+| `iframe` | the simulation directives | 41 | intended — the sibling screenshot carries it |
 
-This is the design working, not a fault: the sibling image is what carries the
-figure in those formats. The GitHub Pages workflow runs `myst build --html`
-only, where the iframe *is* supported, so this never appears in CI. To quiet it
-for local exports, at the cost of hiding genuinely unhandled nodes of other
-types, add to `myst.yml`:
+Since a plugin cannot supply a renderer, `export.mjs` rewrites those nodes into
+ones the renderer already understands, and only while an export is being built:
 
-```yaml
-project:
-  error_rules:
-    - id: tex-renders
-      severity: warn
-    - id: docx-renders
-      severity: warn
-```
+| Node | Becomes |
+|---|---|
+| `exercise` | a bold **Exercise 4.1** run-in title, a `\label`, then the body |
+| `solution` | the same, indented — or nothing at all, in the student edition |
+| `aside` | a `blockquote`, which the template styles as a tinted rule |
+| `details` | the summary as a bold lead-in, then the body, always open |
+| `iframe` | removed |
+| `link` (cross-page) | `\hyperref` into the PDF, or a link back to the website |
+
+Three things make that work, and each is easy to get wrong:
+
+- **`stage: 'project'`.** Project-stage transforms run *after*
+  `resolveReferencesTransform`, so every `enumerator` is already assigned
+  ("4.1") and every cross-reference's link text is already resolved. The same
+  transform at `document` stage would lose both.
+- **Nothing may be boxed.** About a quarter of the worked solutions contain a
+  `{figure}`, and LaTeX cannot open a float inside `framed`, `minipage`, or any
+  other box: it fails with *Not in outer par mode* and loses the figure, its
+  caption, and every `{numref}` pointing at it. The template brackets exercises
+  with plain spacing commands for exactly this reason.
+- **No custom environment.** The same `.tex` feeds pandoc for the Word edition,
+  and pandoc discards the entire body of an environment it does not know. Bare
+  commands it cannot read are skipped harmlessly instead.
+
+## Editions
+
+Two environment variables steer it. Neither is set for `myst start` or
+`myst build --html`, where the plugin returns immediately.
+
+| Variable | Values | Effect |
+|---|---|---|
+| `MYST_PRINT` | `full`, `student` | Which edition. `student` drops all 210 solutions. Unset means the website — the plugin does nothing. |
+| `MYST_SITE_URL` | a base URL | Only for chapter offprints. An offprint holds one chapter, so its "see Chapter 7" references leave the file and point at the website. Leave unset for the whole book, where the jump should stay inside the PDF. |
+
+`../scripts/build-exports.sh` sets both correctly for each artifact; prefer it
+to calling `myst build` by hand.
+
+## Cross-references in the PDF
+
+The book says "see Chapter 7" 251 times, and MyST resolves each one to a `link`
+node carrying both the target's identifier and its *website* URL. Left alone,
+`myst-to-tex` writes the URL — `\href{/ch-07-wave-properties-of-particles}{...}`
+— which in a PDF is a dead relative path. `export.mjs` rewrites them to
+`\hyperref`, and puts a matching `\label` at the top of each chapter, taken from
+that file's own frontmatter. (`{numref}` and `{eq}` references are
+`crossReference` nodes, not links; those already come out as `\ref` and are left
+alone.)
+
+Exercise labels get the same treatment, with one extra step: `\label` records
+whatever counter LaTeX last stepped, which inside a Problems section is the
+enclosing `\section`. Each exercise's label therefore pins `\@currentlabel` to
+MyST's own enumerator first, so the printed number is the website's number
+rather than whatever LaTeX happened to be holding.

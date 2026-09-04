@@ -4,7 +4,11 @@
   "description": "MyST Markdown textbook on Modern Physics",
   "scripts": {
     "start": "myst start",
-    "build": "myst build --html"
+    "build": "myst build --html",
+    "build:exports": "scripts/build-exports.sh all",
+    "build:pdf": "scripts/build-exports.sh pdf",
+    "build:chapters": "scripts/build-exports.sh chapters",
+    "build:docx": "scripts/build-exports.sh docx"
   },
   "devDependencies": {
     "mystmd": "1.10.1"

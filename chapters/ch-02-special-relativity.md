@@ -5,6 +5,16 @@ label: ch-special-relativity
 numbering:
   enumerator: "2.%s"
   heading_2: true
+exports:
+  # A standalone offprint of this chapter, for students who want to print
+  # or work from one chapter. `chapter:` is a templates/book option: it
+  # switches the class to article and starts the section counter, so the
+  # reading sections stay numbered 2.1, 2.2 ... as in the full book.
+  - id: chapter-pdf
+    format: pdf
+    template: ../templates/book
+    output: ../exports/ch-02-special-relativity.pdf
+    chapter: 2
 ---
 
 ### Learning Objectives
@@ -204,6 +214,7 @@ In $S$, the interval is $(\Delta s)^2 = c^2(\Delta t)^2 - (\Delta x)^2 = (300\ \
 Einstein's 1905 paper introduced the two postulates that resolved the experimental tension; a later portrait of Einstein is included in {numref}`Figure %s <fig:ch02-einstein-historical>`.
 
 ```{figure} ../images/historical-einstein-1921.jpg
+:width: 45%
 :label: fig:ch02-einstein-historical
 :alt: Historical portrait photograph of Albert Einstein in 1921.
 
@@ -585,7 +596,7 @@ Twin Bob leaves Earth at $v = 0.80c$, travels to a star $8.0$ light-years away (
 In Alice's frame, each leg lasts
 
 $$
-t_{\rm leg}=\frac{8.0\ \text{light-years}}{0.80c}=10.0\ \text{years},
+t_\mathrm{leg}=\frac{8.0\ \text{light-years}}{0.80c}=10.0\ \text{years},
 $$
 
 so Alice's elapsed time is $20.0\ \text{years}$.  At $0.80c$, $\gamma=1.67$, and Bob's proper time is
@@ -693,7 +704,7 @@ A spacecraft recedes directly from Earth at $v = 0.60c$, transmitting a radio si
 For recession,
 
 $$
-f_{\rm rec}=f_0\sqrt{\frac{1-v/c}{1+v/c}}
+f_\mathrm{rec}=f_0\sqrt{\frac{1-v/c}{1+v/c}}
 =(100.0\ \text{MHz})\sqrt{\frac{1-0.60}{1+0.60}}
 =50.0\ \text{MHz}.
 $$
@@ -701,7 +712,7 @@ $$
 For approach, the signs interchange:
 
 $$
-f_{\rm app}=(100.0\ \text{MHz})\sqrt{\frac{1+0.60}{1-0.60}}
+f_\mathrm{app}=(100.0\ \text{MHz})\sqrt{\frac{1+0.60}{1-0.60}}
 =200.0\ \text{MHz}.
 $$
 
@@ -718,18 +729,18 @@ A star's light source moves in a circular orbit, at speed $v = 0.30c$, around a 
 :label: sol-special-relativity-12
 :class: dropdown
 
-For transverse motion, $f_{\rm obs}=f_0/\gamma$.  Here
+For transverse motion, $f_\mathrm{obs}=f_0/\gamma$.  Here
 
 $$
 \gamma=\frac{1}{\sqrt{1-(0.30)^2}}=1.0483,
 \qquad
-\frac{f_{\rm obs}}{f_0}=\frac{1}{1.0483}=0.9539.
+\frac{f_\mathrm{obs}}{f_0}=\frac{1}{1.0483}=0.9539.
 $$
 
 Thus
 
 $$
-\frac{f_0-f_{\rm obs}}{f_0}=1-0.9539=0.0461=4.61\%.
+\frac{f_0-f_\mathrm{obs}}{f_0}=1-0.9539=0.0461=4.61\%.
 $$
 
 Therefore, the transverse Doppler shift is a $4.61\%$ redshift, because time dilation always makes the moving source's clock run slow; reversing a purely transverse velocity does not change $v^2$ or $\gamma$, whereas reversing longitudinal motion changes whether successive crests are emitted closer to or farther from the observer.
@@ -761,14 +772,14 @@ Outline the derivation of the relativistic Doppler formula for direct recession,
 Let $\Delta t_0=1/f_0$ be the proper interval between emitted crests.  Time dilation makes the Earth-frame emission interval $\Delta t=\gamma\Delta t_0$.  During that interval a receding source moves an additional distance $v\Delta t$, adding a propagation delay $v\Delta t/c$, so
 
 $$
-\Delta t_{\rm obs}=\Delta t+\frac{v\Delta t}{c}
+\Delta t_\mathrm{obs}=\Delta t+\frac{v\Delta t}{c}
 =\gamma\Delta t_0\left(1+\frac{v}{c}\right).
 $$
 
 Using $\gamma=1/\sqrt{(1-v/c)(1+v/c)}$ gives
 
 $$
-\frac{\Delta t_{\rm obs}}{\Delta t_0}
+\frac{\Delta t_\mathrm{obs}}{\Delta t_0}
 =\frac{1+v/c}{\sqrt{(1-v/c)(1+v/c)}}
 =\sqrt{\frac{1+v/c}{1-v/c}}.
 $$
@@ -776,7 +787,7 @@ $$
 Since frequency is the reciprocal of period,
 
 $$
-f_{\rm obs}=\frac{1}{\Delta t_{\rm obs}}
+f_\mathrm{obs}=\frac{1}{\Delta t_\mathrm{obs}}
 =f_0\sqrt{\frac{1-v/c}{1+v/c}}.
 $$
 

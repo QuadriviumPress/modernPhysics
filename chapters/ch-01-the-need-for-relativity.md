@@ -5,6 +5,16 @@ label: ch-need-for-relativity
 numbering:
   enumerator: "1.%s"
   heading_2: true
+exports:
+  # A standalone offprint of this chapter, for students who want to print
+  # or work from one chapter. `chapter:` is a templates/book option: it
+  # switches the class to article and starts the section counter, so the
+  # reading sections stay numbered 1.1, 1.2 ... as in the full book.
+  - id: chapter-pdf
+    format: pdf
+    template: ../templates/book
+    output: ../exports/ch-01-the-need-for-relativity.pdf
+    chapter: 1
 ---
 
 ### Learning Objectives

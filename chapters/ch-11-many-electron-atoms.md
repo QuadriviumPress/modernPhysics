@@ -5,6 +5,16 @@ label: ch-many-electron-atoms
 numbering:
   enumerator: "11.%s"
   heading_2: true
+exports:
+  # A standalone offprint of this chapter, for students who want to print
+  # or work from one chapter. `chapter:` is a templates/book option: it
+  # switches the class to article and starts the section counter, so the
+  # reading sections stay numbered 11.1, 11.2 ... as in the full book.
+  - id: chapter-pdf
+    format: pdf
+    template: ../templates/book
+    output: ../exports/ch-11-many-electron-atoms.pdf
+    chapter: 11
 ---
 
 ### Learning Objectives
@@ -350,7 +360,7 @@ The measured $K_\alpha$ X-ray frequency of copper ($Z=29$) is $f = 1.94\times10^
 
 Moseley's relation with $b=1$ gives $f\propto(Z-1)^2$.  Hence
 
-$$f_{\rm Ni}=f_{\rm Cu}\left(\frac{28-1}{29-1}\right)^2=(1.94\times10^{18}\ \text{Hz})\left(\frac{27}{28}\right)^2=1.80\times10^{18}\ \text{Hz}.$$
+$$f_\mathrm{Ni}=f_\mathrm{Cu}\left(\frac{28-1}{29-1}\right)^2=(1.94\times10^{18}\ \text{Hz})\left(\frac{27}{28}\right)^2=1.80\times10^{18}\ \text{Hz}.$$
 
 ```{figure} ../images/ch11-sol-moseley-plot.svg
 :label: fig:ch11-sol-moseley-plot
@@ -400,16 +410,16 @@ Using Slater's rules (the grouping $(1s)(2s,2p)(3s,3p)\ldots$ and the shielding 
 
 For one magnesium $3s$ electron, the other $3s$ electron shields $0.35$; the eight $n=2$ electrons shield $8(0.85)=6.80$; and the two $1s$ electrons shield $2(1.00)=2.00$.  Thus
 
-$$S=0.35+6.80+2.00=9.15,\qquad Z_{\rm eff}=Z-S=12-9.15=2.85.$$
+$$S=0.35+6.80+2.00=9.15,\qquad Z_\mathrm{eff}=Z-S=12-9.15=2.85.$$
 
 ```{figure} ../images/ch11-sol-zeff-comparison.svg
 :label: fig:ch11-sol-zeff-comparison
 :alt: Bar chart of effective nuclear charge for the outer electron of sodium, magnesium, and chlorine, increasing from sodium through magnesium to chlorine.
 
-Slater's-rules $Z_{\rm eff}$ increases steadily across the period as protons are added faster than shielding can compensate; magnesium's $2.85$ falls exactly between sodium's and chlorine's.
+Slater's-rules $Z_\mathrm{eff}$ increases steadily across the period as protons are added faster than shielding can compensate; magnesium's $2.85$ falls exactly between sodium's and chlorine's.
 ```
 
-Therefore, magnesium's $3s$ electron feels $Z_{\rm eff}=2.85$, appropriately between sodium's $2.20$ and chlorine's $6.10$.
+Therefore, magnesium's $3s$ electron feels $Z_\mathrm{eff}=2.85$, appropriately between sodium's $2.20$ and chlorine's $6.10$.
 :::
 
 :::{exercise}
@@ -444,7 +454,7 @@ Copper's $K_\alpha$ frequency is $f_{\text{Cu}} = 1.94\times10^{18}\ \text{Hz}$ 
 :label: sol-many-electron-atoms-9
 :class: dropdown
 
-For molybdenum, $f_{\rm Mo}=E/h=(17.478\times10^3\ \text{eV})/(4.1357\times10^{-15}\ \text{eV s})=4.226\times10^{18}\ \text{Hz}$.  Subtracting $\sqrt{f}=a(Z-b)$ for Cu and Mo gives
+For molybdenum, $f_\mathrm{Mo}=E/h=(17.478\times10^3\ \text{eV})/(4.1357\times10^{-15}\ \text{eV s})=4.226\times10^{18}\ \text{Hz}$.  Subtracting $\sqrt{f}=a(Z-b)$ for Cu and Mo gives
 
 $$a=\frac{\sqrt{4.226\times10^{18}}-\sqrt{1.94\times10^{18}}}{42-29}=5.10\times10^7\ \text{Hz}^{1/2},$$
 
@@ -480,7 +490,7 @@ In your own words, explain why the Hartree self-consistent field method is "circ
 :label: sol-many-electron-atoms-11
 :class: dropdown
 
-The electron density determines the screening part of $V_{\rm eff}$, but that density is obtained only after solving for the electron wave functions in $V_{\rm eff}$ itself.  Hartree's method begins with a trial density, solves the one-electron equations, constructs a new density and potential, and repeats.  Therefore, the method is called self-consistent when an iteration returns the same density and effective potential with no material further change.
+The electron density determines the screening part of $V_\mathrm{eff}$, but that density is obtained only after solving for the electron wave functions in $V_\mathrm{eff}$ itself.  Hartree's method begins with a trial density, solves the one-electron equations, constructs a new density and potential, and repeats.  Therefore, the method is called self-consistent when an iteration returns the same density and effective potential with no material further change.
 :::
 
 :::{exercise}
@@ -493,13 +503,13 @@ Argon ($Z=18$, configuration $[\text{Ne}]\,3s^23p^6$) has a *smaller* atomic rad
 :label: sol-many-electron-atoms-12
 :class: dropdown
 
-Across period 3, added protons raise $Z_{\rm eff}$ while electrons stay in the $n=3$ shell, so radii generally decrease.  Potassium starts a new $n=4$ shell: its $4s$ electron is farther out and strongly shielded by the filled argon core.
+Across period 3, added protons raise $Z_\mathrm{eff}$ while electrons stay in the $n=3$ shell, so radii generally decrease.  Potassium starts a new $n=4$ shell: its $4s$ electron is farther out and strongly shielded by the filled argon core.
 
 ```{figure} ../images/ch11-sol-atomic-radius-anomaly.svg
 :label: fig:ch11-sol-atomic-radius-anomaly
 :alt: Bar chart of atomic radius across period 3 from sodium to argon, steadily decreasing, followed by a sharp jump up at potassium.
 
-Radius falls steadily as $Z_{\rm eff}$ grows across a period, then jumps back up the instant a new principal shell opens at potassium.
+Radius falls steadily as $Z_\mathrm{eff}$ grows across a period, then jumps back up the instant a new principal shell opens at potassium.
 ```
 
 Therefore, potassium's new principal shell outweighs its extra proton, giving it a larger radius than argon.

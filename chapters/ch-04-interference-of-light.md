@@ -5,6 +5,16 @@ label: ch-interference-of-light
 numbering:
   enumerator: "4.%s"
   heading_2: true
+exports:
+  # A standalone offprint of this chapter, for students who want to print
+  # or work from one chapter. `chapter:` is a templates/book option: it
+  # switches the class to article and starts the section counter, so the
+  # reading sections stay numbered 4.1, 4.2 ... as in the full book.
+  - id: chapter-pdf
+    format: pdf
+    template: ../templates/book
+    output: ../exports/ch-04-interference-of-light.pdf
+    chapter: 4
 ---
 
 ### Learning Objectives
@@ -849,8 +859,8 @@ Two identical in-step sources emit light of wavelength $620\ \text{nm}$. Find th
 
 For in-step sources, a bright point requires $\Delta r=m\lambda$ and a dark point requires $\Delta r=(m+\tfrac12)\lambda$.  Hence
 
-$$\Delta r_{\rm bright}=1(620\ \text{nm})=620\ \text{nm},\qquad
-\Delta r_{\rm dark}=\tfrac12(620\ \text{nm})=310\ \text{nm}.$$
+$$\Delta r_\mathrm{bright}=1(620\ \text{nm})=620\ \text{nm},\qquad
+\Delta r_\mathrm{dark}=\tfrac12(620\ \text{nm})=310\ \text{nm}.$$
 
 Also $I/I_{\max}=\cos^2(\phi/2)=1/2$ first occurs at $\phi/2=\pi/4$, so $\phi=\pi/2$ and $\Delta r=\lambda/4=155\ \text{nm}$.  Therefore, the smallest nonzero path differences are $620\ \text{nm}$ (bright), $310\ \text{nm}$ (dark), and $155\ \text{nm}$ (half maximum).
 :::
@@ -1016,7 +1026,7 @@ Both air--coating and coating--glass reflections reverse phase, so destructive r
 
 $$t=\frac{\lambda}{4n}=\frac{600\ \text{nm}}{4(1.38)}=109\ \text{nm}.$$
 
-For this thickness, $2nt/\lambda_{\rm test}=(300\ \text{nm})/\lambda_{\rm test}$.  Thus it is $300/450=0.667$ at $450\ \text{nm}$ and $300/700=0.429$ at $700\ \text{nm}$, rather than the design value $0.500$.  Therefore, a $109\ \text{nm}$ coating minimizes $600\ \text{nm}$ reflection, but it is imperfect at blue and red wavelengths; the unequal residual reflection can look purple.
+For this thickness, $2nt/\lambda_\mathrm{test}=(300\ \text{nm})/\lambda_\mathrm{test}$.  Thus it is $300/450=0.667$ at $450\ \text{nm}$ and $300/700=0.429$ at $700\ \text{nm}$, rather than the design value $0.500$.  Therefore, a $109\ \text{nm}$ coating minimizes $600\ \text{nm}$ reflection, but it is imperfect at blue and red wavelengths; the unequal residual reflection can look purple.
 :::
 
 :::{exercise}

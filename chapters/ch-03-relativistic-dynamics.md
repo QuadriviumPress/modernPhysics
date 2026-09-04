@@ -5,6 +5,16 @@ label: ch-relativistic-dynamics
 numbering:
   enumerator: "3.%s"
   heading_2: true
+exports:
+  # A standalone offprint of this chapter, for students who want to print
+  # or work from one chapter. `chapter:` is a templates/book option: it
+  # switches the class to article and starts the section counter, so the
+  # reading sections stay numbered 3.1, 3.2 ... as in the full book.
+  - id: chapter-pdf
+    format: pdf
+    template: ../templates/book
+    output: ../exports/ch-03-relativistic-dynamics.pdf
+    chapter: 3
 ---
 
 ### Learning Objectives
@@ -357,7 +367,7 @@ Find the speed at which a particle's relativistic kinetic energy differs from th
 Write $\beta=u/c$.  The ratio is
 
 $$
-\frac{K_{\rm rel}}{K_{\rm Newt}}
+\frac{K_\mathrm{rel}}{K_\mathrm{Newt}}
 =\frac{(\gamma-1)mc^2}{\tfrac12 m\beta^2c^2}
 =\frac{2(\gamma-1)}{\beta^2}.
 $$
@@ -603,7 +613,7 @@ $$
 Each lump has energy $E=\gamma mc^2=1.25mc^2$.  Their momenta are equal and opposite, so the total initial four-vector is
 
 $$
-\left(\frac{E_{\rm tot}}{c},p_{\rm tot}\right)
+\left(\frac{E_\mathrm{tot}}{c},p_\mathrm{tot}\right)
 =\left(\frac{2(1.25mc^2)}{c},0\right)
 =\left(\frac{2.50mc^2}{c},0\right).
 $$
@@ -747,7 +757,7 @@ Verify the claim in the worked example on antiproton production that a naive est
 At threshold the incident proton has $E_b=7mc^2$ and the stationary target has energy $mc^2$, so
 
 $$
-E_{\rm tot}=8mc^2.
+E_\mathrm{tot}=8mc^2.
 $$
 
 The beam momentum follows from its invariant:
@@ -758,7 +768,7 @@ p_bc=\sqrt{E_b^2-m^2c^4}
 =\sqrt{48}\,mc^2=4\sqrt3\,mc^2.
 $$
 
-The CM frame moves at $V=c^2p_{\rm tot}/E_{\rm tot}$, hence
+The CM frame moves at $V=c^2p_\mathrm{tot}/E_\mathrm{tot}$, hence
 
 $$
 V=\frac{c^2(4\sqrt3\,mc)}{8mc^2}
@@ -766,7 +776,7 @@ V=\frac{c^2(4\sqrt3\,mc)}{8mc^2}
 =0.866c.
 $$
 
-The final four-particle system has rest energy $4mc^2$ but lab energy $8mc^2$; its Lorentz factor in the lab is $\gamma_{\rm CM}=8mc^2/(4mc^2)=2$, consistent with $V=0.866c$.  Therefore, the naive $2mc^2$ counts only the new pair's rest energy, whereas the additional $4mc^2$ of the $6mc^2$ beam kinetic energy is unavoidable kinetic energy of the entire final system moving at $0.866c$ in the lab.
+The final four-particle system has rest energy $4mc^2$ but lab energy $8mc^2$; its Lorentz factor in the lab is $\gamma_\mathrm{CM}=8mc^2/(4mc^2)=2$, consistent with $V=0.866c$.  Therefore, the naive $2mc^2$ counts only the new pair's rest energy, whereas the additional $4mc^2$ of the $6mc^2$ beam kinetic energy is unavoidable kinetic energy of the entire final system moving at $0.866c$ in the lab.
 
 The fixed-target panel of {numref}`Figure %s <fig:ch03-sol-threshold-comparison>` illustrates this forward-moving final centre of mass.
 :::

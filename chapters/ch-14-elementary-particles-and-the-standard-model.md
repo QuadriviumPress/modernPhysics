@@ -5,6 +5,16 @@ label: ch-elementary-particles-and-the-standard-model
 numbering:
   enumerator: "14.%s"
   heading_2: true
+exports:
+  # A standalone offprint of this chapter, for students who want to print
+  # or work from one chapter. `chapter:` is a templates/book option: it
+  # switches the class to article and starts the section counter, so the
+  # reading sections stay numbered 14.1, 14.2 ... as in the full book.
+  - id: chapter-pdf
+    format: pdf
+    template: ../templates/book
+    output: ../exports/ch-14-elementary-particles-and-the-standard-model.pdf
+    chapter: 14
 ---
 
 ### Learning Objectives
@@ -131,6 +141,7 @@ Particle physicists routinely quote a particle's rest mass directly in energy un
 :::
 
 ```{figure} ../images/historical-atlas-detector.jpg
+:width: 45%
 :label: fig:ch14-atlas-historical
 :alt: Historical photograph looking down into the ATLAS detector cavern at CERN during its construction, showing the detector's large wheel-shaped toroid magnet structures.
 

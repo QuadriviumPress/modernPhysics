@@ -5,6 +5,16 @@ label: ch-wave-properties-of-particles
 numbering:
   enumerator: "7.%s"
   heading_2: true
+exports:
+  # A standalone offprint of this chapter, for students who want to print
+  # or work from one chapter. `chapter:` is a templates/book option: it
+  # switches the class to article and starts the section counter, so the
+  # reading sections stay numbered 7.1, 7.2 ... as in the full book.
+  - id: chapter-pdf
+    format: pdf
+    template: ../templates/book
+    output: ../exports/ch-07-wave-properties-of-particles.pdf
+    chapter: 7
 ---
 
 ### Learning Objectives

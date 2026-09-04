@@ -46,6 +46,96 @@ project:
     UV: ultraviolet
   plugins:
     - plugins/simulation.mjs
+    # Rewrites exercises, solutions, margin notes and dropdowns into nodes the
+    # LaTeX/DOCX renderers understand. Inert unless MYST_PRINT is set, so the
+    # website build is untouched; see plugins/export.mjs.
+    - plugins/export.mjs
+  # The simulation directive emits an iframe for the website beside a screenshot
+  # for print. plugins/export.mjs strips the iframe before the tex renderer sees
+  # it, but a stray one must not fail the build.
+  error_rules:
+    - id: tex-renders
+      severity: warn
+    - id: docx-renders
+      severity: warn
+    # The downloads below are build artifacts. They exist in CI, which builds the
+    # exports before the site, but not in a fresh clone or during `myst start`.
+    - id: static-action-file-copied
+      severity: warn
+  # The download menu on every page of the site. These are the artifacts
+  # scripts/build-exports.sh writes; the deploy workflow builds them before it
+  # builds the HTML, so they are on disk by the time MyST looks for them. The
+  # per-chapter PDFs need no entry here -- MyST surfaces a page's own `exports:`
+  # on that page by itself.
+  # `static: true` is not cosmetic: without it a missing file is an unsuppressible
+  # error, and these are build artifacts that a fresh clone has not made yet.
+  # With it the complaint carries the `static-action-file-copied` rule id, which
+  # the error_rules below soften to a warning so `myst start` stays quiet.
+  downloads:
+    - file: exports/modern-physics.pdf
+      title: Download the book (PDF, with worked solutions)
+      static: true
+    - file: exports/modern-physics-student.pdf
+      title: Download the book (PDF, exercises only)
+      static: true
+    - file: exports/modern-physics.docx
+      title: Download the book (Word)
+      static: true
+  # The printable book. Built by scripts/build-exports.sh, which runs this twice
+  # -- once with MYST_PRINT=full, once with MYST_PRINT=student -- and renames the
+  # output. `level: 0` makes each chapter a \chapter rather than a \section, so
+  # LaTeX's own numbering lands on the same 4, 4.1, 4.2 the website shows; the
+  # titled `level: -1` entries are the part dividers, which the site reads off
+  # `toc:` below but a single document has to be told about. index.md is the
+  # website's landing page and is not one of them -- the printed book opens with
+  # the title and copyright pages in templates/book/template.tex instead.
+  exports:
+    - id: book
+      # `pdf+tex` keeps the intermediate .tex, which scripts/tex-to-docx.sh
+      # feeds to pandoc -- MyST's own --docx writes raw LaTeX strings into Word
+      # equation fields, which is unreadable at 3000 equations.
+      format: pdf+tex
+      template: ./templates/book
+      output: exports/modern-physics.pdf
+      articles:
+        - title: Relativity
+          level: -1
+        - file: chapters/ch-01-the-need-for-relativity.md
+          level: 0
+        - file: chapters/ch-02-special-relativity.md
+          level: 0
+        - file: chapters/ch-03-relativistic-dynamics.md
+          level: 0
+        - title: Wave Optics
+          level: -1
+        - file: chapters/ch-04-interference-of-light.md
+          level: 0
+        - file: chapters/ch-05-diffraction-of-light.md
+          level: 0
+        - title: Quantum Theory
+          level: -1
+        - file: chapters/ch-06-particle-properties-of-waves.md
+          level: 0
+        - file: chapters/ch-07-wave-properties-of-particles.md
+          level: 0
+        - file: chapters/ch-08-the-schrodinger-equation.md
+          level: 0
+        - file: chapters/ch-09-quantum-mechanics-in-three-dimensions.md
+          level: 0
+        - title: Atoms and Molecules
+          level: -1
+        - file: chapters/ch-10-the-hydrogen-atom.md
+          level: 0
+        - file: chapters/ch-11-many-electron-atoms.md
+          level: 0
+        - file: chapters/ch-12-molecular-structure.md
+          level: 0
+        - title: Nuclear and Particle Physics
+          level: -1
+        - file: chapters/ch-13-nuclear-physics.md
+          level: 0
+        - file: chapters/ch-14-elementary-particles-and-the-standard-model.md
+          level: 0
   toc:
     - file: index.md
     - title: Part I — Relativity

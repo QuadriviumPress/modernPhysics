@@ -5,6 +5,16 @@ label: ch-the-schrodinger-equation
 numbering:
   enumerator: "8.%s"
   heading_2: true
+exports:
+  # A standalone offprint of this chapter, for students who want to print
+  # or work from one chapter. `chapter:` is a templates/book option: it
+  # switches the class to article and starts the section counter, so the
+  # reading sections stay numbered 8.1, 8.2 ... as in the full book.
+  - id: chapter-pdf
+    format: pdf
+    template: ../templates/book
+    output: ../exports/ch-08-the-schrodinger-equation.pdf
+    chapter: 8
 ---
 
 ### Learning Objectives
@@ -473,7 +483,7 @@ Thus $T_p\simeq e^{-2\kappa_pL}=e^{-2(0.491)(2.0)}=0.140$.  For an alpha particl
 :label: fig:ch08-sol-tunneling-barrier
 :alt: Wavefunction amplitude envelope decaying exponentially inside a rectangular barrier, with the alpha particle's curve falling off faster than the proton's and settling at a lower plateau beyond the barrier.
 
-The heavier alpha particle has twice the proton's decay constant $\kappa$, so its amplitude falls off twice as fast inside the barrier — the reason its transmission probability ($T=|{\rm amplitude\ ratio}|^2$) ends up smaller.
+The heavier alpha particle has twice the proton's decay constant $\kappa$, so its amplitude falls off twice as fast inside the barrier — the reason its transmission probability ($T=|\mathrm{amplitude\ ratio}|^2$) ends up smaller.
 ```
 
 Therefore, the proton transmission is about $14\%$, while the alpha transmission is about $2.0\%$ because the heavier particle has a larger tunneling exponent.

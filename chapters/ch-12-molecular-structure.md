@@ -5,6 +5,16 @@ label: ch-molecular-structure
 numbering:
   enumerator: "12.%s"
   heading_2: true
+exports:
+  # A standalone offprint of this chapter, for students who want to print
+  # or work from one chapter. `chapter:` is a templates/book option: it
+  # switches the class to article and starts the section counter, so the
+  # reading sections stay numbered 12.1, 12.2 ... as in the full book.
+  - id: chapter-pdf
+    format: pdf
+    template: ../templates/book
+    output: ../exports/ch-12-molecular-structure.pdf
+    chapter: 12
 ---
 
 ### Learning Objectives
@@ -138,6 +148,7 @@ The idea that a covalent bond is a *shared pair of electrons* predates quantum m
 **Valence bond theory**, developed by Walter Heitler and Fritz London (1927) and then extended and popularized by Linus Pauling through the early 1930s — including the hybrid-orbital concept of this chapter — kept Lewis's picture of a bond as a localized pair shared between two specific atoms, now computed from overlapping atomic wave functions rather than guessed at. **Molecular orbital theory**, developed in the same years chiefly by Friedrich Hund and Robert Mulliken, instead discarded the idea that an electron belongs to one bond at a time, building orbitals delocalized over the whole molecule from the outset. The two camps disagreed, sometimes sharply, over which picture was the physically correct starting point — Pauling's localized, chemist-friendly bonds versus Mulliken's delocalized, spectroscopically motivated orbitals — and valence bond theory, propelled by Pauling's enormously influential 1939 book *The Nature of the Chemical Bond*, remained the dominant teaching framework through the 1950s. Molecular orbital theory eventually overtook it, in no small part on the strength of results like the $\text{O}_2$ paramagnetism prediction below, which valence bond theory cannot produce without ad hoc patching. Pauling received the 1954 Nobel Prize in Chemistry "for his research into the nature of the chemical bond," and Mulliken received the 1966 Prize "for his fundamental work concerning chemical bonds and the electronic structure of molecules by the molecular orbital method" ({numref}`Figure %s <fig:ch12-pauling>`). Both theories remain in active use today, each suited to different questions — geometry and localized reactivity for valence bond theory, spectra and magnetism for molecular orbital theory — which is why this chapter, like the field itself, teaches both.
 
 ```{figure} ../images/historical-linus-pauling-1962.jpg
+:width: 45%
 :label: fig:ch12-pauling
 :alt: Historical photograph of Linus Pauling, 1962.
 
@@ -439,7 +450,7 @@ The HCl molecule has an effective vibrational frequency $f = \omega/2\pi = 8.66\
 
 The reduced mass is
 
-$$\mu=\frac{m_{\rm H}m_{\rm Cl}}{m_{\rm H}+m_{\rm Cl}}=\frac{(1.008)(35.45)}{1.008+35.45}\ \text{u}=0.980\ \text{u}=1.63\times10^{-27}\ \text{kg}.$$
+$$\mu=\frac{m_\mathrm{H}m_\mathrm{Cl}}{m_\mathrm{H}+m_\mathrm{Cl}}=\frac{(1.008)(35.45)}{1.008+35.45}\ \text{u}=0.980\ \text{u}=1.63\times10^{-27}\ \text{kg}.$$
 
 With $\omega=2\pi f=2\pi(8.66\times10^{13}\ \text{s}^{-1})$,
 

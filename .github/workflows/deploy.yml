@@ -21,20 +21,22 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # The print editions add a TeX Live + Inkscape install and ~1 min of
+    # XeLaTeX to what used to be an HTML-only job.
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - uses: actions/setup-node@v4
+      # The print editions are built first, and on purpose: `downloads:` in
+      # myst.yml points at exports/, so the PDFs and the Word file have to be on
+      # disk before MyST builds the site or the download menu comes out empty
+      # (a warning, not an error -- see the static-action-file-copied rule).
+      - uses: ./.github/actions/build-exports
         with:
-          node-version: 22
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci
+          site-url: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
 
       - name: Build HTML
         run: npx myst build --html --check-links

@@ -5,6 +5,16 @@ label: ch-particle-properties-of-waves
 numbering:
   enumerator: "6.%s"
   heading_2: true
+exports:
+  # A standalone offprint of this chapter, for students who want to print
+  # or work from one chapter. `chapter:` is a templates/book option: it
+  # switches the class to article and starts the section counter, so the
+  # reading sections stay numbered 6.1, 6.2 ... as in the full book.
+  - id: chapter-pdf
+    format: pdf
+    template: ../templates/book
+    output: ../exports/ch-06-particle-properties-of-waves.pdf
+    chapter: 6
 ---
 
 ### Learning Objectives
@@ -591,7 +601,7 @@ A $2.50\ \text{MeV}$ photon undergoes pair production near a heavy nucleus, whic
 
 The rest-energy cost is $2m_ec^2=1.022\ \text{MeV}$, leaving
 
-$$K_{\rm available}=2.50\ \text{MeV}-1.022\ \text{MeV}=1.478\ \text{MeV}.$$
+$$K_\mathrm{available}=2.50\ \text{MeV}-1.022\ \text{MeV}=1.478\ \text{MeV}.$$
 
 Equal sharing gives $K_e=K_{e^+}=0.739\ \text{MeV}$ and total energy $0.739+0.511=1.250\ \text{MeV}$ for each.
 

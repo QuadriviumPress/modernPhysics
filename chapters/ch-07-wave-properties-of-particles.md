@@ -4,7 +4,7 @@ short_title: Chapter 7. Wave Properties of Particles
 label: ch-wave-properties-of-particles
 numbering:
   enumerator: "7.%s"
-  heading_2: true
+  heading_1: true
 exports:
   # A standalone offprint of this chapter, for students who want to print
   # or work from one chapter. `chapter:` is a templates/book option: it

@@ -4,7 +4,7 @@ short_title: Chapter 14. Elementary Particles and the Standard Model
 label: ch-elementary-particles-and-the-standard-model
 numbering:
   enumerator: "14.%s"
-  heading_2: true
+  heading_1: true
 exports:
   # A standalone offprint of this chapter, for students who want to print
   # or work from one chapter. `chapter:` is a templates/book option: it

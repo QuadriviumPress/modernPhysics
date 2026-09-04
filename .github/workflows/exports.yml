@@ -1,13 +1,16 @@
 # Build the printable editions -- the two book PDFs, the fourteen chapter
 # offprints, and the Word document -- and keep them as workflow artifacts.
 #
-# Kept separate from ci.yml so pull requests still get fast HTML-only feedback:
-# the TeX Live and Inkscape install alone is a few minutes. Run it by hand from
-# the Actions tab, or on a tag, when you want to check the print edition.
+# This is the only place they are built. deploy.yml used to run the same steps
+# on every push to main, which cost every one-word prose fix a TeX Live install
+# and a XeLaTeX pass; it now downloads this workflow's most recent successful
+# artifacts instead. So the download menu on the published site tracks the last
+# tag (or the last manual run here), not the tip of main.
 #
-# The same steps run inside deploy.yml, where the artifacts are folded into the
-# published site as download links; the composite action they share lives in
-# .github/actions/build-exports.
+# Keeping it out of ci.yml also keeps pull request feedback fast and HTML-only:
+# the TeX Live and Inkscape install alone is a few minutes.
+#
+# The toolchain and build steps live in .github/actions/build-exports.
 name: Exports
 
 on:
@@ -28,21 +31,28 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: ./.github/actions/build-exports
+        with:
+          site-url: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
 
-      - uses: actions/upload-artifact@v4
+      # 90 days is the ceiling, and worth asking for: deploy.yml serves the site's
+      # downloads out of these artifacts, so once they expire the download menu
+      # goes empty until the next tag or manual run.
+      - uses: actions/upload-artifact@v7
         with:
           name: modern-physics-exports
           path: exports/*.pdf
           if-no-files-found: error
+          retention-days: 90
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: modern-physics-docx
           path: exports/*.docx
           if-no-files-found: error
+          retention-days: 90
 
       - name: Write build summary
         if: always()

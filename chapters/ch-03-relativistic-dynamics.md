@@ -4,7 +4,7 @@ short_title: Chapter 3. Relativistic Dynamics
 label: ch-relativistic-dynamics
 numbering:
   enumerator: "3.%s"
-  heading_2: true
+  heading_1: true
 exports:
   # A standalone offprint of this chapter, for students who want to print
   # or work from one chapter. `chapter:` is a templates/book option: it

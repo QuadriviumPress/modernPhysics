@@ -2,6 +2,8 @@ name: Build print exports
 description: >-
   Install the print toolchain and run scripts/build-exports.sh, leaving the two
   book PDFs, the fourteen chapter offprints, and the Word document in exports/.
+  Used by exports.yml only; deploy.yml downloads that workflow's artifacts
+  rather than rebuilding them.
 
 inputs:
   site-url:
@@ -15,7 +17,7 @@ inputs:
 runs:
   using: composite
   steps:
-    - uses: actions/setup-node@v4
+    - uses: actions/setup-node@v7
       with:
         node-version: 22
         cache: npm

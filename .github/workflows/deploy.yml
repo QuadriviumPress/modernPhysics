@@ -13,6 +13,9 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  # Read-only access to other workflows' runs, so the step below can pull the
+  # print editions out of the last Exports run.
+  actions: read
 
 concurrency:
   group: pages
@@ -21,30 +24,98 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    # The print editions add a TeX Live + Inkscape install and ~1 min of
-    # XeLaTeX to what used to be an HTML-only job.
-    timeout-minutes: 45
+    # HTML only. The print editions are no longer built here -- see the download
+    # step below -- so this is back to a few minutes rather than the ~3 the
+    # TeX Live install and XeLaTeX added to every push.
+    timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
 
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
-      # The print editions are built first, and on purpose: `downloads:` in
-      # myst.yml points at exports/, so the PDFs and the Word file have to be on
-      # disk before MyST builds the site or the download menu comes out empty
-      # (a warning, not an error -- see the static-action-file-copied rule).
-      - uses: ./.github/actions/build-exports
-        with:
-          site-url: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+      - name: Install dependencies
+        run: npm ci
+
+      # `downloads:` in myst.yml points at exports/, so the PDFs and the Word
+      # file have to be on disk before MyST builds the site or the download menu
+      # comes out empty (a warning, not an error -- see the
+      # static-action-file-copied rule).
+      #
+      # They are no longer rebuilt from source on every push. Exports runs on
+      # `v*` tags and on demand; this takes the artifacts from its most recent
+      # successful run, whichever commit that was. So the site's download menu
+      # tracks the last release, not the tip of main -- push a tag, or run
+      # Exports by hand, when the print editions need to catch up.
+      - name: Fetch the print editions from the last Exports run
+        id: exports
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p exports
+
+          run_id=$(gh run list \
+            --repo "$GITHUB_REPOSITORY" \
+            --workflow exports.yml \
+            --status success \
+            --limit 1 \
+            --json databaseId \
+            --jq '.[0].databaseId // empty')
+
+          if [ -z "$run_id" ]; then
+            echo "::warning::No successful Exports run found. The site will build without its PDF and Word downloads; push a v* tag or run the Exports workflow to populate them."
+            echo "found=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          # One `-n` per artifact on purpose: `gh run download` given a pattern
+          # nests each artifact in a directory named after it, and myst.yml
+          # expects the files directly under exports/.
+          for name in modern-physics-exports modern-physics-docx; do
+            gh run download "$run_id" \
+              --repo "$GITHUB_REPOSITORY" \
+              --name "$name" \
+              --dir exports \
+              || echo "::warning::Artifact $name is missing from Exports run $run_id (expired, or that run predates it)."
+          done
+
+          echo "found=true" >> "$GITHUB_OUTPUT"
+          echo "run_id=$run_id" >> "$GITHUB_OUTPUT"
+          echo "run_url=$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$run_id" >> "$GITHUB_OUTPUT"
 
       - name: Build HTML
         run: npx myst build --html --check-links
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./_build/html
+
+      - name: Write build summary
+        if: always()
+        run: |
+          {
+            echo "## Print editions on this deploy"
+            echo
+            if [ "${{ steps.exports.outputs.found }}" = "true" ]; then
+              echo "Taken from [Exports run ${{ steps.exports.outputs.run_id }}](${{ steps.exports.outputs.run_url }})."
+              echo
+              echo "| File | Size |"
+              echo "|------|------|"
+              for f in exports/*.pdf exports/*.docx; do
+                [ -e "$f" ] || continue
+                printf '| `%s` | %s |\n' "$(basename "$f")" "$(du -h "$f" | cut -f1)"
+              done
+            else
+              echo "None -- no successful Exports run to pull from. The download menu will be empty."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
 
   deploy:
     environment:
@@ -55,4 +126,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

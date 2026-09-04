@@ -19,7 +19,10 @@ published book.
 - [`scripts/figures/`](scripts/figures/) — matplotlib sources for the computed figures
 - [`scripts/build-exports.sh`](scripts/build-exports.sh) — builds every PDF and the Word edition
 
-The current table of contents (see [`myst.yml`](myst.yml)) is a scaffold:
+The book is organized into five parts (printed as `\part` dividers in the
+PDF; listed here for orientation). The website sidebar is a flat chapter
+list — no part groupings — with each chapter’s numbered sections in the
+page outline:
 
 - **Part I — Relativity**: the need for relativity, special relativity,
   relativistic dynamics
@@ -32,10 +35,8 @@ The current table of contents (see [`myst.yml`](myst.yml)) is a scaffold:
 - **Part V — Nuclear and Particle Physics**: nuclear physics, elementary
   particles and the Standard Model
 
-Each chapter file starts as a stub (Learning Objectives / Introduction /
-Summary / Problems) to be filled in with real content, figures, and
-worked examples. Feel free to reorder, split, merge, or rename
-chapters/parts in `myst.yml` as the material takes shape.
+Feel free to reorder, split, merge, or rename chapters in `myst.yml` as
+the material takes shape.
 
 ## Writing chapters
 
@@ -48,8 +49,9 @@ admonitions, and cross-references — see the
 ### Section structure
 
 Each chapter is one file. Numbered reading sections are `##` headings
-(rendered as *N.1*, *N.2*, … via `heading_2: true` in the chapter
-frontmatter) and are kept roughly equal in length so a professor can
+(rendered as *N.1*, *N.2*, … via `heading_1: true` in the chapter
+frontmatter — MyST maps content `##` to `heading_1` when page titles
+are unnumbered) and are kept roughly equal in length so a professor can
 assign, for example, §§5.2–5.3. Topic headings under a section are
 `###`; finer headings are `####`. Learning Objectives and Introduction
 stay unnumbered (`###`). Summary, Conceptual Questions (when present),
@@ -207,10 +209,16 @@ the Word edition.
   `\frac{...}{...}`. See [`scripts/tex-to-docx.py`](scripts/tex-to-docx.py).
 
 Exports are built by
-[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) before the site,
-so every page carries a download menu, and by
-[`.github/workflows/exports.yml`](.github/workflows/exports.yml) on demand or on
-a tag.
+[`.github/workflows/exports.yml`](.github/workflows/exports.yml), which runs on
+`v*` tags and on demand — not on every push, since the TeX Live install and the
+XeLaTeX passes cost several minutes.
+[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) downloads that
+workflow's most recent successful artifacts before building the site, so every
+page carries a download menu. The consequence is that the published downloads
+track the last tag rather than the tip of `main`: push a `v*` tag, or run
+Exports from the Actions tab, when they need to catch up. Artifacts expire after
+90 days, so a repository that has gone that long without either will deploy with
+an empty download menu until the next run.
 
 ## Content sources
 

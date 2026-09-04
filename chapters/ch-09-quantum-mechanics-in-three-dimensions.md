@@ -4,7 +4,7 @@ short_title: Chapter 9. Quantum Mechanics in Three Dimensions
 label: ch-quantum-mechanics-in-three-dimensions
 numbering:
   enumerator: "9.%s"
-  heading_2: true
+  heading_1: true
 exports:
   # A standalone offprint of this chapter, for students who want to print
   # or work from one chapter. `chapter:` is a templates/book option: it

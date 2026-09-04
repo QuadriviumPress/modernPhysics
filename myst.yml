@@ -63,10 +63,10 @@ project:
     - id: static-action-file-copied
       severity: warn
   # The download menu on every page of the site. These are the artifacts
-  # scripts/build-exports.sh writes; the deploy workflow builds them before it
-  # builds the HTML, so they are on disk by the time MyST looks for them. The
-  # per-chapter PDFs need no entry here -- MyST surfaces a page's own `exports:`
-  # on that page by itself.
+  # scripts/build-exports.sh writes; the deploy workflow downloads them from the
+  # last successful Exports run before it builds the HTML, so they are on disk
+  # by the time MyST looks for them. The per-chapter PDFs need no entry here --
+  # MyST surfaces a page's own `exports:` on that page by itself.
   # `static: true` is not cosmetic: without it a missing file is an unsuppressible
   # error, and these are build artifacts that a fresh clone has not made yet.
   # With it the complaint carries the `static-action-file-copied` rule id, which
@@ -85,10 +85,10 @@ project:
   # -- once with MYST_PRINT=full, once with MYST_PRINT=student -- and renames the
   # output. `level: 0` makes each chapter a \chapter rather than a \section, so
   # LaTeX's own numbering lands on the same 4, 4.1, 4.2 the website shows; the
-  # titled `level: -1` entries are the part dividers, which the site reads off
-  # `toc:` below but a single document has to be told about. index.md is the
-  # website's landing page and is not one of them -- the printed book opens with
-  # the title and copyright pages in templates/book/template.tex instead.
+  # titled `level: -1` entries are the part dividers for the printed book only
+  # (the website `toc:` below is a flat chapter list). index.md is the website's
+  # landing page and is not one of them -- the printed book opens with the title
+  # and copyright pages in templates/book/template.tex instead.
   exports:
     - id: book
       # `pdf+tex` keeps the intermediate .tex, which scripts/tex-to-docx.sh
@@ -136,32 +136,263 @@ project:
           level: 0
         - file: chapters/ch-14-elementary-particles-and-the-standard-model.md
           level: 0
+  # Website sidebar: chapters only (no Part I / Part II groupings). Parts
+  # remain in the printed `exports.articles` above and in the README.
+  # Under each chapter, numbered `##` reading sections link to in-page
+  # anchors; the same N.1, N.2, … labels appear on the headings via
+  # `numbering.heading_1` in each chapter's frontmatter.
   toc:
     - file: index.md
-    - title: Part I — Relativity
+    - file: chapters/ch-01-the-need-for-relativity.md
       children:
-        - file: chapters/ch-01-the-need-for-relativity.md
-        - file: chapters/ch-02-special-relativity.md
-        - file: chapters/ch-03-relativistic-dynamics.md
-    - title: Part II — Wave Optics
+        - title: "1.1 The Ether Hypothesis and Michelson–Morley"
+          url: /ch-01-the-need-for-relativity#the-ether-hypothesis-and-michelson-morley
+          open_in_same_tab: true
+        - title: "1.2 Further Null Results: Kennedy–Thorndike and Fizeau"
+          url: /ch-01-the-need-for-relativity#further-null-results-kennedy-thorndike-and-fizeau
+          open_in_same_tab: true
+        - title: "1.3 Toward Einstein’s Postulates"
+          url: /ch-01-the-need-for-relativity#toward-einsteins-postulates
+          open_in_same_tab: true
+        - title: "1.4 Summary"
+          url: /ch-01-the-need-for-relativity#summary
+          open_in_same_tab: true
+        - title: "1.5 Problems"
+          url: /ch-01-the-need-for-relativity#problems
+          open_in_same_tab: true
+    - file: chapters/ch-02-special-relativity.md
       children:
-        - file: chapters/ch-04-interference-of-light.md
-        - file: chapters/ch-05-diffraction-of-light.md
-    - title: Part III — Quantum Theory
+        - title: "2.1 Simultaneity, Time Dilation, and Length Contraction"
+          url: /ch-02-special-relativity#simultaneity-time-dilation-and-length-contraction
+          open_in_same_tab: true
+        - title: "2.2 The Lorentz Transformation and Causality"
+          url: /ch-02-special-relativity#the-lorentz-transformation-and-causality
+          open_in_same_tab: true
+        - title: "2.3 Doppler Effect, Spacetime Diagrams, and Magnetism"
+          url: /ch-02-special-relativity#doppler-effect-spacetime-diagrams-and-magnetism
+          open_in_same_tab: true
+        - title: "2.4 Summary"
+          url: /ch-02-special-relativity#summary
+          open_in_same_tab: true
+        - title: "2.5 Problems"
+          url: /ch-02-special-relativity#problems
+          open_in_same_tab: true
+    - file: chapters/ch-03-relativistic-dynamics.md
       children:
-        - file: chapters/ch-06-particle-properties-of-waves.md
-        - file: chapters/ch-07-wave-properties-of-particles.md
-        - file: chapters/ch-08-the-schrodinger-equation.md
-        - file: chapters/ch-09-quantum-mechanics-in-three-dimensions.md
-    - title: Part IV — Atoms and Molecules
+        - title: "3.1 Relativistic Momentum"
+          url: /ch-03-relativistic-dynamics#relativistic-momentum
+          open_in_same_tab: true
+        - title: "3.2 Relativistic Energy"
+          url: /ch-03-relativistic-dynamics#relativistic-energy
+          open_in_same_tab: true
+        - title: "3.3 Four-Vectors and Threshold Energies"
+          url: /ch-03-relativistic-dynamics#four-vectors-and-threshold-energies
+          open_in_same_tab: true
+        - title: "3.4 Summary"
+          url: /ch-03-relativistic-dynamics#summary
+          open_in_same_tab: true
+        - title: "3.5 Problems"
+          url: /ch-03-relativistic-dynamics#problems
+          open_in_same_tab: true
+    - file: chapters/ch-04-interference-of-light.md
       children:
-        - file: chapters/ch-10-the-hydrogen-atom.md
-        - file: chapters/ch-11-many-electron-atoms.md
-        - file: chapters/ch-12-molecular-structure.md
-    - title: Part V — Nuclear and Particle Physics
+        - title: "4.1 Waves, Huygens’s Principle, and Superposition"
+          url: /ch-04-interference-of-light#waves-huygenss-principle-and-superposition
+          open_in_same_tab: true
+        - title: "4.2 Young’s Double Slit and Coherence"
+          url: /ch-04-interference-of-light#youngs-double-slit-and-coherence
+          open_in_same_tab: true
+        - title: "4.3 Intensity and Multiple Slits"
+          url: /ch-04-interference-of-light#intensity-and-multiple-slits
+          open_in_same_tab: true
+        - title: "4.4 Thin Films and Interferometers"
+          url: /ch-04-interference-of-light#thin-films-and-interferometers
+          open_in_same_tab: true
+        - title: "4.5 Summary"
+          url: /ch-04-interference-of-light#summary
+          open_in_same_tab: true
+        - title: "4.6 Conceptual Questions"
+          url: /ch-04-interference-of-light#conceptual-questions
+          open_in_same_tab: true
+        - title: "4.7 Problems"
+          url: /ch-04-interference-of-light#problems
+          open_in_same_tab: true
+    - file: chapters/ch-05-diffraction-of-light.md
       children:
-        - file: chapters/ch-13-nuclear-physics.md
-        - file: chapters/ch-14-elementary-particles-and-the-standard-model.md
+        - title: "5.1 Diffraction Basics and the Single Slit"
+          url: /ch-05-diffraction-of-light#diffraction-basics-and-the-single-slit
+          open_in_same_tab: true
+        - title: "5.2 Intensity Patterns and the Double Slit"
+          url: /ch-05-diffraction-of-light#intensity-patterns-and-the-double-slit
+          open_in_same_tab: true
+        - title: "5.3 Diffraction Gratings"
+          url: /ch-05-diffraction-of-light#diffraction-gratings
+          open_in_same_tab: true
+        - title: "5.4 Resolution, Bragg Diffraction, and Holography"
+          url: /ch-05-diffraction-of-light#resolution-bragg-diffraction-and-holography
+          open_in_same_tab: true
+        - title: "5.5 Summary"
+          url: /ch-05-diffraction-of-light#summary
+          open_in_same_tab: true
+        - title: "5.6 Conceptual Questions"
+          url: /ch-05-diffraction-of-light#conceptual-questions
+          open_in_same_tab: true
+        - title: "5.7 Problems"
+          url: /ch-05-diffraction-of-light#problems
+          open_in_same_tab: true
+    - file: chapters/ch-06-particle-properties-of-waves.md
+      children:
+        - title: "6.1 Blackbody Radiation and Planck’s Hypothesis"
+          url: /ch-06-particle-properties-of-waves#blackbody-radiation-and-plancks-hypothesis
+          open_in_same_tab: true
+        - title: "6.2 The Photoelectric Effect and X-Ray Production"
+          url: /ch-06-particle-properties-of-waves#the-photoelectric-effect-and-x-ray-production
+          open_in_same_tab: true
+        - title: "6.3 Compton Scattering, Pair Production, and the Photon"
+          url: /ch-06-particle-properties-of-waves#compton-scattering-pair-production-and-the-photon
+          open_in_same_tab: true
+        - title: "6.4 Summary"
+          url: /ch-06-particle-properties-of-waves#summary
+          open_in_same_tab: true
+        - title: "6.5 Problems"
+          url: /ch-06-particle-properties-of-waves#problems
+          open_in_same_tab: true
+    - file: chapters/ch-07-wave-properties-of-particles.md
+      children:
+        - title: "7.1 Matter Waves: de Broglie and Experiment"
+          url: /ch-07-wave-properties-of-particles#matter-waves-de-broglie-and-experiment
+          open_in_same_tab: true
+        - title: "7.2 Wave–Particle Duality and Wave Packets"
+          url: /ch-07-wave-properties-of-particles#wave-particle-duality-and-wave-packets
+          open_in_same_tab: true
+        - title: "7.3 The Heisenberg Uncertainty Principle"
+          url: /ch-07-wave-properties-of-particles#the-heisenberg-uncertainty-principle
+          open_in_same_tab: true
+        - title: "7.4 Summary"
+          url: /ch-07-wave-properties-of-particles#summary
+          open_in_same_tab: true
+        - title: "7.5 Problems"
+          url: /ch-07-wave-properties-of-particles#problems
+          open_in_same_tab: true
+    - file: chapters/ch-08-the-schrodinger-equation.md
+      children:
+        - title: "8.1 The Wave Function and the Schrödinger Equation"
+          url: /ch-08-the-schrodinger-equation#the-wave-function-and-the-schr-dinger-equation
+          open_in_same_tab: true
+        - title: "8.2 Bound and Scattering States in One Dimension"
+          url: /ch-08-the-schrodinger-equation#bound-and-scattering-states-in-one-dimension
+          open_in_same_tab: true
+        - title: "8.3 Tunneling, the Oscillator, and Correspondence"
+          url: /ch-08-the-schrodinger-equation#tunneling-the-oscillator-and-correspondence
+          open_in_same_tab: true
+        - title: "8.4 Summary"
+          url: /ch-08-the-schrodinger-equation#summary
+          open_in_same_tab: true
+        - title: "8.5 Problems"
+          url: /ch-08-the-schrodinger-equation#problems
+          open_in_same_tab: true
+    - file: chapters/ch-09-quantum-mechanics-in-three-dimensions.md
+      children:
+        - title: "9.1 Three Dimensions and Central Potentials"
+          url: /ch-09-quantum-mechanics-in-three-dimensions#three-dimensions-and-central-potentials
+          open_in_same_tab: true
+        - title: "9.2 Orbital Angular Momentum"
+          url: /ch-09-quantum-mechanics-in-three-dimensions#orbital-angular-momentum
+          open_in_same_tab: true
+        - title: "9.3 Quantum Numbers and the Isotropic Oscillator"
+          url: /ch-09-quantum-mechanics-in-three-dimensions#quantum-numbers-and-the-isotropic-oscillator
+          open_in_same_tab: true
+        - title: "9.4 Summary"
+          url: /ch-09-quantum-mechanics-in-three-dimensions#summary
+          open_in_same_tab: true
+        - title: "9.5 Problems"
+          url: /ch-09-quantum-mechanics-in-three-dimensions#problems
+          open_in_same_tab: true
+    - file: chapters/ch-10-the-hydrogen-atom.md
+      children:
+        - title: "10.1 Energy Levels and Hydrogenic Structure"
+          url: /ch-10-the-hydrogen-atom#energy-levels-and-hydrogenic-structure
+          open_in_same_tab: true
+        - title: "10.2 Wave Functions, Spectra, and Spin"
+          url: /ch-10-the-hydrogen-atom#wave-functions-spectra-and-spin
+          open_in_same_tab: true
+        - title: "10.3 Magnetic Moments and Selection Rules"
+          url: /ch-10-the-hydrogen-atom#magnetic-moments-and-selection-rules
+          open_in_same_tab: true
+        - title: "10.4 Summary"
+          url: /ch-10-the-hydrogen-atom#summary
+          open_in_same_tab: true
+        - title: "10.5 Problems"
+          url: /ch-10-the-hydrogen-atom#problems
+          open_in_same_tab: true
+    - file: chapters/ch-11-many-electron-atoms.md
+      children:
+        - title: "11.1 The Exclusion Principle and Screening"
+          url: /ch-11-many-electron-atoms#the-exclusion-principle-and-screening
+          open_in_same_tab: true
+        - title: "11.2 Electron Configurations and the Periodic Table"
+          url: /ch-11-many-electron-atoms#electron-configurations-and-the-periodic-table
+          open_in_same_tab: true
+        - title: "11.3 Atomic Spectra, X-Rays, and Lasers"
+          url: /ch-11-many-electron-atoms#atomic-spectra-x-rays-and-lasers
+          open_in_same_tab: true
+        - title: "11.4 Summary"
+          url: /ch-11-many-electron-atoms#summary
+          open_in_same_tab: true
+        - title: "11.5 Problems"
+          url: /ch-11-many-electron-atoms#problems
+          open_in_same_tab: true
+    - file: chapters/ch-12-molecular-structure.md
+      children:
+        - title: "12.1 Bonding and Hybrid Orbitals"
+          url: /ch-12-molecular-structure#bonding-and-hybrid-orbitals
+          open_in_same_tab: true
+        - title: "12.2 Molecular Orbital Theory"
+          url: /ch-12-molecular-structure#molecular-orbital-theory
+          open_in_same_tab: true
+        - title: "12.3 Intermolecular Forces and Molecular Spectra"
+          url: /ch-12-molecular-structure#intermolecular-forces-and-molecular-spectra
+          open_in_same_tab: true
+        - title: "12.4 Summary"
+          url: /ch-12-molecular-structure#summary
+          open_in_same_tab: true
+        - title: "12.5 Problems"
+          url: /ch-12-molecular-structure#problems
+          open_in_same_tab: true
+    - file: chapters/ch-13-nuclear-physics.md
+      children:
+        - title: "13.1 Nuclear Structure and Binding Energy"
+          url: /ch-13-nuclear-physics#nuclear-structure-and-binding-energy
+          open_in_same_tab: true
+        - title: "13.2 Radioactive Decay"
+          url: /ch-13-nuclear-physics#radioactive-decay
+          open_in_same_tab: true
+        - title: "13.3 Fission and Fusion"
+          url: /ch-13-nuclear-physics#fission-and-fusion
+          open_in_same_tab: true
+        - title: "13.4 Summary"
+          url: /ch-13-nuclear-physics#summary
+          open_in_same_tab: true
+        - title: "13.5 Problems"
+          url: /ch-13-nuclear-physics#problems
+          open_in_same_tab: true
+    - file: chapters/ch-14-elementary-particles-and-the-standard-model.md
+      children:
+        - title: "14.1 Particles, Forces, and Feynman Diagrams"
+          url: /ch-14-elementary-particles-and-the-standard-model#particles-forces-and-feynman-diagrams
+          open_in_same_tab: true
+        - title: "14.2 Accelerators, Leptons, and Quarks"
+          url: /ch-14-elementary-particles-and-the-standard-model#accelerators-leptons-and-quarks
+          open_in_same_tab: true
+        - title: "14.3 Hadrons, Conservation Laws, and Open Questions"
+          url: /ch-14-elementary-particles-and-the-standard-model#hadrons-conservation-laws-and-open-questions
+          open_in_same_tab: true
+        - title: "14.4 Summary"
+          url: /ch-14-elementary-particles-and-the-standard-model#summary
+          open_in_same_tab: true
+        - title: "14.5 Problems"
+          url: /ch-14-elementary-particles-and-the-standard-model#problems
+          open_in_same_tab: true
 site:
   template: book-theme
   title: Modern Physics

@@ -4,7 +4,7 @@ short_title: Chapter 8. The Schrödinger Equation
 label: ch-the-schrodinger-equation
 numbering:
   enumerator: "8.%s"
-  heading_2: true
+  heading_1: true
 exports:
   # A standalone offprint of this chapter, for students who want to print
   # or work from one chapter. `chapter:` is a templates/book option: it

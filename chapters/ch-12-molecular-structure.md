@@ -4,9 +4,10 @@ short_title: Chapter 12. Molecular Structure
 label: ch-molecular-structure
 numbering:
   enumerator: "12.%s"
+  heading_2: true
 ---
 
-## Learning Objectives
+### Learning Objectives
 
 By the end of this chapter, you should be able to:
 
@@ -17,11 +18,13 @@ By the end of this chapter, you should be able to:
 - Use a molecular orbital diagram to compute bond order and predict the stability and magnetic behavior of a simple diatomic molecule.
 - Explain the vibrational and rotational energy levels of a diatomic molecule using the harmonic-oscillator and rigid-rotor approximations.
 
-## Introduction
+### Introduction
 
 Chapters [10](#ch-the-hydrogen-atom) and [11](#ch-many-electron-atoms) explained the structure of individual atoms — how electrons occupy discrete energy levels arranged into subshells and shells, and how that arrangement produces the periodic table. This chapter asks how atoms combine to form molecules, using the same quantum-mechanical toolkit: atomic orbitals, the Pauli exclusion principle, and the variational tendency of a bound system to seek its lowest-energy configuration. Two complementary pictures are developed. **Valence bond theory** treats a bond as the overlap of atomic orbitals from two atoms, localized between them, and is the natural language for molecular geometry. **Molecular orbital theory** instead builds orbitals belonging to the molecule as a whole, and is the more powerful tool for predicting a molecule's stability, bond strength, and magnetic properties. The chapter closes by treating a bonded diatomic molecule as a single quantum system in its own right, subject to quantized vibrational and rotational energy levels — a direct application of the harmonic oscillator ([Chapter 8](#ch-the-schrodinger-equation)) and angular momentum quantization ([Chapter 9](#ch-quantum-mechanics-in-three-dimensions)) to a new physical system.
 
-## Ionic and Covalent Bonding
+## Bonding and Hybrid Orbitals
+
+### Ionic and Covalent Bonding
 
 Chemical bonds form because a molecule can have lower total energy than its constituent separated atoms. Two limiting mechanisms produce this energy lowering. In **ionic bonding**, one atom (typically one with a low ionization energy, such as an alkali metal) transfers one or more electrons entirely to another atom (typically one with a high electron affinity, such as a halogen); the resulting oppositely charged ions are then held together by simple electrostatic (Coulomb) attraction. In **covalent bonding**, by contrast, one or more electron pairs are *shared* between two atoms, occupying a region of enhanced electron density between the two nuclei; both nuclei are then simultaneously attracted to this shared, concentrated negative charge, producing a net attractive bond. Most real bonds fall on a continuum between these two limits, described by varying degrees of bond **polarity**, depending on the difference in electronegativity between the bonded atoms; this chapter focuses on the covalent limit, whose treatment requires genuinely quantum-mechanical ideas beyond simple electrostatics.
 
@@ -37,7 +40,7 @@ That continuum is a slider rather than a classification, and {numref}`Figure %s 
 Bond polarity as a continuous function of the electronegativity difference between two atoms, with the electron density and the resulting dipole moment displayed. Later screens add a third atom, where bond dipoles combine vectorially and a molecule of polar bonds can still be nonpolar overall.
 ```
 
-## Valence Bond Theory and Orbital Overlap
+### Valence Bond Theory and Orbital Overlap
 
 **Valence bond theory** treats covalent bond formation as arising from the overlap of a singly occupied atomic orbital on one atom with a singly occupied atomic orbital on another, the two electrons (one from each atom, necessarily of opposite spin, per the exclusion principle applied to the resulting shared, doubly occupied region) pairing up to form the bond. The simplest example is the hydrogen molecule $\text{H}_2$: as two hydrogen atoms approach, their $1s$ orbitals begin to overlap, and if the two electrons involved have opposite spin, the resulting overlap region between the nuclei has a high joint probability of finding both electrons — an enhanced electron density that lowers the system's total energy relative to two separate atoms, up to a certain optimal internuclear separation (the **bond length**, at which attractive and repulsive contributions to the energy balance). Bonds formed by orbitals overlapping directly along the internuclear axis, giving a cylindrically symmetric electron distribution about that axis, are called **sigma ($\sigma$) bonds**; bonds formed by the sideways overlap of parallel $p$ orbitals, with electron density concentrated above and below (rather than directly along) the internuclear axis, are called **pi ($\pi$) bonds**. A single bond is one $\sigma$ bond; a double bond is one $\sigma$ plus one $\pi$ bond; a triple bond is one $\sigma$ plus two (mutually perpendicular) $\pi$ bonds.
 
@@ -45,7 +48,7 @@ Bond polarity as a continuous function of the electronegativity difference betwe
 The labels $\sigma$ and $\pi$ describe the *symmetry* of the orbital overlap about the bond axis, not the bond's strength or order directly: a single bond is always exactly one $\sigma$ bond, however the orbitals forming it are hybridized, and every bond beyond the first in a double or triple bond is necessarily a $\pi$ bond.
 :::
 
-## Hybrid Orbitals
+### Hybrid Orbitals
 
 Simple atomic $s$ and $p$ orbitals, taken directly from the hydrogen-like solutions of [Chapter 10](#ch-the-hydrogen-atom), generally point in the wrong directions (or have the wrong shapes) to account for the observed bond angles and geometries of real molecules — the observed near-$109.5°$ bond angles of methane, $\text{CH}_4$, for instance, are not reproduced by combinations of the atom's unmodified $2s$ and three $2p$ orbitals directly. The resolution is that the atomic orbitals actually used in bonding are not the pure $s$, $p$, $d$ orbitals of an isolated atom, but specific linear combinations of them, called **hybrid orbitals**, that better match the geometry demanded by minimizing electron-pair repulsion among the atom's bonding and lone electron pairs (the same qualitative principle underlying the electron-domain, or VSEPR, geometries encountered in general chemistry). Mixing one $s$ orbital with a varying number of $p$ (and, for some geometries, $d$) orbitals produces hybrid sets with characteristic, experimentally matched geometries:
 
@@ -73,7 +76,7 @@ The counting rule behind {numref}`Table %s <tab:ch12-hybridization>` is worth ex
 Molecular geometry built from electron domains. Bond angles are displayed live, and the "real molecules" screen compares the idealized VSEPR prediction with measured geometries.
 ```
 
-### Worked Example: The Geometry of Xenon Tetrafluoride
+#### Worked Example: The Geometry of Xenon Tetrafluoride
 
 Predict the hybridization and molecular geometry of $\text{XeF}_4$.
 
@@ -128,7 +131,7 @@ The bonding and antibonding pair are not a chemical convention; they are what th
 A double square well with adjustable separation and depth, and the eigenstates it supports. The symmetric–antisymmetric splitting of a pair of formerly degenerate levels is the origin of the bonding/antibonding pair of MO theory, and — extended to $N$ wells in a row — of the energy bands of a solid.
 ```
 
-### Historical Context: From Lewis's Electron Pair to the Pauling–Mulliken Rivalry
+#### Historical Context: From Lewis's Electron Pair to the Pauling–Mulliken Rivalry
 
 The idea that a covalent bond is a *shared pair of electrons* predates quantum mechanics itself. In 1916 — a full decade before Schrödinger's equation — the American chemist Gilbert N. Lewis proposed exactly this picture, together with the electron-dot notation still used to sketch molecules today, purely from chemical reasoning about valence and the stability of the noble-gas electron count, with no wave mechanics available to justify it. Lewis's shared pair was a hypothesis in search of a mechanism, and quantum mechanics supplied one a decade later, in two competing forms.
 
@@ -141,7 +144,7 @@ The idea that a covalent bond is a *shared pair of electrons* predates quantum m
 Linus Pauling, photographed in 1962, eight years after his 1954 Nobel Prize in Chemistry for work on the nature of the chemical bond — the valence-bond and hybridization framework of this chapter. Photograph by the Nobel Foundation; public domain via Wikimedia Commons.
 ```
 
-### Building the Diagram for the Second Row: N₂ and O₂
+#### Building the Diagram for the Second Row: N₂ and O₂
 
 Hydrogen and helium have only $1s$ orbitals to combine, but a second-row diatomic such as $\text{N}_2$ or $\text{O}_2$ has both $2s$ and $2p$ atomic orbitals on each atom, and the resulting molecular orbital diagram, while built by exactly the same LCAO recipe used for $\text{H}_2$, has more structure worth spelling out explicitly.
 
@@ -164,7 +167,7 @@ $$
 
 consistent with the triple bond of the Lewis structure $:\text{N}\!\equiv\!\text{N}:$, and, with every electron paired, correctly predicting that $\text{N}_2$ is diamagnetic.
 
-### Worked Example: The Molecular Orbital Diagram and Paramagnetism of O₂
+#### Worked Example: The Molecular Orbital Diagram and Paramagnetism of O₂
 
 Construct the molecular orbital diagram for $\text{O}_2$, determine its bond order, and explain its paramagnetism.
 
@@ -190,7 +193,7 @@ $$
 
 consistent with the double bond of the Lewis structure $\text{O}\!=\!\text{O}$. But that Lewis structure, with every electron paired off into bonds and lone pairs, gives no hint of the two unpaired $\pi_{2p}^{*}$ electrons found here — and it is exactly those two unpaired electrons that make liquid oxygen **paramagnetic**, visibly drawn toward the poles of a strong magnet in the standard classroom demonstration, a fact valence bond theory cannot explain without modification but that falls directly out of the molecular orbital diagram.
 
-### Bond Order, Bond Length, and Bond Strength: A Worked Comparison
+#### Bond Order, Bond Length, and Bond Strength: A Worked Comparison
 
 Bond order is a prediction about two directly measurable quantities: bond length and bond dissociation energy. Higher bond order means more shared electron density concentrated between the nuclei, which pulls the nuclei closer together (shorter bond length) and requires more energy to pull them apart (higher dissociation energy). The nitrogen–nitrogen bond, compared across three different molecules in {numref}`Table %s <tab:ch12-nn-bonds>`, shows the trend cleanly, because in each case the bond order is unambiguous from the Lewis structure:
 
@@ -210,7 +213,7 @@ Tripling the bond order roughly quintuples the dissociation energy while shorten
 When a problem asks how ionizing (or reducing) a molecule changes its bond length or bond strength, there is rarely a need to refill an entire molecular orbital diagram from scratch. Identify only the **highest occupied molecular orbital (HOMO)** — the orbital the added or removed electron actually occupies — and ask whether it is bonding or antibonding. Removing an electron from a bonding HOMO weakens the bond (as for $\text{N}_2\to\text{N}_2^+$ below); removing one from an antibonding HOMO strengthens it (as for $\text{O}_2\to\text{O}_2^+$ in [Problem 6](#ex-molecular-structure-6)). That one fact settles the direction of the change before a bond order is ever computed.
 :::
 
-### Worked Example: Ionizing Nitrogen — N₂ versus N₂⁺
+#### Worked Example: Ionizing Nitrogen — N₂ versus N₂⁺
 
 Removing an electron from $\text{N}_2$ to form the molecular ion $\text{N}_2^{+}$ (as happens, for example, when a fast electron or solar-wind particle strikes an atmospheric nitrogen molecule during an aurora) removes it from the highest-occupied orbital identified above — for $\text{N}_2$, the bonding $\sigma_{2p}$. That leaves $9$ valence electrons: $\sigma_{2s}$ (2), $\sigma_{2s}^{*}$ (2), $\pi_{2p}$ (4), $\sigma_{2p}$ (1), so
 
@@ -222,7 +225,9 @@ down from $3$ for neutral $\text{N}_2$. Removing an electron from a *bonding* or
 
 Compare this with the $\text{O}_2$ family of [Problem 6](#ex-molecular-structure-6): there, removing an electron instead comes from the *antibonding* $\pi_{2p}^{*}$ orbital, which *strengthens* the bond rather than weakening it, because $\text{O}_2$'s highest-occupied orbital is antibonding while $\text{N}_2$'s is bonding. The same operation — ionization, removing one electron — can strengthen or weaken a bond depending entirely on the character of the specific orbital the electron is removed from, information only the molecular orbital diagram supplies and that a Lewis structure alone cannot.
 
-## Intermolecular Forces
+## Intermolecular Forces and Molecular Spectra
+
+### Intermolecular Forces
 
 Everything so far in this chapter describes **intramolecular** forces — the bonds that hold the atoms of a single molecule together, whether ionic, covalent, or described by a molecular orbital diagram. Bulk matter — liquids and solids made of many molecules — depends just as much on much weaker **intermolecular forces**, the attractions *between* separate, already-bonded molecules. These forces are typically one to two orders of magnitude weaker than a covalent bond (tens of $\text{kJ/mol}$, rather than hundreds), but they are exactly what must be overcome to melt a solid or boil a liquid, and their strength — not the strength of the covalent bonds within each molecule, which survive melting and boiling completely intact — is what actually sets a substance's melting and boiling points.
 
@@ -232,13 +237,13 @@ Everything so far in this chapter describes **intramolecular** forces — the bo
 
 **Hydrogen bonding** is an unusually strong special case of dipole–dipole attraction, occurring specifically when a hydrogen atom is bonded directly to a small, highly electronegative atom — nitrogen, oxygen, or fluorine — leaving that hydrogen with a large, concentrated partial positive charge (it has essentially no core electrons of its own to shield its bare proton) that is then strongly attracted to a lone pair on an N, O, or F atom of a neighboring molecule. Hydrogen bonds are typically five to ten times stronger than an ordinary dipole–dipole attraction, though still far weaker than a covalent bond, and are responsible for water's unusually high boiling point, the double-helix structure of DNA (hydrogen bonds between complementary base pairs), and the open crystal structure that makes ice less dense than the liquid water it floats on.
 
-### Worked Example: Dispersion versus Dipole–Dipole — Butane and Acetone
+#### Worked Example: Dispersion versus Dipole–Dipole — Butane and Acetone
 
 Butane ($\text{C}_4\text{H}_{10}$, nonpolar, molar mass $58.1\ \text{g/mol}$) and acetone ($\text{C}_3\text{H}_6\text{O}$, polar, molar mass $58.1\ \text{g/mol}$) have essentially identical molar mass — and therefore comparable numbers of electrons, comparable polarizability, and hence comparable London dispersion forces — yet butane boils at $-1°\text{C}$ while acetone boils at $56°\text{C}$, a difference of $57$ Celsius degrees. Since dispersion forces are approximately equal for the two molecules, the entire difference must come from an attraction dispersion forces alone cannot supply: acetone's carbonyl group ($\text{C=O}$) carries a substantial permanent dipole moment (about $2.9\ \text{D}$), giving it dipole–dipole attractions that butane, with no permanent dipole at all, simply lacks. Holding molecular size (and hence dispersion strength) roughly fixed isolates dipole–dipole attraction as the deciding factor.
 
 The same logic, pushed one step further, isolates hydrogen bonding specifically. Water ($\text{H}_2\text{O}$, molar mass $18\ \text{g/mol}$) boils at $100°\text{C}$, while hydrogen sulfide ($\text{H}_2\text{S}$, molar mass $34\ \text{g/mol}$, the next member down the same column of the periodic table) boils at $-60°\text{C}$ — even though the *heavier*, more polarizable $\text{H}_2\text{S}$ should, by dispersion forces alone, boil *higher* than water, not lower. Water's anomalously high boiling point is the signature of hydrogen bonding: each water molecule can form up to four hydrogen bonds (two through its own hydrogens, two through its oxygen's lone pairs), building an extended three-dimensional network that an ordinary dipole–dipole liquid like $\text{H}_2\text{S}$ — whose S–H bond is too weakly polar for effective hydrogen bonding — never forms.
 
-## Vibrational and Rotational Energy Levels
+### Vibrational and Rotational Energy Levels
 
 :::{note} Why Electrons and Nuclei Can Be Treated Separately: The Born–Oppenheimer Approximation
 Every molecular orbital diagram and hybridization argument earlier in this chapter implicitly treats the nuclei as fixed in place while the electrons rearrange around them, and the analysis that follows now treats the nuclei as vibrating and rotating about a bond length $r_0$ taken as already known, with no further reference to the electrons at all. This split is justified by the **Born–Oppenheimer approximation**, proposed by Max Born and J. Robert Oppenheimer in 1927: because a nucleus is thousands of times more massive than an electron (a lone proton alone outweighs an electron by a factor of about $1836$), the electrons respond to any change in nuclear position essentially instantaneously on the timescale of nuclear motion. The electronic structure problem can therefore be solved first, at each fixed internuclear separation, to obtain an effective potential energy curve for the nuclei — precisely the curve plotted in {numref}`Figure %s <fig:ch12-interatomic-sim>` below — after which the vibration and rotation of the nuclei on that curve become a separate, subsequent problem. Without this approximation, the full molecular Schrödinger equation, coupling every electron's motion to every nucleus's motion at once, would be intractable for all but the smallest molecules.
@@ -276,7 +281,7 @@ This hierarchy is not merely a table of numbers; it is why a molecule responds t
 Single photons of a chosen wavelength directed at a chosen molecule. Microwave, infrared, visible, and ultraviolet photons each produce a different response — rotation, vibration, electronic excitation, or dissociation — in the order of the $E_{\text{elec}} \gg E_{\text{vib}} \gg E_{\text{rot}}$ hierarchy.
 ```
 
-### The Rovibrational Spectrum: Vibration and Rotation Together
+#### The Rovibrational Spectrum: Vibration and Rotation Together
 
 A real infrared absorption spectrum does not show the vibrational transition as a single line at $\hbar\omega$. Because a molecule is simultaneously vibrating *and* rotating, a photon absorbed in a vibrational transition ($\Delta v = +1$) is generally accompanied by a simultaneous change in rotational state, subject to the selection rule
 
@@ -305,7 +310,7 @@ Because $B$ depends only on the molecule's moment of inertia, measuring the line
 A **wavenumber**, $\tilde\nu \equiv E/hc$, reports energy in units of $\text{cm}^{-1}$ — the number of wave cycles per centimeter for a photon of that energy. It is the conventional unit throughout infrared and microwave spectroscopy, chosen because a spectrometer directly measures wavelength or frequency, not joules.
 :::
 
-### Worked Example: Line Spacing in the CO Rovibrational Spectrum
+#### Worked Example: Line Spacing in the CO Rovibrational Spectrum
 
 Using the same carbon monoxide data as [Problem 5](#ex-molecular-structure-5) ($r_0 = 0.113\ \text{nm}$, $\mu = 6.86\ \text{u}$), find the rotational constant $B$ and the resulting rovibrational line spacing.
 
@@ -329,7 +334,7 @@ $$
 
 so the predicted line spacing is $2\tilde{B} = 3.85\ \text{cm}^{-1}$ — in excellent agreement with the spacing of about $3.86\ \text{cm}^{-1}$ actually observed in the CO fundamental infrared band. A bond length and a reduced mass, fed into a formula derived from nothing more than the rigid-rotor approximation, correctly predict the fine structure of a real molecular spectrum.
 
-### Anharmonicity Revisited
+#### Anharmonicity Revisited
 
 {numref}`Figure %s <fig:ch12-interatomic-sim>`, above, already showed that the true interatomic potential is not a perfect parabola: it rises more steeply than quadratic at short range (the repulsive wall) and flattens out well below quadratic at long range, approaching the dissociation energy asymptotically rather than climbing forever. A more realistic potential — the **Morse potential** is the standard choice for modeling this curve quantitatively — gives vibrational energy levels that are no longer *exactly* evenly spaced:
 

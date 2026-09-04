@@ -4,9 +4,10 @@ short_title: Chapter 13. Nuclear Physics
 label: ch-nuclear-physics
 numbering:
   enumerator: "13.%s"
+  heading_2: true
 ---
 
-## Learning Objectives
+### Learning Objectives
 
 By the end of this chapter, you should be able to:
 
@@ -19,11 +20,13 @@ By the end of this chapter, you should be able to:
 - Write the semi-empirical (Weizsäcker) mass formula term by term, and use it to explain the extra stability of even-even nuclei and of the "magic-number" nuclides predicted by the nuclear shell model.
 - Trace a multi-step radioactive decay chain, apply the decay law to isotopic (radiocarbon) dating, and sketch the quantitative dependence of alpha-decay tunneling probability on barrier height and width.
 
-## Introduction
+### Introduction
 
 Chapters [10](#ch-the-hydrogen-atom)–[12](#ch-molecular-structure) treated the nucleus as a structureless positive point charge, a fixed source of the Coulomb potential binding atomic electrons. This chapter looks inside the nucleus itself: a bound system of protons and neutrons, held together not by the electromagnetic force (which, among the mutually repelling protons, would tend to blow the nucleus apart) but by a new fundamental interaction, the strong nuclear force, with a strength and range entirely different from anything encountered so far in this book. The same quantum-mechanical ideas developed for atoms — quantized energy levels, tunneling, exponential decay driven by fixed transition probabilities — reappear here on a length scale roughly $10^5$ times smaller and an energy scale roughly $10^6$ times larger, and account for radioactivity, nuclear stability, and the energy-release mechanisms (fission and fusion) that make the nucleus, unlike the atom, a practical source of usable energy.
 
-## Nuclear Composition and Notation
+## Nuclear Structure and Binding Energy
+
+### Nuclear Composition and Notation
 
 A nucleus consists of $Z$ protons and $N$ neutrons, collectively called **nucleons**, with mass number $A = Z + N$. A given nuclear species (**nuclide**) is denoted $^A_Z X$, where $X$ is the chemical symbol determined by $Z$ (since $Z$ alone fixes the number of atomic electrons in the neutral atom, and hence its chemistry). Nuclides sharing the same $Z$ but different $N$ (and hence different $A$) are **isotopes** of the same element — chemically near-identical but differing in mass and, often, nuclear stability. Protons and neutrons have nearly equal mass ($m_p c^2 = 938.3\ \text{MeV}$, $m_nc^2 = 939.6\ \text{MeV}$), and because a proton's charge is exactly opposite an electron's, the notation $^AZX$ carries the atom's full identity without needing $N$ written explicitly ($N = A - Z$).
 
@@ -35,7 +38,7 @@ The division of labor between $Z$ and $N$ — one fixes the chemistry, the other
 Isotopes built nucleon by nucleon, with natural abundances and the resulting average atomic mass. $Z$ names the element; $N$ decides how long the nucleus lasts.
 ```
 
-## Nuclear Size, Density, and the Strong Force
+### Nuclear Size, Density, and the Strong Force
 
 Scattering experiments (extending Rutherford's original alpha-scattering method, now generally using higher-energy electron or nucleon probes to resolve the nuclear interior itself) show that nuclear radius grows with mass number as
 
@@ -59,7 +62,7 @@ The measurement that started all of this is reconstructed in {numref}`Figure %s 
 Alpha particles scattering from a nucleus of adjustable charge, with a diffuse-charge atom available for comparison. The trajectories are pure Coulomb hyperbolas; the strong force never enters, which is exactly why the experiment measures charge and size rather than nuclear structure.
 ```
 
-## Binding Energy
+### Binding Energy
 
 The mass of a bound nucleus is always *less* than the sum of the masses of its separated constituent protons and neutrons — a direct manifestation of mass–energy equivalence ([Chapter 3](#ch-relativistic-dynamics)): energy must be supplied to pull the nucleus apart into free nucleons, so the bound system, having lower total energy, has correspondingly lower total mass. The **binding energy** is defined as
 
@@ -90,7 +93,7 @@ Two competing effects, both traceable to the short range of the strong force ver
 
 The location of the peak at $A\approx56$ has an immediate and far-reaching consequence, developed further below: **energy can be released either by combining light nuclei into heavier ones (fusion) or by splitting heavy nuclei into lighter ones (fission)**, in each case moving the participating nucleons toward the peak of the curve, where they are more tightly bound (lower mass) than before — with the energy released equal to the resulting decrease in total rest mass, via $E = \Delta m\, c^2$.
 
-### The Semi-Empirical Mass Formula
+#### The Semi-Empirical Mass Formula
 
 Written out in full, with the volume, surface, Coulomb, symmetry, and pairing terms named above each given an explicit form, the semi-empirical (or Weizsäcker) mass formula predicts the binding energy of a nuclide with $Z$ protons and mass number $A$ ($N=A-Z$ neutrons) as
 
@@ -148,7 +151,7 @@ Because this comes from setting a first derivative to zero, it locates a maximum
 
 The **pairing term** $\delta(A,Z)$ captures a purely quantum effect with no analog in the volume, surface, or Coulomb terms: nucleons of the same type couple preferentially in spin-paired twos (much as the two electrons of a filled atomic orbital pair their spins, [Chapter 11](#ch-many-electron-atoms)), each pair contributing extra binding beyond what the smooth terms above predict. An **even–even** nuclide (even $Z$, even $N$) has every nucleon paired and gains the full pairing bonus; an **odd–odd** nuclide has one unpaired proton and one unpaired neutron and loses it; an odd-$A$ nuclide (one odd, one even) is intermediate and conventionally assigned $\delta=0$. The consequence is stark and directly observable in the chart of the nuclides: of the roughly 260 stable nuclides, about 150 are even–even, roughly 100 are odd-$A$, and only four are odd–odd ($^2_1\text{H}$, $^6_3\text{Li}$, $^{10}_5\text{B}$, and $^{14}_7\text{N}$, all among the very lightest nuclei, where the symmetry term's cost of an odd-odd configuration is smallest) — essentially every heavier odd-odd combination is unstable, decaying by beta emission toward an even-even or odd-$A$ neighbor of lower mass.
 
-### Worked Example: Binding Energy from the Semi-Empirical Mass Formula
+#### Worked Example: Binding Energy from the Semi-Empirical Mass Formula
 
 Apply the semi-empirical mass formula to $^{56}_{26}\text{Fe}$ ($A=56$, $Z=26$, $N=30$, even–even) and compare to the measured value. Term by term,
 
@@ -174,7 +177,7 @@ $$
 
 The measured value, computed from $^{56}_{26}\text{Fe}$'s tabulated atomic mass $M=55.934936\ \text{u}$ using $E_B = \left[Z\,m(^1\text{H}) + Nm_n - M\right]c^2$ (with $m(^1\text{H})=1.007825\ \text{u}$, the *atomic* hydrogen mass, so that the electron masses on both sides of the equation cancel exactly rather than merely approximately), is $E_B = 492.3\ \text{MeV}$, or $8.79\ \text{MeV/nucleon}$. The five-term fit reproduces the measured binding energy to about half a percent — remarkable accuracy from a formula built on the bulk liquid-drop picture of the nucleus plus one quantum correction, and a large part of why the semi-empirical mass formula remains a standard first tool for estimating the mass of a nuclide not yet directly measured.
 
-### The Nuclear Shell Model and Magic Numbers
+#### The Nuclear Shell Model and Magic Numbers
 
 The semi-empirical mass formula treats the nucleus as a featureless liquid drop and, term by term, does remarkably well — but it is not the whole story. Certain nuclides, with $Z$ or $N$ equal to one of the **magic numbers** $2, 8, 20, 28, 50, 82, 126$, are measurably more tightly bound, more abundant, and more resistant to further reaction (larger energy gap to the first excited state, smaller neutron-capture cross section) than the smooth semi-empirical formula predicts — $^4_2\text{He}$, $^{16}_8\text{O}$, $^{40}_{20}\text{Ca}$, and $^{208}_{82}\text{Pb}$ (with $N=126$) all sit at pronounced local peaks of the true binding-energy surface, and "doubly magic" nuclides such as $^{208}_{82}\text{Pb}$ (magic in both $Z$ and $N$) are exceptionally stable for their mass. $Z=50$ (tin) is a magic proton number too: tin has ten stable isotopes, more than any other element, a record set jointly by its magic-number proton-shell closure and (since $Z=50$ is even) the full pairing bonus of an even-$Z$ nuclide — in sharp contrast to its odd-$Z$ neighbor antimony ($Z=51$), which has only two. This is the nuclear analog of the noble-gas closed-shell stability seen in atomic electron structure ([Chapter 11](#ch-many-electron-atoms)): just as an atom with a filled electron shell ($Z=2,10,18,\ldots$) is unusually inert, a nucleus with a filled proton or neutron shell is unusually well bound, for the same underlying reason — a large energy gap separates the top of a filled shell from the next available single-particle state, so removing or adding one more nucleon costs (or gains) far more energy than for a nucleus with a partially filled shell.
 
@@ -212,7 +215,7 @@ The exponential law describes a population, not a nucleus, and the difference be
 Radioactive decay watched nucleus by nucleus and in bulk, then applied to dating. The decay constant is a probability per unit time and nothing else: nuclei do not age.
 ```
 
-### Historical Context: Becquerel, the Curies, and the Discovery of Radioactivity
+#### Historical Context: Becquerel, the Curies, and the Discovery of Radioactivity
 
 Radioactivity was discovered by accident. In early 1896, prompted by Wilhelm Röntgen's announcement of X-rays only weeks before, Henri Becquerel was investigating whether phosphorescent materials (which glow after exposure to light) might also emit penetrating, photographic-plate-fogging radiation, using uranium salts as his test material. An overcast Paris sky in late February 1896 forced him to store an unexposed sample — uranium salt sitting atop a wrapped photographic plate, with no sunlight available to trigger any phosphorescence — in a dark drawer for several days. When he developed the plate anyway on March 1, expecting at most a faint trace, he found a strong image instead: the uranium was emitting penetrating radiation entirely on its own, with no light exposure needed to trigger it. Becquerel had discovered **radioactivity**, a spontaneous nuclear process, without initially recognizing what he had found (he first suspected an unusually persistent, invisible form of phosphorescence). Becquerel himself is shown in a portrait from around the time of the discovery in {numref}`Figure %s <fig:ch13-becquerel-historical>`.
 
@@ -225,7 +228,7 @@ Henri Becquerel (1852–1908). Photograph by Paul Nadar, before 1908; Smithsonia
 
 Marie Skłodowska Curie, joined by her husband Pierre, took up the puzzle as a doctoral research topic and pushed it decisively further. Testing pitchblende ore (the raw uranium mineral), she found it *more* radioactive than its uranium content alone could account for — direct evidence of one or more additional, still-unidentified radioactive elements hidden within it in trace quantities. Over four years of laborious chemical separation, processing tons of ore by hand in a converted shed, the Curies isolated two new elements, **polonium** (1898, named for Marie's native Poland) and **radium** (1898), and coined the term **radioactivity** itself for the phenomenon. Becquerel and the Curies shared the 1903 Nobel Prize in Physics for this work; Marie Curie went on to win a second Nobel Prize, in Chemistry, in 1911, for the isolation and characterization of radium and polonium as new chemical elements — achievements made decades before the neutron or the proton-neutron picture of the nucleus used throughout this chapter was available to explain, even in outline, what radioactivity actually *was*.
 
-### A Decay Chain: Uranium-238 to Lead-206
+#### A Decay Chain: Uranium-238 to Lead-206
 
 A single alpha or beta decay usually does not, by itself, produce a stable nuclide: the daughter is often itself radioactive, decaying again, and again, until a stable nuclide is finally reached. Such a sequence is a **decay chain** (or decay series). The longest and most geologically important chain starts at $^{238}_{92}\text{U}$ and ends, fourteen decays later, at stable $^{206}_{82}\text{Pb}$, alternating alpha and beta decays; its first several steps are
 
@@ -237,7 +240,7 @@ In all, the full chain from $^{238}\text{U}$ to $^{206}\text{Pb}$ involves eight
 
 Because every step in a chain like this decays at its own fixed rate while simultaneously being *replenished* by the decay of its parent, a chain that has run undisturbed for a time long compared to every half-life except the first settles into **secular equilibrium**: each intermediate's activity ($\lambda N$ for that nuclide) becomes equal to the activity of the slowly decaying parent feeding it, even though the intermediate's own $N$ (and hence $\lambda$) can be wildly different from the parent's. This is why an old, undisturbed sample of uranium ore contains measurable, steady quantities of highly radioactive but short-lived daughters such as radium and radon: they are being produced by $^{238}\text{U}$ decay just as fast as they themselves decay away.
 
-### Worked Example: Activity of a Radium-226 Sample
+#### Worked Example: Activity of a Radium-226 Sample
 
 $^{226}_{88}\text{Ra}$ (half-life $T_{1/2}=1600\ \text{years}$), a step in the uranium-238 chain above, is the isotope Marie Curie isolated and the one for which the **curie** unit of activity was originally defined: $1\ \text{Ci} \equiv 3.7\times10^{10}$ decays/s, chosen to match the activity of exactly $1\ \text{g}$ of $^{226}\text{Ra}$. Verify this using the decay law. The number of nuclei in $1.00\ \text{g}$ of $^{226}\text{Ra}$ (molar mass $\approx226\ \text{g/mol}$) is
 
@@ -259,7 +262,7 @@ $$
 
 matching the defined curie, $3.7\times10^{10}\ \text{Bq}$, to within rounding — a reminder that the "old" activity unit is not an arbitrary round number but a direct consequence of $^{226}\text{Ra}$'s actual half-life and molar mass, fixed once those two measured quantities are fixed.
 
-### Worked Example: Carbon-14 Dating
+#### Worked Example: Carbon-14 Dating
 
 Living organisms continuously exchange carbon with the atmosphere, maintaining a constant fraction of the radioactive isotope $^{14}_6\text{C}$ (half-life $T_{1/2}=5730\ \text{years}$, continuously replenished in the atmosphere by cosmic-ray-induced nuclear reactions) relative to stable $^{12}\text{C}$; once an organism dies, that exchange stops, and the $^{14}\text{C}$ fraction — and hence the sample's $^{14}\text{C}$ activity — decays exponentially with no further replenishment. A wooden artifact is found to have a $^{14}\text{C}$ activity only $68.0\%$ that of a freshly cut, otherwise identical sample of the same wood. Since activity is proportional to $N$ at every instant, $\mathcal{A}/\mathcal{A}_0 = N/N_0 = 0.680$, and the decay law gives the artifact's age directly:
 
@@ -269,7 +272,7 @@ $$
 
 The artifact is roughly $3190$ years old. This is exactly the calculation, worked from a real measurement rather than an assumed elapsed time, that {numref}`Figure %s <fig:ch13-decay-sim>` above runs interactively — and it is also a direct illustration of why radiocarbon dating has a practical ceiling: after about ten half-lives ($\sim57{,}000$ years), the remaining $^{14}\text{C}$ activity has fallen by a factor of $2^{10}\approx1000$, to a level low enough that statistical counting uncertainty in a realistic sample overwhelms the signal, and other methods (using much longer-lived parents, such as $^{238}\text{U}$ in the decay chain above) must take over.
 
-## Modes of Decay
+### Modes of Decay
 
 Three principal decay modes connect unstable nuclides to more stable ones:
 
@@ -295,7 +298,7 @@ All three modes, and the reason a given nuclide chooses one of them, are laid ou
 Nuclei assembled from protons and neutrons, with the decay mode of each unstable arrangement shown, alongside the chart of the nuclides. The chart is the whole of nuclear stability in one picture: a thin band of nuclides that last, and, on either side of it, a decay mode pointing back toward it.
 ```
 
-### Worked Example: The Alpha-Decay Q-Value for Uranium-238
+#### Worked Example: The Alpha-Decay Q-Value for Uranium-238
 
 Extending [Problem 4](#ex-nuclear-physics-4) into a full numerical calculation: for $^{238}_{92}\text{U}\to{}^{234}_{90}\text{Th}+\alpha$, the energy released (the **Q-value**) is the rest-mass energy of the parent minus that of the products, computed directly from tabulated atomic masses — no bare-proton-mass correction is needed here, since the same $92$ electrons appear on both sides (90 bound to the thorium daughter, 2 bound to the emerging helium atom) and cancel exactly:
 
@@ -315,7 +318,9 @@ in close agreement with the measured value. Because momentum must also be conser
 Binding-energy and $Q$-value calculations mix "nuclear" bookkeeping (protons and neutrons) with tabulated *atomic* masses (nucleus plus electrons), and the two must be reconciled before any numbers go into a formula. The rule that keeps this honest: compare only mass values that carry the same total number of electrons. The $^{56}\text{Fe}$ binding-energy example above uses $m(^1\text{H})$ in place of a bare $m_p$ specifically so that all $26$ atomic electrons cancel exactly rather than approximately; the $^{238}\text{U}$ alpha-decay $Q$-value works directly from atomic masses with no correction at all, because the same $92$ electrons are present on both sides, split between the daughter thorium atom ($90$) and the emerging helium atom ($2$). Whenever the electron count does not match up this neatly, the mismatch has to be added back in by hand before the result can be trusted.
 :::
 
-## Fission
+## Fission and Fusion
+
+### Fission
 
 **Nuclear fission** is the splitting of a heavy nucleus (typically after absorbing a neutron, which excites the nucleus into oscillation, distorting the initially spherical liquid drop) into two lighter, roughly comparable-mass fragments, plus several free neutrons. Because the binding-energy-per-nucleon curve rises steeply from heavy $A$ toward the $A\approx56$ peak, the fragments are individually more tightly bound (per nucleon) than the original heavy nucleus was, and the reaction releases a large amount of energy, typically around $200\ \text{MeV}$ per fission event for a nucleus such as $^{235}_{92}\text{U}$ — overwhelmingly larger than typical chemical reaction energies (electron-volts per bond, versus roughly $10^8$ times more energy per fission event), directly reflecting the vastly greater strength of the nuclear force compared to the electromagnetic forces governing chemical bonding.
 
@@ -329,11 +334,11 @@ The distinction between those last two outcomes is quantitative, not qualitative
 A single fission event, a chain reaction in an assembly of adjustable size and enrichment, and a controlled reactor. Criticality is a statement about a ratio, and it is the same ratio in all three.
 ```
 
-## Fusion
+### Fusion
 
 **Nuclear fusion**, the combination of two light nuclei into a single heavier one, releases energy for exactly the mirror-image reason: moving from very light $A$ toward the peak of the binding-energy curve increases $E_B/A$, so the fused product is more tightly bound (per nucleon) than the separate light nuclei were. Fusion is the energy source that powers stars, where sequences of fusion reactions (in the Sun, predominantly the **proton-proton chain**, ultimately converting four protons into a helium-4 nucleus plus positrons, neutrinos, and gamma rays) release the energy that balances gravitational collapse and produces the Sun's luminosity ([Chapter 3](#ch-relativistic-dynamics), [Problem 6](#ex-relativistic-dynamics-6)). Because fusion requires two positively charged nuclei to approach to within the range of the strong force ($\sim 1\ \text{fm}$) against their mutual Coulomb repulsion, it requires very high temperatures (tens of millions of kelvin or more, as in stellar cores) to proceed at an appreciable rate even with the assistance of quantum tunneling through the Coulomb barrier — the same tunneling mechanism responsible for alpha decay, now working in reverse to allow two light nuclei to fuse despite insufficient classical kinetic energy to overcome their mutual repulsion.
 
-### The Proton-Proton Chain
+#### The Proton-Proton Chain
 
 Written out step by step, the dominant sequence in the Sun (the **proton-proton chain**, or pp I branch) is:
 
@@ -365,7 +370,7 @@ $$
 
 pursued in magnetic-confinement **tokamak** reactors such as ITER, currently under construction in France — a fundamentally different confinement strategy from the Sun's, which needs no physical confinement at all beyond its own gravity, and instead uses strong magnetic fields to hold a plasma far too hot ($\sim10^8\ \text{K}$, hotter than the Sun's core, needed to compensate for the much lower particle density achievable in a laboratory) for any physical vessel to contain directly.
 
-### Worked Example: Energy Released in Deuterium–Tritium Fusion
+#### Worked Example: Energy Released in Deuterium–Tritium Fusion
 
 Using $m(^2\text{H})=2.014102\ \text{u}$, $m(^3\text{H})=3.016049\ \text{u}$, $m(^4\text{He})=4.002602\ \text{u}$, and $m_n=1.008665\ \text{u}$, the mass defect of the D-T reaction above is
 

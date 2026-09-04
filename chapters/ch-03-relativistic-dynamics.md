@@ -4,9 +4,10 @@ short_title: Chapter 3. Relativistic Dynamics
 label: ch-relativistic-dynamics
 numbering:
   enumerator: "3.%s"
+  heading_2: true
 ---
 
-## Learning Objectives
+### Learning Objectives
 
 By the end of this chapter, you should be able to:
 
@@ -19,11 +20,13 @@ By the end of this chapter, you should be able to:
 - Recognize the low-speed (Newtonian) and high-speed (ultrarelativistic) limits of the relativistic energy and momentum expressions.
 - Explain why the combination of momentum blowing up as $u \to c$ and the causality argument of [Chapter 2](#ch-special-relativity) together rule out faster-than-light material particles.
 
-## Introduction
+### Introduction
 
 [Chapter 2](#ch-special-relativity) replaced the Galilean transformation with the Lorentz transformation, because only the latter is consistent with the invariance of the speed of light. But momentum and energy in Newtonian mechanics are defined and conserved using Galilean kinematics: $p = mu$, conserved because Newton's third law and Galilean-invariant forces guarantee it in every Galilean frame. Once the underlying kinematics changes, the old definitions of momentum and energy no longer transform consistently between inertial frames, and a collision that conserves Newtonian momentum in one frame will not, in general, conserve it in another frame related by a Lorentz transformation. This chapter derives the corrected definitions — relativistic momentum and relativistic energy — that *are* conserved in every inertial frame, assembles them into a single four-component object whose conservation law captures both at once, and works out their most important consequences: mass and energy are, up to a conversion factor $c^2$, the same quantity, and a whole new class of practical calculations — threshold energies for particle production — becomes possible.
 
-## Deriving Relativistic Momentum
+## Relativistic Momentum
+
+### Deriving Relativistic Momentum
 
 Rather than simply asserting the corrected formula, it is worth seeing exactly where it comes from, because the argument is a direct descendant of the light-clock argument used to derive time dilation in [Chapter 2](#ch-special-relativity), and it makes clear that the correction is forced on us by the Lorentz transformation, not chosen for convenience.
 
@@ -53,7 +56,7 @@ $$
 
 for *arbitrary* $v$, since $v$ was the (otherwise unconstrained) relative speed of the two frames. In other words, momentum conservation across inertial frames, together with the Lorentz transformation's effect on transverse velocities, forces the "effective mass" $m(u)$ appearing in $p = m(u)u$ to be exactly $\gamma(u)m$ — not simply $m$, as Newtonian mechanics assumed. This is the relativistic momentum derived below; unlike the Newtonian formula, it is exactly the definition needed to make momentum conservation frame-independent, consistent with the Lorentz transformation of [Chapter 2](#ch-special-relativity).
 
-## Relativistic Momentum
+### Relativistic Momentum
 
 The result of the argument above is
 
@@ -67,7 +70,7 @@ where $m$ is the particle's **rest mass** — an intrinsic, frame-independent pr
 Many older textbooks (and Einstein himself, in some early writing) call the combination $\gamma m$ the particle's "relativistic mass," treating $p = m_{\text{rel}}u$ as formally identical to the Newtonian formula with an ordinary, speed-dependent mass substituted in. Modern usage in physics avoids this language: $m$ denotes only the single, frame-independent **rest mass**, and the factor of $\gamma$ is understood to belong to the *kinematics* of momentum and energy, not to a literally growing mass. "Relativistic mass" also fails to generalize cleanly — it does not, for instance, correctly describe how a moving object's inertia to *transverse* versus *longitudinal* forces differs — so treat it as a historical notational convenience at best, not a physical mass increase.
 :::
 
-### Worked Example: Testing $p = \gamma m u$ Against Data
+#### Worked Example: Testing $p = \gamma m u$ Against Data
 
 The formula $\vec p = \gamma m \vec u$ is not merely a theoretical nicety; it has been tested directly by measuring the momentum and speed of fast electrons and protons independently — momentum from the radius of curvature in a known magnetic field ($p = qBr$), speed from time-of-flight over a measured distance. Historical experiments of exactly this kind (Rogers et al., 1940, for electrons; Zrelov et al., 1958, for protons, among others) confirm $p/(mu) = \gamma(u)$ to high precision across a wide range of speeds, and sharply rule out the Newtonian prediction $p/(mu) = 1$ at any appreciable fraction of $c$. For a proton with $u = 0.60c$, for instance, $\gamma = 1/\sqrt{1-0.36} = 1.25$, so the measured momentum is $25\%$ larger than the Newtonian formula would predict — a discrepancy easily resolved by 1950s particle-accelerator instrumentation, and one of the most direct confirmations that $m(u) = \gamma m$, not $m$, governs a moving particle's inertia.
 
@@ -145,7 +148,9 @@ Einstein did not present $E=mc^2$ in his main June 1905 relativity paper; it app
 [](#ch-nuclear-physics) uses mass–energy equivalence to compute nuclear binding energies and the energy released in fission and fusion reactions — the direct, large-scale application of the $E=mc^2$ relation introduced here.
 :::
 
-## The Energy–Momentum Four-Vector
+## Four-Vectors and Threshold Energies
+
+### The Energy–Momentum Four-Vector
 
 Momentum and energy are not independent; eliminating $u$ and $\gamma$ between $\vec p = \gamma m\vec u$ and $E = \gamma mc^2$ gives the **energy–momentum invariant**,
 
@@ -189,13 +194,13 @@ Two limits of the energy–momentum relation are worth committing to memory:
 
 The energy–momentum relation is often more convenient than working with $u$ and $\gamma$ directly, particularly for high-energy particles and for photons, where speed is fixed at $c$ and carries no information about energy.
 
-### Why the Four-Vector Formalism Earns Its Keep
+#### Why the Four-Vector Formalism Earns Its Keep
 
 The payoff of packaging $(E/c, \vec p)$ as a single object is that **the energy–momentum four-vector is exactly conserved in every collision or decay, in every inertial frame, component by component** — precisely because the underlying, separately-conserved quantities (in every frame) are energy and the three components of momentum. This means a conservation calculation can be carried out entirely by four-vector addition: add up the four-vectors of everything going into a collision, add up the four-vectors of everything coming out, and set the two sums equal, four components at a time. Because the four-vector's magnitude, $(E/c)^2 - p^2 = (mc)^2$, is invariant, this magnitude can be computed in *whichever* frame is most convenient — often a frame in which one particle is initially at rest, or the frame in which the total three-momentum is zero (the subject of the next section) — and the resulting relation between energies and masses will hold in every other frame as well.
 
 **Electron–positron annihilation**, revisited: consider an electron and a positron (each of mass $m$), both essentially at rest, annihilating. Charge conservation alone would permit $e^- + e^+ \to \gamma$ (a single photon), but the four-vector of the initial state is $(2mc, 0,0,0)$ (both particles at rest, energies $mc^2$ each, zero total momentum), while any single photon's four-vector must satisfy $E=pc$, i.e., have equal, nonzero energy and momentum magnitude — it cannot have zero momentum unless its energy is also zero. A single outgoing photon is therefore impossible; conservation of the energy–momentum four-vector, not merely of energy or momentum separately, forces at least two photons, emitted back-to-back so that their momenta cancel, each carrying energy $mc^2$. This is the same conclusion reached by separate energy and momentum arguments in [Problem 3](#ex-relativistic-dynamics-3) below, but the four-vector language makes clear that both conservation laws are really a single, unified statement, and this is exactly the physical process (positron annihilation, producing two back-to-back $511\ \text{keV}$ gamma rays) exploited in medical positron-emission tomography (PET) scans to locate a radioactive tracer inside the body.
 
-## Center-of-Momentum Frame and Threshold Energies
+### Center-of-Momentum Frame and Threshold Energies
 
 :::{margin}
 The CM frame is sometimes called the "center-of-mass frame," a holdover from Newtonian mechanics; in relativity, "center-of-momentum" is the more accurate name, since it is defined by zero total momentum, not by any geometric mass-weighted position.
@@ -217,7 +222,7 @@ The CM frame is not a relativistic invention, and it is worth recovering the non
 Classical collisions with the center of mass and the momentum vectors displayed. The center of mass moves at a velocity no collision can change, elastic or not, which is what makes its rest frame a natural place to do the bookkeeping — and what carries over, with $\gamma m\vec u$ in place of $m\vec u$, to the relativistic threshold calculations of this section.
 ```
 
-### Worked Example: The Threshold for Antiproton Production
+#### Worked Example: The Threshold for Antiproton Production
 
 In 1955, the Bevatron at Berkeley was built specifically to search for the antiproton, via the reaction
 
@@ -261,13 +266,13 @@ The historical setting of this threshold calculation is shown in {numref}`Figure
 Interior of the former Bevatron building at Lawrence Berkeley National Laboratory. Photograph by Daniel Parks, 2010; CC BY 2.0 via Wikimedia Commons. The photograph shows the surviving facility structure, not the operating 1955 machine.
 ```
 
-## Aside: Why There Are No Faster-Than-Light Massive Particles
+### Aside: Why There Are No Faster-Than-Light Massive Particles
 
 [Chapter 2](#ch-special-relativity) argued, from causality alone, that no signal or influence can travel faster than $c$ without permitting effects to precede their causes in some valid inertial frame. This chapter's momentum formula, $p = \gamma m u$, gives an independent, purely dynamical reason a *massive* particle in particular can never reach or exceed $c$: as $u \to c^-$, $\gamma \to \infty$, so accelerating a massive particle arbitrarily close to $c$ requires arbitrarily large — and, at $u=c$ itself, literally infinite — momentum and energy. No finite amount of work can supply this, so $c$ is a strict, unreachable asymptote for any object with $m>0$, approached but never attained no matter how long or how powerfully it is accelerated.
 
 It is sometimes asked whether a hypothetical particle might simply be *born* moving faster than $c$, without ever having to accelerate through $c$ — such a hypothetical particle is called a **tachyon**. Formally, applying $E^2 = (pc)^2+(mc^2)^2$ at $u>c$ requires $\gamma^2 = 1/(1-u^2/c^2)$ to be negative, so consistency would force $m^2$ itself to be negative (an "imaginary rest mass"), a mathematical possibility with no known physical instantiation. More importantly, even setting this oddity aside, a tachyon would necessarily connect spacelike-separated events ([Chapter 2](#ch-special-relativity)) — and the causality argument there shows that *some* inertial observer would measure any spacelike-connecting signal to travel backward in time, arriving before it was sent. No experiment has ever detected a particle exceeding $c$, and every attempt to build a fully self-consistent theory of tachyons that avoids these causal paradoxes has failed; the mass–energy relation of this chapter and the light-cone causality argument of [Chapter 2](#ch-special-relativity) are two independent, mutually reinforcing reasons $c$ is an absolute speed limit for anything that can carry energy or information.
 
-## Worked Example: An Electron Accelerated Through a Potential Difference
+### Worked Example: An Electron Accelerated Through a Potential Difference
 
 An electron (rest energy $m c^2 = 0.511\ \text{MeV}$) is accelerated from rest through a potential difference of $2.00\ \text{MV}$, gaining kinetic energy $K = qV = 2.00\ \text{MeV}$.
 

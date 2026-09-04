@@ -4,9 +4,10 @@ short_title: Chapter 1. The Need for Relativity
 label: ch-need-for-relativity
 numbering:
   enumerator: "1.%s"
+  heading_2: true
 ---
 
-## Learning Objectives
+### Learning Objectives
 
 By the end of this chapter, you should be able to:
 
@@ -19,7 +20,7 @@ By the end of this chapter, you should be able to:
 - Describe the Fizeau experiment and explain why its result was equally difficult to accommodate within a simple ether picture.
 - State Einstein's two postulates of special relativity and explain why they are jointly incompatible with Galilean relativity.
 
-## Introduction
+### Introduction
 
 By the 1890s, many physicists believed their subject was nearly finished. Newtonian mechanics predicted the motion of planets, projectiles, and machinery with extraordinary precision; Maxwell's equations had unified electricity, magnetism, and optics into a single theory of the electromagnetic field and correctly predicted that light is an electromagnetic wave. A famous (if perhaps apocryphal) remark attributed to physicists of the era held that all that remained was to measure constants to more decimal places.
 
@@ -29,7 +30,9 @@ That confidence concealed a handful of loose threads. This chapter follows one o
 Today $c$ is *defined* to be exactly $299{,}792{,}458\ \text{m/s}$; the meter itself is defined in terms of it. In 1890 it was instead a measured quantity, and Maxwell's equations gave no reason to expect it to be measured the same by every observer.
 :::
 
-## The Principle of Relativity, Before Einstein
+## The Ether Hypothesis and Michelson–Morley
+
+### The Principle of Relativity, Before Einstein
 
 It is worth being precise about what was, and was not, already understood before 1905. Galileo had already argued, nearly three centuries earlier, that uniform motion is undetectable from the inside. In his *Dialogue Concerning the Two Chief World Systems* (1632), he imagined an observer sealed below the deck of a smoothly sailing ship, with no portholes: butterflies fly about the cabin, fish swim in a bowl, drops fall from a bottle into a jar beneath it. Galileo's point was that no mechanical experiment performed in that sealed cabin can tell you whether the ship is at rest in harbor or cruising at constant velocity across a calm sea. The butterflies do not pile up against the stern wall; the drops fall straight down into the jar exactly as they would in harbor. Only *changes* in the ship's velocity — a lurch, a turn — are detectable from inside, because those involve acceleration, and acceleration is not relative in the same way.
 
@@ -37,7 +40,7 @@ This is the **principle of relativity** applied to mechanics alone: the laws of 
 
 What was *not* yet settled was whether this principle extended beyond mechanics — in particular, to light and electromagnetism. Maxwell's equations, unlike Newton's laws, single out a specific speed $c$ for electromagnetic waves, and by the reasoning of the Introduction above, a wave's speed is normally measured relative to its medium, not relative to an arbitrary observer. If light truly is a disturbance in a material ether, then Maxwell's equations should hold their simplest form only in the ether's own rest frame, and an observer moving relative to the ether — such as anyone standing on the surface of a planet orbiting the Sun — should be able to detect that motion optically, even though no *mechanical* experiment inside a closed lab could reveal it. The question the rest of this chapter pursues is empirical: can such motion actually be detected?
 
-## Galilean Relativity and the Speed of Light
+### Galilean Relativity and the Speed of Light
 
 Newtonian mechanics is built on a specific rule for relating measurements made by observers moving relative to one another. Consider two reference frames, $S$ and $S'$, with $S'$ moving at constant velocity $v$ along the $x$-axis of $S$, and with their origins coinciding at $t = 0$. The *Galilean transformation* relates the coordinates of an event as measured in each frame:
 
@@ -65,7 +68,7 @@ The assumption hiding inside that argument is worth making explicit, because eve
 A single oscillating source seen as a water wave, a sound wave, and a light wave. For water and sound the medium can be drawn on the screen, and it sets the frame in which the wave travels at its stated speed; light was expected to be no different, and the medium it was supposed to disturb was the ether.
 ```
 
-## The Michelson–Morley Experiment
+### The Michelson–Morley Experiment
 
 :::{note}
 Albert Michelson, a graduate of the U.S. Naval Academy, built his first interferometer in 1881 (in Berlin, with support from Alexander Graham Bell) and refined it with Edward Morley at what is now Case Western Reserve University in 1887. Michelson went on to win the 1907 Nobel Prize in Physics — the first American laureate in the sciences — awarded for the precision of his optical instruments, notably this one, even though the experiment's headline result was a *null* one.
@@ -73,7 +76,7 @@ Albert Michelson, a graduate of the U.S. Naval Academy, built his first interfer
 
 Albert Michelson (and later Michelson working with Edward Morley) built exactly such an interferometer. Its principle is to split a beam of light into two perpendicular paths, reflect each off a mirror, recombine the beams, and observe the resulting interference pattern. If Earth moves through the ether, the round-trip travel time along the path parallel to that motion should differ slightly from the round-trip time along the perpendicular path, because a "cross-stream" trip and an "upstream–downstream" trip through a moving medium take different times even when the two paths have equal length — the same effect that makes a boat crossing a river directly and returning take less time than travelling the same distance upstream and back. The predicted difference is small, but the interferometer was sensitive enough to detect a shift of a small fraction of a fringe, and the apparatus was mounted on a stone slab floating on mercury so that it could be rotated smoothly to swap the roles of the two arms.
 
-### Computing the Predicted Fringe Shift
+#### Computing the Predicted Fringe Shift
 
 The prediction can be made quantitative. Let both interferometer arms have length $L$, with the apparatus moving at speed $v$ through the ether, and suppose (for the moment) that one arm lies along the direction of motion and the other perpendicular to it. Light traveling down the parallel arm and back takes
 
@@ -111,7 +114,7 @@ $$
 
 comfortably above the apparatus's sensitivity of about $0.01$ fringe — roughly a factor of $40$ in signal-to-noise. This is the calculation, worked in reverse from the design specifications, that told Michelson and Morley their apparatus was more than sensitive enough for the job.
 
-### The Null Result
+#### The Null Result
 
 The prediction was unambiguous: rotating the apparatus should shift the fringe pattern by an amount corresponding to Earth's motion through the ether, roughly $0.4$ fringe in the original 1887 apparatus — well above its sensitivity of about $0.01$ fringe. The experiment was repeated at different times of day and different seasons, in case Earth happened to be momentarily at rest relative to the ether when first tested — a concern that matters because Earth's *velocity* relative to any hypothetical ether should trace out an ellipse over the year as Earth orbits the Sun, vanishing at no more than isolated instants. **No shift of the predicted size was ever observed, in any orientation, at any time of year.** The measured shift was consistent with zero, roughly twenty times smaller than the effect Galilean relativity plus a stationary ether required. Later, more sensitive repetitions of the experiment (through the twentieth century, using lasers and eventually rotating optical cavities) have pushed the upper bound on any such effect down by many more orders of magnitude, with the same result: none.
 
@@ -132,7 +135,9 @@ What a fraction of a fringe looks like, and how little it takes to produce one, 
 The Michelson geometry that Michelson and Morley used, with the arms under direct control. The ether wind is not modeled — no experiment has ever needed it to be — but the instrument's response to a path-length difference between the arms is, and it is that response the 1887 apparatus was calibrated against.
 ```
 
-## A Second Null Result: The Kennedy–Thorndike Experiment
+## Further Null Results: Kennedy–Thorndike and Fizeau
+
+### A Second Null Result: The Kennedy–Thorndike Experiment
 
 The surviving photograph in {numref}`Figure %s <fig:ch01-historical-apparatus>` shows the scale and mechanical character of the original apparatus described above.
 
@@ -149,7 +154,7 @@ Roy Kennedy and Edward Thorndike closed this gap in 1932 with a modified apparat
 
 The Kennedy–Thorndike null result rules out length contraction as a stand-alone patch: any viable account of these experiments must *also* include time dilation, changing the rate at which the light source's frequency (used as a built-in "clock" via the interference condition) ticks, in exactly the combination that the full Lorentz transformation provides. Michelson–Morley alone is consistent with "length contracts, nothing else needs to change"; Kennedy–Thorndike alone is consistent with several different combinations of length and time effects; only together, and only when combined with independent tests of time dilation itself ([Chapter 2](#ch-special-relativity)), do they pin down the Lorentz transformation uniquely, with no remaining free parameters. This is a useful methodological lesson that recurs throughout physics: a single null result can usually be explained away by more than one patch, and it typically takes a *family* of independent experiments, each closing off a different escape route, to force a genuinely new theory into place.
 
-## A Complication: The Fizeau Experiment
+### A Complication: The Fizeau Experiment
 
 The ether's troubles did not begin with Michelson and Morley. Decades earlier, in 1851, Hippolyte Fizeau performed a related but distinct experiment: rather than looking for an effect of Earth's motion through vacuum, he measured the speed of light *inside a moving medium* — water flowing rapidly through a pipe. Splitting a light beam so that one part traveled with the flow and the other against it, then recombining them interferometrically, Fizeau could measure how much the water's motion changed the light's speed compared to light in stationary water, $c/n$ (where $n\approx1.33$ is water's refractive index).
 
@@ -209,7 +214,9 @@ The three possibilities are summarized visually in {numref}`Figure %s <fig:ch01-
 Fizeau's moving-water result. The measured velocity is shifted by the Fresnel factor $1-1/n^2$, lying between the predictions of no drag and full Galilean addition. Original schematic by the author.
 ```
 
-## Attempts to Save the Ether
+## Toward Einstein's Postulates
+
+### Attempts to Save the Ether
 
 The null result did not immediately convince anyone to abandon the ether; instead, it triggered a series of increasingly strained patches:
 
@@ -217,7 +224,7 @@ The null result did not immediately convince anyone to abandon the ether; instea
 - **The Fitzgerald–Lorentz contraction.** George FitzGerald and, independently, Hendrik Lorentz proposed that objects moving through the ether physically contract along their direction of motion by just the factor needed to make the two arms of the interferometer take equal time, hiding the effect. Concretely, if a rod of ether-frame length $L_0$ oriented along the direction of motion instead has length $L_0\sqrt{1-v^2/c^2}$, then $t_\parallel$ recomputed with this shortened arm length equals $t_\perp$ exactly, and no fringe shift results, for any $v$. Lorentz went further, introducing a fictitious "local time" that varied with position in exactly the combination $t - vx/c^2$ that would, decades later, turn out to be the correct relativistic time coordinate. Taken on its own, however, this is an *ad hoc* fix — a contraction (and a local time) invented for the sole purpose of explaining away one null result, with the ether itself still doing the conceptual work of defining a single true rest frame. It turns out to contain a genuine piece of the truth, but only once it is derived from a deeper principle rather than posited to save a failing hypothesis, which is what Einstein did in 1905 ([Chapter 2](#ch-special-relativity)).
 - **Emission theories.** Perhaps light simply travels at speed $c$ relative to its *source*, with no ether needed at all — a proposal in the spirit of a bullet's speed depending on the gun that fired it. This was ruled out by observations of binary star systems (de Sitter, 1913): if the light emitted from each star carried the star's velocity, light from the approaching star would arrive systematically earlier than light from the receding star, garbling the observed orbital motion — in extreme cases, an observer might even see the same star appear to occupy several positions in its orbit at once, as light emitted at different orbital phases with different speeds arrived simultaneously. No such garbling is seen; binary star light curves and radial velocities are exactly periodic, matching Kepler's laws with the light's speed treated as constant, independent of the source's motion.
 
-### Worked Example: Estimating the Aberration Angle
+#### Worked Example: Estimating the Aberration Angle
 
 The stellar-aberration bullet above asserts a value of about $20.5$ arcseconds; it is worth seeing where a number of that size comes from, since the same reasoning about combining velocities recurs throughout this chapter. Consider a star directly "overhead," so that in the Sun's rest frame its light arrives travelling straight down (speed $c$, along $-y$) at a telescope. In the frame of Earth, which moves at orbital speed $v \approx 3.0\times10^4\ \text{m/s}$ in some direction in the $x$-$y$ plane perpendicular to the line of sight, ordinary (Galilean) velocity subtraction gives the light's velocity components as measured on Earth: still $-c$ along $y$, but now also $-v$ along $x$, exactly as raindrops falling straight down acquire an apparent forward velocity component for a runner moving beneath them. The apparent direction of arrival is tilted from vertical by an angle $\theta$ with
 
@@ -239,7 +246,7 @@ in close agreement with the historically measured value of $20.5''$. Because Ear
 
 Each patch could account for the existing data but only by adding a new, unmotivated assumption, and no single patch accounted for *both* puzzles — the Michelson–Morley null result and the Fizeau partial-drag coefficient — without contradicting itself. What was needed was not another patch but a new starting point.
 
-## Einstein's Postulates
+### Einstein's Postulates
 
 In 1905, Einstein proposed to stop patching Galilean relativity and instead take the null result at face value, elevating it (together with the principle of relativity already implicit in mechanics, discussed above) to a postulate. Special relativity rests on two statements:
 

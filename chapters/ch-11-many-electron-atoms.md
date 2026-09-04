@@ -4,9 +4,10 @@ short_title: Chapter 11. Many-Electron Atoms
 label: ch-many-electron-atoms
 numbering:
   enumerator: "11.%s"
+  heading_2: true
 ---
 
-## Learning Objectives
+### Learning Objectives
 
 By the end of this chapter, you should be able to:
 
@@ -17,11 +18,13 @@ By the end of this chapter, you should be able to:
 - Explain the origin of characteristic X-ray spectra and apply Moseley's law.
 - Describe the physical basis of the laser: stimulated emission, population inversion, and metastable states.
 
-## Introduction
+### Introduction
 
 [Chapter 10](#ch-the-hydrogen-atom) solved the hydrogen atom exactly, obtaining energies that depend on a single quantum number $n$ and states that can be filled with electrons two at a time (spin up, spin down) up to a degeneracy of $2n^2$. This chapter asks what happens for atoms with more than one electron, where the Schrödinger equation cannot be solved exactly, because each electron interacts not only with the nucleus but with every other electron. Two ideas make the many-electron problem tractable and explain the entire structure of the periodic table: an *independent-particle approximation*, in which each electron is imagined to move in an effective, average potential created by the nucleus and all the other electrons, and the *Pauli exclusion principle*, a rule with no classical analog that limits how many electrons can occupy any single quantum state. Together they explain why elements have the chemical and spectroscopic properties they do — and, in doing so, resolve one of the oldest puzzles in physics that quantum mechanics was built to explain: the periodic table itself.
 
-## The Pauli Exclusion Principle
+## The Exclusion Principle and Screening
+
+### The Pauli Exclusion Principle
 
 Wolfgang Pauli proposed in 1925 (before the discovery of the Schrödinger equation) a rule required to explain observed atomic spectra and, later, understood as a consequence of the fundamentally indistinguishable and antisymmetric nature of electron wave functions: **no two electrons in an atom can occupy the same complete set of quantum numbers** $(n,\ell,m_\ell,m_s)$. Equivalently, each distinct spatial-and-spin quantum state $(n,\ell,m_\ell,m_s)$ can hold **at most one electron**. This is not a subtle statistical tendency but an absolute prohibition, and it applies generally to electrons (and more broadly to the class of particles called fermions, which includes protons and neutrons) — without it, every electron in a multi-electron atom could simply fall into the lowest-energy $1s$ state, and all atoms would have similar, small sizes and similar chemistry, in sharp contradiction to the observed diversity of the periodic table. The exclusion principle is the single most important input, beyond the Schrödinger equation itself, needed to explain atomic structure.
 
@@ -29,7 +32,7 @@ Wolfgang Pauli proposed in 1925 (before the discovery of the Schrödinger equati
 Pauli received the 1945 Nobel Prize in Physics "for the discovery of the Exclusion Principle," on a nomination by Albert Einstein — two decades after the 1925 postulate itself, and a reminder of how long it can take for a rule with no classical mechanism behind it to be fully vindicated. Pauli did not stop at the empirical rule: in 1940 he proved the **spin-statistics theorem**, showing that any relativistic quantum field theory *requires* half-integer-spin particles (fermions, including electrons) to obey antisymmetric statistics and integer-spin particles (bosons, including photons) to obey symmetric statistics. The exclusion principle, in other words, is not a free-standing postulate about electrons specifically — it is a necessary consequence of relativity and quantum field theory applied to any spin-$\tfrac12$ particle.
 :::
 
-### Historical Context: Pauli's Reasoning and Hund's Empirical Rule
+#### Historical Context: Pauli's Reasoning and Hund's Empirical Rule
 
 Pauli arrived at the exclusion principle in late 1924 by a route that had nothing to do with wave mechanics, which did not yet exist — Schrödinger's equation was still two years away. Working instead from the older Bohr–Sommerfeld quantum theory, Pauli was trying to explain two stubborn regularities that orbital quantum numbers alone could not account for: the precise electron counts (2, 8, 8, 18, $\ldots$) at which successive shells close to give a noble gas, and the "anomalous" Zeeman splitting of certain spectral lines into a number of components inconsistent with any known combination of $n$ and $\ell$. Pauli proposed that the electron carries an additional, two-valued property — which he described, before its physical meaning as spin was proposed by Goudsmit and Uhlenbeck the following year, only as a "classically non-describable two-valuedness" — and that no two electrons in an atom may share an identical set of all their quantum numbers, orbital and this new one included. Both puzzles fell into place at once: the shell-closing numbers became simple counting exercises, and the anomalous splittings became ordinary Zeeman splittings of a spin degree of freedom nobody had previously included.
 
@@ -51,7 +54,7 @@ $$
 Swapping the labels $1 \leftrightarrow 2$ multiplies $\Psi$ by $-1$, as required of a fermion wave function. Now suppose the two states are the same, $a=b$: the expression becomes $\tfrac{1}{\sqrt2}[\psi_a(1)\psi_a(2)-\psi_a(2)\psi_a(1)] = 0$ identically. The wave function for two electrons in the same quantum state does not merely describe an unlikely configuration — it vanishes outright, for every possible position and spin of both electrons. "No two electrons occupy the same state" is not a separate postulate; it is this algebraic fact, stated in words. The same antisymmetry, applied to two electrons in *different* orbitals with parallel spin, is also what produces the exchange energy discussed above: the antisymmetric spatial wave function is forced toward zero whenever the two electrons approach the same point, keeping same-spin electrons farther apart on average and lowering their mutual Coulomb repulsion.
 :::
 
-## Screening and Subshell Energies
+### Screening and Subshell Energies
 
 In hydrogen, the energy of a state depends only on $n$ ([Chapter 10](#ch-the-hydrogen-atom)), because the electron feels the bare $1/r$ potential of a single proton. In a multi-electron atom, an electron in an outer shell is partially **screened** from the full nuclear charge $Ze$ by the electrons in shells closer to the nucleus: it feels an *effective* nuclear charge $Z_{\text{eff}}e < Ze$, reduced from the true charge by the (partial) shielding effect of the intervening electron cloud.
 
@@ -61,13 +64,13 @@ A **shell** groups states by principal quantum number $n$ alone; a **subshell** 
 
 Screening depends on $\ell$ as well as $n$, because electrons of lower $\ell$ (at fixed $n$) have wave functions with a greater probability of being found close to the nucleus (their radial probability distributions extend closer to $r=0$, as can be seen in the general shape of the hydrogen radial functions of [Chapter 10](#ch-the-hydrogen-atom)) — such electrons penetrate the inner electron cloud more effectively, feel less screening, and are therefore more tightly bound. The result is that, unlike in hydrogen, **energy in a multi-electron atom depends on both $n$ and $\ell$**, with energy generally increasing with $\ell$ at fixed $n$: within a given $n$, an $s$ state ($\ell=0$) lies lower in energy than a $p$ state ($\ell=1$), which lies lower than a $d$ state ($\ell=2$), and so on. This $\ell$-dependence is what breaks hydrogen's accidental degeneracy and is responsible for the specific subshell-filling order used below.
 
-### The Self-Consistent Field: How Screening Is Actually Computed
+#### The Self-Consistent Field: How Screening Is Actually Computed
 
 The qualitative picture above — "an electron feels a reduced effective charge $Z_{\text{eff}}e$" — can be made into an actual calculation, and doing so is instructive even though the resulting numbers are only ever approximate. Douglas Hartree, in 1928, proposed treating each electron as moving independently in an *effective, spherically averaged* potential built from the nucleus plus the smeared-out charge distribution of every other electron: $V_{\text{eff}}(r) = -\dfrac{Ze^2}{4\pi\epsilon_0 r} + V_{\text{other electrons}}(r)$. The trouble is circular — computing $V_{\text{other electrons}}(r)$ requires already knowing the wave functions of all the other electrons, which is exactly what one is trying to find. Hartree's resolution, the **self-consistent field (SCF) method**, is an iterative procedure: start with a reasonable guess for every electron's wave function (hydrogen-like orbitals, say); use those guesses to compute an averaged charge density and hence an effective potential $V_{\text{eff}}(r)$ for each electron; solve the resulting one-electron Schrödinger equation for each electron in that potential, obtaining *improved* wave functions; recompute the charge density and the effective potential from these improved wave functions; and repeat. The cycle is stopped once the potential fed in and the potential computed out agree to the desired precision — the field is then "self-consistent," and the resulting energies and wave functions are the Hartree approximation's best estimate for the atom's structure. (A refinement due to Vladimir Fock in 1930, Hartree–Fock theory, additionally enforces the antisymmetry required by the exclusion principle itself, which plain Hartree theory omits, and is the starting point for essentially all modern atomic-structure and quantum-chemistry calculations.)
 
 This procedure makes the $r$-dependence of screening explicit rather than assumed: an electron that penetrates *inside* the charge cloud of the other electrons (small $r$) sees a potential close to the full, unscreened nuclear charge $Z$, while an electron that stays *outside* essentially all the other electrons (large $r$) sees a much-reduced net charge — roughly $Z$ minus the number of electrons enclosed within its orbit. A full SCF calculation is impractical by hand, which is why **Slater's rules** (1930) exist: an empirical, hand-computable recipe, calibrated against Hartree-type results, for estimating a single number $Z_{\text{eff}}$ for a given electron without running the iteration at all.
 
-### Worked Example: Effective Nuclear Charge via Slater's Rules
+#### Worked Example: Effective Nuclear Charge via Slater's Rules
 
 Slater's rules group orbitals as $(1s)$, $(2s,2p)$, $(3s,3p)$, $(3d)$, $(4s,4p)$, $\ldots$ and estimate the total screening $S$ felt by an electron in an $ns$ or $np$ orbital as a sum of contributions: $0.35$ for each *other* electron in the same group ($0.30$ if the group is $1s$), $0.85$ for each electron one shell lower ($n-1$), and $1.00$ (full screening) for each electron two or more shells lower. Then $Z_{\text{eff}} = Z - S$.
 
@@ -113,7 +116,7 @@ The Aufbau procedure is quicker to learn by doing it than by reading the rules, 
 Atoms assembled particle by particle, with element, charge, mass number, and electron shell filling all displayed as they are built. Build up to neon or argon and the outer shell closes exactly as the electron count reaches a noble gas — the closure being a fact about the electrons, and nothing to do with the nucleus underneath them.
 ```
 
-### The Aufbau Order in Practice: Configurations Across the Periodic Table
+#### The Aufbau Order in Practice: Configurations Across the Periodic Table
 
 The filling order $1s,2s,2p,3s,3p,4s,3d,4p,\ldots$ is best seen applied across a representative spread of the periodic table, rather than for one or two elements in isolation. {numref}`Table %s <tab:ch11-configurations>` builds ground-state configurations by strict Aufbau filling for most entries, but flags two elements — **chromium** and **copper** — where the real, spectroscopically measured ground state disagrees with the naive prediction, and includes **lanthanum**, the first element for which the $4f$ subshell becomes energetically relevant, as a further illustration of just how close some subshell energies run to one another.
 
@@ -141,7 +144,7 @@ Two features stand out. First, every noble gas ($\text{He}$, $\text{Ne}$, $\text
 The naive Aufbau order gets the ground-state configuration right for the overwhelming majority of elements, so it is worth trusting by default — but it is worth pausing to check whenever straightforward filling would leave a $d$ or $f$ subshell *one electron short* of exactly half-filled ($d^4$, $f^6$) or exactly one electron short of completely filled ($d^9$, $f^{13}$). Those are precisely the configurations where promoting one electron from the outer $s$ subshell buys extra exchange-energy stabilization by reaching $d^5$, $d^{10}$, $f^7$, or $f^{14}$. If your predicted configuration lands one electron short of one of those special counts, it is worth double-checking against a reference table before reporting it as the ground state.
 :::
 
-### Worked Example: Why Chromium's Ground State Breaks the Naive Aufbau Order
+#### Worked Example: Why Chromium's Ground State Breaks the Naive Aufbau Order
 
 The Aufbau order predicts chromium ($Z=24$) should have configuration $[\text{Ar}]\,3d^44s^2$: fill $4s$ completely (it is lower in energy than $3d$, as established above), then place the remaining four electrons in $3d$. The measured ground state is instead $[\text{Ar}]\,3d^54s^1$ — one electron has been promoted from $4s$ down into $3d$, apparently *uphill* in single-particle energy.
 
@@ -151,7 +154,7 @@ The resolution is that single-particle subshell energies are not the whole story
 It is tempting to picture the exchange-energy stabilization behind Hund's rule and the chromium/copper exceptions as electrons with parallel spin somehow "repelling less" because of some spin-dependent force between them, the way two bar magnets attract or repel depending on orientation. That picture is wrong: the electron-electron interaction here is the ordinary electrostatic Coulomb repulsion, and there is no additional spin-based force anywhere in the Hamiltonian. The energy difference is a purely statistical consequence of antisymmetry — the antisymmetric *spatial* wave function required for two parallel-spin electrons is forced toward zero as the two electrons approach each other, so they simply spend less time close together, and therefore have lower average Coulomb repulsion, than two opposite-spin electrons whose (symmetric) spatial wave function carries no such restriction. Same-spin electrons are not pushed apart by a force; they are correlated apart by the requirement of exchange antisymmetry.
 :::
 
-### Ionization Energy and Atomic Radius Across the Periodic Table
+#### Ionization Energy and Atomic Radius Across the Periodic Table
 
 The Slater's-rule calculation above — $Z_{\text{eff}}$ rising from $2.20$ (sodium) to $6.10$ (chlorine) across period 3 — is the quantitative content behind two of the most familiar patterns in chemistry. **Atomic radius** decreases across a period: each added electron goes into the *same* shell (same $n$, hence similar average distance from the nucleus, all else equal), while $Z_{\text{eff}}$ pulling on that shell steadily increases, drawing the whole electron cloud inward. **First ionization energy** — the energy required to remove the least tightly bound electron — correspondingly *increases* across a period, since a more tightly bound (higher $Z_{\text{eff}}$, smaller-radius) electron is harder to remove; sodium's outermost electron ($I_1 = 5.14\ \text{eV}$) is far easier to strip away than chlorine's ($I_1 = 12.97\ \text{eV}$), consistent with the roughly threefold increase in $Z_{\text{eff}}$ found above. Both trends reverse on descending a group: each new period adds a shell of larger $n$, and although $Z_{\text{eff}}$ for the outermost electron changes only mildly down a group (the added inner shells screen the added protons quite effectively, shell for shell), the larger $n$ dominates, so atomic radius grows and ionization energy falls — lithium, sodium, and potassium have successively *lower* first ionization energies ($5.39$, $5.14$, $4.34\ \text{eV}$) even though $Z$ more than sextuples between them.
 
@@ -166,13 +169,15 @@ First ionization energy versus atomic number, $Z=1$–$36$. Each period rises fr
 
 Two smaller features in that figure repay a closer look. Within period 2, beryllium's ionization energy ($9.32\ \text{eV}$) is *higher* than boron's ($8.30\ \text{eV}$), even though boron has one more proton — a small step backward against the overall rising trend, and the same pattern recurs for nitrogen ($14.53\ \text{eV}$) against oxygen ($13.62\ \text{eV}$), and again in period 3 for phosphorus ($10.49\ \text{eV}$) against sulfur ($10.36\ \text{eV}$). These dips are not noise; they are the same subshell-stability physics responsible for the chromium and copper exceptions above, showing up in ionization energy instead of in the filling order.
 
-### Worked Example: The Ionization-Energy Dips at Boron and Oxygen
+#### Worked Example: The Ionization-Energy Dips at Boron and Oxygen
 
 Beryllium's configuration is $1s^22s^2$: a completely filled $2s$ subshell. Removing an electron from boron ($1s^22s^22p^1$), by contrast, means removing the *single* $2p$ electron — a higher-energy, more weakly bound (less penetrating, more screened) subshell than $2s$ — which is easier despite boron's larger nuclear charge, since the electron being removed is not even in the same subshell as beryllium's. This is a filled-subshell effect: beryllium's two $2s$ electrons are unusually well bound because $2s$ is complete, and there is no exchange-energy assistance available to make boron's lone $2p$ electron comparably well bound.
 
 Nitrogen's configuration is $1s^22s^22p^3$: a *half-filled* $2p$ subshell, with all three $2p$ electrons in separate orbitals with parallel spin, by Hund's rule. Oxygen ($1s^22s^22p^4$) must place its fourth $2p$ electron into an orbital that already holds one — pairing two electrons in the same spatial orbital, with opposite spins, for the first time in the $2p$ subshell. That pairing does two things at once: it loses one unit of exchange-energy stabilization (going from three mutually parallel spins to only three still parallel, minus the correlation lost to the new pair) and it adds direct Coulomb repulsion between the two electrons now sharing an orbital. Both effects make oxygen's *paired* electron easier to remove than any of nitrogen's three unpaired ones, despite oxygen's larger nuclear charge — exactly the same underlying mechanism (exchange-energy stabilization of half-filled subshells) that pins chromium at $3d^54s^1$ rather than $3d^44s^2$.
 
-## Atomic Spectra and X-Rays
+## Atomic Spectra, X-Rays, and Lasers
+
+### Atomic Spectra and X-Rays
 
 Optical spectra of multi-electron atoms arise, as in hydrogen, from transitions of a single (typically outer, valence) electron between energy levels, now shifted by screening as described above and further split by the interaction between an electron's orbital and spin magnetic moments (**spin-orbit coupling**), producing the closely spaced doublets and multiplets seen in high-resolution atomic spectra.
 
@@ -190,11 +195,11 @@ $$
 
 where $a$ and $b$ are constants (with $b\approx 1$ for the $K_\alpha$ line, reflecting screening of the nuclear charge by the one remaining $K$-shell electron) essentially independent of the element. This relation follows directly from a hydrogen-like treatment of the transition, with the true nuclear charge $Z$ replaced by an effective charge $Z_{\text{eff}} = Z - b$ to account for screening by the other $K$-shell electron, applied to the Bohr/Schrödinger hydrogen energy formula. Moseley's law provided, for the first time, a direct physical (rather than merely chemical) way to determine an element's atomic number $Z$, and was used to correctly order elements in the periodic table, resolve several ambiguities in the ordering by atomic mass, and confirm the existence of predicted-but-then-unobserved elements by their expected X-ray frequency, cementing $Z$ (nuclear charge) rather than atomic mass as the correct organizing quantity for the periodic table.
 
-### The Moseley Plot
+#### The Moseley Plot
 
 Moseley's own presentation of his data was graphical rather than tabular, and remains the clearest way to see the law's content: plotting $\sqrt{f}$ (the square root of the measured $K_\alpha$ frequency) against $Z$ for every element measured produces, to remarkable precision, a single **straight line**. That linearity is the entire empirical claim — a hydrogen-like $1/n^2$ energy spectrum predicts $f \propto (Z-b)^2$, i.e., $\sqrt{f} \propto (Z-b)$, so a plot linear in $Z$ is direct evidence that inner-shell transition energies really do scale as a screened hydrogen atom's, even in atoms far too complicated to solve exactly. The same linear relationship holds separately for the $L$ series and other series, each with its own slope $a$ and intercept $b$ (the $L$-series screening constant $b$ is larger than the $K$-series value of about $1$, since an $L$-shell vacancy is screened by more surrounding electrons than a $K$-shell vacancy is) — a family of parallel diagnostic lines, one per series, any one of which pins down $Z$ from a measured frequency alone.
 
-### Worked Example: Moseley's Law — Predicting Nickel's $K_\alpha$ Line from Copper's
+#### Worked Example: Moseley's Law — Predicting Nickel's $K_\alpha$ Line from Copper's
 
 A single measured $K_\alpha$ frequency, together with the known screening constant $b\approx1$, is enough to predict the $K_\alpha$ frequency of a neighboring element. Copper ($Z=29$) has a measured $K_\alpha$ frequency $f_{\text{Cu}} = 1.94\times10^{18}\ \text{Hz}$ (corresponding to a photon energy $hf_{\text{Cu}} \approx 8.02\ \text{keV}$, close to the accepted value of $8.048\ \text{keV}$ for the Cu $K_{\alpha1}$ line). Writing Moseley's law as $\sqrt f = A(Z-1)$ and solving for $A$ using copper's data,
 
@@ -219,7 +224,7 @@ The surviving photograph in {numref}`Figure %s <fig:ch11-historical-moseley>` sh
 Henry Gwyn Jeffreys Moseley, circa 1914. Photograph via the AIP Emilio Segrè Visual Archives, W. F. Meggers Gallery of Nobel Laureates; public domain via Wikimedia Commons.
 ```
 
-### Historical Context: Henry Moseley and the 1913–1914 X-Ray Survey
+#### Historical Context: Henry Moseley and the 1913–1914 X-Ray Survey
 
 Henry Moseley was 26 years old, working at Ernest Rutherford's laboratory in Manchester and then at Oxford, when he built an X-ray spectrometer and, over roughly a year, measured the characteristic $K$- and $L$-series frequencies of nearly 40 elements — an extraordinarily fast and thorough experimental survey by the standards of the day. The result was immediately and directly useful to chemistry: several elements were known, from their chemical properties, to sit in a different order than their measured atomic *masses* would suggest (tellurium and iodine are the classic example — tellurium is heavier but chemically belongs *before* iodine in the periodic table), and Moseley's X-ray frequencies confirmed that atomic *number*, not mass, was the correct ordering quantity in every such case. His data also revealed gaps: no element then known produced the $K_\alpha$ frequency predicted for $Z=43$, $61$, or $75$, and Moseley correctly concluded that these elements simply had not yet been discovered (they are now known as technetium, promethium, and rhenium, the first two of which are so unstable that terrestrial samples are exceedingly rare — technetium, in fact, was not found until 1937, isolated from a cyclotron target and never located naturally). A vacancy at $Z=72$ was, for a decade, the subject of a bitter chemical priority dispute — a French chemist had already claimed the element among the rare earths and named it "celtium" — until 1922, when X-ray measurements at Bohr's institute in Copenhagen showed conclusively that the true element 72 (hafnium) is chemically a heavier relative of zirconium, not a rare earth at all, and had simply been misidentified.
 
@@ -234,13 +239,13 @@ At the optical end of the same physics, {numref}`Figure %s <fig:ch11-discharge-s
 A gas discharge tube with the accelerating voltage, the gas, and the atomic energy-level scheme under control. Excitation happens only at discrete electron energies, and the emitted spectrum is the level diagram read out in light.
 ```
 
-## Lasers
+### Lasers
 
 A further application of atomic energy levels involves the interaction between atoms and light more actively than simple absorption/emission spectroscopy. An atom in an excited state can lose energy in two distinct ways: **spontaneous emission**, in which it decays at a random time with a photon emitted in a random direction (governing ordinary fluorescence and, statistically, the exponential decay laws seen throughout atomic and nuclear physics), and **stimulated emission**, in which a passing photon of exactly the transition energy triggers the atom to emit a second, additional photon that is an exact copy of the first — same energy, direction, phase, and polarization. Einstein first predicted stimulated emission in 1917, well before it could be technologically exploited.
 
 Ordinarily, stimulated emission is masked by the competing process of absorption, since a typical collection of atoms in thermal equilibrium has more atoms in lower-energy states than higher ones. A **laser** (light amplification by stimulated emission of radiation) requires engineering a **population inversion** — an atomic sample with more atoms in a higher-energy state than a lower one, typically achieved by "pumping" atoms into a higher state and relying on an intermediate **metastable state** (one with an anomalously long lifetime against spontaneous decay, because its decay to lower states is forbidden or strongly suppressed by selection rules such as the $\Delta\ell=\pm1$ rule of [Chapter 10](#ch-the-hydrogen-atom)) to accumulate a population large enough to exceed that of the lower lasing level. Once inverted, a single spontaneously emitted photon can trigger a cascade of stimulated emission as it passes back and forth through the gain medium (typically between two mirrors forming an optical cavity), producing an intense, coherent, highly directional, single-wavelength beam — a direct, large-scale, technological manifestation of discrete atomic energy levels and the quantum-mechanical description of light-matter interaction developed across this and the preceding chapters.
 
-### Two Concrete Laser Systems: Helium–Neon and Ruby
+#### Two Concrete Laser Systems: Helium–Neon and Ruby
 
 The **helium–neon (He-Ne) laser**, one of the first lasers built (1961) and still common in classrooms and barcode scanners, illustrates a **four-level scheme**. An electrical discharge through a low-pressure He-Ne gas mixture excites helium atoms into a long-lived metastable state at $20.61\ \text{eV}$ above the helium ground state — too high to decay by any allowed single-photon transition, so helium atoms accumulate there in large numbers, exactly the metastable-state bottleneck described above. That energy happens to very nearly match a neon excited state near $20.66\ \text{eV}$, so an excited helium atom colliding with a ground-state neon atom can transfer its energy directly, exciting the neon (and leaving the helium atom free to be re-excited by the discharge) — helium serves purely as an energy-transfer intermediary, never itself the lasing species. The excited neon atom then undergoes stimulated emission down to a lower excited state, emitting the familiar $632.8\ \text{nm}$ red beam; because that lower level is itself well above the neon ground state and decays away rapidly through further (non-lasing) transitions, it never accumulates a large population, so the population inversion between the upper and lower laser levels is easy to sustain — the defining advantage of a four-level design over a three-level one.
 
@@ -254,7 +259,7 @@ Every ingredient of that description is separately adjustable in {numref}`Figure
 A laser assembled from its parts: a pump, a two- or three-level gain medium, and an optical cavity. Population inversion is displayed directly, so the threshold for lasing can be found by experiment rather than asserted.
 ```
 
-### Worked Example: Population Inversion Requires Active Pumping
+#### Worked Example: Population Inversion Requires Active Pumping
 
 It is worth confirming, numerically, why a population inversion never arises on its own from thermal equilibrium and must be engineered by pumping. In thermal equilibrium at temperature $T$, the ratio of the number of atoms in an upper state (energy $E_2$) to a lower state (energy $E_1$) is set by the Boltzmann factor,
 
@@ -270,7 +275,7 @@ $$
 
 Out of every $10^{30}$ or so chromium ions in thermal equilibrium, essentially none sit in the upper laser level — an inversion ($N_2 > N_1$) is not just unlikely but is astronomically, hopelessly far from anything thermal equilibrium could ever produce at ordinary temperature. This is precisely why a laser requires an external pump (an intense flash lamp, an electrical discharge, or another laser) to force the population far out of thermal equilibrium, and why, once the pump is switched off, the inverted population decays and lasing stops — a laser is fundamentally a *driven*, non-equilibrium device, not a system that has simply been heated.
 
-### Applications: Lasers in Technology and Medicine
+#### Applications: Lasers in Technology and Medicine
 
 The properties that make a laser beam distinctive — a single, precisely defined wavelength; a high degree of spatial coherence, allowing the beam to be focused to a tiny spot or to travel long distances with little spreading; and a high degree of temporal coherence, permitting long coherence lengths ([Chapter 4](#ch-interference-of-light)) — underlie applications far removed from the gas-discharge tubes and ruby rods described above. **Fiber-optic communication**, the physical backbone of the modern internet, encodes digital data as pulses from semiconductor **diode lasers** (a solid-state laser design, distinct from both examples above, in which the population inversion is created electrically across a semiconductor junction rather than by an optical pump) sent down thin glass fibers by total internal reflection; the laser's narrow wavelength spread keeps different colors of light traveling through the same fiber from smearing into one another over long distances, allowing enormous data rates over transoceanic distances. **Laser cooling**, by contrast, exploits the momentum $p=h/\lambda$ carried by individual photons ([Chapter 6](#ch-particle-properties-of-waves)): a beam tuned just below an atom's resonant absorption frequency preferentially scatters off atoms moving *toward* the beam (Doppler-shifted into resonance), each absorption event imparting a momentum kick that opposes the atom's motion, and repeated scattering from beams in multiple directions can cool a dilute atomic gas to temperatures of a microkelvin or below — a technique essential to modern atomic clocks and to the experimental study of quantum gases. In medicine, lasers are used both destructively, where a tightly focused, high-intensity beam cuts or cauterizes tissue with a precision unavailable to a mechanical scalpel (as in some ophthalmic and dermatological surgery), and diagnostically, where the coherence and narrow linewidth of laser light are exploited in optical coherence tomography to image tissue structure with micrometer resolution — different laser properties from the list above put to work in each case.
 

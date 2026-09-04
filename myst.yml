@@ -92,7 +92,8 @@ site:
     logo_url: /
     # Single-author book: the per-page byline is noise.
     hide_authors: true
-    # Chapters use ## and ### only; depth 2 keeps the right-hand outline short.
+    # Chapters number ## reading sections (N.1, N.2, …); depth 2 keeps the
+    # right-hand outline to those assignable units (plus Summary / Problems).
     outline_maxdepth: 2
     # Hides the static simulation screenshots on screen and swaps them back in
     # for print; see plugins/simulation.mjs.

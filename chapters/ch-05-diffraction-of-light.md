@@ -4,9 +4,10 @@ short_title: Chapter 5. Diffraction of Light
 label: ch-diffraction-of-light
 numbering:
   enumerator: "5.%s"
+  heading_2: true
 ---
 
-## Learning Objectives
+### Learning Objectives
 
 By the end of this chapter, you should be able to:
 
@@ -21,7 +22,7 @@ By the end of this chapter, you should be able to:
 - Describe how a hologram records and reconstructs a wavefront, and explain why it requires a coherent source.
 - Use single-slit diffraction to make a first, order-of-magnitude argument for the uncertainty principle of [Chapter 7](#ch-wave-properties-of-particles).
 
-## Introduction
+### Introduction
 
 In 1818 the French Academy of Sciences held a prize competition on the nature of light. Augustin-Jean Fresnel submitted a wave theory. Siméon Denis Poisson, a member of the judging committee and a convinced supporter of Newton's particle theory, worked through Fresnel's mathematics and triumphantly produced what he took to be its refutation: if Fresnel were right, then the shadow of a small circular disk, illuminated by a point source, would have a *bright spot at its exact center* — light would diffract around the rim, arrive at the axis having traveled equal distances from every point of that rim, and interfere constructively. The prediction was patently ridiculous.
 
@@ -31,7 +32,9 @@ That bright point — now called the Poisson spot, or the Arago spot, depending 
 
 [Chapter 4](#ch-interference-of-light) worked with idealized slits: point-like Huygens sources, infinitesimally narrow, contributing one wavelet apiece. A real slit has a finite width $a$, and *every* point across that width emits a wavelet. Summing those contributions is the whole subject of this chapter. Three results follow, in increasing order of consequence. First, a single slit, all by itself, produces a pattern of bright and dark bands. Second, real multiple-slit devices — above all the diffraction grating — combine the sharp interference maxima of [Chapter 4](#ch-interference-of-light) with a diffraction envelope that decides how bright each of those maxima actually is. Third, and most importantly, because every real optical instrument gathers light through an aperture of finite size, diffraction sets an absolute limit on the fineness of detail any instrument can resolve — a limit that no improvement in polishing, alignment, or manufacture can evade, because it is imposed by the wavelength of light itself.
 
-## Diffraction Versus Interference: A Note on Words
+## Diffraction Basics and the Single Slit
+
+### Diffraction Versus Interference: A Note on Words
 
 It is worth settling a piece of vocabulary that causes more confusion than it should.
 
@@ -39,7 +42,7 @@ There is no physical distinction between interference and diffraction. Both are 
 
 The reason the distinction survives is practical. In a real double slit there are two length scales — the slit separation $d$ and the slit width $a$, with $d > a$ — and they produce structure on two very different angular scales. Calling the fine structure "interference" and the coarse envelope "diffraction" is a convenient way to keep track of which is which. That is all it is.
 
-## The Huygens–Fresnel Principle
+### The Huygens–Fresnel Principle
 
 Fresnel's contribution was to make Huygens's construction quantitative. Where Huygens drew an envelope of wavelets, Fresnel insisted on *adding the wavelets as waves, with their phases*, and then squaring the result to get an intensity. Stated for an aperture:
 
@@ -47,7 +50,7 @@ Fresnel's contribution was to make Huygens's construction quantitative. Where Hu
 
 This **Huygens–Fresnel principle** reproduces the results of [Chapter 4](#ch-interference-of-light) when the aperture is a set of very narrow slits, and everything in this chapter when it is not. The sum becomes an integral, but the physics — add fields, account for phase, then square — is unchanged.
 
-### Near Field and Far Field
+#### Near Field and Far Field
 
 Whether the sum is easy or hard depends on the geometry, and the distinction matters enough to have names.
 
@@ -71,7 +74,7 @@ where $a$ is the aperture size and $L$ the aperture-to-screen distance. Fraunhof
 Joseph von Fraunhofer, the optician whose name now labels the entire far-field regime, made his most consequential discovery almost as a side effect. Testing prism spectrometers around 1814, he noticed that the Sun's spectrum was crossed by hundreds of sharp dark lines at fixed wavelengths — the Fraunhofer lines — and went on to rule some of the first precision diffraction gratings by hand, specifically to measure those wavelengths accurately. Decades later, Gustav Kirchhoff and Robert Bunsen explained the lines as absorption by specific elements in the Sun's outer atmosphere, founding the science of spectroscopy that the diffraction grating, later in this chapter, still serves.
 :::
 
-## Single-Slit Diffraction
+### Single-Slit Diffraction
 
 Consider a slit of width $a$ illuminated by a plane wave of wavelength $\lambda$, with a distant screen. The clever step, due to Fresnel, is not to attempt the whole sum at once but to ask a narrower question: *in which directions does everything cancel?*
 
@@ -100,7 +103,7 @@ Two things about this formula regularly trip people up, and both are worth stati
 
 **$m = 0$ is excluded.** At $\theta = 0$ every point of the slit is in phase with every other, so the wavelets add rather than cancel — there is nothing to pair against. The center of the pattern is a broad, bright **central maximum**, not a minimum. Formally, the pairing argument demands a path difference of $\lambda/2$ within each pair, and $\theta = 0$ supplies a path difference of zero.
 
-### The Width of the Central Maximum
+#### The Width of the Central Maximum
 
 The central maximum is bounded by the first minima on either side, at $\sin\theta = \pm\lambda/a$. Its angular half-width is therefore
 
@@ -130,7 +133,7 @@ The inverse relationship between the aperture and its pattern is worth seeing ra
 An aperture and the far-field diffraction pattern it produces, with aperture size, shape, and wavelength adjustable. Everything narrow in the aperture is wide in the pattern, and vice versa — the $\theta_1 \approx \lambda/a$ scaling of this section, seen whole rather than one angle at a time.
 ```
 
-### Worked Example: Width of the Central Maximum
+#### Worked Example: Width of the Central Maximum
 
 A slit of width $a = 0.0400\ \text{mm}$ is illuminated with $\lambda = 580\ \text{nm}$ light, and the pattern is observed on a screen $L = 2.00\ \text{m}$ away. Find the width of the central maximum.
 
@@ -154,13 +157,15 @@ $$
 
 Check the trend: halving the slit width to $0.0200\ \text{mm}$ would double this to $11.6\ \text{cm}$.
 
-### Worked Example: A Slit Too Narrow to Have Minima
+#### Worked Example: A Slit Too Narrow to Have Minima
 
 At what slit width does the first minimum disappear entirely, for $\lambda = 580\ \text{nm}$?
 
 The first minimum requires $\sin\theta_1 = \lambda/a \le 1$, so it exists only if $a \ge \lambda = 580\ \text{nm}$. A slit narrower than one wavelength produces a smooth, minimum-free spread of light across the whole forward direction. Slits this narrow are difficult to make and transmit very little light, which is why the textbook idealization of a "point source slit" is easier to draw than to build — and why real double-slit experiments always show the envelope discussed below.
 
-## Intensity in Single-Slit Diffraction
+## Intensity Patterns and the Double Slit
+
+### Intensity in Single-Slit Diffraction
 
 The pairing argument gives the zeros; getting the full curve requires actually doing the sum. The phasor picture of [Chapter 4](#ch-interference-of-light) makes this almost graphical.
 
@@ -214,7 +219,7 @@ Three checks confirm this is the right answer:
 Single-slit diffraction intensity. The central maximum is twice as wide as the side lobes and vastly brighter — the first side lobe reaches only $4.7\%$ of the peak, so it is shown here magnified $20\times$. The strip above shows the pattern as it appears on a screen, with faint bands brightened so they reproduce. Generated with matplotlib; see `scripts/figures/`.
 ```
 
-### The Secondary Maxima
+#### The Secondary Maxima
 
 Where are the maxima between the zeros? Setting $\mathrm{d}I/\mathrm{d}\beta = 0$ gives the transcendental condition $\tan(\beta/2) = \beta/2$, which has no closed-form solution. Solving numerically puts the secondary maxima at
 
@@ -230,7 +235,7 @@ $$
 
 of $I_0$, falling off roughly as $1/m^2$. This is why a single-slit pattern does not look like a row of comparable fringes at all: it looks like one dominant bright band, flanked by faint ripples that most observers overlook entirely. It is also why {numref}`Figure %s <fig:ch05-single-slit-intensity>` has to magnify them $20\times$ before they are visible on the page.
 
-## Double-Slit Diffraction: Both Effects Together
+### Double-Slit Diffraction: Both Effects Together
 
 Now put the two chapters together. A *real* double slit consists of two openings, each of finite width $a$, whose centers are separated by $d > a$. Both effects operate at once, and — because the field from each slit is the single-slit field, and the two slits then interfere — the intensities simply multiply:
 
@@ -247,7 +252,7 @@ Since $d > a$, the $\cos^2$ factor oscillates rapidly and the $\mathrm{sinc}^2$ 
 A real double slit with $d = 5a$. The rapid $\cos^2$ fringes are set by the slit separation $d$; the dashed envelope is the single-slit $\mathrm{sinc}^2$ pattern set by the slit width $a$. Orders $m = \pm5$ and $\pm10$ vanish because they coincide with zeros of the envelope. Generated with matplotlib; see `scripts/figures/`.
 ```
 
-### Missing Orders
+#### Missing Orders
 
 The striking feature of {numref}`Figure %s <fig:ch05-double-slit>` is that some interference maxima are simply absent. An interference maximum at $d\sin\theta = m\lambda$ is wiped out if a diffraction minimum, $a\sin\theta = m'\lambda$, falls at the same angle. Dividing one condition by the other, this happens when
 
@@ -259,7 +264,7 @@ that is, whenever $m\,(a/d)$ is an integer. If $d/a$ is itself an integer, every
 
 **Missing orders are a measurement, not a curiosity.** Counting how many interference fringes fit inside the central diffraction maximum tells you $d/a$ directly, without measuring either $d$ or $a$: the central envelope spans $|\sin\theta| < \lambda/a$ and fringes are spaced by $\lambda/d$ in $\sin\theta$, so the visible orders are those with $|m| \le d/a - 1$ — that is, $2(d/a) - 1$ bright fringes inside the central envelope, with the orders at $|m| = d/a$ missing at its edges. Looking at a laboratory double-slit pattern and counting bright fringes between the first envelope zeros is therefore a genuine measurement of a ratio of two dimensions far too small to measure with a ruler.
 
-### Worked Example: Reading a Double-Slit Pattern
+#### Worked Example: Reading a Double-Slit Pattern
 
 A double slit has slit width $a = 0.0200\ \text{mm}$ and separation $d = 0.100\ \text{mm}$, illuminated at $\lambda = 633\ \text{nm}$. (a) Which orders are missing? (b) How many bright fringes lie inside the central diffraction maximum? (c) Find the angular width of the central envelope.
 
@@ -281,7 +286,7 @@ $$
 
 with $d$ the spacing between adjacent rulings; their width scales as $1/N$ and their peak intensity as $N^2$. What is new is only that $N$ is now enormous — a $1\ \text{cm}$ beam on a grating with $600$ lines per millimeter illuminates $6000$ lines at once — so the maxima are not fringes but needle-sharp spectral lines. And of course the finite width of each ruling imposes a diffraction envelope, exactly as for the double slit, so some orders are weak or missing. (Precision gratings are *blazed*: each groove is cut at an angle chosen to steer the envelope's peak into a chosen order, so that most of the light ends up where it is wanted rather than in the useless $m = 0$ direction.)
 
-### Dispersion
+#### Dispersion
 
 Because the diffraction angle depends on $\lambda$, a grating spreads white light into a spectrum — one spectrum per order, on each side of the center. Differentiating the grating equation gives the **angular dispersion**
 
@@ -297,7 +302,7 @@ Since $|\sin\theta| \le 1$, the highest order available is $m_{\max} = \lfloor d
 Before trusting any computed grating or Bragg angle, check that the sine you solved for is actually $\le 1$. Both $d\sin\theta = m\lambda$ and $n\lambda = 2d\sin\theta$ are linear in the order and carry no built-in ceiling, so plugging in one order too many silently returns a mathematically valid but physically nonexistent angle. Get in the habit of computing $m_{\max} = \lfloor d/\lambda\rfloor$ (or $n_{\max} = \lfloor 2d/\lambda\rfloor$ for Bragg reflection, later in this chapter) *before* solving for individual angles, so you already know which orders exist.
 :::
 
-### Resolving Power
+#### Resolving Power
 
 The property that makes gratings scientific instruments rather than ornaments is their **resolving power**: the ability to display two nearly equal wavelengths as two separate lines rather than one blur.
 
@@ -318,7 +323,7 @@ $$
 Resolving the sodium doublet ($589.0$ and $589.6$ nm) in first order. With too few illuminated lines the two principal maxima are broader than their separation and merge into one feature. At $N = 982$, $R = mN$ equals $\lambda/\Delta\lambda$ and the peak of one line falls on the first zero of the other — the Rayleigh criterion. With $N = 3000$ the lines are cleanly separated. Generated with matplotlib; see `scripts/figures/`.
 ```
 
-### Worked Example: Resolving the Sodium Doublet
+#### Worked Example: Resolving the Sodium Doublet
 
 The **sodium doublet** — the pair of yellow lines responsible for the color of a sodium street lamp — consists of lines at $\lambda_1 = 589.0\ \text{nm}$ and $\lambda_2 = 589.6\ \text{nm}$. How many grating lines must be illuminated to resolve them in first order?
 
@@ -336,7 +341,7 @@ $$
 
 On a grating with $600$ lines per millimeter this needs a beam only $1.64\ \text{mm}$ wide — trivially met by any laboratory setup, which is why the sodium doublet is a standard first-week demonstration. In second order only $491$ lines would be needed. By contrast, resolving the hyperfine structure *within* one of those lines, where $\Delta\lambda \sim 2\times10^{-5}\ \text{nm}$, would demand $R \sim 3\times10^7$ — far beyond any ruled grating, and the reason such measurements use interferometric methods instead.
 
-### Worked Example: A Grating Spectrum
+#### Worked Example: A Grating Spectrum
 
 A transmission grating has $5000$ lines per centimeter. (a) Find the line spacing. (b) Find the angle of the first-order maximum for $\lambda = 500\ \text{nm}$. (c) Find the highest observable order. (d) Find the angular separation between the $486\ \text{nm}$ and $656\ \text{nm}$ hydrogen lines in first order.
 
@@ -348,7 +353,9 @@ A transmission grating has $5000$ lines per centimeter. (a) Find the line spacin
 
 **(d)** $\theta(486\ \text{nm}) = \arcsin(0.243) = 14.06°$ and $\theta(656\ \text{nm}) = \arcsin(0.328) = 19.14°$, a separation of $5.08°$. A grating spreads the visible spectrum over several degrees in first order — enough to project a spectrum across a wall.
 
-## Circular Apertures and the Limits of Resolution
+## Resolution, Bragg Diffraction, and Holography
+
+### Circular Apertures and the Limits of Resolution
 
 Every real optical instrument — a camera lens, a telescope mirror, a microscope objective, the pupil of the eye — collects light through a *circular* aperture of diameter $D$. Its diffraction pattern is the circular analog of the single-slit pattern: a bright central disk, the **Airy disk**, surrounded by faint concentric rings.
 
@@ -382,7 +389,7 @@ $$
 The extra factor, compared with a slit's plain $\lambda/D$, is a purely geometric consequence of integrating over a disk rather than a line. No new physics enters — only a different shape of aperture.
 :::
 
-### The Rayleigh Criterion
+#### The Rayleigh Criterion
 
 Two distant point sources — two stars, or two features on a microscope slide — each produce their own Airy pattern in the image. If the sources are close together in angle, the two patterns overlap and merge into a single blob. Lord Rayleigh proposed a workable convention for where to draw the line: two sources are **just resolved** when the center of one Airy disk falls on the first dark ring of the other. That is, when their angular separation equals
 
@@ -403,7 +410,7 @@ The crucial thing about the Rayleigh criterion is its universality. It applies t
 
 Both levers are pulled hard in practice. Telescopes get larger, and radio astronomers link dishes thousands of kilometers apart to synthesize an aperture the size of the Earth. Photolithography, which prints circuit features by projecting a mask onto a silicon wafer, has driven its light source from visible wavelengths down through deep ultraviolet to today's extreme-ultraviolet at $13.5\ \text{nm}$ for exactly this reason. And electron microscopy takes the argument to its conclusion by abandoning light altogether in favor of electron matter waves whose wavelength ([Chapter 7](#ch-wave-properties-of-particles)) can be a hundred thousand times shorter than visible light.
 
-### Worked Example: The Hubble Space Telescope
+#### Worked Example: The Hubble Space Telescope
 
 The Hubble Space Telescope has a primary mirror of diameter $D = 2.4\ \text{m}$. (a) Estimate its diffraction-limited resolution at $\lambda = 550\ \text{nm}$. (b) What is the smallest feature it could resolve on the Moon, $3.84\times10^8\ \text{m}$ away?
 
@@ -421,7 +428,7 @@ $$
 
 Hubble could not photograph the Apollo landing sites; the largest hardware left there is a few meters across. The limitation is not the telescope's quality but its aperture, and no amount of image processing changes the fact that the information never entered the instrument.
 
-### Worked Example: The Eye, and Why Ground Telescopes Are Different
+#### Worked Example: The Eye, and Why Ground Telescopes Are Different
 
 **(a)** The pupil of the eye is about $D = 4.0\ \text{mm}$ in ordinary lighting. Its diffraction limit at $\lambda = 550\ \text{nm}$ is
 
@@ -435,7 +442,7 @@ At a reading distance of $25\ \text{cm}$ this corresponds to $s = (1.68\times10^
 
 This example is worth keeping in mind whenever a diffraction limit is quoted: it is a ceiling on performance, not a promise of it.
 
-## X-Ray Diffraction and Bragg's Law
+### X-Ray Diffraction and Bragg's Law
 
 Gratings work because their line spacing is comparable to the wavelength of the light. To probe the arrangement of atoms in a solid, spaced a few tenths of a nanometer apart, we would need a grating with that spacing — and nature supplies one, in the form of a crystal, provided we bring a wave with a matching wavelength. That means **X-rays**, with $\lambda \sim 0.1\ \text{nm}$.
 
@@ -483,7 +490,7 @@ screen is the direct companion to Bragg's law — it is where the planes of
 spacing $d$ come from.
 ```
 
-### Worked Example: An Interplanar Spacing
+#### Worked Example: An Interplanar Spacing
 
 X-rays of wavelength $\lambda = 0.154\ \text{nm}$ (the copper $K_\alpha$ line, the workhorse of laboratory diffractometers) produce a first-order Bragg reflection at $\theta = 22.5°$. Find the spacing of the reflecting planes, and find where the second-order reflection appears.
 
@@ -501,13 +508,13 @@ $$
 
 Note that a third order would require $\sin\theta_3 = 1.149 > 1$: with this wavelength and this spacing, only two orders exist. Requiring $n\lambda \le 2d$ also shows why X-rays are essential — with visible light, $\lambda \gg 2d$ and *no* order exists at all, which is exactly why crystals look like ordinary transparent solids rather than gratings.
 
-### Not Just X-Rays
+#### Not Just X-Rays
 
 Bragg's law contains no reference to what kind of wave is diffracting. Any wave whose wavelength is comparable to the interplanar spacing will do — and by the time you reach [Chapter 7](#ch-wave-properties-of-particles), you will know that electrons and neutrons are such waves.
 
 That is not a rhetorical flourish; it is the historical route by which matter waves were confirmed. In 1927 Clinton Davisson and Lester Germer fired low-energy electrons at a nickel crystal and found the scattered intensity peaking at exactly the angles Bragg's law predicts, for a wavelength matching de Broglie's $\lambda = h/p$. Neutron diffraction, which is sensitive to light atoms in a way X-rays are not, is now the standard way to locate hydrogen in a crystal structure and to map magnetic ordering. The same equation, first written for X-rays, ended up as one of the sharpest pieces of evidence for the wave nature of matter.
 
-## Holography
+### Holography
 
 An ordinary photograph records intensity and throws away phase, which is why it is flat: all the information about the *shape* of the wavefront arriving from the scene is lost. A **hologram**, invented by Dennis Gabor in 1947, records the phase as well — by the only means available, namely by converting phase differences into intensity differences through interference.
 
@@ -517,7 +524,7 @@ The reconstruction step is pure diffraction. Illuminate the developed film with 
 
 Two properties follow directly from this account. First, holography demands a source with a coherence length longer than the depth of the scene, which is why it was impossible before the laser and why Gabor's original demonstrations were so limited. Second, every part of the hologram receives light from every part of the object, so a hologram cut in half still reconstructs the whole scene — from a smaller effective aperture, and therefore, by the Rayleigh criterion, with correspondingly poorer resolution.
 
-## Looking Ahead: Diffraction and the Uncertainty Principle
+### Looking Ahead: Diffraction and the Uncertainty Principle
 
 There is one more thing to extract from single-slit diffraction, and it is the reason this chapter belongs in a book on modern physics.
 

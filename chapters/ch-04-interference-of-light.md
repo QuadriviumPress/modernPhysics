@@ -4,9 +4,10 @@ short_title: Chapter 4. Interference of Light
 label: ch-interference-of-light
 numbering:
   enumerator: "4.%s"
+  heading_2: true
 ---
 
-## Learning Objectives
+### Learning Objectives
 
 By the end of this chapter, you should be able to:
 
@@ -21,7 +22,7 @@ By the end of this chapter, you should be able to:
 - Apply the thin-film interference conditions, correctly counting the $\pi$ phase shift on reflection from a higher-index medium, to soap films, antireflection coatings, air wedges, and Newton's rings.
 - Describe the operation of the Michelson interferometer, convert a mirror displacement into a fringe count, and connect the instrument to the Michelson–Morley experiment of [Chapter 1](#ch-need-for-relativity).
 
-## Introduction
+### Introduction
 
 Chapters [1](#ch-need-for-relativity)–[3](#ch-relativistic-dynamics) built special relativity from a single empirical fact: every inertial observer measures the same speed $c$ for light. That argument treated light purely as a *signal*, without asking what, physically, is doing the propagating. Maxwell's equations answer that question: light is an electromagnetic wave — a self-sustaining, traveling disturbance of the electric and magnetic fields. If that is right, then light must do what every other wave does. It must **interfere**: two overlapping light waves must be able to reinforce each other in some places and cancel each other in others. And it must **diffract**: it must bend around obstacles and spread out after passing through an aperture, instead of casting perfectly sharp geometric shadows.
 
@@ -29,7 +30,9 @@ Neither effect is part of ordinary experience. Shadows do look sharp. Light does
 
 Thomas Young did exactly that in 1801. He passed light from a single source through two closely spaced slits and found, on a distant screen, not two bright bands but a whole series of alternating bright and dark fringes. There is no way to get dark bands by adding light to light in a particle picture: two streams of corpuscles cannot cancel. In a wave picture the explanation is immediate, quantitative, and gives the wavelength of the light as a bonus. This chapter develops that treatment carefully, and the next takes up the closely related phenomenon of diffraction. Together they put the wave nature of light on the same firm experimental footing that Chapters [1](#ch-need-for-relativity)–[3](#ch-relativistic-dynamics) gave to the constancy of its speed — which makes it all the more startling when [Chapter 6](#ch-particle-properties-of-waves) shows that light *also* behaves as a stream of particle-like quanta, and that Newton was not simply wrong.
 
-## Light as an Electromagnetic Wave
+## Waves, Huygens's Principle, and Superposition
+
+### Light as an Electromagnetic Wave
 
 Everything in this chapter follows from one picture of what light is, so it is worth stating carefully before using it.
 
@@ -85,7 +88,7 @@ The picture behind all of this — a transverse electric field, a magnetic field
 A monochromatic electromagnetic wave with its electric and magnetic fields drawn perpendicular to each other and to the direction of propagation. Later screens send the wave through polarizers and birefringent plates, where two components of one wave are given different optical paths — the same mechanism as the thin films of this chapter, applied to polarization rather than to geometry.
 ```
 
-## Why Wave Effects Are So Hard to See
+### Why Wave Effects Are So Hard to See
 
 Before doing any interference calculation, it pays to understand why nobody notices these effects while walking around. The argument is a scaling argument, and it requires almost no algebra.
 
@@ -107,7 +110,7 @@ So wave optics does not contradict the ray optics of an introductory course; it 
 
 The practical lesson is simple: to see interference and diffraction, build apertures no more than a few hundred wavelengths across — that is, tenths of a millimeter or smaller. Young's achievement was in large part an achievement of craftsmanship.
 
-## Huygens's Principle
+### Huygens's Principle
 
 **Huygens's principle** (1678) states that *every point on a wavefront may be treated as a source of secondary spherical wavelets, spreading out at the wave's speed; the wavefront at a later time is the envelope — the surface tangent to all of these wavelets.*
 
@@ -122,7 +125,7 @@ Huygens's construction. (a) Each point of a wavefront emits a spherical wavelet;
 
 Two honest caveats. First, taken literally the construction also predicts a backward-traveling wave, which does not exist; Fresnel and later Kirchhoff repaired this by attaching an *obliquity factor* to each wavelet that suppresses backward emission, and by insisting that the wavelets be added *with their phases* rather than merely enveloped. That upgraded version — the Huygens–Fresnel principle — is the tool of [Chapter 5](#ch-diffraction-of-light). Second, Huygens's principle by itself says nothing about intensity. To get intensities we need the superposition principle, which is where we turn next.
 
-## Superposition: Turning Path Difference into Phase Difference
+### Superposition: Turning Path Difference into Phase Difference
 
 The **superposition principle** states that when two or more waves overlap, the resulting disturbance at each point and each instant is the *sum* of the individual disturbances. For light this is a consequence of the linearity of Maxwell's equations in vacuum and in ordinary transparent materials: fields add, and they add as vectors.
 
@@ -152,7 +155,7 @@ Three sources of phase difference will appear in this chapter, and it is worth n
 
 Every interference problem in this chapter is solved by totaling these three contributions and asking whether the total is an even or an odd multiple of $\pi$.
 
-### Worked Example: From Path Difference to Brightness
+#### Worked Example: From Path Difference to Brightness
 
 Two identical, in-step sources emit light of wavelength $\lambda = 500\ \text{nm}$. At a particular point the waves have traveled distances differing by $\Delta r = 1.25\ \mu\text{m}$. Is that point bright or dark?
 
@@ -166,7 +169,9 @@ The path difference is two and a half wavelengths — a half-integer number — 
 
 Now suppose the whole region between the sources and that point is filled with water, $n = 1.33$, without moving anything. The geometric path difference is unchanged, but the wavelength in the water is $\lambda_n = (500\ \text{nm})/1.33 = 376\ \text{nm}$, so the path difference is now $(1250\ \text{nm})/(376\ \text{nm}) = 3.32$ wavelengths and the point is neither fully bright nor fully dark. Immersing an interference experiment in a medium genuinely changes the pattern; it does not merely rescale the brightness.
 
-## Young's Double-Slit Experiment
+## Young's Double Slit and Coherence
+
+### Young's Double-Slit Experiment
 
 Young's arrangement is shown in {numref}`Figure %s <fig:ch04-double-slit>`. Light from a source passes first through a *single* narrow slit, then through *two* narrow slits separated by a distance $d$, and finally falls on a screen a distance $L$ away.
 
@@ -183,7 +188,7 @@ The first slit is not decoration. Its job is to guarantee that a single wavefron
 Young's actual 1801–1803 experiments looked little like the tidy two-slit diagram of {numref}`Figure %s <fig:ch04-double-slit>`. He first produced two coherent beams by letting sunlight through a single pinhole fall on the two edges of a thin card held edge-on in the beam, and only later described the equivalent double-slit arrangement in print. Manufacturing two slits narrow and close enough to show clean fringes was, at the time, a serious feat of craftsmanship; Augustin-Jean Fresnel, extending the work a decade later, devised alternative ways to split a single wavefront — his double mirror, and his biprism, a single piece of glass ground into two shallow prisms back to back — that avoided a fragile double slit altogether while producing exactly the same fringe pattern. The physics is identical in all three arrangements: what matters is only that two coherent virtual sources end up separated by a controllable distance $d$.
 :::
 
-### The Path Difference
+#### The Path Difference
 
 Consider a point $P$ on the screen, at angle $\theta$ from the central axis. Light reaching $P$ from $S_2$ has traveled farther than light from $S_1$. Because $L \gg d$ in any practical apparatus — $d$ is tens of micrometers, $L$ is a meter or more — the two rays heading for $P$ are very nearly parallel, and the geometry collapses to the small right triangle of {numref}`Figure %s(b) <fig:ch04-double-slit>`: drop a perpendicular from $S_1$ onto the ray from $S_2$, and the extra leg is
 
@@ -203,7 +208,7 @@ $$
 
 The integer $m$ is the **order** of the fringe. The $m = 0$ bright fringe sits on the axis, where the two paths are exactly equal; note that its position does not depend on $\lambda$, so in white light the central fringe is white while all the others are spread into little spectra.
 
-### Fringe Positions on the Screen
+#### Fringe Positions on the Screen
 
 For small angles — again, the usual case — $\sin\theta \approx \tan\theta \approx y/L$, where $y$ is measured on the screen from the central axis. The bright fringes then fall at
 
@@ -240,7 +245,7 @@ $$
 
 so a double slit produces a finite number of orders — a point that becomes important for diffraction gratings in [Chapter 5](#ch-diffraction-of-light).
 
-### Worked Example: Wavelength from Fringe Spacing
+#### Worked Example: Wavelength from Fringe Spacing
 
 Slits separated by $d = 0.200\ \text{mm}$ are illuminated by a laser, and the resulting fringes on a screen $L = 2.00\ \text{m}$ away are found to be spaced $\Delta y = 6.50\ \text{mm}$ apart. Find the laser wavelength.
 
@@ -252,7 +257,7 @@ $$
 
 consistent with a red helium–neon or diode laser. Note the sizes of the quantities involved: a $650\ \text{nm}$ wavelength has been measured with a millimeter ruler, because the apparatus magnifies the wavelength by the factor $L/d = 10^4$.
 
-### Worked Example: Fringe Angles, Positions, and Count
+#### Worked Example: Fringe Angles, Positions, and Count
 
 A double slit with $d = 0.100\ \text{mm}$ is illuminated with the green line of a mercury lamp, $\lambda = 546\ \text{nm}$, and the screen is $L = 1.20\ \text{m}$ away. (a) Find the angle to the third-order bright fringe. (b) Find the fringe spacing on the screen. (c) How many bright fringes appear on a screen $5.0\ \text{cm}$ wide, centered on the axis? (d) How many orders exist in principle?
 
@@ -274,7 +279,7 @@ $$
 
 **(d)** In principle, $|m| \le d/\lambda = (1.00\times10^{-4}\ \text{m})/(546\times10^{-9}\ \text{m}) = 183$. The far orders are useless in practice — they lie at large angles where the small-angle formula fails, and (as [Chapter 5](#ch-diffraction-of-light) shows) the finite width of real slits has long since dimmed them to nothing — but the counting matters for gratings.
 
-### Worked Example: The Same Experiment Under Water
+#### Worked Example: The Same Experiment Under Water
 
 The apparatus of the previous example is submerged in water, $n = 1.33$, source and screen included. What happens to the fringe spacing?
 
@@ -286,7 +291,7 @@ $$
 
 The pattern contracts by the factor $n$. This is a genuinely useful check on understanding: it is the wavelength *where the interference happens* that sets the scale, and that is also why the thin-film formulas below carry a factor of $n_{\text{film}}$.
 
-## Coherence
+### Coherence
 
 Young's experiment works only because both slits are carved out of the *same* wavefront, so the light leaving them keeps a fixed phase relationship. Try the experiment with two separate light bulbs and you see nothing but a uniformly lit screen. The reason is not that light bulbs are dim; it is that they are **incoherent**.
 
@@ -301,7 +306,7 @@ Coherence. An ideal source (top) maintains a predictable phase indefinitely. A r
 
 Two independent sources therefore do produce an interference pattern — but a different one every few nanoseconds, in a random new position each time. Averaged over the nanoseconds to milliseconds that any real detector needs, the fringes wash out completely and the intensities simply add. The pattern is not weak; it is scrambled.
 
-### Temporal Coherence, Coherence Time, and Coherence Length
+#### Temporal Coherence, Coherence Time, and Coherence Length
 
 Two quantities measure how long a source stays predictable:
 
@@ -339,13 +344,13 @@ $$
 
 White light gives you two or three fringes — which is exactly what Young saw, and exactly why the colored fringes of a soap bubble are confined to a film only a few wavelengths thick. A helium–neon laser gives several hundred thousand.
 
-### Spatial Coherence
+#### Spatial Coherence
 
 Temporal coherence is about a single point in the beam staying predictable *over time*. **Spatial coherence** is about two *different* points across the beam having a fixed phase relationship *at the same time*, and it is what Young's first slit provides. An extended source — the Sun's disk, a broad filament — has poor spatial coherence, because light arriving at $S_1$ and light arriving at $S_2$ come from different, unrelated emitters. Passing the light through a pinhole first discards almost all of it but leaves what remains spatially coherent, since it all now originates from a region small enough to act as a single point.
 
 A laser is coherent in both senses at once, which is why a laser pointer and a pair of razor-blade slits reproduce in seconds an experiment that took Young considerable ingenuity.
 
-### Worked Example: Will the Fringes Survive?
+#### Worked Example: Will the Fringes Survive?
 
 A Michelson interferometer (below) has arms differing in length by $\Delta L = 5.0\ \text{cm}$, so the two recombining beams differ in path by $2\Delta L = 10\ \text{cm}$. Will fringes be visible with (a) a filtered sodium lamp, (b) a helium–neon laser?
 
@@ -355,7 +360,9 @@ A Michelson interferometer (below) has arms differing in length by $\Delta L = 5
 
 This is not a contrived exercise. Michelson had to keep his arms equal to within a fraction of a millimeter precisely because his sodium light had a coherence length of well under a millimeter — a serious experimental constraint in 1887, and one that vanished with the invention of the laser.
 
-## Intensity: Adding Fields as Phasors
+## Intensity and Multiple Slits
+
+### Intensity: Adding Fields as Phasors
 
 The conditions derived so far locate the bright and dark fringes but say nothing about the brightness in between. To get the full pattern we must add the two waves properly, and the most convenient bookkeeping for that is the **phasor**.
 
@@ -368,7 +375,7 @@ Because both waves have the same frequency, their relative phase does not change
 Phasor addition. (a) Two equal phasors separated by $\phi$ form an isosceles triangle whose base is the resultant, $E = 2E_0\cos(\phi/2)$. (b) With $N$ slits and $\phi = 0$ all the phasors line up, giving $E = NE_0$ and hence $I = N^2I_1$. (c) When $\phi = 2\pi/N$ the chain closes on itself and the resultant vanishes — the first zero, at only $1/N$ of the way to the next principal maximum. Original schematic generated with matplotlib; see `scripts/figures/`.
 ```
 
-### Two Slits
+#### Two Slits
 
 For the double slit, two phasors of equal length $E_0$ are separated by the angle
 
@@ -397,7 +404,7 @@ The result is plotted in {numref}`Figure %s <fig:ch04-two-slit-intensity>`. It r
 Two-slit intensity, $I = I_0\cos^2(\pi d\sin\theta/\lambda)$, with the corresponding fringe pattern above. All the maxima have the same height and the fringes are evenly spaced — a signature of ideal, infinitesimally narrow slits. Real slits impose the envelope derived in [Chapter 5](#ch-diffraction-of-light). Generated with matplotlib; see `scripts/figures/`.
 ```
 
-### Where Does the Extra Light Come From?
+#### Where Does the Extra Light Come From?
 
 The central maximum has intensity $I_0 = 4I_1$: four times what *one* slit would deliver, not twice. Students often find this alarming, and they should — until they check the energy budget.
 
@@ -411,7 +418,7 @@ which is exactly the two slits' worth of light that entered. Interference does n
 
 This is worth stating sharply, because it is the cleanest possible refutation of a classical particle picture of light: opening a second slit makes some places on the screen *darker* than they were with one slit open. No stream of independent corpuscles can do that.
 
-### Worked Example: Intensity Between the Fringes
+#### Worked Example: Intensity Between the Fringes
 
 For the mercury-lamp double slit above ($d = 0.100\ \text{mm}$, $\lambda = 546\ \text{nm}$, $L = 1.20\ \text{m}$), at what distance from the center of the pattern does the intensity fall to half its maximum?
 
@@ -433,7 +440,7 @@ $$
 
 The full width at half maximum of each fringe is therefore $2y = 3.28\ \text{mm}$, exactly half the fringe spacing. Two-slit fringes are broad and sinusoidal — which, as the next section shows, is precisely what more slits fix.
 
-## Three Slits, and Then $N$
+### Three Slits, and Then $N$
 
 Add a third identical slit, equally spaced. What changes?
 
@@ -492,7 +499,7 @@ Interference from $N$ equally spaced ideal slits. The principal maxima stay at $
 
 The two scalings work together. The peak height grows as $N^2$ while the width shrinks as $1/N$, so the energy in each principal maximum grows only as $N$ — as it must, since $N$ slits admit $N$ times as much light. What you gain by adding slits is not more light in total but light concentrated into sharper and sharper spikes at precisely determined angles. Since those angles depend on $\lambda$, a device with very many slits becomes an extremely precise wavelength meter. That device is the **diffraction grating**, and it is taken up — together with the complication that real slits have finite width — in [Chapter 5](#ch-diffraction-of-light).
 
-### Worked Example: Locating the Zeros of a Five-Slit Pattern
+#### Worked Example: Locating the Zeros of a Five-Slit Pattern
 
 Five slits with $d = 2.00\ \mu\text{m}$ are illuminated at $\lambda = 500\ \text{nm}$. Find the directions of the principal maxima, and of the zeros lying between the central maximum and the first-order maximum.
 
@@ -506,7 +513,9 @@ $$
 
 for $p = 1,2,3,4$ (the value $p = 5$ is excluded — it is the first-order principal maximum). The four zeros lie at $\sin\theta = 0.050, 0.100, 0.150, 0.200$, and between them sit $N - 2 = 3$ secondary maxima. Note that the first zero is at $\sin\theta = 0.050$, one fifth of the way to the first principal maximum at $0.250$: the central peak is five times narrower than the two-slit peak would be.
 
-## Thin-Film Interference
+## Thin Films and Interferometers
+
+### Thin-Film Interference
 
 The most familiar interference in everyday life needs no slits at all. The colors swirling on a soap bubble, the rainbow sheen of oil on a wet road, and the faint purple cast of a coated camera lens are all produced by light reflecting from the two surfaces of a very thin transparent layer.
 
@@ -519,7 +528,7 @@ The most familiar interference in everyday life needs no slits at all. The color
 Thin-film interference. Ray 1 reflects from the front surface, where the index increases, and picks up a $\pi$ phase shift. Ray 2 makes a round trip inside the film, acquiring an extra optical path $2n_{\text{film}}t$, and reflects from the back surface, where the index decreases, with no shift. The net phase difference is the sum of the two effects. Original schematic generated with matplotlib; see `scripts/figures/`.
 ```
 
-### The Two Contributions
+#### The Two Contributions
 
 **Optical path.** At near-normal incidence, ray 2 travels an extra geometric distance $2t$, all of it inside the film. By the optical-path rule, this corresponds to a phase difference of
 
@@ -540,7 +549,7 @@ That analog is worth more than a sentence, because the sign is the one thing stu
 A pulse reflecting from a rigid termination and from a free one, side by side on the same clock. The rigid end inverts the pulse and the free end does not — the mechanical statement of the $0$-or-$\pi$ rule used throughout this section.
 ```
 
-### Assembling the Conditions
+#### Assembling the Conditions
 
 Because the reflection shifts are either $0$ or $\pi$, the two reflections in {numref}`Figure %s <fig:ch04-thin-film-rays>` can only produce a *net* relative shift of $0$ or $\pi$. This gives a reliable three-step recipe:
 
@@ -568,7 +577,7 @@ $$
 
 Getting the case wrong swaps bright for dark everywhere, so it is worth the ten seconds it takes to check.
 
-### Why Soap Films Are Colored — and Why They Go Black
+#### Why Soap Films Are Colored — and Why They Go Black
 
 Since the conditions involve $\lambda$, a film illuminated with white light reflects some wavelengths strongly and suppresses others, and the favored wavelength shifts as the thickness changes. {numref}`Figure %s <fig:ch04-thin-film-color>` shows the reflected intensity of red, green, and blue light as a function of the thickness of a soap film in air.
 
@@ -581,7 +590,7 @@ Reflected intensity from a soap film in air ($n = 1.33$) versus film thickness, 
 
 Two features of the figure are worth dwelling on. First, the three curves peak at different thicknesses, so a soap film whose thickness varies from place to place — as it always does, since gravity drains it — shows bands of color that drift downward as the film thins. Second, and more striking: as $t\to0$ *all* the curves go to zero. A film very much thinner than $\lambda/4n_{\text{film}}$ contributes almost no path difference, so the two reflections are left with only the $\pi$ shift and cancel for every visible wavelength at once. The film goes **black** — a genuinely counterintuitive prediction, and one you can verify by watching a soap film held vertically in a wire loop: a black band appears at the top, spreads downward, and moments later the film bursts. Newton described this effect in the 1670s, without being able to explain it.
 
-### Worked Example: The Color of a Soap Film
+#### Worked Example: The Color of a Soap Film
 
 A soap film ($n = 1.33$) in air is $100\ \text{nm}$ thick. Which visible wavelength does it reflect most strongly, viewed at normal incidence?
 
@@ -593,7 +602,7 @@ $$
 
 For $m = 0$: $\lambda = 2(1.33)(100\ \text{nm})/0.5 = 532\ \text{nm}$ — green. For $m = 1$: $\lambda = (266\ \text{nm})/1.5 = 177\ \text{nm}$, deep in the ultraviolet and invisible. So this film looks green, and only the $m = 0$ order matters. That is characteristic of thin films: they are thin enough that only the lowest one or two orders land in the visible, which is why their colors are broad and pastel rather than a sequence of sharp spectral lines.
 
-### Worked Example: An Antireflection Coating
+#### Worked Example: An Antireflection Coating
 
 A camera lens ($n_{\text{glass}} = 1.52$) is coated with magnesium fluoride ($n_{\text{MgF}_2} = 1.38$) to minimize reflection at $\lambda = 550\ \text{nm}$, the middle of the visible spectrum where the eye is most sensitive. Light is incident from air. Find the minimum coating thickness.
 
@@ -611,7 +620,7 @@ $$
 
 the standard "quarter-wave" coating. Two remarks. First, the cancellation is not perfect even at $550\ \text{nm}$, because the two reflected beams have slightly different amplitudes; complete cancellation would require $n_{\text{coating}} = \sqrt{n_{\text{air}}n_{\text{glass}}} = 1.23$, and $\text{MgF}_2$ at $1.38$ is simply the closest durable material available. Second, the condition is wavelength-specific: at $450\ \text{nm}$ and $700\ \text{nm}$ the same coating still suppresses reflection, but only partially. The residual reflection is therefore richer in blue and red than in green, which is exactly the faint purple sheen you see on a coated lens.
 
-### Wedges and Newton's Rings
+#### Wedges and Newton's Rings
 
 A film need not have uniform thickness. Press two flat glass plates together and separate one edge with a thin spacer — a hair, a wire, a sheet of paper — and the air gap between them forms a **wedge** whose thickness grows linearly along the plates. This is Case A: at the glass-to-air surface the index *decreases*, so there is no shift, while at the air-to-glass surface below it increases, so that reflection flips. Exactly one flip, net shift $\pi$, and with $n_{\text{film}} = 1$ for air the dark fringes fall where $2t = m\lambda$ — including at $t = 0$, so the line of contact is dark. That dark contact line is a useful check that you have assigned the case correctly.
 
@@ -635,7 +644,7 @@ with a dark spot at the center. The rings crowd together as $m$ grows, since $r_
 The bright/dark conditions derived in this section describe light reflected back toward the source. Viewed in transmission instead — looking through the wedge or the lens rather than at its reflection — the same film shows the *complementary* pattern: wherever the reflected light is dark, the transmitted light is bright, and vice versa. This is not a separate phase-shift rule to memorize; it follows from energy conservation in a film that absorbs essentially nothing, so whatever fraction of the light is not reflected must be transmitted. A dark spot at the center of Newton's rings in reflection is therefore a bright spot at the center in transmission.
 :::
 
-### Worked Example: Measuring a Wire with an Air Wedge
+#### Worked Example: Measuring a Wire with an Air Wedge
 
 Two flat glass plates $10.0\ \text{cm}$ long are in contact at one end and separated at the other by a thin wire. Illuminated from above with sodium light ($\lambda = 589\ \text{nm}$), the plates show $170$ dark fringes between the contact line and the wire. Find the wire's diameter.
 
@@ -647,7 +656,7 @@ $$
 
 The plate length never entered — it only sets the fringe *spacing*, $\Delta x = \lambda L/2D = 0.589\ \text{mm}$, which is what makes the fringes countable by eye. A $50\ \mu\text{m}$ wire has been measured to within a fraction of a micrometer using nothing but two pieces of glass, a sodium lamp, and patience.
 
-## The Michelson Interferometer
+### The Michelson Interferometer
 
 The **Michelson interferometer** ({numref}`Figure %s <fig:ch04-michelson>`) is Young's two-path experiment rebuilt with mirrors, and it is the most consequential single instrument in this book.
 
@@ -692,7 +701,7 @@ Mach–Zehnder and Fabry–Pérot geometries. Move a mirror and count fringes; c
 the source's coherence length and watch the visibility collapse.
 ```
 
-### Worked Example: Counting Fringes
+#### Worked Example: Counting Fringes
 
 In a Michelson interferometer illuminated with sodium light, $\lambda = 589\ \text{nm}$, one mirror is slowly translated and $1200$ fringes are counted passing a reference mark. How far did the mirror move?
 
@@ -702,7 +711,7 @@ $$
 
 Note the leverage: a third of a millimeter of motion, resolved into $1200$ countable events.
 
-### Worked Example: The Refractive Index of Air
+#### Worked Example: The Refractive Index of Air
 
 A transparent cell of length $L = 5.00\ \text{cm}$ is placed in one arm and slowly evacuated. As the air is pumped out, $49.7$ fringes are counted. Find the refractive index of air at $\lambda = 589\ \text{nm}$.
 
@@ -714,14 +723,14 @@ $$
 
 so $n = 1.000293$ — the accepted value for dry air at standard conditions. The interferometer has measured a refractive index that differs from unity in the fourth decimal place, from a fringe count that a student can do by eye.
 
-### What Interferometers Are For
+#### What Interferometers Are For
 
 - **The Michelson–Morley experiment.** As described in [Chapter 1](#ch-need-for-relativity), rotating the apparatus should have exchanged the roles of the arm parallel to Earth's motion through the ether and the arm perpendicular to it, shifting the fringes by about $0.4$ fringe against a sensitivity of $0.01$ fringe. No shift was ever seen, at any orientation or any time of year. The fringe-counting relation in Equation {eq}`eq:ch04-michelson-fringe-count` is exactly what converted a null optical measurement into a decisive statement about the structure of spacetime.
 - **Fourier-transform spectroscopy.** Record the detector signal as a function of mirror position and you have the *autocorrelation* of the light; its Fourier transform is the spectrum. Nearly every infrared spectrometer in a modern chemistry laboratory is a Michelson interferometer operated this way.
 - **Metrology.** Surface flatness, machine-tool calibration, and — until the 1983 redefinition of the meter in terms of $c$ — the international length standard itself.
 - **Gravitational-wave detection.** LIGO and Virgo are Michelson interferometers with $4\ \text{km}$ arms, folded optically to an effective length of hundreds of kilometers, measuring mirror displacements of order $10^{-19}\ \text{m}$ — about one ten-thousandth of a proton's radius. The first detection, in September 2015, came from two merging black holes $1.3$ billion light-years away. The instrument that failed to find the ether became the instrument that found the ripples in spacetime that replaced it.
 
-## Looking Ahead: Interference One Photon at a Time
+### Looking Ahead: Interference One Photon at a Time
 
 Everything in this chapter treats light as a classical wave, and the treatment works. It is worth flagging now, though, that the story does not end here.
 

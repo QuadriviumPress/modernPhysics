@@ -4,9 +4,10 @@ short_title: Chapter 6. Particle Properties of Waves
 label: ch-particle-properties-of-waves
 numbering:
   enumerator: "6.%s"
+  heading_2: true
 ---
 
-## Learning Objectives
+### Learning Objectives
 
 By the end of this chapter, you should be able to:
 
@@ -18,7 +19,7 @@ By the end of this chapter, you should be able to:
 - Derive and apply the Compton scattering formula, and explain why Compton scattering demonstrates that photons carry momentum.
 - Explain pair production and pair annihilation as further evidence for the particle nature of light, and use conservation of energy and momentum to find threshold conditions for each.
 
-## Introduction
+### Introduction
 
 Chapters [1](#ch-need-for-relativity)–[3](#ch-relativistic-dynamics) dismantled the ether and rebuilt kinematics and dynamics on Einstein's postulates, but light itself — a wave, according to Maxwell's equations, which special relativity leaves intact — remained conceptually untouched. Chapters [4](#ch-interference-of-light)–[5](#ch-diffraction-of-light) then developed that wave picture in full quantitative detail: interference and diffraction, both direct, precise confirmations that light obeys a wave equation. This chapter takes up a second, independent crisis of classical physics, one concerning not the *kinematics* of light but its very *nature*. Four phenomena — blackbody radiation, the photoelectric effect, X-ray production, and Compton scattering — each show, in a different experimental setting, that electromagnetic radiation exchanges energy with matter not continuously, as a wave should, but in discrete packets. The concept that emerges, the **photon**, carries energy $E = hf$ and momentum $p = h/\lambda$, and behaves in each of these experiments like a particle, even though light indisputably also shows the wave behavior of Chapters [4](#ch-interference-of-light)–[5](#ch-diffraction-of-light) in other settings. A final phenomenon, pair production, shows that a photon's energy can be converted entirely into matter, tying the particle nature of light directly to the mass–energy equivalence of [Chapter 3](#ch-relativistic-dynamics). Reconciling these two faces of light is the beginning of quantum mechanics.
 
@@ -30,7 +31,7 @@ Any object at temperature $T$ emits electromagnetic radiation across a continuou
 The Boltzmann constant, $k_B = 1.381\times10^{-23}\ \text{J/K}$, converts a temperature into a characteristic thermal energy scale $k_BT$. It recurs throughout this chapter's blackbody formulas precisely because the equipartition theorem assigns exactly this much average energy to each classical oscillator.
 :::
 
-### The Ultraviolet Catastrophe
+#### The Ultraviolet Catastrophe
 
 Late-nineteenth-century classical physics attempted to compute this spectrum by treating the electromagnetic field inside the cavity as a superposition of standing-wave modes, each behaving as an independent harmonic oscillator, and invoking the equipartition theorem — every such oscillator, in thermal equilibrium at temperature $T$, should carry average energy $k_BT$, independent of its frequency. Counting the number of standing-wave modes per unit volume in a wavelength interval $d\lambda$ (a purely geometric problem, fixed by the cavity's size) and multiplying by $k_BT$ per mode gives the **Rayleigh–Jeans law**,
 
@@ -54,7 +55,7 @@ prediction available for comparison. The gap between the two at short wavelength
 is the ultraviolet catastrophe.
 ```
 
-### Planck's Quantization Hypothesis
+#### Planck's Quantization Hypothesis
 
 Max Planck resolved this in 1900 by a hypothesis with no classical justification: the oscillators making up the cavity walls cannot exchange energy with the field continuously, but only in discrete multiples of a fundamental quantum,
 
@@ -80,7 +81,7 @@ $$
 
 which matches the observed blackbody spectrum at all wavelengths and temperatures, and reduces to the Rayleigh–Jeans law in the limit $hf \ll k_BT$, i.e. at long wavelength, where $e^{hf/k_BT}-1 \approx hf/k_BT$ and quantization effects become negligible — exactly the regime in which the classical calculation had already succeeded. Planck himself regarded the quantization of oscillator energy as a mathematical device rather than a physical claim about light. It was Einstein who, five years later, proposed taking it literally.
 
-### Wien's Displacement Law and the Stefan–Boltzmann Law
+#### Wien's Displacement Law and the Stefan–Boltzmann Law
 
 Differentiating $u(\lambda,T)$ with respect to $\lambda$ and setting the result to zero gives **Wien's displacement law** for the wavelength of peak emission,
 
@@ -96,7 +97,7 @@ $$
 
 with $\sigma$ the **Stefan–Boltzmann constant**. The steep $T^4$ dependence means that radiated power is extremely sensitive to temperature: doubling an object's absolute temperature increases its radiated power per unit area sixteenfold. Real objects are not perfect blackbodies; a surface's actual radiated power is $P/A = \varepsilon\sigma T^4$, where the **emissivity** $\varepsilon \le 1$ measures how closely the surface approximates an ideal absorber and emitter ($\varepsilon = 1$ for a true blackbody).
 
-### Worked Example: The Sun as a Blackbody
+#### Worked Example: The Sun as a Blackbody
 
 The Sun's surface (photosphere) has an effective temperature of $T \approx 5778\ \text{K}$ and radius $R_\odot = 6.96\times10^8\ \text{m}$. Treating it as an ideal blackbody, Wien's law gives the wavelength of peak emission,
 
@@ -112,11 +113,13 @@ $$
 
 in close agreement with the Sun's independently measured luminosity of $3.828\times10^{26}\ \text{W}$ — the same figure used in [Chapter 3, Problem 6](#ex-relativistic-dynamics-6) to estimate the Sun's rate of mass loss via $E=mc^2$. That two completely independent lines of physics (blackbody radiation here, and mass–energy equivalence there) connect so tightly to the same measured number is a testament to how well both theories describe the physical world.
 
-### Historical Context: Lenard's Puzzle
+#### Historical Context: Lenard's Puzzle
 
 Planck's quantization hypothesis was aimed narrowly at the blackbody spectrum, and Planck himself did not initially believe that light itself came in discrete packets. Evidence pointing in that direction had, in fact, already been gathering independently. In 1902, three years before Einstein's photon paper, Philipp Lenard studied the photoelectric effect using an arc lamp and a retarding-voltage apparatus much like the one described below, and found — to general puzzlement at the time — that the stopping voltage (and hence the photoelectrons' maximum kinetic energy) did not increase with the lamp's intensity, contrary to every expectation from Maxwell's wave theory of light, in which a more intense wave carries proportionally more energy to whatever absorbs it. Lenard had no explanation; the result simply sat as an unresolved anomaly in the physics literature for three years, alongside blackbody radiation, until Einstein showed that both puzzles have the same root cause: light exchanges energy with matter in discrete quanta, not continuously.
 
-## The Photoelectric Effect
+## The Photoelectric Effect and X-Ray Production
+
+### The Photoelectric Effect
 
 When light of sufficiently short wavelength strikes a metal surface, electrons are ejected — the **photoelectric effect**. A typical apparatus measures the photocurrent as a function of a retarding voltage $V$ applied between the emitting surface and a collector; the voltage at which the current just reaches zero, the **stopping potential** $V_0$, gives the maximum kinetic energy of the ejected electrons, $K_{\max} = eV_0$. Plotting the measured photocurrent against retarding voltage traces out a curve that falls smoothly to zero at $V_0$ rather than dropping abruptly, because the ejected electrons are emitted with a distribution of kinetic energies up to $K_{\max}$, not a single sharp value; $V_0$ marks where even the *fastest* electrons are turned back.
 
@@ -161,7 +164,7 @@ The photoelectric apparatus: a photocathode, an adjustable light source, and a r
 Before computing $K_{\max} = hf - \phi$, check whether the photon energy actually exceeds the work function — a negative result signals light below the threshold frequency (no photoelectrons at all), not a negative kinetic energy. Working consistently in electron-volts, with the shortcut $hc = 1240\ \text{eV}\cdot\text{nm}$, avoids most of the unit-conversion slips these problems invite; convert to joules or SI units only at the very end, if at all.
 :::
 
-### Worked Example: The Photoelectric Effect in Cesium
+#### Worked Example: The Photoelectric Effect in Cesium
 
 Cesium has one of the lowest work functions of any metal, $\phi = 2.14\ \text{eV}$, which is why it is used in the photocathodes of photomultiplier tubes and early photoelectric light meters.
 
@@ -183,13 +186,13 @@ $$
 
 which falls in the visible (yellow) part of the spectrum. Cesium is therefore photoelectrically sensitive to ordinary visible light, unlike most metals, whose work functions of $4$–$5\ \text{eV}$ push their threshold wavelengths into the ultraviolet.
 
-### Applications: Photomultipliers and Photovoltaic Cells
+#### Applications: Photomultipliers and Photovoltaic Cells
 
 The photoelectric effect underlies two technologies central to modern experimental physics and everyday life. A **photomultiplier tube** exploits a low-work-function photocathode (often a cesium compound, as in the worked example above) to convert a single incoming photon into a single ejected photoelectron, then accelerates that electron into a series of intermediate electrodes (**dynodes**), each of which is struck hard enough to eject several additional electrons via ordinary (non-photoelectric) collisional ionization; the resulting cascade, doubling in size at each of perhaps ten dynode stages, converts the arrival of a single photon into a macroscopic, easily measured current pulse containing millions of electrons. This single-photon sensitivity makes photomultiplier tubes essential wherever extremely faint light must be detected and counted, including the gamma-ray detectors used in PET scanners (discussed later in this chapter) and in nuclear and particle-physics experiments generally.
 
 A closely related but distinct effect, the **photovoltaic effect**, underlies solar cells: rather than ejecting an electron entirely from the material, an absorbed photon in a semiconductor promotes an electron across the material's band gap (the semiconductor analog of the work function, examined further in solid-state contexts), and a built-in electric field at a junction between two differently doped semiconductor layers then separates the resulting electron and the vacancy (hole) it leaves behind before they can recombine, driving a current through an external circuit. As in the ordinary photoelectric effect, only photons with energy exceeding a threshold (the band-gap energy) contribute usable electrons, which is why solar-cell efficiency depends sensitively on matching the semiconductor's band gap to the solar spectrum.
 
-## X-Ray Production: The Inverse Photoelectric Effect
+### X-Ray Production: The Inverse Photoelectric Effect
 
 The photoelectric effect converts a photon into an energetic electron; the reverse process — an energetic electron converted (at least partly) into a photon — occurs whenever fast electrons are abruptly decelerated in matter, and is the standard laboratory and industrial method of producing X-rays. In an X-ray tube, electrons are accelerated from rest through a large potential difference $V$ (typically tens to hundreds of kilovolts) and strike a dense metal target (commonly tungsten). As each electron decelerates within the target — a process called **bremsstrahlung**, German for "braking radiation" — it radiates part or all of its kinetic energy as one or more photons.
 
@@ -209,7 +212,7 @@ Bremsstrahlung is worth separating into its classical and its quantum halves, be
 An accelerating charge and the field it radiates. Move the charge by hand and watch the disturbance propagate outward at $c$ — the classical mechanism behind bremsstrahlung, and the one the electron in an X-ray tube obeys on its way to producing a photon of energy up to $eV$.
 ```
 
-### Worked Example: Minimum Wavelength from a Diagnostic X-Ray Tube
+#### Worked Example: Minimum Wavelength from a Diagnostic X-Ray Tube
 
 A medical diagnostic X-ray tube is operated at an accelerating voltage of $V = 80.0\ \text{kV}$. The Duane–Hunt limit gives
 
@@ -219,13 +222,15 @@ $$
 
 This is comparable to, and somewhat shorter than, typical interatomic spacings in crystals ($\sim 0.1$–$0.3\ \text{nm}$), which is why X-rays of this energy scale are useful for crystallographic diffraction ([Chapter 5](#ch-diffraction-of-light)) as well as medical imaging, where their short wavelength (and correspondingly high photon energy) allows them to penetrate soft tissue while being partially absorbed by denser bone.
 
-## Compton Scattering
+## Compton Scattering, Pair Production, and the Photon
+
+### Compton Scattering
 
 Even after the photoelectric effect, one could imagine "photon-like" energy exchange as a property specific to bound electrons in a metal, without light itself consisting of localized particles carrying momentum. Arthur Compton's 1923 experiment removed this loophole by showing that photons scattering from a *free* electron transfer momentum exactly as a particle collision would.
 
 In Compton's experiment, X-rays of a single wavelength $\lambda$ are directed at a target of loosely bound (effectively free) electrons, and the wavelength $\lambda'$ of the scattered X-rays is measured as a function of scattering angle $\theta$. Classically, an electromagnetic wave incident on a charge should simply drive that charge to oscillate at the incident frequency and re-radiate at the *same* frequency (Thomson scattering); no wavelength shift is expected. Compton observed a systematic *increase* in wavelength, $\lambda' > \lambda$, growing with scattering angle $\theta$ and independent of the target material — a signature of a two-body collision, not wave re-radiation.
 
-### Deriving the Compton Formula
+#### Deriving the Compton Formula
 
 Treat the photon as a particle with energy $E = hc/\lambda$ and momentum $p = E/c = h/\lambda$ (consistent with the massless-particle limit of the energy–momentum relation from [Chapter 3](#ch-relativistic-dynamics)), and apply conservation of relativistic energy and momentum to an elastic collision between the photon and an initially free, stationary electron of mass $m_e$. Let the photon scatter through angle $\theta$, emerging with wavelength $\lambda'$, while the electron recoils with momentum $p_e$ and (relativistic) energy $E_e$. The three momentum components entering the collision — incident photon momentum $h/\lambda$ along the initial direction, and zero for the electron — must balance the two outgoing momenta, whose vector sum (photon momentum $h/\lambda'$ at angle $\theta$, electron momentum $p_e$ at some recoil angle) forms a triangle. The law of cosines applied to that triangle gives
 
@@ -269,7 +274,7 @@ $$
 Setting $\theta = 180°$ gives the *minimum* possible scattered-photon energy, $E'_{\min} = E/[1 + 2E/(m_ec^2)]$, and hence the *maximum* possible energy $\Delta E_{\max} = E - E'_{\min}$ that a single Compton-scattering event can deposit in a detector — the location of the Compton edge introduced below.
 :::
 
-### Worked Example: Compton-Scattered Molybdenum X-Rays
+#### Worked Example: Compton-Scattered Molybdenum X-Rays
 
 X-rays of wavelength $\lambda = 0.100\ \text{nm}$ (comparable to characteristic molybdenum $K_\alpha$ X-rays used in crystallography) Compton-scatter off free electrons at $\theta = 60°$. The wavelength shift is
 
@@ -279,11 +284,11 @@ $$
 
 so the scattered wavelength is $\lambda' = 101.2\ \text{pm}$. In photon-energy terms, the incident photon carries $E = hc/\lambda = (1240\ \text{eV}\cdot\text{nm})/(0.100\ \text{nm}) = 12.40\ \text{keV}$, while the scattered photon carries $E' = hc/\lambda' = (1240\ \text{eV}\cdot\text{nm})/(0.1012\ \text{nm}) = 12.25\ \text{keV}$. The energy transferred to the recoiling electron is therefore $\Delta E = E - E' \approx 0.15\ \text{keV} = 150\ \text{eV}$ — a small but entirely measurable fraction of the incident photon's energy, exactly the kind of energy loss Compton measured to confirm the formula.
 
-### The Compton Edge
+#### The Compton Edge
 
 In a real gamma-ray or X-ray detector, photons scatter through the full range of angles $0 \le \theta \le 180°$ available inside the detector material, and the detector records the energy $\Delta E(\theta) = E - E'(\theta)$ actually deposited by the recoiling electron for each scattering event. Because $\Delta E(\theta)$ increases monotonically with $\theta$ (least energy transfer for forward scattering, most for backscattering), there is a sharply defined *maximum* possible energy deposit, occurring at $\theta = 180°$ — the **Compton edge** — beyond which no Compton-scattered electron can deposit more energy in a single scattering event, no matter how many photons are examined. A photon that instead deposits its *entire* energy in one interaction (via the photoelectric effect on a bound atomic electron, rather than Compton scattering a free one) produces a separate, sharp peak at the full incident photon energy, the **photopeak**. Gamma-ray spectroscopists routinely distinguish these two features — a sharp photopeak plus a broad continuum of Compton-scattered energies cut off abruptly at the Compton edge — when interpreting a detector's measured energy spectrum, since both are simultaneous, competing ways the same photon can interact with the detector material.
 
-## Pair Production and Annihilation
+### Pair Production and Annihilation
 
 A further, still more dramatic demonstration of the particle nature of light is **pair production**: a sufficiently energetic photon, passing near a nucleus, can convert entirely into an electron–positron pair,
 
@@ -301,7 +306,7 @@ The reverse process, **pair annihilation**, $e^- + e^+ \to 2\gamma$ (two photons
 The radioactive decays that produce gamma rays in the first place, and the nuclear physics behind tracers like the ones PET imaging relies on, are developed in [Chapter 13](#ch-nuclear-physics), which picks up where this chapter's photon–matter interactions leave off.
 :::
 
-### Worked Example: Sharing Energy Above Pair-Production Threshold
+#### Worked Example: Sharing Energy Above Pair-Production Threshold
 
 A photon of energy $E_\gamma = 3.00\ \text{MeV}$, well above the $1.022\ \text{MeV}$ threshold, undergoes pair production near a heavy nucleus. Because the nucleus is far more massive than the electron or positron, it absorbs essentially none of the available kinetic energy (a large mass can supply whatever small momentum balance is needed while carrying away almost no energy, exactly analogous to how a wall barely recoils, and gains almost no kinetic energy, when it reflects a ball). The energy left over after paying the $2m_ec^2$ rest-mass cost is therefore shared, to good approximation, between the electron and positron as kinetic energy:
 
@@ -311,7 +316,7 @@ $$
 
 If the pair shares this energy symmetrically (not required by any conservation law, but a common simplifying assumption and, on average, the most probable outcome), each particle carries about $0.989\ \text{MeV}$ of kinetic energy — comparable to its own rest energy, so each is produced at a substantial fraction of the speed of light.
 
-## The Photon: A Unified Picture
+### The Photon: A Unified Picture
 
 Four seemingly unrelated phenomena — blackbody radiation, the photoelectric effect, X-ray production, and Compton scattering — together with pair production and annihilation, are all consequences of a single underlying fact: electromagnetic radiation exchanges energy and momentum with matter in discrete, particle-like quanta, $E=hf$ and $p=h/\lambda$, rather than continuously. Blackbody radiation shows that an oscillator can only *emit or absorb* energy in these units; the photoelectric effect shows that a photon transfers its *entire* energy to a single electron in one step; X-ray production shows the same process run in reverse, with a sharply bounded maximum photon energy set by the incident electron's kinetic energy; Compton scattering shows that a photon carries not just energy but momentum, exchanged with a free electron exactly as in a two-body collision; and pair production and annihilation show that a photon's energy is, via $E=mc^2$, interconvertible with the rest mass of matter itself. None of these five phenomena has any classical explanation in terms of a continuous electromagnetic wave; all five are explained, quantitatively and without exception, by the same photon concept. Yet, as Chapters [4](#ch-interference-of-light)–[5](#ch-diffraction-of-light) demonstrated, light also produces interference and diffraction patterns with no possible explanation in a naive particle picture. [Chapter 7](#ch-wave-properties-of-particles) confronts this apparent contradiction directly, and shows that it is resolved not by choosing one description over the other, but by recognizing that matter, too, has a wave nature — and that wave and particle descriptions are two complementary faces of a single, more complete quantum picture.
 

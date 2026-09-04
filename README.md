@@ -43,6 +43,16 @@ admonitions, and cross-references — see the
 (`$...$` / `$$...$$` for math, `{figure}` for images, `{prf:theorem}` /
 `{prf:proof}` and similar for structured content, etc.).
 
+### Section structure
+
+Each chapter is one file. Numbered reading sections are `##` headings
+(rendered as *N.1*, *N.2*, … via `heading_2: true` in the chapter
+frontmatter) and are kept roughly equal in length so a professor can
+assign, for example, §§5.2–5.3. Topic headings under a section are
+`###`; finer headings are `####`. Learning Objectives and Introduction
+stay unnumbered (`###`). Summary, Conceptual Questions (when present),
+and Problems remain `##` so they continue the section numbering.
+
 ### Admonitions, margin notes, dropdowns, and tabs
 
 Beyond math, figures, and cross-references, chapters use a few more MyST

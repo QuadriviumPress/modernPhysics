@@ -4,9 +4,10 @@ short_title: Chapter 8. The Schrödinger Equation
 label: ch-the-schrodinger-equation
 numbering:
   enumerator: "8.%s"
+  heading_2: true
 ---
 
-## Learning Objectives
+### Learning Objectives
 
 By the end of this chapter, you should be able to:
 
@@ -19,11 +20,13 @@ By the end of this chapter, you should be able to:
 - Solve (qualitatively and, for simple cases, quantitatively) the finite square well and explain barrier penetration and quantum tunneling.
 - Solve the quantum harmonic oscillator, apply its selection rule, and compare its energy spectrum and ground-state behavior to the classical oscillator.
 
-## Introduction
+### Introduction
 
 [Chapter 7](#ch-wave-properties-of-particles) established that a wave packet, not a point trajectory, is the appropriate description of a quantum particle, and that this wave nature is directly responsible for the Heisenberg uncertainty principle. This chapter introduces the equation that governs how such a wave evolves: the **Schrödinger equation**, proposed by Erwin Schrödinger in 1926. It plays the role in quantum mechanics that Newton's second law plays in classical mechanics — given a system's wave function at one instant and the forces (via a potential energy function) acting on it, the Schrödinger equation determines the wave function at all later times. Solving it for a sequence of increasingly realistic potentials — a particle confined to a box, a particle encountering a step or barrier, a particle in a parabolic potential — reveals features with no classical counterpart: quantized energy levels, a nonzero minimum energy, partial reflection where classical physics predicts certain transmission, and the ability of a particle to be found where classical mechanics says it cannot.
 
-## The Wave Function and Its Interpretation
+## The Wave Function and the Schrödinger Equation
+
+### The Wave Function and Its Interpretation
 
 Quantum mechanics represents a particle's state by a complex-valued function of position and time, $\Psi(x,t)$ (in one dimension), called the **wave function**. Max Born proposed the interpretation now universally adopted: $|\Psi(x,t)|^2\,dx$ is the **probability** of finding the particle between $x$ and $x+dx$ at time $t$, if a position measurement is performed. Because the particle must be found *somewhere*, an acceptable wave function must be **normalized**:
 
@@ -49,7 +52,7 @@ Measurement statistics for a classical coin, for single photons through a polari
 Max Born's probabilistic reading of $\Psi$, introduced almost as an aside in a 1926 paper on scattering theory, was deeply controversial even among the theory's founders. Schrödinger himself hoped $|\Psi|^2$ would describe a smoothly spread-out electron charge density rather than a probability distribution over discrete measurement outcomes, and Einstein never fully accepted it either, famously objecting that "God does not play dice with the universe." The interpretation nonetheless survived every experimental test it was put to, and Born received the Nobel Prize in Physics for it only in 1954 — nearly three decades after the fact, an unusually long wait for a result so central to the theory.
 ::::
 
-### Expectation Values and Operators
+#### Expectation Values and Operators
 
 Because $|\Psi(x,t)|^2$ gives only a probability distribution, not a definite trajectory, a quantum "measurement" of position generally yields different results on identically prepared systems, with a statistical average — the **expectation value** — defined by
 
@@ -69,7 +72,7 @@ Expectation values are the quantities that connect the abstract wave function to
 The operators representing physical observables — position $x$, momentum $-i\hbar\,\partial/\partial x$, and others introduced in later chapters — are all **Hermitian**. That property is exactly what guarantees expectation values like $\langle x\rangle$ and $\langle p\rangle$ always come out real, as a measurable quantity must, even though $\Psi$ itself is complex.
 ::::
 
-### Ehrenfest's Theorem: Recovering Newton's Second Law on Average
+#### Ehrenfest's Theorem: Recovering Newton's Second Law on Average
 
 Although an individual quantum particle does not follow a definite classical trajectory, its *expectation values* obey equations strikingly close to the classical equations of motion. Differentiating $\langle x \rangle$ and $\langle p \rangle$ with respect to time and using the time-dependent Schrödinger equation to evaluate the results (a calculation carried out in more advanced treatments) gives **Ehrenfest's theorem**,
 
@@ -107,7 +110,7 @@ $$
 recovering the first of Ehrenfest's equations directly from the postulated wave equation, with no additional assumption beyond normalizability. The second equation, $d\langle p\rangle/dt = \langle F\rangle$, follows from the same procedure applied to $\langle p\rangle$ instead of $\langle x\rangle$.
 ::::
 
-## The Time-Dependent Schrödinger Equation
+### The Time-Dependent Schrödinger Equation
 
 For a particle of mass $m$ moving in one dimension under a potential energy $V(x,t)$, the wave function obeys the **time-dependent Schrödinger equation**:
 
@@ -117,11 +120,11 @@ $$
 
 This equation is postulated, not derived from more elementary principles — its justification, as with Newton's laws, is that its predictions match experiment. It can, however, be motivated heuristically: substituting a free-particle plane wave $\Psi \propto e^{i(kx - \omega t)}$ (a wave of definite momentum $p = \hbar k$, per de Broglie, and definite energy $E = \hbar\omega$, per Planck–Einstein) and comparing to the classical nonrelativistic energy relation $E = p^2/2m + V$ reproduces exactly the operator correspondences $E \to i\hbar\,\partial/\partial t$ and $p \to -i\hbar\,\partial/\partial x$ built into the equation.
 
-### The Free Particle and the Need for Wave Packets
+#### The Free Particle and the Need for Wave Packets
 
 Setting $V=0$, the plane wave $\Psi(x,t) = Ae^{i(kx-\omega t)}$ used above to motivate the equation is itself an exact solution, with $\omega = \hbar k^2/2m$ (the same nonrelativistic dispersion relation used in [Chapter 7](#ch-wave-properties-of-particles) to derive the group velocity). This solution has a serious defect as a description of an actual free particle, however: $|\Psi|^2 = |A|^2$ is the same at every point $x$ and every time $t$, so it cannot be normalized ($\int|\Psi|^2dx$ diverges) and represents a particle equally likely to be found anywhere in all of space — a definite momentum but no localization whatsoever, the extreme limit of the uncertainty principle in which $\Delta p = 0$ forces $\Delta x \to \infty$. A physically realizable free particle is instead represented, exactly as in [Chapter 7](#ch-wave-properties-of-particles), by a normalizable **wave packet**: a superposition of plane-wave solutions of many different $k$, each individually a solution of the time-dependent Schrödinger equation (which is linear, so any superposition of solutions is itself a solution), combined so that the total wave function is localized. Because different $k$-components have different $\omega(k)$ and therefore different phase and group velocities, such a packet is precisely the object that spreads over time, as discussed in [Chapter 7](#ch-wave-properties-of-particles); the Schrödinger equation makes that spreading a specific, calculable prediction rather than a qualitative expectation.
 
-## Stationary States and the Time-Independent Equation
+### Stationary States and the Time-Independent Equation
 
 When the potential $V(x)$ does not depend on time, the Schrödinger equation admits **separable** solutions of the form $\Psi(x,t) = \psi(x)e^{-iEt/\hbar}$, where $\psi(x)$ satisfies the **time-independent Schrödinger equation**:
 
@@ -131,7 +134,9 @@ $$
 
 Such solutions are called **stationary states**: although $\Psi(x,t)$ itself oscillates in time through the phase factor $e^{-iEt/\hbar}$, the probability density $|\Psi(x,t)|^2 = |\psi(x)|^2$ is time-independent, and $E$ is the definite, sharply-valued energy of the state. Because the time-independent equation is a linear, second-order differential equation with boundary conditions imposed by the requirement that $\psi$ be normalizable, it typically admits solutions — and hence allowed values of $E$ — only for a discrete set of energies when the particle is confined (bound) by the potential. This is the origin of **energy quantization** in quantum mechanics: not an assumption added by hand, as in the Bohr model, but a direct mathematical consequence of solving a boundary-value problem for a confined wave. When the particle is *not* confined (as in the potential step below, where the particle can escape to $x\to+\infty$), the same equation instead admits solutions for a continuous range of $E$, describing **scattering states** rather than bound states.
 
-## The Infinite Square Well
+## Bound and Scattering States in One Dimension
+
+### The Infinite Square Well
 
 The simplest confining potential is the **infinite square well**: $V(x) = 0$ for $0 < x < L$, and $V(x) = \infty$ elsewhere, representing a particle strictly confined to a box of width $L$ (an idealization of, e.g., an electron trapped between strong barriers). Since $\psi$ must vanish wherever $V = \infty$ (an infinite potential permits zero probability of the particle being found there), the boundary conditions are $\psi(0) = \psi(L) = 0$.
 
@@ -160,7 +165,7 @@ All three features are on display in {numref}`Figure %s <fig:ch08-bound-states-s
 Bound states of a one-dimensional potential, with the well shape, depth, and width adjustable and the eigenfunctions drawn at their own energies. Superpositions of two eigenstates can be built and run in time, which is where the stationary states stop being stationary.
 ```
 
-### Worked Example: Expectation Values in the Ground State
+#### Worked Example: Expectation Values in the Ground State
 
 For the infinite-well ground state $\psi_1(x) = \sqrt{2/L}\sin(\pi x/L)$, the probability density $|\psi_1(x)|^2$ is symmetric about the well's midpoint $x=L/2$, so by symmetry alone,
 
@@ -170,7 +175,7 @@ $$
 
 without needing to evaluate the defining integral explicitly — the particle is, on average, found at the center of the well, exactly as classical intuition would suggest, even though (unlike a classical particle) it is never actually found moving through the center with a definite velocity. By the same symmetry, $\langle p \rangle = 0$: the stationary state carries no net probability current in either direction. However, $\langle p^2 \rangle \ne 0$: since the ground-state energy is purely kinetic ($V=0$ inside the well), $E_1 = \langle p^2\rangle/2m$, so $\langle p^2 \rangle = 2mE_1 = \pi^2\hbar^2/L^2 \ne 0$. The particle has a nonzero *typical* momentum magnitude, $\sqrt{\langle p^2\rangle} = \pi\hbar/L$, even though its *average* momentum is zero — a direct, quantitative illustration of the uncertainty principle at work: a particle confined to width $\Delta x \sim L$ cannot have $p=0$ exactly, only $\langle p \rangle = 0$ with a nonzero spread $\Delta p = \sqrt{\langle p^2\rangle - \langle p\rangle^2} = \pi\hbar/L$, consistent with $\Delta x\,\Delta p \sim \hbar$.
 
-## The Potential Step: Partial Reflection and Transmission
+### The Potential Step: Partial Reflection and Transmission
 
 Before turning to bound states in a finite well, it is instructive to consider a simpler, unbound configuration: a **potential step**, $V(x) = 0$ for $x<0$ and $V(x) = V_0$ for $x>0$, with a particle of energy $E>V_0$ incident from $x=-\infty$. Classically, the particle simply slows down (its kinetic energy dropping from $E$ to $E-V_0$) as it crosses $x=0$, but continues forward with certainty — transmission probability $1$, reflection probability $0$.
 
@@ -197,7 +202,7 @@ Both halves of that story — partial reflection at a step the particle has the 
 A wave packet incident on a step, a barrier, or a double barrier, with the real and imaginary parts of $\psi$ and the probability density all available. The energy relative to the barrier height is adjustable, as are the barrier's width and height — the two parameters the transmission coefficient of the next section depends on exponentially.
 ```
 
-### Worked Example: Reflection at a Potential Step
+#### Worked Example: Reflection at a Potential Step
 
 An electron with kinetic energy $E = 2.00\ \text{eV}$ approaches a potential step of height $V_0 = 1.00\ \text{eV}$. Since $k \propto \sqrt{E}$ (with the same proportionality constant on both sides, as $m$ is unchanged), the ratio $k_2/k_1 = \sqrt{(E-V_0)/E} = \sqrt{(1.00\ \text{eV})/(2.00\ \text{eV})} = 0.707$. The reflection coefficient is then
 
@@ -207,7 +212,9 @@ $$
 
 so about $3\%$ of an incident beam of such electrons is reflected by the step, and $T = 1-R \approx 0.97$ is transmitted — a small but entirely real and measurable effect, with no analog for a classical particle rolling over a downward step in a potential energy landscape.
 
-## The Finite Square Well and Quantum Tunneling
+## Tunneling, the Oscillator, and Correspondence
+
+### The Finite Square Well and Quantum Tunneling
 
 A more physically realistic bound-state model replaces the infinitely high walls of the square well with walls of finite height $V_0$: $V(x) = 0$ for $0<x<L$ and $V(x) = V_0$ outside. For a bound state with $E < V_0$, the time-independent equation outside the well becomes $\psi'' = +\kappa^2\psi$ with $\kappa \equiv \sqrt{2m(V_0-E)}/\hbar$ real, whose normalizable solutions are decaying exponentials, $\psi(x) \propto e^{-\kappa|x|}$ moving away from the well, rather than the oscillatory sines and cosines found inside.
 
@@ -237,7 +244,7 @@ $$
 
 showing that tunneling probability falls off exponentially with both the barrier's width and the square root of $m(V_0-E)$ — which is why tunneling is significant for light particles (electrons) through thin barriers but utterly negligible for macroscopic objects. Tunneling is not a mathematical curiosity; it is the mechanism behind alpha decay ([Chapter 13](#ch-nuclear-physics)), the scanning tunneling microscope, and (approximately) the operation of tunnel diodes.
 
-### Worked Example: Distance Sensitivity of a Scanning Tunneling Microscope
+#### Worked Example: Distance Sensitivity of a Scanning Tunneling Microscope
 
 A scanning tunneling microscope (STM) images a conducting surface by scanning a sharp metal tip a fraction of a nanometer above it and measuring the tunneling current of electrons crossing the vacuum gap — a gap that acts as a potential barrier of height roughly equal to the metal's work function, here taken as $V_0 - E \approx 4.0\ \text{eV}$. The decay constant is
 
@@ -253,7 +260,7 @@ $$
 
 roughly an order of magnitude per angstrom of vertical displacement — exactly the extreme sensitivity that allows an STM to resolve individual atoms on a surface by tracking tiny changes in tunneling current as the tip scans across atomic-scale height variations.
 
-### Worked Example: Order-of-Magnitude Estimate for Alpha Decay
+#### Worked Example: Order-of-Magnitude Estimate for Alpha Decay
 
 Alpha decay ([Chapter 13](#ch-nuclear-physics)) is understood as an alpha particle ($m_\alpha \approx 6.64\times10^{-27}\ \text{kg}$) tunneling through the Coulomb barrier confining it inside a heavy nucleus. As a rough, illustrative model, approximate this barrier as rectangular, with the alpha particle's energy falling $\Delta E \approx V_0-E = 20\ \text{MeV}$ below the barrier height and an effective barrier width $L \approx 7\ \text{fm} = 7\times10^{-15}\ \text{m}$ (real barriers are Coulombic, not rectangular, and a proper treatment integrates $\kappa(r)$ over the barrier's actual shape — the **Gamow factor** — but the rectangular approximation captures the essential physics). Then
 
@@ -269,7 +276,7 @@ $$
 
 This tiny number is not the final answer for a decay rate; it must be combined with an **assault frequency**, the rate at which the alpha particle, rattling back and forth inside the nucleus at a speed of order $10^7\ \text{m/s}$ across a nuclear diameter of order $10^{-14}\ \text{m}$, "attempts" to escape — roughly $f \sim 10^{21}\ \text{s}^{-1}$. The decay rate is then of order $f\,T \sim (10^{21}\ \text{s}^{-1})(10^{-12}) = 10^{9}\ \text{s}^{-1}$, corresponding to a half-life of order $10^{-9}\ \text{s}$ for *this* choice of illustrative barrier parameters. Real alpha emitters span half-lives from microseconds to billions of years, entirely because $T$ depends *exponentially* on $\Delta E$ and $L$: changing the barrier parameters by a modest amount changes $T$, and hence the half-life, by many orders of magnitude — exactly the empirical pattern captured by the **Geiger–Nuttall relation** revisited quantitatively in [Chapter 13](#ch-nuclear-physics).
 
-## The Quantum Harmonic Oscillator
+### The Quantum Harmonic Oscillator
 
 A particle in a potential $V(x) = \tfrac12 kx^2$ (with $k$ here the spring constant, not a wave number) is the quantum analog of the classical simple harmonic oscillator, and it is important beyond this specific system because *any* smooth potential, expanded in a Taylor series about a point of stable equilibrium, is approximately parabolic near that minimum — the harmonic oscillator is the generic first approximation for small oscillations about equilibrium in essentially any bound system, including the vibrations of a diatomic molecule ([Chapter 12](#ch-molecular-structure)).
 
@@ -295,7 +302,7 @@ Excited harmonic-oscillator wave functions follow the same node-counting pattern
 
 Transitions between harmonic-oscillator levels by absorption or emission of a photon obey the **selection rule** $\Delta n = \pm 1$: an oscillating dipole (the physical mechanism by which a vibrating charged system couples to the electromagnetic field) can only connect states whose quantum numbers differ by exactly one, so the emitted or absorbed photon energy is always $\hbar\omega$, the same fixed spacing regardless of which pair of adjacent levels is involved — a fact used directly in [Chapter 12](#ch-molecular-structure) to interpret the vibrational spectra of diatomic molecules, where (to the extent the harmonic approximation holds) all vibrational transitions cluster near a single characteristic frequency rather than spreading across many distinct energies.
 
-### Worked Example: Zero-Point Motion, Macroscopic Versus Molecular
+#### Worked Example: Zero-Point Motion, Macroscopic Versus Molecular
 
 The characteristic spread of the ground-state Gaussian wave function is $\Delta x = \sqrt{\hbar/2m\omega}$. For a macroscopic oscillator — a $1.0\ \text{kg}$ mass on a spring with $k = 100\ \text{N/m}$, so $\omega = \sqrt{k/m} = 10\ \text{rad/s}$ — this gives
 
@@ -311,7 +318,7 @@ $$
 
 a few percent of the bond's equilibrium length ($\approx 113\ \text{pm}$) — small, but not at all negligible, and precisely why zero-point vibrational motion has measurable consequences (a nonzero zero-point vibrational energy that must be included in molecular bond-energy calculations) for real molecules even though the analogous effect is entirely unobservable for a spring on a lab bench.
 
-## The Correspondence Principle Across Three Systems
+### The Correspondence Principle Across Three Systems
 
 The three systems solved in this chapter — the infinite well, the finite well with tunneling, and the harmonic oscillator — share a common thread despite their different mathematical detail: each has a nonzero, quantized ground-state energy set by the uncertainty principle, each allows the particle to be found (with vanishing but nonzero probability, in the finite-well and barrier cases) in regions forbidden to a classical particle of the same energy, and each converges toward classical predictions in an appropriate limit. For the infinite well, closely spaced levels at large $n$ (where $E_n \propto n^2$ but the *fractional* spacing $\Delta E_n/E_n \to 0$) approach a quasi-continuous classical energy spectrum; for the harmonic oscillator, the large-$n$ probability distribution $|\psi_n(x)|^2$ develops peaks near the classical turning points, where a classical oscillator spends most of its time, rather than the single central peak seen for $n=0$. This is Bohr's **correspondence principle**: quantum predictions must merge smoothly into classical ones in the limit of large quantum numbers (equivalently, macroscopic action large compared to $\hbar$), and it serves as a valuable consistency check on any quantum-mechanical solution.
 

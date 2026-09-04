@@ -4,9 +4,10 @@ short_title: Chapter 2. Special Relativity
 label: ch-special-relativity
 numbering:
   enumerator: "2.%s"
+  heading_2: true
 ---
 
-## Learning Objectives
+### Learning Objectives
 
 By the end of this chapter, you should be able to:
 
@@ -20,13 +21,15 @@ By the end of this chapter, you should be able to:
 - Derive and apply the relativistic Doppler effect.
 - Explain why magnetism can be understood as a relativistic consequence of length contraction acting on electric fields.
 
-## Introduction
+### Introduction
 
 [Chapter 1](#ch-need-for-relativity) established that Einstein's two postulates — the equivalence of all inertial frames, and the invariance of the speed of light — are incompatible with the Galilean transformation. This chapter works out what *does* follow from the postulates: a new set of rules relating space and time measurements between observers in relative motion, called the Lorentz transformation. Its consequences are strange by the standards of everyday experience — moving clocks run slow, moving objects are measured as shortened, and two events that are simultaneous for one observer need not be simultaneous for another — but they are not arbitrary. Each follows directly, and only, from insisting that every inertial observer measures the same speed $c$ for light.
 
 Throughout, an **event** is something that happens at a definite place and a definite time — a flashbulb going off, a particle passing a marker — specified by four coordinates $(x, y, z, t)$ in a given reference frame. Two different inertial observers, in relative motion, will in general assign different coordinates to the same event; the question this chapter answers is exactly how those coordinate sets are related.
 
-## The Relativity of Simultaneity
+## Simultaneity, Time Dilation, and Length Contraction
+
+### The Relativity of Simultaneity
 
 Consider a train car moving at constant velocity $v$ relative to the ground, with a light source at its exact center. When the source flashes, light travels outward in all directions at speed $c$ — in *every* inertial frame, by the second postulate.
 
@@ -45,7 +48,7 @@ The basic geometry is shown in {numref}`Figure %s <fig:ch02-simultaneity>`. The 
 Simultaneity depends on the observer's frame. The diagram is schematic: the ground observer is at the midpoint, while the train observer moves toward the front flash. Original schematic by the author.
 ```
 
-### An Operational Procedure for Synchronizing Clocks
+#### An Operational Procedure for Synchronizing Clocks
 
 The train example shows *that* simultaneity depends on the observer's frame, but it is worth being explicit about *how* an observer within a single frame decides that two clocks, at different locations, are synchronized in the first place — otherwise "simultaneous in the car's frame" is just as vague a phrase as "simultaneous" was before Einstein.
 
@@ -59,7 +62,7 @@ Amy can use this fact to synchronize a second clock, placed at the mirror's loca
 
 This procedure defines, unambiguously, a notion of "simultaneous" *within* a single inertial frame — but it is frame-dependent by construction, because it relies on the frame in which the observer doing the synchronizing is at rest. An observer in a second frame $S'$, moving relative to $S$, will synchronize clocks by the identical procedure applied within $S'$, and — as the train example already showed — the two resulting sets of "simultaneous" clocks will not agree with each other. Both sets of clocks are perfectly well synchronized, each within its own frame; there is simply no frame-independent fact about which distant events are simultaneous with a given event here and now.
 
-## Time Dilation
+### Time Dilation
 
 Consider a **light clock**: two mirrors facing each other, separated by a distance $L$, with a single light pulse bouncing between them. In the frame where the clock is at rest, one "tick" — one round trip — takes
 
@@ -104,7 +107,7 @@ A light clock at rest beside an identical one moving at $\beta = v/c$, with the 
 
 Time dilation is not a hypothesis awaiting confirmation; it is routinely observed. Muons created by cosmic rays in the upper atmosphere have a mean lifetime, at rest, of about $2.2\ \mu\text{s}$ — long enough, at nearly the speed of light, to travel only a few hundred meters before decaying, far short of the several kilometers to Earth's surface. Yet large numbers of these muons are detected at sea level. In Earth's frame, the muons' internal "clock" — the process governing decay — runs slow by the factor $\gamma$, extending their mean range by that same factor, which is exactly what is observed. (This effect was confirmed with precision in a classic 1941 experiment by Bruno Rossi and David Hall, comparing muon flux measured at the top of Mount Washington in New Hampshire to the flux at a lower elevation.)
 
-### The Twin Paradox
+#### The Twin Paradox
 
 Time dilation invites an apparent paradox that is worth confronting directly. Suppose Alice stays on Earth while her twin Bob boards a spaceship, accelerates to a large fraction of $c$, travels to a distant star, turns around, and returns to Earth. From Alice's perspective, Bob's clock runs slow throughout the trip (by the factor $\gamma$), so Bob should be younger than Alice when he returns. But motion is relative — can't Bob equally well claim that *he* was at rest the whole time, and that it was Alice, receding and then approaching, whose clock ran slow? If so, each twin should conclude the other has aged less, which is a genuine contradiction: when they are reunited at the same place, they can directly compare clocks, and only one answer can be correct.
 
@@ -112,7 +115,7 @@ The resolution is that the situation is **not** symmetric between the twins, and
 
 The physical content of the paradox's resolution is this: there is no contradiction, because *only Bob* can locally detect (with an accelerometer, for instance) that he underwent a change of inertial frame. That detectable asymmetry is exactly what breaks the naive symmetry argument and picks out which twin's elapsed time is shorter.
 
-## Length Contraction
+### Length Contraction
 
 Time dilation has a companion effect for lengths. Consider a rod of length $L_0$ at rest along the $x$-axis of frame $S$; call $L_0$ the **proper length** — the length measured in the frame where the rod is at rest. How long is this rod as measured by an observer in frame $S'$, moving at speed $v$ relative to $S$ along the rod's length?
 
@@ -142,7 +145,7 @@ Suppose, for contradiction, that lengths perpendicular to the relative motion di
 Length contraction is a statement about a *measurement* — the positions of both ends of an object recorded simultaneously in the observer's frame — not a statement about what a fast-moving object would look like in an instantaneous photograph. A photograph also encodes differences in light-travel time from different parts of the object to the camera, and properly accounting for those shows that a rapidly moving object appears *rotated* rather than simply flattened (the Terrell–Penrose effect). "Measured length" and "visual appearance" are genuinely different questions, easy to conflate but with different answers.
 :::
 
-### Application: Bell's Spaceship Paradox
+#### Application: Bell's Spaceship Paradox
 
 Length contraction raises a subtle question about rigid bodies that is worth working through carefully, since getting it wrong is a common source of confusion. Consider two identical spaceships, initially at rest a fixed distance $L_0$ apart in some frame $S$, connected by a taut string of exactly that length. At $t=0$ (in $S$), both ships fire identical engines, executing identical acceleration profiles, so that at every later instant in $S$ each ship has exactly the same velocity as the other. Does the string, stretched between them, break?
 
@@ -150,7 +153,9 @@ The naive answer is "no": since both ships always move identically, the distance
 
 The paradox dissolves once it is clear that "the two ships have identical velocity at every instant of $S$-time" is a statement *specific to frame $S$*; it does not mean the ships are relatively at rest, nor does it mean the string, whose integrity depends on physics internal to its own rest frame, experiences no strain. This scenario (due to John Bell, 1976, who reported that it caused genuine disagreement even among professional physicists at CERN) is a useful check on intuition: length contraction is a real, physical effect with real, physical (and sometimes destructive) consequences for extended objects undergoing acceleration, not merely a bookkeeping artifact of coordinate choices.
 
-## The Lorentz Transformation
+## The Lorentz Transformation and Causality
+
+### The Lorentz Transformation
 
 Time dilation and length contraction are special cases of a general coordinate transformation between inertial frames, replacing the Galilean transformation of [Chapter 1](#ch-need-for-relativity). For frame $S'$ moving at velocity $v$ along the common $x$-$x'$ axis relative to frame $S$, with origins coinciding at $t = t' = 0$, the **Lorentz transformation** is
 
@@ -174,7 +179,7 @@ $$
 
 which every inertial observer computes to be the same number, even though $\Delta t$ and $\Delta x$ individually differ between frames. This invariance can be verified directly by substituting the Lorentz transformation. The interval plays the same role for spacetime that ordinary Euclidean distance, $d^2 = \Delta x^2 + \Delta y^2$, plays for a plane: it is unchanged by a change of coordinates (there, a rotation of axes; here, a Lorentz "boost" to a new inertial frame), even though the individual coordinate differences are not.
 
-### Worked Example: Applying the Lorentz Transformation
+#### Worked Example: Applying the Lorentz Transformation
 
 :::{margin}
 Multiplying a time by $c$ converts it to a length ($c\,\Delta t$), which is why spacetime-interval and Lorentz-transformation calculations are often easiest with both space and time expressed in meters, as in the worked example below.
@@ -194,7 +199,7 @@ $$
 
 In $S$, the interval is $(\Delta s)^2 = c^2(\Delta t)^2 - (\Delta x)^2 = (300\ \text{m})^2 - (600\ \text{m})^2 = -270{,}000\ \text{m}^2$ (using $c\,\Delta t = 300\ \text{m}$). In $S'$, $c\,\Delta t' = (3.00\times10^8\ \text{m/s})(-0.25\times10^{-6}\ \text{s}) = -75\ \text{m}$, so $(\Delta s')^2 = (-75\ \text{m})^2 - (525\ \text{m})^2 = 5625\ \text{m}^2 - 275{,}625\ \text{m}^2 = -270{,}000\ \text{m}^2$ — the same value, confirming invariance. Note also that $t_2' < 0$: event 2 occurs *before* event 1 in $S'$, even though event 2 occurs after event 1 in $S$. This is only possible because, as the next section shows, the interval between these two events is spacelike.
 
-## Light Cones and Causality
+### Light Cones and Causality
 
 Einstein's 1905 paper introduced the two postulates that resolved the experimental tension; a later portrait of Einstein is included in {numref}`Figure %s <fig:ch02-einstein-historical>`.
 
@@ -223,7 +228,7 @@ The full set of events timelike-separated from a given event $x$ and in its futu
 
 This structure is what protects causality in relativity. **If two events are timelike separated, every inertial observer agrees on their order** (the earlier one always is measured to occur first, in every frame) — only the *time interval* between them, not their order, is frame-dependent. Order can only reverse between frames, as in the worked example, for spacelike-separated events — and by construction, no causal signal can link spacelike-separated events anyway, since that would require traveling faster than $c$. If it were somehow possible to send a signal faster than $c$ — a hypothetical "subspace radio" — that signal would connect two spacelike-separated events, and by the argument above there would exist a frame in which the signal is received *before* it is sent, an unambiguous violation of cause and effect. This is the deep reason the speed limit $c$ is not merely an engineering inconvenience but is woven into the logical structure of the theory: **no particle, signal, or influence of any kind can propagate faster than $c$ without permitting effects to precede their causes** in some valid inertial frame.
 
-## Velocity Addition
+### Velocity Addition
 
 If a particle moves with velocity $u_x'$ along the $x'$-axis of frame $S'$, and $S'$ moves at velocity $v$ relative to $S$, what velocity $u_x$ does the particle have in $S$? Differentiating the Lorentz transformation (or applying it to two nearby events along the particle's path) gives the **relativistic velocity-addition formula**:
 
@@ -239,7 +244,7 @@ $$
 
 for *any* $v < c$ — exactly consistent with the second postulate: adding any sub-light velocity to $c$ still gives $c$. More generally, one can show that if $u_x' < c$ and $v < c$, then $u_x < c$ always: no combination of sub-light velocities, added relativistically, ever reaches or exceeds $c$.
 
-### Worked Example: Explaining the Fizeau Coefficient
+#### Worked Example: Explaining the Fizeau Coefficient
 
 [Chapter 1](#ch-need-for-relativity) described Fizeau's 1851 measurement of light's speed in flowing water, which showed a puzzling *partial* drag coefficient $f = 1-1/n^2$ rather than full or zero entrainment. This is now straightforward to explain, with no separate assumption about the ether at all. Let $S$ be the lab frame and $S'$ the frame of the flowing water, moving at speed $v \ll c$ relative to the lab. In the water's own rest frame, light travels at the ordinary speed for that medium, $u_x' = c/n$. By the velocity-addition formula, the speed measured in the lab is
 
@@ -259,7 +264,9 @@ dropping the term of order $v^2/c$, which is negligible for the modest flow spee
 [](#ch-need-for-relativity) works through Fizeau's original 1851 measurement and the ad hoc Fresnel drag coefficient it required under the ether hypothesis, along with the Michelson–Morley and Kennedy–Thorndike null results that motivated Einstein's postulates in the first place.
 :::
 
-## The Relativistic Doppler Effect
+## Doppler Effect, Spacetime Diagrams, and Magnetism
+
+### The Relativistic Doppler Effect
 
 The classical Doppler effect — the pitch of an ambulance siren rising as it approaches and falling as it recedes — arises from the finite travel time of successive wave crests to a stationary observer. Light shows an analogous effect, but with a relativistic correction on top of it, because the *source's clock itself* runs slow according to the observer, an effect with no classical counterpart at all.
 
@@ -298,7 +305,7 @@ a direct consequence of time dilation alone, with no light-travel-time contribut
 
 The relativistic Doppler effect is not a laboratory curiosity: the cosmological redshift of light from distant galaxies, $1+z \equiv f_0/f_{\text{obs}}$, is precisely this formula (generalized to an expanding spacetime), and the same physics, applied to radio signals rather than light, is a correction that must be built into GPS satellite transmissions alongside the time-dilation correction already discussed.
 
-### Worked Example: Redshift from a Receding Galaxy
+#### Worked Example: Redshift from a Receding Galaxy
 
 A distant galaxy's hydrogen emission line, with rest-frame (proper) wavelength $\lambda_0 = 656.3\ \text{nm}$, is observed at $\lambda_{\text{obs}} = 682.0\ \text{nm}$. Find the galaxy's recession speed.
 
@@ -310,7 +317,7 @@ $$
 
 so $v \approx 0.038c \approx 1.15\times 10^7\ \text{m/s}$, receding.
 
-## Spacetime Diagrams
+### Spacetime Diagrams
 
 A useful way to visualize these effects is a **spacetime diagram**: a plot with $x$ on the horizontal axis and $ct$ (rather than $t$, so both axes share units of length) on the vertical axis, drawn in a chosen frame $S$. A particle at rest at some fixed $x$ traces a vertical line (its **worldline**); a light ray traces a line at $45°$, since $x = ct$. An observer moving at speed $v$ in frame $S$ has a worldline tilted from vertical by an angle $\theta$ with $\tan\theta = v/c$.
 
@@ -346,7 +353,7 @@ relativistic Doppler effect. Set the relative speed and watch the tilted axes
 close on the $45°$ light-cone lines without ever reaching them.
 ```
 
-## Application: Magnetism as a Relativistic Effect
+### Application: Magnetism as a Relativistic Effect
 
 It may seem that special relativity, having explained a handful of subtle high-precision optical experiments, is otherwise disconnected from everyday electromagnetism. In fact one of the most familiar phenomena in electromagnetism — magnetism itself — can be understood as a direct consequence of length contraction applied to electric charge.
 

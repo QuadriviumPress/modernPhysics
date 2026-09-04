@@ -4,9 +4,10 @@ short_title: Chapter 14. Elementary Particles and the Standard Model
 label: ch-elementary-particles-and-the-standard-model
 numbering:
   enumerator: "14.%s"
+  heading_2: true
 ---
 
-## Learning Objectives
+### Learning Objectives
 
 By the end of this chapter, you should be able to:
 
@@ -22,11 +23,13 @@ By the end of this chapter, you should be able to:
 - Estimate, quantitatively, why gravitational effects between individual particles are negligible compared with the other fundamental interactions.
 - Identify several of the major open questions at the current frontier of particle physics and cosmology.
 
-## Introduction
+### Introduction
 
 Nuclear physics ([Chapter 13](#ch-nuclear-physics)) treated protons and neutrons as elementary building blocks, bound by the strong force into nuclei. This chapter goes one level deeper, to the particles and forces from which protons, neutrons, and indeed all matter are built. Over the course of the twentieth century, a rapidly growing zoo of "elementary" particles, discovered first in cosmic rays and then in purpose-built particle accelerators, was gradually organized into a coherent theoretical framework, the **Standard Model of particle physics**, which identifies a genuinely small set of truly fundamental particles and the forces (themselves mediated by particle exchange) that govern their interactions. This chapter surveys that framework: the classification of particles by spin and by the forces they feel, the substructure of protons and neutrons in terms of quarks, the conservation laws that govern which particle reactions can occur, and the mechanism by which most fundamental particles acquire mass at all. It also traces how this framework was actually established — the historical progression from a bewildering "particle zoo" of cosmic-ray discoveries to the ordered quark model, and the particle accelerators and detectors that turned particle physics into a precision experimental science — and closes, as befits the final chapter of this book, with several of the major questions the Standard Model leaves unanswered.
 
-## Classifying Particles: Fermions and Bosons
+## Particles, Forces, and Feynman Diagrams
+
+### Classifying Particles: Fermions and Bosons
 
 Every known particle carries an intrinsic spin angular momentum, quantized exactly as orbital angular momentum is ([Chapter 9](#ch-quantum-mechanics-in-three-dimensions)), $S = \sqrt{s(s+1)}\hbar$, but with $s$ either a half-integer ($\tfrac12, \tfrac32, \ldots$) or an integer ($0, 1, 2, \ldots$). This distinction is far more than bookkeeping: particles with half-integer spin, called **fermions**, obey the Pauli exclusion principle ([Chapter 11](#ch-many-electron-atoms)) and cannot occupy the same quantum state as an identical partner; particles with integer spin, called **bosons**, obey no such restriction and can occupy the same state in unlimited numbers (the basis, for photons, of the stimulated-emission cascade in a laser, [Chapter 11](#ch-many-electron-atoms)). Matter, in the Standard Model, is built from fermions (spin $\tfrac12$); the forces between them are mediated by the exchange of bosons.
 
@@ -34,7 +37,7 @@ Every known particle carries an intrinsic spin angular momentum, quantized exact
 The names honor statistics, not the particles themselves: **fermions** obey Fermi–Dirac statistics, after Enrico Fermi, while **bosons** obey Bose–Einstein statistics, after Satyendra Nath Bose, whose 1924 analysis of photon statistics (soon extended by Einstein to massive particles) first showed that indistinguishable integer-spin particles behave nothing like classical particles, or like half-integer-spin fermions.
 :::
 
-## The Four Fundamental Interactions
+### The Four Fundamental Interactions
 
 All observed particle interactions are, to the precision of current experiments, accounted for by exactly four fundamental forces, each mediated by the exchange of a characteristic boson (a **gauge boson**, in the language of the quantum field theories underlying the Standard Model) and each with a distinct characteristic strength and range:
 
@@ -53,7 +56,7 @@ The interactions are compared directly in {numref}`Table %s <tab:ch14-fundamenta
 
 The strong and weak interactions, both confined to nuclear-scale distances, are the reason their effects were unknown until nuclear and particle physics probed those scales directly; the electromagnetic and gravitational interactions, both infinite in range because their mediating boson is massless, dominate everyday, macroscopic experience. The relative strengths quoted are approximate and depend on the energy/distance scale at which the comparison is made, but the ordering — strong $\gg$ electromagnetic $\gg$ weak $\gg$ gravitational, at typical particle-physics scales — is robust. The strong force between nucleons discussed in [Chapter 13](#ch-nuclear-physics) is, in the Standard Model's deeper description, a residual effect of the strong force acting between the quarks confined inside each nucleon (analogous to the way the residual electromagnetic force between neutral atoms, the van der Waals force, is a residual effect of the more fundamental electromagnetic force between the charged constituents of each atom).
 
-### Worked Example: Gravity Versus Electromagnetism for Two Protons
+#### Worked Example: Gravity Versus Electromagnetism for Two Protons
 
 {numref}`Table %s <tab:ch14-fundamental-interactions>` states that gravity is weaker than the strong interaction by a factor of order $10^{-38}$; it is worth seeing this concretely for the simplest possible case — two protons separated by some distance $r$ — where both the gravitational attraction and the electric (Coulomb) repulsion are exactly known, textbook formulas requiring no particle-physics machinery at all:
 
@@ -77,7 +80,7 @@ Of the four, the weak interaction is the one with no everyday signature to point
 Beta decay of a single nucleus and of a sample, with the emitted electron and antineutrino shown. The conservation laws catalogued later in this chapter can be read directly off the products: charge, baryon number, and electron lepton number each balance, event by event.
 ```
 
-## Reading Feynman Diagrams
+### Reading Feynman Diagrams
 
 Every interaction catalogued in {numref}`Table %s <tab:ch14-fundamental-interactions>` — one particle scattering off another, one particle decaying into several — can be drawn as a **Feynman diagram**, a bookkeeping and visualization tool introduced by Richard Feynman in the late 1940s as part of the machinery that made precise calculations in quantum electrodynamics tractable (work for which Feynman shared the 1965 Nobel Prize with Julian Schwinger and Sin-Itiro Tomonaga). A Feynman diagram is not a literal picture of particle trajectories in space, the way a cloud-chamber photograph is; it is closer to a schematic circuit diagram, read according to a small set of fixed conventions:
 
@@ -103,7 +106,7 @@ The left-hand diagram is the quantum-field-theoretic picture underlying ordinary
 The generic term for a quark or lepton type — up, down, strange, charm, top, bottom for quarks; electron, muon, tau (and their neutrinos) for leptons — is **flavor**. Flavor is independent of the color charge introduced later in this chapter: two quarks of the same flavor, two up quarks say, can still carry different colors.
 :::
 
-### Worked Example: Reading a Feynman Diagram
+#### Worked Example: Reading a Feynman Diagram
 
 Verify, vertex by vertex, that the beta-decay diagram in {numref}`Figure %s <fig:ch14-feynman-diagrams>` conserves charge, baryon number, and lepton number at *each* vertex individually, not merely for the overall reaction $n \to p + e^- + \bar\nu_e$ already checked earlier in this chapter.
 
@@ -113,7 +116,9 @@ Verify, vertex by vertex, that the beta-decay diagram in {numref}`Figure %s <fig
 
 Every conservation law holds separately at each vertex, which is both a check on the diagram and the deeper reason the *overall* reaction conserves these quantities in the first place: a multi-vertex process can only conserve a quantity globally if every individual vertex conserves it, since nothing is allowed to leak in or out of an internal line that connects two vertices back to back.
 
-## Particle Accelerators and Detectors
+## Accelerators, Leptons, and Quarks
+
+### Particle Accelerators and Detectors
 
 None of the particle content, forces, or conservation laws catalogued in this chapter were read directly off nature; they were inferred, often at great technical and financial cost, from what came out of high-energy collisions. A **particle accelerator** uses electric fields to increase a charged particle's kinetic energy, typically bending its path into a circle with magnetic fields (a **synchrotron**, of exactly the type used at the Bevatron introduced in [Chapter 3](#ch-relativistic-dynamics)) so that the same beam can be accelerated repeatedly on each pass rather than only once, as in a straight-line (linear) accelerator. That beam is then steered into a collision — either against a stationary target (**fixed-target**) or head-on against a second, oppositely circulating beam (a **collider**) — and the CM-frame threshold-energy analysis of [Chapter 3](#ch-relativistic-dynamics) governs, in either case, exactly how much beam energy is needed to produce a given final state.
 
@@ -134,7 +139,7 @@ The ATLAS detector at CERN, photographed during construction in February 2007; t
 
 Not every particle produced in a collision leaves a signal a detector can see. A neutrino — carrying no electric charge and feeling only the weak interaction — passes through even a large, modern detector's tracking, calorimetry, and muon layers essentially undisturbed, exactly as it passes through the Earth itself; no detector built or conceivably buildable stops enough neutrinos to identify one directly, event by event, in this setting. Its presence is instead inferred exactly as Pauli originally inferred it from the continuous beta-decay energy spectrum ([Chapter 13](#ch-nuclear-physics)), but applied now to *momentum* rather than energy: because the two colliding beams carry zero net momentum transverse to the beam direction, any transverse momentum imbalance among everything the detector *does* see must have been carried away by whatever escaped unseen.
 
-### Worked Example: Inferring a Missing Neutrino from Momentum Conservation
+#### Worked Example: Inferring a Missing Neutrino from Momentum Conservation
 
 Suppose a collision event at a detector produces several visible particles (tracked and measured by the calorimeter) whose momentum components transverse to the beam sum to $p_x = 12.4\ \text{GeV}/c$ and $p_y = -5.1\ \text{GeV}/c$. Since the incoming beams carry zero net transverse momentum by construction, conservation of momentum requires the missing transverse momentum, carried by one or more undetected particles (a neutrino, most often), to be exactly the negative of the visible sum:
 
@@ -144,7 +149,7 @@ $$
 
 with magnitude $|\vec p^{\,\text{miss}}| = \sqrt{(12.4)^2+(5.1)^2}\ \text{GeV}/c \approx 13.4\ \text{GeV}/c$. A sizable "missing transverse momentum" of exactly this kind, event after event, was part of the experimental signature used to identify $W$-boson production and decay ($W \to e^-+\bar\nu_e$ or $\mu^-+\bar\nu_\mu$) in the collider experiments of the 1980s, and remains a routine tool today for tagging any collision producing a neutrino (or, in searches for physics beyond the Standard Model, any other weakly-interacting particle that would likewise escape undetected — including, potentially, a dark-matter particle of the kind discussed in Open Questions below).
 
-### Worked Example: Threshold Energy for Pion Production
+#### Worked Example: Threshold Energy for Pion Production
 
 The fixed-target threshold method of [Chapter 3](#ch-relativistic-dynamics)'s worked example on antiproton production applies to any particle-creation reaction, not only that one. Consider a proton beam striking a stationary proton target and producing a neutral pion, $p+p \to p+p+\pi^0$, with $m_{\pi^0}c^2 = 135.0\ \text{MeV}$. Following exactly the same method, with $M = 2m_p + m_{\pi^0}$ in place of the antiproton reaction's $4m_p$:
 
@@ -166,7 +171,7 @@ $$
 
 This is dramatically less demanding than the $6m_pc^2 \approx 5.6\ \text{GeV}$ threshold found for antiproton production in [Chapter 3](#ch-relativistic-dynamics), consistent with pion physics having been accessible to the very first generation of proton accelerators in the late 1940s and early 1950s, well before the antiproton search motivated the Bevatron. Reaching successively higher thresholds like these — hundreds of $\text{MeV}$ for pions, several $\text{GeV}$ for antiprotons and strange particles, hundreds of $\text{GeV}$ for the Higgs boson, and $\text{TeV}$-scale collision energies for direct searches beyond the Standard Model — is the entire history of why particle accelerators have grown, generation after generation, from tabletop devices to the 27-kilometer LHC.
 
-## Leptons and Quarks
+### Leptons and Quarks
 
 The Standard Model's fundamental matter fermions fall into two families, **leptons** and **quarks**, each organized into three repeating **generations** of increasing mass, with (as far as current experiments show) identical properties within a generation apart from mass:
 
@@ -176,7 +181,7 @@ The names are Greek in origin and describe relative mass, not any structural pro
 
 **Leptons** are fermions that do not feel the strong interaction. Each generation contains a charged lepton and a corresponding (essentially massless, electrically neutral) neutrino: the electron $e^-$ and electron neutrino $\nu_e$ (generation 1, the only stable charged lepton and the only leptons found in ordinary matter); the muon $\mu^-$ and muon neutrino $\nu_\mu$ (generation 2); and the tau $\tau^-$ and tau neutrino $\nu_\tau$ (generation 3). The muon and tau are, in essentially every respect apart from mass and consequent instability, heavier copies of the electron — the muon, for instance, decays via the weak interaction ($\mu^- \to e^- + \bar\nu_e + \nu_\mu$) with a mean lifetime of about $2.2\ \mu\text{s}$, far too short-lived to be found as a stable constituent of ordinary matter.
 
-### Worked Example: Muon Decay Length in a Particle Beam
+#### Worked Example: Muon Decay Length in a Particle Beam
 
 A beam of muons is produced at a particle accelerator with kinetic energy $K = 300\ \text{MeV}$, well above the muon's rest energy $m_\mu c^2 = 105.7\ \text{MeV}$, so the relativistic machinery of [Chapter 3](#ch-relativistic-dynamics) is required rather than a Newtonian estimate. The total energy is $E = K + m_\mu c^2 = 405.7\ \text{MeV}$, so
 
@@ -205,7 +210,9 @@ For every lepton and quark there exists a corresponding **antiparticle**, with i
 The Standard Model's fundamental particles: three repeating generations of matter fermions (quarks and leptons), plus the force-carrying gauge bosons and the Higgs boson, neither of which come in generations. Original schematic by the author, redrawn independently of the familiar CERN/Wikipedia layout.
 ```
 
-## Hadrons and Confinement
+## Hadrons, Conservation Laws, and Open Questions
+
+### Hadrons and Confinement
 
 Quarks are never seen individually; they are always found bound into composite particles called **hadrons**, a consequence of quark confinement: unlike the Coulomb or nuclear forces encountered so far, which weaken with distance, the strong force between two quarks does *not* weaken as they are pulled apart — instead, the energy stored in the strong-force field between them grows without bound, so that attempting to separate two quarks (e.g., in a high-energy collision) eventually supplies enough energy, via mass–energy equivalence, to spontaneously create a new quark-antiquark pair from the field energy itself, snapping the field into two shorter, separately confined pieces rather than yielding a single free quark. Hadrons are observed in exactly two configurations, both of which happen to have net integer electric charge and (color-)neutral total color charge, consistent with confinement always producing color-neutral bound states:
 
@@ -222,7 +229,7 @@ $$
 where $\sigma$, the **string tension**, is measured to be about $1\ \text{GeV/fm}$. Once the stored energy $\sigma r$ climbs to a few hundred $\text{MeV}$ — comparable to the energy needed to create a light quark-antiquark pair from the vacuum via $E=mc^2$ — it becomes energetically cheaper for the field to supply that pair than to keep stretching, so the flux tube snaps into two shorter, separately confined pieces rather than yielding an isolated quark. This typically happens after the tube has stretched only about $1\ \text{fm}$, comparable to a hadron's own size, which is exactly why no accelerator, however powerful, can pull a free quark out of a hadron: pushing $r$ larger simply manufactures more hadrons, never a lone one.
 :::
 
-### Worked Example: Quark Content of the $K^+$ Meson
+#### Worked Example: Quark Content of the $K^+$ Meson
 
 The $K^+$ meson (a **kaon**), like the pion above, is a quark-antiquark pair, but built from a different combination: $K^+ = u\bar s$, an up quark bound to a strange *antiquark*. Every antiquark carries the exact opposite electric charge of its corresponding quark, so $\bar s$ (the antiparticle of the $-\tfrac13e$ strange quark) carries $+\tfrac13e$, and
 
@@ -232,7 +239,7 @@ $$
 
 matching the kaon's experimentally known charge of $+e$ exactly. Like the pion, the $K^+$ is a boson with baryon number zero — but unlike the pion, it carries a nonzero **strangeness**: the strange antiquark $\bar s$ carries strangeness $+1$ (opposite the strange quark's $S=-1$, by the sign convention introduced below), while the up quark carries $S=0$, giving $S(K^+) = +1$. This one extra bookkeeping number, absent from the pion, is exactly what made kaons behave so differently from pions when both were first encountered in cosmic-ray data — the subject of the next section.
 
-### Historical Context: The Particle Zoo
+#### Historical Context: The Particle Zoo
 
 The tidy classification of hadrons into baryons and mesons, each built from a handful of quark flavors, is a retrospective simplification of what was, for roughly three decades, one of the most disorienting periods in the history of physics. Cosmic rays — high-energy particles arriving from space and colliding with nuclei in the upper atmosphere — were, before particle accelerators reached comparable energies, the only available source of exotic new particles, and they did not disappoint. In 1936–1937, Carl Anderson and Seth Neddermeyer, studying cosmic-ray tracks in a cloud chamber, identified a new particle with a mass about $200$ times the electron's — initially mistaken for the meson Hideki Yukawa had predicted the previous year as the carrier of the nuclear force, but eventually recognized (it interacted far too weakly, and penetrated far too much matter, to be Yukawa's particle) as an entirely new, heavier cousin of the electron: the **muon**, already met above. Yukawa's actual meson turned up a decade later, in 1947, when Cecil Powell, Giuseppe Occhialini, and César Lattes, examining photographic emulsions exposed at high-altitude observatories, identified the **pion**, caught in the act of decaying into exactly the muon Anderson and Neddermeyer had already found — untangling, at a stroke, two distinct particles that had been conflated for a decade. That same year, George Rochester and Clifford Butler, also working from cosmic-ray cloud-chamber photographs, found still stranger tracks: V-shaped pairs of particle trails, produced abundantly yet decaying only slowly — the signature of what came to be called, aptly, **strange particles**: the kaons of the worked example above, and the lightest hyperons (baryons heavier than the proton and neutron, such as the $\Lambda^0$ introduced earlier in this chapter).
 
@@ -246,7 +253,7 @@ The eightfold way's success in predicting the $\Omega^-$ before it was ever obse
 Gell-Mann's name for the new constituents was borrowed, by his own account, from a nonsense line in James Joyce's *Finnegans Wake* — "Three quarks for Muster Mark!" — which happened to fit neatly with the three quark flavors ($u$, $d$, $s$) known at the time. Zweig, who proposed the same constituents independently and simultaneously, called them "aces" instead; Gell-Mann's name, and his convention of fractional-$e$ electric charges, is the one the entire field still uses today.
 :::
 
-## Conservation Laws
+### Conservation Laws
 
 Not every combination of particles satisfying energy-momentum conservation is actually observed to occur; particle reactions additionally obey several conservation laws, some familiar from earlier chapters and some new to particle physics:
 
@@ -256,7 +263,7 @@ Not every combination of particles satisfying energy-momentum conservation is ac
 
 These conservation laws function exactly as energy, momentum, and angular momentum conservation do in earlier chapters: a proposed reaction consistent with all other physics can nonetheless be immediately ruled out if it violates one of these rules, and they provide a fast, purely bookkeeping-based check on whether an observed or hypothesized particle process is allowed.
 
-### Strangeness: An (Almost) Conserved Quantum Number
+#### Strangeness: An (Almost) Conserved Quantum Number
 
 The particle-zoo puzzle described above is also where **strangeness** $S$ enters as a genuine, book-keepable quantum number, alongside charge, baryon number, and lepton number. Strangeness is assigned by quark content: $S=-1$ for each strange quark $s$ a particle contains, $S=+1$ for each strange antiquark $\bar s$, and $S=0$ for every other quark flavor (a sign convention fixed historically, before quarks themselves were proposed, when strangeness was assigned directly to particles from their production and decay patterns rather than derived from a quark that had not yet been identified). The defining, and at first deeply puzzling, experimental fact about strangeness is that it is treated differently by different interactions:
 
@@ -269,7 +276,7 @@ This single fact resolves Rochester and Butler's original puzzle: strange partic
 When checking whether a proposed reaction is allowed, work through the conservation laws in order of how absolute they are, not in the order this chapter introduced them. Charge and baryon number are conserved without exception in every observed process, so check those first — a violation there kills the reaction outright, with no further work needed. Lepton number, checked separately per generation, is next, similarly exception-free in every confirmed observation. Only then check strangeness, and check it last precisely because it is *allowed* to change: a reaction with $\Delta S=0$ can proceed strongly or electromagnetically, $\Delta S=\pm1$ can only proceed weakly, and $\Delta S=\pm2$ or more is forbidden outright, since no single vertex changes strangeness by more than one unit. The size of $\Delta S$, in other words, is itself a fast diagnostic for *which* interaction a reaction must proceed through.
 :::
 
-### Worked Example: Strangeness Conservation in Associated Production and Decay
+#### Worked Example: Strangeness Conservation in Associated Production and Decay
 
 Consider two reactions involving the $\Lambda^0$ ($uds$) introduced earlier in this chapter and the $K^0$ meson ($d\bar s$):
 
@@ -281,7 +288,7 @@ Neither the pion nor the proton on the left of the first reaction contains a str
 
 The second reaction, the $\Lambda^0$'s actual decay, is different: $S_i = S(\Lambda^0) = -1$, while $S_f = S(p) + S(\pi^-) = 0+0=0$, a change of $\Delta S = +1$ — forbidden for the strong or electromagnetic interaction, but allowed, one unit at a time, for the weak interaction. This is consistent with the $\Lambda^0$'s measured mean lifetime of about $2.6\times10^{-10}\ \text{s}$, squarely in the weak-interaction range, roughly $10^{13}$ times longer than the strong-interaction timescale on which the very same particle was created in the first reaction.
 
-## The Higgs Mechanism
+### The Higgs Mechanism
 
 A long-standing puzzle in the Standard Model was that the mathematical framework describing the weak and electromagnetic interactions in a unified way most naturally predicts that all fundamental particles, including the electron and quarks, should be massless — directly contradicted by experiment. The resolution, proposed independently by several theorists in 1964 (and associated most closely with the name of Peter Higgs), is that space is permeated by a nonzero background field, the **Higgs field**, and that fundamental particles acquire mass through their interaction with this field: a particle that couples strongly to the Higgs field behaves as though it has large inertia (large mass) as it moves through the field, while a particle that does not couple to it (the photon, for instance) remains exactly massless. Associated with the Higgs field, exactly as the electromagnetic field has an associated particle (the photon) representing its quantized excitations, is the **Higgs boson**, whose discovery at the Large Hadron Collider in 2012 — decades after it was first predicted, and requiring a purpose-built accelerator capable of reaching the multi-hundred-GeV collision energies needed to produce it directly — provided direct experimental confirmation of the mechanism and completed the last missing piece of the Standard Model's particle content.
 
@@ -291,7 +298,7 @@ The strength of a given particle's coupling to the Higgs field is not itself pre
 It is tempting to read the Higgs mechanism as a complete explanation of why matter has mass, but for ordinary matter it accounts for only a small fraction of it. The Higgs mechanism generates the *fundamental* masses cataloged in {numref}`Figure %s <fig:ch14-standard-model-chart>` — the bare rest mass of an individual quark or electron, on its own, with nothing else around it. A proton's mass is not simply the sum of its three quarks' Higgs-generated masses: two up quarks and a down quark contribute barely $1\%$ of the proton's $938.3\ \text{MeV}$. The remaining $99\%$ is confinement energy — the strong-force flux-tube energy introduced above, plus the quarks' own relativistic kinetic energy, converted to rest mass via $E=mc^2$ exactly as in the nuclear mass defect of [Chapter 13](#ch-nuclear-physics). The Higgs field is why quarks and electrons have mass at all; confinement, not the Higgs field, accounts for almost all of the mass of everyday matter.
 :::
 
-## Open Questions
+### Open Questions
 
 As the final chapter of this book, it is worth being explicit that the Standard Model, for all its precision and predictive success — every particle it predicts has now been found, and its predictions for their properties typically agree with experiment to several decimal places — is not a complete "theory of everything." Several major open questions define the current frontier of particle physics and cosmology, worth naming even though, unlike everything else in this book, none has yet been resolved:
 

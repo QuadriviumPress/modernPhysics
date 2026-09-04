@@ -4,9 +4,10 @@ short_title: Chapter 9. Quantum Mechanics in Three Dimensions
 label: ch-quantum-mechanics-in-three-dimensions
 numbering:
   enumerator: "9.%s"
+  heading_2: true
 ---
 
-## Learning Objectives
+### Learning Objectives
 
 By the end of this chapter, you should be able to:
 
@@ -18,11 +19,13 @@ By the end of this chapter, you should be able to:
 - Describe the isotropic three-dimensional harmonic oscillator as a second exactly solvable central potential and relate its degeneracy structure to the nuclear shell model.
 - Explain why the three-dimensional treatment is the necessary foundation for the hydrogen atom, developed in [Chapter 10](#ch-the-hydrogen-atom).
 
-## Introduction
+### Introduction
 
 [Chapter 8](#ch-the-schrodinger-equation) solved the Schrödinger equation for several one-dimensional potentials, but every atom, molecule, and nucleus is a three-dimensional object, and the most important potential in atomic physics — the Coulomb attraction between an electron and a nucleus — depends only on the distance $r$ from a fixed center, not on a single Cartesian coordinate. This chapter extends the Schrödinger equation to three dimensions and develops the machinery — separation of variables in spherical coordinates, the centrifugal barrier in the radial equation, and the angular momentum quantum numbers that emerge from it — needed to solve any **central-potential** problem, of which the hydrogen atom ([Chapter 10](#ch-the-hydrogen-atom)) is the most important example. The results obtained here, especially the quantization of angular momentum, apply unchanged to every central potential, not just the Coulomb potential, and reappear throughout atomic, molecular, and nuclear physics.
 
-## The Schrödinger Equation in Three Dimensions
+## Three Dimensions and Central Potentials
+
+### The Schrödinger Equation in Three Dimensions
 
 Generalizing [Chapter 8](#ch-the-schrodinger-equation) to three spatial dimensions, the time-independent Schrödinger equation for a particle of mass $m$ in a potential $V(x,y,z)$ is
 
@@ -48,7 +51,7 @@ with three independent quantum numbers, one per dimension. A notable feature not
 Before grinding through a degeneracy count case by case, look at the potential's symmetry first. A cubic box ($L_x=L_y=L_z$) is invariant under permuting $x, y, z$, so energies depend only on the *set* $\{n_x,n_y,n_z\}$, and permutations of a given triple are automatically degenerate — no need to check them one at a time. If only two sides are equal, only swaps of those two are guaranteed to be degenerate; if all three sides differ, don't expect any exact degeneracies at all beyond numerical coincidence.
 :::
 
-### Worked Example: A Rectangular Quantum Dot
+#### Worked Example: A Rectangular Quantum Dot
 
 A semiconductor quantum dot confines an electron in a box with $L_x = L_y = 5.0\ \text{nm}$ but $L_z = 10.0\ \text{nm}$ (a "square" cross-section, but elongated along $z$) — a shape with less symmetry than a cube, but more than a fully generic box. Using $E_n(\text{eV}) = 0.376\ \text{eV}\cdot\text{nm}^2 \times n^2/L^2(\text{nm})$ (a convenient rewriting of Equation {eq}`eq:ch09-box-energy` for an electron), the ground state has
 
@@ -58,7 +61,7 @@ $$
 
 a confinement energy of a few tens of millielectronvolts, comparable to $k_BT$ at room temperature ($\approx 26\ \text{meV}$) — which is why quantum-dot devices are often cooled to enhance the visibility of their discrete energy levels. Because $L_x=L_y \ne L_z$, the box retains a *partial* symmetry: states $(n_x,n_y,n_z)$ and $(n_y,n_x,n_z)$ are degenerate for any choice of $n_z$ (swapping the two equal dimensions changes nothing), but states that instead permute the unequal dimension, such as $(1,1,2)$ versus $(2,1,1)$, are generally *not* degenerate with $(1,1,1)$ or with each other. A box with $L_x=L_y=L_z$ would restore full degeneracy among all permutations of a given $(n_x,n_y,n_z)$ triple, while a fully generic box ($L_x \ne L_y \ne L_z$) would show no degeneracy at all — the amount of degeneracy is a direct fingerprint of how much geometric symmetry the confining potential actually has.
 
-## Central Potentials and Spherical Coordinates
+### Central Potentials and Spherical Coordinates
 
 The Coulomb potential, and most potentials of physical interest in atomic and nuclear physics, depend only on the distance from a fixed point: $V(x,y,z) = V(r)$, where $r = \sqrt{x^2+y^2+z^2}$. Such a potential is not separable in Cartesian coordinates, but it *is* separable in **spherical coordinates** $(r,\theta,\phi)$, precisely because its symmetry matches that coordinate system. Written in spherical coordinates, the Schrödinger equation for a central potential admits solutions of the separable form
 
@@ -68,7 +71,7 @@ $$
 
 where $R(r)$, the **radial wave function**, depends on the specific form of $V(r)$ and carries the information about the particle's radial probability distribution, while $Y(\theta,\phi)$, the **angular wave function**, turns out to be *completely independent of the specific form of $V(r)$* — it is determined entirely by the requirement that $\psi$ be single-valued and well-behaved on the sphere, and is therefore the same set of functions for the hydrogen atom, a 3D harmonic oscillator, or any other central potential.
 
-### Spherical Harmonics: The Lowest Few Explicitly
+#### Spherical Harmonics: The Lowest Few Explicitly
 
 The angular functions $Y(\theta,\phi)$ that solve the angular equation are called **spherical harmonics**, conventionally written $Y_\ell^{m_\ell}(\theta,\phi)$ and labeled by exactly the two angular quantum numbers introduced below. The lowest few, up to overall normalization constants, are
 
@@ -82,7 +85,7 @@ and already illustrate the general pattern. The $\ell=0$ harmonic, $Y_0^0$, is c
 **Counting nodes.** The number of angular nodes (surfaces on which $Y_\ell^{m_\ell}=0$) in a spherical harmonic is exactly $\ell$: zero for $Y_0^0$, one for each $Y_1^{m_\ell}$, and so on — the same node-counting logic used for 1D bound states in [Chapter 8](#ch-the-schrodinger-equation).
 :::
 
-### The Radial Equation and the Centrifugal Barrier
+#### The Radial Equation and the Centrifugal Barrier
 
 Substituting $\psi = R(r)Y(\theta,\phi)$ into the full Schrödinger equation and separating variables reduces the radial part to an ordinary differential equation for $R(r)$. It is standard, and illuminating, to write this in terms of $u(r) \equiv rR(r)$, in which case the radial equation takes a form directly analogous to a *one-dimensional* Schrödinger equation for $u(r)$ on the half-line $r>0$:
 
@@ -136,7 +139,7 @@ Two features are worth emphasizing, since both run against classical intuition. 
 
 Historically, states of a given $\ell$ are labeled by spectroscopic letters inherited from early atomic spectroscopy: $\ell = 0,1,2,3,4,\ldots$ are denoted $s, p, d, f, g,\ldots$ respectively — a labeling convention used throughout atomic physics (Chapters [10](#ch-the-hydrogen-atom)–[11](#ch-many-electron-atoms)) and retained today purely by tradition.
 
-### Why $m_\ell$ Is Called the Magnetic Quantum Number
+#### Why $m_\ell$ Is Called the Magnetic Quantum Number
 
 The name "magnetic quantum number" is not arbitrary bookkeeping. A charged particle with orbital angular momentum $\vec L$ circulating about a center behaves, classically and quantum mechanically alike, as a tiny current loop with an associated **orbital magnetic dipole moment**,
 
@@ -169,7 +172,7 @@ statistics.
 When Otto Stern and Walther Gerlach ran this experiment in 1922, quantum spin had not yet been proposed — Uhlenbeck and Goudsmit would not put it forward until 1925. Stern and Gerlach interpreted their two discrete silver-atom deflections as direct evidence for the *orbital* space quantization derived above, and the result was celebrated for exactly that reason. It later became clear that a silver atom's outer electron is in an $s$-state ($\ell=0$, hence zero orbital magnetic moment — see the problems at the end of this chapter); the splitting Stern and Gerlach actually observed comes entirely from electron spin, a genuinely new form of angular momentum with no classical analog, introduced properly in [Chapter 10](#ch-the-hydrogen-atom).
 :::
 
-### Worked Example: The Vector Model for $\ell=2$
+#### Worked Example: The Vector Model for $\ell=2$
 
 An electron is in a state with orbital angular momentum quantum number $\ell=2$ (a $d$-state). Its angular momentum magnitude is
 
@@ -193,7 +196,7 @@ The cone that this worked example describes is usually drawn as a static picture
 A spinning top under gravity. In steady precession the torque stays perpendicular to $\vec L$, so it changes the direction of the angular momentum without changing either its magnitude or its vertical component — the classical motion behind the vector model's cone, and behind the Larmor precession of a magnetic moment in a field ([Chapter 10](#ch-the-hydrogen-atom)).
 ```
 
-### Angular Momentum Commutation Relations
+#### Angular Momentum Commutation Relations
 
 The impossibility of simultaneously sharp values for more than one Cartesian component of $\vec L$ is not merely observed; it follows from the algebra of the angular momentum operators themselves, which satisfy the commutation relations
 
@@ -207,7 +210,9 @@ $$
 The impossibility of jointly sharp $L_x$, $L_y$, $L_z$ is the same phenomenon, in different clothing, as the position–momentum uncertainty relation built from $[\hat x,\hat p_x]=i\hbar$ in [Chapter 7](#ch-wave-properties-of-particles): in both cases it is the failure of two operators to commute that forbids any state from having simultaneously sharp values of the corresponding observables.
 :::
 
-## The Three Quantum Numbers of a Central-Potential Bound State
+## Quantum Numbers and the Isotropic Oscillator
+
+### The Three Quantum Numbers of a Central-Potential Bound State
 
 Solving the full three-dimensional problem for a bound state in a central potential $V(r)$ produces exactly three quantum numbers, each arising from a separate boundary condition in the separation of variables:
 
@@ -217,7 +222,7 @@ Solving the full three-dimensional problem for a bound state in a central potent
 
 This same trio of quantum numbers, with the same allowed ranges and the same physical meaning, appears in every central-potential problem in this book — it is a consequence of three-dimensional rotational symmetry, not a special feature of any one potential — and [Chapter 10](#ch-the-hydrogen-atom) specializes this general machinery to the specific radial equation of the hydrogen atom's Coulomb potential.
 
-## A Second Exactly Solvable Central Potential: The Isotropic Harmonic Oscillator
+### A Second Exactly Solvable Central Potential: The Isotropic Harmonic Oscillator
 
 The Coulomb potential of [Chapter 10](#ch-the-hydrogen-atom) is the most important central potential in atomic physics, but it is not the only one that can be solved exactly. The **isotropic three-dimensional harmonic oscillator**, $V(r) = \tfrac12 m\omega^2 r^2$, is a second example, and it is central (in the technical sense of depending only on $r$) even though it is also separable in Cartesian coordinates, since $r^2 = x^2+y^2+z^2$ splits into three independent one-dimensional oscillators. Solved in Cartesian form, using the one-dimensional harmonic-oscillator result of [Chapter 8](#ch-the-schrodinger-equation) three times over, the energy levels are
 
@@ -233,7 +238,7 @@ depending only on the *sum* $N$, not on how it is distributed among $n_x$, $n_y$
 
 This may look like a mathematical curiosity, but the isotropic harmonic oscillator is directly useful: it is the starting point for the nuclear **shell model** ([Chapter 13](#ch-nuclear-physics)), in which each nucleon moves, to a first approximation, in an average central potential produced by all the other nucleons — a potential that resembles a finite well but is often approximated, for the purpose of a first, analytically tractable calculation, by an isotropic harmonic oscillator. The oscillator's degenerate energy levels, once a spin-orbit correction (introduced in [Chapter 13](#ch-nuclear-physics)) is added, reproduce the empirically observed nuclear **magic numbers** — proton or neutron counts (2, 8, 20, 28, 50, 82, 126) at which nuclei are unusually stable — in much the same way that filled electron shells explain the chemical stability of the noble gases ([Chapter 11](#ch-many-electron-atoms)).
 
-### Comparing Degeneracy Across Three Central Potentials
+#### Comparing Degeneracy Across Three Central Potentials
 
 It is worth pausing to compare the degeneracy patterns of the three central (or Cartesian-separable) potentials encountered so far, since the comparison sharpens exactly what "degeneracy reflects underlying symmetry" means in practice. The cubic infinite box has a *discrete* symmetry (the box is invariant only under swapping $x$, $y$, $z$ and reflections, not under arbitrary rotations), and correspondingly modest degeneracies, arising only from specific numerical coincidences among sums of squares of integers. The isotropic harmonic oscillator has full continuous rotational symmetry, and correspondingly much richer degeneracy, with every state of a given $N=n_x+n_y+n_z$ degenerate regardless of how $N$ is partitioned among the three Cartesian directions. The hydrogen atom's Coulomb potential ([Chapter 10](#ch-the-hydrogen-atom)) is the most degenerate of all the central potentials commonly encountered: not only is the energy independent of $m_\ell$ (true for *any* central potential, since no central potential singles out a preferred direction in space), but for the Coulomb potential specifically, the energy is *also* independent of $\ell$ for fixed $n$ — an extra, "accidental" degeneracy not explained by rotational symmetry alone, and one of the most distinctive mathematical features of the $1/r$ potential, examined further in [Chapter 10](#ch-the-hydrogen-atom).
 

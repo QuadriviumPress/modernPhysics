@@ -1,12 +1,5 @@
 # Sources
 
-This book's chapter scaffold (titles, ordering, part groupings) is a
-structural reference to Taylor, Zafiratos & Dubson, *Modern Physics for
-Scientists and Engineers* (2nd ed.) — a copyrighted work. **No text,
-figures, examples, or problems are copied from that book.** All content is
-adapted from the openly licensed (OER) sources below, and this file is the
-attribution ledger required by their licenses.
-
 Overall book license: **CC-BY-NC-SA-4.0**. Every source below is compatible
 with redistribution under those terms (CC-BY and CC-BY-SA content may be
 redistributed under the more restrictive NC-SA terms; CC-BY-NC-SA content

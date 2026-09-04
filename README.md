@@ -122,27 +122,17 @@ python3 scripts/figures/ch05_figures.py
 python3 scripts/figures/ch05_schematics.py
 ```
 
-## Preview locally
+## Build
 
 ```bash
-npm install -g mystmd@1.10.1
-myst start
+npm install
+npm run start          # preview
+npm run build          # static site in _build/html/
 ```
 
-## Build the static site
-
-```bash
-myst build --html
-```
-
-Generated output is written to `_build/` and is not committed.
-
-## Deploy
-
-The book builds and deploys to GitHub Pages via
-[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) on every push
-to `main`, once the repository is pushed to GitHub with Pages enabled
-(Settings → Pages → Source: GitHub Actions).
+Generated output is written to `_build/` and is not committed. CI runs on
+pull requests (`.github/workflows/ci.yml`); pushes to `main` deploy via
+[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).
 
 ## Content sources
 

@@ -21,14 +21,14 @@ exports:
 
 By the end of this chapter, you should be able to:
 
-- State the radial equation for the hydrogen atom and the resulting energy quantization, and compare it to the Bohr model's prediction.
+- Substitute the Coulomb potential into the general radial equation of Chapter 9 to obtain the resulting energy quantization for hydrogen, and compare it to the Bohr model's prediction.
 - Explain, from the normalizability of the radial equation's solutions, why the principal quantum number $n$ is discrete and why $\ell$ is restricted to $0,\ldots,n-1$.
 - Write down the explicit hydrogen radial wave functions $R_{10}$, $R_{20}$, $R_{21}$, describe the resulting radial probability distributions, and use the effective (centrifugal) potential to explain why low-$\ell$ states penetrate closer to the nucleus.
 - Extend the hydrogen solution to hydrogenic ions (e.g., $\text{He}^+$, $\text{Li}^{2+}$) and compute the $Z^2$ scaling of energy and $1/Z$ scaling of orbital size.
 - Read an energy-level diagram for hydrogen and compute the wavelengths of lines in the Lyman, Balmer, and Paschen series.
 - Enumerate the allowed quantum states for a given $n$ and explain the origin of degeneracy in hydrogen.
 - Explain electron spin and the Stern–Gerlach experiment that revealed it, and compute the force and deflection produced by a Stern–Gerlach magnet.
-- Combine orbital and spin angular momentum via the orbital and spin magnetic quantum numbers, and compute orbital and spin magnetic moments.
+- Specify an electron's orbital and spin orientation using the magnetic quantum numbers $m_\ell$ and $m_s$, and compute the corresponding orbital and spin magnetic moments.
 - Compute the frequency and wavelength shift produced by the (normal) Zeeman effect, and estimate the order of magnitude of fine-structure splitting in terms of the fine-structure constant $\alpha$.
 - Apply selection rules to determine which transitions between hydrogen energy levels are allowed.
 
@@ -79,7 +79,7 @@ The models that agree on $E_n$ disagree entirely about where the electron is.
 
 #### Historical Context: Bohr's 1913 Model and Its Limits
 
-It is worth pausing on why a model built on postulates that turned out to be simply wrong — definite orbits, angular momentum quantized as $L=n\hbar$ — nonetheless earned Niels Bohr the 1922 Nobel Prize and remains the picture most people first encounter. In 1913, fourteen years before Schrödinger's equation existed, Bohr combined classical circular-orbit mechanics with a single ad hoc quantization rule and reproduced the empirical Rydberg formula for hydrogen's spectral lines essentially exactly, including its dependence on nuclear charge for hydrogenic ions (below) — a stunning success for a model with no derivation behind its central assumption. The de Broglie standing-wave argument of [Chapter 7](#ch-wave-properties-of-particles) later supplied a retroactive justification for $L=n\hbar$, which is part of why the Bohr model survived as long as it did before being fully superseded.
+It is worth pausing on why a model built on postulates that turned out to be simply wrong — definite orbits, angular momentum quantized as $L=n\hbar$ — nonetheless earned Niels Bohr the 1922 Nobel Prize and remains the picture most people first encounter. In 1913, thirteen years before Schrödinger's equation existed, Bohr combined classical circular-orbit mechanics with a single ad hoc quantization rule and reproduced the empirical Rydberg formula for hydrogen's spectral lines essentially exactly, including its dependence on nuclear charge for hydrogenic ions (below) — a stunning success for a model with no derivation behind its central assumption. The de Broglie standing-wave argument of [Chapter 7](#ch-wave-properties-of-particles) later supplied a retroactive justification for $L=n\hbar$, which is part of why the Bohr model survived as long as it did before being fully superseded.
 
 :::{seealso}
 The de Broglie justification for $L=n\hbar$ works out concretely: demanding that an integer number of de Broglie wavelengths, $\lambda=h/p$ ([Chapter 7](#ch-wave-properties-of-particles)), fit exactly around a circular orbit of circumference $2\pi r$ gives $2\pi r = n\lambda = nh/p$, i.e. $L=rp=n\hbar$ — Bohr's quantization rule, recovered after the fact from wave interference rather than assumed outright.
@@ -547,7 +547,7 @@ Finally $\Delta\lambda\simeq\lambda^2\Delta f/c=(486.1\times10^{-9}\ \text{m})^2
 The field-free H$_\beta$ line becomes a triplet spaced by $\Delta\lambda$, one component for each $m_\ell$ sublevel the upper and lower states split into.
 ```
 
-Therefore, the $0.50\ \text{T}$ splitting is $2.90\times10^{-5}\ \text{eV}$, $7.00\ \text{GHz}$, and $0.0055\ \text{nm}$, half the corresponding $1.0\ \text{T}$ scale.
+Therefore, the $0.50\ \text{T}$ splitting is $2.90\times10^{-5}\ \text{eV}$, $7.00\ \text{GHz}$, and $0.0055\ \text{nm}$: the energy and frequency splittings are exactly half the corresponding $1.0\ \text{T}$ values (both scale purely with $B$), but the wavelength shift is not simply half the worked example's $0.020\ \text{nm}$, since it also depends on $\lambda^2$ and $\text{H}_\beta$'s wavelength differs from $\text{H}_\alpha$'s.
 :::
 
 :::{exercise}

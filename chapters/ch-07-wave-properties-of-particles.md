@@ -75,7 +75,7 @@ This convenient combination is often written $\lambda[\text{nm}] \approx 1.226/\
 
 #### A Consistency Check: The Relativistic Origin of $\lambda = h/p$
 
-De Broglie did not simply guess $\lambda = h/p$; he arrived at it by demanding consistency between the photon relations of [Chapter 6](#ch-particle-properties-of-waves) and the relativistic energy–momentum relation of [Chapter 3](#ch-relativistic-dynamics). A wave of frequency $f$ and phase speed $u_p$ has wavelength $\lambda = u_p/f$. Associating a particle of energy $E$ with a wave of frequency $f=E/h$ (the Planck–Einstein relation, extended by hypothesis to matter) and demanding that the resulting phase velocity be consistent with the particle's momentum $p$ via $E=pc^2/u$ (the relativistic relation between energy, momentum, and velocity established in [Chapter 3](#ch-relativistic-dynamics)) leads, after eliminating $f$ and $u_p$ in favor of $E$, $p$, and the particle's actual velocity $u$, directly to $\lambda = h/p$ — the same relation obtained by simply carrying the photon formula over to matter, but now derived from relativistic energy–momentum consistency rather than asserted by analogy alone. This is one reason de Broglie's hypothesis, though speculative, was taken seriously immediately: it was not an arbitrary guess but the unique relation consistent with treating matter and light on the same relativistic footing.
+De Broglie did not simply guess $\lambda = h/p$; he arrived at it by demanding consistency between the photon relations of [Chapter 6](#ch-particle-properties-of-waves) and the relativistic energy–momentum relation of [Chapter 3](#ch-relativistic-dynamics). A wave of frequency $f$ and phase speed $v_p$ has wavelength $\lambda = v_p/f$. Associating a particle of energy $E$ with a wave of frequency $f=E/h$ (the Planck–Einstein relation, extended by hypothesis to matter) and demanding that the resulting phase velocity be consistent with the particle's momentum $p$ via $E=pc^2/u$ (the relativistic relation between energy, momentum, and velocity established in [Chapter 3](#ch-relativistic-dynamics)) leads, after eliminating $f$ and $v_p$ in favor of $E$, $p$, and the particle's actual velocity $u$, directly to $\lambda = h/p$ — the same relation obtained by simply carrying the photon formula over to matter, but now derived from relativistic energy–momentum consistency rather than asserted by analogy alone. This is one reason de Broglie's hypothesis, though speculative, was taken seriously immediately: it was not an arbitrary guess but the unique relation consistent with treating matter and light on the same relativistic footing.
 
 ### The Davisson–Germer and G. P. Thomson Experiments
 
@@ -171,6 +171,8 @@ $$
 \Delta x\, \Delta k \gtrsim 1,
 $$
 
+a purely mathematical fact about waves, true for sound pulses and water-wave packets just as much as for matter waves, with no quantum content yet.
+
 The trade-off can be watched directly. {numref}`Figure %s <fig:ch07-wave-packet-sim>` builds a packet out of harmonic components whose amplitudes follow an adjustable envelope, and prints both widths as you work: narrow the spread $\sigma_k$ of contributing wave numbers and the packet in $x$ stretches out toward the infinite sinusoid of definite momentum; widen $\sigma_k$ and the packet contracts toward a spike, with the panel reporting $\sigma_x = 1/\sigma_k$ throughout. Switching the display from a function of space to a function of time turns the same relation into the energy–time form used later in this section.
 
 ```{phet} fourier-making-waves
@@ -181,7 +183,7 @@ The trade-off can be watched directly. {numref}`Figure %s <fig:ch07-wave-packet-
 A wave packet and the Fourier components that build it, with the width in $k$ and the width in $x$ both displayed. Their product cannot be reduced: this is the classical wave theorem that becomes the uncertainty principle once $p = \hbar k$ is imposed.
 ```
 
-a purely mathematical fact about waves, true for sound pulses and water-wave packets just as much as for matter waves, with no quantum content yet. Quantum mechanics enters when this relation is combined with the de Broglie relation $p = hk/2\pi = \hbar k$ (where $\hbar \equiv h/2\pi$), converting spread in wave number into spread in momentum, $\Delta p = \hbar\,\Delta k$, and giving
+Quantum mechanics enters when this relation is combined with the de Broglie relation $p = hk/2\pi = \hbar k$ (where $\hbar \equiv h/2\pi$), converting spread in wave number into spread in momentum, $\Delta p = \hbar\,\Delta k$, and giving
 
 $$
 \Delta x\,\Delta p \gtrsim \hbar.
@@ -213,7 +215,7 @@ $$
 v_g = \frac{d\omega}{dk} = \frac{\hbar k}{m} = \frac{p}{m} = u,
 $$
 
-exactly the classical particle velocity — the wave packet's envelope, the physically observable, localized "blob" of probability, moves at precisely the speed a classical particle with the same momentum would have. The phase velocity, by contrast, is $v_p = \omega/k = \hbar k/2m = u/2$, exactly *half* the particle's actual speed: the individual crests inside the packet move at a different, less physically meaningful speed than the envelope itself, a reminder that it is the group velocity, not the phase velocity, that corresponds to the motion of the particle (and, for a light pulse in a dispersive medium, to the speed at which energy and information actually travel).
+exactly the classical particle velocity — the wave packet's envelope, the physically observable, localized "blob" of probability, moves at precisely the speed a classical particle with the same momentum would have. The phase velocity, by contrast, is $v_p = \omega/k = \hbar k/2m = u/2$, exactly *half* the particle's actual speed: the individual crests inside the packet move at a different, less physically meaningful speed than the envelope itself, a reminder that it is the group velocity, not the phase velocity, that corresponds to the motion of the particle (and, for a light pulse in an ordinary, weakly dispersive medium, that closely tracks the speed at which energy and information travel — the two velocities can part ways near a strong absorption line, but that subtlety does not arise here).
 
 :::{dropdown} Deriving the envelope speed from two superposed waves
 The group-velocity formula $v_g = d\omega/dk$ can be seen directly by adding just two component waves of equal amplitude, wave numbers $k \pm \Delta k/2$, and angular frequencies $\omega \pm \Delta\omega/2$:
@@ -420,7 +422,7 @@ A proton is confined to a nucleus of diameter $1.0\times10^{-14}\ \text{m}$. Use
 :label: sol-wave-properties-of-particles-7
 :class: dropdown
 
-Taking $\Delta x\sim10^{-14}\ \text{m}$ gives the uncertainty-principle lower bound
+Taking the confinement width $\Delta x$ to be the full nuclear diameter, $\Delta x\sim10^{-14}\ \text{m}$ (rather than the radius, as in the electron-in-a-nucleus worked example above — either choice only shifts the order-of-magnitude estimate by a factor of a few) gives the uncertainty-principle lower bound
 
 $$
 \Delta p\gtrsim\frac{\hbar}{2\Delta x}=5.3\times10^{-21}\ \text{kg}\cdot\text{m/s}.
@@ -539,7 +541,9 @@ For confinement to $L=10\ \text{nm}=10^{-8}\ \text{m}$, use the same uncertainty
 
 $$K\sim\frac{(\Delta p)^2}{2m_e}=\frac{\hbar^2}{8m_eL^2}=\frac{(1.055\times10^{-34})^2}{8(9.109\times10^{-31})(10^{-8})^2}=1.52\times10^{-23}\ \text{J}=9.5\times10^{-5}\ \text{eV}.$$
 
-An atom-scale $0.1\ \text{nm}$ confinement is $10^2$ smaller in length and therefore $10^4$ larger in energy. Thus the strict uncertainty-principle lower bound for a $10\ \text{nm}$ quantum dot is of order $10^{-4}\ \text{eV}$. For comparison, a one-dimensional infinite-well model gives $E_1=\pi^2\hbar^2/(2m_eL^2)\approx3.8\times10^{-3}\ \text{eV}$, a more representative characteristic scale for that geometry. The numerical factor depends on the confinement model, but the $1/L^2$ scaling—and the much smaller energy than at atomic dimensions—does not.
+The atomic-scale worked example used the actual Bohr radius, $a_0 = 5.3\times10^{-11}\ \text{m} = 0.053\ \text{nm}$, as its confinement length, giving $K \approx 3.4\ \text{eV}$. The quantum dot's confinement length is therefore about $10\ \text{nm}/0.053\ \text{nm} \approx 190$ times larger, so its confinement energy should be smaller by roughly $190^2 \approx 3.6\times10^4$ — consistent with $3.4\ \text{eV}/(9.5\times10^{-5}\ \text{eV}) \approx 3.6\times10^4$.
+
+For comparison, a one-dimensional infinite-well model gives $E_1=\pi^2\hbar^2/(2m_eL^2)\approx3.8\times10^{-3}\ \text{eV}$, a more representative characteristic scale for that geometry. The numerical factor depends on the confinement model, but the $1/L^2$ scaling — and the much smaller energy than at atomic dimensions — does not.
 :::
 
 :::{exercise}
@@ -623,7 +627,7 @@ Waves reflecting from successive crystal planes differ in total path by $2d\sin\
 :::{exercise}
 :label: ex-wave-properties-of-particles-19
 
-Verify the claim in the "Consistency Check" subsection that $E=pc^2/u$ for a relativistic particle, using $E=\gamma mc^2$ and $p=\gamma mu$ from [Chapter 3](#ch-relativistic-dynamics), and show that combining this with $E=hf$ and $\lambda = u_p/f$ (with $u_p$ the wave's phase velocity) gives a phase velocity $u_p = c^2/u$ greater than $c$ — then explain why this superluminal *phase* velocity does not violate relativity, referring to your answer to Problem 15 about which velocity is physically observable.
+Verify the claim in the "Consistency Check" subsection that $E=pc^2/u$ for a relativistic particle, using $E=\gamma mc^2$ and $p=\gamma mu$ from [Chapter 3](#ch-relativistic-dynamics), and show that combining this with $E=hf$ and $\lambda = v_p/f$ (with $v_p$ the wave's phase velocity) gives a phase velocity $v_p = c^2/u$ greater than $c$ — then explain why this superluminal *phase* velocity does not violate relativity, referring to your answer to Problem 15 about which velocity is physically observable.
 :::
 
 :::{solution} ex-wave-properties-of-particles-19
@@ -634,7 +638,7 @@ From $E=\gamma mc^2$ and $p=\gamma mu$,
 
 $$\frac{pc^2}{u}=\frac{(\gamma mu)c^2}{u}=\gamma mc^2=E.$$
 
-Combining $E=hf$ with $\lambda=u_p/f$ gives $E=hu_p/\lambda=pu_p$, so $u_p=E/p=c^2/u$.
+Combining $E=hf$ with $\lambda=v_p/f$ gives $E=hv_p/\lambda=pv_p$, so $v_p=E/p=c^2/u$.
 
 ```{figure} ../images/ch07-sol-phase-group-velocity.svg
 :label: fig:ch07-sol-phase-group-velocity

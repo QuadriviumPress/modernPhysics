@@ -38,7 +38,7 @@ Chapters [10](#ch-the-hydrogen-atom)–[12](#ch-molecular-structure) treated the
 
 ### Nuclear Composition and Notation
 
-A nucleus consists of $Z$ protons and $N$ neutrons, collectively called **nucleons**, with mass number $A = Z + N$. A given nuclear species (**nuclide**) is denoted $^A_Z X$, where $X$ is the chemical symbol determined by $Z$ (since $Z$ alone fixes the number of atomic electrons in the neutral atom, and hence its chemistry). Nuclides sharing the same $Z$ but different $N$ (and hence different $A$) are **isotopes** of the same element — chemically near-identical but differing in mass and, often, nuclear stability. Protons and neutrons have nearly equal mass ($m_p c^2 = 938.3\ \text{MeV}$, $m_nc^2 = 939.6\ \text{MeV}$), and because a proton's charge is exactly opposite an electron's, the notation $^AZX$ carries the atom's full identity without needing $N$ written explicitly ($N = A - Z$).
+A nucleus consists of $Z$ protons and $N$ neutrons, collectively called **nucleons**, with mass number $A = Z + N$. A given nuclear species (**nuclide**) is denoted $^A_Z X$, where $X$ is the chemical symbol determined by $Z$ (since $Z$ alone fixes the number of atomic electrons in the neutral atom, and hence its chemistry). Nuclides sharing the same $Z$ but different $N$ (and hence different $A$) are **isotopes** of the same element — chemically near-identical but differing in mass and, often, nuclear stability. Protons and neutrons have nearly equal mass ($m_p c^2 = 938.3\ \text{MeV}$, $m_nc^2 = 939.6\ \text{MeV}$), and because a proton's charge is exactly opposite an electron's, the notation $^A_ZX$ carries the atom's full identity without needing $N$ written explicitly ($N = A - Z$).
 
 The division of labor between $Z$ and $N$ — one fixes the chemistry, the other only the mass and the stability — is worth handling directly before the rest of the chapter leans on it. In {numref}`Figure %s <fig:ch13-isotopes-sim>`, adding a neutron to an atom leaves the element name untouched and moves along a row of isotopes, while adding a proton changes the element outright. The simulation also assembles the tabulated atomic mass of an element from its isotopes weighted by natural abundance, which is why the periodic table lists $35.45$ for chlorine although no chlorine nucleus has that mass.
 
@@ -555,11 +555,11 @@ Using the semi-empirical mass formula coefficients given in the text, compute th
 
 For $A=120$, $Z=50$, $A^{1/3}=4.932$, $A^{2/3}=24.33$, and $A-2Z=20$.  The five terms are
 
-$$15.5(120)=1860.0,\quad16.8(24.33)=408.7,\quad0.72\frac{50(49)}{4.932}=357.5,$$
+$$15.5(120)=1860.0,\quad16.8(24.33)=408.7,\quad0.72\frac{50(49)}{4.932}=357.7,$$
 
 $$23\frac{20^2}{120}=76.7,\qquad \delta=34(120)^{-3/4}=0.94\ \text{MeV}.$$
 
-Thus $E_B=1860.0-408.7-357.5-76.7+0.94=1018\ \text{MeV}$ and $E_B/A=8.48\ \text{MeV/nucleon}$.  This lands squarely on the near-peak plateau of {numref}`Figure %s <fig:ch13-binding-curve>`, close to where tin's $A=120$ actually falls.  Therefore, the formula predicts about $8.48\ \text{MeV/nucleon}$, within $0.03\ \text{MeV/nucleon}$ of $8.51\ \text{MeV/nucleon}$; the small difference reflects shell effects and fitted-coefficient limitations.
+Thus $E_B=1860.0-408.7-357.7-76.7+0.94=1018\ \text{MeV}$ and $E_B/A=8.48\ \text{MeV/nucleon}$.  This lands squarely on the near-peak plateau of {numref}`Figure %s <fig:ch13-binding-curve>`, close to where tin's $A=120$ actually falls.  Therefore, the formula predicts about $8.48\ \text{MeV/nucleon}$, within $0.03\ \text{MeV/nucleon}$ of $8.51\ \text{MeV/nucleon}$; the small difference reflects shell effects and fitted-coefficient limitations.
 :::
 
 :::{exercise}

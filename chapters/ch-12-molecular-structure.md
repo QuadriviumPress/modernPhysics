@@ -120,7 +120,7 @@ $$
 E_{\pm} = \frac{\alpha \pm \beta}{1 \pm S}.
 $$
 
-Because $\beta<0$, $E_+=(\alpha+\beta)/(1+S)$ lies below $\alpha$ (bonding) and $E_-=(\alpha-\beta)/(1-S)$ lies above $\alpha$ (antibonding) — but the two shifts are **not equal in magnitude**. The $(1-S)$ in the antibonding denominator is smaller than the $(1+S)$ in the bonding denominator, so $E_-$ rises above $\alpha$ by more than $E_+$ falls below it. This asymmetry is the entire reason $\text{He}_2$ fails to bond: two electrons in $\sigma_{1s}$ and two in $\sigma_{1s}^*$ do not cancel to zero net energy change, because the antibonding pair's destabilization outweighs the bonding pair's stabilization, leaving $\text{He}_2$ at *higher* energy than two separate helium atoms — consistent with, and quantitatively explaining, the bond order of zero found by simple electron counting below.
+Because $\beta<0$, and because $|\beta|$ is large enough compared to $|\alpha| S$ for essentially every real covalent bond (the case of interest here), $E_+=(\alpha+\beta)/(1+S)$ lies below $\alpha$ (bonding) and $E_-=(\alpha-\beta)/(1-S)$ lies above $\alpha$ (antibonding) — but the two shifts are **not equal in magnitude**. The $(1-S)$ in the antibonding denominator is smaller than the $(1+S)$ in the bonding denominator, so $E_-$ rises above $\alpha$ by more than $E_+$ falls below it. This asymmetry is the entire reason $\text{He}_2$ fails to bond: two electrons in $\sigma_{1s}$ and two in $\sigma_{1s}^*$ do not cancel to zero net energy change, because the antibonding pair's destabilization outweighs the bonding pair's stabilization, leaving $\text{He}_2$ at *higher* energy than two separate helium atoms — consistent with, and quantitatively explaining, the bond order of zero found by simple electron counting below.
 :::
 
 Filling the resulting molecular orbitals with the molecule's electrons, two at a time (spin-paired, per the exclusion principle applied now to molecular rather than atomic orbitals) from lowest to highest energy, gives a **molecular orbital diagram**, from which the **bond order** is computed as
@@ -341,13 +341,13 @@ $$
 so
 
 $$
-B = \frac{\hbar^2}{2I} = \frac{(1.055\times10^{-34}\ \text{J}\cdot\text{s})^2}{2(1.45\times10^{-46}\ \text{kg}\cdot\text{m}^2)} = 3.82\times10^{-23}\ \text{J} = 2.39\times10^{-4}\ \text{eV}.
+B = \frac{\hbar^2}{2I} = \frac{(1.055\times10^{-34}\ \text{J}\cdot\text{s})^2}{2(1.45\times10^{-46}\ \text{kg}\cdot\text{m}^2)} = 3.83\times10^{-23}\ \text{J} = 2.39\times10^{-4}\ \text{eV}.
 $$
 
-Both branches are spaced by $2B = 4.77\times10^{-4}\ \text{eV}$ — the same energy as the $J=0\to J=1$ pure rotational transition of [Problem 5](#ex-molecular-structure-5), as it must be, since both quantities are just $2B$ measured two different ways. Converting to the wavenumber units ($\tilde\nu \equiv E/hc$) conventional in infrared spectroscopy,
+Both branches are spaced by $2B = 4.78\times10^{-4}\ \text{eV}$ — the same energy as the $J=0\to J=1$ pure rotational transition of [Problem 5](#ex-molecular-structure-5), as it must be, since both quantities are just $2B$ measured two different ways. Converting to the wavenumber units ($\tilde\nu \equiv E/hc$) conventional in infrared spectroscopy,
 
 $$
-\tilde{B} = \frac{B}{hc} = \frac{3.82\times10^{-23}\ \text{J}}{(6.626\times10^{-34}\ \text{J}\cdot\text{s})(2.998\times10^{10}\ \text{cm/s})} = 1.93\ \text{cm}^{-1},
+\tilde{B} = \frac{B}{hc} = \frac{3.83\times10^{-23}\ \text{J}}{(6.626\times10^{-34}\ \text{J}\cdot\text{s})(2.998\times10^{10}\ \text{cm/s})} = 1.93\ \text{cm}^{-1},
 $$
 
 so the predicted line spacing is $2\tilde{B} = 3.85\ \text{cm}^{-1}$ — in excellent agreement with the spacing of about $3.86\ \text{cm}^{-1}$ actually observed in the CO fundamental infrared band. A bond length and a reduced mass, fed into a formula derived from nothing more than the rigid-rotor approximation, correctly predict the fine structure of a real molecular spectrum.
@@ -403,14 +403,14 @@ Therefore, the predicted geometries are trigonal pyramidal for $\text{NH}_3$, li
 :::{exercise}
 :label: ex-molecular-structure-2
 
-Construct the molecular orbital diagram for the nitrogen molecule $\text{N}_2$ (14 electrons total; consider only the valence $2s$ and $2p$ electrons, 10 of the 14, filling $\sigma_{2s}, \sigma_{2s}^*, \pi_{2p}$ (×2), $\sigma_{2p}$ in the order relevant for $\text{N}_2$). Determine the bond order and compare it to the triple bond expected from the Lewis structure $:\text{N}\!\equiv\!\text{N}:$.
+Carbon monoxide, $\text{CO}$, is isoelectronic with $\text{N}_2$: it has the same number of valence electrons (4 from C, 6 from O, 10 total) and, being built from two light second-row atoms, fills its molecular orbitals in the same order used for $\text{N}_2$ above: $\sigma_{2s}, \sigma_{2s}^*, \pi_{2p}$ (×2), $\sigma_{2p}$. Construct the molecular orbital diagram for $\text{CO}$, determine its bond order, and compare it to the triple bond expected from the Lewis structure $:\text{C}\!\equiv\!\text{O}:$.
 :::
 
 :::{solution} ex-molecular-structure-2
 :label: sol-molecular-structure-2
 :class: dropdown
 
-The ten valence electrons fill
+Being isoelectronic with $\text{N}_2$, the ten valence electrons of $\text{CO}$ fill the same sequence of orbitals in the same order:
 
 $$\sigma_{2s}^2\,\sigma_{2s}^{*2}\,(\pi_{2p})^4\,\sigma_{2p}^2.$$
 
@@ -418,7 +418,7 @@ There are $8$ bonding and $2$ antibonding electrons, so
 
 $$\text{bond order}=\frac{8-2}{2}=3.$$
 
-This is exactly the filled diagram drawn in {numref}`Figure %s <fig:ch12-mo-n2-o2>`.  Therefore, MO theory predicts bond order $3$ for $\text{N}_2$, agreeing with the triple bond in the Lewis structure.
+Therefore, MO theory predicts bond order $3$ for $\text{CO}$, agreeing with the triple bond in the Lewis structure — the same result found for $\text{N}_2$ in {numref}`Figure %s <fig:ch12-mo-n2-o2>`, as expected for two isoelectronic molecules.
 :::
 
 :::{exercise}
@@ -482,9 +482,9 @@ $$I=\mu r_0^2=(1.139\times10^{-26})(1.13\times10^{-10})^2=1.45\times10^{-46}\ \t
 
 For $J=0\to1$, $\Delta E=\hbar^2/I$:
 
-$$\Delta E=\frac{(1.055\times10^{-34}\ \text{J s})^2}{1.45\times10^{-46}\ \text{kg m}^2}=7.68\times10^{-23}\ \text{J}=4.79\times10^{-4}\ \text{eV}.$$
+$$\Delta E=\frac{(1.055\times10^{-34}\ \text{J s})^2}{1.45\times10^{-46}\ \text{kg m}^2}=7.65\times10^{-23}\ \text{J}=4.78\times10^{-4}\ \text{eV}.$$
 
-Therefore, CO has $I=1.45\times10^{-46}\ \text{kg m}^2$ and its first rotational transition has energy $4.79\times10^{-4}\ \text{eV}$, or $4.79$ in units of $10^{-4}\ \text{eV}$.
+Therefore, CO has $I=1.45\times10^{-46}\ \text{kg m}^2$ and its first rotational transition has energy $4.78\times10^{-4}\ \text{eV}$, or $4.78$ in units of $10^{-4}\ \text{eV}$.
 :::
 
 :::{exercise}

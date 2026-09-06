@@ -664,7 +664,7 @@ $$
 D = \frac{m_{\max}\lambda}{2} = \frac{170\,(589\times10^{-9}\ \text{m})}{2} = 5.01\times10^{-5}\ \text{m} = 50.1\ \mu\text{m}.
 $$
 
-The plate length never entered — it only sets the fringe *spacing*, $\Delta x = \lambda L/2D = 0.589\ \text{mm}$, which is what makes the fringes countable by eye. A $50\ \mu\text{m}$ wire has been measured to within a fraction of a micrometer using nothing but two pieces of glass, a sodium lamp, and patience.
+The plate length never entered — it only sets the fringe *spacing*, $\Delta x = \lambda L/2D = 0.588\ \text{mm}$, which is what makes the fringes countable by eye. A $50\ \mu\text{m}$ wire has been measured to within a fraction of a micrometer using nothing but two pieces of glass, a sodium lamp, and patience.
 
 ### The Michelson Interferometer
 
@@ -700,8 +700,8 @@ The small tilted plate in {numref}`Figure %s <fig:ch04-michelson>` is the **comp
 Both arms, and the fringes they produce, can be manipulated directly in
 {numref}`Figure %s <fig:ch04-interferometry-sim>`. Translating one mirror sweeps the fringe count
 given by Equation {eq}`eq:ch04-michelson-fringe-count`; shortening the coherence length
-washes the fringes out, which is the constraint of the next section made
-visible.
+washes the fringes out, which is the coherence-length constraint of the
+earlier section made visible.
 
 ```{openphysics} InterferometryLab
 :label: fig:ch04-interferometry-sim
@@ -738,7 +738,7 @@ so $n = 1.000293$ — the accepted value for dry air at standard conditions. The
 - **The Michelson–Morley experiment.** As described in [Chapter 1](#ch-need-for-relativity), rotating the apparatus should have exchanged the roles of the arm parallel to Earth's motion through the ether and the arm perpendicular to it, shifting the fringes by about $0.4$ fringe against a sensitivity of $0.01$ fringe. No shift was ever seen, at any orientation or any time of year. The fringe-counting relation in Equation {eq}`eq:ch04-michelson-fringe-count` is exactly what converted a null optical measurement into a decisive statement about the structure of spacetime.
 - **Fourier-transform spectroscopy.** Record the detector signal as a function of mirror position and you have the *autocorrelation* of the light; its Fourier transform is the spectrum. Nearly every infrared spectrometer in a modern chemistry laboratory is a Michelson interferometer operated this way.
 - **Metrology.** Surface flatness, machine-tool calibration, and — until the 1983 redefinition of the meter in terms of $c$ — the international length standard itself.
-- **Gravitational-wave detection.** LIGO and Virgo are Michelson interferometers with $4\ \text{km}$ arms, folded optically to an effective length of hundreds of kilometers, measuring mirror displacements of order $10^{-19}\ \text{m}$ — about one ten-thousandth of a proton's radius. The first detection, in September 2015, came from two merging black holes $1.3$ billion light-years away. The instrument that failed to find the ether became the instrument that found the ripples in spacetime that replaced it.
+- **Gravitational-wave detection.** LIGO and Virgo are Michelson interferometers with $4\ \text{km}$ arms, folded optically to an effective length of hundreds of kilometers, measuring mirror displacements of order $10^{-19}\ \text{m}$ — about one ten-thousandth of a proton's diameter. The first detection, in September 2015, came from two merging black holes $1.3$ billion light-years away. The instrument that failed to find the ether became the instrument that found the ripples in spacetime that replaced it.
 
 ### Looking Ahead: Interference One Photon at a Time
 
@@ -951,7 +951,7 @@ Principal maxima obey $d\sin\theta=m\lambda$, hence
 
 $$\sin\theta=m\frac{600\ \text{nm}}{3.00\ \mu\text{m}}=0.200m.$$
 
-The allowed orders are $m=0,\pm1,\pm2,\pm3,\pm4,\pm5$, with $\sin\theta=0,\pm0.200,\pm0.400,\pm0.600,\pm0.800,\pm1.000$.  Zeros satisfy $d\sin\theta=q\lambda/N$ where $q=1,\ldots,N-1$ between adjacent principal maxima.  Between $m=0$ and $m=1$, $\sin\theta=q(0.200)/6$, giving $0.0333,0.0667,0.100,0.133,0.167$.  There are $N-2=4$ secondary maxima between those five zeros, as shown in {numref}`Figure %s <fig:ch04-sol-six-slit>`.
+The allowed orders are $m=0,\pm1,\pm2,\pm3,\pm4,\pm5$, with $\sin\theta=0,\pm0.200,\pm0.400,\pm0.600,\pm0.800,\pm1.000$, the last pair falling exactly at $\sin\theta=\pm1$ (grazing, and not observable).  Zeros satisfy $d\sin\theta=q\lambda/N$ where $q=1,\ldots,N-1$ between adjacent principal maxima.  Between $m=0$ and $m=1$, $\sin\theta=q(0.200)/6$, giving $0.0333,0.0667,0.100,0.133,0.167$.  There are $N-2=4$ secondary maxima between those five zeros, as shown in {numref}`Figure %s <fig:ch04-sol-six-slit>`.
 
 ```{figure} ../images/ch04-sol-six-slit.svg
 :label: fig:ch04-sol-six-slit

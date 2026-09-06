@@ -112,7 +112,7 @@ The two clocks of that argument run side by side in {numref}`Figure %s <fig:ch02
 :screen: 1
 :label: fig:ch02-light-clock-sim
 
-A light clock at rest beside an identical one moving at $\beta = v/c$, with the diagonal light path and both tick counts displayed. The other screens of this simulation return in the sections that follow — length contraction, the twin paradox, and the relativistic Doppler effect are each one screen along.
+A light clock at rest beside an identical one moving at $\beta = v/c$, with the diagonal light path and both tick counts displayed. The other screens of this simulation return in the sections that follow — an interactive Minkowski diagram, the ladder-and-barn paradox (an application of length contraction), the twin paradox, and the relativistic Doppler effect, each one screen further along.
 ```
 
 Time dilation is not a hypothesis awaiting confirmation; it is routinely observed. Muons created by cosmic rays in the upper atmosphere have a mean lifetime, at rest, of about $2.2\ \mu\text{s}$ — long enough, at nearly the speed of light, to travel only a few hundred meters before decaying, far short of the several kilometers to Earth's surface. Yet large numbers of these muons are detected at sea level. In Earth's frame, the muons' internal "clock" — the process governing decay — runs slow by the factor $\gamma$, extending their mean range by that same factor, which is exactly what is observed. (This effect was confirmed with precision in a classic 1941 experiment by Bruno Rossi and David Hall, comparing muon flux measured at the top of Mount Washington in New Hampshire to the flux at a lower elevation.)

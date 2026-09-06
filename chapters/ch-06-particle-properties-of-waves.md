@@ -112,7 +112,7 @@ with $\sigma$ the **Stefan–Boltzmann constant**. The steep $T^4$ dependence me
 The Sun's surface (photosphere) has an effective temperature of $T \approx 5778\ \text{K}$ and radius $R_\odot = 6.96\times10^8\ \text{m}$. Treating it as an ideal blackbody, Wien's law gives the wavelength of peak emission,
 
 $$
-\lambda_{\max} = \frac{2.898\times10^{-3}\ \text{m}\cdot\text{K}}{5778\ \text{K}} = 5.01\times10^{-7}\ \text{m} = 501\ \text{nm},
+\lambda_{\max} = \frac{2.898\times10^{-3}\ \text{m}\cdot\text{K}}{5778\ \text{K}} = 5.02\times10^{-7}\ \text{m} = 502\ \text{nm},
 $$
 
 squarely in the green part of the visible spectrum — the Sun's spectrum actually peaks near the middle of the range of wavelengths the human eye evolved to detect, though scattering in Earth's atmosphere and the eye's overall spectral response make sunlight appear white or yellow rather than green. The Stefan–Boltzmann law gives the power radiated per unit area, $P/A = \sigma T^4 = (5.670\times10^{-8}\ \text{W}\cdot\text{m}^{-2}\cdot\text{K}^{-4})(5778\ \text{K})^4 \approx 6.32\times10^7\ \text{W/m}^2$. Multiplying by the Sun's surface area, $A = 4\pi R_\odot^2 \approx 6.09\times10^{18}\ \text{m}^2$, gives a total radiated power (luminosity)
@@ -428,7 +428,7 @@ A photoelectric-effect experiment on a certain metal gives a stopping potential 
 
 The frequencies are $f_1=c/(450\ \text{nm})=6.67\times10^{14}\ \text{Hz}$ and $f_2=c/(360\ \text{nm})=8.33\times10^{14}\ \text{Hz}$.  Subtracting $eV_0=hf-\phi$ for the two data points gives
 
-$$h=\frac{e(1.28-0.65)\ \text{V}}{f_2-f_1}=3.78\times10^{-15}\ \text{eV s}=6.05\times10^{-34}\ \text{J s}.$$
+$$h=\frac{e(1.28-0.65)\ \text{V}}{f_2-f_1}=3.78\times10^{-15}\ \text{eV s}=6.06\times10^{-34}\ \text{J s}.$$
 
 Then $\phi=hf_1-eV_1=(3.78\times10^{-15})(6.67\times10^{14})-0.65=1.87\ \text{eV}$.
 
@@ -439,7 +439,7 @@ Then $\phi=hf_1-eV_1=(3.78\times10^{-15})(6.67\times10^{14})-0.65=1.87\ \text{eV
 The two measurements determine the line $V_0=(h/e)f-\phi/e$ completely: its slope gives $h$ without assuming a textbook value, and its intercept with $V_0=0$ gives the threshold frequency $f_0=\phi/h$.
 ```
 
-Therefore, the data give $h=6.05\times10^{-34}\ \text{J s}$ and a work function of $1.87\ \text{eV}$.
+Therefore, the data give $h=6.06\times10^{-34}\ \text{J s}$ and a work function of $1.87\ \text{eV}$.
 :::
 
 :::{exercise}

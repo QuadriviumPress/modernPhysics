@@ -257,7 +257,7 @@ $$
 
 The threshold *kinetic* energy is $K_1 = E_1 - mc^2 = 6mc^2$. With $mc^2 = 938\ \text{MeV}$ for the proton, this is $K_1 = 6(938\ \text{MeV}) = 5.6\ \text{GeV}$ — dramatically larger than the naive $2mc^2 = 2(938\ \text{MeV}) = 1.9\ \text{GeV}$ one might have guessed from simply counting the rest-mass energy of the new particle pair. The extra factor of three arises because, in the lab frame, the newly created particles must all share the *same* velocity as the CM frame itself (since at threshold they are at rest *in* the CM frame, which is itself moving relative to the lab), so a substantial fraction of the beam's kinetic energy is unavoidably "wasted" maintaining the overall forward motion of the collision products rather than being converted into new rest mass. The Bevatron was deliberately designed to reach a beam energy of $6.2\ \text{GeV}$, comfortably above this threshold, and the antiproton was discovered there later that same year by Owen Chamberlain, Emilio Segrè, and collaborators.
 
-This "wasted energy" problem is exactly why modern particle physics favors **colliders**, in which two beams travel toward each other and collide head-on. If the beam and target in the reaction above were replaced by two protons of equal and opposite momentum (so that the lab frame *is* the CM frame), the threshold condition becomes simply $2E_1 = 4mc^2$, i.e., $K_1 = mc^2$ per beam — nearly six times less kinetic energy required per proton than the fixed-target case, precisely because no energy needs to be spent maintaining a net forward CM velocity.
+This "wasted energy" problem is exactly why modern particle physics favors **colliders**, in which two beams travel toward each other and collide head-on. If the beam and target in the reaction above were replaced by two protons of equal and opposite momentum (so that the lab frame *is* the CM frame), the threshold condition becomes simply $2E_1 = 4mc^2$, i.e., $K_1 = mc^2$ per beam — six times less kinetic energy required per proton than the fixed-target case, precisely because no energy needs to be spent maintaining a net forward CM velocity.
 
 The contrast between the two arrangements is summarized in {numref}`Figure %s <fig:ch03-collider>`.
 
@@ -292,10 +292,10 @@ An electron (rest energy $m c^2 = 0.511\ \text{MeV}$) is accelerated from rest t
 **Momentum:** from $E^2 = (pc)^2 + (mc^2)^2$,
 
 $$
-pc = \sqrt{E^2 - (mc^2)^2} = \sqrt{(2.511\ \text{MeV})^2 - (0.511\ \text{MeV})^2} = 2.459\ \text{MeV},
+pc = \sqrt{E^2 - (mc^2)^2} = \sqrt{(2.511\ \text{MeV})^2 - (0.511\ \text{MeV})^2} = 2.458\ \text{MeV},
 $$
 
-so $p = 2.459\ \text{MeV}/c$.
+so $p = 2.458\ \text{MeV}/c$.
 
 **Speed:** from $E = \gamma mc^2$, $\gamma = E/mc^2 = (2.511\ \text{MeV})/(0.511\ \text{MeV}) = 4.914$, and $u = c\sqrt{1 - 1/\gamma^2} = 0.979c$.
 

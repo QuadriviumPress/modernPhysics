@@ -234,7 +234,7 @@ Single-slit diffraction intensity. The central maximum is twice as wide as the s
 Where are the maxima between the zeros? Setting $\mathrm{d}I/\mathrm{d}\beta = 0$ gives the transcendental condition $\tan(\beta/2) = \beta/2$, which has no closed-form solution. Solving numerically puts the secondary maxima at
 
 $$
-\frac{\beta}{2} = 1.4303\pi,\ 2.4590\pi,\ 3.4707\pi,\ \ldots
+\frac{\beta}{2} = 1.4303\pi,\ 2.4590\pi,\ 3.4709\pi,\ \ldots
 $$
 
 slightly *inside* the naive halfway positions $1.5\pi$, $2.5\pi$, $3.5\pi$ — pulled toward the center because the envelope is falling. Relative to the central peak, the first three secondary maxima reach only

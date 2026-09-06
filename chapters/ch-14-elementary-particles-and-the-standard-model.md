@@ -197,13 +197,13 @@ The names are Greek in origin and describe relative mass, not any structural pro
 A beam of muons is produced at a particle accelerator with kinetic energy $K = 300\ \text{MeV}$, well above the muon's rest energy $m_\mu c^2 = 105.7\ \text{MeV}$, so the relativistic machinery of [Chapter 3](#ch-relativistic-dynamics) is required rather than a Newtonian estimate. The total energy is $E = K + m_\mu c^2 = 405.7\ \text{MeV}$, so
 
 $$
-\gamma = \frac{E}{m_\mu c^2} = \frac{405.7\ \text{MeV}}{105.7\ \text{MeV}} = 3.84, \qquad \beta = \sqrt{1-\frac{1}{\gamma^2}} = 0.966,
+\gamma = \frac{E}{m_\mu c^2} = \frac{405.7\ \text{MeV}}{105.7\ \text{MeV}} = 3.84, \qquad \beta = \sqrt{1-\frac{1}{\gamma^2}} = 0.965,
 $$
 
-giving a lab-frame speed $v = 0.966c$. Time dilation ([Chapter 2](#ch-special-relativity)) stretches the muon's proper mean lifetime $\tau_0 = 2.20\ \mu\text{s}$ to a lab-frame mean lifetime $\tau = \gamma\tau_0 = (3.84)(2.20\ \mu\text{s}) = 8.44\ \mu\text{s}$, so the mean distance the beam travels before decaying away is
+giving a lab-frame speed $v = 0.965c$. Time dilation ([Chapter 2](#ch-special-relativity)) stretches the muon's proper mean lifetime $\tau_0 = 2.20\ \mu\text{s}$ to a lab-frame mean lifetime $\tau = \gamma\tau_0 = (3.84)(2.20\ \mu\text{s}) = 8.44\ \mu\text{s}$, so the mean distance the beam travels before decaying away is
 
 $$
-L = v\tau = (0.966)(3.00\times10^8\ \text{m/s})(8.44\times10^{-6}\ \text{s}) \approx 2.4\times10^3\ \text{m} = 2.4\ \text{km}.
+L = v\tau = (0.965)(3.00\times10^8\ \text{m/s})(8.44\times10^{-6}\ \text{s}) \approx 2.4\times10^3\ \text{m} = 2.4\ \text{km}.
 $$
 
 Even with time dilation stretching the muon's lifetime nearly fourfold, one mean decay length of $2.4\ \text{km}$ reduces the beam to $e^{-1}\approx 37\%$ of its initial intensity — a distance that accelerator and neutrino-beam facilities (which create intense neutrino beams by steering a pion beam down a long "decay pipe" and collecting neutrinos from the resulting pion decays) must design around explicitly. This is exactly the same time-dilation effect responsible for cosmic-ray muons reaching Earth's surface, applied here to a laboratory beam instead of the atmosphere.

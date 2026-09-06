@@ -84,6 +84,7 @@ case "$TARGET" in
     build_student
     build_docx
     build_chapters
+    node scripts/export-metadata.mjs write
     ;;
   *)
     echo "usage: $0 [book|student|chapters|docx|pdf|all]" >&2

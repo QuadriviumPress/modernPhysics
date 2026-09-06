@@ -10,6 +10,12 @@ on:
       - 'scripts/tex-to-docx.py'
       - 'myst.yml'
       - 'package*.json'
+      - 'chapters/**'
+      - 'images/**'
+      - 'preface.md'
+      - 'tests/**'
+      - 'scripts/smoke-exports.py'
+      - '.github/workflows/export-smoke.yml'
   workflow_dispatch:
 
 permissions:
@@ -22,9 +28,11 @@ concurrency:
 jobs:
   chapter:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v7
         with:
           node-version: 22
@@ -35,11 +43,24 @@ jobs:
           sudo apt-get install -y --no-install-recommends \
             inkscape latexmk texlive-xetex texlive-latex-base \
             texlive-latex-recommended texlive-latex-extra \
-            texlive-fonts-recommended texlive-plain-generic
+            texlive-fonts-recommended texlive-plain-generic pandoc poppler-utils
       - run: npm ci
       - run: npm test
-      - name: Build representative chapter offprint
+      - name: Verify full and student PDFs and Word content
+        run: npm run test:exports
+      - name: Build representative and changed chapter offprints
         env:
           MYST_PRINT: full
           MYST_SITE_URL: https://quadriviumpress.github.io/modernPhysics
-        run: npx myst build --pdf chapters/ch-04-interference-of-light.md
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          set -euo pipefail
+          chapters=(chapters/ch-04-interference-of-light.md)
+          if [ -n "$BASE_SHA" ]; then
+            while IFS= read -r -d '' chapter; do
+              if [ -f "$chapter" ] && [ "$chapter" != "${chapters[0]}" ]; then
+                chapters+=("$chapter")
+              fi
+            done < <(git diff --name-only --diff-filter=ACMR -z "$BASE_SHA" HEAD -- 'chapters/*.md')
+          fi
+          npx myst build --pdf "${chapters[@]}"

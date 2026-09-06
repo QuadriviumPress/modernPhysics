@@ -156,6 +156,10 @@ npm run build          # static site in _build/html/
 npm run check          # metadata, plugin tests, HTML, and links
 ```
 
+The fast tests also require Python 3. With the print toolchain below installed,
+`npm run test:exports` checks small full/student PDFs and a Word document for
+preserved exercises, solutions, equations, and figures.
+
 Generated output is written to `_build/` and is not committed. CI runs on
 pull requests (`.github/workflows/ci.yml`); pushes to `main` deploy via
 [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml).

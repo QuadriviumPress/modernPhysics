@@ -74,9 +74,6 @@ def flatten(master: Path) -> str:
 
     def substitute(match: re.Match[str]) -> str:
         included = master.parent / f"{match.group(1)}.tex"
-        if not included.exists():
-            print(f"  warning: \\include{{{match.group(1)}}} not found", file=sys.stderr)
-            return ""
         return included.read_text(encoding="utf-8")
 
     return re.sub(r"\\include\{([^}]+)\}", substitute, body)
@@ -112,21 +109,21 @@ def rasterize(body: str, tex_dir: Path, out_dir: Path, dpi: int) -> str:
             "-background", "white", "-alpha", "remove", "-alpha", "off", str(dst),
         ]
     else:
-        print(
-            "  warning: neither pdftoppm (poppler-utils) nor ImageMagick found; "
-            "the DOCX will have no figures",
-            file=sys.stderr,
+        raise RuntimeError(
+            "PDF figures require pdftoppm (poppler-utils) or ImageMagick."
         )
-        return body
 
     (out_dir / "files").mkdir(parents=True, exist_ok=True)
     print(f"  rasterizing {len(referenced)} figures at {dpi} dpi")
     for relative in referenced:
         target = out_dir / relative.replace(".pdf", ".png")
-        if target.exists():
-            continue
+        # Always regenerate: both source contents and requested DPI may change
+        # between exports, even when the output filename stays the same.
+        target.parent.mkdir(parents=True, exist_ok=True)
         subprocess.run(command(tex_dir / relative, target), check=True, capture_output=True)
-    return body.replace(".pdf}", ".png}")
+    for relative in referenced:
+        body = body.replace("{" + relative + "}", "{" + relative[:-4] + ".png}")
+    return body
 
 
 def main() -> int:
@@ -155,6 +152,8 @@ def main() -> int:
         help="resolution for rasterized figures (default: %(default)s)",
     )
     args = parser.parse_args()
+    if args.dpi <= 0:
+        parser.error("--dpi must be positive")
 
     master = args.tex_dir / args.master
     if not master.exists():
@@ -179,6 +178,7 @@ def main() -> int:
             "pandoc",
             "--from=latex",
             "--to=docx",
+            "--fail-if-warnings",
             "--toc",
             "--toc-depth=2",
             # Numbered headings, so the Word file's 4.1, 4.2 ... match the PDF's

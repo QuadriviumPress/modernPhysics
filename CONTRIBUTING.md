@@ -20,8 +20,9 @@ Preview with `npm start`. Before submitting a change, run:
 npm run check
 ```
 
-This validates chapter ordering and metadata, tests the custom export
-transform, builds the site, and checks links.
+This validates chapter ordering and metadata, tests export and simulation
+plugins, download provenance, and Word conversion safeguards, builds the site,
+and checks links. The fast tests require Python 3 as well as Node.
 
 ## Editing chapters
 
@@ -51,6 +52,21 @@ should be checked with at least one chapter offprint locally. The tagged-release
 workflow builds all editions and publishes the three book-level downloads as
 durable GitHub Release assets. A separate monthly run refreshes workflow
 artifacts without rebuilding the print editions on ordinary pushes.
+
+Run `npm run test:exports` with the print toolchain installed to build a small
+fixture as full/student PDFs and Word. It checks exercise and solution
+visibility in PDF text and verifies native Word equations and embedded images.
+Pull-request export CI also builds Chapter 4 and any changed chapter offprints;
+chapter, image, and test changes trigger this workflow.
+
+A complete `scripts/build-exports.sh all` run writes `exports/metadata.json`
+with the source commit, UTC build date, and hashes of the downloadable files.
+Keep this manifest with the export artifacts and release assets. Deployment
+runs `node scripts/export-metadata.mjs prepare` to show verified dates and
+revisions on the landing page and in the download menu. This updates the CI
+checkout's `index.md` and `myst.yml`; do not commit these generated labels.
+Older exports, or files whose hashes do not match, are explicitly labelled as
+having an unavailable export date and revision.
 
 ## Release checklist
 

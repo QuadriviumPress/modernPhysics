@@ -22,6 +22,14 @@ differ.
 
 +++
 
+## Downloadable editions
+
+<!-- export-downloads:start -->
+The download menu offers the latest available PDF and Word editions. The
+published site lists their export dates and source revisions here; the website
+may contain more recent changes.
+<!-- export-downloads:end -->
+
 ## License
 
 © 2026 Martin Veillette. This book is licensed under the

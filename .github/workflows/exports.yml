@@ -47,7 +47,9 @@ jobs:
       - uses: actions/upload-artifact@v7
         with:
           name: modern-physics-exports
-          path: exports/*.pdf
+          path: |
+            exports/*.pdf
+            exports/metadata.json
           if-no-files-found: error
           retention-days: 90
 
@@ -62,6 +64,7 @@ jobs:
             exports/modern-physics.pdf \
             exports/modern-physics-student.pdf \
             exports/modern-physics.docx \
+            exports/metadata.json \
             --clobber
 
       - uses: actions/upload-artifact@v7

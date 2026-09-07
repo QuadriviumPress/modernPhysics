@@ -116,6 +116,13 @@ $$
 \Delta N = \frac{2(t_\parallel - t_\perp)c}{\lambda} = \frac{2Lv^2}{\lambda c^2}.
 $$
 
+:::{tip} Self-check
+Before moving on, check two things in words, not algebra:
+
+- Which arm of the interferometer is longer in the ether picture, and why?
+- Why does the first nonzero term in the fringe shift scale like $(v/c)^2$ instead of $v/c$?
+:::
+
 Plugging in the actual 1887 apparatus — effective arm length $L \approx 11\ \text{m}$ (achieved by multiple reflections), sodium light $\lambda \approx 590\ \text{nm}$, and Earth's orbital speed $v \approx 3.0\times10^4\ \text{m/s}$ — gives
 
 $$
@@ -190,6 +197,15 @@ u_{\text{measured}} = \frac{c}{n} + v\left(1 - \frac{1}{n^2}\right).
 $$
 
 The water changes the measured speed of light, but only *partially* at this order — by a fraction $f = 1 - 1/n^2$ of its own speed, not the full speed $v$ predicted by simple addition, and not zero either. Augustin-Jean Fresnel had predicted this coefficient in 1818 using an ether model in which a transparent medium partially entrained the ether. The prediction matched Fizeau's measurement, but its physical interpretation required a specialized rule for the interaction between matter and ether.
+
+:::{warning}
+Do not read $c/n$ here as if Galilean subtraction had already been applied. That is the light speed in the water's rest frame; the moving-water term is a first-order correction on top of that baseline.
+:::
+
+:::{tip} Self-check
+If the water is at rest ($v=0$), what does the measured-speed formula reduce to?
+What happens to the drag coefficient $1 - 1/n^2$ if $n=1$?
+:::
 
 Fizeau's result sat alongside the Michelson–Morley null result as a second, independent puzzle: whatever the ether was doing, it was not doing anything as simple as being either fully dragged along by matter or entirely undisturbed by it. As will become clear in [Chapter 2](#ch-special-relativity), once relativistic velocity addition replaces the Galilean rule, Fresnel's fractional drag coefficient emerges automatically — with no separate assumption about entrainment at all — as the leading term of $u_x = (u_x' + v)/(1 + u_x'v/c^2)$ evaluated at $u_x' = c/n$. What looked like an ad hoc patch to the ether model instead emerges, to first order in $v/c$, from relativistic kinematics.
 
@@ -269,6 +285,11 @@ In 1905, Einstein proposed to stop patching Galilean relativity and instead take
 2. **The constancy of the speed of light.** The speed of light in vacuum has the same value $c$ in every inertial reference frame, independent of the motion of the source or the observer.
 
 The first postulate was not new — as Galileo's ship illustrates, it already held for Newtonian mechanics, where no mechanical experiment can detect uniform motion (this is why you cannot feel the constant-velocity phase of a smooth flight, and why the butterflies in Galileo's cabin fly about undisturbed). Einstein's step was to insist that this postulate apply to *all* of physics, electromagnetism included, so that no experiment of any kind — mechanical or optical — can distinguish inertial frames; there is no preferred, ether-defined rest frame for anything, including light. The second postulate is the one that clashes head-on with Galilean relativity: if $u_x' = u_x - v$ held for light as it does for baseballs, two observers in relative motion could not both measure the same speed $c$ for the same light beam. Taken together, the postulates require that time and space themselves — not just the "aether wind" — behave differently than Galilean relativity assumes.
+
+:::{tip} Self-check
+If two observers are moving relative to each other, can they both keep the Galilean velocity-addition rule *and* measure the same vacuum speed of light?
+If not, which assumption has to change?
+:::
 
 This is a genuinely radical move. Rather than asking "what medium is light waving in?", Einstein asked what kinematics — what set of rules for relating space and time coordinates between observers — is consistent with light having the same speed for everyone. The answer is not the Galilean transformation but the *Lorentz transformation*, and working out its consequences — the relativity of simultaneity, time dilation, length contraction, and (as noted above) the Fizeau drag coefficient as a special case of velocity addition — is the subject of [Chapter 2](#ch-special-relativity).
 

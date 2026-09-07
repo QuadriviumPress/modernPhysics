@@ -14,6 +14,8 @@ The intended reader has completed — or is completing — an introductory calcu
 
 Instructors will find that the chapters are sized for assignment by numbered section. A typical semester can cover Parts I–III in full and then choose among Parts IV and V according to taste; a more leisurely pace can stop after the hydrogen atom, or press through to the Standard Model. Nothing later in the book silently depends on a chapter that can reasonably be skipped, beyond the dependencies that the text itself flags.
 
+For a compact 10-week pacing guide with suggested section groupings, see [Teaching Guide](appendix-teaching-guide.md).
+
 ## Organization
 
 The book has five parts.

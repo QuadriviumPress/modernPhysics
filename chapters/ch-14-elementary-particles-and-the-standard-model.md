@@ -112,6 +112,10 @@ Left: two electrons scatter by exchanging a virtual photon — the same photon w
 
 The left-hand diagram is the quantum-field-theoretic picture underlying ordinary Coulomb repulsion: two electrons never touch, but exchange a virtual photon at a single vertex on each of their two lines, each vertex conserving charge trivially (an electron's charge is unchanged by absorbing or emitting an uncharged photon). The right-hand diagram redraws the beta-decay process already introduced above, but at the level of an individual quark rather than the nucleon as a whole: it is really the neutron's down quark that emits the virtual $W^-$ and converts directly to an up quark, turning $udd$ into $uud$, while the neutron's other two quarks look on as unaffected spectators. This is also the precise reason the weak interaction, uniquely among the four, can change a quark's flavor at all. At a photon or gluon vertex, the boson emitted or absorbed carries zero electric charge, so charge conservation alone forces the quark's charge — and hence its flavor family — to be exactly the same before and after; a $d$ quark ($-\tfrac13e$) simply cannot become a $u$ quark ($+\tfrac23e$) at such a vertex without violating charge conservation right there at the vertex. The $W^\pm$ boson is the only carrier with nonzero electric charge ($\pm e$), and $\pm e$ is exactly the charge difference between an up-type and a down-type quark in the same generation ($Q(u)-Q(d) = \tfrac23e - (-\tfrac13e) = e$), so only a $W^\pm$ vertex has the right charge budget to convert one into the other.
 
+:::{warning}
+Do not read the backward arrow on an antiparticle line as motion backward in time. The line still advances forward through the diagram; the arrow is a bookkeeping convention for particle flow and conserved charge.
+:::
+
 :::{margin}
 The generic term for a quark or lepton type — up, down, strange, charm, top, bottom for quarks; electron, muon, tau (and their neutrinos) for leptons — is **flavor**. Flavor is independent of the color charge introduced later in this chapter: two quarks of the same flavor, two up quarks say, can still carry different colors.
 :::
@@ -149,6 +153,11 @@ The ATLAS detector at CERN, photographed during construction in February 2007; t
 ```
 
 Not every particle produced in a collision leaves a readily visible signal. A neutrino — carrying no electric charge and feeling only the weak interaction — usually passes through even a large, modern detector's tracking, calorimetry, and muon layers essentially undisturbed, exactly as it passes through the Earth itself. A small fraction do undergo a weak interaction in detector material, and those interactions provide direct event-by-event neutrino detections in dedicated neutrino experiments. In a collider detector, however, an escaping neutrino is usually inferred from missing transverse momentum, much as Pauli inferred the neutrino's existence from the continuous beta-decay energy spectrum ([Chapter 13](#ch-nuclear-physics)), but applied now to *momentum*: because the incoming beams have negligible net transverse momentum, any transverse momentum imbalance among everything the detector *does* see may have been carried away by one or more unseen particles. Detector resolution and unobserved beam remnants can also contribute to the imbalance, so missing transverse momentum is evidence rather than an exact identification by itself.
+
+:::{tip} Self-check
+If a neutrino escapes unseen, which measured quantity tells you something is missing?
+Why do head-on colliders reach higher center-of-momentum energy than fixed-target machines for the same beam energy?
+:::
 
 #### Worked Example: Inferring a Missing Neutrino from Momentum Conservation
 
@@ -280,6 +289,10 @@ These conservation laws function exactly as energy, momentum, and angular moment
 
 The particle-zoo puzzle described above is also where **strangeness** $S$ enters as a genuine, book-keepable quantum number, alongside charge, baryon number, and lepton number. Strangeness is assigned by quark content: $S=-1$ for each strange quark $s$ a particle contains, $S=+1$ for each strange antiquark $\bar s$, and $S=0$ for every other quark flavor (a sign convention fixed historically, before quarks themselves were proposed, when strangeness was assigned directly to particles from their production and decay patterns rather than derived from a quark that had not yet been identified). The defining, and at first deeply puzzling, experimental fact about strangeness is that it is treated differently by different interactions:
 
+:::{warning}
+The sign of strangeness is historical, not intuitive: a strange quark carries $S=-1$, while a strange antiquark carries $S=+1$. "Almost conserved" means exactly conserved by the strong and electromagnetic interactions, but not by the weak interaction.
+:::
+
 - The **strong** and **electromagnetic** interactions conserve strangeness exactly, in every observed reaction.
 - The **weak** interaction does not: a single tree-level charged-current vertex can change strangeness by one unit, consistent with a $W^\pm$ vertex converting an $s$ quark to an up-type quark, or vice versa (the same charge-budget argument given above for why only the weak interaction changes quark flavor at all). Higher-order weak processes can produce larger net changes, but they are strongly suppressed.
 
@@ -321,6 +334,8 @@ As the final chapter of this book, it is worth being explicit that the Standard 
 - **Unification.** The electromagnetic and weak interactions are already understood as two facets of a single underlying "electroweak" interaction, unified at sufficiently high energy — a success this chapter's Higgs mechanism is part of. Many physicists suspect the strong interaction unifies with the electroweak interaction at a still higher energy (**grand unification**), and that gravity itself — entirely absent from the Standard Model, and still described only by Einstein's classical general relativity — must eventually be brought into a single quantum-mechanical framework together with the other three forces. Such a "theory of everything" remains, despite decades of effort (string theory and loop quantum gravity among the leading proposals), unconfirmed by any experiment.
 
 These are not signs of failure so much as an honest map of where the frontier currently sits: the Standard Model surveyed in this chapter is, by a wide margin, the most thoroughly tested theory in the history of physics, and every one of these open questions is being actively pursued — at facilities from the LHC to underground dark-matter detectors to neutrino observatories — by the direct descendants of the same experimental methods, particle accelerators, colliders, and increasingly sophisticated layered detectors, introduced earlier in this chapter.
+
+If you want the shortest reading of this chapter's ending, it is this: the Standard Model is extraordinarily precise, but it still does not explain dark matter, the matter-antimatter asymmetry, neutrino masses, or how gravity joins the quantum forces.
 
 ## Summary
 

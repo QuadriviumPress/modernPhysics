@@ -140,6 +140,8 @@ project:
           level: 0
         - file: chapters/ch-14-elementary-particles-and-the-standard-model.md
           level: 0
+        - file: appendix-teaching-guide.md
+          level: 0
   # Website sidebar: chapters only (no Part I / Part II groupings). The
   # right-hand page outline supplies each chapter's numbered reading sections.
   # Keeping section anchors out of this list avoids duplicating every heading
@@ -161,6 +163,7 @@ project:
     - file: chapters/ch-12-molecular-structure.md
     - file: chapters/ch-13-nuclear-physics.md
     - file: chapters/ch-14-elementary-particles-and-the-standard-model.md
+    - file: appendix-teaching-guide.md
 site:
   template: book-theme
   title: Modern Physics

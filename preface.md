@@ -36,7 +36,7 @@ Every chapter opens with learning objectives and a short introduction, then proc
 
 A handful of pedagogical asides appear where they earn their keep: notes for historical context, tips for problem-solving strategy, warnings for common misconceptions, and margin remarks for notation or units that would otherwise interrupt the sentence. Dropdowns hold optional derivations. None of these is a substitute for the main argument; all of them can be ignored on a first reading.
 
-Interactive simulations — from PhET and from OpenPhysics — are embedded in the web edition wherever a moving picture teaches more than a static one. In the print and Word editions the same figures appear as screenshots, each caption linking to the running simulation online. Every chapter has at least one.
+Interactive simulations — from PhET and from OpenLyceum — are embedded in the web edition wherever a moving picture teaches more than a static one. In the print and Word editions the same figures appear as screenshots, each caption linking to the running simulation online. Every chapter has at least one.
 
 ## Editions
 

@@ -120,7 +120,7 @@ since otherwise the wave would interfere destructively with itself on successive
 
 Quantization by a closure condition is not a quantum idea, and it is easier to trust once it has been seen somewhere unmysterious. {numref}`Figure %s <fig:ch07-standing-wave-sim>` drives a column of air and sweeps the frequency: almost every frequency produces nothing, and at a discrete set of them the tube suddenly resonates, because only there does the wave returning from the far end arrive back in step with itself. Nothing is quantized about air. What is discrete is the set of wavelengths that a boundary condition permits — an integer count fitting into the available length — and de Broglie's contribution was to notice that an electron's wave going around an orbit is subject to a closure condition of exactly the same kind.
 
-```{openphysics} StandingWaves
+```{openlyceum} StandingWaves
 :screen: 3
 :label: fig:ch07-standing-wave-sim
 
@@ -262,7 +262,7 @@ where $\Delta t$ characterizes the time available to measure (or the lifetime of
 
 Stripped of $\hbar$, this is a theorem about signals rather than about quantum mechanics, and it applies to any wave one cares to measure — including the sound of one's own voice. {numref}`Figure %s <fig:ch07-bandwidth-sim>` runs a live spectrum of whatever the microphone hears: a sustained vowel, going on for a long $\Delta t$, resolves into sharp harmonic lines with small $\Delta f$, while a clipped consonant lasting a few milliseconds has no sharp lines at all, only a broad smear across the spectrum. No better microphone would fix this. A short signal does not *have* a well-defined frequency, exactly as a short-lived excited state does not have a well-defined energy.
 
-```{openphysics} WaveComposer
+```{openlyceum} WaveComposer
 :label: fig:ch07-bandwidth-sim
 
 Real-time spectrum analysis of a microphone signal. The duration of a sound and the sharpness of its spectrum trade off against each other, which is $\Delta E\,\Delta t \gtrsim \hbar/2$ with the $\hbar$ removed and the quantum mechanics along with it.

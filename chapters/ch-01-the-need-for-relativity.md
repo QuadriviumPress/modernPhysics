@@ -146,7 +146,7 @@ The Michelson–Morley arrangement. A beam is split into perpendicular paths and
 
 What a fraction of a fringe looks like, and how little it takes to produce one, can be checked directly in {numref}`Figure %s <fig:ch01-interferometry-sim>`. Translating one mirror by half a wavelength moves the pattern by one full fringe, so the $0.37$ fringe that Michelson and Morley were hunting corresponds to an optical path difference of $0.37\lambda \approx 0.22\ \mu\text{m}$, and to a mirror motion of half that — small, but on this display an unmistakable movement of the whole pattern rather than a subtle change of shape. That is why the null result was so hard to argue with.
 
-```{openphysics} InterferometryLab
+```{openlyceum} InterferometryLab
 :label: fig:ch01-interferometry-sim
 
 The Michelson geometry that Michelson and Morley used, with the arms under direct control. The ether wind is not modeled — no experiment has ever needed it to be — but the instrument's response to a path-length difference between the arms is, and it is that response the 1887 apparatus was calibrated against.

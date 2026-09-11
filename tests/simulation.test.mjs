@@ -8,7 +8,7 @@ function render(name, arg, options = {}) {
 
 test('providers emit working URL shapes and static screenshot fallbacks', () => {
   const cases = [
-    ['openphysics', 'SpecialRelativity', 'https://openphysics.github.io/SpecialRelativity/', 'https://raw.githubusercontent.com/OpenPhysics/Baton/main/screenshots/SpecialRelativity.png'],
+    ['openlyceum', 'SpecialRelativity', 'https://openlyceum.github.io/SpecialRelativity/', 'https://raw.githubusercontent.com/OpenLyceum/Baton/main/screenshots/SpecialRelativity.png'],
     ['phet', 'blackbody-spectrum', 'https://phet.colorado.edu/sims/html/blackbody-spectrum/latest/blackbody-spectrum_en.html', 'https://phet.colorado.edu/sims/html/blackbody-spectrum/latest/blackbody-spectrum-600.png'],
     ['phet-legacy', 'nuclear-physics/alpha-decay', 'https://phet.colorado.edu/sims/cheerpj/nuclear-physics/latest/nuclear-physics.html?simulation=alpha-decay', 'https://phet.colorado.edu/sims/nuclear-physics/alpha-decay-600.png'],
   ];
@@ -24,7 +24,7 @@ test('providers emit working URL shapes and static screenshot fallbacks', () => 
 });
 
 test('parameters, accessible names, and explicit fallback options survive', () => {
-  const { children } = render('openphysics', 'SpecialRelativity', {
+  const { children } = render('openlyceum', 'SpecialRelativity', {
     screens: '1,2', screen: '2', locale: 'fr', params: '?foo=bar',
     'sim-name': 'Moving clocks', title: 'Explore moving clocks',
     placeholder: '/images/clocks.png', alt: 'Two clocks on a train',

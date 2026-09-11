@@ -63,8 +63,8 @@ const DEFAULT_ASPECT = '1024:618';
  * @type {Object<string, {label: string, aspect?: string, resolve: function(string, Object): {url: string, placeholder: string}}>}
  */
 const PROVIDERS = {
-  openphysics: {
-    label: 'OpenPhysics',
+  openlyceum: {
+    label: 'OpenLyceum',
     aspect: DEFAULT_ASPECT,
     /**
      * Screenshots come from the Baton repository rather than from the
@@ -85,8 +85,8 @@ const PROVIDERS = {
         locale: opts.locale
       }, opts.params );
       return {
-        url: `https://openphysics.github.io/${ id }/${ query }`,
-        placeholder: `https://raw.githubusercontent.com/OpenPhysics/Baton/main/screenshots/${ id }.png`
+        url: `https://openlyceum.github.io/${ id }/${ query }`,
+        placeholder: `https://raw.githubusercontent.com/OpenLyceum/Baton/main/screenshots/${ id }.png`
       };
     }
   },
@@ -133,7 +133,7 @@ const PROVIDERS = {
      * downloads a JVM before it starts, so the first paint takes tens of
      * seconds on a cold cache, and it is mouse-driven -- neither touch nor
      * keyboard navigation works the way it does in an HTML5 sim. Prefer `phet`
-     * or `openphysics` when either has something equivalent.
+     * or `openlyceum` when either has something equivalent.
      *
      * `screens`/`screen` are joist query parameters and mean nothing here; the
      * flavor of a multi-sim project is chosen by the `sim` half of the id.
@@ -282,7 +282,7 @@ function directiveError( message, vfile ) {
 }
 
 /**
- * Shared implementation behind `{simulation}`, `{openphysics}`, and `{phet}`.
+ * Shared implementation behind `{simulation}`, `{openlyceum}`, and `{phet}`.
  *
  * @param {Object} data - Directive data supplied by MyST.
  * @param {Object} vfile - The vfile for the source document.
@@ -441,7 +441,7 @@ function simulationOptions() {
     aspect: {
       type: String,
       doc: 'Aspect ratio as `w:h`, e.g. `16:9`. Defaults to the provider frame ' +
-           '(`1024:618` for OpenPhysics, `768:504` for PhET). Ratios other than ' +
+           '(`1024:618` for OpenLyceum, `768:504` for PhET). Ratios other than ' +
            'those need a matching rule in `plugins/simulation.css`.'
     },
     placeholder: {
@@ -515,7 +515,7 @@ function simulationOptions() {
 }
 
 /**
- * Builds a directive spec. `{openphysics}` and `{phet}` are the generic
+ * Builds a directive spec. `{openlyceum}` and `{phet}` are the generic
  * `{simulation}` directive with the provider fixed.
  *
  * @param {Object} spec - Directive identity.
@@ -551,14 +551,14 @@ const simulationDirective = makeDirective( {
   doc: 'Embed an interactive simulation, with a static screenshot for PDF, DOCX, ' +
        'Markdown, and print.',
   argDoc: 'The simulation URL, or a `provider:name` reference such as ' +
-          '`openphysics:SpecialRelativity` or `phet:blackbody-spectrum`.'
+          '`openlyceum:SpecialRelativity` or `phet:blackbody-spectrum`.'
 } );
 
-const openPhysicsDirective = makeDirective( {
-  name: 'openphysics',
-  provider: 'openphysics',
-  doc: 'Embed a simulation published by the OpenPhysics organization.',
-  argDoc: 'The OpenPhysics repository name, e.g. `SpecialRelativity`.'
+const openLyceumDirective = makeDirective( {
+  name: 'openlyceum',
+  provider: 'openlyceum',
+  doc: 'Embed a simulation published by the OpenLyceum organization.',
+  argDoc: 'The OpenLyceum repository name, e.g. `SpecialRelativity`.'
 } );
 
 const phetDirective = makeDirective( {
@@ -583,7 +583,7 @@ const phetLegacyDirective = makeDirective( {
  */
 const plugin = {
   name: 'Interactive simulations',
-  directives: [ simulationDirective, openPhysicsDirective, phetDirective, phetLegacyDirective ]
+  directives: [ simulationDirective, openLyceumDirective, phetDirective, phetLegacyDirective ]
 };
 
 export default plugin;

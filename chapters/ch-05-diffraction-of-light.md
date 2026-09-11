@@ -491,7 +491,7 @@ their spacings $d$, and therefore the angles at which reflections appear —
 including the aperiodic case, where the diffraction pattern is as sharp as a
 crystal's but carries a symmetry no crystal can have.
 
-```{openphysics} CrystalLattice
+```{openlyceum} CrystalLattice
 :label: fig:ch05-crystal-sim
 
 Crystal structure in five screens: the two-dimensional Bravais lattices, cubic

@@ -5,7 +5,7 @@ cannot, and the book has to survive being printed anyway.
 
 - [`simulation.mjs`](simulation.mjs) — embeds a running browser simulation on
   the website and falls back to a screenshot, a caption, and a link everywhere
-  else. Provides `{simulation}`, `{openphysics}`, `{phet}`, `{phet-legacy}`.
+  else. Provides `{simulation}`, `{openlyceum}`, `{phet}`, `{phet-legacy}`.
 - [`simulation.css`](simulation.css) — hides the fallback on screen, restores it
   for browser print.
 - [`export.mjs`](export.mjs) — rewrites the node types no export renderer
@@ -31,7 +31,7 @@ changing it.
 ## Usage
 
 ````markdown
-```{openphysics} InterferometryLab
+```{openlyceum} InterferometryLab
 :label: fig:ch04-interferometry-sim
 
 Move a mirror and count fringes; shorten the coherence length and watch the
@@ -46,7 +46,7 @@ Four directives, one implementation:
 
 | Directive | Argument | Resolves to |
 |---|---|---|
-| `{openphysics}` | repository name | `https://openphysics.github.io/<Repo>/` |
+| `{openlyceum}` | repository name | `https://openlyceum.github.io/<Repo>/` |
 | `{phet}` | simulation name | `https://phet.colorado.edu/sims/html/<sim>/latest/<sim>_<locale>.html` |
 | `{phet-legacy}` | simulation name, or `project/sim` | `https://phet.colorado.edu/sims/cheerpj/<project>/latest/<project>.html?simulation=<sim>` |
 | `{simulation}` (alias `{sim}`) | a URL, or `provider:name` | whatever you give it |
@@ -54,11 +54,11 @@ Four directives, one implementation:
 So these three are the same embed:
 
 ````markdown
-```{openphysics} SpecialRelativity
+```{openlyceum} SpecialRelativity
 ```
-```{simulation} openphysics:SpecialRelativity
+```{simulation} openlyceum:SpecialRelativity
 ```
-```{simulation} https://openphysics.github.io/SpecialRelativity/
+```{simulation} https://openlyceum.github.io/SpecialRelativity/
 :placeholder: ../images/my-screenshot.png
 ```
 ````
@@ -96,7 +96,7 @@ Two things to know before reaching for it:
 - **It is mouse-only.** Neither touch nor keyboard navigation works the way it
   does in an HTML5 sim, and there is no screen-reader support.
 
-So prefer `{phet}` or `{openphysics}` wherever either has something equivalent.
+So prefer `{phet}` or `{openlyceum}` wherever either has something equivalent.
 `screens` and `screen` are joist query parameters and do nothing here; the
 flavor of a multi-sim project is chosen by the `sim` half of the argument.
 
@@ -105,7 +105,7 @@ flavor of a multi-sim project is chosen by the `sim` half of the argument.
 | Option | Default | Notes |
 |---|---|---|
 | `width` | `100%` | **Percentages only.** The theme mangles `px` values. |
-| `aspect` | `1024:618` (OpenPhysics), `768:504` (PhET), `4:3` (PhET legacy) | Other ratios need a matching rule in `simulation.css`. |
+| `aspect` | `1024:618` (OpenLyceum), `768:504` (PhET), `4:3` (PhET legacy) | Other ratios need a matching rule in `simulation.css`. |
 | `placeholder` | provider screenshot | Relative to the `.md` file, `/`-prefixed for the project root, or a URL. Use **PNG or JPEG**. |
 | `no-placeholder` | — | Drop the static fallback entirely. |
 | `alt` | derived | Alternative text for the fallback image. |
@@ -170,7 +170,7 @@ rather than a break, but it is why the stylesheet is registered in `myst.yml`.
 
 ## Screenshots
 
-`{openphysics}` uses `Baton/screenshots/<Repo>.png`, not the `screenshots/wide.png`
+`{openlyceum}` uses `Baton/screenshots/<Repo>.png`, not the `screenshots/wide.png`
 each simulation publishes on its own Pages site. The latter is the PWA manifest
 asset — a generic splash screen, byte-identical across most of the fleet. Baton's
 are captures of the running simulations, refreshed by Baton's own workflow.
@@ -215,7 +215,7 @@ myhost: {
 ```
 
 If the aspect ratio is not already in `simulation.css`, add a rule for it there.
-These URL patterns are conventions of the hosts, not contracts — if OpenPhysics
+These URL patterns are conventions of the hosts, not contracts — if OpenLyceum
 or PhET changes its Pages layout, `PROVIDERS` is the only thing to update.
 
 # The export plugin

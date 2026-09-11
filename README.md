@@ -99,12 +99,12 @@ prose, headings, math, figures, or exercises.
 
 ## Interactive simulations
 
-Chapters can embed a running browser simulation with the `{openphysics}`,
+Chapters can embed a running browser simulation with the `{openlyceum}`,
 `{phet}`, `{phet-legacy}`, or `{simulation}` directives, supplied by
 [`plugins/simulation.mjs`](plugins/simulation.mjs):
 
 ````markdown
-```{openphysics} InterferometryLab
+```{openlyceum} InterferometryLab
 :label: fig:ch04-interferometry-sim
 
 Move a mirror and count fringes.
@@ -115,7 +115,7 @@ On the website this is the live simulation. In a PDF, a Word document, exported
 Markdown, or a printed page — none of which can run JavaScript — the same figure
 becomes a screenshot with its caption and a link to the running version. Any URL
 that works in an iframe can be embedded, not only simulations from
-[OpenPhysics](https://github.com/OpenPhysics) and
+[OpenLyceum](https://github.com/OpenLyceum) and
 [PhET](https://phet.colorado.edu). See
 [`plugins/README.md`](plugins/README.md) for the options and for how the
 fallback works.
@@ -124,7 +124,7 @@ fallback works.
 the browser through CheerpJ. Several topics here — the photoelectric effect,
 quantum bound states, tunneling, lasers, gas discharge, the nuclear-physics
 family — have no HTML5 equivalent, so the Java version is the only interactive
-option. It is slow to start and mouse-only; prefer `{phet}` or `{openphysics}`
+option. It is slow to start and mouse-only; prefer `{phet}` or `{openlyceum}`
 where either has something comparable.
 
 Every chapter carries at least one simulation;

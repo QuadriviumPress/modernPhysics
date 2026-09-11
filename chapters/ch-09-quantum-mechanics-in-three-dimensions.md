@@ -169,7 +169,7 @@ rather than the continuum a classical dipole would give — is the content of
 analyzer splits the beam in two; chaining analyzers at different angles shows
 that the measurement does not simply read a pre-existing orientation.
 
-```{openphysics} SternGerlach
+```{openlyceum} SternGerlach
 :label: fig:ch09-stern-gerlach-sim
 
 The Stern–Gerlach experiment, assembled from analyzers, magnets, and counters.
@@ -200,7 +200,7 @@ confirming explicitly that $\vec L$ can never point exactly along $z$ (which wou
 
 The cone that this worked example describes is usually drawn as a static picture, which makes the indeterminacy of $L_x$ and $L_y$ look like an admission of ignorance about a vector that is really sitting still somewhere on the cone. The classical system that gets the geometry right is a gyroscope, {numref}`Figure %s <fig:ch09-precession-sim>`: gravity applies a torque perpendicular to the spin angular momentum, and the response is not to tip the axis over but to walk it around a cone at fixed polar angle, with $|\vec L|$ and $L_z$ both constant while $L_x$ and $L_y$ oscillate. Put a magnetic moment in a field instead of a top in gravity and the equation of motion is the same one; the quantum content is only that the cone's opening angle may take just $2\ell+1$ values.
 
-```{openphysics} Precession
+```{openlyceum} Precession
 :label: fig:ch09-precession-sim
 
 A spinning top under gravity. In steady precession the torque stays perpendicular to $\vec L$, so it changes the direction of the angular momentum without changing either its magnitude or its vertical component — the classical motion behind the vector model's cone, and behind the Larmor precession of a magnetic moment in a field ([Chapter 10](#ch-the-hydrogen-atom)).

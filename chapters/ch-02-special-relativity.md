@@ -108,7 +108,7 @@ The dimensionless ratio $\beta \equiv v/c$ is standard shorthand throughout rela
 
 The two clocks of that argument run side by side in {numref}`Figure %s <fig:ch02-light-clock-sim>`: one at rest in the laboratory, one gliding past at a speed you set, with the moving pulse's zigzag path drawn in. Nothing in the simulation makes the moving clock tick slowly by fiat. Both pulses travel at $c$; the moving one simply has a longer path to cover between reflections, and the two tick counts drift apart by exactly the factor $\gamma$ computed above.
 
-```{openphysics} SpecialRelativity
+```{openlyceum} SpecialRelativity
 :screen: 1
 :label: fig:ch02-light-clock-sim
 
@@ -290,7 +290,7 @@ The classical Doppler effect — the pitch of an ambulance siren rising as it ap
 
 It is worth being precise about what the classical effect does and does not depend on, because the difference is the whole point. {numref}`Figure %s <fig:ch02-classical-doppler-sim>` is the acoustic case, with the source and the observer independently movable. Move the source toward a stationary listener at speed $u$ and the received frequency is $f_0/(1 - u/v_s)$; leave the source alone and move the *listener* toward it at the same $u$ and the answer is $f_0(1 + u/v_s)$ instead. The two disagree at second order in $u/v_s$, and they must: the air is a medium, the medium picks out a frame, and "which one is really moving" is a question sound can answer. Light has no such medium, so the formula derived below can depend on the relative velocity and on nothing else — and that constraint alone is nearly enough to fix it.
 
-```{openphysics} DopplerEffect
+```{openlyceum} DopplerEffect
 :label: fig:ch02-classical-doppler-sim
 
 The *classical* Doppler effect, for sound in air. Drag the source and the observer independently and compare the shift produced by moving one against the shift produced by moving the other; the asymmetry between the two cases is the signature of a medium, and it is what disappears in the relativistic formula.
@@ -362,7 +362,7 @@ described above, and dragging an event shows how its coordinates — and, on the
 other screens, the reading of a moving light clock and the ageing of the
 travelling twin — change between frames.
 
-```{openphysics} SpecialRelativity
+```{openlyceum} SpecialRelativity
 :label: fig:ch02-sr-sim
 
 Special relativity in five screens: a moving light clock, an interactive

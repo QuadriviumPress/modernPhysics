@@ -216,7 +216,7 @@ known as the **Duane–Hunt limit**. Most electrons instead lose their energy gr
 
 Bremsstrahlung is worth separating into its classical and its quantum halves, because only the second is new here. The classical half — that a charge which accelerates radiates, and that the radiation carries energy away — is already in Maxwell's equations, and {numref}`Figure %s <fig:ch06-radiating-charge-sim>` is that statement on its own: shake a charge and kinks in its field propagate outward at $c$, taking energy with them. Stopping a charge dead is an acceleration like any other, so an electron slamming into a tungsten anode must radiate. What classical physics cannot supply is the sharp edge at $\lambda_{\min}$: a continuous field theory sets no floor on the wavelength radiated in a single event, and the Duane–Hunt limit exists only because the radiated energy comes in quanta $hf$ and one electron brings only $eV$ to spend.
 
-```{openphysics} RadioWaves
+```{openlyceum} RadioWaves
 :label: fig:ch06-radiating-charge-sim
 
 An accelerating charge and the field it radiates. Move the charge by hand and watch the disturbance propagate outward at $c$ — the classical mechanism behind bremsstrahlung, and the one the electron in an X-ray tube obeys on its way to producing a photon of energy up to $eV$.

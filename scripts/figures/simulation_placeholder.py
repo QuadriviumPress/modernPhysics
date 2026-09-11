@@ -2,7 +2,7 @@
 
 Every simulation embedded by ``plugins/simulation.mjs`` carries a screenshot for
 the outputs that cannot run JavaScript -- PDF, DOCX, Markdown, and print. The
-OpenPhysics and PhET providers supply one automatically, and an author can point
+OpenLyceum and PhET providers supply one automatically, and an author can point
 at their own with ``:placeholder:``. This card is what is left: the default for a
 simulation embedded by bare URL from a host this plugin knows nothing about.
 

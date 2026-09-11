@@ -21,7 +21,7 @@ matches directly).
 | Benjamin Crowell, *Conceptual Physics* (Light and Matter series) | CC-BY-SA | https://www.lightandmatter.com/ ; mirrored at https://phys.libretexts.org/Bookshelves/Conceptual_Physics/Conceptual_Physics_(Crowell) |
 | Paul D'Alessandris, *Spiral Modern Physics* (Physics LibreTexts) | CC-BY-NC-SA | https://phys.libretexts.org/Bookshelves/Modern_Physics/Spiral_Modern_Physics_(D'Alessandris) |
 | PhET Interactive Simulations (University of Colorado Boulder) | CC-BY 4.0 | https://phet.colorado.edu/ |
-| OpenPhysics simulations | AGPL-3.0 | https://github.com/OpenPhysics |
+| OpenLyceum simulations | AGPL-3.0 | https://github.com/OpenLyceum |
 
 Note: LibreTexts pages can carry different licenses page-by-page within a
 bookshelf. Re-check the license notice on the specific page being adapted
@@ -99,19 +99,19 @@ attribution and receive it through that link:
   addresses its pre-HTML5 Java simulations, which PhET now runs in the browser
   through CheerpJ and which remain the only interactive treatment of several
   topics in this book.
-- **OpenPhysics**, AGPL-3.0, via the `{openphysics}` directive.
+- **OpenLyceum**, AGPL-3.0, via the `{openlyceum}` directive.
 
 | Chapter | Simulations |
 |---|---|
-| 1. The Need for Relativity | Waves Intro (PhET); Interferometry Lab (OpenPhysics) |
-| 2. Special Relativity | Special Relativity ×2 — light clock and spacetime diagram (OpenPhysics); Doppler Effect (OpenPhysics) |
+| 1. The Need for Relativity | Waves Intro (PhET); Interferometry Lab (OpenLyceum) |
+| 2. Special Relativity | Special Relativity ×2 — light clock and spacetime diagram (OpenLyceum); Doppler Effect (OpenLyceum) |
 | 3. Relativistic Dynamics | Collision Lab (PhET) |
-| 4. Interference of Light | Light Propagation (OpenPhysics); Wave Interference, slits screen (PhET); Standing Waves, reflection screen (OpenPhysics); Interferometry Lab (OpenPhysics) |
-| 5. Diffraction of Light | Wave Interference, diffraction screen (PhET); Crystal Lattice (OpenPhysics) |
-| 6. Particle Properties of Waves | Blackbody Spectrum (PhET); Photoelectric Effect (PhET, Java); Radio Waves (OpenPhysics) |
-| 7. Wave Properties of Particles | Davisson–Germer (PhET, Java); Standing Waves (OpenPhysics); Quantum Wave Interference, single-particles screen (PhET); Fourier: Making Waves, wave-packet screen (PhET); Wave Composer (OpenPhysics) |
+| 4. Interference of Light | Light Propagation (OpenLyceum); Wave Interference, slits screen (PhET); Standing Waves, reflection screen (OpenLyceum); Interferometry Lab (OpenLyceum) |
+| 5. Diffraction of Light | Wave Interference, diffraction screen (PhET); Crystal Lattice (OpenLyceum) |
+| 6. Particle Properties of Waves | Blackbody Spectrum (PhET); Photoelectric Effect (PhET, Java); Radio Waves (OpenLyceum) |
+| 7. Wave Properties of Particles | Davisson–Germer (PhET, Java); Standing Waves (OpenLyceum); Quantum Wave Interference, single-particles screen (PhET); Fourier: Making Waves, wave-packet screen (PhET); Wave Composer (OpenLyceum) |
 | 8. The Schrödinger Equation | Quantum Measurement (PhET); Quantum Bound States (PhET, Java); Quantum Tunneling (PhET, Java) |
-| 9. Quantum Mechanics in Three Dimensions | Stern–Gerlach (OpenPhysics); Precession (OpenPhysics) |
+| 9. Quantum Mechanics in Three Dimensions | Stern–Gerlach (OpenLyceum); Precession (OpenLyceum) |
 | 10. The Hydrogen Atom | Models of the Hydrogen Atom (PhET); Simplified MRI (PhET, Java) |
 | 11. Many-Electron Atoms | Build an Atom (PhET); Neon Lights & Other Discharge Lamps (PhET, Java); Lasers (PhET, Java) |
 | 12. Molecular Structure | Molecule Polarity (PhET); Molecule Shapes (PhET); Double Wells and Covalent Bonds (PhET, Java); Atomic Interactions (PhET); Molecules and Light (PhET) |

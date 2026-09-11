@@ -92,7 +92,7 @@ A phase advance is $2\pi$ per wavelength, so the phase accumulated over a physic
 
 The picture behind all of this — a transverse electric field, a magnetic field perpendicular to it, and both perpendicular to the direction of travel — is drawn in three dimensions and set in motion in {numref}`Figure %s <fig:ch04-em-wave-sim>`. It is also the place to see what the phase constant $\varphi_0$ and the amplitude $E_0$ actually do, and what it means for a wave to be polarized: a direction of oscillation that plays no part in this chapter, where all the interfering beams share one, but that becomes the whole subject once a filter is put in the beam.
 
-```{openphysics} LightPropagation
+```{openlyceum} LightPropagation
 :label: fig:ch04-em-wave-sim
 
 A monochromatic electromagnetic wave with its electric and magnetic fields drawn perpendicular to each other and to the direction of propagation. Later screens send the wave through polarizers and birefringent plates, where two components of one wave are given different optical paths — the same mechanism as the thin films of this chapter, applied to polarization rather than to geometry.
@@ -552,7 +552,7 @@ with $\lambda$ the vacuum wavelength. The factor $n_{\text{film}}$ is not option
 
 That analog is worth more than a sentence, because the sign is the one thing students reliably get wrong and it is not something to be memorized. {numref}`Figure %s <fig:ch04-reflection-sim>` launches a pulse down a chain of masses and springs terminated either rigidly or freely, and the inversion is not scripted into the simulation: it falls out of the boundary condition, exactly as the $\pi$ shift falls out of matching the electric field across an optical interface. A fixed end cannot move, so the reflected pulse must arrive with the opposite sign to cancel the incident one there; a free end has nothing to push against, and the pulse returns upright.
 
-```{openphysics} StandingWaves
+```{openlyceum} StandingWaves
 :screen: 1
 :label: fig:ch04-reflection-sim
 
@@ -703,7 +703,7 @@ given by Equation {eq}`eq:ch04-michelson-fringe-count`; shortening the coherence
 washes the fringes out, which is the coherence-length constraint of the
 earlier section made visible.
 
-```{openphysics} InterferometryLab
+```{openlyceum} InterferometryLab
 :label: fig:ch04-interferometry-sim
 
 A physical-optics model of the Michelson interferometer, together with the

@@ -147,7 +147,8 @@ The double-slit experiment ([Chapter 4](#ch-interference-of-light)) makes this c
 
 That accumulation is the thing to watch, and it is what {numref}`Figure %s <fig:ch07-single-particle-sim>` reproduces. Fire particles one at a time and the screen records isolated, point-like hits in what looks at first like a random scatter; leave it running and the fringes emerge from the statistics of hits that were never anything but individual. The simulation also carries the which-path apparatus discussed next: a detector placed in the path of the wave function collapses it on each measurement, and the fringes go with it, while the individual hits go on looking exactly the same.
 
-```{phet-legacy} quantum-wave-interference
+```{phet} quantum-wave-interference
+:screen: 3
 :label: fig:ch07-single-particle-sim
 
 Single particles sent through a double slit, one at a time, with the detection screen accumulating hits. The wave function is displayed alongside the record of impacts: one object, propagating as a wave and detected as a particle.

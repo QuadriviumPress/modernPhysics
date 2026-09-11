@@ -109,7 +109,7 @@ attribution and receive it through that link:
 | 4. Interference of Light | Light Propagation (OpenPhysics); Wave Interference, slits screen (PhET); Standing Waves, reflection screen (OpenPhysics); Interferometry Lab (OpenPhysics) |
 | 5. Diffraction of Light | Wave Interference, diffraction screen (PhET); Crystal Lattice (OpenPhysics) |
 | 6. Particle Properties of Waves | Blackbody Spectrum (PhET); Photoelectric Effect (PhET, Java); Radio Waves (OpenPhysics) |
-| 7. Wave Properties of Particles | Davisson–Germer (PhET, Java); Standing Waves (OpenPhysics); Quantum Wave Interference (PhET, Java); Fourier: Making Waves, wave-packet screen (PhET); Wave Composer (OpenPhysics) |
+| 7. Wave Properties of Particles | Davisson–Germer (PhET, Java); Standing Waves (OpenPhysics); Quantum Wave Interference, single-particles screen (PhET); Fourier: Making Waves, wave-packet screen (PhET); Wave Composer (OpenPhysics) |
 | 8. The Schrödinger Equation | Quantum Measurement (PhET); Quantum Bound States (PhET, Java); Quantum Tunneling (PhET, Java) |
 | 9. Quantum Mechanics in Three Dimensions | Stern–Gerlach (OpenPhysics); Precession (OpenPhysics) |
 | 10. The Hydrogen Atom | Models of the Hydrogen Atom (PhET); Simplified MRI (PhET, Java) |

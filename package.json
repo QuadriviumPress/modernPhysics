@@ -12,7 +12,7 @@
     "prestart": "npm run check:toolchain",
     "start": "myst start",
     "prebuild": "npm run check:toolchain",
-    "build": "myst build --html",
+    "build": "myst build --html && node scripts/setup-pwa.mjs",
     "precheck": "npm run check:toolchain",
     "verify": "npm run check:project && npm test",
     "check": "npm run verify && npm run build -- --check-links",
@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "mystmd": "1.10.1",
+    "sharp": "0.34.3",
     "yaml": "2.8.1"
   }
 }

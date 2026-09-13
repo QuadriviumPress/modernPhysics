@@ -150,11 +150,14 @@ npm run check:figures
 Use Node 22 (`nvm use` if you have nvm; see `.nvmrc`).
 
 ```bash
-npm ci
+npm install
 npm run start          # preview
 npm run build          # static site in _build/html/
+npm run verify         # metadata and plugin tests
 npm run check          # metadata, plugin tests, HTML, and links
 ```
+
+Use `npm ci` when you need an exact reproducible installation from the lockfile.
 
 The fast tests also require Python 3. With the print toolchain below installed,
 `npm run test:exports` checks small full/student PDFs and a Word document for

@@ -1,6 +1,6 @@
 /*
- * Styles for the {simulation}, {openlyceum}, and {phet} directives in
- * plugins/simulation.mjs.
+ * Styles for interactive-media directives. The simulation, animation, and
+ * video plugins each emit a live iframe and a static print fallback.
  *
  * Each of those directives emits an iframe *and* a screenshot as siblings of
  * one figure, because no single node type survives every MyST output format.
@@ -16,6 +16,11 @@
 
 /* The static fallback exists for PDF, DOCX, Markdown, and print. */
 .simulation-placeholder {
+  display: none;
+}
+
+.animation-placeholder,
+.video-placeholder {
   display: none;
 }
 
@@ -41,9 +46,34 @@
   padding-bottom: 100% !important;
 }
 
+.animation-aspect-2x1 > div {
+  padding-bottom: 50% !important;
+}
+
+.animation-aspect-1x1 > div {
+  padding-bottom: 100% !important;
+}
+
+.animation-aspect-4x3 > div,
+.video-aspect-4x3 > div {
+  padding-bottom: 75% !important;
+}
+
+.video-aspect-16x9 > div {
+  padding-bottom: 56.25% !important;
+}
+
 /* The caption line that links to the live simulation. */
 .simulation-link {
   font-size: 0.9em;
+}
+
+.video-link {
+  font-size: 0.9em;
+}
+
+.video-link a {
+  font-weight: 600;
 }
 
 /*
@@ -52,11 +82,15 @@
  * screenshot the exports already use.
  */
 @media print {
-  .simulation-frame {
+  .simulation-frame,
+  .animation-frame,
+  .video-frame {
     display: none;
   }
 
-  .simulation-placeholder {
+  .simulation-placeholder,
+  .animation-placeholder,
+  .video-placeholder {
     display: block;
     max-width: 100%;
     height: auto;

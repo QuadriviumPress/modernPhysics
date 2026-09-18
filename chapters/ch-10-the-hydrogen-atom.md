@@ -373,10 +373,38 @@ When checking whether a transition is allowed, check $\Delta\ell$ first and don'
 - Orbital and spin angular momentum each produce a magnetic moment, in units of the Bohr magneton $\mu_B$; the spin moment carries an extra $g$-factor $\approx 2$. In an external field, the (normal) **Zeeman effect** shifts sublevels by $\Delta E \approx (m_\ell+2m_s)\mu_BB$; even with no external field, **spin–orbit coupling** produces **fine-structure** splitting of order $\alpha^2|E_n|$, where $\alpha\approx1/137$ is the fine-structure constant.
 - Single-photon electric-dipole transitions obey $\Delta\ell = \pm1$, $\Delta m_\ell=0,\pm1$, and $\Delta m_s=0$, explaining the observed pattern of hydrogen spectral lines.
 
+## Check Your Understanding
+
+1. How do hydrogenic binding energies scale with nuclear charge $Z$?
+2. For $n=3$, which values of $\ell$ are allowed?
+3. What orbital selection rule governs ordinary electric-dipole transitions?
+
+:::{dropdown} Answers
+1. $E_n\propto-Z^2/n^2$.
+2. $\ell=0,1,2$.
+3. $\Delta\ell=\pm1$ (with the associated magnetic rule $\Delta m_\ell=0,\pm1$).
+:::
+
+## Conceptual Questions
+
+1. Why does a hydrogen atom have discrete bound energies but a continuum above ionization?
+
+2. Distinguish radial nodes from angular nodes and relate each count to the quantum numbers.
+
+3. Why do $s$ orbitals penetrate the nuclear region more strongly than orbitals with $\ell>0$?
+
+4. Explain why the Coulomb spectrum is degenerate in $\ell$ in the nonrelativistic hydrogen model.
+
+5. Why did the Stern–Gerlach result require a new two-valued angular momentum rather than ordinary orbital angular momentum alone?
+
+6. A transition can conserve energy but still be forbidden by a selection rule. Explain what “forbidden” means experimentally.
+
 ## Problems
 
 :::{exercise}
 :label: ex-the-hydrogen-atom-1
+
+*(Straightforward)*
 
 Using the Rydberg formula, compute the wavelength of the first line of the Lyman series ($n=2\to n=1$) and the Lyman series limit ($n\to\infty \to n=1$). State which portion of the electromagnetic spectrum both lie in, and explain why the entire Lyman series (unlike the Balmer series) is invisible to the human eye.
 :::
@@ -395,6 +423,8 @@ At the series limit, $1/\lambda=R$, so $\lambda=91.2\ \text{nm}$.  Both lines ar
 :::{exercise}
 :label: ex-the-hydrogen-atom-2
 
+*(Straightforward)*
+
 List all allowed $(\ell, m_\ell)$ combinations for $n=3$, count the total number of spatial states, and verify this equals $n^2=9$. Including spin, how many total quantum states share this energy?
 :::
 
@@ -407,6 +437,8 @@ For $n=3$, $\ell=0,1,2$.  The allowed sets are $(0,0)$; $(1,-1),(1,0),(1,1)$; an
 
 :::{exercise}
 :label: ex-the-hydrogen-atom-3
+
+*(Straightforward)*
 
 Using the selection rule $\Delta\ell=\pm1$, determine which of the following single-photon transitions are allowed and which are forbidden: (a) $3d \to 2p$, (b) $3s \to 2s$, (c) $3p \to 1s$, (d) $2p \to 1s$.
 :::
@@ -430,6 +462,8 @@ Therefore, only $3s\to2s$ is forbidden by the electric-dipole selection rule.
 :::{exercise}
 :label: ex-the-hydrogen-atom-4
 
+*(Straightforward)*
+
 An electron in a hydrogen atom is in a $3d$ state ($\ell=2$). (a) Compute the magnitude of its orbital angular momentum in units of $\hbar$. (b) Compute the largest possible magnitude of its $z$-component orbital magnetic moment, in units of the Bohr magneton.
 :::
 
@@ -447,6 +481,8 @@ The largest magnitude of $m_\ell$ is $2$, and $|\mu_{L,z}|=|m_\ell|\mu_B=2\mu_B$
 :::{exercise}
 :label: ex-the-hydrogen-atom-5
 
+*(Moderate)*
+
 In the Stern–Gerlach experiment, explain why silver atoms (rather than, say, helium atoms) were a good choice for demonstrating space quantization due to electron spin, referring to the electron configuration of the outermost electron (you may look ahead to [Chapter 11](#ch-many-electron-atoms)'s discussion of electron configurations, or simply reason from the fact that silver's single outer electron is in an $s$-state).
 :::
 
@@ -459,6 +495,8 @@ Silver has one unpaired outer $5s$ electron.  An $s$ state has $\ell=0$, so it h
 
 :::{exercise}
 :label: ex-the-hydrogen-atom-6
+
+*(Moderate)*
 
 Show that the ground-state radial probability distribution of hydrogen, $P(r) = r^2|R_{10}(r)|^2 \propto r^2 e^{-2r/a_0}$, is maximized at $r=a_0$ by differentiating $P(r)$ with respect to $r$ and setting the result to zero.
 :::
@@ -476,6 +514,8 @@ For $r>0$, the derivative vanishes at $r=a_0$, changing from positive to negativ
 
 :::{exercise}
 :label: ex-the-hydrogen-atom-7
+
+*(Moderate)*
 
 Doubly ionized lithium, $\text{Li}^{2+}$ ($Z=3$), is a one-electron hydrogenic ion. (a) Find its ground-state ionization energy. (b) Find the radius at which its ground-state radial probability distribution peaks. (c) Compare both results, as ratios, to hydrogen's, and confirm they follow the $Z^2$ and $1/Z$ scaling laws given in the text.
 :::
@@ -501,6 +541,8 @@ Therefore, $\text{Li}^{2+}$ has a $122.4\ \text{eV}$ ionization energy and a $0.
 :::{exercise}
 :label: ex-the-hydrogen-atom-8
 
+*(Moderate)*
+
 A different Stern–Gerlach apparatus uses a field gradient $\partial B_z/\partial z = 15\ \text{T/m}$ over a magnet of length $L=0.20\ \text{m}$, with silver atoms ($m=1.79\times10^{-25}\ \text{kg}$) moving at $v=600\ \text{m/s}$, followed by a $D=0.40\ \text{m}$ drift to the screen. Using the method of the worked example, find the separation between the two spots.
 :::
 
@@ -524,6 +566,8 @@ Therefore, the two opposite spin components are separated by $2z=0.432\ \text{mm
 
 :::{exercise}
 :label: ex-the-hydrogen-atom-9
+
+*(Challenging)*
 
 A hydrogen discharge tube is placed in a magnetic field of $B=0.50\ \text{T}$. (a) Find the Zeeman energy splitting $\Delta E$ (in eV) between adjacent $m_\ell$ sublevels. (b) Find the corresponding frequency splitting $\Delta f$. (c) Using $\lambda=486.1\ \text{nm}$ (the $\text{H}_\beta$ line), estimate the wavelength splitting $\Delta\lambda$, and compare its order of magnitude to the $0.50\ \text{T}$ case's expected scaling relative to the $1.0\ \text{T}$ worked example in the text.
 :::
@@ -552,6 +596,8 @@ Therefore, the $0.50\ \text{T}$ splitting is $2.90\times10^{-5}\ \text{eV}$, $7.
 
 :::{exercise}
 :label: ex-the-hydrogen-atom-10
+
+*(Challenging)*
 
 Estimate the order-of-magnitude fine-structure splitting of hydrogen's $n=3$ level, using $\Delta E_{\text{fine}}\sim\alpha^2|E_n|$. Compare your result to the $n=2$ estimate found in the text, and explain, in terms of the $|E_n|=13.6\ \text{eV}/n^2$ scaling, why fine structure becomes progressively harder to resolve at higher $n$.
 :::

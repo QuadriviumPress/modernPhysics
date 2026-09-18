@@ -298,10 +298,38 @@ The properties that make a laser beam distinctive — a single, precisely define
 - **Characteristic X-rays** arise from inner-shell vacancies, labeled by shell letter ($K$: $n=1$, $L$: $n=2$, $M$: $n=3$, $\ldots$); **Moseley's law**, $\sqrt f = a(Z-b)$ — a straight line when $\sqrt{f}$ is plotted against $Z$ — let X-ray spectra be used to determine atomic number directly, correctly ordering the periodic table by $Z$ and revealing the undiscovered elements $Z=43$, $61$, and $75$.
 - **Lasers** exploit stimulated emission and a **population inversion**, sustained via a **metastable state**, to produce coherent light; three-level (ruby) and four-level (helium–neon) schemes differ in how hard the lower laser level is to keep empty. Lasers underlie fiber-optic communication, laser cooling, and a range of medical applications.
 
+## Check Your Understanding
+
+1. How many electrons can occupy one spatial orbital, and how must their spins be related?
+2. What does screening do to the nuclear attraction felt by an outer electron?
+3. What population condition is required for laser amplification?
+
+:::{dropdown} Answers
+1. Two, with opposite spin projections.
+2. Inner electrons reduce the effective nuclear charge felt by the outer electron.
+3. A population inversion: more atoms in the upper laser level than in the lower one.
+:::
+
+## Conceptual Questions
+
+1. How does the exclusion principle generate shell structure without introducing a new force between electrons?
+
+2. Why are $4s$ orbitals filled before $3d$ in neutral atoms but often ionized first in transition-metal ions?
+
+3. Explain Hund's rule in terms of how electrons occupy degenerate orbitals.
+
+4. Why do atomic radii generally decrease across a period even as more electrons are added?
+
+5. How do characteristic X-rays reveal the energy differences between inner electron shells?
+
+6. Distinguish spontaneous emission, stimulated emission, and absorption.
+
 ## Problems
 
 :::{exercise}
 :label: ex-many-electron-atoms-1
+
+*(Straightforward)*
 
 Write the ground-state electron configuration (using $n\ell^{\,x}$ notation, e.g. $1s^2\,2s^2\ldots$) for (a) carbon ($Z=6$), (b) sodium ($Z=11$), (c) iron ($Z=26$), using the filling order given in the text.
 :::
@@ -315,6 +343,8 @@ Filling orbitals in the stated energy order gives carbon: $1s^2\,2s^2\,2p^2$; so
 
 :::{exercise}
 :label: ex-many-electron-atoms-2
+
+*(Straightforward)*
 
 Using Hund's rule, sketch the orbital-filling diagram (boxes for each $m_\ell$ orbital, arrows for spin) for the $2p$ subshell of nitrogen ($Z=7$, configuration $1s^22s^22p^3$), and state the resulting total spin.
 :::
@@ -338,6 +368,8 @@ Therefore, nitrogen's $2p$ subshell has three unpaired parallel electrons and to
 :::{exercise}
 :label: ex-many-electron-atoms-3
 
+*(Straightforward)*
+
 Explain why, in a multi-electron atom, a $4s$ electron can have lower energy than a $3d$ electron despite having a larger principal quantum number, using the concept of orbital penetration and screening.
 :::
 
@@ -350,6 +382,8 @@ A $4s$ electron penetrates toward the nucleus more effectively than a $3d$ elect
 
 :::{exercise}
 :label: ex-many-electron-atoms-4
+
+*(Straightforward)*
 
 The measured $K_\alpha$ X-ray frequency of copper ($Z=29$) is $f = 1.94\times10^{18}\ \text{Hz}$. Using Moseley's law in the form $\sqrt{f} = A(Z-1)$ (i.e., $b=1$) with a single data point to determine $A$, predict the $K_\alpha$ frequency of nickel ($Z=28$), and compare qualitatively to what you would expect (higher or lower than copper's).
 :::
@@ -375,6 +409,8 @@ Therefore, nickel's predicted $K_\alpha$ frequency is $1.80\times10^{18}\ \text{
 :::{exercise}
 :label: ex-many-electron-atoms-5
 
+*(Moderate)*
+
 Explain, in terms of the exclusion principle, why the ground-state electron configuration of helium ($1s^2$) is chemically inert, while lithium ($1s^22s^1$) is highly reactive, referring to the energy required to remove the outermost electron in each case.
 :::
 
@@ -388,6 +424,8 @@ Helium's $1s$ orbital is full: the exclusion principle prevents a third electron
 :::{exercise}
 :label: ex-many-electron-atoms-6
 
+*(Moderate)*
+
 Explain why a three-level or four-level laser scheme requires a metastable intermediate state to sustain a population inversion, rather than pumping directly into the lower lasing level's excited partner state, using the relative decay rates implied by allowed versus forbidden transitions ([Chapter 10](#ch-the-hydrogen-atom)'s selection rule).
 :::
 
@@ -400,6 +438,8 @@ Pumping directly to a short-lived allowed-transition level does not build an inv
 
 :::{exercise}
 :label: ex-many-electron-atoms-7
+
+*(Moderate)*
 
 Using Slater's rules (the grouping $(1s)(2s,2p)(3s,3p)\ldots$ and the shielding constants $0.35$/same group, $0.85$/one shell lower, $1.00$/two or more shells lower), compute the effective nuclear charge $Z_{\text{eff}}$ felt by a $3s$ electron in magnesium ($Z=12$, configuration $1s^22s^22p^63s^2$). Compare your result to the text's values of $Z_{\text{eff}} = 2.20$ for sodium's $3s$ electron and $Z_{\text{eff}}=6.10$ for chlorine's $3p$ electron, and state whether magnesium's value is consistent with its position between them in the periodic table.
 :::
@@ -425,6 +465,8 @@ Therefore, magnesium's $3s$ electron feels $Z_\mathrm{eff}=2.85$, appropriately 
 :::{exercise}
 :label: ex-many-electron-atoms-8
 
+*(Moderate)*
+
 Sulfur's first ionization energy ($10.36\ \text{eV}$) is slightly *lower* than phosphorus's ($10.49\ \text{eV}$), even though sulfur has one more proton. Using phosphorus's and sulfur's electron configurations ($[\text{Ne}]\,3s^23p^3$ and $[\text{Ne}]\,3s^23p^4$, respectively) and the exchange-energy argument given in the text for the analogous nitrogen/oxygen dip, explain this reversal.
 :::
 
@@ -447,6 +489,8 @@ Therefore, sulfur's first ionization energy is slightly lower than phosphorus's 
 :::{exercise}
 :label: ex-many-electron-atoms-9
 
+*(Moderate)*
+
 Copper's $K_\alpha$ frequency is $f_{\text{Cu}} = 1.94\times10^{18}\ \text{Hz}$ ($Z=29$); molybdenum's measured $K_\alpha$ photon energy is $17.478\ \text{keV}$ ($Z=42$). (a) Using both data points in Moseley's law $\sqrt{f} = a(Z-b)$ (two equations, two unknowns $a$ and $b$), solve for $a$ and $b$, and compare $b$ to the approximate value $b\approx1$ quoted in the text for the $K_\alpha$ line. (b) Use your fitted $a$ and $b$ to predict the $K_\alpha$ photon energy of silver ($Z=47$).
 :::
 
@@ -466,6 +510,8 @@ For silver, $\sqrt f=a(47-b)=2.31\times10^9\ \sqrt{\text{Hz}}$, so $f=5.34\times
 :::{exercise}
 :label: ex-many-electron-atoms-10
 
+*(Challenging)*
+
 A helium–neon laser emits a continuous beam at $\lambda = 632.8\ \text{nm}$ with an output power of $5.00\ \text{mW}$. (a) Find the energy of a single photon at this wavelength, in eV and in joules. (b) Find the number of photons emitted per second. (c) Explain briefly why this beam, despite its low power compared to an ordinary light bulb, can still be hazardous to the retina, referring to the spatial coherence discussed in the text.
 :::
 
@@ -483,6 +529,8 @@ The photon rate is $P/E=(5.00\times10^{-3}\ \text{J/s})/(3.14\times10^{-19}\ \te
 :::{exercise}
 :label: ex-many-electron-atoms-11
 
+*(Challenging)*
+
 In your own words, explain why the Hartree self-consistent field method is "circular" — that is, why the effective potential $V_{\text{eff}}(r)$ needed to solve for an electron's wave function cannot simply be written down in advance — and describe the iterative procedure used to resolve that circularity, including what "self-consistent" means as a stopping criterion.
 :::
 
@@ -495,6 +543,8 @@ The electron density determines the screening part of $V_\mathrm{eff}$, but that
 
 :::{exercise}
 :label: ex-many-electron-atoms-12
+
+*(Challenging)*
 
 Argon ($Z=18$, configuration $[\text{Ne}]\,3s^23p^6$) has a *smaller* atomic radius than the very next element, potassium ($Z=19$, configuration $[\text{Ar}]\,4s^1$), even though potassium has one more proton and one more electron. Using the concepts of principal quantum number $n$ and effective nuclear charge $Z_{\text{eff}}$ developed in this chapter, explain why adding a proton and an electron can *increase* atomic radius in this specific case, when it decreases atomic radius everywhere else within period 3.
 :::

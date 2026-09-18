@@ -45,6 +45,30 @@ export function figuresWithoutAlt(source) {
   return missing;
 }
 
+export function endMatterIssues(source) {
+  const issues = [];
+  for (const heading of ['Check Your Understanding', 'Conceptual Questions', 'Problems']) {
+    const count = [...source.matchAll(new RegExp(`^## ${heading}$`, 'gm'))].length;
+    if (count !== 1) issues.push(`expected one "## ${heading}" heading, found ${count}`);
+  }
+
+  const check = source.indexOf('## Check Your Understanding');
+  const conceptual = source.indexOf('## Conceptual Questions');
+  const problems = source.indexOf('## Problems');
+  if (!(check < conceptual && conceptual < problems)) {
+    issues.push('chapter end matter must be ordered Check Your Understanding, Conceptual Questions, Problems');
+  }
+
+  const exerciseCount = [...source.matchAll(/^:::\{exercise\}/gm)].length;
+  const taggedCount = [...source.matchAll(
+    /^:::\{exercise\}\n(?::[^\n]+\n)*\n\*\((?:Straightforward|Moderate|Challenging)\)\*/gm
+  )].length;
+  if (taggedCount !== exerciseCount) {
+    issues.push(`difficulty tags cover ${taggedCount} of ${exerciseCount} exercises`);
+  }
+  return issues;
+}
+
 function main() {
   const root = path.resolve(import.meta.dirname, '..');
   const config = fs.readFileSync(path.join(root, 'myst.yml'), 'utf8');
@@ -76,6 +100,9 @@ function main() {
     }
     for (const figure of figuresWithoutAlt(source)) {
       failures.push(`${file}: figure ${figure} has no :alt:`);
+    }
+    if (/^ch-\d{2}-.+\.md$/.test(relative)) {
+      for (const issue of endMatterIssues(source)) failures.push(`${file}: ${issue}`);
     }
   }
 

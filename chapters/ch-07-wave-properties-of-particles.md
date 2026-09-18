@@ -85,7 +85,7 @@ $$
 n\lambda = 2d\sin\theta,
 $$
 
-(with $d$ the crystal's known interplanar spacing and $\theta$ measured from the planes) allowed Davisson and Germer to extract an experimental wavelength for the electrons — and it agreed, to good precision, with the de Broglie wavelength $\lambda = h/p$ computed from the electrons' known kinetic energy.
+(with $d$ the crystal's known interplanar spacing and $\theta$ measured from the planes) allowed Davisson and Germer to extract an experimental wavelength for the electrons — and it agreed, to good precision, with the de Broglie wavelength $\lambda = h/p$ computed from the electrons' known kinetic energy [@davisson1927].
 
 :::{margin}
 This is the same **Bragg condition** used for X-ray diffraction from crystals: successive lattice planes reinforce a scattered wave only when the total path difference $2d\sin\theta$ between reflections off adjacent planes is a whole number of wavelengths. Davisson and Germer's result is exactly this condition, satisfied by an electron's matter wave instead of an X-ray photon.
@@ -100,13 +100,21 @@ The experiment is reconstructed in {numref}`Figure %s <fig:ch07-davisson-germer-
 Electrons scattering from a crystal surface, with the beam energy and the atomic spacing under control. What is drawn is the electron's wave; where it is detected is a single point.
 ```
 
+```{video} https://www.youtube.com/watch?v=uvHc9etFt-A
+:video-title: Davisson and Germer Experiment — Electron Diffraction
+:label: fig:ch07-davisson-germer-video
+:alt: An instructional reconstruction shows an electron gun, nickel crystal, movable detector, and the measured diffraction peak.
+
+The historical apparatus and its intensity-versus-angle result, presented as the experimental bridge from de Broglie's hypothesis to measured electron diffraction.
+```
+
 That same year, working independently in Britain, George Paget Thomson fired higher-energy electrons through thin polycrystalline metal foils and observed concentric diffraction rings on a photographic plate — the electron analog of the ring patterns produced by X-ray diffraction through a powdered crystalline sample — providing an independent confirmation using a completely different experimental geometry. Thomson's result carries a particular irony: his father, J. J. Thomson, had won the 1906 Nobel Prize for discovering the electron and demonstrating that it is a particle with a definite charge-to-mass ratio; the son shared the 1937 Nobel Prize (with Davisson) for demonstrating that the very same particle also behaves as a wave — both experiments correct, neither in conflict with the other, once wave–particle duality is properly understood.
 
-Electrons, unambiguously particles in every other respect (they have definite charge and mass, and leave localized tracks and point-like impacts on a detector), diffract like waves when their de Broglie wavelength is comparable to the spacing of the diffracting structure. The effect has since been confirmed for neutrons, atoms, and — in experiments beginning in the late 1990s — even large molecules: neutron diffraction is now a standard tool for probing crystal and magnetic structure (complementing X-ray diffraction, since neutrons, being uncharged, scatter primarily from nuclei rather than electron clouds), and a landmark 1999 experiment by Arndt, Zeilinger, and collaborators observed diffraction of $C_{60}$ "buckyball" molecules — each containing 60 carbon atoms, with a mass roughly $10^6$ times that of a single electron — through a microfabricated grating, with a measured de Broglie wavelength of only a few picometers, far smaller than the molecule itself, yet still large enough to produce a measurable diffraction pattern. Matter-wave interference is not a special property of electrons; it is a universal feature of quantum objects, observable whenever a system can be prepared with a de Broglie wavelength comparable to some accessible length scale. The same phenomenon is the operating principle of the electron microscope, whose resolution — set by the wavelength of the imaging "light," per ordinary diffraction limits ([Chapter 5](#ch-diffraction-of-light)) — can be far finer than any visible-light microscope because electron de Broglie wavelengths, as the worked example above shows, can be made far shorter than visible wavelengths simply by choosing a sufficiently large accelerating voltage.
+Electrons, unambiguously particles in every other respect (they have definite charge and mass, and leave localized tracks and point-like impacts on a detector), diffract like waves when their de Broglie wavelength is comparable to the spacing of the diffracting structure. The effect has since been confirmed for neutrons, atoms, and — in experiments beginning in the late 1990s — even large molecules: neutron diffraction is now a standard tool for probing crystal and magnetic structure (complementing X-ray diffraction, since neutrons, being uncharged, scatter primarily from nuclei rather than electron clouds), and a landmark 1999 experiment by Arndt, Zeilinger, and collaborators observed diffraction of $C_{60}$ "buckyball" molecules — each containing 60 carbon atoms, with a mass roughly $10^6$ times that of a single electron — through a microfabricated grating, with a measured de Broglie wavelength of only a few picometers, far smaller than the molecule itself, yet still large enough to produce a measurable diffraction pattern [@arndt1999]. Matter-wave interference is not a special property of electrons; it is a universal feature of quantum objects, observable whenever a system can be prepared with a de Broglie wavelength comparable to some accessible length scale. The same phenomenon is the operating principle of the electron microscope, whose resolution — set by the wavelength of the imaging "light," per ordinary diffraction limits ([Chapter 5](#ch-diffraction-of-light)) — can be far finer than any visible-light microscope because electron de Broglie wavelengths, as the worked example above shows, can be made far shorter than visible wavelengths simply by choosing a sufficiently large accelerating voltage.
 
 #### Neutron Interferometry
 
-Because neutrons are electrically neutral, they can be split into two coherent beams and recombined using **neutron interferometers** built from a single, precisely machined crystal of silicon, without the beam-steering complications that an electron's charge would introduce in a magnetic or electric field. A landmark 1975 experiment by Colella, Overhauser, and Werner (the "COW experiment") used exactly this technique to observe a measurable phase shift between the two arms of a neutron interferometer when one arm was raised slightly in the Earth's gravitational field relative to the other — a direct demonstration that a quantum matter wave, not merely a mathematical bookkeeping device, is affected by gravity precisely as its de Broglie wavelength and the classical gravitational potential energy predict. Neutron interferometry has since been used to test the sign and magnitude of gravitational, and even rotational (Sagnac), phase shifts on matter waves with high precision, extending the reach of wave–particle duality from crystal diffraction to macroscopic-scale sensitivity to gravity itself.
+Because neutrons are electrically neutral, they can be split into two coherent beams and recombined using **neutron interferometers** built from a single, precisely machined crystal of silicon, without the beam-steering complications that an electron's charge would introduce in a magnetic or electric field. A landmark 1975 experiment by Colella, Overhauser, and Werner (the "COW experiment") used exactly this technique to observe a measurable phase shift between the two arms of a neutron interferometer when one arm was raised slightly in the Earth's gravitational field relative to the other — a direct demonstration that a quantum matter wave, not merely a mathematical bookkeeping device, is affected by gravity precisely as its de Broglie wavelength and the classical gravitational potential energy predict [@cow1975]. Neutron interferometry has since been used to test the sign and magnitude of gravitational, and even rotational (Sagnac), phase shifts on matter waves with high precision, extending the reach of wave–particle duality from crystal diffraction to macroscopic-scale sensitivity to gravity itself.
 
 #### The Bohr Quantization Condition Revisited
 
@@ -119,6 +127,14 @@ $$
 since otherwise the wave would interfere destructively with itself on successive trips around the loop and no stable pattern could persist. Rearranging, $pr = n\hbar$ — exactly Bohr's angular-momentum quantization condition, $L = n\hbar$, now derived (rather than assumed) from the requirement that an electron's matter wave close consistently on itself. This does not yet constitute a full theory (that requires the Schrödinger equation of Chapters [8](#ch-the-schrodinger-equation)–[9](#ch-quantum-mechanics-in-three-dimensions), applied to the hydrogen atom in [Chapter 10](#ch-the-hydrogen-atom)), but it shows that de Broglie's hypothesis was not an isolated curiosity: it directly explains why atomic angular momentum comes only in discrete multiples of $\hbar$, years before Schrödinger's wave equation made the connection rigorous.
 
 Quantization by a closure condition is not a quantum idea, and it is easier to trust once it has been seen somewhere unmysterious. {numref}`Figure %s <fig:ch07-standing-wave-sim>` drives a column of air and sweeps the frequency: almost every frequency produces nothing, and at a discrete set of them the tube suddenly resonates, because only there does the wave returning from the far end arrive back in step with itself. Nothing is quantized about air. What is discrete is the set of wavelengths that a boundary condition permits — an integer count fitting into the available length — and de Broglie's contribution was to notice that an electron's wave going around an orbit is subject to a closure condition of exactly the same kind.
+
+```{animation} ch03-standing-wave-formation
+:figure: /images/ch07-standing-wave-formation.svg
+:label: fig:ch07-standing-wave-formation
+:alt: Oppositely traveling waves move through one another while their sum forms a stationary pattern with fixed nodes.
+
+Two traveling waves moving in opposite directions add to a standing wave. The individual phases move, but the nodes remain fixed; boundary conditions can therefore select only wavelengths whose nodes land at the boundaries.
+```
 
 ```{openlyceum} StandingWaves
 :screen: 3
@@ -173,6 +189,22 @@ $$
 $$
 
 a purely mathematical fact about waves, true for sound pulses and water-wave packets just as much as for matter waves, with no quantum content yet.
+
+```{animation} ch05-building-a-sawtooth
+:figure: /images/ch07-fourier-synthesis.svg
+:label: fig:ch07-fourier-synthesis
+:alt: Successively larger sums of sinusoidal harmonics approach a sharply localized sawtooth waveform.
+
+Fourier synthesis in a deliberately non-quantum setting. A single sinusoid is spread smoothly across the whole interval; adding a wider range of wave numbers builds sharper spatial structure. A wave packet uses the same mathematical mechanism, with coefficients chosen to make one localized pulse rather than a repeating sawtooth.
+```
+
+```{animation} ch08-beats
+:figure: /images/ch07-two-frequency-envelope.svg
+:label: fig:ch07-two-frequency-envelope
+:alt: Two nearby sinusoidal frequencies are shown separately and as a sum with a slowly varying envelope.
+
+The smallest possible packet uses only two nearby frequencies. Their rapidly oscillating sum is carried by a slow beat envelope, the elementary version of the group-velocity construction developed below.
+```
 
 The trade-off can be watched directly. {numref}`Figure %s <fig:ch07-wave-packet-sim>` builds a packet out of harmonic components whose amplitudes follow an adjustable envelope, and prints both widths as you work: narrow the spread $\sigma_k$ of contributing wave numbers and the packet in $x$ stretches out toward the infinite sinusoid of definite momentum; widen $\sigma_k$ and the packet contracts toward a spike, with the panel reporting $\sigma_x = 1/\sigma_k$ throughout. Switching the display from a function of space to a function of time turns the same relation into the energy–time form used later in this section.
 
@@ -240,7 +272,7 @@ The nonrelativistic dispersion relation in Equation {eq}`eq:ch07-dispersion` is 
 
 ## The Heisenberg Uncertainty Principle
 
-Werner Heisenberg (1927) elevated the wave-packet relation above to a fundamental principle governing all quantum systems, stated precisely as
+Werner Heisenberg (1927) elevated the wave-packet relation above to a fundamental principle governing all quantum systems [@heisenberg1927], stated precisely as
 
 $$
 \Delta x\, \Delta p_x \geq \frac{\hbar}{2},
@@ -259,6 +291,14 @@ $$
 $$
 
 where $\Delta t$ characterizes the time available to measure (or the lifetime of a state with) energy spread $\Delta E$. This relation, for instance, explains why an unstable state with a short lifetime $\Delta t$ (such as an excited atomic state, or an unstable particle) necessarily has an intrinsic spread, or "width," in its energy — and correspondingly in the frequency/wavelength of radiation it emits — that grows as its lifetime shrinks.
+
+```{animation} ch04-response-curves
+:figure: /images/ch07-resonance-linewidth.svg
+:label: fig:ch07-resonance-linewidth
+:alt: Three resonance curves show that stronger damping produces a lower, broader line while weaker damping produces a taller, narrower line.
+
+Resonance makes linewidth visible. Long-lived, weakly damped oscillations have narrow frequency peaks; short-lived, strongly damped oscillations have broad peaks. Atomic line widths and unstable-particle decay widths express the same lifetime–bandwidth connection.
+```
 
 Stripped of $\hbar$, this is a theorem about signals rather than about quantum mechanics, and it applies to any wave one cares to measure — including the sound of one's own voice. {numref}`Figure %s <fig:ch07-bandwidth-sim>` runs a live spectrum of whatever the microphone hears: a sustained vowel, going on for a long $\Delta t$, resolves into sharp harmonic lines with small $\Delta f$, while a clipped consonant lasting a few milliseconds has no sharp lines at all, only a broad smear across the spectrum. No better microphone would fix this. A short signal does not *have* a well-defined frequency, exactly as a short-lived excited state does not have a well-defined energy.
 
@@ -297,10 +337,38 @@ Since this is small enough that the electron remains nonrelativistic, its kineti
 - A localized particle is represented by a **wave packet**, a superposition of waves over a range of wave numbers $\Delta k$; its envelope moves at the **group velocity** $v_g = d\omega/dk$, which equals the particle's classical velocity, distinct from the **phase velocity** $v_p = \omega/k$ of the individual wave crests.
 - The **Heisenberg uncertainty principle**, $\Delta x\,\Delta p_x \geq \hbar/2$ (and analogously $\Delta E\,\Delta t \geq \hbar/2$), is a fundamental limit on the simultaneous precision of conjugate quantities, rooted in the wave nature of matter, not a limitation of measuring instruments, and correctly predicts the order of magnitude of confinement energies from nuclear to atomic scales.
 
+## Check Your Understanding
+
+1. How does doubling a particle's momentum change its de Broglie wavelength?
+2. What must be sacrificed when a wave packet is made narrower in position?
+3. For a free nonrelativistic particle, which velocity equals the particle speed?
+
+:::{dropdown} Answers
+1. Since $\lambda=h/p$, the wavelength is halved.
+2. Its range of wave numbers and momenta must broaden.
+3. The group velocity $d\omega/dk$; the phase velocity is different.
+:::
+
+## Conceptual Questions
+
+1. Why is electron diffraction evidence for a wave property rather than merely complicated particle scattering?
+
+2. How does the standing-wave interpretation of the Bohr condition replace an arbitrary rule with a boundary condition?
+
+3. Why does obtaining which-path information destroy a two-path interference pattern even if the detector does not appreciably push the particle?
+
+4. A broad matter wave has a sharply defined momentum. Explain why it must be poorly localized.
+
+5. Distinguish phase velocity from group velocity and identify which can carry a localized signal.
+
+6. Why does a short-lived state have an intrinsic energy width even with a perfect spectrometer?
+
 ## Problems
 
 :::{exercise}
 :label: ex-wave-properties-of-particles-1
+
+*(Straightforward)*
 
 Find the de Broglie wavelength of (a) an electron with kinetic energy $54\ \text{eV}$ (as in the original Davisson–Germer experiment), (b) a proton with kinetic energy $1.0\ \text{MeV}$, and (c) a $0.145\ \text{kg}$ baseball moving at $40\ \text{m/s}$. Comment on which of these wavelengths could plausibly produce observable diffraction, and from what kind of structure.
 :::
@@ -326,6 +394,8 @@ Therefore, electron waves can diffract from atomic crystal planes, proton waves 
 :::{exercise}
 :label: ex-wave-properties-of-particles-2
 
+*(Straightforward)*
+
 In the Davisson–Germer experiment, a diffraction maximum for 54 eV electrons was observed at $\theta = 50°$ from a nickel crystal. Using $\lambda = h/p$ for the electrons' de Broglie wavelength and the Bragg condition $2d\sin\theta = n\lambda$ (first order, $n=1$), find the effective interplanar spacing $d$ of the nickel crystal consistent with this observation.
 :::
 
@@ -342,6 +412,8 @@ Therefore, the observed Davisson--Germer maximum corresponds to an effective nic
 
 :::{exercise}
 :label: ex-wave-properties-of-particles-3
+
+*(Straightforward)*
 
 Using the worked-example formula $\lambda \approx 1.226\ \text{nm}/\sqrt{V[\text{volts}]}$, find the accelerating voltage needed to give electrons a de Broglie wavelength of exactly $0.0500\ \text{nm}$, comparable to a typical X-ray wavelength used in crystallography.
 :::
@@ -360,6 +432,8 @@ Therefore, electrons require an accelerating voltage of about $601\ \text{V}$ to
 :::{exercise}
 :label: ex-wave-properties-of-particles-4
 
+*(Straightforward)*
+
 A beam of thermal neutrons (kinetic energy $\approx k_BT$ at room temperature, $T \approx 300\ \text{K}$) is used for neutron diffraction studies of crystal structure. (a) Estimate the neutrons' typical kinetic energy in eV. (b) Find their de Broglie wavelength, given the neutron mass $m_n = 1.675\times10^{-27}\ \text{kg}$, and compare it to typical interatomic spacings.
 :::
 
@@ -377,6 +451,8 @@ Therefore, room-temperature neutrons have about $0.026\ \text{eV}$ energy and $0
 :::{exercise}
 :label: ex-wave-properties-of-particles-5
 
+*(Straightforward)*
+
 Verify the claim in the text that a $C_{60}$ molecule (mass $\approx 1.2\times10^{-24}\ \text{kg}$) moving at a typical thermal beam speed of $200\ \text{m/s}$ has a de Broglie wavelength of a few picometers, and comment on why such a short wavelength, far smaller than the molecule's own diameter ($\approx 1\ \text{nm}$), can nonetheless produce an observable diffraction pattern from a grating with a period of order $100\ \text{nm}$.
 :::
 
@@ -393,6 +469,8 @@ The grating period is much larger than this wavelength, but diffraction angles c
 
 :::{exercise}
 :label: ex-wave-properties-of-particles-6
+
+*(Straightforward)*
 
 Using the de Broglie standing-wave argument, show that an electron in a circular Bohr orbit with $n=1$ has an orbital circumference equal to exactly one de Broglie wavelength, and explain qualitatively (without calculation) why this is consistent with such an orbit being the atom's lowest-energy (ground) state.
 :::
@@ -415,6 +493,8 @@ Therefore, the Bohr ground orbit corresponds to the lowest closed standing matte
 
 :::{exercise}
 :label: ex-wave-properties-of-particles-7
+
+*(Straightforward)*
 
 A proton is confined to a nucleus of diameter $1.0\times10^{-14}\ \text{m}$. Use the uncertainty principle to estimate the minimum kinetic energy the proton must have, and compare it (order of magnitude) to typical nuclear binding energies of several MeV per nucleon ([Chapter 13](#ch-nuclear-physics)).
 :::
@@ -440,6 +520,8 @@ The strict uncertainty-principle estimate is therefore a lower bound of roughly 
 
 :::{exercise}
 :label: ex-wave-properties-of-particles-8
+
+*(Straightforward)*
 
 An excited atomic state has a mean lifetime of $\Delta t = 1.0\times10^{-8}\ \text{s}$. (a) Use the energy–time uncertainty relation to estimate the energy spread $\Delta E$ of this state, in eV. (b) If the state decays by emitting a photon of wavelength $500\ \text{nm}$, estimate the corresponding spread (linewidth) $\Delta\lambda$ in the emitted wavelength.
 :::
@@ -467,6 +549,8 @@ Therefore, the lifetime implies an energy-spread estimate of about $3.3\times10^
 :::{exercise}
 :label: ex-wave-properties-of-particles-9
 
+*(Moderate)*
+
 A beam of electrons is passed through a single slit of width $a$. Using the single-slit diffraction condition (first minimum at $\sin\theta \approx \lambda/a$ for small angles) together with the de Broglie relation, express the transverse momentum spread $\Delta p_y$ imparted to the electrons (estimated from $p\sin\theta$) in terms of the slit width $a$, and show that $\Delta y\,\Delta p_y \sim h$ if $\Delta y \sim a$, consistent with the uncertainty principle.
 :::
 
@@ -484,6 +568,8 @@ With $\Delta y\sim a$, $\Delta y\Delta p_y\sim a(h/a)=h$.  Therefore, single-sli
 :::{exercise}
 :label: ex-wave-properties-of-particles-10
 
+*(Moderate)*
+
 Explain, using the energy–time uncertainty relation, why a particle that is truly stable (infinite lifetime) can have a perfectly sharp rest energy $mc^2$, while an unstable particle cannot — and why particle physicists therefore quote both a mass and a "width" (in energy units) for unstable particles, a topic revisited in [Chapter 14](#ch-elementary-particles-and-the-standard-model).
 :::
 
@@ -496,6 +582,8 @@ For an infinite lifetime, $\Delta t\to\infty$, so the uncertainty lower bound $\
 
 :::{exercise}
 :label: ex-wave-properties-of-particles-11
+
+*(Moderate)*
 
 Verify the group-velocity calculation in the text: starting from $\omega(k) = \hbar k^2/2m$ (the nonrelativistic free-particle dispersion relation), compute $d\omega/dk$ explicitly and confirm that it equals $\hbar k/m = p/m$.
 :::
@@ -514,6 +602,8 @@ Therefore, the nonrelativistic matter-wave group velocity equals the particle ve
 :::{exercise}
 :label: ex-wave-properties-of-particles-12
 
+*(Moderate)*
+
 A relativistic free particle has energy $E = \sqrt{(pc)^2+(mc^2)^2}$ ([Chapter 3](#ch-relativistic-dynamics)). Using $E = \hbar\omega$ and $p = \hbar k$, show that the group velocity $v_g = d\omega/dk$ equals $pc^2/E$, and confirm that this reduces to the particle's actual (relativistic) velocity $u$ using the relation $u = pc^2/E$ established in [Chapter 3](#ch-relativistic-dynamics).
 :::
 
@@ -530,6 +620,8 @@ The relativistic momentum and energy relations give the same identity $u=pc^2/E$
 
 :::{exercise}
 :label: ex-wave-properties-of-particles-13
+
+*(Moderate)*
 
 Estimate, using the uncertainty principle in the same manner as the atomic-scale worked example, the characteristic kinetic energy of an electron confined to a quantum dot (a nanoscale semiconductor structure) of diameter $10\ \text{nm}$, and compare it in order of magnitude to the atomic-scale estimate found in the text.
 :::
@@ -550,6 +642,8 @@ For comparison, a one-dimensional infinite-well model gives $E_1=\pi^2\hbar^2/(2
 :::{exercise}
 :label: ex-wave-properties-of-particles-14
 
+*(Moderate)*
+
 A double-slit experiment is performed with electrons at a rate of one electron at a time, with a detector placed at one slit to determine which slit each electron passes through. (a) Explain, in terms of the uncertainty principle, why this which-path measurement necessarily disturbs the electron's momentum. (b) Estimate the momentum disturbance needed to determine, to within the slit width $a$, which of two slits separated by distance $d$ an electron passed through, and explain qualitatively why a disturbance of this size is enough to wash out an interference pattern with fringe spacing set by $d$.
 :::
 
@@ -563,6 +657,8 @@ Determining a slit position to uncertainty $\Delta y\sim a$ gives a transverse m
 :::{exercise}
 :label: ex-wave-properties-of-particles-15
 
+*(Moderate)*
+
 Explain why the phase velocity $v_p = \omega/k$ of a nonrelativistic free-particle matter wave, found in the text to be $u/2$, is not the speed of anything physically observable (in contrast with the group velocity), and why this is not a paradox.
 :::
 
@@ -575,6 +671,8 @@ For a nonrelativistic free particle, phase velocity is $v_p=\omega/k=(\hbar k/2m
 
 :::{exercise}
 :label: ex-wave-properties-of-particles-16
+
+*(Moderate)*
 
 Using the spreading time scale $\tau \sim m(\Delta x_0)^2/\hbar$ quoted in the text, estimate $\tau$ for (a) an electron initially localized to $\Delta x_0 = 1.0\times10^{-10}\ \text{m}$ (roughly an atomic diameter), and (b) a $1.0\ \text{mg}$ dust grain initially localized to $\Delta x_0 = 1.0\times10^{-6}\ \text{m}$. Comment on which of these spreading times could plausibly be observed in a laboratory measurement lasting a few seconds.
 :::
@@ -602,6 +700,8 @@ Therefore, electron spreading is extremely rapid, whereas dust-grain spreading i
 :::{exercise}
 :label: ex-wave-properties-of-particles-17
 
+*(Challenging)*
+
 In a delayed-choice or quantum-eraser experiment, explain why the disappearance and reappearance of the interference pattern cannot be used to send information backward in time, even though the "choice" of whether which-path information is available may be made after the particle has passed through the slit region. (Hint: consider what an experimenter examining only the particles that land in a single, fixed detector region can and cannot know without also consulting the marker/eraser results.)
 :::
 
@@ -615,6 +715,8 @@ Without consulting the marker result, detections in any one output channel form 
 :::{exercise}
 :label: ex-wave-properties-of-particles-18
 
+*(Challenging)*
+
 A beam of electrons, each with the same de Broglie wavelength $\lambda = h/p$, is used in a Davisson–Germer-type experiment. Explain, using the standing-wave condition of the "Bohr Quantization Condition Revisited" subsection as an analogy, why a diffraction condition $2d\sin\theta = n\lambda$ (rather than an arbitrary relation between $\theta$ and $\lambda$) is required for a diffraction maximum, drawing the parallel between constructive interference around a crystal lattice and constructive interference around a closed atomic orbit.
 :::
 
@@ -627,6 +729,8 @@ Waves reflecting from successive crystal planes differ in total path by $2d\sin\
 
 :::{exercise}
 :label: ex-wave-properties-of-particles-19
+
+*(Challenging)*
 
 Verify the claim in the "Consistency Check" subsection that $E=pc^2/u$ for a relativistic particle, using $E=\gamma mc^2$ and $p=\gamma mu$ from [Chapter 3](#ch-relativistic-dynamics), and show that combining this with $E=hf$ and $\lambda = v_p/f$ (with $v_p$ the wave's phase velocity) gives a phase velocity $v_p = c^2/u$ greater than $c$ — then explain why this superluminal *phase* velocity does not violate relativity, referring to your answer to Problem 15 about which velocity is physically observable.
 :::
@@ -653,6 +757,8 @@ This can exceed $c$ because phase velocity carries neither a particle nor usable
 
 :::{exercise}
 :label: ex-wave-properties-of-particles-20
+
+*(Challenging)*
 
 The neutron interferometry (COW) experiment detects a gravitationally induced phase shift between two paths of different height $\Delta h$ in a neutron interferometer of horizontal path length $L$. Explain qualitatively, using the de Broglie relation $\lambda = h/p$ and the fact that a neutron's kinetic energy (and hence its momentum and wavelength) changes very slightly with height in a gravitational field, why raising one arm of the interferometer changes the phase accumulated along that arm relative to the other.
 :::

@@ -143,7 +143,7 @@ Three experimental features of this effect resist any explanation in terms of cl
 A common misconception is to picture a brighter beam as made of more energetic photons, as if turning up a lamp's intensity somehow "speeds up" each photon. Intensity instead measures the *number* of photons arriving per second; each photon's energy $hf$ is fixed by the light's frequency alone and is completely indifferent to how bright the source is. That is exactly why $K_{\max}$ tracks frequency rather than intensity: doubling the intensity doubles the photocurrent (twice as many photoelectrons ejected per second) but leaves the kinetic energy of each individual electron unchanged.
 :::
 
-Einstein resolved all three in 1905 by proposing that light itself is quantized: it consists of discrete packets, **photons**, each carrying energy
+Einstein resolved all three in 1905 by proposing that light itself is quantized [@einstein1905photoelectric]: it consists of discrete packets, **photons**, each carrying energy
 
 $$
 E = hf,
@@ -339,10 +339,38 @@ Four seemingly unrelated phenomena — blackbody radiation, the photoelectric ef
 - Compton scattering — the angle-dependent wavelength shift of X-rays scattered from free electrons, $\lambda' - \lambda = (h/m_ec)(1-\cos\theta)$, derivable directly from conservation of relativistic energy and momentum — shows that photons carry momentum $p = h/\lambda$ and interact with electrons as particles in an elastic collision.
 - Pair production ($\gamma \to e^- + e^+$, requiring $hf \ge 2m_ec^2$ and a nearby massive body to conserve momentum) and pair annihilation ($e^-+e^+ \to 2\gamma$) further confirm that photons are quanta of energy and momentum interconvertible with massive particles.
 
+## Check Your Understanding
+
+1. Which feature of the photoelectric effect shows that light energy arrives in quanta?
+2. What happens to a photon's wavelength when it loses energy in Compton scattering?
+3. What minimum photon energy is required for pair production near a nucleus?
+
+:::{dropdown} Answers
+1. Below a threshold frequency no electrons are emitted, regardless of intensity, while above it the maximum electron energy rises with frequency.
+2. Its wavelength increases.
+3. At least $2m_ec^2=1.022\ \text{MeV}$, plus any recoil kinetic energy required by momentum conservation.
+:::
+
+## Conceptual Questions
+
+1. Why did the ultraviolet catastrophe show that classical equipartition could not describe blackbody radiation?
+
+2. Increasing a light beam's intensity increases photoelectric current but not the stopping potential. Explain both observations with photons.
+
+3. Why does the Compton shift depend on scattering angle but not on the intensity of the incident beam?
+
+4. X-ray tubes convert only part of an electron's kinetic energy into one photon. Why is there nevertheless a sharp minimum wavelength?
+
+5. Why can a single photon not produce an electron–positron pair in empty space while conserving both energy and momentum?
+
+6. In what sense do the photoelectric and Compton effects reveal different particle-like properties of light?
+
 ## Problems
 
 :::{exercise}
 :label: ex-particle-properties-of-waves-1
+
+*(Straightforward)*
 
 The peak of the Sun's blackbody emission spectrum occurs near $\lambda_{\max} \approx 500\ \text{nm}$. Use Wien's displacement law to estimate the Sun's surface temperature, and compare your answer to the value $T=5778\ \text{K}$ used in the worked example.
 :::
@@ -360,6 +388,8 @@ The difference from $5778\ \text{K}$ is $18\ \text{K}$, or $0.3\%$.  Therefore, 
 
 :::{exercise}
 :label: ex-particle-properties-of-waves-2
+
+*(Straightforward)*
 
 A tungsten filament in an incandescent bulb operates at $T = 2900\ \text{K}$. (a) Find the wavelength of peak emission and identify the region of the spectrum (visible, infrared, etc.) in which it lies. (b) Explain, using your answer to (a), why incandescent bulbs are inefficient sources of visible light. (c) Find the power radiated per unit area, assuming ideal blackbody behavior.
 :::
@@ -385,6 +415,8 @@ Therefore, the filament peaks near $1.00\ \mu\text{m}$ in the infrared and radia
 :::{exercise}
 :label: ex-particle-properties-of-waves-3
 
+*(Straightforward)*
+
 A red giant star has surface temperature $3200\ \text{K}$ and radius $500\,R_\odot$, where $R_\odot = 6.96\times10^8\ \text{m}$ is the Sun's radius. Using the Stefan–Boltzmann law, find the star's total luminosity, and compare it (as a ratio) to the Sun's luminosity of $3.83\times10^{26}\ \text{W}$ found in the worked example.
 :::
 
@@ -402,6 +434,8 @@ The ratio is $9.05\times10^{30}/(3.83\times10^{26})=2.36\times10^4$.  Therefore,
 :::{exercise}
 :label: ex-particle-properties-of-waves-4
 
+*(Straightforward)*
+
 Light of wavelength $400\ \text{nm}$ strikes a sodium surface with work function $\phi = 2.28\ \text{eV}$. (a) Find the photon energy in eV. (b) Find the maximum kinetic energy of the ejected photoelectrons. (c) Find the stopping potential $V_0$. (d) Find the threshold wavelength for sodium.
 :::
 
@@ -418,6 +452,8 @@ Since $eV_0=K_{\max}$, $V_0=0.82\ \text{V}$.  At threshold, $\phi=hc/\lambda_0$,
 
 :::{exercise}
 :label: ex-particle-properties-of-waves-5
+
+*(Straightforward)*
 
 A photoelectric-effect experiment on a certain metal gives a stopping potential of $0.65\ \text{V}$ for light of wavelength $450\ \text{nm}$, and $1.28\ \text{V}$ for light of wavelength $360\ \text{nm}$. Use these two data points (rather than assuming a value of $h$) to determine (a) Planck's constant and (b) the work function of the metal from this data, treating $K_{\max}=eV_0=hf-\phi$ as a linear equation in $f$.
 :::
@@ -445,6 +481,8 @@ Therefore, the data give $h=6.06\times10^{-34}\ \text{J s}$ and a work function 
 :::{exercise}
 :label: ex-particle-properties-of-waves-6
 
+*(Straightforward)*
+
 A photocell with a platinum surface (work function $\phi = 6.35\ \text{eV}$) is illuminated with light of wavelength $150\ \text{nm}$. (a) Show that this wavelength is above the threshold for photoemission and find $K_{\max}$. (b) Find the longest wavelength of light that could eject photoelectrons from platinum, and explain why ordinary visible or near-UV light sources cannot do so.
 :::
 
@@ -461,6 +499,8 @@ Therefore, $150\ \text{nm}$ ultraviolet light ejects electrons with up to $1.92\
 
 :::{exercise}
 :label: ex-particle-properties-of-waves-7
+
+*(Straightforward)*
 
 An X-ray tube is operated at an accelerating voltage of $120\ \text{kV}$. (a) Find the Duane–Hunt minimum wavelength $\lambda_{\min}$. (b) Find the corresponding maximum photon energy, in keV. (c) If the accelerating voltage is doubled, by what factor does $\lambda_{\min}$ change?
 :::
@@ -479,6 +519,8 @@ Therefore, the minimum wavelength is $0.0103\ \text{nm}$ and the maximum photon 
 :::{exercise}
 :label: ex-particle-properties-of-waves-8
 
+*(Straightforward)*
+
 Explain, in your own words and using conservation of energy, why the bremsstrahlung spectrum from an X-ray tube is continuous (a range of wavelengths) even though each individual electron carries the same, sharply defined kinetic energy $eV$ upon striking the target.
 :::
 
@@ -491,6 +533,8 @@ Each incident electron begins with energy $eV$, but it can lose any fraction of 
 
 :::{exercise}
 :label: ex-particle-properties-of-waves-9
+
+*(Moderate)*
 
 X-rays of wavelength $\lambda = 0.0711\ \text{nm}$ are Compton-scattered at $\theta = 90°$. (a) Find the wavelength shift. (b) Find the wavelength and energy of the scattered photon. (c) Find the kinetic energy given to the recoiling electron.
 :::
@@ -520,6 +564,8 @@ Therefore, the shift is $2.426\ \text{pm}$, the scattered photon has wavelength 
 :::{exercise}
 :label: ex-particle-properties-of-waves-10
 
+*(Moderate)*
+
 Show that, for a photon Compton-scattered directly backward ($\theta = 180°$) by a free electron, the wavelength shift is $2h/m_ec$, and evaluate this numerically. For an incident photon of very short wavelength ($\lambda \ll h/m_ec$, i.e. a very energetic photon), find the approximate fraction of the incident photon's energy that is transferred to the electron in a $180°$ collision.
 :::
 
@@ -536,6 +582,8 @@ For $\lambda\ll h/(m_ec)$, $\lambda'=\lambda+2h/(m_ec)\approx2h/(m_ec)$, so $E'/
 
 :::{exercise}
 :label: ex-particle-properties-of-waves-11
+
+*(Moderate)*
 
 Fill in the algebraic step omitted in the text: starting from equations (i) and (ii) in the derivation of the Compton formula, substitute (i) into the squared version of (ii) combined with $E_e^2=(p_ec)^2+(m_ec^2)^2$, and verify explicitly that the terms $(hc/\lambda)^2$, $(hc/\lambda')^2$, and $(m_ec^2)^2$ cancel between the two sides, leaving the simplified relation quoted in the text.
 :::
@@ -556,6 +604,8 @@ Cancelling $A^2$, $B^2$, and $M^2$ leaves $-2AB+2M(A-B)=-2AB\cos\theta$, or $M(A
 :::{exercise}
 :label: ex-particle-properties-of-waves-12
 
+*(Moderate)*
+
 A beam of visible-light photons ($\lambda = 600\ \text{nm}$) is Compton-scattered from free electrons at $\theta = 90°$. (a) Compute the fractional wavelength shift $\Delta\lambda/\lambda$. (b) Explain, using your numerical result, why the Compton effect is essentially undetectable with visible light and was only discovered using X-rays.
 :::
 
@@ -572,6 +622,8 @@ The right-hand panel of {numref}`Figure %s <fig:ch06-sol-compton-angle>` compare
 
 :::{exercise}
 :label: ex-particle-properties-of-waves-13
+
+*(Moderate)*
 
 Find the minimum photon energy required for pair production of an electron-positron pair, and convert this to a wavelength. Explain why pair production cannot occur for an isolated photon in empty space (i.e., why a nearby nucleus or other particle is required), using conservation of momentum and energy together.
 :::
@@ -591,6 +643,8 @@ An isolated photon has $p=E/c$, but two massive particles with the same total en
 
 :::{exercise}
 :label: ex-particle-properties-of-waves-14
+
+*(Moderate)*
 
 A $2.50\ \text{MeV}$ photon undergoes pair production near a heavy nucleus, which recoils with negligible kinetic energy. If the electron and positron share the available kinetic energy equally, find the kinetic energy and the total (kinetic plus rest) energy of each particle.
 :::
@@ -618,6 +672,8 @@ Therefore, each particle has $0.739\ \text{MeV}$ kinetic energy and $1.250\ \tex
 :::{exercise}
 :label: ex-particle-properties-of-waves-15
 
+*(Moderate)*
+
 In positron-emission tomography, a positron emitted by a radioactive tracer travels a short distance, loses its kinetic energy through collisions, and then annihilates with an atomic electron essentially at rest. (a) Using conservation of energy and momentum (as in [Chapter 3, Problem 3](#ex-relativistic-dynamics-3)), find the energy of each of the two emitted gamma rays. (b) Find the wavelength of each gamma ray. (c) Explain, physically, why PET scanners are built as a ring of detectors surrounding the patient rather than a single detector.
 :::
 
@@ -635,6 +691,8 @@ Therefore, annihilation produces two opposite $511\ \text{keV}$ gamma rays of wa
 :::{exercise}
 :label: ex-particle-properties-of-waves-16
 
+*(Moderate)*
+
 Estimate the minimum photon energy needed to produce a proton–antiproton pair ($p + \bar p$) instead of an electron–positron pair, given the proton rest energy $m_pc^2 = 938\ \text{MeV}$, and compare the required photon wavelength to that found for electron–positron pair production in Problem 13.
 :::
 
@@ -651,6 +709,8 @@ Compared with the electron-pair threshold wavelength $1.21\ \text{pm}$, this is 
 
 :::{exercise}
 :label: ex-particle-properties-of-waves-17
+
+*(Challenging)*
 
 A $0.662\ \text{MeV}$ gamma ray (a characteristic energy emitted by the common radioactive source cesium-137) Compton-scatters inside a detector. (a) Find the maximum possible energy, $\Delta E_{\max}$, that can be deposited by a single Compton-scattering event (i.e., the location of the Compton edge), using the $\theta=180°$ result from Problem 10. (b) Find the photopeak energy, i.e., the energy deposited if the photon instead undergoes full photoelectric absorption. (c) Explain, in one or two sentences, why a real detector's measured spectrum for this source shows both features.
 :::
@@ -680,6 +740,8 @@ Therefore, the Compton edge is $0.478\ \text{MeV}$ and the photopeak is $0.662\ 
 :::{exercise}
 :label: ex-particle-properties-of-waves-18
 
+*(Challenging)*
+
 Explain, using the discussion of photomultiplier tubes, why a single visible-light photon (energy of order a few eV) can trigger a measurable macroscopic current pulse, even though a single electron's charge ($1.6\times10^{-19}\ \text{C}$) is far too small to detect directly with ordinary circuitry; estimate the number of electrons that must reach the final dynode stage to constitute a charge pulse of $1.0\times10^{-12}\ \text{C}$ (a typical minimum detectable pulse), and comment on whether a cascade of ten dynode stages, each multiplying the electron count by a factor of $4$, is sufficient to produce a pulse of this size starting from one photoelectron.
 :::
 
@@ -697,6 +759,8 @@ Ten stages multiplying by four give $4^{10}=1.05\times10^6$ electrons, or $1.68\
 :::{exercise}
 :label: ex-particle-properties-of-waves-19
 
+*(Challenging)*
+
 Explain why the ultraviolet catastrophe (Rayleigh–Jeans law) and Lenard's photoelectric puzzle are, at first glance, very different experimental problems (one about the color and intensity of thermal glow, the other about ejected electrons), yet both are resolved by exactly the same hypothesis. Identify precisely which physical assumption is shared by both classical (failed) treatments, and which single quantization postulate replaces it in both cases.
 :::
 
@@ -709,6 +773,8 @@ Classical treatments assume electromagnetic energy is continuously divisible: ca
 
 :::{exercise}
 :label: ex-particle-properties-of-waves-20
+
+*(Challenging)*
 
 Silicon, used in most solar cells, has a band gap of about $1.1\ \text{eV}$. (a) Find the longest wavelength of light that can produce a usable electron–hole pair in a silicon photovoltaic cell, and identify the region of the spectrum in which it lies. (b) Explain, using the photoelectric equation as a guide, why photons with much *more* than the band-gap energy do not produce proportionally more usable electrical energy per photon, even though they carry more energy each.
 :::

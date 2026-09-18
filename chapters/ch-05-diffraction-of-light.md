@@ -574,6 +574,18 @@ This is the **Heisenberg uncertainty principle**, arrived at from nothing but cl
 - A **hologram** records the interference between an object beam and a reference beam, capturing phase as well as amplitude; illuminating it with the reference beam diffracts a reconstruction of the original wavefront.
 - Applying $\Delta y \approx a$ and $\Delta p_y \approx h/a$ to a single slit gives $\Delta y\,\Delta p_y \approx h$: the **uncertainty principle**, already visible in classical diffraction.
 
+## Check Your Understanding
+
+1. What change to a single slit makes its diffraction pattern wider?
+2. Why can a diffraction grating resolve nearby wavelengths better when it has more illuminated slits?
+3. What length scale must be comparable to an X-ray wavelength for Bragg diffraction?
+
+:::{dropdown} Answers
+1. Narrowing the slit increases the angular spread because the first minimum obeys $a\sin\theta=\lambda$.
+2. More slits narrow the principal maxima, making close angular peaks distinguishable.
+3. The spacing between crystal planes, typically a fraction of a nanometer.
+:::
+
 ## Conceptual Questions
 
 1. State, in one sentence each, the physical difference between the conditions $d\sin\theta = m\lambda$ for a double slit and $a\sin\theta = m\lambda$ for a single slit. Why do two nearly identical formulas describe opposite things?
@@ -597,6 +609,8 @@ This is the **Heisenberg uncertainty principle**, arrived at from nothing but cl
 :::{exercise}
 :label: ex-diffraction-of-light-1
 
+*(Straightforward)*
+
 A single slit of width $a = 0.0250\ \text{mm}$ is illuminated at $\lambda = 633\ \text{nm}$. Find the angles to the first and second diffraction minima, and the width of the central maximum on a screen $1.80\ \text{m}$ away.
 :::
 
@@ -618,6 +632,8 @@ Therefore, the first and second minima are at $1.45^\circ$ and $2.90^\circ$, and
 :::{exercise}
 :label: ex-diffraction-of-light-2
 
+*(Straightforward)*
+
 A slit of unknown width produces a central diffraction maximum $4.00\ \text{cm}$ wide on a screen $1.50\ \text{m}$ away, using $\lambda = 520\ \text{nm}$ light. Find the slit width.
 :::
 
@@ -634,6 +650,8 @@ Therefore, the slit width is $3.90\times10^{-5}\ \text{m}$, or $0.0390\ \text{mm
 
 :::{exercise}
 :label: ex-diffraction-of-light-3
+
+*(Straightforward)*
 
 Using $I = I_0[\sin(\beta/2)/(\beta/2)]^2$, compute the intensity, as a fraction of $I_0$, at the angle exactly halfway between the first and second minima ($\beta/2 = 1.5\pi$). Compare your answer with the true first secondary maximum, $4.7\%$ at $\beta/2 = 1.4303\pi$, and comment on the size of the discrepancy.
 :::
@@ -652,6 +670,8 @@ The true first secondary maximum is $0.0470I_0$, so the midpoint estimate is low
 :::{exercise}
 :label: ex-diffraction-of-light-4
 
+*(Straightforward)*
+
 Show that the Fresnel number for a $0.10\ \text{mm}$ slit at $\lambda = 550\ \text{nm}$ becomes of order unity at a screen distance of about $2\ \text{cm}$. What does this tell you about the observation distance needed for the far-field formulas of this chapter to apply?
 :::
 
@@ -668,6 +688,8 @@ Therefore, distances only of order $2\ \text{cm}$ are still at the Fresnel--Frau
 
 :::{exercise}
 :label: ex-diffraction-of-light-5
+
+*(Straightforward)*
 
 A double slit has slit width $a = 0.020\ \text{mm}$ and separation $d = 0.100\ \text{mm}$, illuminated at $\lambda = 550\ \text{nm}$. (a) Find $d/a$. (b) List the missing orders up to $m = 12$. (c) Find the number of bright fringes visible within the central diffraction maximum.
 :::
@@ -686,6 +708,8 @@ An interference maximum is missing when $m\lambda/d=p\lambda/a$, or $m=p(d/a)=5p
 :::{exercise}
 :label: ex-diffraction-of-light-6
 
+*(Straightforward)*
+
 A double slit produces $7$ bright fringes inside its central diffraction maximum (counting the central fringe, and excluding the missing orders at the edges). Deduce the ratio $d/a$.
 :::
 
@@ -702,6 +726,8 @@ Therefore, the slit-separation-to-width ratio is $d/a=4$.
 
 :::{exercise}
 :label: ex-diffraction-of-light-7
+
+*(Straightforward)*
 
 A diffraction grating has $5000$ lines per centimeter. (a) Find the line spacing $d$. (b) Find the angle of the first-order maximum for $\lambda = 500\ \text{nm}$. (c) Find the highest order observable for this wavelength. (d) Find the angular dispersion $\mathrm{d}\theta/\mathrm{d}\lambda$ in first order at this wavelength, in degrees per nanometer.
 :::
@@ -724,6 +750,8 @@ Therefore, the spacing is $2.00\ \mu\text{m}$, the first-order angle is $14.5^\c
 :::{exercise}
 :label: ex-diffraction-of-light-8
 
+*(Straightforward)*
+
 A grating with $N = 4000$ illuminated lines is used in second order. (a) Find the smallest wavelength difference it can resolve near $\lambda = 600\ \text{nm}$. (b) Repeat for first order, and state the factor by which the resolution changes. (c) If the beam is narrowed so that only $1000$ lines are illuminated, what happens to the resolving power, and why does the total number of lines ruled on the grating not matter?
 :::
 
@@ -740,6 +768,8 @@ In first order it is $600/4000=0.150\ \text{nm}$, twice as large, so the resolut
 
 :::{exercise}
 :label: ex-diffraction-of-light-9
+
+*(Moderate)*
 
 A grating with $600$ lines per millimeter is illuminated with white light ($400$–$700\ \text{nm}$). (a) Find the angular width of the first-order spectrum. (b) Find the angular width of the second-order spectrum. (c) Show that the second- and third-order spectra overlap, and find the wavelength at which the overlap begins.
 :::
@@ -765,6 +795,8 @@ Therefore, the first- and second-order widths are $10.9^\circ$ and $28.4^\circ$,
 :::{exercise}
 :label: ex-diffraction-of-light-10
 
+*(Moderate)*
+
 The human eye has a pupil diameter of about $D = 4.0\ \text{mm}$ in typical lighting. Using the Rayleigh criterion at $\lambda = 550\ \text{nm}$, estimate (a) the smallest angular separation the eye can resolve and (b) the corresponding separation of two objects at a reading distance of $25\ \text{cm}$.
 :::
 
@@ -781,6 +813,8 @@ At $L=0.250\ \text{m}$, $s\simeq L\theta=(0.250)(1.68\times10^{-4})=4.19\times10
 
 :::{exercise}
 :label: ex-diffraction-of-light-11
+
+*(Moderate)*
 
 A car's headlights are separated by $1.3\ \text{m}$. Using the eye's diffraction limit from [Problem 10](#ex-diffraction-of-light-10), estimate the greatest distance at which they could in principle be resolved as two separate lights. Then comment on whether atmospheric turbulence, the eye's own aberrations, or the finite spacing of retinal cells is likely to set a more restrictive limit in practice.
 :::
@@ -799,6 +833,8 @@ Therefore, diffraction alone would permit resolution to roughly $7.8\ \text{km}$
 :::{exercise}
 :label: ex-diffraction-of-light-12
 
+*(Moderate)*
+
 A telescope's objective diameter is doubled at fixed wavelength. By what factor does the smallest resolvable angle change? By what factor would it change instead if the diameter were held fixed but the observing wavelength were shifted from $\lambda = 550\ \text{nm}$ to $\lambda = 275\ \text{nm}$?
 :::
 
@@ -811,6 +847,8 @@ Since $\theta_{\min}=1.22\lambda/D$, doubling $D$ changes the limit to $\theta_{
 
 :::{exercise}
 :label: ex-diffraction-of-light-13
+
+*(Moderate)*
 
 A microscope objective of diameter $5.0\ \text{mm}$ has a working distance of $8.0\ \text{mm}$. (a) Estimate the smallest separation it can resolve at $\lambda = 550\ \text{nm}$, treating the objective as a circular aperture subtending the corresponding angle. (b) Estimate how much better an electron microscope would do if its electron waves have $\lambda = 4.0\ \text{pm}$ and the effective aperture angle is the same.
 :::
@@ -828,6 +866,8 @@ At the same aperture angle, replacing $550\ \text{nm}$ by $4.0\ \text{pm}$ gives
 
 :::{exercise}
 :label: ex-diffraction-of-light-14
+
+*(Moderate)*
 
 X-rays of wavelength $\lambda = 0.0709\ \text{nm}$ (the molybdenum $K_\alpha$ line) produce a first-order Bragg reflection at $\theta = 15.0°$. (a) Find the interplanar spacing. (b) Find the angle of the second-order reflection. (c) Determine the highest order that exists for these planes.
 :::
@@ -855,6 +895,8 @@ Therefore, the plane spacing is $0.137\ \text{nm}$, the second-order reflection 
 :::{exercise}
 :label: ex-diffraction-of-light-15
 
+*(Moderate)*
+
 A crystal has an interplanar spacing $d = 0.282\ \text{nm}$, close to the value for sodium chloride. (a) Find the X-ray wavelength that produces a first-order Bragg reflection at $\theta = 20.0°$. (b) Confirm that this wavelength lies in the X-ray region. (c) Find the longest wavelength that can produce any Bragg reflection at all from these planes.
 :::
 
@@ -872,6 +914,8 @@ This is $1.93\times10^{-10}\ \text{m}$, in the X-ray region.  Since $\sin\theta\
 :::{exercise}
 :label: ex-diffraction-of-light-16
 
+*(Moderate)*
+
 Show that the general condition for a Bragg reflection to exist is $\lambda \le 2d$, and use it to explain why $\lambda = 550\ \text{nm}$ light produces no diffraction peaks from a crystal with $d = 0.3\ \text{nm}$.
 :::
 
@@ -885,6 +929,8 @@ Bragg's law requires $m\lambda=2d\sin\theta$.  Because $\sin\theta\le1$ and the 
 :::{exercise}
 :label: ex-diffraction-of-light-17
 
+*(Challenging)*
+
 Explain physically why a narrower slit produces a wider central maximum, using $\theta_1 \approx \lambda/a$, and reconcile this with the fact that a larger telescope aperture gives finer resolution. Are the two statements in tension? Explain carefully.
 :::
 
@@ -897,6 +943,8 @@ The first minimum of a narrow slit obeys $\theta_1\simeq\lambda/a$, so decreasin
 
 :::{exercise}
 :label: ex-diffraction-of-light-18
+
+*(Challenging)*
 
 A single slit of width $a = 1.0\ \mu\text{m}$ is illuminated at $\lambda = 500\ \text{nm}$. (a) Find the angle to the first minimum. (b) Treating the transmitted light as photons of momentum $p = h/\lambda$, estimate $\Delta p_y$ from the angular spread and verify that $\Delta y\,\Delta p_y \approx h$. (c) Repeat for $a = 0.50\ \mu\text{m}$ and confirm that the product does not change.
 :::
@@ -914,6 +962,8 @@ so $\Delta y\Delta p_y\sim(1.0\times10^{-6}\ \text{m})(6.63\times10^{-28}\ \text
 
 :::{exercise}
 :label: ex-diffraction-of-light-19
+
+*(Challenging)*
 
 The Event Horizon Telescope images the black hole at the center of the galaxy M87 at a wavelength of $1.3\ \text{mm}$, using an array of radio dishes spread across the Earth to synthesize an aperture $D \approx 1.0\times10^7\ \text{m}$. (a) Find its angular resolution. (b) The black hole's shadow subtends about $40$ microarcseconds. Show that the array can just resolve it. (c) Explain why the same resolution cannot be achieved with a single dish.
 :::
@@ -940,6 +990,8 @@ Therefore, Earth-scale interferometry provides just enough resolution, whereas a
 
 :::{exercise}
 :label: ex-diffraction-of-light-20
+
+*(Challenging)*
 
 A compact disc has data tracks spaced $1.6\ \mu\text{m}$ apart and acts as a reflection grating. (a) Find the first-order diffraction angle for $\lambda = 650\ \text{nm}$ light at normal incidence. (b) Find the highest order that exists. (c) A DVD has tracks spaced $0.74\ \mu\text{m}$ apart; explain, using your results, why a DVD spreads colors more widely than a CD.
 :::

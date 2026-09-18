@@ -279,7 +279,7 @@ Each patch could account for the existing data but only by adding a new, unmotiv
 
 ### Einstein's Postulates
 
-In 1905, Einstein proposed to stop patching Galilean relativity and instead take the null result at face value, elevating it (together with the principle of relativity already implicit in mechanics, discussed above) to a postulate. Special relativity rests on two statements:
+In 1905, Einstein proposed to stop patching Galilean relativity and instead take the null result at face value, elevating it (together with the principle of relativity already implicit in mechanics, discussed above) to a postulate [@einstein1905relativity]. Special relativity rests on two statements:
 
 1. **The principle of relativity.** The laws of physics take the same form in all inertial reference frames. No experiment performed entirely within a closed laboratory can distinguish one inertial frame from another.
 2. **The constancy of the speed of light.** The speed of light in vacuum has the same value $c$ in every inertial reference frame, independent of the motion of the source or the observer.
@@ -311,10 +311,38 @@ It is worth appreciating just how much this single change in starting point acco
 - Proposed rescues of the ether hypothesis faced additional constraints: stellar aberration conflicts with simple complete-drag models, binary-star observations weigh against simple emission theories, and length contraction introduced solely to hide the Michelson–Morley effect was an incomplete patch. More elaborate models could evade individual objections, but only at the cost of additional assumptions.
 - Einstein's 1905 postulates take the null result at face value: the laws of physics (postulate 1) and the speed of light in particular (postulate 2) are the same in every inertial frame. Together these are incompatible with the Galilean transformation and require a new kinematics, developed in [Chapter 2](#ch-special-relativity), which reproduces all of the results above — Michelson–Morley, aberration, binary-star timing, and the Fizeau coefficient — without any adjustable ether parameters.
 
+## Check Your Understanding
+
+Answer these without calculation, then open the answers to check the reasoning.
+
+1. In Galilean relativity, how does an object's velocity transform between frames moving at relative speed $v$?
+2. Which result of the Michelson–Morley experiment conflicted with a stationary ether?
+3. What do Einstein's two postulates say about inertial frames and the speed of light?
+
+:::{dropdown} Answers
+1. Along the direction of motion, $u'_x=u_x-v$.
+2. Rotating the apparatus produced no systematic fringe shift, so no ether wind was detected.
+3. The laws of physics have the same form in every inertial frame, and every inertial observer measures vacuum light speed $c$.
+:::
+
+## Conceptual Questions
+
+1. A sealed laboratory moves uniformly through space. Explain why no internal mechanical experiment can determine the laboratory's absolute speed.
+
+2. Why would a stationary luminiferous ether single out one inertial frame, in conflict with the principle of relativity?
+
+3. The Michelson interferometer compared two perpendicular light paths. Why was rotating the entire apparatus essential to the proposed ether-wind test?
+
+4. Fizeau measured light in moving water. Why did partial dragging challenge both complete ether drag and a completely stationary ether?
+
+5. Which assumption must fail if both Galilean velocity addition and invariant light speed cannot hold at once?
+
 ## Problems
 
 :::{exercise}
 :label: ex-need-for-relativity-1
+
+*(Straightforward)*
 
 Earth orbits the Sun at approximately $v = 3.0\times10^4\ \text{m/s}$. Using the (incorrect) Galilean velocity-addition rule, estimate the fractional difference $(c+v)/(c-v) - 1$ between the speed of light measured "downstream" and "upstream" of Earth's motion through a stationary ether. Compare your estimate to the sensitivity you would need in an experiment to detect it.
 :::
@@ -352,6 +380,8 @@ Therefore, Galilean addition predicts a fractional directional difference of abo
 
 :::{exercise}
 :label: ex-need-for-relativity-2
+
+*(Straightforward)*
 
 A swimmer who swims at speed $u$ in still water crosses a river of width $L$ flowing at speed $v < u$. (a) Find the time to swim straight across and back if the swimmer aims to always move perpendicular to the bank as seen from the shore. (b) Find the time to swim a distance $L$ directly upstream and then back downstream. (c) Show the two times are unequal, and explain the analogy to the two arms of the Michelson–Morley interferometer.
 :::
@@ -404,6 +434,8 @@ The river-current construction makes the key geometric difference explicit: hold
 :::{exercise}
 :label: ex-need-for-relativity-3
 
+*(Straightforward)*
+
 Explain, in your own words, why a null result from a single run of the Michelson-Morley experiment would not have been convincing on its own, and why repeating it at different times of year strengthened the conclusion.
 :::
 
@@ -416,6 +448,8 @@ One null result could have occurred at an unlucky orientation, at a time when Ea
 
 :::{exercise}
 :label: ex-need-for-relativity-4
+
+*(Straightforward)*
 
 Suppose light, rather than obeying Einstein's second postulate, were emitted at speed $c$ relative to its source (an "emission theory" of light), like a bullet fired from a moving gun. Explain qualitatively why light from the two stars of a binary system, observed from Earth over one orbital period, would arrive with systematically distorted timing under this theory, and why this distortion is not observed.
 :::
@@ -430,6 +464,8 @@ In a simple emission theory, light emitted while a star moves toward Earth would
 :::{exercise}
 :label: ex-need-for-relativity-5
 
+*(Moderate)*
+
 Explain why the principle of relativity (postulate 1) already applied to Newtonian mechanics before 1905, and identify precisely what Einstein's second postulate adds that Newtonian mechanics did not have.
 :::
 
@@ -442,6 +478,8 @@ Newtonian mechanics already obeyed the first postulate because experiments invol
 
 :::{exercise}
 :label: ex-need-for-relativity-6
+
+*(Moderate)*
 
 Derive the fringe-shift formula $\Delta N = 2Lv^2/(\lambda c^2)$ by working through the steps in the text, and use it to estimate the fringe shift a modern Michelson–Morley-style apparatus with arm length $L = 4\ \text{km}$ (comparable to a gravitational-wave observatory) and $\lambda = 1064\ \text{nm}$ would predict for Earth's orbital speed, if a stationary ether existed. Comment on how much more sensitive such an apparatus is, in principle, than Michelson and Morley's original tabletop instrument.
 :::
@@ -494,6 +532,8 @@ Therefore, a stationary ether would predict about $75$ fringes for this apparatu
 :::{exercise}
 :label: ex-need-for-relativity-7
 
+*(Moderate)*
+
 A modern, high-precision version of the Michelson–Morley experiment finds an upper bound on any fringe shift roughly $10^{-5}$ times smaller than the shift $0.4$ fringe originally predicted by Galilean relativity plus a stationary ether. If this bound were instead interpreted (incorrectly, but for the sake of the exercise) as an upper limit on Earth's residual speed through a stationary ether, using the same fringe-shift formula, what upper limit on that speed would it imply? Compare this to Earth's orbital speed.
 :::
 
@@ -535,6 +575,8 @@ The logarithmic scale separates the large stationary-ether prediction from the t
 :::{exercise}
 :label: ex-need-for-relativity-8
 
+*(Moderate)*
+
 Using the Fizeau formula $u_{\text{measured}} = c/n + v(1-1/n^2)$, compute the predicted speed (in the lab frame) of light traveling through water ($n = 1.33$) flowing at $v = 7.0\ \text{m/s}$, both with and against the light's direction of travel. Find the difference between these two speeds, and compare it to the difference $2v$ that simple Galilean addition (full dragging) would predict.
 :::
 
@@ -575,6 +617,8 @@ Thus $u_+-u_-=2(3.04\ \text{m/s})=6.09\ \text{m/s}$; this is smaller than the $2
 :::{exercise}
 :label: ex-need-for-relativity-9
 
+*(Moderate)*
+
 Jupiter orbits the Sun at an orbital speed of about $v = 1.3\times10^4\ \text{m/s}$. If an astronomer stationed on Jupiter observed the same "overhead" star discussed in the worked example on aberration, using the same reasoning, what angular radius (in arcseconds) would that astronomer measure for the star's annual aberration ellipse? Explain why the ratio of your answer to Earth's $20.5''$ depends only on the ratio of the two planets' orbital speeds.
 :::
 
@@ -596,6 +640,8 @@ Therefore, the astronomer on Jupiter would measure an annual aberration ellipse 
 :::{exercise}
 :label: ex-need-for-relativity-10
 
+*(Challenging)*
+
 Explain why an ether model in which Earth *fully* drags the surrounding ether along with it (proposed to explain the Michelson–Morley null result) is inconsistent with the existence of stellar aberration, using the falling-rain analogy described in the text: a person standing still under vertically falling rain gets wet only from directly above, while a person running through the rain must tilt an umbrella forward to stay dry. What would "full ether drag" have to imply about the umbrella, if starlight is the falling rain and Earth's atmosphere is analogous to the region being dragged?
 :::
 
@@ -609,6 +655,8 @@ Starlight behaves like the falling rain: because Earth moves sideways while the 
 :::{exercise}
 :label: ex-need-for-relativity-11
 
+*(Challenging)*
+
 Explain, in your own words, why the original Michelson–Morley design (equal-length arms, apparatus rotated) cannot by itself distinguish "no ether effects" from "an ether effect exactly cancelled by a velocity-dependent length contraction." Then explain why making the two arms unequal in length (Kennedy–Thorndike) closes this loophole.
 :::
 
@@ -621,6 +669,8 @@ With equal arms, a hypothesized length contraction can shorten whichever arm is 
 
 :::{exercise}
 :label: ex-need-for-relativity-12
+
+*(Challenging)*
 
 Suppose (contrary to fact) that the Kennedy–Thorndike experiment *had* detected a fringe drift over the course of a year, of a size consistent with length contraction being the *only* relativistic effect (i.e., with clocks ticking at the same rate in every frame). Explain qualitatively why this outcome would have been logically consistent with the original Michelson–Morley null result, even though it would have been inconsistent with the time dilation and Lorentz transformation developed in [Chapter 2](#ch-special-relativity).
 :::

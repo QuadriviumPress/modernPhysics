@@ -376,10 +376,38 @@ A bond's dissociation energy — the energy needed to pull two bonded atoms apar
 - **Intermolecular forces** — London dispersion (universal, grows with polarizability), dipole–dipole (permanent dipoles), and **hydrogen bonding** (an unusually strong dipole–dipole interaction specific to H bonded to N, O, or F) — act *between* already-bonded molecules and set melting and boiling points; comparing molecules of similar size isolates each contribution.
 - A **rovibrational spectrum** combines a vibrational transition with a simultaneous rotational one, producing $R$-branch ($\Delta J=+1$) and $P$-branch ($\Delta J=-1$) lines spaced by $2B=\hbar^2/I$, with a missing central $Q$ branch ($\Delta J=0$, forbidden for a diatomic); **anharmonicity** of the real interatomic potential crowds vibrational levels together at high $v$ and permits weak overtone transitions.
 
+## Check Your Understanding
+
+1. What does a molecular-orbital bond order of zero imply about stability?
+2. Which molecular geometry results from six bonding regions and no lone pairs around a central atom?
+3. Why are vibrational and rotational spectra quantized?
+
+:::{dropdown} Answers
+1. Bonding and antibonding effects cancel, so the molecule is not expected to be stably bound in that configuration.
+2. Octahedral.
+3. Molecular vibration and rotation are quantum systems with discrete allowed energy levels.
+:::
+
+## Conceptual Questions
+
+1. Contrast valence-bond and molecular-orbital descriptions of where bonding electrons reside.
+
+2. Why does filling an antibonding orbital reduce bond order?
+
+3. Oxygen is paramagnetic. Why is this evidence for the molecular-orbital description?
+
+4. Explain why electron-domain geometry, molecular geometry, and hybridization are related but not identical descriptions.
+
+5. Why does hydrogen bonding strongly raise water's boiling point compared with hydrogen sulfide?
+
+6. Why does a diatomic molecule's infrared spectrum contain many rotational lines around each vibrational transition?
+
 ## Problems
 
 :::{exercise}
 :label: ex-molecular-structure-1
+
+*(Straightforward)*
 
 Determine the hybridization of the central atom and predict the molecular geometry for (a) $\text{NH}_3$ (three bonding pairs, one lone pair on N), (b) $\text{CO}_2$ (two double bonds, no lone pairs on C), (c) $\text{SF}_6$.
 :::
@@ -403,6 +431,8 @@ Therefore, the predicted geometries are trigonal pyramidal for $\text{NH}_3$, li
 :::{exercise}
 :label: ex-molecular-structure-2
 
+*(Straightforward)*
+
 Carbon monoxide, $\text{CO}$, is isoelectronic with $\text{N}_2$: it has the same number of valence electrons (4 from C, 6 from O, 10 total) and, being built from two light second-row atoms, fills its molecular orbitals in the same order used for $\text{N}_2$ above: $\sigma_{2s}, \sigma_{2s}^*, \pi_{2p}$ (×2), $\sigma_{2p}$. Construct the molecular orbital diagram for $\text{CO}$, determine its bond order, and compare it to the triple bond expected from the Lewis structure $:\text{C}\!\equiv\!\text{O}:$.
 :::
 
@@ -423,6 +453,8 @@ Therefore, MO theory predicts bond order $3$ for $\text{CO}$, agreeing with the 
 
 :::{exercise}
 :label: ex-molecular-structure-3
+
+*(Straightforward)*
 
 Using the same style of reasoning applied to $\text{H}_2$ and $\text{He}_2$ in the text, determine the bond order predicted by MO theory for the hypothetical ion $\text{He}_2^+$ (three electrons: two in $\sigma_{1s}$, one in $\sigma_{1s}^*$), and state whether this ion is predicted to be (marginally) stable.
 :::
@@ -448,6 +480,8 @@ Therefore, $\text{He}_2^+$ is predicted to have a weak, marginally stable half-o
 :::{exercise}
 :label: ex-molecular-structure-4
 
+*(Straightforward)*
+
 The HCl molecule has an effective vibrational frequency $f = \omega/2\pi = 8.66\times10^{13}\ \text{Hz}$. Using $m_{\text{H}} = 1.008\ \text{u}$ and $m_{\text{Cl}} = 35.45\ \text{u}$ ($1\ \text{u} = 1.66\times10^{-27}\ \text{kg}$), compute (a) the reduced mass $\mu$, and (b) the zero-point vibrational energy $E_0 = \tfrac12\hbar\omega$ in eV.
 :::
 
@@ -468,6 +502,8 @@ Therefore, HCl has reduced mass $1.63\times10^{-27}\ \text{kg}$ and zero-point v
 
 :::{exercise}
 :label: ex-molecular-structure-5
+
+*(Moderate)*
 
 The CO molecule has bond length $r_0 = 0.113\ \text{nm}$ and reduced mass $\mu = 6.86\ \text{u}$. Compute (a) its moment of inertia $I = \mu r_0^2$, and (b) the energy (in units of $10^{-4}\ \text{eV}$) of the $J=0\to J=1$ rotational transition.
 :::
@@ -490,6 +526,8 @@ Therefore, CO has $I=1.45\times10^{-46}\ \text{kg m}^2$ and its first rotational
 :::{exercise}
 :label: ex-molecular-structure-6
 
+*(Moderate)*
+
 Explain, using the concept of bond order, why $\text{O}_2^-$ (superoxide, one more electron than $\text{O}_2$) has a weaker, longer bond than neutral $\text{O}_2$, while $\text{O}_2^+$ (dioxygenyl, one fewer electron) has a stronger, shorter bond — referring to which type of orbital (bonding or antibonding) the added or removed electron occupies.
 :::
 
@@ -502,6 +540,8 @@ The highest occupied orbitals of $\text{O}_2$ are antibonding $\pi_{2p}^*$ orbit
 
 :::{exercise}
 :label: ex-molecular-structure-7
+
+*(Moderate)*
 
 Determine the hybridization of the central atom and predict the molecular geometry of $\text{SF}_4$ (four bonding pairs and one lone pair on S). Sketch, in words, where the lone pair sits relative to the five electron domains of the underlying trigonal-bipyramidal arrangement, and state the resulting molecular geometry. Compare your reasoning to the $\text{XeF}_4$ worked example above: why does one lone pair produce a very different-looking molecule than two lone pairs do?
 :::
@@ -524,6 +564,8 @@ Therefore, one equatorial lone pair gives $\text{SF}_4$ a seesaw shape, whereas 
 
 :::{exercise}
 :label: ex-molecular-structure-8
+
+*(Moderate)*
 
 Using the same reasoning applied to $\text{N}_2$/$\text{N}_2^+$ in the text and to $\text{O}_2$/$\text{O}_2^{\pm}$ in [Problem 6](#ex-molecular-structure-6), construct the molecular orbital diagram for neutral $\text{F}_2$ (14 valence electrons, heavier-diatomic ordering: $\sigma_{2s}, \sigma_{2s}^*, \sigma_{2p}, \pi_{2p}\,(\times2), \pi_{2p}^*\,(\times2), \sigma_{2p}^*$), and determine its bond order. Then remove one electron to form $\text{F}_2^+$, identify which orbital it comes from, and state whether the ion's bond is predicted to be stronger or weaker (and shorter or longer) than neutral $\text{F}_2$'s, and whether the ion is paramagnetic or diamagnetic.
 :::
@@ -551,6 +593,8 @@ Therefore, neutral $\text{F}_2$ has a single bond, while $\text{F}_2^+$ is param
 :::{exercise}
 :label: ex-molecular-structure-9
 
+*(Challenging)*
+
 Using the reduced mass $\mu$ found in [Problem 4](#ex-molecular-structure-4)(a) for HCl and a bond length $r_0 = 127.5\ \text{pm}$, find (a) the moment of inertia $I$, (b) the rotational constant $B$ in eV, (c) the rovibrational line spacing $2B$ in $\text{cm}^{-1}$, and (d) the size of the gap (in $\text{cm}^{-1}$) at the band origin left by the missing $Q$ branch.
 :::
 
@@ -569,6 +613,8 @@ The wavenumber $B/(hc)=10.6\ \text{cm}^{-1}$, so adjacent rovibrational lines ar
 
 :::{exercise}
 :label: ex-molecular-structure-10
+
+*(Challenging)*
 
 The boiling points of the halogens rise steadily down the group: $\text{F}_2$, $-188°\text{C}$; $\text{Cl}_2$, $-34°\text{C}$; $\text{Br}_2$, $59°\text{C}$; $\text{I}_2$, $184°\text{C}$. All four are nonpolar diatomic molecules with zero permanent dipole moment. Explain this trend using London dispersion forces, and state what physical property of the molecule is chiefly responsible for it.
 :::

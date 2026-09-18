@@ -1,13 +1,17 @@
 # MyST plugins
 
-Two plugins, both about the same problem: the website can do things paper
-cannot, and the book has to survive being printed anyway.
+Four plugins address the same problem: the website can do things paper cannot,
+and the book still has to survive PDF, Word, Markdown, and browser printing.
 
 - [`simulation.mjs`](simulation.mjs) — embeds a running browser simulation on
   the website and falls back to a screenshot, a caption, and a link everywhere
   else. Provides `{simulation}`, `{openlyceum}`, `{phet}`, `{phet-legacy}`.
-- [`simulation.css`](simulation.css) — hides the fallback on screen, restores it
-  for browser print.
+- [`animation.mjs`](animation.mjs) — embeds a local looping canvas page and
+  falls back to a static figure. Provides `{animation}` (alias `{anim}`).
+- [`video.mjs`](video.mjs) — embeds YouTube or Vimeo through a privacy-conscious
+  player and falls back to a poster plus durable source link. Provides `{video}`.
+- [`simulation.css`](simulation.css) — hides all media fallbacks on screen and
+  restores them for browser print.
 - [`export.mjs`](export.mjs) — rewrites the node types no export renderer
   handles into ones every renderer handles. Inert unless `MYST_PRINT` is set.
 
@@ -17,7 +21,11 @@ All three are registered in [`../myst.yml`](../myst.yml):
 project:
   plugins:
     - plugins/simulation.mjs
+    - plugins/animation.mjs
+    - plugins/video.mjs
     - plugins/export.mjs
+  static_files:
+    - animations
 site:
   options:
     style: plugins/simulation.css
@@ -217,6 +225,46 @@ myhost: {
 If the aspect ratio is not already in `simulation.css`, add a rule for it there.
 These URL patterns are conventions of the hosts, not contracts — if OpenLyceum
 or PhET changes its Pages layout, `PROVIDERS` is the only thing to update.
+
+# The animation plugin
+
+A bare animation id resolves to `/animations/<id>.html`. Supply a print-safe
+fallback with `:figure:`; when the fallback follows the default
+`/images/<id>.svg` convention the option may be omitted.
+
+````markdown
+```{animation} ch03-string-modes
+:figure: /images/ch08-box-modes.svg
+:label: fig:ch08-box-modes
+:alt: The first four standing-wave modes vanish at both walls.
+
+Read the displacement as the particle-in-a-box wave function.
+```
+````
+
+The local pages are copied without content hashing through
+`project.static_files`, which preserves their module imports. `BASE_URL` is
+applied to iframe URLs for subpath deployments. Useful options are `figure`,
+`no-figure`, `width`, `aspect`, `title`, `alt`, `label`, and `class`.
+
+# The video plugin
+
+YouTube posters are derived automatically; Vimeo requires an explicit
+`:poster:` because its oEmbed thumbnail URL cannot be inferred offline.
+
+````markdown
+```{video} https://www.youtube.com/watch?v=uva6gBEpfDY
+:video-title: The Double-Slit Experiment
+:label: fig:ch04-double-slit-video
+:alt: Diagrams compare light and electron double-slit patterns.
+
+A classic demonstration with a print-safe poster and source link.
+```
+````
+
+The iframe uses `youtube-nocookie.com`; the caption always links to the original
+watch page. Options include `poster`, `video-title`, `link-text`, `width`,
+`aspect`, `title`, `alt`, `label`, and `class`.
 
 # The export plugin
 

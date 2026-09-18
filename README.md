@@ -16,8 +16,10 @@ for this project.
 - [`index.md`](index.md) — book landing page (website only)
 - [`preface.md`](preface.md) — preface (website sidebar and print front matter)
 - [`chapters/`](chapters/) — chapter content
+- [`back/`](back/) — glossary, bibliography page, and BibTeX database
 - [`images/`](images/) — figures and diagrams
-- [`plugins/`](plugins/) — the MyST plugins that embed interactive simulations and that make the book survive a static export
+- [`animations/`](animations/) — self-contained looping canvas figures
+- [`plugins/`](plugins/) — MyST plugins for simulations, animations, videos, and static exports
 - [`templates/book/`](templates/book/) — the LaTeX template for the printed editions
 - [`scripts/figures/`](scripts/figures/) — matplotlib sources for the computed figures
 - [`scripts/build-exports.sh`](scripts/build-exports.sh) — builds every PDF and the Word edition
@@ -66,8 +68,10 @@ frontmatter — MyST maps content `##` to `heading_1` when page titles
 are unnumbered) and are kept roughly equal in length so a professor can
 assign, for example, §§5.2–5.3. Topic headings under a section are
 `###`; finer headings are `####`. Learning Objectives and Introduction
-stay unnumbered (`###`). Summary, Conceptual Questions (when present),
-and Problems remain `##` so they continue the section numbering.
+stay unnumbered (`###`). Summary, Check Your Understanding, Conceptual
+Questions, and Problems remain `##` so they continue the section numbering.
+Every problem begins with exactly one of `*(Straightforward)*`, `*(Moderate)*`,
+or `*(Challenging)*`; `npm run check:project` enforces this structure.
 
 ### Admonitions, margin notes, dropdowns, and tabs
 
@@ -97,7 +101,7 @@ chapter, not per section — and only where there's a genuine fit:
 These are additive — they don't replace or restructure the surrounding
 prose, headings, math, figures, or exercises.
 
-## Interactive simulations
+## Interactive media
 
 Chapters can embed a running browser simulation with the `{openlyceum}`,
 `{phet}`, `{phet-legacy}`, or `{simulation}` directives, supplied by
@@ -130,6 +134,12 @@ where either has something comparable.
 Every chapter carries at least one simulation;
 [`SOURCES.md`](SOURCES.md) lists which, chapter by chapter, along with the
 attribution each supplier requires.
+
+Short local canvas figures use `{animation}` and YouTube/Vimeo material uses
+`{video}`. Both directives follow the same live-on-the-web, static-in-print
+contract as simulations. Local animations are served from [`animations/`](animations/)
+without content hashing; videos use privacy-conscious embeds, poster images,
+and durable source links. See [`plugins/README.md`](plugins/README.md) for usage.
 
 ## Figures
 
@@ -193,9 +203,10 @@ simulation's caption links out to the running simulation on the web. In a
 chapter offprint — which contains only its own chapter — the cross-chapter
 references point at the website instead.
 
-Interactive simulations cannot run on paper, so each one becomes the screenshot
-and caption link that [`plugins/simulation.mjs`](plugins/simulation.mjs) already
-emits beside the live iframe. Nothing in a chapter needs to change for this.
+Interactive media cannot run on paper, so simulations and animations become
+their static fallback figures, while videos become poster images with source
+links. The media plugins emit those fallbacks beside the live iframe; nothing
+in a chapter needs to change for export.
 
 ### Toolchain
 

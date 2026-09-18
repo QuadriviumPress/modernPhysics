@@ -160,6 +160,14 @@ $$
 E_n = \frac{n^2\pi^2\hbar^2}{2mL^2} = \frac{n^2h^2}{8mL^2}, \qquad n = 1, 2, 3, \ldots
 $$
 
+```{animation} ch03-string-modes
+:figure: /images/ch08-box-modes.svg
+:label: fig:ch08-box-modes
+:alt: The first four standing-wave modes between two fixed boundaries have one through four half-wavelengths and zero amplitude at both walls.
+
+The first four modes of a wave confined between fixed boundaries. Read the transverse displacement as $\psi(x)$ rather than as a literal string: the boundary condition is identical, $k_n=n\pi/L$, and the increasing number of nodes is the particle-in-a-box quantum number made visible.
+```
+
 Normalizing $\psi_n(x) = A\sin(n\pi x/L)$ over $[0,L]$ gives $A = \sqrt{2/L}$. Several features have no classical analog:
 
 - **Energy is quantized**, in discrete levels $E_n \propto n^2$, rather than continuous as for a classical particle bouncing in a box.
@@ -348,10 +356,38 @@ The same principle explains why quantum effects are unobservable for everyday ma
 - The **quantum harmonic oscillator** has evenly spaced levels $E_n = (n+\tfrac12)\hbar\omega$, a selection rule $\Delta n = \pm1$ for radiative transitions, and a nonzero **zero-point energy** $E_0 = \tfrac12\hbar\omega$; it is the generic small-oscillation approximation to any smooth potential near a stable minimum.
 - Bohr's **correspondence principle** — quantum predictions merge into classical ones at large quantum numbers — is a recurring consistency check across all three model systems.
 
+## Check Your Understanding
+
+1. What physical quantity is obtained from $|\Psi(x,t)|^2$?
+2. Why is the infinite-well ground-state energy not zero?
+3. What feature of a finite barrier makes tunneling possible?
+
+:::{dropdown} Answers
+1. It is the position probability density; integrating it over an interval gives the detection probability there.
+2. A zero-energy particle would have definite zero momentum while confined to a finite region, violating the uncertainty principle and the boundary conditions.
+3. The wave function penetrates the forbidden region and can retain nonzero amplitude at the barrier's far side.
+:::
+
+## Conceptual Questions
+
+1. Why is a wave function allowed to be complex even though every measured probability is real?
+
+2. A stationary state's wave function has time dependence. Why is the state nevertheless called stationary?
+
+3. Explain how boundary conditions, rather than a separate quantization rule, produce the discrete energies of a particle in a box.
+
+4. Why can a quantum particle reflect from a potential step even when its energy exceeds the step height?
+
+5. Why does increasing either the width or the height of a barrier suppress tunneling exponentially?
+
+6. Compare the level spacing of the infinite well and harmonic oscillator. What does each reveal about its potential?
+
 ## Problems
 
 :::{exercise}
 :label: ex-the-schrodinger-equation-1
+
+*(Straightforward)*
 
 An electron is confined to an infinite square well of width $L = 0.20\ \text{nm}$ (roughly an atomic diameter). Find (a) the ground-state energy $E_1$ in eV, and (b) the energy of the photon emitted in a transition from $n=2$ to $n=1$.
 :::
@@ -379,6 +415,8 @@ Therefore, the ground-state energy is $9.40\ \text{eV}$ and the $n=2\to1$ photon
 :::{exercise}
 :label: ex-the-schrodinger-equation-2
 
+*(Straightforward)*
+
 Show, by direct substitution into the time-independent Schrödinger equation, that $\psi_n(x) = \sqrt{2/L}\sin(n\pi x/L)$ with $E_n = n^2\pi^2\hbar^2/2mL^2$ is indeed a solution for the infinite square well on $0<x<L$.
 :::
 
@@ -400,6 +438,8 @@ Also $\psi_n(0)=\psi_n(L)=0$.  Therefore, the stated sine function satisfies bot
 :::{exercise}
 :label: ex-the-schrodinger-equation-3
 
+*(Straightforward)*
+
 For the infinite-well state $\psi_2(x) = \sqrt{2/L}\sin(2\pi x/L)$ ($n=2$), use the symmetry of $|\psi_2(x)|^2$ about $x=L/2$ to state $\langle x\rangle$ without direct integration, and identify the location of the single interior node.
 :::
 
@@ -416,6 +456,8 @@ for $0<x<L$.  Therefore, $\langle x\rangle=L/2$ and the single interior node is 
 
 :::{exercise}
 :label: ex-the-schrodinger-equation-4
+
+*(Straightforward)*
 
 An electron with kinetic energy $E=3.00\ \text{eV}$ encounters a potential step of height $V_0 = 2.00\ \text{eV}$. (a) Compute $k_2/k_1$. (b) Compute the reflection coefficient $R$ and the transmission coefficient $T$. (c) Repeat for $V_0 = 0.500\ \text{eV}$, and comment on how $R$ changes as the step height decreases toward zero.
 :::
@@ -445,6 +487,8 @@ Therefore, the reflection falls from $7.18\%$ to $0.207\%$ as the step is lowere
 :::{exercise}
 :label: ex-the-schrodinger-equation-5
 
+*(Straightforward)*
+
 Show algebraically, starting from the amplitude ratios $B/A = (k_1-k_2)/(k_1+k_2)$ and using $R = |B/A|^2$, $T = (k_2/k_1)|C/A|^2$ with $C/A = 2k_1/(k_1+k_2)$, that $R+T=1$ for the potential step.
 :::
 
@@ -465,6 +509,8 @@ Therefore, reflection plus transmission equals one, as required by probability-c
 
 :::{exercise}
 :label: ex-the-schrodinger-equation-6
+
+*(Straightforward)*
 
 A proton with $5.0\ \text{MeV}$ of kinetic energy strikes a rectangular potential barrier of height $10.0\ \text{MeV}$ and width $2.0\times10^{-15}\ \text{m}$ (roughly a nuclear dimension). (a) Compute $\kappa = \sqrt{2m(V_0-E)}/\hbar$ for the proton in the barrier. (b) Estimate the tunneling transmission probability $T \approx e^{-2\kappa L}$. (c) Repeat for an alpha particle (mass four times the proton mass) under the same conditions and compare, explaining qualitatively why the heavier particle tunnels less readily.
 :::
@@ -492,6 +538,8 @@ Therefore, the proton transmission is about $14\%$, while the alpha transmission
 :::{exercise}
 :label: ex-the-schrodinger-equation-7
 
+*(Straightforward)*
+
 Using the STM worked example's value of $\kappa \approx 10.2\ \text{nm}^{-1}$, find the factor by which the tunneling current changes if the tip–surface gap increases by $0.20\ \text{nm}$ instead of $0.10\ \text{nm}$, and comment on why STM height measurements are typically precise to a small fraction of an angstrom.
 :::
 
@@ -508,6 +556,8 @@ Therefore, a $0.20\ \text{nm}$ increase reduces the current by a factor of about
 
 :::{exercise}
 :label: ex-the-schrodinger-equation-8
+
+*(Straightforward)*
 
 Verify that the ground-state wave function of the harmonic oscillator, $\psi_0(x) = A\,e^{-m\omega x^2/2\hbar}$, satisfies the time-independent Schrödinger equation for $V(x) = \tfrac12 m\omega^2 x^2$ with energy $E_0 = \tfrac12\hbar\omega$, by direct substitution (you need not determine the normalization constant $A$).
 :::
@@ -529,6 +579,8 @@ Therefore, the Gaussian satisfies the oscillator equation with $E_0=\tfrac12\hba
 
 :::{exercise}
 :label: ex-the-schrodinger-equation-9
+
+*(Moderate)*
 
 A diatomic molecule vibrates approximately as a harmonic oscillator with classical frequency $f = \omega/2\pi = 8.7\times10^{13}\ \text{Hz}$. Find (a) the zero-point energy in eV, and (b) the energy of a photon emitted in a transition between adjacent vibrational levels ($\Delta n = 1$), and (c) identify the region of the electromagnetic spectrum (see [Chapter 6](#ch-particle-properties-of-waves)) in which this photon lies.
 :::
@@ -556,6 +608,8 @@ Therefore, the zero-point energy is $0.180\ \text{eV}$ and vibrational transitio
 :::{exercise}
 :label: ex-the-schrodinger-equation-10
 
+*(Moderate)*
+
 Using the general formula $\Delta x = \sqrt{\hbar/2m\omega}$, verify the zero-point spread quoted in the worked example for the $1.0\ \text{kg}$, $k=100\ \text{N/m}$ macroscopic oscillator, and separately for a hydrogen molecule ($\mu \approx 8.4\times10^{-28}\ \text{kg}$, $k \approx 570\ \text{N/m}$), comparing your result to the H–H bond length of about $74\ \text{pm}$.
 :::
 
@@ -573,6 +627,8 @@ For $\text{H}_2$, $\omega=\sqrt{570/(8.4\times10^{-28})}=8.24\times10^{14}\ \tex
 :::{exercise}
 :label: ex-the-schrodinger-equation-11
 
+*(Moderate)*
+
 Explain, using the uncertainty principle rather than solving the Schrödinger equation directly, why both the infinite square well and the harmonic oscillator must have a ground-state energy strictly greater than the classical minimum ($E=0$ in both cases), and why this argument would not apply to a classical (macroscopic) oscillator or box.
 :::
 
@@ -585,6 +641,8 @@ Confinement requires a finite position uncertainty $\Delta x$, which by $\Delta 
 
 :::{exercise}
 :label: ex-the-schrodinger-equation-12
+
+*(Moderate)*
 
 A hydrogen molecule vibrates with quantized energy levels $E_n = (n+\tfrac12)\hbar\omega$. If the molecule is initially in the $n=2$ state, list the possible photon energies (in terms of $\hbar\omega$) it could emit in a single transition consistent with the selection rule $\Delta n = \pm1$, and explain why a transition directly from $n=2$ to $n=0$ does not occur by single-photon emission.
 :::
@@ -612,6 +670,8 @@ Therefore, the only allowed emitted photon has energy $\hbar\omega$.
 :::{exercise}
 :label: ex-the-schrodinger-equation-13
 
+*(Moderate)*
+
 Explain qualitatively, using the correspondence principle, why the probability density $|\psi_n(x)|^2$ of a highly excited ($n \gg 1$) harmonic-oscillator state should be largest near the classical turning points and smallest near $x=0$ — the opposite of the ground-state ($n=0$) distribution — and relate this to how much time a classical oscillator of the same energy spends near each of those locations.
 :::
 
@@ -634,6 +694,8 @@ Therefore, highly excited oscillator states have their largest probability densi
 :::{exercise}
 :label: ex-the-schrodinger-equation-14
 
+*(Moderate)*
+
 A particle of energy $E$ is incident on a potential step of height $V_0 > E$ (rather than $V_0 < E$ as in the worked example). (a) Explain why $R=1$ exactly in this case, in terms of the number of available propagating modes on the far side of the step. (b) Despite total reflection, explain (referring to the finite-well discussion) why the probability density is not simply zero for $x>0$.
 :::
 
@@ -646,6 +708,8 @@ When $V_0>E$, the wave number beyond the step is imaginary, so that region has n
 
 :::{exercise}
 :label: ex-the-schrodinger-equation-15
+
+*(Moderate)*
 
 A particle in an infinite square well of width $L$ is prepared in the $n=3$ state. (a) Sketch (in words) the shape of $|\psi_3(x)|^2$, stating the number and approximate locations of its nodes. (b) If the well width is doubled to $2L$ with the particle remaining in the state with the same quantum number $n=3$, by what factor does $E_3$ change?
 :::
@@ -664,6 +728,8 @@ Therefore, the state has two interior nodes and its energy becomes one-quarter a
 :::{exercise}
 :label: ex-the-schrodinger-equation-16
 
+*(Moderate)*
+
 Explain why a free-particle plane wave $\Psi \propto e^{i(kx-\omega t)}$ cannot be normalized, and explain, referring to the uncertainty principle, why this is an unavoidable consequence of the wave having a perfectly sharp, definite momentum $p=\hbar k$.
 :::
 
@@ -676,6 +742,8 @@ A plane wave has constant $|\Psi|^2$, so $\int_{-\infty}^{\infty}|\Psi|^2dx$ div
 
 :::{exercise}
 :label: ex-the-schrodinger-equation-17
+
+*(Challenging)*
 
 Using the even-solution matching condition $k\tan(kL/2)=\kappa$ for the symmetric finite square well, explain (without solving numerically) why increasing the well depth $V_0$ at fixed width $L$ tends to increase the number of bound states, referring to how $\kappa$ depends on $V_0$.
 :::
@@ -699,6 +767,8 @@ Therefore, a deeper finite well supports more bound states.
 :::{exercise}
 :label: ex-the-schrodinger-equation-18
 
+*(Challenging)*
+
 Repeat the alpha-decay order-of-magnitude estimate in the worked example, but for a barrier width of $L=10\ \text{fm}$ instead of $7\ \text{fm}$, keeping $\Delta E = 20\ \text{MeV}$ unchanged. Find the new tunneling probability $T$ and the resulting order-of-magnitude half-life estimate, and comment on how sensitively the result depends on the assumed barrier width.
 :::
 
@@ -716,6 +786,8 @@ With assault frequency $10^{21}\ \text{s}^{-1}$, the decay rate is about $9.4\ti
 :::{exercise}
 :label: ex-the-schrodinger-equation-19
 
+*(Challenging)*
+
 State the number of nodes you expect for the harmonic-oscillator wave function $\psi_4(x)$ ($n=4$), and compare this to the number of interior nodes of the $n=5$ infinite-square-well wave function. Explain why the two specified states have the same number of nodes even though their quantum-number labels differ.
 :::
 
@@ -728,6 +800,8 @@ The harmonic-oscillator state $\psi_n$ has exactly $n$ nodes, so $\psi_4$ has fo
 
 :::{exercise}
 :label: ex-the-schrodinger-equation-20
+
+*(Challenging)*
 
 A macroscopic pendulum of mass $0.50\ \text{kg}$ and angular frequency $\omega = 2.0\ \text{rad/s}$ is released from an amplitude corresponding to a total energy of $1.0\times10^{-3}\ \text{J}$. Estimate its effective quantum number $n$ (from $E_n \approx n\hbar\omega$ for large $n$), and comment on why this pendulum's motion appears entirely classical and continuous despite formally obeying the same quantized-energy law as the harmonic oscillator of this chapter.
 :::

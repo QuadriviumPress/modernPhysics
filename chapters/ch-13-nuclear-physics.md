@@ -422,10 +422,38 @@ in agreement with the accepted value. Conservation of momentum (the reacting nuc
 - A radioactive **decay chain** links successive unstable nuclides (e.g. $^{238}\text{U}$ through fourteen alpha and beta decays to stable $^{206}\text{Pb}$) until a stable nuclide is reached, reaching **secular equilibrium** when run undisturbed for long enough; the same exponential decay law underlies **radiocarbon dating** of once-living material.
 - **Fusion** proceeds in stars via the multi-step **proton-proton chain** ($4\,{}^1\text{H}\to{}^4\text{He}+2e^++2\nu_e$, net $26.7\ \text{MeV}$) and in terrestrial reactors via the faster **deuterium-tritium reaction** ($17.6\ \text{MeV}$ per event), the latter pursued in magnetic-confinement devices such as tokamaks.
 
+## Check Your Understanding
+
+1. What does the near constancy of nuclear density imply about how nuclear radius scales with mass number?
+2. How are decay constant and half-life related?
+3. Why can both fusion of light nuclei and fission of heavy nuclei release energy?
+
+:::{dropdown} Answers
+1. $R\propto A^{1/3}$, so volume is proportional to nucleon number.
+2. $t_{1/2}=\ln2/\lambda$.
+3. Both move products upward toward the peak of the binding-energy-per-nucleon curve near iron and nickel.
+:::
+
+## Conceptual Questions
+
+1. Why does the short range of the strong force lead to approximately constant nuclear density?
+
+2. Distinguish mass defect from binding energy while explaining why they contain the same physical information.
+
+3. Why is radioactive decay exponential even though no nucleus becomes more likely to decay merely because it is old?
+
+4. How do alpha, beta, and gamma decay change $A$ and $Z$ differently?
+
+5. Why are slow neutrons especially effective at sustaining fission in many reactors?
+
+6. Fusion releases energy, yet positively charged nuclei repel. What physical barrier must a reactor or star overcome?
+
 ## Problems
 
 :::{exercise}
 :label: ex-nuclear-physics-1
+
+*(Straightforward)*
 
 Estimate the nuclear radius of $^{238}_{92}\text{U}$ and of $^{4}_{2}\text{He}$ using $R = R_0A^{1/3}$, and compute the ratio of their radii. Comment on whether this ratio is consistent with $A^{1/3}$ scaling given the ratio of their mass numbers.
 :::
@@ -443,6 +471,8 @@ Their ratio is $7.44/1.90=3.91$, while $(238/4)^{1/3}=3.90$.  Therefore, uranium
 
 :::{exercise}
 :label: ex-nuclear-physics-2
+
+*(Straightforward)*
 
 Compute the binding energy and binding energy per nucleon of $^{4}_{2}\text{He}$, given $M(^4_2\text{He}) = 4.002602\ \text{u}$, $m_p = 1.007276\ \text{u}$, $m_n=1.008665\ \text{u}$, and using $1\ \text{u}\,c^2 = 931.5\ \text{MeV}$ (you may neglect the small correction from atomic electron binding energies).
 :::
@@ -462,6 +492,8 @@ This value is one of the low-$A$ points on the rising left flank of {numref}`Fig
 
 :::{exercise}
 :label: ex-nuclear-physics-3
+
+*(Straightforward)*
 
 A radioactive sample of $^{131}_{53}\text{I}$ (half-life $8.02$ days) initially contains $N_0 = 1.00\times10^{18}$ nuclei. (a) Find the decay constant $\lambda$. (b) Find the number of nuclei remaining after $24$ days. (c) Find the initial activity, in becquerels (decays/s).
 :::
@@ -491,6 +523,8 @@ Therefore, $\lambda=1.00\times10^{-6}\ \text{s}^{-1}$, $1.26\times10^{17}$ nucle
 :::{exercise}
 :label: ex-nuclear-physics-4
 
+*(Straightforward)*
+
 $^{238}_{92}\text{U}$ undergoes alpha decay to $^{234}_{90}\text{Th}$. Write the full decay equation, and explain, using the shape of the binding-energy-per-nucleon curve, why alpha decay (rather than, say, single-proton emission) is the energetically favored decay mode for very heavy nuclei.
 :::
 
@@ -508,6 +542,8 @@ An alpha particle is an exceptionally tightly bound cluster, and its emission mo
 :::{exercise}
 :label: ex-nuclear-physics-5
 
+*(Moderate)*
+
 In beta-minus decay of a free neutron, $n \to p + e^- + \bar\nu_e$, use $m_nc^2 = 939.57\ \text{MeV}$, $m_pc^2 = 938.27\ \text{MeV}$, $m_ec^2 = 0.511\ \text{MeV}$ (and treat the antineutrino as massless) to find the total kinetic energy shared among the three decay products. Explain why the electron's kinetic energy alone is not fixed at this value, but instead varies continuously up to it.
 :::
 
@@ -524,6 +560,8 @@ Therefore, the proton, electron, and antineutrino share $0.789\ \text{MeV}$ of k
 
 :::{exercise}
 :label: ex-nuclear-physics-6
+
+*(Moderate)*
 
 In the fission of $^{235}_{92}\text{U}$ (via neutron absorption to $^{236}_{92}\text{U}$, then fission), roughly $200\ \text{MeV}$ is released per event. Estimate the mass (in kg) of $^{235}\text{U}$ that would need to fission completely to release $1.0\times10^{14}\ \text{J}$ (order of magnitude of a small commercial reactor's daily output), using Avogadro's number and the molar mass of $^{235}\text{U}$.
 :::
@@ -546,6 +584,8 @@ Therefore, complete fission of about $1.2\ \text{kg}$ of uranium-235 releases $1
 :::{exercise}
 :label: ex-nuclear-physics-7
 
+*(Moderate)*
+
 Using the semi-empirical mass formula coefficients given in the text, compute the predicted binding energy per nucleon of $^{120}_{50}\text{Sn}$ ($N=70$, even–even). Compare your result to the measured value, $8.51\ \text{MeV/nucleon}$, and comment on the size and likely origin of any discrepancy.
 :::
 
@@ -564,6 +604,8 @@ Thus $E_B=1860.0-408.7-357.7-76.7+0.94=1018\ \text{MeV}$ and $E_B/A=8.48\ \text{
 
 :::{exercise}
 :label: ex-nuclear-physics-8
+
+*(Moderate)*
 
 In the uranium-238 decay chain, $^{226}_{88}\text{Ra}$ (half-life $1600\ \text{yr}$) alpha-decays to $^{222}_{86}\text{Rn}$ (half-life $3.8$ days). A sealed sample containing $1.00\ \text{g}$ of $^{226}\text{Ra}$ has been undisturbed for many thousands of years — far longer than radon's half-life, so the radon has reached secular equilibrium with its radium parent. Using the result of the radium worked example, find the activity, in becquerels, of the $^{222}\text{Rn}$ in the sample. (Hint: what must the daughter's activity equal, in secular equilibrium?)
 :::
@@ -587,6 +629,8 @@ Therefore, the radon-222 activity is $3.7\times10^{10}\ \text{Bq}$, even though 
 :::{exercise}
 :label: ex-nuclear-physics-9
 
+*(Challenging)*
+
 A bone fragment has a measured $^{14}\text{C}$ activity that is $42.0\%$ of that of living bone. Using $T_{1/2}=5730\ \text{years}$ for $^{14}\text{C}$, find the fragment's age.
 :::
 
@@ -603,6 +647,8 @@ This is the point marked on the $^{14}\text{C}$ curve in {numref}`Figure %s <fig
 
 :::{exercise}
 :label: ex-nuclear-physics-10
+
+*(Challenging)*
 
 Verify the claim in the deuterium-tritium fusion worked example that momentum conservation splits the reaction's $17.6\ \text{MeV}$ Q-value into $3.5\ \text{MeV}$ (carried by the alpha particle) and $14.1\ \text{MeV}$ (carried by the neutron): treating the initial deuteron and triton as essentially at rest, set the magnitudes of the final alpha-particle and neutron momenta equal (nonrelativistic momentum conservation) and solve for each product's share of the total kinetic energy in terms of the two product masses ($m_\alpha \approx 4.00\ \text{u}$, $m_n\approx1.01\ \text{u}$).
 :::

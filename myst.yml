@@ -31,6 +31,10 @@ project:
   # No `banner:` — book-theme validates the key but has no render path for it
   # (only article-theme draws one), so the asset would never appear.
   thumbnail: images/social-card.png
+  # Formal sources for historical results, standard data, and further reading.
+  # Licensing and prose/figure provenance remain in SOURCES.md.
+  bibliography:
+    - back/references.bib
   # Expanded on first use in the text; these render as hover tooltips.
   abbreviations:
     CM: center of momentum
@@ -46,13 +50,21 @@ project:
     UV: ultraviolet
   plugins:
     - plugins/simulation.mjs
+    # Locally authored looping canvas figures with static print fallbacks.
+    - plugins/animation.mjs
+    # Privacy-conscious YouTube/Vimeo embeds with poster fallbacks and links.
+    - plugins/video.mjs
     # Rewrites exercises, solutions, margin notes and dropdowns into nodes the
     # LaTeX/DOCX renderers understand. Inert unless MYST_PRINT is set, so the
     # website build is untouched; see plugins/export.mjs.
     - plugins/export.mjs
-  # The simulation directive emits an iframe for the website beside a screenshot
-  # for print. plugins/export.mjs strips the iframe before the tex renderer sees
-  # it, but a stray one must not fail the build.
+  # The animation directive uses stable same-origin iframe URLs. MyST would
+  # otherwise content-hash these standalone HTML modules and break imports.
+  static_files:
+    - animations
+  # The media directives emit a website iframe beside a static print fallback.
+  # plugins/export.mjs strips the iframe before the tex renderer sees it, but a
+  # stray one must not fail the build.
   error_rules:
     - id: tex-renders
       severity: warn
@@ -142,8 +154,12 @@ project:
           level: 0
         - file: appendix-teaching-guide.md
           level: 0
-  # Website sidebar: chapters only (no Part I / Part II groupings). The
-  # right-hand page outline supplies each chapter's numbered reading sections.
+        - file: back/glossary.md
+          level: 0
+        - file: back/references.md
+          level: 0
+  # Website sidebar: a flat reading order with no Part I / Part II groupings.
+  # The right-hand page outline supplies each chapter's numbered sections.
   # Keeping section anchors out of this list avoids duplicating every heading
   # and lets MyST apply BASE_URL correctly on Pages, forks, and custom domains.
   toc:
@@ -164,6 +180,8 @@ project:
     - file: chapters/ch-13-nuclear-physics.md
     - file: chapters/ch-14-elementary-particles-and-the-standard-model.md
     - file: appendix-teaching-guide.md
+    - file: back/glossary.md
+    - file: back/references.md
 site:
   template: book-theme
   title: Modern Physics
@@ -187,6 +205,6 @@ site:
     # Chapters number ## reading sections (N.1, N.2, …); depth 2 keeps the
     # right-hand outline to those assignable units (plus Summary / Problems).
     outline_maxdepth: 2
-    # Hides the static simulation screenshots on screen and swaps them back in
-    # for print; see plugins/simulation.mjs.
+    # Hides static fallbacks for interactive media on screen and restores them
+    # for print; see the media plugins in plugins/.
     style: plugins/simulation.css

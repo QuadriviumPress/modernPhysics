@@ -34,6 +34,7 @@ python3 scripts/figures/ch14_figures.py      # Feynman diagrams / Standard Model
 python3 scripts/figures/ch14_solutions.py    # figures embedded in ch. 14 worked solutions
 python3 scripts/figures/simulation_placeholder.py   # fallback card for {simulation}
 python3 scripts/figures/brand_assets.py             # social card, favicon, header logos
+python3 scripts/figures/media_fallbacks.py           # static fallbacks for local animations
 ```
 
 Each script prints the files it writes. Commit the regenerated SVGs along with
@@ -69,6 +70,7 @@ any change to the scripts, so the site and the source stay in step.
 | `ch14_solutions.py` | Solution-only figures: conservation-law pass/fail checklist (5 reactions × Q/B/L/S), $K^-$/$K^+$ antiparticle quantum-number comparison, muon-decay Feynman diagram (reuses `ch14_figures._fermion_line`/`_wavy_line`), muon decay-length vs. energy curve, electron-pair vs. proton-pair gravity/EM force-ratio comparison |
 | `simulation_placeholder.py` | The generic fallback card shown in PDF, DOCX, and print for a `{simulation}` with no screenshot |
 | `brand_assets.py` | Site identity: the 1200×630 social card, the multi-size `favicon.ico`, and the light/dark header logos |
+| `media_fallbacks.py` | Print-safe static versions of the path/phase, standing-wave, Fourier, two-frequency, linewidth, and particle-in-a-box animations |
 
 ## Conventions
 

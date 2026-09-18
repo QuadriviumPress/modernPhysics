@@ -1,6 +1,6 @@
 # MyST plugins
 
-Four plugins address the same problem: the website can do things paper cannot,
+Five plugins address the same problem: the website can do things paper cannot,
 and the book still has to survive PDF, Word, Markdown, and browser printing.
 
 - [`simulation.mjs`](simulation.mjs) — embeds a running browser simulation on
@@ -10,12 +10,14 @@ and the book still has to survive PDF, Word, Markdown, and browser printing.
   falls back to a static figure. Provides `{animation}` (alias `{anim}`).
 - [`video.mjs`](video.mjs) — embeds YouTube or Vimeo through a privacy-conscious
   player and falls back to a poster plus durable source link. Provides `{video}`.
+- [`h5p.mjs`](h5p.mjs) — embeds the book's self-hosted, auto-graded chapter
+  reviews and retains the written questions as a static fallback. Provides `{h5p}`.
 - [`simulation.css`](simulation.css) — hides all media fallbacks on screen and
   restores them for browser print.
 - [`export.mjs`](export.mjs) — rewrites the node types no export renderer
   handles into ones every renderer handles. Inert unless `MYST_PRINT` is set.
 
-All three are registered in [`../myst.yml`](../myst.yml):
+All four media plugins are registered in [`../myst.yml`](../myst.yml):
 
 ```yaml
 project:
@@ -23,9 +25,11 @@ project:
     - plugins/simulation.mjs
     - plugins/animation.mjs
     - plugins/video.mjs
+    - plugins/h5p.mjs
     - plugins/export.mjs
   static_files:
     - animations
+    - .generated/h5p
 site:
   options:
     style: plugins/simulation.css

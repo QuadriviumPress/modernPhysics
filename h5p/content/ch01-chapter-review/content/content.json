@@ -1,0 +1,366 @@
+{
+  "progressType": "dots",
+  "passPercentage": 80,
+  "questions": [
+    {
+      "library": "H5P.MultiChoice 1.16",
+      "subContentId": "73631d5d-feec-4684-9b28-4848101deb4e",
+      "metadata": {
+        "title": "Why are the Michelson–Morley interferometer’s two perpendicular arms essential to the ether-wind test?",
+        "license": "CC BY-NC-SA",
+        "licenseVersion": "4.0",
+        "contentType": "Multiple Choice"
+      },
+      "params": {
+        "question": "<p>Why are the Michelson–Morley interferometer’s two perpendicular arms essential to the ether-wind test?</p>",
+        "media": {
+          "type": {
+            "library": "H5P.Image 1.1",
+            "subContentId": "ea6304b9-1fc7-4c3e-8591-d85cacb99f44",
+            "metadata": {
+              "title": "Schematic of the Michelson–Morley interferometer with perpendicular light paths, a beam splitter, mirrors, and a detector.",
+              "license": "CC BY-NC-SA",
+              "licenseVersion": "4.0",
+              "contentType": "Image"
+            },
+            "params": {
+              "contentName": "Image",
+              "alt": "Schematic of the Michelson–Morley interferometer with perpendicular light paths, a beam splitter, mirrors, and a detector.",
+              "decorative": false,
+              "file": {
+                "path": "images/ch01-michelson-morley.svg",
+                "mime": "image/svg+xml",
+                "width": 760,
+                "height": 390
+              }
+            }
+          },
+          "disableImageZooming": false
+        },
+        "answers": [
+          {
+            "text": "<div>Rotating the apparatus swaps the arms’ orientation relative to the proposed ether wind, so a directional travel-time difference would change.</div>",
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "Yes—this is one of the correct choices.",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<div>They force light to travel faster in one arm than in the other.</div>",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "Not this one. Revisit the chapter summary and try again.",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<div>They make one beam pass through water while the other remains in air.</div>",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "Not this one. Revisit the chapter summary and try again.",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<div>They remove the need to compare the phases of the returning beams.</div>",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "Not this one. Revisit the chapter summary and try again.",
+              "notChosenFeedback": ""
+            }
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "enableCheckButton": true,
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100,
+            "feedback": "You got @score of @total points."
+          }
+        ],
+        "UI": {
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "checkAnswerButton": "Check",
+          "submitAnswerButton": "Submit",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution",
+          "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+          "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+          "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+        }
+      }
+    },
+    {
+      "library": "H5P.TrueFalse 1.8",
+      "subContentId": "d5d715c0-ca6c-4588-b54c-6882003d7a02",
+      "metadata": {
+        "title": "To first order in the water speed divided by c, relativistic velocity addition reproduces Fizeau’s partial-drag coefficient 1 − 1/n².",
+        "license": "CC BY-NC-SA",
+        "licenseVersion": "4.0",
+        "contentType": "True/False Question"
+      },
+      "params": {
+        "question": "<p>To first order in the water speed divided by c, relativistic velocity addition reproduces Fizeau’s partial-drag coefficient 1 − 1/n².</p>",
+        "correct": "true",
+        "media": {
+          "disableImageZooming": false
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "enableCheckButton": true,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false
+        },
+        "l10n": {
+          "trueText": "True",
+          "falseText": "False",
+          "score": "You got @score of @total points",
+          "checkAnswer": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgain": "Retry",
+          "submitAnswer": "Submit",
+          "wrongAnswerMessage": "That answer is incorrect.",
+          "correctAnswerMessage": "Correct.",
+          "scoreBarLabel": "You got :num out of :total points",
+          "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+          "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+          "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+        }
+      }
+    },
+    {
+      "library": "H5P.DragText 1.10",
+      "subContentId": "5f922a72-05f4-4785-8bbc-443f0ce4726f",
+      "metadata": {
+        "title": "Complete the contrast between Galilean kinematics and the optical null result.",
+        "license": "CC BY-NC-SA",
+        "licenseVersion": "4.0",
+        "contentType": "Drag the Words"
+      },
+      "params": {
+        "taskDescription": "<p>Complete the contrast between Galilean kinematics and the optical null result.</p>",
+        "textField": "The Galilean rule gives u′x = *ux − v*. It therefore predicts an *ether wind* for a moving laboratory, whereas Michelson–Morley found *no systematic fringe shift*. Einstein instead required every inertial observer to measure the same vacuum light speed *c*.",
+        "distractors": "*ux + v*\n*complete ether drag*",
+        "media": {
+          "disableImageZooming": false
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "enableCheckButton": true,
+          "instantFeedback": false
+        },
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100,
+            "feedback": "You placed @score of @total terms correctly."
+          }
+        ],
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "dropZoneIndex": "Drop zone @index.",
+        "empty": "Drop zone @index is empty.",
+        "contains": "Drop zone @index contains draggable @draggable.",
+        "ariaDraggableIndex": "@index of @count draggables.",
+        "tipLabel": "Show tip",
+        "correctText": "Correct!",
+        "incorrectText": "Incorrect!",
+        "resetDropTitle": "Reset drop",
+        "resetDropDescription": "Are you sure you want to reset this drop zone?",
+        "grabbed": "Draggable is grabbed.",
+        "cancelledDragging": "Cancelled dragging.",
+        "correctAnswer": "Correct answer:",
+        "feedbackHeader": "Feedback",
+        "scoreBarLabel": "You got :num out of :total points",
+        "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+        "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+        "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+      }
+    },
+    {
+      "library": "H5P.Blanks 1.14",
+      "subContentId": "3a683492-b857-4a33-a112-ae3d57d1944a",
+      "metadata": {
+        "title": "Complete the comparison between the predicted and observed Michelson–Morley signals.",
+        "license": "CC BY-NC-SA",
+        "licenseVersion": "4.0",
+        "contentType": "Fill in the Blanks"
+      },
+      "params": {
+        "text": "<p>Complete the comparison between the predicted and observed Michelson–Morley signals.</p>",
+        "questions": [
+          "<p>For the 1887 apparatus, a stationary-ether model predicted about *0.4/.4* fringe, while rotation produced *no/zero/0* systematic fringe shift.</p>"
+        ],
+        "media": {
+          "disableImageZooming": false
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "enableCheckButton": true,
+          "autoCheck": false,
+          "caseSensitive": false,
+          "showSolutionsRequiresInput": true,
+          "separateLines": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "acceptSpellingErrors": false
+        },
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100,
+            "feedback": "You completed @score of @total blanks correctly."
+          }
+        ],
+        "showSolutions": "Show solution",
+        "tryAgain": "Retry",
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "notFilledOut": "Please fill in all blanks to view the solution",
+        "answerIsCorrect": "':ans' is correct",
+        "answerIsWrong": "':ans' is wrong",
+        "answeredCorrectly": "Answered correctly",
+        "answeredIncorrectly": "Answered incorrectly",
+        "solutionLabel": "Correct answer:",
+        "inputLabel": "Blank input @num of @total",
+        "inputHasTipLabel": "Tip available",
+        "tipLabel": "Tip",
+        "scoreBarLabel": "You got :num out of :total points",
+        "a11yCheckingModeHeader": "Checking mode",
+        "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+        "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+        "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+      }
+    },
+    {
+      "library": "H5P.MarkTheWords 1.11",
+      "subContentId": "0b2ae41a-bf53-4b56-b272-b43fe9106822",
+      "metadata": {
+        "title": "Mark the two statements that form Einstein’s postulates.",
+        "license": "CC BY-NC-SA",
+        "licenseVersion": "4.0",
+        "contentType": "Mark the Words"
+      },
+      "params": {
+        "taskDescription": "<p>Mark the two statements that form Einstein’s postulates.</p>",
+        "textField": "The *laws of physics have the same form in every inertial frame*, and the *vacuum speed of light is the same for every inertial observer*. An ether wind and absolute uniform motion are therefore not observable.",
+        "media": {
+          "disableImageZooming": false
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "enableCheckButton": true,
+          "showScorePoints": true
+        },
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100,
+            "feedback": "You marked @score of @total terms correctly."
+          }
+        ],
+        "checkAnswerButton": "Check",
+        "submitAnswerButton": "Submit",
+        "tryAgainButton": "Retry",
+        "showSolutionButton": "Show solution",
+        "correctAnswer": "Correct!",
+        "incorrectAnswer": "Incorrect!",
+        "missedAnswer": "Answer not found!",
+        "displaySolutionDescription": "The text now shows the solution.",
+        "scoreBarLabel": "You got :num out of :total points",
+        "a11yFullTextLabel": "Full readable text",
+        "a11yClickableTextLabel": "Full text where words can be marked",
+        "a11ySolutionModeHeader": "Solution mode",
+        "a11yCheckingHeader": "Checking mode",
+        "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+        "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+        "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+      }
+    }
+  ],
+  "introPage": {
+    "showIntroPage": false,
+    "title": "The Need for Relativity Review",
+    "introduction": "<p>Five short questions review the chapter.</p>",
+    "startButtonText": "Start review"
+  },
+  "texts": {
+    "prevButton": "Previous question",
+    "previous": "Previous",
+    "nextButton": "Next question",
+    "next": "Next",
+    "finishButton": "Finish",
+    "submitButton": "Submit",
+    "textualProgress": "Question @current of @total",
+    "jumpToQuestion": "Question %d of %total",
+    "questionLabel": "Question",
+    "readSpeakerProgress": "Question @current of @total",
+    "unansweredText": "Unanswered",
+    "answeredText": "Answered",
+    "currentQuestionText": "Current question",
+    "navigationLabel": "Questions",
+    "questionSetInstruction": "Choose a question to display"
+  },
+  "disableBackwardsNavigation": false,
+  "randomQuestions": false,
+  "endGame": {
+    "showResultPage": true,
+    "showSolutionButton": true,
+    "showRetryButton": true,
+    "noResultMessage": "Finished",
+    "message": "Chapter review complete",
+    "amountCorrect": "@finals of @totals correct",
+    "scoreBarLabel": "You got @finals out of @totals points",
+    "scoreHeader": "Score",
+    "overallFeedback": [
+      {
+        "from": 0,
+        "to": 100,
+        "feedback": "You earned @score of @total points."
+      }
+    ],
+    "solutionButtonText": "Show solutions",
+    "retryButtonText": "Retry",
+    "finishButtonText": "Finish",
+    "submitButtonText": "Submit",
+    "showAnimations": false,
+    "skippable": false,
+    "skipButtonText": "Skip video"
+  },
+  "override": {
+    "checkButton": true,
+    "showSolutionButton": "on",
+    "retryButton": "on"
+  }
+}

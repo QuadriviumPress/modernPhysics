@@ -316,14 +316,17 @@ Note that a Newtonian calculation of the speed from $K = \tfrac12 mu^2$ would gi
 
 ## Check Your Understanding
 
-1. What is the low-speed limit of relativistic momentum $p=\gamma mv$?
-2. Which combination of total energy and momentum is invariant?
-3. Why is a collider more efficient than a fixed-target accelerator for creating new particles?
+Five short, auto-graded questions cycle within one compact activity. The set mixes multiple choice, true/false, drag-the-words, fill-in-the-blank, and mark-the-words formats, and opens on the energy–momentum diagram.
 
-:::{dropdown} Answers
-1. Since $\gamma\to1$, it becomes the Newtonian result $p=mv$.
-2. $E^2-p^2c^2=m^2c^4$.
-3. Opposing beams can have zero total momentum, so nearly all their energy is available as center-of-momentum energy instead of remaining as bulk motion.
+:::{h5p} ch03-chapter-review
+:label: check:ch03-chapter-review
+:title: Chapter 3 interactive review
+
+1. **Multiple choice, from a figure.** For a massless particle, what happens to the energy–momentum triangle: the rest-energy leg becomes zero and $E=pc$; the momentum leg becomes zero and $E=mc^2$; all sides remain nonzero and equal; or total energy becomes zero at nonzero momentum?
+2. **True or false.** For the same total beam energy, a fixed-target experiment makes as much center-of-momentum energy available for new particles as a head-on collider.
+3. **Drag the words.** Complete: a massive particle has $p =$ ___, $K =$ ___, and $E =$ ___; a massless photon obeys $E =$ ___. (Terms: $\gamma mu$, $(\gamma-1)mc^2$, $\gamma mc^2$, $pc$, $mu$, $mc^2$.)
+4. **Fill in the blanks.** At $u=0.6c$, $\gamma =$ ___, so the kinetic energy is ___ $mc^2$.
+5. **Mark the words.** Identify the frame and system property used most directly in a threshold calculation: “In the center-of-momentum frame the total momentum is zero, and the system's invariant mass determines which final-state rest masses can be created.”
 :::
 
 ## Conceptual Questions

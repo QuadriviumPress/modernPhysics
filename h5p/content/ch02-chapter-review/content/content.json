@@ -1,0 +1,366 @@
+{
+  "progressType": "dots",
+  "passPercentage": 80,
+  "questions": [
+    {
+      "library": "H5P.MultiChoice 1.16",
+      "subContentId": "738e49ed-383a-451d-a21d-868d15dc91be",
+      "metadata": {
+        "title": "A second event lies in the region labelled “elsewhere,” outside the origin’s light cone. How is it separated from the origin?",
+        "license": "CC BY-NC-SA",
+        "licenseVersion": "4.0",
+        "contentType": "Multiple Choice"
+      },
+      "params": {
+        "question": "<p>A second event lies in the region labelled “elsewhere,” outside the origin’s light cone. How is it separated from the origin?</p>",
+        "media": {
+          "type": {
+            "library": "H5P.Image 1.1",
+            "subContentId": "3ea040d8-e238-4697-a66a-6e98d6f6ca71",
+            "metadata": {
+              "title": "Spacetime diagram showing the future and past light cones, timelike regions inside them, and spacelike regions outside them.",
+              "license": "CC BY-NC-SA",
+              "licenseVersion": "4.0",
+              "contentType": "Image"
+            },
+            "params": {
+              "contentName": "Image",
+              "alt": "Spacetime diagram showing the future and past light cones, timelike regions inside them, and spacelike regions outside them.",
+              "decorative": false,
+              "file": {
+                "path": "images/ch02-light-cone.svg",
+                "mime": "image/svg+xml",
+                "width": 700,
+                "height": 430
+              }
+            }
+          },
+          "disableImageZooming": false
+        },
+        "answers": [
+          {
+            "text": "<div>Spacelike: different inertial frames may reverse the event order, but no sub-light signal can connect the events.</div>",
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "Yes—this is one of the correct choices.",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<div>Timelike: every inertial frame must agree that it occurs after the origin.</div>",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "Not this one. Revisit the chapter summary and try again.",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<div>Lightlike: only a light signal can connect it to the origin.</div>",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "Not this one. Revisit the chapter summary and try again.",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<div>Simultaneous in every inertial frame.</div>",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "Not this one. Revisit the chapter summary and try again.",
+              "notChosenFeedback": ""
+            }
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "enableCheckButton": true,
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100,
+            "feedback": "You got @score of @total points."
+          }
+        ],
+        "UI": {
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "checkAnswerButton": "Check",
+          "submitAnswerButton": "Submit",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution",
+          "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+          "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+          "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+        }
+      }
+    },
+    {
+      "library": "H5P.TrueFalse 1.8",
+      "subContentId": "f69ee09b-e89e-437c-8158-385349d02e0c",
+      "metadata": {
+        "title": "The proper time between two events is measured by one clock that is present at both events.",
+        "license": "CC BY-NC-SA",
+        "licenseVersion": "4.0",
+        "contentType": "True/False Question"
+      },
+      "params": {
+        "question": "<p>The proper time between two events is measured by one clock that is present at both events.</p>",
+        "correct": "true",
+        "media": {
+          "disableImageZooming": false
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "enableCheckButton": true,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false
+        },
+        "l10n": {
+          "trueText": "True",
+          "falseText": "False",
+          "score": "You got @score of @total points",
+          "checkAnswer": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgain": "Retry",
+          "submitAnswer": "Submit",
+          "wrongAnswerMessage": "That answer is incorrect.",
+          "correctAnswerMessage": "Correct.",
+          "scoreBarLabel": "You got :num out of :total points",
+          "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+          "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+          "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+        }
+      }
+    },
+    {
+      "library": "H5P.DragText 1.10",
+      "subContentId": "b7c5a8ff-cbfc-4644-901b-3e46c2c581b6",
+      "metadata": {
+        "title": "Complete the three central transformation rules.",
+        "license": "CC BY-NC-SA",
+        "licenseVersion": "4.0",
+        "contentType": "Drag the Words"
+      },
+      "params": {
+        "taskDescription": "<p>Complete the three central transformation rules.</p>",
+        "textField": "A moving clock accumulates *less* proper time, a moving object contracts *along the direction of motion*, and all inertial observers calculate the same *spacetime interval*. The separate time and space differences are *frame dependent*.",
+        "distractors": "*more*\n*in every direction*",
+        "media": {
+          "disableImageZooming": false
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "enableCheckButton": true,
+          "instantFeedback": false
+        },
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100,
+            "feedback": "You placed @score of @total terms correctly."
+          }
+        ],
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "dropZoneIndex": "Drop zone @index.",
+        "empty": "Drop zone @index is empty.",
+        "contains": "Drop zone @index contains draggable @draggable.",
+        "ariaDraggableIndex": "@index of @count draggables.",
+        "tipLabel": "Show tip",
+        "correctText": "Correct!",
+        "incorrectText": "Incorrect!",
+        "resetDropTitle": "Reset drop",
+        "resetDropDescription": "Are you sure you want to reset this drop zone?",
+        "grabbed": "Draggable is grabbed.",
+        "cancelledDragging": "Cancelled dragging.",
+        "correctAnswer": "Correct answer:",
+        "feedbackHeader": "Feedback",
+        "scoreBarLabel": "You got :num out of :total points",
+        "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+        "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+        "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+      }
+    },
+    {
+      "library": "H5P.Blanks 1.14",
+      "subContentId": "214df1f3-d897-4fd8-a9f2-e3efea8cdcc0",
+      "metadata": {
+        "title": "Evaluate the Lorentz factor and length contraction at 0.8c.",
+        "license": "CC BY-NC-SA",
+        "licenseVersion": "4.0",
+        "contentType": "Fill in the Blanks"
+      },
+      "params": {
+        "text": "<p>Evaluate the Lorentz factor and length contraction at 0.8c.</p>",
+        "questions": [
+          "<p>At v = 0.8c, γ = *1.67/1.667*, so a moving object’s length is *0.6* of its proper length.</p>"
+        ],
+        "media": {
+          "disableImageZooming": false
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "enableCheckButton": true,
+          "autoCheck": false,
+          "caseSensitive": false,
+          "showSolutionsRequiresInput": true,
+          "separateLines": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "acceptSpellingErrors": false
+        },
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100,
+            "feedback": "You completed @score of @total blanks correctly."
+          }
+        ],
+        "showSolutions": "Show solution",
+        "tryAgain": "Retry",
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "notFilledOut": "Please fill in all blanks to view the solution",
+        "answerIsCorrect": "':ans' is correct",
+        "answerIsWrong": "':ans' is wrong",
+        "answeredCorrectly": "Answered correctly",
+        "answeredIncorrectly": "Answered incorrectly",
+        "solutionLabel": "Correct answer:",
+        "inputLabel": "Blank input @num of @total",
+        "inputHasTipLabel": "Tip available",
+        "tipLabel": "Tip",
+        "scoreBarLabel": "You got :num out of :total points",
+        "a11yCheckingModeHeader": "Checking mode",
+        "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+        "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+        "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+      }
+    },
+    {
+      "library": "H5P.MarkTheWords 1.11",
+      "subContentId": "f66595db-6f7c-454e-a5c6-cd951a0f0227",
+      "metadata": {
+        "title": "Mark the two features that every inertial observer agrees on.",
+        "license": "CC BY-NC-SA",
+        "licenseVersion": "4.0",
+        "contentType": "Mark the Words"
+      },
+      "params": {
+        "taskDescription": "<p>Mark the two features that every inertial observer agrees on.</p>",
+        "textField": "Observers agree on the *spacetime interval* and on an event pair’s *classification as timelike, spacelike, or lightlike*; they need not agree on the separate distance, elapsed time, or simultaneity.",
+        "media": {
+          "disableImageZooming": false
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "enableCheckButton": true,
+          "showScorePoints": true
+        },
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100,
+            "feedback": "You marked @score of @total terms correctly."
+          }
+        ],
+        "checkAnswerButton": "Check",
+        "submitAnswerButton": "Submit",
+        "tryAgainButton": "Retry",
+        "showSolutionButton": "Show solution",
+        "correctAnswer": "Correct!",
+        "incorrectAnswer": "Incorrect!",
+        "missedAnswer": "Answer not found!",
+        "displaySolutionDescription": "The text now shows the solution.",
+        "scoreBarLabel": "You got :num out of :total points",
+        "a11yFullTextLabel": "Full readable text",
+        "a11yClickableTextLabel": "Full text where words can be marked",
+        "a11ySolutionModeHeader": "Solution mode",
+        "a11yCheckingHeader": "Checking mode",
+        "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+        "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+        "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+      }
+    }
+  ],
+  "introPage": {
+    "showIntroPage": false,
+    "title": "Special Relativity Review",
+    "introduction": "<p>Five short questions review the chapter.</p>",
+    "startButtonText": "Start review"
+  },
+  "texts": {
+    "prevButton": "Previous question",
+    "previous": "Previous",
+    "nextButton": "Next question",
+    "next": "Next",
+    "finishButton": "Finish",
+    "submitButton": "Submit",
+    "textualProgress": "Question @current of @total",
+    "jumpToQuestion": "Question %d of %total",
+    "questionLabel": "Question",
+    "readSpeakerProgress": "Question @current of @total",
+    "unansweredText": "Unanswered",
+    "answeredText": "Answered",
+    "currentQuestionText": "Current question",
+    "navigationLabel": "Questions",
+    "questionSetInstruction": "Choose a question to display"
+  },
+  "disableBackwardsNavigation": false,
+  "randomQuestions": false,
+  "endGame": {
+    "showResultPage": true,
+    "showSolutionButton": true,
+    "showRetryButton": true,
+    "noResultMessage": "Finished",
+    "message": "Chapter review complete",
+    "amountCorrect": "@finals of @totals correct",
+    "scoreBarLabel": "You got @finals out of @totals points",
+    "scoreHeader": "Score",
+    "overallFeedback": [
+      {
+        "from": 0,
+        "to": 100,
+        "feedback": "You earned @score of @total points."
+      }
+    ],
+    "solutionButtonText": "Show solutions",
+    "retryButtonText": "Retry",
+    "finishButtonText": "Finish",
+    "submitButtonText": "Submit",
+    "showAnimations": false,
+    "skippable": false,
+    "skipButtonText": "Skip video"
+  },
+  "override": {
+    "checkButton": true,
+    "showSolutionButton": "on",
+    "retryButton": "on"
+  }
+}

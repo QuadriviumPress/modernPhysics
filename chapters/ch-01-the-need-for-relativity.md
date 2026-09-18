@@ -313,16 +313,17 @@ It is worth appreciating just how much this single change in starting point acco
 
 ## Check Your Understanding
 
-Answer these without calculation, then open the answers to check the reasoning.
+Five short, auto-graded questions cycle within one compact activity. The set mixes multiple choice, true/false, drag-the-words, fill-in-the-blank, and mark-the-words formats, and opens with the Michelson–Morley apparatus.
 
-1. In Galilean relativity, how does an object's velocity transform between frames moving at relative speed $v$?
-2. Which result of the Michelson–Morley experiment conflicted with a stationary ether?
-3. What do Einstein's two postulates say about inertial frames and the speed of light?
+:::{h5p} ch01-chapter-review
+:label: check:ch01-chapter-review
+:title: Chapter 1 interactive review
 
-:::{dropdown} Answers
-1. Along the direction of motion, $u'_x=u_x-v$.
-2. Rotating the apparatus produced no systematic fringe shift, so no ether wind was detected.
-3. The laws of physics have the same form in every inertial frame, and every inertial observer measures vacuum light speed $c$.
+1. **Multiple choice, from a figure.** The activity reproduces the Michelson–Morley interferometer diagram. Why are its two perpendicular arms essential: rotation swaps their orientation relative to an ether wind; they force different light speeds; one contains water; or they eliminate phase comparison?
+2. **True or false.** To first order in the water speed divided by $c$, relativistic velocity addition reproduces Fizeau's partial-drag coefficient $1-1/n^2$.
+3. **Drag the words.** Complete: the Galilean rule gives $u'_x =$ ___; it predicts an ___ for a moving laboratory, whereas Michelson–Morley found ___; Einstein instead required every inertial observer to measure the same vacuum light speed ___. (Terms: $u_x-v$, ether wind, no systematic fringe shift, $c$, $u_x+v$, complete ether drag.)
+4. **Fill in the blanks.** For the 1887 apparatus, a stationary-ether model predicted about ___ fringe, while rotation produced ___ systematic fringe shift.
+5. **Mark the words.** Identify Einstein's two postulates: “The laws of physics have the same form in every inertial frame, and the vacuum speed of light is the same for every inertial observer. An ether wind and absolute uniform motion are therefore not observable.”
 :::
 
 ## Conceptual Questions

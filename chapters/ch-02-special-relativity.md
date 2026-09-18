@@ -397,14 +397,17 @@ Both descriptions—magnetic force in one frame and electric force from a net ch
 
 ## Check Your Understanding
 
-1. Which observer measures the proper time between two events?
-2. What is invariant under a Lorentz transformation: $\Delta t$, $\Delta x$, or the spacetime interval?
-3. Can a cause and its effect exchange time order between inertial frames when their separation is timelike?
+Five short, auto-graded questions cycle within one compact activity. The set mixes multiple choice, true/false, drag-the-words, fill-in-the-blank, and mark-the-words formats, and opens by reading a spacetime diagram.
 
-:::{dropdown} Answers
-1. The observer whose single clock is present at both events.
-2. The spacetime interval is invariant; the separate space and time components generally are not.
-3. No. Timelike-separated events retain their causal order in every inertial frame.
+:::{h5p} ch02-chapter-review
+:label: check:ch02-chapter-review
+:title: Chapter 2 interactive review
+
+1. **Multiple choice, from a figure.** A second event lies in the region labelled “elsewhere,” outside the origin's light cone. Is the separation spacelike, timelike, lightlike, or simultaneous in every inertial frame?
+2. **True or false.** The proper time between two events is measured by one clock that is present at both events.
+3. **Drag the words.** Complete: a moving clock accumulates ___ proper time; a moving object contracts ___; all inertial observers calculate the same ___; the separate time and space differences are ___. (Terms: less, along the direction of motion, spacetime interval, frame dependent, more, in every direction.)
+4. **Fill in the blanks.** At $v=0.8c$, $\gamma =$ ___, so a moving object's length is ___ of its proper length.
+5. **Mark the words.** Identify the two features on which every inertial observer agrees: “Observers agree on the spacetime interval and on an event pair's classification as timelike, spacelike, or lightlike; they need not agree on the separate distance, elapsed time, or simultaneity.”
 :::
 
 ## Conceptual Questions

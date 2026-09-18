@@ -1,0 +1,366 @@
+{
+  "progressType": "dots",
+  "passPercentage": 80,
+  "questions": [
+    {
+      "library": "H5P.MultiChoice 1.16",
+      "subContentId": "fe849809-a88e-4e00-9608-c3242a8cc79e",
+      "metadata": {
+        "title": "For a massless particle, what happens to the energy–momentum triangle shown above?",
+        "license": "CC BY-NC-SA",
+        "licenseVersion": "4.0",
+        "contentType": "Multiple Choice"
+      },
+      "params": {
+        "question": "<p>For a massless particle, what happens to the energy–momentum triangle shown above?</p>",
+        "media": {
+          "type": {
+            "library": "H5P.Image 1.1",
+            "subContentId": "0d2b1ca3-d02f-4cb4-98d0-c5e78b0a1769",
+            "metadata": {
+              "title": "Right triangle with legs pc and mc squared and hypotenuse E, illustrating the invariant energy–momentum relation.",
+              "license": "CC BY-NC-SA",
+              "licenseVersion": "4.0",
+              "contentType": "Image"
+            },
+            "params": {
+              "contentName": "Image",
+              "alt": "Right triangle with legs pc and mc squared and hypotenuse E, illustrating the invariant energy–momentum relation.",
+              "decorative": false,
+              "file": {
+                "path": "images/ch03-energy-momentum.svg",
+                "mime": "image/svg+xml",
+                "width": 700,
+                "height": 410
+              }
+            }
+          },
+          "disableImageZooming": false
+        },
+        "answers": [
+          {
+            "text": "<div>The rest-energy leg becomes zero, so the relation reduces to E = pc.</div>",
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "Yes—this is one of the correct choices.",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<div>The momentum leg becomes zero, so the relation reduces to E = mc².</div>",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "Not this one. Revisit the chapter summary and try again.",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<div>All three sides remain nonzero and equal.</div>",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "Not this one. Revisit the chapter summary and try again.",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<div>The total-energy side becomes zero while momentum remains nonzero.</div>",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "Not this one. Revisit the chapter summary and try again.",
+              "notChosenFeedback": ""
+            }
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "enableCheckButton": true,
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100,
+            "feedback": "You got @score of @total points."
+          }
+        ],
+        "UI": {
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "checkAnswerButton": "Check",
+          "submitAnswerButton": "Submit",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution",
+          "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+          "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+          "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+        }
+      }
+    },
+    {
+      "library": "H5P.TrueFalse 1.8",
+      "subContentId": "1aca7f5e-d579-40c3-8849-6a3d132f2dd5",
+      "metadata": {
+        "title": "For the same total beam energy, a fixed-target experiment makes as much center-of-momentum energy available for new particles as a head-on collider.",
+        "license": "CC BY-NC-SA",
+        "licenseVersion": "4.0",
+        "contentType": "True/False Question"
+      },
+      "params": {
+        "question": "<p>For the same total beam energy, a fixed-target experiment makes as much center-of-momentum energy available for new particles as a head-on collider.</p>",
+        "correct": "false",
+        "media": {
+          "disableImageZooming": false
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "enableCheckButton": true,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false
+        },
+        "l10n": {
+          "trueText": "True",
+          "falseText": "False",
+          "score": "You got @score of @total points",
+          "checkAnswer": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgain": "Retry",
+          "submitAnswer": "Submit",
+          "wrongAnswerMessage": "That answer is incorrect.",
+          "correctAnswerMessage": "Correct.",
+          "scoreBarLabel": "You got :num out of :total points",
+          "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+          "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+          "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+        }
+      }
+    },
+    {
+      "library": "H5P.DragText 1.10",
+      "subContentId": "5ecd1d29-4545-4e64-92fd-18d63febcb4d",
+      "metadata": {
+        "title": "Complete the relativistic momentum and energy relations.",
+        "license": "CC BY-NC-SA",
+        "licenseVersion": "4.0",
+        "contentType": "Drag the Words"
+      },
+      "params": {
+        "taskDescription": "<p>Complete the relativistic momentum and energy relations.</p>",
+        "textField": "A massive particle has momentum p = *γmu*, kinetic energy K = *(γ − 1)mc²*, and total energy E = *γmc²*. A massless photon obeys E = *pc*.",
+        "distractors": "*mu*\n*mc²*",
+        "media": {
+          "disableImageZooming": false
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "enableCheckButton": true,
+          "instantFeedback": false
+        },
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100,
+            "feedback": "You placed @score of @total terms correctly."
+          }
+        ],
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "dropZoneIndex": "Drop zone @index.",
+        "empty": "Drop zone @index is empty.",
+        "contains": "Drop zone @index contains draggable @draggable.",
+        "ariaDraggableIndex": "@index of @count draggables.",
+        "tipLabel": "Show tip",
+        "correctText": "Correct!",
+        "incorrectText": "Incorrect!",
+        "resetDropTitle": "Reset drop",
+        "resetDropDescription": "Are you sure you want to reset this drop zone?",
+        "grabbed": "Draggable is grabbed.",
+        "cancelledDragging": "Cancelled dragging.",
+        "correctAnswer": "Correct answer:",
+        "feedbackHeader": "Feedback",
+        "scoreBarLabel": "You got :num out of :total points",
+        "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+        "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+        "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+      }
+    },
+    {
+      "library": "H5P.Blanks 1.14",
+      "subContentId": "4c4b4bb6-7cd1-49e7-ab8e-d98959c7e709",
+      "metadata": {
+        "title": "Evaluate the energy of a particle moving at 0.6c.",
+        "license": "CC BY-NC-SA",
+        "licenseVersion": "4.0",
+        "contentType": "Fill in the Blanks"
+      },
+      "params": {
+        "text": "<p>Evaluate the energy of a particle moving at 0.6c.</p>",
+        "questions": [
+          "<p>At u = 0.6c, γ = *1.25*, so the kinetic energy is *0.25* mc².</p>"
+        ],
+        "media": {
+          "disableImageZooming": false
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "enableCheckButton": true,
+          "autoCheck": false,
+          "caseSensitive": false,
+          "showSolutionsRequiresInput": true,
+          "separateLines": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "acceptSpellingErrors": false
+        },
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100,
+            "feedback": "You completed @score of @total blanks correctly."
+          }
+        ],
+        "showSolutions": "Show solution",
+        "tryAgain": "Retry",
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "notFilledOut": "Please fill in all blanks to view the solution",
+        "answerIsCorrect": "':ans' is correct",
+        "answerIsWrong": "':ans' is wrong",
+        "answeredCorrectly": "Answered correctly",
+        "answeredIncorrectly": "Answered incorrectly",
+        "solutionLabel": "Correct answer:",
+        "inputLabel": "Blank input @num of @total",
+        "inputHasTipLabel": "Tip available",
+        "tipLabel": "Tip",
+        "scoreBarLabel": "You got :num out of :total points",
+        "a11yCheckingModeHeader": "Checking mode",
+        "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+        "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+        "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+      }
+    },
+    {
+      "library": "H5P.MarkTheWords 1.11",
+      "subContentId": "b6b5a7f3-80d7-4a9c-9ad9-ba98ae726a99",
+      "metadata": {
+        "title": "Mark the frame and system property used most directly in a threshold calculation.",
+        "license": "CC BY-NC-SA",
+        "licenseVersion": "4.0",
+        "contentType": "Mark the Words"
+      },
+      "params": {
+        "taskDescription": "<p>Mark the frame and system property used most directly in a threshold calculation.</p>",
+        "textField": "In the *center-of-momentum frame* the total momentum is zero, and the system’s *invariant mass* determines which final-state rest masses can be created.",
+        "media": {
+          "disableImageZooming": false
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "enableCheckButton": true,
+          "showScorePoints": true
+        },
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100,
+            "feedback": "You marked @score of @total terms correctly."
+          }
+        ],
+        "checkAnswerButton": "Check",
+        "submitAnswerButton": "Submit",
+        "tryAgainButton": "Retry",
+        "showSolutionButton": "Show solution",
+        "correctAnswer": "Correct!",
+        "incorrectAnswer": "Incorrect!",
+        "missedAnswer": "Answer not found!",
+        "displaySolutionDescription": "The text now shows the solution.",
+        "scoreBarLabel": "You got :num out of :total points",
+        "a11yFullTextLabel": "Full readable text",
+        "a11yClickableTextLabel": "Full text where words can be marked",
+        "a11ySolutionModeHeader": "Solution mode",
+        "a11yCheckingHeader": "Checking mode",
+        "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+        "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+        "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+      }
+    }
+  ],
+  "introPage": {
+    "showIntroPage": false,
+    "title": "Relativistic Dynamics Review",
+    "introduction": "<p>Five short questions review the chapter.</p>",
+    "startButtonText": "Start review"
+  },
+  "texts": {
+    "prevButton": "Previous question",
+    "previous": "Previous",
+    "nextButton": "Next question",
+    "next": "Next",
+    "finishButton": "Finish",
+    "submitButton": "Submit",
+    "textualProgress": "Question @current of @total",
+    "jumpToQuestion": "Question %d of %total",
+    "questionLabel": "Question",
+    "readSpeakerProgress": "Question @current of @total",
+    "unansweredText": "Unanswered",
+    "answeredText": "Answered",
+    "currentQuestionText": "Current question",
+    "navigationLabel": "Questions",
+    "questionSetInstruction": "Choose a question to display"
+  },
+  "disableBackwardsNavigation": false,
+  "randomQuestions": false,
+  "endGame": {
+    "showResultPage": true,
+    "showSolutionButton": true,
+    "showRetryButton": true,
+    "noResultMessage": "Finished",
+    "message": "Chapter review complete",
+    "amountCorrect": "@finals of @totals correct",
+    "scoreBarLabel": "You got @finals out of @totals points",
+    "scoreHeader": "Score",
+    "overallFeedback": [
+      {
+        "from": 0,
+        "to": 100,
+        "feedback": "You earned @score of @total points."
+      }
+    ],
+    "solutionButtonText": "Show solutions",
+    "retryButtonText": "Retry",
+    "finishButtonText": "Finish",
+    "submitButtonText": "Submit",
+    "showAnimations": false,
+    "skippable": false,
+    "skipButtonText": "Skip video"
+  },
+  "override": {
+    "checkButton": true,
+    "showSolutionButton": "on",
+    "retryButton": "on"
+  }
+}

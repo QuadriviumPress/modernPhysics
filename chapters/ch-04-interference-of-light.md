@@ -126,7 +126,7 @@ The practical lesson is simple: to see interference and diffraction, build apert
 
 This is a purely geometrical recipe, proposed nearly two centuries before Maxwell's electromagnetic theory existed, and it is remarkably powerful. Applied to a plane wave in open space ({numref}`Figure %s <fig:ch04-huygens>`, panel a) it simply regenerates a plane wave, which is the least it must do. Applied at an interface it reproduces the laws of reflection and refraction. And applied at an aperture it makes a prediction that the ray picture cannot: the wavelets emitted near the edges have no neighbors to cancel their sideways spread, so the wave must bend into the geometric shadow. How much it bends depends, as the scaling argument above requires, on $\lambda/a$ (panels b and c).
 
-```{figure} ../images/ch04-huygens-principle.svg
+```{animation} ch04-huygens-principle
 :label: fig:ch04-huygens
 :alt: Three panels showing Huygens wavelets rebuilding a plane wavefront, a wide aperture where only the edges bend, and a narrow aperture where the transmitted wave spreads in all directions.
 
@@ -394,7 +394,7 @@ The conditions derived so far locate the bright and dark fringes but say nothing
 
 Because both waves have the same frequency, their relative phase does not change with time; only their common phase does. Represent each wave by a vector (a phasor) whose length is the wave's amplitude and whose direction gives its phase. The whole diagram rotates rigidly at the optical frequency, so we may freeze it at any instant; adding the waves is then just adding the vectors, and the length of the resultant vector is the amplitude of the combined wave.
 
-```{figure} ../images/ch04-phasors.svg
+```{animation} ch04-phasors
 :label: fig:ch04-phasors
 :alt: Panel a, two equal phasors at angle phi with their resultant. Panel b, six phasors in a straight line for phase zero. Panel c, six phasors forming a closed hexagon.
 
@@ -547,7 +547,7 @@ The most familiar interference in everyday life needs no slits at all. The color
 
 {numref}`Figure %s <fig:ch04-thin-film-rays>` shows the situation. Light striking a film of thickness $t$ and refractive index $n_{\text{film}}$ partially reflects at the front surface (ray 1) and partially enters the film, reflects from the back surface, and re-emerges (ray 2). The two emerging beams are parallel, and the eye or a lens brings them together to interfere.
 
-```{figure} ../images/ch04-thin-film-rays.svg
+```{animation} ch04-thin-film-rays
 :label: fig:ch04-thin-film-rays
 :alt: A ray striking a thin film, splitting into a front-surface reflection labeled with a pi phase shift and a back-surface reflection with no phase shift, and the extra optical path 2 n t marked.
 
@@ -686,8 +686,9 @@ The plate length never entered — it only sets the fringe *spacing*, $\Delta x 
 
 The **Michelson interferometer** ({numref}`Figure %s <fig:ch04-michelson>`) is Young's two-path experiment rebuilt with mirrors, and it is the most consequential single instrument in this book.
 
-```{figure} ../images/ch04-michelson.svg
+```{animation} ch04-michelson
 :label: fig:ch04-michelson
+:aspect: 4:3
 :alt: Schematic of a Michelson interferometer with a source, beam splitter, compensator plate, a movable mirror and a fixed mirror on perpendicular arms, and circular fringes at the detector.
 
 The Michelson interferometer. A beam splitter divides the incoming light into two perpendicular arms; each returns from a mirror and the two recombine at the splitter. Moving one mirror by $\delta$ changes that arm's round trip by $2\delta$ and sweeps $2\delta/\lambda$ fringes past the detector. The compensator plate equalizes the amount of glass traversed by the two beams. Original schematic generated with matplotlib; see `scripts/figures/`.

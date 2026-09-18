@@ -315,7 +315,7 @@ $$
 
 Two families of lines result, sketched in {numref}`Figure %s <fig:ch12-rovibrational>`. The **R branch** ($\Delta J = +1$, $J'=J+1$) works out to $h\nu = \hbar\omega + 2B(J+1)$ for $J=0,1,2,\ldots$, giving lines above $\hbar\omega$ spaced by $2B$. The **P branch** ($\Delta J = -1$, $J'=J-1$) works out to $h\nu = \hbar\omega - 2BJ$ for $J=1,2,3,\ldots$, giving lines below $\hbar\omega$, also spaced by $2B$. No line appears at $h\nu = \hbar\omega$ itself — that would be the forbidden $\Delta J=0$ **Q branch** — leaving a characteristic gap of about $4B$ at the center of the band, a gap that is itself a direct, measurable signature of the selection rule.
 
-```{figure} ../images/ch12-rovibrational-spectrum.svg
+```{animation} ch12-rovibrational-spectrum
 :label: fig:ch12-rovibrational
 :alt: Stick spectrum of a rovibrational absorption band, showing a P branch of lines below the band origin and an R branch above it, each spaced by 2B, with a gap at the band origin where the forbidden Q branch would fall.
 

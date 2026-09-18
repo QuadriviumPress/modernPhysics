@@ -191,7 +191,7 @@ $$
 
 The chain of tiny phasors therefore turns through a total angle $\beta$ from beginning to end. A chain of equal segments turning at a uniform rate is an arc of a circle, and the resultant field is its **chord** ({numref}`Figure %s <fig:ch05-phasor-arc>`).
 
-```{figure} ../images/ch05-phasor-arc.svg
+```{animation} ch05-phasor-arc
 :label: fig:ch05-phasor-arc
 :alt: Three panels showing a chain of small phasors, straight for zero phase, curled into a semicircular arc, and closed into a full circle with zero resultant.
 
@@ -326,7 +326,7 @@ $$
 
 {numref}`Figure %s <fig:ch05-resolving-power>` shows the criterion in action. The resolving power depends only on the order and on the number of lines actually illuminated. Two consequences are worth noting. First, resolving power improves with the *illuminated* width of the grating, not with the total number of lines ruled on it; underfilling a grating with a narrow beam throws resolution away. Second, working in second or third order doubles or triples the resolution, at the cost of dimmer lines and increased risk of overlapping orders — a trade every spectroscopist makes.
 
-```{figure} ../images/ch05-grating-resolving-power.svg
+```{animation} ch05-grating-resolving-power
 :label: fig:ch05-resolving-power
 :alt: Three stacked panels showing the sodium doublet recorded with 300, 982 and 3000 illuminated grating lines, going from a single blur to two clearly separated peaks.
 

@@ -103,7 +103,7 @@ The internal boson line is called **virtual**: unlike an external line (an actua
 
 {numref}`Figure %s <fig:ch14-feynman-diagrams>` shows two of the simplest possible diagrams, one for each of two very different interactions.
 
-```{figure} ../images/ch14-feynman-diagrams.svg
+```{animation} ch14-feynman-diagrams
 :label: fig:ch14-feynman-diagrams
 :alt: Two Feynman diagrams, one for electron-electron scattering via photon exchange and one for neutron beta decay via W-boson exchange, with time running upward.
 

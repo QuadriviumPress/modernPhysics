@@ -39,6 +39,7 @@ html, body {
   gap: 0.6rem;
   padding-top: 0.3rem;
   font-size: 0.85rem;
+  flex-wrap: wrap;
 }
 
 .anim-toggle {
@@ -63,4 +64,31 @@ html, body {
 
 .anim-note {
   color: #555555;
+  flex: 1 1 16rem;
+}
+
+.anim-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  white-space: nowrap;
+  color: #444444;
+}
+
+.anim-control select,
+.anim-control input {
+  accent-color: #1769aa;
+  font: inherit;
+}
+
+.anim-control select {
+  border: 1px solid #999999;
+  border-radius: 0.35rem;
+  background: #ffffff;
+  color: #333333;
+  padding: 0.2rem 0.35rem;
+}
+
+.anim-control input[type="range"] {
+  width: min(9rem, 24vw);
 }

@@ -51,7 +51,7 @@ This is not a measurement error or a signal-delay artifact to be corrected for â
 
 The basic geometry is shown in {numref}`Figure %s <fig:ch02-simultaneity>`. The two flashes are simultaneous in the train frame, but the moving observer travels toward the front flash and away from the rear flash.
 
-```{figure} ../images/ch02-relativity-of-simultaneity.svg
+```{animation} ch02-relativity-of-simultaneity
 :label: fig:ch02-simultaneity
 :alt: A moving train with flashes at its ends and a ground observer at the midpoint, illustrating different judgments of simultaneity.
 

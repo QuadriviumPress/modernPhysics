@@ -62,6 +62,14 @@ Measurement statistics for a classical coin, for single photons through a polari
 Max Born's probabilistic reading of $\Psi$, introduced almost as an aside in a 1926 paper on scattering theory, was deeply controversial even among the theory's founders. Schrödinger himself hoped $|\Psi|^2$ would describe a smoothly spread-out electron charge density rather than a probability distribution over discrete measurement outcomes, and Einstein never fully accepted it either, famously objecting that "God does not play dice with the universe." The interpretation nonetheless survived every experimental test it was put to, and Born received the Nobel Prize in Physics for it only in 1954 — nearly three decades after the fact, an unusually long wait for a result so central to the theory.
 ::::
 
+```{video} https://www.youtube.com/watch?v=MzRCDLre1b4
+:video-title: Some light quantum mechanics (with minutephysics)
+:label: fig:ch08-superposition-video
+:alt: An animated introduction develops the mathematics of quantum superposition and state vectors from first principles.
+
+A first-principles, math-forward companion to the Born rule above, building the same superposition idea up from state vectors rather than from the coin-and-polarizer examples.
+```
+
 #### Expectation Values and Operators
 
 Because $|\Psi(x,t)|^2$ gives only a probability distribution, not a definite trajectory, a quantum "measurement" of position generally yields different results on identically prepared systems, with a statistical average — the **expectation value** — defined by

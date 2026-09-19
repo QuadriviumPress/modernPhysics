@@ -125,6 +125,14 @@ The resolution is that the situation is **not** symmetric between the twins, and
 
 The physical content of the paradox's resolution is this: there is no contradiction, because *only Bob* can locally detect (with an accelerometer, for instance) that he underwent a change of inertial frame. That detectable asymmetry is exactly what breaks the naive symmetry argument and picks out which twin's elapsed time is shorter.
 
+```{video} https://www.youtube.com/watch?v=ERgwVm9qWKA
+:video-title: Special Relativity and the Twin Paradox
+:label: fig:ch02-twin-paradox-video
+:alt: A walkthrough of the twin paradox using spacetime diagrams to show why the traveling twin ages less.
+
+A visual companion to the argument above, tracking each twin's worldline through the turnaround to show exactly where the apparent symmetry breaks.
+```
+
 ### Length Contraction
 
 Time dilation has a companion effect for lengths. Consider a rod of length $L_0$ at rest along the $x$-axis of frame $S$; call $L_0$ the **proper length** — the length measured in the frame where the rod is at rest. How long is this rod as measured by an observer in frame $S'$, moving at speed $v$ relative to $S$ along the rod's length?
@@ -380,6 +388,22 @@ Consider an idealized long wire with equal positive and negative linear charge d
 Now view the same situation from a frame in which the test charge is at rest (equivalently, an observer moving alongside it). By relativistic velocity addition, the two species of charge carriers in the wire no longer move at equal speeds relative to this observer—one is sped up and the other slowed down. Because length contraction depends on speed, their charge densities are no longer equal: the wire acquires a net linear charge density in this frame and therefore an electric field. That electric field produces the same physical deflection of the test charge that the magnetic field produced in the original frame; electric and magnetic fields have mixed under the change of frame.
 
 Both descriptions—magnetic force in one frame and electric force from a net charge density in another—refer to the same underlying physical event, and both observers must agree on the test charge's worldline. Requiring this agreement forces the electric and magnetic fields to mix under a change of frame, consistently with the Lorentz transformation. In this setup, magnetism is the part of the electromagnetic interaction that appears when charges and the observer are in relative motion; electric and magnetic fields are not separate forces but frame-dependent components of one electromagnetic field. This unification is one of the clearest illustrations that relativity is not a remote, exotic correction confined to particle accelerators and GPS satellites, but a structural feature of the electromagnetic force that operates, imperceptibly, in every electric motor and every compass needle.
+
+```{video} https://www.youtube.com/watch?v=1TKSfAkWWN0
+:video-title: How Special Relativity Makes Magnets Work
+:label: fig:ch02-relativity-magnetism-video
+:alt: An animated derivation shows length contraction of moving charge densities producing a net field responsible for magnetism.
+
+A frame-by-frame animated version of the length-contraction argument above, with the current-carrying wire drawn explicitly in both frames.
+```
+
+```{video} https://www.youtube.com/watch?v=9sQ2IZ-POSM
+:video-title: The Hidden Connection Between Magnetism and Relativity!
+:label: fig:ch02-relativity-magnetism-mould-video
+:alt: A demonstration compares a moving magnet and coil to show that only relative motion, not which object moves, determines the induced current.
+
+A second, independent take on the same result: whether the magnet or the coil is "the one that moves" cannot affect the physics, which is itself a relativity argument before length contraction is invoked explicitly.
+```
 
 ## Summary
 

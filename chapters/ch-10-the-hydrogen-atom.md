@@ -87,6 +87,14 @@ The de Broglie justification for $L=n\hbar$ works out concretely: demanding that
 
 The model's failures, however, were just as instructive as its success. Extending Bohr's orbit-quantization scheme to **helium** — even with the refinements (elliptical orbits, relativistic orbit precession) added by Arnold Sommerfeld through the 1910s — never produced a correct ionization energy or a stable ground-state configuration for a two-electron atom; the semiclassical machinery simply had no consistent way to handle two mutually interacting orbiting electrons. The model also could not predict *which* transitions between levels actually occur (the selection rules developed later in this chapter), could not account for the relative brightness of spectral lines, and — as already emphasized above — gets the ground state's angular momentum flatly wrong: Bohr's $n=1$ orbit carries $L=\hbar$, while the true ground state has $L=0$ and no orbit, well-defined trajectory, or definite radius at all, only the probability cloud shown in {numref}`Figure %s <fig:ch10-hydrogen-models-sim>`. These failures, especially the inability to extend the model consistently beyond hydrogen, were a central motivation for the fully quantum-mechanical treatment developed in Chapters [8](#ch-the-schrodinger-equation)–[9](#ch-quantum-mechanics-in-three-dimensions) and specialized to hydrogen in this chapter — a treatment that, unlike Bohr's, generalizes cleanly to helium and every other atom in [Chapter 11](#ch-many-electron-atoms).
 
+```{video} https://www.youtube.com/watch?v=au2HCVn9IJI
+:video-title: Bohr Model of the Hydrogen Atom
+:label: fig:ch10-bohr-model-video
+:alt: An explainer walks through Bohr's reasoning for quantized electron orbits and why the model nonetheless had to be superseded.
+
+A closer look at the reasoning above: why Bohr's model worked as well as it did, and exactly where it runs into trouble.
+```
+
 ### Hydrogenic Ions: Scaling with Nuclear Charge
 
 Everything derived above specializes the general central-potential machinery of [Chapter 9](#ch-quantum-mechanics-in-three-dimensions) to a nuclear charge of exactly $+e$. The same radial equation applies unchanged, with only $e^2 \to Ze^2$ in the Coulomb potential, to any **hydrogenic (hydrogen-like) ion**: a single electron bound to a nucleus of charge $+Ze$, such as singly ionized helium $\text{He}^+$ ($Z=2$) or doubly ionized lithium $\text{Li}^{2+}$ ($Z=3$). Repeating the normalizability argument above with the rescaled potential gives

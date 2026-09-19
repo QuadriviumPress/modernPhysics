@@ -324,6 +324,14 @@ The strength of a given particle's coupling to the Higgs field is not itself pre
 It is tempting to read the Higgs mechanism as a complete explanation of why matter has mass, but for ordinary matter it accounts for only a small fraction of it. The Higgs mechanism generates the *fundamental* masses cataloged in {numref}`Figure %s <fig:ch14-standard-model-chart>` — the rest mass of an individual quark or electron, on its own, with nothing else around it. A proton's mass is not simply the sum of its three quarks' Higgs-generated masses: two up quarks and a down quark contribute barely $1\%$ of the proton's $938.3\ \text{MeV}$. The remaining $99\%$ is energy in the quark–gluon field, including confinement and the quarks' relativistic motion, converted to rest mass via $E=mc^2$ exactly as in the nuclear mass defect of [Chapter 13](#ch-nuclear-physics). The Higgs field is why quarks and electrons have mass at all; quantum chromodynamics, not the Higgs field, accounts for almost all of the mass of everyday matter.
 :::
 
+```{video} https://www.youtube.com/watch?v=Ztc6QPNUqls
+:video-title: Your Mass is NOT From the Higgs Boson
+:label: fig:ch14-higgs-mass-video
+:alt: An explainer distinguishes the small Higgs-generated rest mass of quarks from the much larger contribution of quantum-chromodynamic binding energy to a proton's mass.
+
+The same point as the warning box above, developed further: most of the mass in the room around you is not Higgs mass at all.
+```
+
 ### Open Questions
 
 As the final chapter of this book, it is worth being explicit that the Standard Model, for all its precision and predictive success — every particle in its minimal particle content has now been found, and many of its predictions for their properties agree with experiment to several decimal places — is not a complete "theory of everything." Several major open questions define the current frontier of particle physics and cosmology, worth naming even though, unlike everything else in this book, none has yet been resolved:

@@ -239,6 +239,14 @@ The exponential law describes a population, not a nucleus, and the difference be
 Radioactive decay watched nucleus by nucleus and in bulk, then applied to dating. The decay constant is a probability per unit time and nothing else: nuclei do not age.
 ```
 
+```{video} https://www.youtube.com/watch?v=X_XVRA5nD6M
+:video-title: Radiation from a banana measured using a Geiger counter
+:label: fig:ch13-banana-radiation-video
+:alt: A Geiger counter is used to measure the naturally occurring radioactivity of a banana's potassium-40 content.
+
+A concrete reminder that the exponential decay law above describes everyday, naturally occurring radioactivity — including the potassium-40 in an ordinary banana — not just reactor fuel and dating samples.
+```
+
 #### Historical Context: Becquerel, the Curies, and the Discovery of Radioactivity
 
 Radioactivity was discovered by accident. In early 1896, prompted by Wilhelm Röntgen's announcement of X-rays only weeks before, Henri Becquerel was investigating whether phosphorescent materials (which glow after exposure to light) might also emit penetrating, photographic-plate-fogging radiation, using uranium salts as his test material. An overcast Paris sky in late February 1896 forced him to store an unexposed sample — uranium salt sitting atop a wrapped photographic plate, with no sunlight available to trigger any phosphorescence — in a dark drawer for several days. When he developed the plate anyway on March 1, expecting at most a faint trace, he found a strong image instead: the uranium was emitting penetrating radiation entirely on its own, with no light exposure needed to trigger it. Becquerel had discovered **radioactivity**, a spontaneous nuclear process, without initially recognizing what he had found (he first suspected an unusually persistent, invisible form of phosphorescence). Becquerel himself is shown in a portrait from around the time of the discovery in {numref}`Figure %s <fig:ch13-becquerel-historical>`.
@@ -357,6 +365,22 @@ The distinction between those last two outcomes is quantitative, not qualitative
 :label: fig:ch13-fission-sim
 
 A single fission event, a chain reaction in an assembly of adjustable size and enrichment, and a controlled reactor. Criticality is a statement about a ratio, and it is the same ratio in all three.
+```
+
+```{video} https://www.youtube.com/watch?v=JVROsxtjoCw
+:video-title: I Explored the World's First Nuclear Power Plant (and How It Works)
+:label: fig:ch13-nuclear-plant-video
+:alt: A tour of a working nuclear power plant traces the fission chain reaction from the reactor core through moderation and control.
+
+A tour of a real reactor built around exactly the chain-reaction and moderator ideas developed above, from the control room down to the fuel assemblies.
+```
+
+```{video} https://www.youtube.com/watch?v=HD3k1hgbUXQ
+:video-title: Why Einstein Thought Nuclear Weapons Impossible
+:label: fig:ch13-nuclear-weapons-video
+:alt: An explainer traces the history of neutron-induced chain reactions and why early estimates of critical mass led physicists to doubt a bomb was feasible.
+
+The same critical-mass reasoning from a different angle: why the numbers looked, at first, like they ruled out a chain-reaction weapon entirely.
 ```
 
 ### Fusion

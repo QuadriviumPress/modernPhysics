@@ -176,6 +176,14 @@ Crucially, if a measurement is added to the apparatus that determines *which* sl
 The "measurement disturbs the momentum" language above is a useful first picture, but it is easy to over-read it as saying the uncertainty principle is merely a practical limitation of clumsy detectors that a sufficiently gentle measurement could someday evade. As the wave-packet discussion later in this chapter makes precise, the deeper reason is that a particle with a well-defined path through one specific slit cannot be described by a matter wave with a single well-defined wavelength; localizing the wave enough to carry which-path information *necessarily* broadens its spread in momentum. The trade-off lives in the mathematics of the wave itself, not in the clumsiness of any particular detector.
 :::
 
+```{video} https://www.youtube.com/watch?v=WIyTZDHuarQ
+:video-title: Is This What Quantum Mechanics Looks Like?
+:label: fig:ch07-pilot-wave-video
+:alt: Silicone-oil droplets bouncing on a vibrating bath are guided by their own wave field, offered as a macroscopic analogy for wave-particle duality.
+
+A macroscopic analogy — not a mechanism quantum mechanics itself uses — for how a single object might combine a definite, particle-like trajectory with a guiding wave, built from bouncing oil droplets rather than electrons.
+```
+
 #### Delayed Choice and the Quantum Eraser
 
 A particularly striking variant, proposed by John Wheeler in 1978 and since realized experimentally, asks whether the decision to measure which-path information can be postponed until *after* a particle has, in some naive classical sense, "already passed" through the slits. In a **delayed-choice experiment**, the choice of whether to record which-path information (destroying the interference pattern) or to erase it before the particle is detected (restoring the interference pattern) is made only at the very last possible moment — in some realizations, only after the particle has already traversed the region of the slits. Experiments of this kind confirm quantum mechanics' prediction exactly: interference reappears in the appropriate measurement outcomes whenever the alternatives are made indistinguishable, regardless of when in the experiment that choice is made. A related arrangement, the **quantum eraser**, first correlates each particle with a "marker" that could reveal which path it took, then either reads that marker (destroying the interference pattern in the corresponding subset of detection events) or measures it in a basis that erases the path distinction (revealing interference only in appropriately sorted subsets). Neither experiment allows sending a signal backward in time or violates causality. If the marker result is ignored, the unconditional detection pattern remains interference-free; the fringes in a sorted subset become visible only after the corresponding marker records are compared. These results reinforce the same lesson as the ordinary double-slit experiment: a quantum system does not carry a hidden, predetermined trajectory waiting to be revealed, and complementarity is a statement about what information can coexist, not merely about the limits of measurement technology.
@@ -306,6 +314,22 @@ Stripped of $\hbar$, this is a theorem about signals rather than about quantum m
 :label: fig:ch07-bandwidth-sim
 
 Real-time spectrum analysis of a microphone signal. The duration of a sound and the sharpness of its spectrum trade off against each other, which is $\Delta E\,\Delta t \gtrsim \hbar/2$ with the $\hbar$ removed and the quantum mechanics along with it.
+```
+
+```{video} https://www.youtube.com/watch?v=MBnnXbOM5S4
+:video-title: The more general uncertainty principle, regarding Fourier transforms
+:label: fig:ch07-uncertainty-fourier-video
+:alt: An animated derivation shows the position–momentum uncertainty relation as a general property of Fourier transform pairs.
+
+A rigorous version of the "no better microphone would fix this" argument above: $\Delta x\,\Delta p_x \geq \hbar/2$ as one instance of a general Fourier-transform trade-off between any conjugate pair of variables.
+```
+
+```{video} https://www.youtube.com/watch?v=i2fSrTae-gQ
+:video-title: What Is The Smallest Possible Thing?
+:label: fig:ch07-smallest-thing-video
+:alt: A tour of scale, from everyday objects down through atoms, nuclei, and the Planck length, framed around what "smallest" can even mean.
+
+A sense of scale for the numbers in the worked examples that follow: how far down the uncertainty principle and quantum mechanics actually reach before a different kind of physics takes over.
 ```
 
 #### Worked Example: Confining an Electron in a Nucleus

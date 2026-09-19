@@ -152,6 +152,14 @@ What a fraction of a fringe looks like, and how little it takes to produce one, 
 The Michelson geometry that Michelson and Morley used, with the arms under direct control. The ether wind is not modeled — no experiment has ever needed it to be — but the instrument's response to a path-length difference between the arms is, and it is that response the 1887 apparatus was calibrated against.
 ```
 
+```{video} https://www.youtube.com/watch?v=pTn6Ewhb27k
+:video-title: Why No One Has Measured The Speed Of Light
+:label: fig:ch01-speed-of-light-video
+:alt: An explainer walks through one-way versus two-way light-speed measurements and the role of clock synchronization.
+
+Every measurement of $c$, including Michelson and Morley's, is necessarily a round-trip measurement — a fact that turns out to matter for exactly the synchronization convention this chapter's null results depend on.
+```
+
 ## Further Null Results: Kennedy–Thorndike and Fizeau
 
 ### A Second Null Result: The Kennedy–Thorndike Experiment

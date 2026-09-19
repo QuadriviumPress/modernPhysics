@@ -534,6 +534,14 @@ The reconstruction step is pure diffraction. Illuminate the developed film with 
 
 Two properties follow directly from this account. First, holography demands a source with a coherence length longer than the depth of the scene, which is why it was impossible before the laser and why Gabor's original demonstrations were so limited. Second, every part of the hologram receives light from every part of the object, so a hologram cut in half still reconstructs the whole scene — from a smaller effective aperture, and therefore, by the Rayleigh criterion, with correspondingly poorer resolution.
 
+```{video} https://www.youtube.com/watch?v=yhmCRliJ93w
+:video-title: Using Quantum Mechanics to Make Holographic Rainbows on Chocolate
+:label: fig:ch05-holography-video
+:alt: A demonstration uses a diffraction grating embossed on chocolate to produce a rainbow, illustrating grating dispersion and hologram-like effects.
+
+A hands-on look at diffraction gratings and embossed rainbow holograms outside the lab, using the same dispersion behavior developed earlier in this chapter.
+```
+
 ### Looking Ahead: Diffraction and the Uncertainty Principle
 
 There is one more thing to extract from single-slit diffraction, and it is the reason this chapter belongs in a book on modern physics.

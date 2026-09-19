@@ -330,6 +330,14 @@ If the pair shares this energy symmetrically (not required by any conservation l
 
 Four seemingly unrelated phenomena — blackbody radiation, the photoelectric effect, X-ray production, and Compton scattering — together with pair production and annihilation, are all consequences of a single underlying fact: electromagnetic radiation exchanges energy and momentum with matter in discrete, particle-like quanta, $E=hf$ and $p=h/\lambda$, rather than continuously. Blackbody radiation shows that an oscillator can only *emit or absorb* energy in these units; the photoelectric effect shows that a photon transfers its *entire* energy to a single electron in one step; X-ray production shows how an electron's kinetic energy can be converted into photons, with a sharply bounded maximum photon energy; Compton scattering shows that a photon carries not just energy but momentum, exchanged with a free electron exactly as in a two-body collision; and pair production and annihilation show that a photon's energy is, via $E=mc^2$, interconvertible with the rest mass of matter itself. The characteristic quantum features of all five are explained, quantitatively and without exception, by the same photon concept. Yet, as Chapters [4](#ch-interference-of-light)–[5](#ch-diffraction-of-light) demonstrated, light also produces interference and diffraction patterns with no possible explanation in a naive particle picture. [Chapter 7](#ch-wave-properties-of-particles) confronts this apparent contradiction directly, and shows that it is resolved not by choosing one description over the other, but by recognizing that matter, too, has a wave nature — and that wave and particle descriptions are two complementary faces of a single, more complete quantum picture.
 
+```{video} https://www.youtube.com/watch?v=qJZ1Ez28C-A
+:video-title: Something Strange Happens When You Trust Quantum Mechanics
+:label: fig:ch06-photon-unified-video
+:alt: An explainer traces Einstein's photon hypothesis from the photoelectric effect to the deeper strangeness of treating light as fundamentally quantum.
+
+A closing look at just how far Einstein's photon hypothesis — introduced in this chapter for the photoelectric effect — ends up reaching.
+```
+
 ## Summary
 
 - The blackbody spectrum cannot be explained by the classical **Rayleigh–Jeans law**, $u(\lambda,T) = 8\pi k_BT/\lambda^4$, which diverges at short wavelength (the ultraviolet catastrophe); Planck's hypothesis that oscillator energy is quantized in units of $hf$ yields a radiation law matching observation at all wavelengths and reduces to the Rayleigh–Jeans law at long wavelength.

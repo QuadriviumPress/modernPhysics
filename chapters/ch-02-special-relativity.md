@@ -419,11 +419,11 @@ Five short, auto-graded questions cycle within one compact activity. The set mix
 :label: check:ch02-chapter-review
 :title: Chapter 2 interactive review
 
-1. **Multiple choice, from a figure.** A second event lies in the region labelled “elsewhere,” outside the origin's light cone. Is the separation spacelike, timelike, lightlike, or simultaneous in every inertial frame?
+1. **Multiple choice, from a figure.** A second event lies in the region labelled “elsewhere,” outside the origin’s light cone. How is it separated from the origin? Figure description: Spacetime diagram showing the future and past light cones, timelike regions inside them, and spacelike regions outside them. Choices: (A) Spacelike: different inertial frames may reverse the event order, but no sub-light signal can connect the events. (B) Timelike: every inertial frame must agree that it occurs after the origin. (C) Lightlike: only a light signal can connect it to the origin. (D) Simultaneous in every inertial frame.
 2. **True or false.** The proper time between two events is measured by one clock that is present at both events.
-3. **Drag the words.** Complete: a moving clock accumulates ___ proper time; a moving object contracts ___; all inertial observers calculate the same ___; the separate time and space differences are ___. (Terms: less, along the direction of motion, spacetime interval, frame dependent, more, in every direction.)
-4. **Fill in the blanks.** At $v=0.8c$, $\gamma =$ ___, so a moving object's length is ___ of its proper length.
-5. **Mark the words.** Identify the two features on which every inertial observer agrees: “Observers agree on the spacetime interval and on an event pair's classification as timelike, spacelike, or lightlike; they need not agree on the separate distance, elapsed time, or simultaneity.”
+3. **Drag the words.** Complete the three central transformation rules. A moving clock accumulates ___ proper time, a moving object contracts ___, and all inertial observers calculate the same ___. The separate time and space differences are ___. (Terms: less; along the direction of motion; spacetime interval; frame dependent; more; in every direction.)
+4. **Fill in the blanks.** Evaluate the Lorentz factor and length contraction at 0.8c. At v = 0.8c, $\gamma$ = ___, so a moving object’s length is ___ of its proper length.
+5. **Mark the words.** Mark the two features that every inertial observer agrees on. “Observers agree on the spacetime interval and on an event pair’s classification as timelike, spacelike, or lightlike; they need not agree on the separate distance, elapsed time, or simultaneity.”
 :::
 
 ## Conceptual Questions

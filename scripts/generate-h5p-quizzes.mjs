@@ -4,6 +4,7 @@ import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { replaceReview } from './h5p-review-fallback.mjs';
 
 const ROOT = path.resolve( path.dirname( fileURLToPath( import.meta.url ) ), '..' );
 const CONTENT_ROOT = path.join( ROOT, 'h5p', 'content' );
@@ -567,13 +568,36 @@ function questionSet( quiz ) {
   };
 }
 
+const check = process.argv.includes( '--check' );
+if ( process.argv.length > 2 && ( process.argv.length !== 3 || !check ) ) {
+  throw new Error( 'Usage: node scripts/generate-h5p-quizzes.mjs [--check]' );
+}
+const stale = [];
+
+function outputFile( file, bytes ) {
+  if ( check ) {
+    if ( !fs.existsSync( file ) || !fs.readFileSync( file ).equals( Buffer.isBuffer( bytes ) ? bytes : Buffer.from( bytes ) ) ) {
+      stale.push( path.relative( ROOT, file ) );
+    }
+  }
+  else {
+    fs.mkdirSync( path.dirname( file ), { recursive: true } );
+    fs.writeFileSync( file, bytes );
+  }
+}
+
+function chapterFile( chapter ) {
+  const prefix = `ch-${String( chapter ).padStart( 2, '0' )}-`;
+  const matches = fs.readdirSync( path.join( ROOT, 'chapters' ) ).filter( name => name.startsWith( prefix ) && name.endsWith( '.md' ) );
+  if ( matches.length !== 1 ) throw new Error( `Expected one chapter file beginning ${prefix}, found ${matches.length}` );
+  return path.join( ROOT, 'chapters', matches[ 0 ] );
+}
+
 for ( const quiz of quizzes ) {
   const chapter = String( quiz.chapter ).padStart( 2, '0' );
   const id = `ch${chapter}-chapter-review`;
   const root = path.join( CONTENT_ROOT, id );
   const content = path.join( root, 'content' );
-  fs.mkdirSync( content, { recursive: true } );
-
   const preloadedDependencies = dependencies.map( dependency );
   const quizFigures = figures( quiz );
   if ( quizFigures.length > 0 ) preloadedDependencies.push( dependency( [ 'H5P.Image', 1, 1 ] ) );
@@ -588,14 +612,19 @@ for ( const quiz of quizzes ) {
     preloadedDependencies
   };
 
-  fs.writeFileSync( path.join( root, 'h5p.json' ), `${JSON.stringify( manifest, null, 2 )}\n` );
-  fs.writeFileSync( path.join( content, 'content.json' ), `${JSON.stringify( questionSet( quiz ), null, 2 )}\n` );
+  outputFile( path.join( root, 'h5p.json' ), `${JSON.stringify( manifest, null, 2 )}\n` );
+  outputFile( path.join( content, 'content.json' ), `${JSON.stringify( questionSet( quiz ), null, 2 )}\n` );
+
+  const chapterPath = chapterFile( quiz.chapter );
+  outputFile( chapterPath, replaceReview( fs.readFileSync( chapterPath, 'utf8' ), id, quiz.questions ) );
 
   for ( const figure of quizFigures ) {
     const destination = path.join( content, figure );
-    fs.mkdirSync( path.dirname( destination ), { recursive: true } );
-    fs.copyFileSync( path.join( ROOT, figure ), destination );
+    outputFile( destination, fs.readFileSync( path.join( ROOT, figure ) ) );
   }
 }
 
-console.log( `Generated ${quizzes.length} H5P chapter reviews (${quizzes.reduce( ( total, quiz ) => total + quiz.questions.length, 0 )} questions).` );
+if ( stale.length ) {
+  throw new Error( `Generated H5P reviews are out of date:\n${stale.map( file => `  ${file}` ).join( '\n' )}\nRun npm run h5p:generate.` );
+}
+console.log( `${check ? 'Checked' : 'Generated'} ${quizzes.length} H5P chapter reviews (${quizzes.reduce( ( total, quiz ) => total + quiz.questions.length, 0 )} questions).` );

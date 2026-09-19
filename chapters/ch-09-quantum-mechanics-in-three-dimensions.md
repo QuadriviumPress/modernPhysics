@@ -269,11 +269,11 @@ Five short, auto-graded questions cycle within one compact activity. The set mix
 :label: check:ch09-chapter-review
 :title: Chapter 9 interactive review
 
-1. **Multiple choice.** For orbital angular-momentum quantum number $\ell$, how many values may $m_\ell$ take: $2\ell+1$, $\ell$, $2\ell$ excluding zero, or only $m_\ell=\ell$?
-2. **True or false.** The centrifugal barrier in the radial Schrödinger equation vanishes for $\ell=0$.
-3. **Drag the words.** Complete: a central potential depends only on ___; its wave function separates into ___; the universal angular functions are ___; the barrier term is proportional to ___. (Terms: $r$, radial and angular parts, spherical harmonics, $\ell(\ell+1)/r^2$, $\theta$ only, Cartesian plane waves.)
-4. **Fill in the blanks.** For $\ell=2$ there are ___ allowed $m_\ell$ values; oscillator triples with the same sum $n_x+n_y+n_z$ have the ___ energy.
-5. **Mark the words.** Identify the pair that can be sharp simultaneously: “A central-potential state may have sharp $L^2$ and $L_z$. The noncommuting Cartesian components $L_x$ and $L_y$ cannot all be sharp at the same time.”
+1. **Multiple choice.** For orbital angular-momentum quantum number $\ell$, how many values may $m\ell$ take? Choices: (A) $2\ell$ + 1, from $-\ell$ through $+\ell$. (B) $\ell$, from 0 through $\ell$ − 1. (C) $2\ell$, excluding zero. (D) Only one value, $m\ell$ = $\ell$.
+2. **True or false.** The centrifugal barrier in the radial Schrödinger equation vanishes for $\ell$ = 0.
+3. **Drag the words.** Complete the central-potential description. A central potential depends only on ___. Its wave function separates into ___. The universal angular functions are ___. The barrier term is proportional to ___. (Terms: r; radial and angular parts; spherical harmonics; $\ell (\ell$ + $1)/r^2$; $\theta$ only; Cartesian plane waves.)
+4. **Fill in the blanks.** Complete the angular-momentum and oscillator counts. For $\ell$ = 2 there are ___ allowed $m\ell$ values; oscillator triples with the same sum nx + ny + nz have the ___ energy.
+5. **Mark the words.** Mark the pair of orbital-angular-momentum quantities that can be sharp simultaneously. “A central-potential state may have sharp $L^2$ and Lz. The noncommuting Cartesian components Lx and Ly cannot all be sharp at the same time.”
 :::
 
 ## Conceptual Questions

@@ -306,11 +306,11 @@ Five short, auto-graded questions cycle within one compact activity. The set mix
 :label: check:ch11-chapter-review
 :title: Chapter 11 interactive review
 
-1. **Multiple choice, from a figure.** What does screening do to the nuclear attraction felt by an outer electron: reduce the effective nuclear charge, reverse the force, remove penetration effects, or keep all same-$n$ subshells degenerate?
+1. **Multiple choice, from a figure.** What does screening do to the nuclear attraction felt by an outer electron? Figure description: First ionization energy plotted across the periodic table, showing periodic trends. Choices: (A) It reduces the effective nuclear charge felt by the electron. (B) It reverses the nuclear force and makes it repulsive. (C) It removes all dependence on orbital penetration. (D) It forces every subshell with the same n to remain degenerate.
 2. **True or false.** Two electrons in one spatial orbital may have the same spin projection.
-3. **Drag the words.** Complete: the ___ limits an orbital to two opposite-spin electrons; the ___ fills lower-energy subshells first; ___ maximizes spin in degenerate orbitals; screening produces an ___. (Terms: Pauli exclusion principle, Aufbau principle, Hund's rule, effective nuclear charge, uncertainty principle, bare nuclear charge for every electron.)
-4. **Fill in the blanks.** A $K$-shell vacancy lies in the shell with $n=$ ___, and laser amplification requires a population ___.
-5. **Mark the words.** Identify the two general trends: “Across a period, first ionization energy generally increases while atomic radius generally decreases, as effective nuclear charge grows.”
+3. **Drag the words.** Complete the rules for many-electron atoms. The ___ limits an orbital to two opposite-spin electrons. The ___ fills lower-energy subshells first. ___ maximizes spin in degenerate orbitals. Screening produces an ___. (Terms: Pauli exclusion principle; Aufbau principle; Hund’s rule; effective nuclear charge; uncertainty principle; bare nuclear charge for every electron.)
+4. **Fill in the blanks.** Complete the shell and laser statements. A K-shell vacancy lies in the shell with n = ___, and laser amplification requires a population ___.
+5. **Mark the words.** Mark the two general trends across a period. “Across a period, first ionization energy generally increases while atomic radius generally decreases, as effective nuclear charge grows.”
 :::
 
 ## Conceptual Questions

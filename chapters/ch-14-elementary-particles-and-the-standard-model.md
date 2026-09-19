@@ -367,11 +367,11 @@ Five short, auto-graded questions cycle within one compact activity. The set mix
 :label: check:ch14-chapter-review
 :title: Chapter 14 interactive review
 
-1. **Multiple choice, from a figure.** Which Standard Model interaction is carried by gluons: strong, electromagnetic, weak, or gravitational?
+1. **Multiple choice, from a figure.** Which Standard Model interaction is carried by gluons? Figure description: Chart of Standard Model matter particles and force-carrying bosons. Choices: (A) The strong interaction. (B) The electromagnetic interaction. (C) The weak interaction. (D) Gravity.
 2. **True or false.** A meson is made from three quarks, while a baryon is a quark–antiquark pair.
-3. **Drag the words.** Complete: matter particles with half-integer spin are ___; force carriers are ___; three-quark hadrons are ___; quark–antiquark hadrons are ___. (Terms: fermions, bosons, baryons, mesons, leptons only, gauge fermions.)
-4. **Fill in the blanks.** A proton has quark content ___, and missing transverse momentum can signal an unseen ___.
-5. **Mark the words.** Identify two conserved quantities: “Every reaction must conserve electric charge and baryon number. Lepton number is also conserved to excellent approximation in Standard Model reactions.”
+3. **Drag the words.** Complete the Standard Model classifications. Matter particles with half-integer spin are ___. Force carriers are ___. Three-quark hadrons are ___. Quark–antiquark hadrons are ___. (Terms: fermions; bosons; baryons; mesons; leptons only; gauge fermions.)
+4. **Fill in the blanks.** Complete the proton and detector statements. A proton has quark content ___, and missing transverse momentum can signal an unseen ___.
+5. **Mark the words.** Mark the two quantities that must balance in every allowed particle reaction. “Every reaction must conserve electric charge and baryon number. Lepton number is also conserved to excellent approximation in Standard Model reactions.”
 :::
 
 ## Conceptual Questions

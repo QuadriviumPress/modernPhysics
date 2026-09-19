@@ -372,11 +372,11 @@ Five short, auto-graded questions cycle within one compact activity. The set mix
 :label: check:ch08-chapter-review
 :title: Chapter 8 interactive review
 
-1. **Multiple choice, from a figure.** Why is the infinite-well ground-state energy not zero: confinement and boundary conditions forbid a zero-momentum state, the potential inside is infinite, the particle moves at $c$, or the wave function must be constant?
+1. **Multiple choice, from a figure.** Why is the infinite-well ground-state energy not zero? Figure description: The first few standing-wave modes in a one-dimensional infinite square well. Choices: (A) A zero-momentum state cannot satisfy confinement and the well’s boundary conditions. (B) The potential energy inside the well is infinite. (C) The particle must move at the speed of light. (D) The wave function is required to be constant everywhere.
 2. **True or false.** A stationary state has a time-independent probability density even though its wave function carries a time-dependent phase.
-3. **Drag the words.** Complete: $|\Psi|^2$ is the ___; a physical wave function must be ___; bound-state energies arise from ___; tunneling occurs because $\Psi$ has ___. (Terms: probability density, normalizable, boundary conditions, nonzero amplitude beyond a finite barrier, probability amplitude squared only after measurement, zero amplitude inside every barrier.)
-4. **Fill in the blanks.** For a one-dimensional infinite well, $E_n$ is proportional to $n$ raised to the power ___, so $E_2/E_1=$ ___.
-5. **Mark the words.** Identify the two facts that make tunneling possible: “A finite barrier permits an evanescent wave inside the classically forbidden region and the wave function can retain nonzero amplitude on the far side. The particle does not need energy greater than the barrier.”
+3. **Drag the words.** Complete the interpretation of the wave function. The quantity |$\Psi$|$^2$ is the ___. A physical wave function must be ___. Bound-state energies arise from ___. Tunneling occurs because $\Psi$ has ___. (Terms: probability density; normalizable; boundary conditions; nonzero amplitude beyond a finite barrier; probability amplitude squared only after measurement; zero amplitude inside every barrier.)
+4. **Fill in the blanks.** Complete the infinite-well scaling. For a one-dimensional infinite well, En is proportional to n raised to the power ___, so E2/E1 = ___.
+5. **Mark the words.** Mark the two statements that make tunneling possible. “A finite barrier permits an evanescent wave inside the classically forbidden region and the wave function can retain nonzero amplitude on the far side. The particle does not need energy greater than the barrier.”
 :::
 
 ## Conceptual Questions

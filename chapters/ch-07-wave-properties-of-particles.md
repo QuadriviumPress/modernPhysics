@@ -373,11 +373,11 @@ Five short, auto-graded questions cycle within one compact activity. The set mix
 :label: check:ch07-chapter-review
 :title: Chapter 7 interactive review
 
-1. **Multiple choice, from a figure.** How does doubling a particle's momentum change its de Broglie wavelength: halve it, double it, quadruple it, or leave it unchanged?
+1. **Multiple choice, from a figure.** How does doubling a particle’s momentum change its de Broglie wavelength? Figure description: Two nearby matter-wave components and the envelope produced by their superposition. Choices: (A) It halves the wavelength. (B) It doubles the wavelength. (C) It quadruples the wavelength. (D) It leaves the wavelength unchanged.
 2. **True or false.** For a free nonrelativistic particle, the group velocity of its wave packet equals the particle speed.
-3. **Drag the words.** Complete: matter wavelength is ___; a localized particle requires a ___; its envelope moves at the ___, while its individual crests move at the ___. (Terms: $\lambda=h/p$, wave packet, group velocity, phase velocity, $\lambda=p/h$, single plane wave.)
-4. **Fill in the blanks.** Doubling momentum makes $\lambda$ ___ as large; narrowing $\Delta x$ requires the momentum spread $\Delta p$ to become ___.
-5. **Mark the words.** Identify the two matter-wave signatures: “Electrons produce crystal diffraction peaks and individual particles build up a two-path interference pattern. A localized detector click is the particle-like part of the same experiment.”
+3. **Drag the words.** Complete the matter-wave relationships. Matter wavelength is ___. A localized particle requires a ___. Its envelope moves at the ___, while its individual crests move at the ___. (Terms: $\lambda$ = h/p; wave packet; group velocity; phase velocity; $\lambda$ = p/h; single plane wave.)
+4. **Fill in the blanks.** Complete the wavelength and uncertainty comparisons. Doubling momentum makes $\lambda$ ___ as large; narrowing $\Delta x$ requires the momentum spread $\Delta p$ to become ___.
+5. **Mark the words.** Mark the two experimental signatures of matter waves. “Electrons produce crystal diffraction peaks and individual particles build up a two-path interference pattern. A localized detector click is the particle-like part of the same experiment.”
 :::
 
 ## Conceptual Questions

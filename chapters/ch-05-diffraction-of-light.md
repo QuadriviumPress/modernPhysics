@@ -590,11 +590,11 @@ Five short, auto-graded questions cycle within one compact activity. The set mix
 :label: check:ch05-chapter-review
 :title: Chapter 5 interactive review
 
-1. **Multiple choice, from a figure.** What change makes a single-slit diffraction pattern wider: narrowing the slit, widening it, increasing screen distance while measuring angles, or adding illuminated grating lines?
-2. **True or false.** The value $m=0$ is a single-slit diffraction minimum.
-3. **Drag the words.** Complete: single-slit minima obey ___; a grating's resolving power is ___; a circular aperture has Rayleigh angle ___; crystal planes satisfy ___. (Terms: $a\sin\theta=m\lambda$, $R=mN$, $1.22\lambda/D$, $n\lambda=2d\sin\theta$, $d\sin\theta=m\lambda$, $\lambda/D^2$.)
-4. **Fill in the blanks.** A grating used in order $m=2$ with $N=500$ illuminated lines has resolving power ___, while doubling a circular aperture's diameter makes its diffraction-limited angle ___ as large.
-5. **Mark the words.** Identify the two changes that improve resolution: “A grating resolves closer wavelengths by using more illuminated lines. A circular instrument resolves closer angular sources by using a larger aperture diameter. Narrowing an ordinary slit broadens its pattern.”
+1. **Multiple choice, from a figure.** What change makes a single-slit diffraction pattern wider? Figure description: Single-slit diffraction intensity pattern with a broad central maximum and weaker side lobes. Choices: (A) Narrowing the slit. (B) Widening the slit. (C) Increasing the screen distance while measuring angles. (D) Adding more illuminated grating lines without changing the slit.
+2. **True or false.** The value m = 0 is a single-slit diffraction minimum.
+3. **Drag the words.** Complete the principal diffraction relations. Single-slit minima obey ___. A grating’s resolving power is ___. A circular aperture has Rayleigh angle ___. Crystal planes satisfy ___. (Terms: a sin $\theta$ = $m\lambda$; R = mN; 1.$22\lambda /D$; $n\lambda$ = 2d sin $\theta$; d sin $\theta$ = $m\lambda$; $\lambda /D^2$.)
+4. **Fill in the blanks.** Complete the grating and aperture results. A grating used in order m = 2 with N = 500 illuminated lines has resolving power ___, while doubling a circular aperture’s diameter makes its diffraction-limited angle ___ as large.
+5. **Mark the words.** Mark the two changes that improve diffraction-limited resolution. “A grating resolves closer wavelengths by using more illuminated lines. A circular instrument resolves closer angular sources by using a larger aperture diameter. Narrowing an ordinary slit broadens its pattern.”
 :::
 
 ## Conceptual Questions

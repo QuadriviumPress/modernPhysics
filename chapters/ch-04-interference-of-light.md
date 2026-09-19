@@ -792,11 +792,11 @@ Five short, auto-graded questions cycle within one compact activity. The set mix
 :label: check:ch04-chapter-review
 :title: Chapter 4 interactive review
 
-1. **Multiple choice, from a figure.** If slit separation $d$ increases while wavelength and screen distance stay fixed, does the fringe spacing decrease, increase, stay unchanged, or merely exchange the bright and dark positions?
+1. **Multiple choice, from a figure.** If the slit separation d increases while the wavelength and screen distance stay fixed, what happens to the double-slit fringe spacing? Figure description: Double-slit intensity pattern with regularly spaced bright fringes. Choices: (A) It decreases because the spacing is proportional to 1/d. (B) It increases because the spacing is proportional to d. (C) It stays unchanged because only wavelength controls the pattern. (D) The bright and dark fringes exchange positions without changing spacing.
 2. **True or false.** Reflection from a boundary leading into a higher-index medium adds a phase change of $\pi$.
-3. **Drag the words.** Complete: a path difference $\Delta r$ produces phase difference ___; constructive interference occurs at ___; destructive interference occurs at ___; stable fringes require ___. (Terms: $2\pi\Delta r/\lambda$, $\Delta r=m\lambda$, $\Delta r=(m+1/2)\lambda$, coherence, $\Delta r=\lambda/m$, incoherence.)
-4. **Fill in the blanks.** A path difference of $\lambda/2$ gives a phase difference of ___ radians, and doubling $d$ makes the fringe spacing ___ as large.
-5. **Mark the words.** Identify the two correct interference statements: “A stable pattern requires a phase difference that remains predictable during observation. Interference redistributes energy between bright and dark regions; it does not create energy.”
+3. **Drag the words.** Complete the interference conditions. A path difference $\Delta r$ produces phase difference ___. Constructive interference occurs at ___, while destructive interference occurs at ___. Stable fringes require ___. (Terms: $2\pi \Delta r/\lambda$; $\Delta r$ = $m\lambda$; $\Delta r$ = (m + $1/2)\lambda$; coherence; $\Delta r$ = $\lambda /m$; incoherence.)
+4. **Fill in the blanks.** Complete the path-to-phase and fringe-spacing results. A path difference of $\lambda /2$ gives a phase difference of ___ radians, and doubling d makes the fringe spacing ___ as large.
+5. **Mark the words.** Mark the two statements that explain coherence and energy conservation in interference. “A stable pattern requires a phase difference that remains predictable during observation. Interference redistributes energy between bright and dark regions; it does not create energy.”
 :::
 
 ## Conceptual Questions

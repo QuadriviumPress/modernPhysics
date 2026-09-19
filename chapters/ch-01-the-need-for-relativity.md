@@ -327,11 +327,11 @@ Five short, auto-graded questions cycle within one compact activity. The set mix
 :label: check:ch01-chapter-review
 :title: Chapter 1 interactive review
 
-1. **Multiple choice, from a figure.** The activity reproduces the Michelson–Morley interferometer diagram. Why are its two perpendicular arms essential: rotation swaps their orientation relative to an ether wind; they force different light speeds; one contains water; or they eliminate phase comparison?
-2. **True or false.** To first order in the water speed divided by $c$, relativistic velocity addition reproduces Fizeau's partial-drag coefficient $1-1/n^2$.
-3. **Drag the words.** Complete: the Galilean rule gives $u'_x =$ ___; it predicts an ___ for a moving laboratory, whereas Michelson–Morley found ___; Einstein instead required every inertial observer to measure the same vacuum light speed ___. (Terms: $u_x-v$, ether wind, no systematic fringe shift, $c$, $u_x+v$, complete ether drag.)
-4. **Fill in the blanks.** For the 1887 apparatus, a stationary-ether model predicted about ___ fringe, while rotation produced ___ systematic fringe shift.
-5. **Mark the words.** Identify Einstein's two postulates: “The laws of physics have the same form in every inertial frame, and the vacuum speed of light is the same for every inertial observer. An ether wind and absolute uniform motion are therefore not observable.”
+1. **Multiple choice, from a figure.** Why are the Michelson–Morley interferometer’s two perpendicular arms essential to the ether-wind test? Figure description: Schematic of the Michelson–Morley interferometer with perpendicular light paths, a beam splitter, mirrors, and a detector. Choices: (A) Rotating the apparatus swaps the arms’ orientation relative to the proposed ether wind, so a directional travel-time difference would change. (B) They force light to travel faster in one arm than in the other. (C) They make one beam pass through water while the other remains in air. (D) They remove the need to compare the phases of the returning beams.
+2. **True or false.** To first order in the water speed divided by c, relativistic velocity addition reproduces Fizeau’s partial-drag coefficient 1 − $1/n^2$.
+3. **Drag the words.** Complete the contrast between Galilean kinematics and the optical null result. The Galilean rule gives $u'_x$ = ___. It therefore predicts an ___ for a moving laboratory, whereas Michelson–Morley found ___. Einstein instead required every inertial observer to measure the same vacuum light speed ___. (Terms: $u_x-v$; ether wind; no systematic fringe shift; c; $u_x+v$; complete ether drag.)
+4. **Fill in the blanks.** Complete the comparison between the predicted and observed Michelson–Morley signals. For the 1887 apparatus, a stationary-ether model predicted about ___ fringe, while rotation produced ___ systematic fringe shift.
+5. **Mark the words.** Mark the two statements that form Einstein’s postulates. “The laws of physics have the same form in every inertial frame, and the vacuum speed of light is the same for every inertial observer. An ether wind and absolute uniform motion are therefore not observable.”
 :::
 
 ## Conceptual Questions

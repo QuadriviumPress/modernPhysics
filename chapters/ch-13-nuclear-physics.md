@@ -454,11 +454,11 @@ Five short, auto-graded questions cycle within one compact activity. The set mix
 :label: check:ch13-chapter-review
 :title: Chapter 13 interactive review
 
-1. **Multiple choice, from a figure.** Why can both fusion of light nuclei and fission of heavy nuclei release energy: both move products toward higher binding energy per nucleon near iron and nickel, convert every nucleon to radiation, eliminate the strong force, or increase product rest mass?
+1. **Multiple choice, from a figure.** Why can both fusion of light nuclei and fission of heavy nuclei release energy? Figure description: Binding energy per nucleon versus mass number, peaking near iron and nickel. Choices: (A) Both move the products toward higher binding energy per nucleon near iron and nickel. (B) Both convert every nucleon entirely into radiation. (C) Both eliminate the strong nuclear interaction. (D) Both always increase the total rest mass of the products.
 2. **True or false.** A radioactive nucleus becomes more likely to decay merely because it has survived for a long time.
-3. **Drag the words.** Complete: alpha decay proceeds by ___; beta decay uses the ___; gamma decay changes nuclear ___; radioactive populations follow an ___. (Terms: quantum tunneling, weak interaction, energy without changing $A$ or $Z$, exponential law, electromagnetic tunneling of electrons, linear law.)
-4. **Fill in the blanks.** Nuclear radius scales as $A$ raised to the power ___, and half-life equals $\ln 2$ divided by the decay ___.
-5. **Mark the words.** Identify the two processes that move nuclei toward the binding-energy peak: “Energy can be released by fusion of light nuclei and by fission of very heavy nuclei. Both produce more tightly bound products.”
+3. **Drag the words.** Complete the nuclear-decay descriptions. Alpha decay proceeds by ___. Beta decay uses the ___. Gamma decay changes nuclear ___. Radioactive populations follow an ___. (Terms: quantum tunneling; weak interaction; energy without changing A or Z; exponential law; electromagnetic tunneling of electrons; linear law.)
+4. **Fill in the blanks.** Complete the nuclear-size and decay relations. Nuclear radius scales as A raised to the power ___, and the half-life equals ln 2 divided by the decay ___.
+5. **Mark the words.** Mark the two processes that move nuclei toward the binding-energy peak. “Energy can be released by fusion of light nuclei and by fission of very heavy nuclei. Both produce more tightly bound products.”
 :::
 
 ## Conceptual Questions

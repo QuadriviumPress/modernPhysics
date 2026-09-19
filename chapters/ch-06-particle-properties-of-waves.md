@@ -359,11 +359,11 @@ Five short, auto-graded questions cycle within one compact activity. The set mix
 :label: check:ch06-chapter-review
 :title: Chapter 6 interactive review
 
-1. **Multiple choice.** Which observation most directly shows that photoelectric energy arrives in quanta: a threshold frequency, kinetic energy increasing with intensity, emission after a long exposure at any wavelength, or stopping potential depending only on area?
+1. **Multiple choice.** Which observation most directly shows that photoelectric energy arrives in quanta? Choices: (A) Below a threshold frequency no electrons are emitted, regardless of intensity. (B) Brighter light always gives each emitted electron more kinetic energy. (C) All wavelengths eject electrons if the exposure lasts long enough. (D) The stopping potential depends only on the illuminated area.
 2. **True or false.** At fixed frequency above threshold, increasing light intensity raises the maximum kinetic energy of photoelectrons.
-3. **Drag the words.** Complete: a photon has $E=$ ___ and $p=$ ___; photoemission obeys $K_{\max}=$ ___; in Compton scattering, a photon that loses energy has a ___. (Terms: $hf$, $h/\lambda$, $hf-\phi$, longer wavelength, $h/f$, shorter wavelength.)
-4. **Fill in the blanks.** The rest-energy threshold for electron–positron pair production is ___ MeV, and total blackbody power per area scales as temperature to the power ___.
-5. **Mark the words.** Identify the two photon-model observations: “The photoelectric effect has a sharp threshold frequency, and Compton scattering shows an angle-dependent wavelength shift. Classical intensity alone does not explain either result.”
+3. **Drag the words.** Complete the photon relations. A photon has energy ___ and momentum ___. Photoemission obeys ___. In Compton scattering, a photon that loses energy has a ___. (Terms: E = hf; p = $h/\lambda$; Kmax = hf − $\phi$; longer wavelength; E = h/f; shorter wavelength.)
+4. **Fill in the blanks.** Complete the pair-production and thermal-radiation results. The rest-energy threshold for electron–positron pair production is ___ MeV, and total blackbody power per area scales as temperature to the power ___.
+5. **Mark the words.** Mark the two observations that support the photon model. “The photoelectric effect has a sharp threshold frequency, and Compton scattering shows an angle-dependent wavelength shift. Classical intensity alone does not explain either result.”
 :::
 
 ## Conceptual Questions

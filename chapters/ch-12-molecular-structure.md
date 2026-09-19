@@ -384,11 +384,11 @@ Five short, auto-graded questions cycle within one compact activity. The set mix
 :label: check:ch12-chapter-review
 :title: Chapter 12 interactive review
 
-1. **Multiple choice, from a figure.** Why is molecular oxygen paramagnetic: two unpaired electrons occupy antibonding $\pi$ orbitals, all electrons are paired, its bond order is zero, or it has six bonding regions?
+1. **Multiple choice, from a figure.** Why is molecular oxygen paramagnetic in the molecular-orbital description? Figure description: Molecular-orbital energy-level diagrams for nitrogen and oxygen. Choices: (A) It has two unpaired electrons in antibonding $\pi$ orbitals. (B) All of its electrons are paired in bonding orbitals. (C) Its bond order is zero. (D) It has six bonding regions around a central atom.
 2. **True or false.** A molecular-orbital bond order of zero predicts a stably bound molecule in that configuration.
-3. **Drag the words.** Complete: bond order is half the difference between ___; six bonding regions with no lone pairs give ___ geometry; vibrational spectra are mainly ___; rotational spectra are mainly ___. (Terms: bonding and antibonding electron counts, octahedral, infrared, microwave, tetrahedral, ultraviolet only.)
-4. **Fill in the blanks.** If a molecule has eight bonding and four antibonding electrons, its bond order is ___; six electron regions with no lone pairs form an ___ geometry.
-5. **Mark the words.** Identify the two intermolecular-force statements: “London dispersion acts between all atoms and molecules, while especially strong hydrogen bonding requires hydrogen bonded to nitrogen, oxygen, or fluorine.”
+3. **Drag the words.** Complete the molecular descriptions. A bond order is half the difference between ___. Six bonding regions with no lone pairs give ___ geometry. Vibrational spectra are mainly ___, while rotational spectra are mainly ___. (Terms: bonding and antibonding electron counts; octahedral; infrared; microwave; tetrahedral; ultraviolet only.)
+4. **Fill in the blanks.** Complete the bond-order and geometry results. If a molecule has 8 bonding and 4 antibonding electrons, its bond order is ___; six electron regions with no lone pairs form an ___ geometry.
+5. **Mark the words.** Mark the two intermolecular-force statements. “London dispersion acts between all atoms and molecules, while especially strong hydrogen bonding requires hydrogen bonded to nitrogen, oxygen, or fluorine.”
 :::
 
 ## Conceptual Questions

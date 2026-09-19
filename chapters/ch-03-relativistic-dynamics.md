@@ -322,11 +322,11 @@ Five short, auto-graded questions cycle within one compact activity. The set mix
 :label: check:ch03-chapter-review
 :title: Chapter 3 interactive review
 
-1. **Multiple choice, from a figure.** For a massless particle, what happens to the energy–momentum triangle: the rest-energy leg becomes zero and $E=pc$; the momentum leg becomes zero and $E=mc^2$; all sides remain nonzero and equal; or total energy becomes zero at nonzero momentum?
+1. **Multiple choice, from a figure.** For a massless particle, what happens to the energy–momentum triangle shown above? Figure description: Right triangle with legs pc and mc squared and hypotenuse E, illustrating the invariant energy–momentum relation. Choices: (A) The rest-energy leg becomes zero, so the relation reduces to E = pc. (B) The momentum leg becomes zero, so the relation reduces to E = $mc^2$. (C) All three sides remain nonzero and equal. (D) The total-energy side becomes zero while momentum remains nonzero.
 2. **True or false.** For the same total beam energy, a fixed-target experiment makes as much center-of-momentum energy available for new particles as a head-on collider.
-3. **Drag the words.** Complete: a massive particle has $p =$ ___, $K =$ ___, and $E =$ ___; a massless photon obeys $E =$ ___. (Terms: $\gamma mu$, $(\gamma-1)mc^2$, $\gamma mc^2$, $pc$, $mu$, $mc^2$.)
-4. **Fill in the blanks.** At $u=0.6c$, $\gamma =$ ___, so the kinetic energy is ___ $mc^2$.
-5. **Mark the words.** Identify the frame and system property used most directly in a threshold calculation: “In the center-of-momentum frame the total momentum is zero, and the system's invariant mass determines which final-state rest masses can be created.”
+3. **Drag the words.** Complete the relativistic momentum and energy relations. A massive particle has momentum p = ___, kinetic energy K = ___, and total energy E = ___. A massless photon obeys E = ___. (Terms: $\gamma mu$; $(\gamma$ − $1)mc^2$; $\gamma mc^2$; pc; mu; $mc^2$.)
+4. **Fill in the blanks.** Evaluate the energy of a particle moving at 0.6c. At u = 0.6c, $\gamma$ = ___, so the kinetic energy is ___ $mc^2$.
+5. **Mark the words.** Mark the frame and system property used most directly in a threshold calculation. “In the center-of-momentum frame the total momentum is zero, and the system’s invariant mass determines which final-state rest masses can be created.”
 :::
 
 ## Conceptual Questions

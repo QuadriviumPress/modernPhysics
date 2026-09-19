@@ -39,11 +39,14 @@ to a fixed set of content types: adding an activity automatically expands the
 generated library union. Each library is still emitted once and shared by every
 activity, rather than being duplicated inside every `content/<id>/`.
 
-All fourteen chapter review carousels are generated together so their five
-question styles, interface text, and dependency metadata stay consistent. Edit
-their source in `scripts/generate-h5p-quizzes.mjs`, then run
-`npm run h5p:generate`. The generated `content/ch01-chapter-review/` through
-`content/ch14-chapter-review/` folders are committed authoring inputs. A
+All fourteen chapter review carousels and their static chapter fallbacks are
+generated together from `scripts/generate-h5p-quizzes.mjs`. Edit the questions
+there, then run `npm run h5p:generate`. The generated
+`content/ch01-chapter-review/` through `content/ch14-chapter-review/` folders
+and the five-item review lists in `chapters/` are committed authoring inputs.
+`npm run h5p:check` compares both outputs with the source without changing files;
+it runs as part of `npm run verify`. A question may carry a chapter figure from
+`images/`: name it with the generator's
 question may carry a chapter figure from `images/`: name it with the generator's
 `image()` helper and the writer copies the file into the activity and adds the
 `H5P.Image` dependency by itself.
@@ -124,11 +127,11 @@ small hand-authored questions and readable diffs:
    other field (`behaviour`, the button labels, …) has a built-in English
    default, kept explicit here only where it differs from that default.
 
-4. Reference it from a chapter with `{h5p}` (see `../plugins/README.md`),
-   writing the same question and choices into the directive body — that text
-   is what print, PDF, DOCX, and Markdown readers see, so it has to say the
-   same thing `content.json` does, even though nothing enforces that
-   automatically.
+4. Reference it from a chapter with `{h5p}` (see `../plugins/README.md`) and
+   write a static equivalent in the directive body for print, PDF, DOCX, and
+   Markdown readers. For the fourteen generated chapter reviews, the generator
+   writes this body from the same questions used by the interactive activity.
+   Other hand-authored activities still need their fallback written by hand.
 
 5. Run `npm run h5p:prepare` (or `npm start`, which runs it automatically),
    open the chapter, and check that the activity renders and behaves correctly

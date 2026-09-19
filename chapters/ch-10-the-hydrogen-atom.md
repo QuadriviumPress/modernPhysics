@@ -390,11 +390,11 @@ Five short, auto-graded questions cycle within one compact activity. The set mix
 :label: check:ch10-chapter-review
 :title: Chapter 10 interactive review
 
-1. **Multiple choice, from a figure.** Which orbital selection rule governs an ordinary electric-dipole transition: $\Delta\ell=\pm1$, $\Delta\ell=0$ only, $\Delta n=0$ only, or required $\Delta m_s=\pm1$?
+1. **Multiple choice, from a figure.** Which orbital selection rule governs an ordinary electric-dipole transition? Figure description: Hydrogen energy levels and the Lyman, Balmer, and Paschen transition series. Choices: (A) $\Delta \ell$ = $\pm 1$. (B) $\Delta \ell$ = 0 only. (C) $\Delta n$ = 0 only. (D) $\Delta ms$ = $\pm 1$ is required.
 2. **True or false.** The hydrogen ground state has orbital angular momentum $\hbar$, as in the original Bohr model.
-3. **Drag the words.** Complete: for a given $n$, $\ell$ runs from ___; for a given $\ell$, $m_\ell$ runs from ___; the spin projection is ___; electric-dipole transitions require ___. (Terms: $0$ to $n-1$, $-\ell$ to $+\ell$, $m_s=\pm1/2$, $\Delta\ell=\pm1$, $1$ to $n$, $\Delta\ell=0$.)
-4. **Fill in the blanks.** Increasing nuclear charge from $Z=1$ to $Z=2$ makes the binding-energy magnitude ___ times as large and the characteristic orbital radius ___ as large.
-5. **Mark the words.** Identify the two Stern–Gerlach results: “The beam separates into two discrete deflections, revealing an intrinsic spin-one-half degree of freedom. It does not produce a continuous range of orientations.”
+3. **Drag the words.** Complete the hydrogen quantum-number rules. For a given n, $\ell$ runs from ___. For a given $\ell$, $m\ell$ runs from ___. The spin projection is ___. Electric-dipole transitions require ___. (Terms: 0 to n − 1; $-\ell$ to $+\ell$; ms = $\pm 1/2$; $\Delta \ell$ = $\pm 1$; 1 to n; $\Delta \ell$ = 0.)
+4. **Fill in the blanks.** Complete the hydrogenic scaling at fixed n. Increasing nuclear charge from Z = 1 to Z = 2 makes the binding-energy magnitude ___ times as large and the characteristic orbital radius ___ as large.
+5. **Mark the words.** Mark the two results revealed by the Stern–Gerlach experiment. “The beam separates into two discrete deflections, revealing an intrinsic spin-one-half degree of freedom. It does not produce a continuous range of orientations.”
 :::
 
 ## Conceptual Questions

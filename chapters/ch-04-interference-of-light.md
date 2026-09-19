@@ -200,12 +200,12 @@ Young's arrangement is shown in {numref}`Figure %s <fig:ch04-double-slit>`. Ligh
 Young's double-slit experiment. (a) The first slit produces a single wavefront that illuminates both of the second pair, so $S_1$ and $S_2$ act as coherent sources. (b) For $L \gg d$ the two rays reaching a distant point are effectively parallel, and the ray from $S_2$ travels an extra distance $\Delta r = d\sin\theta$. Original schematic generated with matplotlib; see `scripts/figures/`.
 ```
 
-```{video} https://www.youtube.com/watch?v=uva6gBEpfDY
-:video-title: The Double-Slit Experiment
+```{video} https://www.youtube.com/watch?v=Iuv6hY6zsd0
+:video-title: The Original Double Slit Experiment
 :label: fig:ch04-double-slit-video
-:alt: A demonstration and diagrams compare light, electron, and single-particle double-slit patterns.
+:alt: A demonstration recreates Young's original double-slit apparatus and asks passersby what they think light is made of.
 
-A concise demonstration of how the same apparatus connects classical wave interference to the single-particle experiment revisited in [Chapter 7](#ch-wave-properties-of-particles).
+A recreation of Young's original apparatus, framed around the same wave-versus-particle question this chapter answers — and that [Chapter 7](#ch-wave-properties-of-particles) reopens for matter itself.
 ```
 
 The first slit is not decoration. Its job is to guarantee that a single wavefront reaches both of the following slits, so that whatever the source does — however erratically it flickers — it does the same thing at $S_1$ and at $S_2$ at the same moment. The two slits then behave as **coherent** sources with a fixed phase relationship. Without that first slit, different parts of an extended source illuminate the two slits independently, and the pattern washes out. (The coherence section below makes this precise; a modern laser has enough built-in coherence that the first slit can be omitted, which is why the classroom demonstration looks so much easier than Young's original.)

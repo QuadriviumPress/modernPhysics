@@ -87,12 +87,12 @@ The de Broglie justification for $L=n\hbar$ works out concretely: demanding that
 
 The model's failures, however, were just as instructive as its success. Extending Bohr's orbit-quantization scheme to **helium** — even with the refinements (elliptical orbits, relativistic orbit precession) added by Arnold Sommerfeld through the 1910s — never produced a correct ionization energy or a stable ground-state configuration for a two-electron atom; the semiclassical machinery simply had no consistent way to handle two mutually interacting orbiting electrons. The model also could not predict *which* transitions between levels actually occur (the selection rules developed later in this chapter), could not account for the relative brightness of spectral lines, and — as already emphasized above — gets the ground state's angular momentum flatly wrong: Bohr's $n=1$ orbit carries $L=\hbar$, while the true ground state has $L=0$ and no orbit, well-defined trajectory, or definite radius at all, only the probability cloud shown in {numref}`Figure %s <fig:ch10-hydrogen-models-sim>`. These failures, especially the inability to extend the model consistently beyond hydrogen, were a central motivation for the fully quantum-mechanical treatment developed in Chapters [8](#ch-the-schrodinger-equation)–[9](#ch-quantum-mechanics-in-three-dimensions) and specialized to hydrogen in this chapter — a treatment that, unlike Bohr's, generalizes cleanly to helium and every other atom in [Chapter 11](#ch-many-electron-atoms).
 
-```{video} https://www.youtube.com/watch?v=au2HCVn9IJI
-:video-title: Bohr Model of the Hydrogen Atom
-:label: fig:ch10-bohr-model-video
-:alt: An explainer walks through Bohr's reasoning for quantized electron orbits and why the model nonetheless had to be superseded.
+```{video} https://www.youtube.com/watch?v=SeDaOigLBTU
+:video-title: What Are Atoms and Isotopes?
+:label: fig:ch10-atoms-isotopes-video
+:alt: An explainer builds up the proton–neutron–electron picture of the atom, using hydrogen as the simplest case.
 
-A closer look at the reasoning above: why Bohr's model worked as well as it did, and exactly where it runs into trouble.
+A step back to the atom itself: the proton–neutron–electron bookkeeping that both Bohr's orbits and the wave functions later in this chapter are trying to explain the behavior of.
 ```
 
 ### Hydrogenic Ions: Scaling with Nuclear Charge

@@ -397,14 +397,6 @@ Both descriptions—magnetic force in one frame and electric force from a net ch
 A frame-by-frame animated version of the length-contraction argument above, with the current-carrying wire drawn explicitly in both frames.
 ```
 
-```{video} https://www.youtube.com/watch?v=9sQ2IZ-POSM
-:video-title: The Hidden Connection Between Magnetism and Relativity!
-:label: fig:ch02-relativity-magnetism-mould-video
-:alt: A demonstration compares a moving magnet and coil to show that only relative motion, not which object moves, determines the induced current.
-
-A second, independent take on the same result: whether the magnet or the coil is "the one that moves" cannot affect the physics, which is itself a relativity argument before length contraction is invoked explicitly.
-```
-
 ## Summary
 
 - Because both postulates must hold simultaneously, two events simultaneous in one inertial frame are, in general, not simultaneous in another: **simultaneity is relative**. Simultaneity within a single frame can be defined operationally by radar synchronization: bounce a light signal off a distant clock and assign it the round-trip midpoint time.

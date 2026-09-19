@@ -134,22 +134,23 @@ The `{video}` directive embeds no copied video file. It uses a privacy-conscious
 player on the website, an automatically supplied YouTube poster in static
 outputs, and a caption link to the publisher's watch page.
 
+All channel attributions below are verified against YouTube's oEmbed API (`author_name`), not against search-engine summaries alone, after an earlier pass turned up several confidently-stated but incorrect attributions.
+
 | Chapter | Video | Publisher / source |
 |---|---|---|
 | 1. The Need for Relativity | *Why No One Has Measured The Speed Of Light* | Veritasium, https://www.youtube.com/watch?v=pTn6Ewhb27k |
-| 2. Special Relativity | *Special Relativity and the Twin Paradox* | Veritasium, https://www.youtube.com/watch?v=ERgwVm9qWKA |
+| 2. Special Relativity | *Special Relativity and the Twin Paradox* | Physics Girl, https://www.youtube.com/watch?v=ERgwVm9qWKA |
 | 2. Special Relativity | *How Special Relativity Makes Magnets Work* | Veritasium & minutephysics, https://www.youtube.com/watch?v=1TKSfAkWWN0 |
-| 2. Special Relativity | *The Hidden Connection Between Magnetism and Relativity!* | Steve Mould, https://www.youtube.com/watch?v=9sQ2IZ-POSM |
-| 4. Interference of Light | *The Double-Slit Experiment* | Professor Dave Explains, https://www.youtube.com/watch?v=uva6gBEpfDY |
-| 5. Diffraction of Light | *Using Quantum Mechanics to Make Holographic Rainbows on Chocolate* | Steve Mould, https://www.youtube.com/watch?v=yhmCRliJ93w |
-| 6. Particle Properties of Waves | *Something Strange Happens When You Trust Quantum Mechanics* | Veritasium, https://www.youtube.com/watch?v=qJZ1Ez28C-A |
+| 4. Interference of Light | *The Original Double Slit Experiment* | Veritasium, https://www.youtube.com/watch?v=Iuv6hY6zsd0 |
+| 5. Diffraction of Light | *Using Quantum Mechanics to Make Holographic Rainbows on Chocolate* | The Action Lab, https://www.youtube.com/watch?v=yhmCRliJ93w |
+| 6. Particle Properties of Waves | *The Strangest Implication of Quantum Mechanics* | Veritasium, https://www.youtube.com/watch?v=qJZ1Ez28C-A |
 | 7. Wave Properties of Particles | *Davisson and Germer Experiment—Electron Diffraction* | Leena Gurg, https://www.youtube.com/watch?v=uvHc9etFt-A |
 | 7. Wave Properties of Particles | *Is This What Quantum Mechanics Looks Like?* | Veritasium, https://www.youtube.com/watch?v=WIyTZDHuarQ |
 | 7. Wave Properties of Particles | *The more general uncertainty principle, regarding Fourier transforms* | 3Blue1Brown, https://www.youtube.com/watch?v=MBnnXbOM5S4 |
-| 7. Wave Properties of Particles | *What Is The Smallest Possible Thing?* | Vsauce, https://www.youtube.com/watch?v=i2fSrTae-gQ |
+| 7. Wave Properties of Particles | *Is Anything Real?* (linked, not embedded) | Vsauce, https://www.youtube.com/watch?v=L45Q1_psDqk |
 | 8. The Schrödinger Equation | *Some light quantum mechanics (with minutephysics)* | 3Blue1Brown, https://www.youtube.com/watch?v=MzRCDLre1b4 |
-| 10. The Hydrogen Atom | *Bohr Model of the Hydrogen Atom* | Veritasium, https://www.youtube.com/watch?v=au2HCVn9IJI |
-| 13. Nuclear Physics | *Radiation from a banana measured using a Geiger counter* | Physics Girl, https://www.youtube.com/watch?v=X_XVRA5nD6M |
+| 10. The Hydrogen Atom | *What Are Atoms and Isotopes?* | Veritasium, https://www.youtube.com/watch?v=SeDaOigLBTU |
+| 13. Nuclear Physics | *Radiation vs Radioactive Atoms* | Veritasium, https://www.youtube.com/watch?v=sehKAccM8p0 |
 | 13. Nuclear Physics | *I Explored the World's First Nuclear Power Plant (and How It Works)* | SmarterEveryDay, https://www.youtube.com/watch?v=JVROsxtjoCw |
-| 13. Nuclear Physics | *Why Einstein Thought Nuclear Weapons Impossible* | Veritasium, https://www.youtube.com/watch?v=HD3k1hgbUXQ |
+| 13. Nuclear Physics | *Why Einstein Thought Nuclear Weapons Were Impossible* | Veritasium, https://www.youtube.com/watch?v=HD3k1hgbUXQ |
 | 14. Elementary Particles and the Standard Model | *Your Mass is NOT From the Higgs Boson* | Veritasium, https://www.youtube.com/watch?v=Ztc6QPNUqls |

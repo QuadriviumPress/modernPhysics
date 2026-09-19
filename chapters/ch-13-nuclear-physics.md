@@ -239,12 +239,12 @@ The exponential law describes a population, not a nucleus, and the difference be
 Radioactive decay watched nucleus by nucleus and in bulk, then applied to dating. The decay constant is a probability per unit time and nothing else: nuclei do not age.
 ```
 
-```{video} https://www.youtube.com/watch?v=X_XVRA5nD6M
-:video-title: Radiation from a banana measured using a Geiger counter
-:label: fig:ch13-banana-radiation-video
-:alt: A Geiger counter is used to measure the naturally occurring radioactivity of a banana's potassium-40 content.
+```{video} https://www.youtube.com/watch?v=sehKAccM8p0
+:video-title: Radiation vs Radioactive Atoms
+:label: fig:ch13-radiation-video
+:alt: An explainer distinguishes radiation itself from the radioactive atoms that emit it, addressing common confusion about what makes something dangerous.
 
-A concrete reminder that the exponential decay law above describes everyday, naturally occurring radioactivity — including the potassium-40 in an ordinary banana — not just reactor fuel and dating samples.
+A plain-language reminder of the distinction this section relies on throughout: it is the decaying nuclei, not "radiation" as some free-floating substance, that the decay law above actually describes.
 ```
 
 #### Historical Context: Becquerel, the Curies, and the Discovery of Radioactivity
@@ -376,7 +376,7 @@ A tour of a real reactor built around exactly the chain-reaction and moderator i
 ```
 
 ```{video} https://www.youtube.com/watch?v=HD3k1hgbUXQ
-:video-title: Why Einstein Thought Nuclear Weapons Impossible
+:video-title: Why Einstein Thought Nuclear Weapons Were Impossible
 :label: fig:ch13-nuclear-weapons-video
 :alt: An explainer traces the history of neutron-induced chain reactions and why early estimates of critical mass led physicists to doubt a bomb was feasible.
 

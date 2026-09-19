@@ -244,15 +244,19 @@ In Compton's experiment, X-rays of a single wavelength $\lambda$ are directed at
 
 Treat the photon as a particle with energy $E = hc/\lambda$ and momentum $p = E/c = h/\lambda$ (consistent with the massless-particle limit of the energy–momentum relation from [Chapter 3](#ch-relativistic-dynamics)), and apply conservation of relativistic energy and momentum to an elastic collision between the photon and an initially free, stationary electron of mass $m_e$. Let the photon scatter through angle $\theta$, emerging with wavelength $\lambda'$, while the electron recoils with momentum $p_e$ and (relativistic) energy $E_e$. The three momentum components entering the collision — incident photon momentum $h/\lambda$ along the initial direction, and zero for the electron — must balance the two outgoing momenta, whose vector sum (photon momentum $h/\lambda'$ at angle $\theta$, electron momentum $p_e$ at some recoil angle) forms a triangle. The law of cosines applied to that triangle gives
 
-$$
+```{math}
+:enumerated: false
+
 (p_ec)^2 = \left(\frac{hc}{\lambda}\right)^2 + \left(\frac{hc}{\lambda'}\right)^2 - 2\left(\frac{hc}{\lambda}\right)\left(\frac{hc}{\lambda'}\right)\cos\theta. \tag{i}
-$$
+```
 
 Conservation of energy, with the electron initially at rest ($E_e^{(0)} = m_ec^2$), gives
 
-$$
+```{math}
+:enumerated: false
+
 E_e = \frac{hc}{\lambda} - \frac{hc}{\lambda'} + m_ec^2. \tag{ii}
-$$
+```
 
 Squaring (ii) and using the energy–momentum invariant $E_e^2 = (p_ec)^2 + (m_ec^2)^2$ from [Chapter 3](#ch-relativistic-dynamics) to eliminate $E_e$ in favor of $p_ec$, then substituting (i) for $(p_ec)^2$, produces (after the $\left(\frac{hc}{\lambda}\right)^2$, $\left(\frac{hc}{\lambda'}\right)^2$, and $(m_ec^2)^2$ terms cancel identically between the two sides) the much simpler relation
 

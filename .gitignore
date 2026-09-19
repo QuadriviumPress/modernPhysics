@@ -8,3 +8,6 @@ work/
 /exports/
 __pycache__/
 *.py[cod]
+
+# MS Office lock files left behind when a document is open during `git add`.
+~$*

@@ -376,14 +376,17 @@ When checking whether a transition is allowed, check $\Delta\ell$ first and don'
 
 ## Check Your Understanding
 
-1. How do hydrogenic binding energies scale with nuclear charge $Z$?
-2. For $n=3$, which values of $\ell$ are allowed?
-3. What orbital selection rule governs ordinary electric-dipole transitions?
+Five short, auto-graded questions cycle within one compact activity. The set mixes multiple choice, true/false, drag-the-words, fill-in-the-blank, and mark-the-words formats, and opens on the hydrogen energy-level diagram.
 
-:::{dropdown} Answers
-1. $E_n\propto-Z^2/n^2$.
-2. $\ell=0,1,2$.
-3. $\Delta\ell=\pm1$ (with the associated magnetic rule $\Delta m_\ell=0,\pm1$).
+:::{h5p} ch10-chapter-review
+:label: check:ch10-chapter-review
+:title: Chapter 10 interactive review
+
+1. **Multiple choice, from a figure.** Which orbital selection rule governs an ordinary electric-dipole transition: $\Delta\ell=\pm1$, $\Delta\ell=0$ only, $\Delta n=0$ only, or required $\Delta m_s=\pm1$?
+2. **True or false.** The hydrogen ground state has orbital angular momentum $\hbar$, as in the original Bohr model.
+3. **Drag the words.** Complete: for a given $n$, $\ell$ runs from ___; for a given $\ell$, $m_\ell$ runs from ___; the spin projection is ___; electric-dipole transitions require ___. (Terms: $0$ to $n-1$, $-\ell$ to $+\ell$, $m_s=\pm1/2$, $\Delta\ell=\pm1$, $1$ to $n$, $\Delta\ell=0$.)
+4. **Fill in the blanks.** Increasing nuclear charge from $Z=1$ to $Z=2$ makes the binding-energy magnitude ___ times as large and the characteristic orbital radius ___ as large.
+5. **Mark the words.** Identify the two Stern–Gerlach results: “The beam separates into two discrete deflections, revealing an intrinsic spin-one-half degree of freedom. It does not produce a continuous range of orientations.”
 :::
 
 ## Conceptual Questions

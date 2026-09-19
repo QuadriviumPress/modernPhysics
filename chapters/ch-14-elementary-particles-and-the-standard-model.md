@@ -353,14 +353,17 @@ If you want the shortest reading of this chapter's ending, it is this: the Stand
 
 ## Check Your Understanding
 
-1. Which Standard Model interaction is carried by gluons?
-2. What quark combination distinguishes a baryon from a meson?
-3. Why is transverse momentum imbalance useful for inferring an unseen neutrino at a collider?
+Five short, auto-graded questions cycle within one compact activity. The set mixes multiple choice, true/false, drag-the-words, fill-in-the-blank, and mark-the-words formats, and opens on the Standard Model chart.
 
-:::{dropdown} Answers
-1. The strong interaction.
-2. A baryon contains three quarks (or three antiquarks); a meson contains a quark–antiquark pair.
-3. The incoming beams have essentially zero net transverse momentum, so visible final-state momenta should balance unless something unseen carries momentum away.
+:::{h5p} ch14-chapter-review
+:label: check:ch14-chapter-review
+:title: Chapter 14 interactive review
+
+1. **Multiple choice, from a figure.** Which Standard Model interaction is carried by gluons: strong, electromagnetic, weak, or gravitational?
+2. **True or false.** A meson is made from three quarks, while a baryon is a quark–antiquark pair.
+3. **Drag the words.** Complete: matter particles with half-integer spin are ___; force carriers are ___; three-quark hadrons are ___; quark–antiquark hadrons are ___. (Terms: fermions, bosons, baryons, mesons, leptons only, gauge fermions.)
+4. **Fill in the blanks.** A proton has quark content ___, and missing transverse momentum can signal an unseen ___.
+5. **Mark the words.** Identify two conserved quantities: “Every reaction must conserve electric charge and baryon number. Lepton number is also conserved to excellent approximation in Standard Model reactions.”
 :::
 
 ## Conceptual Questions

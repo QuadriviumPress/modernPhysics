@@ -786,14 +786,17 @@ For now, the wave description stands on its own, and the next chapter completes 
 
 ## Check Your Understanding
 
-1. What phase difference corresponds to a path difference of $\lambda/2$?
-2. If slit separation increases while $L$ and $\lambda$ stay fixed, what happens to fringe spacing?
-3. Does reflection from a higher-index medium add a phase change of $0$ or $\pi$?
+Five short, auto-graded questions cycle within one compact activity. The set mixes multiple choice, true/false, drag-the-words, fill-in-the-blank, and mark-the-words formats, and opens on a double-slit intensity pattern.
 
-:::{dropdown} Answers
-1. $\pi$ radians, producing destructive interference for equal in-phase sources.
-2. The spacing $\Delta y=\lambda L/d$ decreases.
-3. It adds $\pi$; reflection from a lower-index medium does not.
+:::{h5p} ch04-chapter-review
+:label: check:ch04-chapter-review
+:title: Chapter 4 interactive review
+
+1. **Multiple choice, from a figure.** If slit separation $d$ increases while wavelength and screen distance stay fixed, does the fringe spacing decrease, increase, stay unchanged, or merely exchange the bright and dark positions?
+2. **True or false.** Reflection from a boundary leading into a higher-index medium adds a phase change of $\pi$.
+3. **Drag the words.** Complete: a path difference $\Delta r$ produces phase difference ___; constructive interference occurs at ___; destructive interference occurs at ___; stable fringes require ___. (Terms: $2\pi\Delta r/\lambda$, $\Delta r=m\lambda$, $\Delta r=(m+1/2)\lambda$, coherence, $\Delta r=\lambda/m$, incoherence.)
+4. **Fill in the blanks.** A path difference of $\lambda/2$ gives a phase difference of ___ radians, and doubling $d$ makes the fringe spacing ___ as large.
+5. **Mark the words.** Identify the two correct interference statements: “A stable pattern requires a phase difference that remains predictable during observation. Interference redistributes energy between bright and dark regions; it does not create energy.”
 :::
 
 ## Conceptual Questions

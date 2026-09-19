@@ -1,0 +1,366 @@
+{
+  "progressType": "dots",
+  "passPercentage": 80,
+  "questions": [
+    {
+      "library": "H5P.MultiChoice 1.16",
+      "subContentId": "4ba6ad50-1848-4391-9847-8f64b3331266",
+      "metadata": {
+        "title": "What change makes a single-slit diffraction pattern wider?",
+        "license": "CC BY-NC-SA",
+        "licenseVersion": "4.0",
+        "contentType": "Multiple Choice"
+      },
+      "params": {
+        "question": "<p>What change makes a single-slit diffraction pattern wider?</p>",
+        "media": {
+          "type": {
+            "library": "H5P.Image 1.1",
+            "subContentId": "59ce37a0-3324-424d-8b10-c7d8a1fc871c",
+            "metadata": {
+              "title": "Single-slit diffraction intensity pattern with a broad central maximum and weaker side lobes.",
+              "license": "CC BY-NC-SA",
+              "licenseVersion": "4.0",
+              "contentType": "Image"
+            },
+            "params": {
+              "contentName": "Image",
+              "alt": "Single-slit diffraction intensity pattern with a broad central maximum and weaker side lobes.",
+              "decorative": false,
+              "file": {
+                "path": "images/ch05-single-slit-intensity.svg",
+                "mime": "image/svg+xml",
+                "width": 504,
+                "height": 316
+              }
+            }
+          },
+          "disableImageZooming": false
+        },
+        "answers": [
+          {
+            "text": "<div>Narrowing the slit.</div>",
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "Yes—this is one of the correct choices.",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<div>Widening the slit.</div>",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "Not this one. Revisit the chapter summary and try again.",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<div>Increasing the screen distance while measuring angles.</div>",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "Not this one. Revisit the chapter summary and try again.",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<div>Adding more illuminated grating lines without changing the slit.</div>",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "Not this one. Revisit the chapter summary and try again.",
+              "notChosenFeedback": ""
+            }
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "enableCheckButton": true,
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100,
+            "feedback": "You got @score of @total points."
+          }
+        ],
+        "UI": {
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "checkAnswerButton": "Check",
+          "submitAnswerButton": "Submit",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution",
+          "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+          "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+          "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+        }
+      }
+    },
+    {
+      "library": "H5P.TrueFalse 1.8",
+      "subContentId": "e0bbd97c-1f00-4da1-8570-c2d60235c4d1",
+      "metadata": {
+        "title": "The value m = 0 is a single-slit diffraction minimum.",
+        "license": "CC BY-NC-SA",
+        "licenseVersion": "4.0",
+        "contentType": "True/False Question"
+      },
+      "params": {
+        "question": "<p>The value m = 0 is a single-slit diffraction minimum.</p>",
+        "correct": "false",
+        "media": {
+          "disableImageZooming": false
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "enableCheckButton": true,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false
+        },
+        "l10n": {
+          "trueText": "True",
+          "falseText": "False",
+          "score": "You got @score of @total points",
+          "checkAnswer": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgain": "Retry",
+          "submitAnswer": "Submit",
+          "wrongAnswerMessage": "That answer is incorrect.",
+          "correctAnswerMessage": "Correct.",
+          "scoreBarLabel": "You got :num out of :total points",
+          "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+          "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+          "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+        }
+      }
+    },
+    {
+      "library": "H5P.DragText 1.10",
+      "subContentId": "8d3d65c1-2529-4a44-8e7d-8527a0b31512",
+      "metadata": {
+        "title": "Complete the principal diffraction relations.",
+        "license": "CC BY-NC-SA",
+        "licenseVersion": "4.0",
+        "contentType": "Drag the Words"
+      },
+      "params": {
+        "taskDescription": "<p>Complete the principal diffraction relations.</p>",
+        "textField": "Single-slit minima obey *a sin θ = mλ*. A grating’s resolving power is *R = mN*. A circular aperture has Rayleigh angle *1.22λ/D*. Crystal planes satisfy *nλ = 2d sin θ*.",
+        "distractors": "*d sin θ = mλ*\n*λ/D²*",
+        "media": {
+          "disableImageZooming": false
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "enableCheckButton": true,
+          "instantFeedback": false
+        },
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100,
+            "feedback": "You placed @score of @total terms correctly."
+          }
+        ],
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "dropZoneIndex": "Drop zone @index.",
+        "empty": "Drop zone @index is empty.",
+        "contains": "Drop zone @index contains draggable @draggable.",
+        "ariaDraggableIndex": "@index of @count draggables.",
+        "tipLabel": "Show tip",
+        "correctText": "Correct!",
+        "incorrectText": "Incorrect!",
+        "resetDropTitle": "Reset drop",
+        "resetDropDescription": "Are you sure you want to reset this drop zone?",
+        "grabbed": "Draggable is grabbed.",
+        "cancelledDragging": "Cancelled dragging.",
+        "correctAnswer": "Correct answer:",
+        "feedbackHeader": "Feedback",
+        "scoreBarLabel": "You got :num out of :total points",
+        "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+        "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+        "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+      }
+    },
+    {
+      "library": "H5P.Blanks 1.14",
+      "subContentId": "9cf00938-a07c-4096-91aa-32f97258930a",
+      "metadata": {
+        "title": "Complete the grating and aperture results.",
+        "license": "CC BY-NC-SA",
+        "licenseVersion": "4.0",
+        "contentType": "Fill in the Blanks"
+      },
+      "params": {
+        "text": "<p>Complete the grating and aperture results.</p>",
+        "questions": [
+          "<p>A grating used in order m = 2 with N = 500 illuminated lines has resolving power *1000*, while doubling a circular aperture’s diameter makes its diffraction-limited angle *half/one half/1/2* as large.</p>"
+        ],
+        "media": {
+          "disableImageZooming": false
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "enableCheckButton": true,
+          "autoCheck": false,
+          "caseSensitive": false,
+          "showSolutionsRequiresInput": true,
+          "separateLines": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "acceptSpellingErrors": false
+        },
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100,
+            "feedback": "You completed @score of @total blanks correctly."
+          }
+        ],
+        "showSolutions": "Show solution",
+        "tryAgain": "Retry",
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "notFilledOut": "Please fill in all blanks to view the solution",
+        "answerIsCorrect": "':ans' is correct",
+        "answerIsWrong": "':ans' is wrong",
+        "answeredCorrectly": "Answered correctly",
+        "answeredIncorrectly": "Answered incorrectly",
+        "solutionLabel": "Correct answer:",
+        "inputLabel": "Blank input @num of @total",
+        "inputHasTipLabel": "Tip available",
+        "tipLabel": "Tip",
+        "scoreBarLabel": "You got :num out of :total points",
+        "a11yCheckingModeHeader": "Checking mode",
+        "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+        "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+        "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+      }
+    },
+    {
+      "library": "H5P.MarkTheWords 1.11",
+      "subContentId": "45f49892-7ae2-4d37-89f1-cc78e45bc313",
+      "metadata": {
+        "title": "Mark the two changes that improve diffraction-limited resolution.",
+        "license": "CC BY-NC-SA",
+        "licenseVersion": "4.0",
+        "contentType": "Mark the Words"
+      },
+      "params": {
+        "taskDescription": "<p>Mark the two changes that improve diffraction-limited resolution.</p>",
+        "textField": "A grating resolves closer wavelengths by using *more illuminated lines*. A circular instrument resolves closer angular sources by using a *larger aperture diameter*. Narrowing an ordinary slit broadens its pattern.",
+        "media": {
+          "disableImageZooming": false
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "enableCheckButton": true,
+          "showScorePoints": true
+        },
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100,
+            "feedback": "You marked @score of @total terms correctly."
+          }
+        ],
+        "checkAnswerButton": "Check",
+        "submitAnswerButton": "Submit",
+        "tryAgainButton": "Retry",
+        "showSolutionButton": "Show solution",
+        "correctAnswer": "Correct!",
+        "incorrectAnswer": "Incorrect!",
+        "missedAnswer": "Answer not found!",
+        "displaySolutionDescription": "The text now shows the solution.",
+        "scoreBarLabel": "You got :num out of :total points",
+        "a11yFullTextLabel": "Full readable text",
+        "a11yClickableTextLabel": "Full text where words can be marked",
+        "a11ySolutionModeHeader": "Solution mode",
+        "a11yCheckingHeader": "Checking mode",
+        "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+        "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+        "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+      }
+    }
+  ],
+  "introPage": {
+    "showIntroPage": false,
+    "title": "Diffraction of Light Review",
+    "introduction": "<p>Five short questions review the chapter.</p>",
+    "startButtonText": "Start review"
+  },
+  "texts": {
+    "prevButton": "Previous question",
+    "previous": "Previous",
+    "nextButton": "Next question",
+    "next": "Next",
+    "finishButton": "Finish",
+    "submitButton": "Submit",
+    "textualProgress": "Question @current of @total",
+    "jumpToQuestion": "Question %d of %total",
+    "questionLabel": "Question",
+    "readSpeakerProgress": "Question @current of @total",
+    "unansweredText": "Unanswered",
+    "answeredText": "Answered",
+    "currentQuestionText": "Current question",
+    "navigationLabel": "Questions",
+    "questionSetInstruction": "Choose a question to display"
+  },
+  "disableBackwardsNavigation": false,
+  "randomQuestions": false,
+  "endGame": {
+    "showResultPage": true,
+    "showSolutionButton": true,
+    "showRetryButton": true,
+    "noResultMessage": "Finished",
+    "message": "Chapter review complete",
+    "amountCorrect": "@finals of @totals correct",
+    "scoreBarLabel": "You got @finals out of @totals points",
+    "scoreHeader": "Score",
+    "overallFeedback": [
+      {
+        "from": 0,
+        "to": 100,
+        "feedback": "You earned @score of @total points."
+      }
+    ],
+    "solutionButtonText": "Show solutions",
+    "retryButtonText": "Retry",
+    "finishButtonText": "Finish",
+    "submitButtonText": "Submit",
+    "showAnimations": false,
+    "skippable": false,
+    "skipButtonText": "Skip video"
+  },
+  "override": {
+    "checkButton": true,
+    "showSolutionButton": "on",
+    "retryButton": "on"
+  }
+}

@@ -358,14 +358,17 @@ The same principle explains why quantum effects are unobservable for everyday ma
 
 ## Check Your Understanding
 
-1. What physical quantity is obtained from $|\Psi(x,t)|^2$?
-2. Why is the infinite-well ground-state energy not zero?
-3. What feature of a finite barrier makes tunneling possible?
+Five short, auto-graded questions cycle within one compact activity. The set mixes multiple choice, true/false, drag-the-words, fill-in-the-blank, and mark-the-words formats, and opens on the standing-wave modes of an infinite well.
 
-:::{dropdown} Answers
-1. It is the position probability density; integrating it over an interval gives the detection probability there.
-2. A zero-energy particle would have definite zero momentum while confined to a finite region, violating the uncertainty principle and the boundary conditions.
-3. The wave function penetrates the forbidden region and can retain nonzero amplitude at the barrier's far side.
+:::{h5p} ch08-chapter-review
+:label: check:ch08-chapter-review
+:title: Chapter 8 interactive review
+
+1. **Multiple choice, from a figure.** Why is the infinite-well ground-state energy not zero: confinement and boundary conditions forbid a zero-momentum state, the potential inside is infinite, the particle moves at $c$, or the wave function must be constant?
+2. **True or false.** A stationary state has a time-independent probability density even though its wave function carries a time-dependent phase.
+3. **Drag the words.** Complete: $|\Psi|^2$ is the ___; a physical wave function must be ___; bound-state energies arise from ___; tunneling occurs because $\Psi$ has ___. (Terms: probability density, normalizable, boundary conditions, nonzero amplitude beyond a finite barrier, probability amplitude squared only after measurement, zero amplitude inside every barrier.)
+4. **Fill in the blanks.** For a one-dimensional infinite well, $E_n$ is proportional to $n$ raised to the power ___, so $E_2/E_1=$ ___.
+5. **Mark the words.** Identify the two facts that make tunneling possible: “A finite barrier permits an evanescent wave inside the classically forbidden region and the wave function can retain nonzero amplitude on the far side. The particle does not need energy greater than the barrier.”
 :::
 
 ## Conceptual Questions

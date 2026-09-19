@@ -1,0 +1,366 @@
+{
+  "progressType": "dots",
+  "passPercentage": 80,
+  "questions": [
+    {
+      "library": "H5P.MultiChoice 1.16",
+      "subContentId": "b32e81c3-b4dc-44b6-80f6-ced5ea121cea",
+      "metadata": {
+        "title": "If the slit separation d increases while the wavelength and screen distance stay fixed, what happens to the double-slit fringe spacing?",
+        "license": "CC BY-NC-SA",
+        "licenseVersion": "4.0",
+        "contentType": "Multiple Choice"
+      },
+      "params": {
+        "question": "<p>If the slit separation d increases while the wavelength and screen distance stay fixed, what happens to the double-slit fringe spacing?</p>",
+        "media": {
+          "type": {
+            "library": "H5P.Image 1.1",
+            "subContentId": "c2f74565-6780-47c1-9853-8f53784e85a3",
+            "metadata": {
+              "title": "Double-slit intensity pattern with regularly spaced bright fringes.",
+              "license": "CC BY-NC-SA",
+              "licenseVersion": "4.0",
+              "contentType": "Image"
+            },
+            "params": {
+              "contentName": "Image",
+              "alt": "Double-slit intensity pattern with regularly spaced bright fringes.",
+              "decorative": false,
+              "file": {
+                "path": "images/ch04-two-slit-intensity.svg",
+                "mime": "image/svg+xml",
+                "width": 486,
+                "height": 282
+              }
+            }
+          },
+          "disableImageZooming": false
+        },
+        "answers": [
+          {
+            "text": "<div>It decreases because the spacing is proportional to 1/d.</div>",
+            "correct": true,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "Yes—this is one of the correct choices.",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<div>It increases because the spacing is proportional to d.</div>",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "Not this one. Revisit the chapter summary and try again.",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<div>It stays unchanged because only wavelength controls the pattern.</div>",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "Not this one. Revisit the chapter summary and try again.",
+              "notChosenFeedback": ""
+            }
+          },
+          {
+            "text": "<div>The bright and dark fringes exchange positions without changing spacing.</div>",
+            "correct": false,
+            "tipsAndFeedback": {
+              "tip": "",
+              "chosenFeedback": "Not this one. Revisit the chapter summary and try again.",
+              "notChosenFeedback": ""
+            }
+          }
+        ],
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "enableCheckButton": true,
+          "singlePoint": true,
+          "randomAnswers": true,
+          "showSolutionsRequiresInput": true,
+          "autoCheck": false,
+          "passPercentage": 100,
+          "showScorePoints": true
+        },
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100,
+            "feedback": "You got @score of @total points."
+          }
+        ],
+        "UI": {
+          "showSolutionButton": "Show solution",
+          "tryAgainButton": "Retry",
+          "checkAnswerButton": "Check",
+          "submitAnswerButton": "Submit",
+          "tipsLabel": "Show tip",
+          "scoreBarLabel": "You got :num out of :total points",
+          "tipAvailable": "Tip available",
+          "feedbackAvailable": "Feedback available",
+          "readFeedback": "Read feedback",
+          "wrongAnswer": "Wrong answer",
+          "correctAnswer": "Correct answer",
+          "shouldCheck": "Should have been checked",
+          "shouldNotCheck": "Should not have been checked",
+          "noInput": "Please answer before viewing the solution",
+          "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+          "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+          "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+        }
+      }
+    },
+    {
+      "library": "H5P.TrueFalse 1.8",
+      "subContentId": "fc5c4535-968c-463f-974f-22a87d7b383c",
+      "metadata": {
+        "title": "Reflection from a boundary leading into a higher-index medium adds a phase change of π.",
+        "license": "CC BY-NC-SA",
+        "licenseVersion": "4.0",
+        "contentType": "True/False Question"
+      },
+      "params": {
+        "question": "<p>Reflection from a boundary leading into a higher-index medium adds a phase change of π.</p>",
+        "correct": "true",
+        "media": {
+          "disableImageZooming": false
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "enableCheckButton": true,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "autoCheck": false
+        },
+        "l10n": {
+          "trueText": "True",
+          "falseText": "False",
+          "score": "You got @score of @total points",
+          "checkAnswer": "Check",
+          "showSolutionButton": "Show solution",
+          "tryAgain": "Retry",
+          "submitAnswer": "Submit",
+          "wrongAnswerMessage": "That answer is incorrect.",
+          "correctAnswerMessage": "Correct.",
+          "scoreBarLabel": "You got :num out of :total points",
+          "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+          "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+          "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+        }
+      }
+    },
+    {
+      "library": "H5P.DragText 1.10",
+      "subContentId": "06e174c1-0e68-4ab3-8a81-ddad87576eef",
+      "metadata": {
+        "title": "Complete the interference conditions.",
+        "license": "CC BY-NC-SA",
+        "licenseVersion": "4.0",
+        "contentType": "Drag the Words"
+      },
+      "params": {
+        "taskDescription": "<p>Complete the interference conditions.</p>",
+        "textField": "A path difference Δr produces phase difference *2πΔr/λ*. Constructive interference occurs at *Δr = mλ*, while destructive interference occurs at *Δr = (m + 1/2)λ*. Stable fringes require *coherence*.",
+        "distractors": "*Δr = λ/m*\n*incoherence*",
+        "media": {
+          "disableImageZooming": false
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "enableCheckButton": true,
+          "instantFeedback": false
+        },
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100,
+            "feedback": "You placed @score of @total terms correctly."
+          }
+        ],
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "tryAgain": "Retry",
+        "showSolution": "Show solution",
+        "dropZoneIndex": "Drop zone @index.",
+        "empty": "Drop zone @index is empty.",
+        "contains": "Drop zone @index contains draggable @draggable.",
+        "ariaDraggableIndex": "@index of @count draggables.",
+        "tipLabel": "Show tip",
+        "correctText": "Correct!",
+        "incorrectText": "Incorrect!",
+        "resetDropTitle": "Reset drop",
+        "resetDropDescription": "Are you sure you want to reset this drop zone?",
+        "grabbed": "Draggable is grabbed.",
+        "cancelledDragging": "Cancelled dragging.",
+        "correctAnswer": "Correct answer:",
+        "feedbackHeader": "Feedback",
+        "scoreBarLabel": "You got :num out of :total points",
+        "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+        "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+        "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+      }
+    },
+    {
+      "library": "H5P.Blanks 1.14",
+      "subContentId": "6d69e32b-65e0-4f6a-aad3-7a1739b04ef3",
+      "metadata": {
+        "title": "Complete the path-to-phase and fringe-spacing results.",
+        "license": "CC BY-NC-SA",
+        "licenseVersion": "4.0",
+        "contentType": "Fill in the Blanks"
+      },
+      "params": {
+        "text": "<p>Complete the path-to-phase and fringe-spacing results.</p>",
+        "questions": [
+          "<p>A path difference of λ/2 gives a phase difference of *π/pi* radians, and doubling d makes the fringe spacing *half/one half/1/2* as large.</p>"
+        ],
+        "media": {
+          "disableImageZooming": false
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "enableCheckButton": true,
+          "autoCheck": false,
+          "caseSensitive": false,
+          "showSolutionsRequiresInput": true,
+          "separateLines": false,
+          "confirmCheckDialog": false,
+          "confirmRetryDialog": false,
+          "acceptSpellingErrors": false
+        },
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100,
+            "feedback": "You completed @score of @total blanks correctly."
+          }
+        ],
+        "showSolutions": "Show solution",
+        "tryAgain": "Retry",
+        "checkAnswer": "Check",
+        "submitAnswer": "Submit",
+        "notFilledOut": "Please fill in all blanks to view the solution",
+        "answerIsCorrect": "':ans' is correct",
+        "answerIsWrong": "':ans' is wrong",
+        "answeredCorrectly": "Answered correctly",
+        "answeredIncorrectly": "Answered incorrectly",
+        "solutionLabel": "Correct answer:",
+        "inputLabel": "Blank input @num of @total",
+        "inputHasTipLabel": "Tip available",
+        "tipLabel": "Tip",
+        "scoreBarLabel": "You got :num out of :total points",
+        "a11yCheckingModeHeader": "Checking mode",
+        "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+        "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+        "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+      }
+    },
+    {
+      "library": "H5P.MarkTheWords 1.11",
+      "subContentId": "02b7e424-9e18-4280-a545-70bb307d1dcb",
+      "metadata": {
+        "title": "Mark the two statements that explain coherence and energy conservation in interference.",
+        "license": "CC BY-NC-SA",
+        "licenseVersion": "4.0",
+        "contentType": "Mark the Words"
+      },
+      "params": {
+        "taskDescription": "<p>Mark the two statements that explain coherence and energy conservation in interference.</p>",
+        "textField": "A stable pattern requires a *phase difference that remains predictable during observation*. Interference *redistributes energy between bright and dark regions*; it does not create energy.",
+        "media": {
+          "disableImageZooming": false
+        },
+        "behaviour": {
+          "enableRetry": true,
+          "enableSolutionsButton": true,
+          "enableCheckButton": true,
+          "showScorePoints": true
+        },
+        "overallFeedback": [
+          {
+            "from": 0,
+            "to": 100,
+            "feedback": "You marked @score of @total terms correctly."
+          }
+        ],
+        "checkAnswerButton": "Check",
+        "submitAnswerButton": "Submit",
+        "tryAgainButton": "Retry",
+        "showSolutionButton": "Show solution",
+        "correctAnswer": "Correct!",
+        "incorrectAnswer": "Incorrect!",
+        "missedAnswer": "Answer not found!",
+        "displaySolutionDescription": "The text now shows the solution.",
+        "scoreBarLabel": "You got :num out of :total points",
+        "a11yFullTextLabel": "Full readable text",
+        "a11yClickableTextLabel": "Full text where words can be marked",
+        "a11ySolutionModeHeader": "Solution mode",
+        "a11yCheckingHeader": "Checking mode",
+        "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+        "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+        "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+      }
+    }
+  ],
+  "introPage": {
+    "showIntroPage": false,
+    "title": "Interference of Light Review",
+    "introduction": "<p>Five short questions review the chapter.</p>",
+    "startButtonText": "Start review"
+  },
+  "texts": {
+    "prevButton": "Previous question",
+    "previous": "Previous",
+    "nextButton": "Next question",
+    "next": "Next",
+    "finishButton": "Finish",
+    "submitButton": "Submit",
+    "textualProgress": "Question @current of @total",
+    "jumpToQuestion": "Question %d of %total",
+    "questionLabel": "Question",
+    "readSpeakerProgress": "Question @current of @total",
+    "unansweredText": "Unanswered",
+    "answeredText": "Answered",
+    "currentQuestionText": "Current question",
+    "navigationLabel": "Questions",
+    "questionSetInstruction": "Choose a question to display"
+  },
+  "disableBackwardsNavigation": false,
+  "randomQuestions": false,
+  "endGame": {
+    "showResultPage": true,
+    "showSolutionButton": true,
+    "showRetryButton": true,
+    "noResultMessage": "Finished",
+    "message": "Chapter review complete",
+    "amountCorrect": "@finals of @totals correct",
+    "scoreBarLabel": "You got @finals out of @totals points",
+    "scoreHeader": "Score",
+    "overallFeedback": [
+      {
+        "from": 0,
+        "to": 100,
+        "feedback": "You earned @score of @total points."
+      }
+    ],
+    "solutionButtonText": "Show solutions",
+    "retryButtonText": "Retry",
+    "finishButtonText": "Finish",
+    "submitButtonText": "Submit",
+    "showAnimations": false,
+    "skippable": false,
+    "skipButtonText": "Skip video"
+  },
+  "override": {
+    "checkButton": true,
+    "showSolutionButton": "on",
+    "retryButton": "on"
+  }
+}

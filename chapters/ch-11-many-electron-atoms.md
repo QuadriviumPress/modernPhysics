@@ -300,14 +300,17 @@ The properties that make a laser beam distinctive — a single, precisely define
 
 ## Check Your Understanding
 
-1. How many electrons can occupy one spatial orbital, and how must their spins be related?
-2. What does screening do to the nuclear attraction felt by an outer electron?
-3. What population condition is required for laser amplification?
+Five short, auto-graded questions cycle within one compact activity. The set mixes multiple choice, true/false, drag-the-words, fill-in-the-blank, and mark-the-words formats, and opens on the periodic ionization-energy trend.
 
-:::{dropdown} Answers
-1. Two, with opposite spin projections.
-2. Inner electrons reduce the effective nuclear charge felt by the outer electron.
-3. A population inversion: more atoms in the upper laser level than in the lower one.
+:::{h5p} ch11-chapter-review
+:label: check:ch11-chapter-review
+:title: Chapter 11 interactive review
+
+1. **Multiple choice, from a figure.** What does screening do to the nuclear attraction felt by an outer electron: reduce the effective nuclear charge, reverse the force, remove penetration effects, or keep all same-$n$ subshells degenerate?
+2. **True or false.** Two electrons in one spatial orbital may have the same spin projection.
+3. **Drag the words.** Complete: the ___ limits an orbital to two opposite-spin electrons; the ___ fills lower-energy subshells first; ___ maximizes spin in degenerate orbitals; screening produces an ___. (Terms: Pauli exclusion principle, Aufbau principle, Hund's rule, effective nuclear charge, uncertainty principle, bare nuclear charge for every electron.)
+4. **Fill in the blanks.** A $K$-shell vacancy lies in the shell with $n=$ ___, and laser amplification requires a population ___.
+5. **Mark the words.** Identify the two general trends: “Across a period, first ionization energy generally increases while atomic radius generally decreases, as effective nuclear charge grows.”
 :::
 
 ## Conceptual Questions

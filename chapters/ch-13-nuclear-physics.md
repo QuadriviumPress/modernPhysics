@@ -424,14 +424,17 @@ in agreement with the accepted value. Conservation of momentum (the reacting nuc
 
 ## Check Your Understanding
 
-1. What does the near constancy of nuclear density imply about how nuclear radius scales with mass number?
-2. How are decay constant and half-life related?
-3. Why can both fusion of light nuclei and fission of heavy nuclei release energy?
+Five short, auto-graded questions cycle within one compact activity. The set mixes multiple choice, true/false, drag-the-words, fill-in-the-blank, and mark-the-words formats, and opens on the binding-energy curve.
 
-:::{dropdown} Answers
-1. $R\propto A^{1/3}$, so volume is proportional to nucleon number.
-2. $t_{1/2}=\ln2/\lambda$.
-3. Both move products upward toward the peak of the binding-energy-per-nucleon curve near iron and nickel.
+:::{h5p} ch13-chapter-review
+:label: check:ch13-chapter-review
+:title: Chapter 13 interactive review
+
+1. **Multiple choice, from a figure.** Why can both fusion of light nuclei and fission of heavy nuclei release energy: both move products toward higher binding energy per nucleon near iron and nickel, convert every nucleon to radiation, eliminate the strong force, or increase product rest mass?
+2. **True or false.** A radioactive nucleus becomes more likely to decay merely because it has survived for a long time.
+3. **Drag the words.** Complete: alpha decay proceeds by ___; beta decay uses the ___; gamma decay changes nuclear ___; radioactive populations follow an ___. (Terms: quantum tunneling, weak interaction, energy without changing $A$ or $Z$, exponential law, electromagnetic tunneling of electrons, linear law.)
+4. **Fill in the blanks.** Nuclear radius scales as $A$ raised to the power ___, and half-life equals $\ln 2$ divided by the decay ___.
+5. **Mark the words.** Identify the two processes that move nuclei toward the binding-energy peak: “Energy can be released by fusion of light nuclei and by fission of very heavy nuclei. Both produce more tightly bound products.”
 :::
 
 ## Conceptual Questions

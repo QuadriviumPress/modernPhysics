@@ -341,14 +341,17 @@ Four seemingly unrelated phenomena — blackbody radiation, the photoelectric ef
 
 ## Check Your Understanding
 
-1. Which feature of the photoelectric effect shows that light energy arrives in quanta?
-2. What happens to a photon's wavelength when it loses energy in Compton scattering?
-3. What minimum photon energy is required for pair production near a nucleus?
+Five short, auto-graded questions cycle within one compact activity. The set mixes multiple choice, true/false, drag-the-words, fill-in-the-blank, and mark-the-words formats.
 
-:::{dropdown} Answers
-1. Below a threshold frequency no electrons are emitted, regardless of intensity, while above it the maximum electron energy rises with frequency.
-2. Its wavelength increases.
-3. At least $2m_ec^2=1.022\ \text{MeV}$, plus any recoil kinetic energy required by momentum conservation.
+:::{h5p} ch06-chapter-review
+:label: check:ch06-chapter-review
+:title: Chapter 6 interactive review
+
+1. **Multiple choice.** Which observation most directly shows that photoelectric energy arrives in quanta: a threshold frequency, kinetic energy increasing with intensity, emission after a long exposure at any wavelength, or stopping potential depending only on area?
+2. **True or false.** At fixed frequency above threshold, increasing light intensity raises the maximum kinetic energy of photoelectrons.
+3. **Drag the words.** Complete: a photon has $E=$ ___ and $p=$ ___; photoemission obeys $K_{\max}=$ ___; in Compton scattering, a photon that loses energy has a ___. (Terms: $hf$, $h/\lambda$, $hf-\phi$, longer wavelength, $h/f$, shorter wavelength.)
+4. **Fill in the blanks.** The rest-energy threshold for electron–positron pair production is ___ MeV, and total blackbody power per area scales as temperature to the power ___.
+5. **Mark the words.** Identify the two photon-model observations: “The photoelectric effect has a sharp threshold frequency, and Compton scattering shows an angle-dependent wavelength shift. Classical intensity alone does not explain either result.”
 :::
 
 ## Conceptual Questions

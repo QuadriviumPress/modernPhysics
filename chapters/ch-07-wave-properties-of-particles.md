@@ -339,14 +339,17 @@ Since this is small enough that the electron remains nonrelativistic, its kineti
 
 ## Check Your Understanding
 
-1. How does doubling a particle's momentum change its de Broglie wavelength?
-2. What must be sacrificed when a wave packet is made narrower in position?
-3. For a free nonrelativistic particle, which velocity equals the particle speed?
+Five short, auto-graded questions cycle within one compact activity. The set mixes multiple choice, true/false, drag-the-words, fill-in-the-blank, and mark-the-words formats, and opens on a wave-packet envelope.
 
-:::{dropdown} Answers
-1. Since $\lambda=h/p$, the wavelength is halved.
-2. Its range of wave numbers and momenta must broaden.
-3. The group velocity $d\omega/dk$; the phase velocity is different.
+:::{h5p} ch07-chapter-review
+:label: check:ch07-chapter-review
+:title: Chapter 7 interactive review
+
+1. **Multiple choice, from a figure.** How does doubling a particle's momentum change its de Broglie wavelength: halve it, double it, quadruple it, or leave it unchanged?
+2. **True or false.** For a free nonrelativistic particle, the group velocity of its wave packet equals the particle speed.
+3. **Drag the words.** Complete: matter wavelength is ___; a localized particle requires a ___; its envelope moves at the ___, while its individual crests move at the ___. (Terms: $\lambda=h/p$, wave packet, group velocity, phase velocity, $\lambda=p/h$, single plane wave.)
+4. **Fill in the blanks.** Doubling momentum makes $\lambda$ ___ as large; narrowing $\Delta x$ requires the momentum spread $\Delta p$ to become ___.
+5. **Mark the words.** Identify the two matter-wave signatures: “Electrons produce crystal diffraction peaks and individual particles build up a two-path interference pattern. A localized detector click is the particle-like part of the same experiment.”
 :::
 
 ## Conceptual Questions

@@ -320,6 +320,182 @@ const quizzes = [
       markWords( 'ch03', 'Mark the frame and system property used most directly in a threshold calculation.', 'In the *center-of-momentum frame* the total momentum is zero, and the system’s *invariant mass* determines which final-state rest masses can be created.' )
     ]
   },
+  {
+    chapter: 4,
+    title: 'Interference of Light Review',
+    questions: [
+      multiChoice( 'ch04', 'If the slit separation d increases while the wavelength and screen distance stay fixed, what happens to the double-slit fringe spacing?', [
+        { text: 'It decreases because the spacing is proportional to 1/d.', correct: true },
+        { text: 'It increases because the spacing is proportional to d.', correct: false },
+        { text: 'It stays unchanged because only wavelength controls the pattern.', correct: false },
+        { text: 'The bright and dark fringes exchange positions without changing spacing.', correct: false }
+      ], image( 'ch04', 'ch04-two-slit-intensity.svg', 'Double-slit intensity pattern with regularly spaced bright fringes.' ) ),
+      trueFalse( 'ch04', 'Reflection from a boundary leading into a higher-index medium adds a phase change of π.', true ),
+      dragText( 'ch04', 'Complete the interference conditions.', 'A path difference Δr produces phase difference *2πΔr/λ*. Constructive interference occurs at *Δr = mλ*, while destructive interference occurs at *Δr = (m + 1/2)λ*. Stable fringes require *coherence*.', '*Δr = λ/m*\n*incoherence*' ),
+      blanks( 'ch04', 'Complete the path-to-phase and fringe-spacing results.', [ 'A path difference of λ/2 gives a phase difference of *π/pi* radians, and doubling d makes the fringe spacing *half/one half/1/2* as large.' ] ),
+      markWords( 'ch04', 'Mark the two statements that explain coherence and energy conservation in interference.', 'A stable pattern requires a *phase difference that remains predictable during observation*. Interference *redistributes energy between bright and dark regions*; it does not create energy.' )
+    ]
+  },
+  {
+    chapter: 5,
+    title: 'Diffraction of Light Review',
+    questions: [
+      multiChoice( 'ch05', 'What change makes a single-slit diffraction pattern wider?', [
+        { text: 'Narrowing the slit.', correct: true },
+        { text: 'Widening the slit.', correct: false },
+        { text: 'Increasing the screen distance while measuring angles.', correct: false },
+        { text: 'Adding more illuminated grating lines without changing the slit.', correct: false }
+      ], image( 'ch05', 'ch05-single-slit-intensity.svg', 'Single-slit diffraction intensity pattern with a broad central maximum and weaker side lobes.' ) ),
+      trueFalse( 'ch05', 'The value m = 0 is a single-slit diffraction minimum.', false ),
+      dragText( 'ch05', 'Complete the principal diffraction relations.', 'Single-slit minima obey *a sin θ = mλ*. A grating’s resolving power is *R = mN*. A circular aperture has Rayleigh angle *1.22λ/D*. Crystal planes satisfy *nλ = 2d sin θ*.', '*d sin θ = mλ*\n*λ/D²*' ),
+      blanks( 'ch05', 'Complete the grating and aperture results.', [ 'A grating used in order m = 2 with N = 500 illuminated lines has resolving power *1000*, while doubling a circular aperture’s diameter makes its diffraction-limited angle *half/one half/1/2* as large.' ] ),
+      markWords( 'ch05', 'Mark the two changes that improve diffraction-limited resolution.', 'A grating resolves closer wavelengths by using *more illuminated lines*. A circular instrument resolves closer angular sources by using a *larger aperture diameter*. Narrowing an ordinary slit broadens its pattern.' )
+    ]
+  },
+  {
+    chapter: 6,
+    title: 'Particle Properties of Waves Review',
+    questions: [
+      multiChoice( 'ch06', 'Which observation most directly shows that photoelectric energy arrives in quanta?', [
+        { text: 'Below a threshold frequency no electrons are emitted, regardless of intensity.', correct: true },
+        { text: 'Brighter light always gives each emitted electron more kinetic energy.', correct: false },
+        { text: 'All wavelengths eject electrons if the exposure lasts long enough.', correct: false },
+        { text: 'The stopping potential depends only on the illuminated area.', correct: false }
+      ] ),
+      trueFalse( 'ch06', 'At fixed frequency above threshold, increasing light intensity raises the maximum kinetic energy of photoelectrons.', false ),
+      dragText( 'ch06', 'Complete the photon relations.', 'A photon has energy *E = hf* and momentum *p = h/λ*. Photoemission obeys *Kmax = hf − φ*. In Compton scattering, a photon that loses energy has a *longer wavelength*.', '*E = h/f*\n*shorter wavelength*' ),
+      blanks( 'ch06', 'Complete the pair-production and thermal-radiation results.', [ 'The rest-energy threshold for electron–positron pair production is *1.022* MeV, and total blackbody power per area scales as temperature to the power *4/four*.' ] ),
+      markWords( 'ch06', 'Mark the two observations that support the photon model.', 'The photoelectric effect has a *sharp threshold frequency*, and Compton scattering shows an *angle-dependent wavelength shift*. Classical intensity alone does not explain either result.' )
+    ]
+  },
+  {
+    chapter: 7,
+    title: 'Wave Properties of Particles Review',
+    questions: [
+      multiChoice( 'ch07', 'How does doubling a particle’s momentum change its de Broglie wavelength?', [
+        { text: 'It halves the wavelength.', correct: true },
+        { text: 'It doubles the wavelength.', correct: false },
+        { text: 'It quadruples the wavelength.', correct: false },
+        { text: 'It leaves the wavelength unchanged.', correct: false }
+      ], image( 'ch07', 'ch07-two-frequency-envelope.svg', 'Two nearby matter-wave components and the envelope produced by their superposition.' ) ),
+      trueFalse( 'ch07', 'For a free nonrelativistic particle, the group velocity of its wave packet equals the particle speed.', true ),
+      dragText( 'ch07', 'Complete the matter-wave relationships.', 'Matter wavelength is *λ = h/p*. A localized particle requires a *wave packet*. Its envelope moves at the *group velocity*, while its individual crests move at the *phase velocity*.', '*λ = p/h*\n*single plane wave*' ),
+      blanks( 'ch07', 'Complete the wavelength and uncertainty comparisons.', [ 'Doubling momentum makes λ *half/one half/1/2* as large; narrowing Δx requires the momentum spread Δp to become *larger/broader/greater*.' ] ),
+      markWords( 'ch07', 'Mark the two experimental signatures of matter waves.', 'Electrons produce *crystal diffraction peaks* and individual particles build up a *two-path interference pattern*. A localized detector click is the particle-like part of the same experiment.' )
+    ]
+  },
+  {
+    chapter: 8,
+    title: 'The Schrödinger Equation Review',
+    questions: [
+      multiChoice( 'ch08', 'Why is the infinite-well ground-state energy not zero?', [
+        { text: 'A zero-momentum state cannot satisfy confinement and the well’s boundary conditions.', correct: true },
+        { text: 'The potential energy inside the well is infinite.', correct: false },
+        { text: 'The particle must move at the speed of light.', correct: false },
+        { text: 'The wave function is required to be constant everywhere.', correct: false }
+      ], image( 'ch08', 'ch08-box-modes.svg', 'The first few standing-wave modes in a one-dimensional infinite square well.' ) ),
+      trueFalse( 'ch08', 'A stationary state has a time-independent probability density even though its wave function carries a time-dependent phase.', true ),
+      dragText( 'ch08', 'Complete the interpretation of the wave function.', 'The quantity |Ψ|² is the *probability density*. A physical wave function must be *normalizable*. Bound-state energies arise from *boundary conditions*. Tunneling occurs because Ψ has *nonzero amplitude beyond a finite barrier*.', '*probability amplitude squared only after measurement*\n*zero amplitude inside every barrier*' ),
+      blanks( 'ch08', 'Complete the infinite-well scaling.', [ 'For a one-dimensional infinite well, En is proportional to n raised to the power *2/two*, so E2/E1 = *4/four*.' ] ),
+      markWords( 'ch08', 'Mark the two statements that make tunneling possible.', 'A finite barrier permits an *evanescent wave inside the classically forbidden region* and the wave function can retain *nonzero amplitude on the far side*. The particle does not need energy greater than the barrier.' )
+    ]
+  },
+  {
+    chapter: 9,
+    title: 'Quantum Mechanics in Three Dimensions Review',
+    questions: [
+      multiChoice( 'ch09', 'For orbital angular-momentum quantum number ℓ, how many values may mℓ take?', [
+        { text: '2ℓ + 1, from −ℓ through +ℓ.', correct: true },
+        { text: 'ℓ, from 0 through ℓ − 1.', correct: false },
+        { text: '2ℓ, excluding zero.', correct: false },
+        { text: 'Only one value, mℓ = ℓ.', correct: false }
+      ] ),
+      trueFalse( 'ch09', 'The centrifugal barrier in the radial Schrödinger equation vanishes for ℓ = 0.', true ),
+      dragText( 'ch09', 'Complete the central-potential description.', 'A central potential depends only on *r*. Its wave function separates into *radial and angular parts*. The universal angular functions are *spherical harmonics*. The barrier term is proportional to *ℓ(ℓ + 1)/r²*.', '*θ only*\n*Cartesian plane waves*' ),
+      blanks( 'ch09', 'Complete the angular-momentum and oscillator counts.', [ 'For ℓ = 2 there are *5/five* allowed mℓ values; oscillator triples with the same sum nx + ny + nz have the *same/equal* energy.' ] ),
+      markWords( 'ch09', 'Mark the pair of orbital-angular-momentum quantities that can be sharp simultaneously.', 'A central-potential state may have sharp *L²* and *Lz*. The noncommuting Cartesian components Lx and Ly cannot all be sharp at the same time.' )
+    ]
+  },
+  {
+    chapter: 10,
+    title: 'The Hydrogen Atom Review',
+    questions: [
+      multiChoice( 'ch10', 'Which orbital selection rule governs an ordinary electric-dipole transition?', [
+        { text: 'Δℓ = ±1.', correct: true },
+        { text: 'Δℓ = 0 only.', correct: false },
+        { text: 'Δn = 0 only.', correct: false },
+        { text: 'Δms = ±1 is required.', correct: false }
+      ], image( 'ch10', 'ch10-energy-levels.svg', 'Hydrogen energy levels and the Lyman, Balmer, and Paschen transition series.' ) ),
+      trueFalse( 'ch10', 'The hydrogen ground state has orbital angular momentum ℏ, as in the original Bohr model.', false ),
+      dragText( 'ch10', 'Complete the hydrogen quantum-number rules.', 'For a given n, ℓ runs from *0 to n − 1*. For a given ℓ, mℓ runs from *−ℓ to +ℓ*. The spin projection is *ms = ±1/2*. Electric-dipole transitions require *Δℓ = ±1*.', '*1 to n*\n*Δℓ = 0*' ),
+      blanks( 'ch10', 'Complete the hydrogenic scaling at fixed n.', [ 'Increasing nuclear charge from Z = 1 to Z = 2 makes the binding-energy magnitude *4/four* times as large and the characteristic orbital radius *half/one half/1/2* as large.' ] ),
+      markWords( 'ch10', 'Mark the two results revealed by the Stern–Gerlach experiment.', 'The beam separates into *two discrete deflections*, revealing an intrinsic *spin-one-half degree of freedom*. It does not produce a continuous range of orientations.' )
+    ]
+  },
+  {
+    chapter: 11,
+    title: 'Many-Electron Atoms Review',
+    questions: [
+      multiChoice( 'ch11', 'What does screening do to the nuclear attraction felt by an outer electron?', [
+        { text: 'It reduces the effective nuclear charge felt by the electron.', correct: true },
+        { text: 'It reverses the nuclear force and makes it repulsive.', correct: false },
+        { text: 'It removes all dependence on orbital penetration.', correct: false },
+        { text: 'It forces every subshell with the same n to remain degenerate.', correct: false }
+      ], image( 'ch11', 'ch11-ionization-energy.svg', 'First ionization energy plotted across the periodic table, showing periodic trends.' ) ),
+      trueFalse( 'ch11', 'Two electrons in one spatial orbital may have the same spin projection.', false ),
+      dragText( 'ch11', 'Complete the rules for many-electron atoms.', 'The *Pauli exclusion principle* limits an orbital to two opposite-spin electrons. The *Aufbau principle* fills lower-energy subshells first. *Hund’s rule* maximizes spin in degenerate orbitals. Screening produces an *effective nuclear charge*.', '*uncertainty principle*\n*bare nuclear charge for every electron*' ),
+      blanks( 'ch11', 'Complete the shell and laser statements.', [ 'A K-shell vacancy lies in the shell with n = *1/one*, and laser amplification requires a population *inversion*.' ] ),
+      markWords( 'ch11', 'Mark the two general trends across a period.', 'Across a period, first ionization energy generally *increases* while atomic radius generally *decreases*, as effective nuclear charge grows.' )
+    ]
+  },
+  {
+    chapter: 12,
+    title: 'Molecular Structure Review',
+    questions: [
+      multiChoice( 'ch12', 'Why is molecular oxygen paramagnetic in the molecular-orbital description?', [
+        { text: 'It has two unpaired electrons in antibonding π orbitals.', correct: true },
+        { text: 'All of its electrons are paired in bonding orbitals.', correct: false },
+        { text: 'Its bond order is zero.', correct: false },
+        { text: 'It has six bonding regions around a central atom.', correct: false }
+      ], image( 'ch12', 'ch12-mo-diagram-n2-o2.svg', 'Molecular-orbital energy-level diagrams for nitrogen and oxygen.' ) ),
+      trueFalse( 'ch12', 'A molecular-orbital bond order of zero predicts a stably bound molecule in that configuration.', false ),
+      dragText( 'ch12', 'Complete the molecular descriptions.', 'A bond order is half the difference between *bonding and antibonding electron counts*. Six bonding regions with no lone pairs give *octahedral* geometry. Vibrational spectra are mainly *infrared*, while rotational spectra are mainly *microwave*.', '*tetrahedral*\n*ultraviolet only*' ),
+      blanks( 'ch12', 'Complete the bond-order and geometry results.', [ 'If a molecule has 8 bonding and 4 antibonding electrons, its bond order is *2/two*; six electron regions with no lone pairs form an *octahedral* geometry.' ] ),
+      markWords( 'ch12', 'Mark the two intermolecular-force statements.', 'London dispersion acts between *all atoms and molecules*, while especially strong hydrogen bonding requires hydrogen bonded to *nitrogen, oxygen, or fluorine*.' )
+    ]
+  },
+  {
+    chapter: 13,
+    title: 'Nuclear Physics Review',
+    questions: [
+      multiChoice( 'ch13', 'Why can both fusion of light nuclei and fission of heavy nuclei release energy?', [
+        { text: 'Both move the products toward higher binding energy per nucleon near iron and nickel.', correct: true },
+        { text: 'Both convert every nucleon entirely into radiation.', correct: false },
+        { text: 'Both eliminate the strong nuclear interaction.', correct: false },
+        { text: 'Both always increase the total rest mass of the products.', correct: false }
+      ], image( 'ch13', 'ch13-binding-energy-curve.svg', 'Binding energy per nucleon versus mass number, peaking near iron and nickel.' ) ),
+      trueFalse( 'ch13', 'A radioactive nucleus becomes more likely to decay merely because it has survived for a long time.', false ),
+      dragText( 'ch13', 'Complete the nuclear-decay descriptions.', 'Alpha decay proceeds by *quantum tunneling*. Beta decay uses the *weak interaction*. Gamma decay changes nuclear *energy without changing A or Z*. Radioactive populations follow an *exponential law*.', '*electromagnetic tunneling of electrons*\n*linear law*' ),
+      blanks( 'ch13', 'Complete the nuclear-size and decay relations.', [ 'Nuclear radius scales as A raised to the power *0.333/one third*, and the half-life equals ln 2 divided by the decay *constant/lambda/λ*.' ] ),
+      markWords( 'ch13', 'Mark the two processes that move nuclei toward the binding-energy peak.', 'Energy can be released by *fusion of light nuclei* and by *fission of very heavy nuclei*. Both produce more tightly bound products.' )
+    ]
+  },
+  {
+    chapter: 14,
+    title: 'Elementary Particles and the Standard Model Review',
+    questions: [
+      multiChoice( 'ch14', 'Which Standard Model interaction is carried by gluons?', [
+        { text: 'The strong interaction.', correct: true },
+        { text: 'The electromagnetic interaction.', correct: false },
+        { text: 'The weak interaction.', correct: false },
+        { text: 'Gravity.', correct: false }
+      ], image( 'ch14', 'ch14-standard-model-chart.svg', 'Chart of Standard Model matter particles and force-carrying bosons.' ) ),
+      trueFalse( 'ch14', 'A meson is made from three quarks, while a baryon is a quark–antiquark pair.', false ),
+      dragText( 'ch14', 'Complete the Standard Model classifications.', 'Matter particles with half-integer spin are *fermions*. Force carriers are *bosons*. Three-quark hadrons are *baryons*. Quark–antiquark hadrons are *mesons*.', '*leptons only*\n*gauge fermions*' ),
+      blanks( 'ch14', 'Complete the proton and detector statements.', [ 'A proton has quark content *uud*, and missing transverse momentum can signal an unseen *neutrino*.' ] ),
+      markWords( 'ch14', 'Mark the two quantities that must balance in every allowed particle reaction.', 'Every reaction must conserve *electric charge* and *baryon number*. Lepton number is also conserved to excellent approximation in Standard Model reactions.' )
+    ]
+  },
 ];
 
 const dependencies = [

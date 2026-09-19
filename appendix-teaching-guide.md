@@ -17,7 +17,7 @@ This guide is for an instructor who wants a fast, workable 10-week path through 
 | 6 | Chapter 4, the remaining section; Chapter 5, the first section | Finish interference and begin diffraction. |
 | 7 | Chapter 5, the remaining sections; Chapter 6, the first section | Finish wave optics and introduce photon behavior. |
 | 8 | Chapters 6 and 7 | Cover the photoelectric effect, Compton scattering, de Broglie waves, and uncertainty. |
-| 9 | Chapters 8 and 9 | Develop the Schrodinger equation and 3D quantum mechanics. |
+| 9 | Chapters 8 and 9 | Develop the Schrödinger equation and 3D quantum mechanics. |
 | 10 | Chapters 10 and 11, then selected reading from Chapters 12-14 | End with atoms, many-electron structure, and a brief look at nuclei and the Standard Model. |
 
 ## What To Trim First

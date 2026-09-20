@@ -25,6 +25,11 @@ for this project.
 - [`scripts/build-exports.sh`](scripts/build-exports.sh) — builds every PDF and the Word edition
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — development, checks, and release checklist
 
+The accompanying laboratory manual lives in its own repository,
+[QuadriviumPress/modernPhysicsLab](https://github.com/QuadriviumPress/modernPhysicsLab)
+([live site](https://quadriviumpress.com/modernPhysicsLab/)) — it is not part
+of this build.
+
 The book is organized into five parts (printed as `\part` dividers in the
 PDF; listed here for orientation). The website sidebar lists the preface and
 chapters without part groupings. Numbered sections appear in each page's

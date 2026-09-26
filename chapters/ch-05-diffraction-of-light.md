@@ -755,7 +755,7 @@ For first order, $\sin\theta=\lambda/d=(500\ \text{nm})/(2000\ \text{nm})=0.250$
 
 $$\frac{d\theta}{d\lambda}=\frac{m}{d\cos\theta}=5.16\times10^5\ \text{rad/m}=0.0296^\circ/\text{nm}.$$
 
-Therefore, the spacing is $2.00\ \mu\text{m}$, the first-order angle is $14.5^\circ$, the mathematical upper-bound order is $4$, and the first-order dispersion is $0.0296^\circ/\text{nm}$. The fourth order is at grazing angle, so the highest usable order is $3$.
+Therefore, the spacing is $2.00\ \mu\text{m}$, the first-order angle is $14.5^\circ$, the mathematical upper-bound order is $4$, and the first-order dispersion is $0.0296^\circ/\text{nm}$. The fourth order is at a grazing angle, so the highest usable order is $3$.
 :::
 
 :::{exercise}

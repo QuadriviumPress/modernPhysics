@@ -197,7 +197,7 @@ The relation can be read geometrically as a right triangle, as shown in {numref}
 The energy–momentum relation as a right triangle: $E^2=(pc)^2+(mc^2)^2$. Original schematic by the author.
 ```
 
-Two limits of the energy–momentum relation are worth committing to memory:
+Three limits of the energy–momentum relation are worth committing to memory:
 
 - **Massive particle at rest** ($p = 0$): $E = mc^2$, the rest energy alone.
 - **Massless particle** ($m = 0$), such as a photon: $E = pc$. Massless particles carry momentum and energy but no rest energy, and — consistent with the momentum argument above, which forbids a *massive* particle from reaching $u=c$ — they travel at exactly $c$ in every inertial frame.

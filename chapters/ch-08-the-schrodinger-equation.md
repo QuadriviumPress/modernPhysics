@@ -236,7 +236,7 @@ $$
 R = \left(\frac{1-0.707}{1+0.707}\right)^2 = \left(\frac{0.293}{1.707}\right)^2 = 0.0295,
 $$
 
-so about $3\%$ of an incident beam of such electrons is reflected by the step, and $T = 1-R \approx 0.97$ is transmitted — a small but entirely real and measurable effect, with no analog for a classical particle rolling over a downward step in a potential energy landscape.
+so about $3\%$ of an incident beam of such electrons is reflected by the step, and $T = 1-R \approx 0.97$ is transmitted — a small but entirely real and measurable effect, with no analog for a classical particle rolling over an upward step in a potential energy landscape.
 
 ## Tunneling, the Oscillator, and Correspondence
 
@@ -791,7 +791,7 @@ The worked example gives $\kappa=1.96\times10^{15}\ \text{m}^{-1}$.  For $L=10\ 
 
 $$T=e^{-2\kappa L}=e^{-2(1.96\times10^{15})(10\times10^{-15})}=e^{-39.2}=9.4\times10^{-18}.$$
 
-With assault frequency $10^{21}\ \text{s}^{-1}$, the decay rate is about $9.4\times10^3\ \text{s}^{-1}$ and $t_{1/2}\sim0.693/(9.4\times10^3)=7.4\times10^{-5}\ \text{s}$.  Therefore, increasing the width by only $3\ \text{fm}$ changes the model half-life from about $10^{-9}\ \text{s}$ to about $10^{-4}\ \text{s}$, illustrating the exponential sensitivity.
+With an assault frequency of $10^{21}\ \text{s}^{-1}$, the decay rate is about $9.4\times10^3\ \text{s}^{-1}$ and $t_{1/2}\sim0.693/(9.4\times10^3)=7.4\times10^{-5}\ \text{s}$.  Therefore, increasing the width by only $3\ \text{fm}$ changes the model half-life from about $10^{-9}\ \text{s}$ to about $10^{-4}\ \text{s}$, illustrating the exponential sensitivity.
 :::
 
 :::{exercise}

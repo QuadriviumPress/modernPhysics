@@ -458,7 +458,7 @@ $$
 d\sin\theta = \frac{\lambda}{4}.
 $$
 
-So the half-intensity point occurs at a quarter-wavelength path difference — one quarter of the way from a bright fringe to the next dark one. In small-angle terms $y = \Delta y/4$:
+So the half-intensity point occurs at a quarter-wavelength path difference — halfway from a bright fringe to the next dark one. In small-angle terms $y = \Delta y/4$:
 
 $$
 y = \frac{6.55\ \text{mm}}{4} = 1.64\ \text{mm}.

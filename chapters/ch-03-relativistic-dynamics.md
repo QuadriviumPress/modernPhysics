@@ -52,7 +52,7 @@ $$
 m\big(u(A)\big)\, |u_y(A)| \;-\; m\big(u(B)\big)\, |u_y(B)| \;=\; 0,
 $$
 
-where $u(A)$ and $u(B)$ denote the total (not just transverse) speeds of $A$ and $B$ in frame $S$. Substituting the magnitudes $|u_y(A)| = w_0/\gamma(v)$ and $|u_y(B)| = w_0$, and cancelling the common factor of $w_0$,
+where $u(A)$ and $u(B)$ denote the total (not just transverse) speeds of $A$ and $B$ in frame $S$. Substituting the magnitudes $|u_y(A)| = w_0/\gamma(v)$ and $|u_y(B)| = w_0$, and canceling the common factor of $w_0$,
 
 $$
 \frac{m\big(u(A)\big)}{\gamma(v)} = m\big(u(B)\big).
@@ -462,7 +462,7 @@ The initial total momentum is zero.  Each photon has momentum magnitude $p_\gamm
 
 ```{figure} ../images/ch03-sol-two-body-conservation.svg
 :label: fig:ch03-sol-two-body-conservation
-:alt: Diagrams of electron-positron annihilation and pion decay showing two products travelling in opposite directions.
+:alt: Diagrams of electron-positron annihilation and pion decay showing two products traveling in opposite directions.
 
 For any two-body process whose parent is at rest, momentum conservation fixes the products to have equal and opposite momenta. The right panel also previews the geometry used in the next solution.
 ```
@@ -499,7 +499,7 @@ $$
 E_\mu^2=(139.6\ \text{MeV}-E_\mu)^2+(105.7\ \text{MeV})^2.
 $$
 
-Expanding and cancelling $E_\mu^2$ yields
+Expanding and canceling $E_\mu^2$ yields
 
 $$
 2(139.6\ \text{MeV})E_\mu=(139.6\ \text{MeV})^2+(105.7\ \text{MeV})^2,
@@ -731,9 +731,9 @@ Therefore, the fixed-target threshold is $70m_pc^2$ of kinetic energy, the colli
 
 ```{figure} ../images/ch03-sol-threshold-comparison.svg
 :label: fig:ch03-sol-threshold-comparison
-:alt: Comparison of a fixed-target collision with a head-on collider collision, showing centre-of-momentum motion only in the fixed-target case.
+:alt: Comparison of a fixed-target collision with a head-on collider collision, showing center-of-momentum motion only in the fixed-target case.
 
-In a fixed-target experiment, much of the beam energy remains as forward centre-of-momentum motion; in a collider, that energy is available to create new rest mass.
+In a fixed-target experiment, much of the beam energy remains as forward center-of-momentum motion; in a collider, that energy is available to create new rest mass.
 ```
 :::
 
@@ -833,5 +833,5 @@ $$
 
 The final four-particle system has rest energy $4mc^2$ but lab energy $8mc^2$; its Lorentz factor in the lab is $\gamma_\mathrm{CM}=8mc^2/(4mc^2)=2$, consistent with $V=0.866c$.  Therefore, the naive $2mc^2$ counts only the new pair's rest energy, whereas the additional $4mc^2$ of the $6mc^2$ beam kinetic energy is unavoidable kinetic energy of the entire final system moving at $0.866c$ in the lab.
 
-The fixed-target panel of {numref}`Figure %s <fig:ch03-sol-threshold-comparison>` illustrates this forward-moving final centre of mass.
+The fixed-target panel of {numref}`Figure %s <fig:ch03-sol-threshold-comparison>` illustrates this forward-moving final center of mass.
 :::

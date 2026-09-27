@@ -367,8 +367,8 @@ The light cone divides events into the causal future, causal past, and spacelike
 The simulation in {numref}`Figure %s <fig:ch02-sr-sim>` draws these diagrams live. Sliding the
 relative speed tilts the $x'$ and $ct'$ axes toward the light cone exactly as
 described above, and dragging an event shows how its coordinates — and, on the
-other screens, the reading of a moving light clock and the ageing of the
-travelling twin — change between frames.
+other screens, the reading of a moving light clock and the aging of the
+traveling twin — change between frames.
 
 ```{openlyceum} SpecialRelativity
 :label: fig:ch02-sr-sim
@@ -419,7 +419,7 @@ Five short, auto-graded questions cycle within one compact activity. The set mix
 :label: check:ch02-chapter-review
 :title: Chapter 2 interactive review
 
-1. **Multiple choice, from a figure.** A second event lies in the region labelled “elsewhere,” outside the origin’s light cone. How is it separated from the origin? Figure description: Spacetime diagram showing the future and past light cones, timelike regions inside them, and spacelike regions outside them. Choices: (A) Spacelike: different inertial frames may reverse the event order, but no sub-light signal can connect the events. (B) Timelike: every inertial frame must agree that it occurs after the origin. (C) Lightlike: only a light signal can connect it to the origin. (D) Simultaneous in every inertial frame.
+1. **Multiple choice, from a figure.** A second event lies in the region labeled “elsewhere,” outside the origin’s light cone. How is it separated from the origin? Figure description: Spacetime diagram showing the future and past light cones, timelike regions inside them, and spacelike regions outside them. Choices: (A) Spacelike: different inertial frames may reverse the event order, but no sub-light signal can connect the events. (B) Timelike: every inertial frame must agree that it occurs after the origin. (C) Lightlike: only a light signal can connect it to the origin. (D) Simultaneous in every inertial frame.
 2. **True or false.** The proper time between two events is measured by one clock that is present at both events.
 3. **Drag the words.** Complete the three central transformation rules. A moving clock accumulates ___ proper time, a moving object contracts ___, and all inertial observers calculate the same ___. The separate time and space differences are ___. (Terms: less; along the direction of motion; spacetime interval; frame dependent; more; in every direction.)
 4. **Fill in the blanks.** Evaluate the Lorentz factor and length contraction at 0.8c. At v = 0.8c, $\gamma$ = ___, so a moving object’s length is ___ of its proper length.
@@ -683,7 +683,7 @@ Therefore, Alice ages $20.0\ \text{years}$ while Bob ages $12.0\ \text{years}; B
 
 ```{figure} ../images/ch02-sol-twin-worldlines.svg
 :label: fig:ch02-sol-twin-worldlines
-:alt: Earth-frame spacetime diagram of Alice remaining on Earth and Bob travelling to a star and returning.
+:alt: Earth-frame spacetime diagram of Alice remaining on Earth and Bob traveling to a star and returning.
 
 Bob's kinked worldline identifies the turnaround—the event that makes the two twins' complete histories physically different.
 ```

@@ -293,7 +293,7 @@ const quizzes = [
     chapter: 2,
     title: 'Special Relativity Review',
     questions: [
-      multiChoice( 'ch02', 'A second event lies in the region labelled “elsewhere,” outside the origin’s light cone. How is it separated from the origin?', [
+      multiChoice( 'ch02', 'A second event lies in the region labeled “elsewhere,” outside the origin’s light cone. How is it separated from the origin?', [
         { text: 'Spacelike: different inertial frames may reverse the event order, but no sub-light signal can connect the events.', correct: true },
         { text: 'Timelike: every inertial frame must agree that it occurs after the origin.', correct: false },
         { text: 'Lightlike: only a light signal can connect it to the origin.', correct: false },

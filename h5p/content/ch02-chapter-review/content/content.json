@@ -6,13 +6,13 @@
       "library": "H5P.MultiChoice 1.16",
       "subContentId": "738e49ed-383a-451d-a21d-868d15dc91be",
       "metadata": {
-        "title": "A second event lies in the region labelled “elsewhere,” outside the origin’s light cone. How is it separated from the origin?",
+        "title": "A second event lies in the region labeled “elsewhere,” outside the origin’s light cone. How is it separated from the origin?",
         "license": "CC BY-NC-SA",
         "licenseVersion": "4.0",
         "contentType": "Multiple Choice"
       },
       "params": {
-        "question": "<p>A second event lies in the region labelled “elsewhere,” outside the origin’s light cone. How is it separated from the origin?</p>",
+        "question": "<p>A second event lies in the region labeled “elsewhere,” outside the origin’s light cone. How is it separated from the origin?</p>",
         "media": {
           "type": {
             "library": "H5P.Image 1.1",

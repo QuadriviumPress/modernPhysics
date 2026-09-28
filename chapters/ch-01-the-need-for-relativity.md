@@ -177,7 +177,7 @@ The surviving photograph in {numref}`Figure %s <fig:ch01-historical-apparatus>` 
 The Michelson–Morley apparatus at Case Western Reserve University, circa 1887. Photograph attributed to Case Western Reserve University; public domain via Wikimedia Commons.
 ```
 
-One gap in the Michelson–Morley result deserves attention before moving on, because the way it was closed illustrates how tightly interlocking the eventual relativistic explanation would have to be. The Michelson–Morley experiment used two arms of *equal* length, and looked only for a fringe shift as the whole apparatus was *rotated*. This design has a subtle limitation: a length contraction (the Fitzgerald–Lorentz contraction, discussed below in "Attempts to Save the Ether") of exactly the right amount would make $t_\parallel = t_\perp$ for *any* direction of the apparatus relative to the ether, since whichever arm happens to be aligned with the direction of motion at a given moment contracts by just enough to keep $t_\parallel$ equal to $t_\perp$ regardless of orientation — so rotating the equal-armed apparatus can never distinguish "no ether effects at all" from "an ether effect perfectly cancelled by length contraction alone." It says nothing about whether the *round-trip time itself* depends on velocity through the ether, only about whether the two perpendicular round-trip times remain equal to each other.
+One gap in the Michelson–Morley result deserves attention before moving on, because the way it was closed illustrates how tightly interlocking the eventual relativistic explanation would have to be. The Michelson–Morley experiment used two arms of *equal* length, and looked only for a fringe shift as the whole apparatus was *rotated*. This design has a subtle limitation: a length contraction (the Fitzgerald–Lorentz contraction, discussed below in "Attempts to Save the Ether") of exactly the right amount would make $t_\parallel = t_\perp$ for *any* direction of the apparatus relative to the ether, since whichever arm happens to be aligned with the direction of motion at a given moment contracts by just enough to keep $t_\parallel$ equal to $t_\perp$ regardless of orientation — so rotating the equal-armed apparatus can never distinguish "no ether effects at all" from "an ether effect perfectly canceled by length contraction alone." It says nothing about whether the *round-trip time itself* depends on velocity through the ether, only about whether the two perpendicular round-trip times remain equal to each other.
 
 Roy Kennedy and Edward Thorndike closed this gap in 1932 with a modified apparatus using two arms of substantially *unequal* length, $L_1 \ne L_2$. With unequal arms, length contraction alone can no longer guarantee $t_1 = t_2$ at all times of year: even if each arm individually contracts as $L\sqrt{1-v^2/c^2}$, the resulting *difference* $t_1 - t_2$ still depends on the apparatus's instantaneous speed $v$ through the hypothetical ether — a speed that changes over the course of a year as Earth's orbital velocity vector changes direction (and, if the solar system itself moves through the ether, also has a component that does not average to zero). A length-contraction-only patch, with no accompanying change in the rate at which clocks run, predicts a fringe shift that slowly drifts as the year progresses. None was observed, to a precision even finer than Michelson and Morley's original bound.
 
@@ -575,7 +575,7 @@ Therefore, under the deliberately incorrect ether interpretation, the residual e
 
 ```{figure} ../images/ch01-sol-ether-shift-scale.svg
 :label: fig:ch01-sol-ether-shift-scale
-:alt: Logarithmic comparison of the 1887 predicted fringe shift, the predicted shift for a four kilometre apparatus, and a modern null upper bound.
+:alt: Logarithmic comparison of the 1887 predicted fringe shift, the predicted shift for a four kilometer apparatus, and a modern null upper bound.
 
 The logarithmic scale separates the large stationary-ether prediction from the tiny experimental bound; for a fixed apparatus, the signal varies as $v^2$.
 ```
@@ -666,7 +666,7 @@ Starlight behaves like the falling rain: because Earth moves sideways while the 
 
 *(Challenging)*
 
-Explain, in your own words, why the original Michelson–Morley design (equal-length arms, apparatus rotated) cannot by itself distinguish "no ether effects" from "an ether effect exactly cancelled by a velocity-dependent length contraction." Then explain why making the two arms unequal in length (Kennedy–Thorndike) closes this loophole.
+Explain, in your own words, why the original Michelson–Morley design (equal-length arms, apparatus rotated) cannot by itself distinguish "no ether effects" from "an ether effect exactly canceled by a velocity-dependent length contraction." Then explain why making the two arms unequal in length (Kennedy–Thorndike) closes this loophole.
 :::
 
 :::{solution} ex-need-for-relativity-11

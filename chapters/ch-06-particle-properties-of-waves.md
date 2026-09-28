@@ -613,7 +613,7 @@ $$E_e^2=(A-B+M)^2=A^2+B^2+M^2-2AB+2AM-2BM,$$
 
 $$E_e^2=(p_ec)^2+M^2=A^2+B^2-2AB\cos\theta+M^2.$$
 
-Cancelling $A^2$, $B^2$, and $M^2$ leaves $-2AB+2M(A-B)=-2AB\cos\theta$, or $M(A-B)=AB(1-\cos\theta)$.  Therefore, explicit cancellation gives exactly the simplified relation quoted in the text.
+Canceling $A^2$, $B^2$, and $M^2$ leaves $-2AB+2M(A-B)=-2AB\cos\theta$, or $M(A-B)=AB(1-\cos\theta)$.  Therefore, explicit cancellation gives exactly the simplified relation quoted in the text.
 :::
 
 :::{exercise}

@@ -14,6 +14,12 @@
  *         style: plugins/simulation.css
  */
 
+/* Keep long calculations readable on narrow screens. */
+.math-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
 /* The static fallback exists for PDF, DOCX, Markdown, and print. */
 .simulation-placeholder {
   display: none;

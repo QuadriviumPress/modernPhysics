@@ -6,7 +6,7 @@ label: bibliography
 
 This bibliography collects the principal texts, historical papers, and data
 references used for further reading and fact-checking. Content licensing and
-adaptation provenance are recorded separately in [Sources & Attribution](https://github.com/QuadriviumPress/modernPhysics/blob/main/SOURCES.md).
+adaptation provenance are recorded separately in [Sources & Attribution](../SOURCES.md).
 
 Broad treatments used across the book include OpenStax and standard modern,
 quantum, and nuclear-physics texts [@openstax2016university3; @beiser2003;

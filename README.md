@@ -131,10 +131,11 @@ fallback works.
 
 `{phet-legacy}` reaches PhET's pre-HTML5 Java simulations, which PhET runs in
 the browser through CheerpJ. Several topics here — the photoelectric effect,
-quantum bound states, tunneling, lasers, gas discharge, the nuclear-physics
-family — have no HTML5 equivalent, so the Java version is the only interactive
-option. It is slow to start and mouse-only; prefer `{phet}` or `{openlyceum}`
-where either has something comparable.
+quantum bound states, tunneling, lasers, gas discharge, radioactive dating, and
+nuclear fission — have no HTML5 equivalent, so the Java version is the only
+interactive option. Alpha decay and beta decay now have HTML5 versions; those
+use `{phet}`. A CheerpJ sim is slow to start and mouse-only; prefer `{phet}` or
+`{openlyceum}` where either has something comparable.
 
 Every chapter carries at least one simulation;
 [`SOURCES.md`](SOURCES.md) lists which, chapter by chapter, along with the

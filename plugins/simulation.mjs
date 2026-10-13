@@ -121,13 +121,14 @@ const PROVIDERS = {
     aspect: '4:3',
     /**
      * PhET's pre-HTML5 catalogue -- Photoelectric Effect, Quantum Bound
-     * States, Quantum Tunneling, Lasers, the nuclear-physics family -- is
-     * still the best interactive treatment of several topics in this book and
-     * has no HTML5 replacement. Those sims are Java, run in the browser by
-     * CheerpJ, and are served from a launcher that takes the *project* in the
-     * path and the *simulation* in the query string. The two usually coincide;
-     * where they do not, write them as `project/sim`, e.g.
-     * `nuclear-physics/alpha-decay`.
+     * States, Quantum Tunneling, Lasers, radioactive dating, nuclear fission --
+     * is still the best interactive treatment of several topics in this book
+     * and has no HTML5 replacement. Alpha Decay and Beta Decay are HTML5;
+     * embed those with `phet`, not here. The remaining Java sims run in the
+     * browser by CheerpJ, and are served from a launcher that takes the
+     * *project* in the path and the *simulation* in the query string. The two
+     * usually coincide; where they do not, write them as `project/sim`, e.g.
+     * `nuclear-physics/nuclear-fission`.
      *
      * Two consequences worth knowing before using this provider. A CheerpJ sim
      * downloads a JVM before it starts, so the first paint takes tens of
@@ -152,7 +153,7 @@ const PROVIDERS = {
         url: `https://phet.colorado.edu/sims/cheerpj/${ project }/latest/${ project }.html${ query }`,
         // Legacy screenshots live beside the project, not under `sims/html`.
         placeholder: `https://phet.colorado.edu/sims/${ project }/${ sim }-600.png`,
-        // Without this the caption link would read "Nuclear Physics/alpha Decay".
+        // Without this the caption link would read "Nuclear Physics/nuclear Fission".
         name: humanize( sim )
       };
     }
@@ -575,7 +576,7 @@ const phetLegacyDirective = makeDirective( {
        'CheerpJ. Slow to start and mouse-only; use `{phet}` where an HTML5 ' +
        'version exists.',
   argDoc: 'The PhET simulation name, or `project/name` when the two differ, ' +
-          'e.g. `photoelectric` or `nuclear-physics/alpha-decay`.'
+          'e.g. `photoelectric` or `nuclear-physics/nuclear-fission`.'
 } );
 
 /**

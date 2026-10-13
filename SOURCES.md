@@ -115,8 +115,8 @@ attribution and receive it through that link:
 | 10. The Hydrogen Atom | Models of the Hydrogen Atom (PhET); Simplified MRI (PhET, Java) |
 | 11. Many-Electron Atoms | Build an Atom (PhET); Neon Lights & Other Discharge Lamps (PhET, Java); Lasers (PhET, Java) |
 | 12. Molecular Structure | Molecule Polarity (PhET); Molecule Shapes (PhET); Double Wells and Covalent Bonds (PhET, Java); Atomic Interactions (PhET); Molecules and Light (PhET) |
-| 13. Nuclear Physics | Isotopes and Atomic Mass (PhET); Rutherford Scattering (PhET); Radioactive Dating Game (PhET, Java); Build a Nucleus (PhET); Nuclear Fission (PhET, Java) |
-| 14. Elementary Particles and the Standard Model | Beta Decay (PhET, Java) |
+| 13. Nuclear Physics | Isotopes and Atomic Mass (PhET); Rutherford Scattering (PhET); Radioactive Dating Game (PhET, Java); Alpha Decay (PhET); Build a Nucleus (PhET); Nuclear Fission (PhET, Java) |
+| 14. Elementary Particles and the Standard Model | Beta Decay (PhET) |
 
 ## Local animations and embedded video
 

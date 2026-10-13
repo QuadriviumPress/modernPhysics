@@ -84,7 +84,7 @@ consistent, to within the precision to which either figure is normally quoted, w
 
 Of the four, the weak interaction is the one with no everyday signature to point at — it is too short-ranged to hold anything together and too feeble to push anything around — and its importance is easy to underrate as a result. Its distinction is that it is the only interaction that changes one kind of quark into another, and {numref}`Figure %s <fig:ch14-beta-decay-sim>` is that transformation at work: a neutron ($udd$) becomes a proton ($uud$) by turning a down quark into an up quark, with an electron and an antineutrino carrying off the charge and lepton-number balance. None of the other interactions in {numref}`Table %s <tab:ch14-fundamental-interactions>` can do this. Without it, the proton-proton chain could never take its first step, no hydrogen would ever become helium, and stars would not shine.
 
-```{phet-legacy} nuclear-physics/beta-decay
+```{phet} beta-decay
 :label: fig:ch14-beta-decay-sim
 
 Beta decay of a single nucleus and of a sample, with the emitted electron and antineutrino shown. The conservation laws cataloged later in this chapter can be read directly off the products: charge, baryon number, and electron lepton number each balance, event by event.

@@ -10,7 +10,9 @@ test('providers emit working URL shapes and static screenshot fallbacks', () => 
   const cases = [
     ['openlyceum', 'SpecialRelativity', 'https://openlyceum.github.io/SpecialRelativity/', 'https://raw.githubusercontent.com/OpenLyceum/Baton/main/screenshots/SpecialRelativity.png'],
     ['phet', 'blackbody-spectrum', 'https://phet.colorado.edu/sims/html/blackbody-spectrum/latest/blackbody-spectrum_en.html', 'https://phet.colorado.edu/sims/html/blackbody-spectrum/latest/blackbody-spectrum-600.png'],
-    ['phet-legacy', 'nuclear-physics/alpha-decay', 'https://phet.colorado.edu/sims/cheerpj/nuclear-physics/latest/nuclear-physics.html?simulation=alpha-decay', 'https://phet.colorado.edu/sims/nuclear-physics/alpha-decay-600.png'],
+    ['phet', 'alpha-decay', 'https://phet.colorado.edu/sims/html/alpha-decay/latest/alpha-decay_en.html', 'https://phet.colorado.edu/sims/html/alpha-decay/latest/alpha-decay-600.png'],
+    ['phet', 'beta-decay', 'https://phet.colorado.edu/sims/html/beta-decay/latest/beta-decay_en.html', 'https://phet.colorado.edu/sims/html/beta-decay/latest/beta-decay-600.png'],
+    ['phet-legacy', 'nuclear-physics/nuclear-fission', 'https://phet.colorado.edu/sims/cheerpj/nuclear-physics/latest/nuclear-physics.html?simulation=nuclear-fission', 'https://phet.colorado.edu/sims/nuclear-physics/nuclear-fission-600.png'],
   ];
   for (const [provider, id, url, screenshot] of cases) {
     const { children } = render(provider, id);

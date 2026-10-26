@@ -24,7 +24,8 @@ jobs:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
         with:
-          python-version: '3.12'
+          python-version: '3.14'
           cache: pip
+          cache-dependency-path: requirements-figures.txt
       - run: python -m pip install -r requirements-figures.txt
       - run: scripts/check-figures.sh

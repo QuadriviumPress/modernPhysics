@@ -31,7 +31,7 @@
     "build:docx": "scripts/build-exports.sh docx"
   },
   "devDependencies": {
-    "mystmd": "1.11.0",
+    "mystmd": "1.12.0",
     "sharp": "0.35.5",
     "yaml": "2.9.1",
     "fflate": "^0.8.2"

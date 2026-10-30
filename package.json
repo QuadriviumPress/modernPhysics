@@ -4,10 +4,10 @@
   "private": true,
   "description": "MyST Markdown textbook on Modern Physics",
   "license": "CC-BY-NC-SA-4.0",
-  "packageManager": "npm@10.9.8",
+  "packageManager": "npm@11.20.0",
   "engines": {
     "node": ">=26",
-    "npm": ">=10 <11"
+    "npm": ">=11 <12"
   },
   "scripts": {
     "check:toolchain": "node scripts/check-toolchain.mjs",

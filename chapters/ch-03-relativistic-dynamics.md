@@ -197,6 +197,15 @@ The relation can be read geometrically as a right triangle, as shown in {numref}
 The energy–momentum relation as a right triangle: $E^2=(pc)^2+(mc^2)^2$. Original schematic by the author.
 ```
 
+{numref}`Figure %s <fig:ch03-energy-momentum-sim>` makes the triangle live. Choose a particle and set its speed, momentum, kinetic energy or total energy; the triangle reshapes itself, tall and thin near rest ($E \approx mc^2$) and long and flat at high speed ($E \approx pc$), and the point on the right rides the particle's *mass shell*, the hyperbola $E^2 - (pc)^2 = (mc^2)^2$. Now let an observer move past the particle. Energy and momentum both change, but the point only slides along the same hyperbola: the rest mass is the one number every observer agrees on.
+
+```{openlyceum} RelativisticDynamics
+:screens: 2
+:label: fig:ch03-energy-momentum-sim
+
+The energy–momentum triangle, the energy bar beside Newton's $\tfrac12 mu^2$, and the $(pc, E)$ plane with the mass shell and the light line $E = pc$. A moving observer slides the point along the hyperbola; for a photon the shift is the relativistic Doppler factor of [Chapter 2](#ch-special-relativity).
+```
+
 Three limits of the energy–momentum relation are worth committing to memory:
 
 - **Massive particle at rest** ($p = 0$): $E = mc^2$, the rest energy alone.
@@ -231,6 +240,15 @@ The CM frame is not a relativistic invention, and it is worth recovering the non
 :label: fig:ch03-collision-sim
 
 Classical collisions with the center of mass and the momentum vectors displayed. The center of mass moves at a velocity no collision can change, elastic or not, which is what makes its rest frame a natural place to do the bookkeeping — and what carries over, with $\gamma m\vec u$ in place of $m\vec u$, to the relativistic threshold calculations of this section.
+```
+
+{numref}`Figure %s <fig:ch03-relativistic-collision-sim>` is that relativistic version. Two bodies meet at a single event and leave it elastically or stuck together, and the collision can be viewed from the lab, from the center-of-momentum frame, or from a frame moving at any speed. Bars compare the totals before and after. Start from the symmetric collision used above to derive $\vec p = \gamma m \vec u$ and turn on Newton's $\sum m\vec u$: its $y$ component changes in the collision, in frame $S$ and in frame $S'$ alike, while $\sum \gamma m \vec u$ and $\sum E$ are conserved in every frame. Make the bodies stick and the composite comes out heavier than the two pieces, kinetic energy having become rest energy.
+
+```{openlyceum} RelativisticDynamics
+:screens: 3
+:label: fig:ch03-relativistic-collision-sim
+
+Relativistic collisions viewed from any inertial frame, with before-and-after totals for $\sum\gamma m\vec u$, $\sum E$, rest energy and kinetic energy, and optionally Newton's $\sum m\vec u$. The presets reproduce this section's derivation, the less-than-$90^\circ$ opening angle of equal masses with the target at rest, and a head-on collision that sticks.
 ```
 
 #### Worked Example: The Threshold for Antiproton Production
@@ -268,6 +286,15 @@ The contrast between the two arrangements is summarized in {numref}`Figure %s <f
 Fixed-target versus collider kinematics. In a head-on collider the center-of-momentum frame can coincide with the laboratory, so more of the beam energy is available to create rest mass. Original schematic by the author.
 ```
 
+The same comparison, for every reaction in this chapter and a few more, is in {numref}`Figure %s <fig:ch03-thresholds-sim>`. Go to threshold and the products sit still in the center-of-momentum frame while, in the lab, they all move off together: the beam's leftover kinetic energy is locked up in the motion of the center of momentum. Switch from a fixed target to a collider and the threshold drops, from $5.6\ \text{GeV}$ to $938\ \text{MeV}$ per beam for the antiproton, and from about $44\ \text{GeV}$ to $105\ \text{MeV}$ for $e^+e^- \to \mu^+\mu^-$.
+
+```{openlyceum} RelativisticDynamics
+:screens: 4
+:label: fig:ch03-thresholds-sim
+
+Threshold energies on a fixed target and in a head-on collider. The reaction is drawn before and after in the lab and in the center-of-momentum frame; a meter compares the available energy $\sqrt{s}$ with the rest energy of the products; and a chart plots $\sqrt{s}$ against the kinetic energy supplied. Annihilation into a single photon is impossible at any energy, as argued above.
+```
+
 The historical setting of this threshold calculation is shown in {numref}`Figure %s <fig:ch03-bevatron-historical>`: the Bevatron was built in the 1950s to reach the energies needed to discover the antiproton.
 
 ```{figure} ../images/historical-bevatron.jpg
@@ -280,6 +307,15 @@ Interior of the former Bevatron building at Lawrence Berkeley National Laborator
 ### Aside: Why There Are No Faster-Than-Light Massive Particles
 
 [Chapter 2](#ch-special-relativity) argued, from causality alone, that no signal or influence can travel faster than $c$ without permitting effects to precede their causes in some valid inertial frame. This chapter's momentum formula, $p = \gamma m u$, gives an independent, purely dynamical reason a *massive* particle in particular can never reach or exceed $c$: as $u \to c^-$, $\gamma \to \infty$, so accelerating a massive particle arbitrarily close to $c$ requires arbitrarily large — and, at $u=c$ itself, literally infinite — momentum and energy. No finite amount of work can supply this, so $c$ is a strict, unreachable asymptote for any object with $m>0$, approached but never attained no matter how long or how powerfully it is accelerated.
+
+{numref}`Figure %s <fig:ch03-accelerate-sim>` runs the argument as a race. A constant force pushes an electron along a 20 m track beside a light pulse and beside the electron Newton would predict. Both theories agree that the momentum grows as $p = Ft$; Newton's electron passes the light pulse within a few nanoseconds, the real one closes on it but never passes. The second chart is W. Bertozzi's 1964 test: electrons of kinetic energy $0.5$–$15\ \text{MeV}$ timed over an $8.4\ \text{m}$ flight path, whose speeds follow the relativistic curve, not Newton's straight line.
+
+```{openlyceum} RelativisticDynamics
+:screens: 1
+:label: fig:ch03-accelerate-sim
+
+An electron or proton under a constant force, raced against a light pulse and its Newtonian prediction, with speed (or momentum) against time and speed squared against kinetic energy, including Bertozzi's measurements. A button stops at the worked example below: an electron accelerated through $2.00\ \text{MV}$ reaches $u = 0.979c$, not Newton's $2.8c$.
+```
 
 It is sometimes asked whether a hypothetical particle might simply be *born* moving faster than $c$, without ever having to accelerate through $c$ — such a hypothetical particle is called a **tachyon**. Formally, applying the energy–momentum relation at $u>c$ gives a spacelike four-momentum, so the invariant mass-squared would be negative (often described informally as an "imaginary rest mass"). This is not the rest mass of an ordinary particle, and no such particle has been observed. More importantly, a tachyon would connect spacelike-separated events ([Chapter 2](#ch-special-relativity)) — and the causality argument there shows that *some* inertial observer would measure any spacelike-connecting signal to travel backward in time, arriving before it was sent. Thus the mass–energy relation excludes faster-than-light motion for ordinary massive particles, while the light-cone argument gives a separate causal reason that controllable faster-than-light signals cannot exist.
 

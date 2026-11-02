@@ -11,11 +11,8 @@ npm run check:toolchain
 npm run h5p:check
 npm run h5p:generate
 npm run h5p:prepare
-npm run prestart
 npm run start
-npm run prebuild
 npm run build
-npm run precheck
 npm run verify
 npm run check
 npm run check:figures

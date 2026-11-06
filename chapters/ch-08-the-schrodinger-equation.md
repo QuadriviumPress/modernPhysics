@@ -182,13 +182,28 @@ Normalizing $\psi_n(x) = A\sin(n\pi x/L)$ over $[0,L]$ gives $A = \sqrt{2/L}$. S
 - **The ground state ($n=1$) has $E_1 = \pi^2\hbar^2/2mL^2 > 0$**, not zero. A particle strictly confined to a box, unlike a classical particle, can never be perfectly at rest — a direct consequence of the uncertainty principle: confining $\Delta x \sim L$ forces $\Delta p \gtrsim \hbar/L$, hence a minimum kinetic energy $\sim \hbar^2/mL^2$, of the same order as $E_1$.
 - **The probability density $|\psi_n(x)|^2$ has $n-1$ interior nodes** (points where the particle has zero probability of being found) — for $n>1$, positions strictly inside the box that the particle can never occupy, again with no classical counterpart.
 
-All three features are on display in {numref}`Figure %s <fig:ch08-bound-states-sim>`, which solves the time-independent equation numerically for a potential you choose and draws the resulting eigenfunctions on top of the level diagram. Start with a square well and make it deep: the levels approach the $n^2$ ladder derived above, the ground state sits visibly above the bottom of the well, and $\psi_n$ picks up one more node with each step up that ladder. The same simulation carries the finite well, the harmonic oscillator, and the one-dimensional Coulomb potential, so it is worth returning to as those appear later in this chapter and in [Chapter 10](#ch-the-hydrogen-atom); the differences between their level *spacings* — $n^2$ here, uniform for the oscillator, $-1/n^2$ for Coulomb — are the fingerprints of the three potentials.
+All three features are on display in {numref}`Figure %s <fig:ch08-particle-in-a-box-sim>`, which puts a particle in an infinite box of adjustable width and draws the eigenfunctions on the level diagram. Change $L$ and watch $E_n \propto 1/L^2$ move; climb the ladder and watch each $\psi_n$ pick up one more interior node, with the ground state sitting visibly above zero.
 
-```{phet-legacy} bound-states
-:sim-name: Quantum Bound States
+```{phet} particle-in-a-box
+:label: fig:ch08-particle-in-a-box-sim
+
+A particle confined to an infinite square well of adjustable width, with the eigenfunctions drawn at their own energies on the level diagram. The $n^2$ ladder, the nonzero ground-state energy, and the node count of each $\psi_n$ are the three features derived above, made interactive.
+```
+
+The same features for *other* potentials — a finite well, the harmonic oscillator, and the one-dimensional Coulomb potential — are in {numref}`Figure %s <fig:ch08-bound-states-sim>`, which solves the time-independent equation numerically for a potential you choose. Start with a square well and make it deep: the levels approach the $n^2$ ladder derived above. Return to the same simulation as the finite well and oscillator appear later in this chapter, and again in [Chapter 10](#ch-the-hydrogen-atom); the differences between their level *spacings* — $n^2$ here, uniform for the oscillator, $-1/n^2$ for Coulomb — are the fingerprints of the three potentials.
+
+```{phet} quantum-bound-states
 :label: fig:ch08-bound-states-sim
 
-Bound states of a one-dimensional potential, with the well shape, depth, and width adjustable and the eigenfunctions drawn at their own energies. Superpositions of two eigenstates can be built and run in time, which is where the stationary states stop being stationary.
+Bound states of a one-dimensional potential, with the well shape, depth, and width adjustable and the eigenfunctions drawn at their own energies. Square, finite, harmonic-oscillator, and Coulomb wells are all available under one control.
+```
+
+A single stationary state has a time-independent probability density. Superpose two eigenstates of different energy, as in {numref}`Figure %s <fig:ch08-bound-superposition-sim>`, and the relative phase $e^{-i(E_m-E_n)t/\hbar}$ makes $|\Psi|^2$ oscillate in time: the stationary states stop being stationary the moment more than one energy is present.
+
+```{phet} bound-state-superposition
+:label: fig:ch08-bound-superposition-sim
+
+A superposition of two bound eigenstates, with the relative weights adjustable and the time evolution of $|\Psi|^2$ running live. The beat frequency is set by the energy difference alone — a direct readout of $E_m-E_n$.
 ```
 
 #### Worked Example: Expectation Values in the Ground State

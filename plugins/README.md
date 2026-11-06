@@ -80,9 +80,9 @@ A bare URL just needs a `:placeholder:` to look right in a PDF.
 
 ## PhET's Java simulations
 
-Several topics in a modern physics course — the photoelectric effect, quantum
-bound states, tunneling, lasers, gas discharge, radioactive dating, and nuclear
-fission — have no HTML5 PhET simulation, only the original Java one. PhET still
+Several topics in a modern physics course — the photoelectric effect,
+tunneling, lasers, gas discharge, radioactive dating, and nuclear fission —
+have no HTML5 PhET simulation, only the original Java one. PhET still
 publishes those, run in the browser by [CheerpJ](https://cheerpj.com/), and
 `{phet-legacy}` addresses them:
 
@@ -93,22 +93,32 @@ publishes those, run in the browser by [CheerpJ](https://cheerpj.com/), and
 ```
 ````
 
-Alpha Decay and Beta Decay are HTML5 now. Embed them with `{phet}`, which
-resolves to `sims/html/<sim>/latest/<sim>_<locale>.html`:
+Alpha Decay, Beta Decay, and the Quantum Bound States suite are HTML5 now.
+Embed them with `{phet}`, which resolves to
+`sims/html/<sim>/latest/<sim>_<locale>.html`:
 
 ````markdown
 ```{phet} alpha-decay
 ```
 ```{phet} beta-decay
 ```
+```{phet} quantum-bound-states
+```
+```{phet} particle-in-a-box
+```
+```{phet} bound-state-superposition
+```
+```{phet} double-wells-and-covalent-bonds
+```
+```{phet} band-structure
+```
 ````
 
 For `{phet-legacy}`, the launcher takes the *project* in the path and the
 *simulation* in the query string. Usually they are the same word, and a bare
-name is enough; where they
-differ — one project shipping several sims, as `nuclear-physics` and
-`bound-states` do — write `project/sim`. Both halves are visible on PhET's own
-URLs, and the sim half is what names the figure and the caption link.
+name is enough; where they differ — one project shipping several sims, as
+`nuclear-physics` does — write `project/sim`. Both halves are visible on PhET's
+own URLs, and the sim half is what names the figure and the caption link.
 
 Two things to know before reaching for it:
 

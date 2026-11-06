@@ -110,11 +110,11 @@ attribution and receive it through that link:
 | 5. Diffraction of Light | Wave Interference, diffraction screen (PhET); Crystal Lattice (OpenLyceum) |
 | 6. Particle Properties of Waves | Blackbody Spectrum (PhET); Photoelectric Effect (PhET, Java); Radio Waves (OpenLyceum) |
 | 7. Wave Properties of Particles | Davisson–Germer (PhET, Java); Standing Waves (OpenLyceum); Quantum Wave Interference, single-particles screen (PhET); Fourier: Making Waves, wave-packet screen (PhET); Wave Composer (OpenLyceum) |
-| 8. The Schrödinger Equation | Quantum Measurement (PhET); Quantum Bound States (PhET, Java); Quantum Tunneling (PhET, Java) |
+| 8. The Schrödinger Equation | Quantum Measurement (PhET); Particle in a Box (PhET); Quantum Bound States (PhET); Bound State Superposition (PhET); Quantum Tunneling (PhET, Java) |
 | 9. Quantum Mechanics in Three Dimensions | Stern–Gerlach (OpenLyceum); Precession (OpenLyceum) |
 | 10. The Hydrogen Atom | Models of the Hydrogen Atom (PhET); Simplified MRI (PhET, Java) |
 | 11. Many-Electron Atoms | Build an Atom (PhET); Neon Lights & Other Discharge Lamps (PhET, Java); Lasers (PhET, Java) |
-| 12. Molecular Structure | Molecule Polarity (PhET); Molecule Shapes (PhET); Double Wells and Covalent Bonds (PhET, Java); Atomic Interactions (PhET); Molecules and Light (PhET) |
+| 12. Molecular Structure | Molecule Polarity (PhET); Molecule Shapes (PhET); Double Wells and Covalent Bonds (PhET); Band Structure (PhET); Atomic Interactions (PhET); Molecules and Light (PhET) |
 | 13. Nuclear Physics | Isotopes and Atomic Mass (PhET); Rutherford Scattering (PhET); Radioactive Dating Game (PhET, Java); Alpha Decay (PhET); Build a Nucleus (PhET); Nuclear Fission (PhET, Java) |
 | 14. Elementary Particles and the Standard Model | Beta Decay (PhET) |
 

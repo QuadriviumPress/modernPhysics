@@ -141,11 +141,18 @@ It is tempting to think of an antibonding orbital as simply "not contributing" t
 
 The bonding and antibonding pair are not a chemical convention; they are what the Schrödinger equation returns for two wells brought close together, and {numref}`Figure %s <fig:ch12-double-well-sim>` solves that problem directly. Start with two widely separated square wells: each has its own ground state, and the two are degenerate. Slide them together and the degeneracy lifts into exactly two states — one symmetric, with no node between the wells and an energy *below* the isolated-atom level, and one antisymmetric, with a node at the midpoint and an energy above it. That is $\sigma_{1s}$ and $\sigma_{1s}^*$, obtained without mentioning chemistry, and the splitting between them grows as the wells approach, which is why bond strength depends on overlap.
 
-```{phet-legacy} bound-states/covalent-bonds
-:sim-name: Double Wells and Covalent Bonds
+```{phet} double-wells-and-covalent-bonds
 :label: fig:ch12-double-well-sim
 
-A double square well with adjustable separation and depth, and the eigenstates it supports. The symmetric–antisymmetric splitting of a pair of formerly degenerate levels is the origin of the bonding/antibonding pair of MO theory, and — extended to $N$ wells in a row — of the energy bands of a solid.
+A double square well with adjustable separation and depth, and the eigenstates it supports. The symmetric–antisymmetric splitting of a pair of formerly degenerate levels is the origin of the bonding/antibonding pair of MO theory.
+```
+
+Extend the same idea from two wells to a long chain of them and the discrete bonding/antibonding pair spreads into a continuous **energy band** — the starting point for the electronic structure of a solid. {numref}`Figure %s <fig:ch12-band-structure-sim>` builds that chain: as the number of wells grows, levels pack into bands separated by gaps, and whether the Fermi level sits inside a band or in a gap is the difference between a metal and an insulator.
+
+```{phet} band-structure
+:label: fig:ch12-band-structure-sim
+
+A one-dimensional chain of wells with adjustable number, depth, and spacing. Discrete molecular levels broaden into bands and gaps; conductivity follows from where the Fermi level sits relative to those bands.
 ```
 
 #### Historical Context: From Lewis's Electron Pair to the Pauling–Mulliken Rivalry

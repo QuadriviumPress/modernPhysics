@@ -176,7 +176,14 @@ each verified against the standard hydrogen wave-function table (e.g. OpenStax V
 Radial probability distributions $P(r)=r^2|R_{n\ell}(r)|^2$ for the six lowest distinct $(n,\ell)$ combinations. Each state's node count matches $n-\ell-1$ exactly, and every curve for a given $n$ extends, on average, farther from the origin as $n$ increases — the size of the atom really does grow with $n$, just not along a sharp Bohr orbit. Computed directly from the closed-form $R_{n\ell}(r)$ formulas; see `scripts/figures/`.
 ```
 
-More generally, $R_{n\ell}(r)$ has $n-\ell-1$ radial nodes (points, other than $r=0$ and $r=\infty$, where the probability density vanishes), and the angular functions $Y_{\ell m_\ell}(\theta,\phi)$ have angular nodes (nodal planes or cones) whose count and shape depend on $\ell$ and $m_\ell$ — giving rise to the familiar $s$ (spherical), $p$ (dumbbell-shaped, with a single nodal plane through the origin), and $d$-orbital shapes used throughout chemistry ([Chapter 12](#ch-molecular-structure)) to describe electron distributions in atoms and molecules.
+More generally, $R_{n\ell}(r)$ has $n-\ell-1$ radial nodes (points, other than $r=0$ and $r=\infty$, where the probability density vanishes), and the angular functions $Y_{\ell m_\ell}(\theta,\phi)$ have angular nodes (nodal planes or cones) whose count and shape depend on $\ell$ and $m_\ell$ — giving rise to the familiar $s$ (spherical), $p$ (dumbbell-shaped, with a single nodal plane through the origin), and $d$-orbital shapes used throughout chemistry ([Chapter 12](#ch-molecular-structure)) to describe electron distributions in atoms and molecules. {numref}`Figure %s <fig:ch10-quantum-atom-3d-sim>` renders those three-dimensional orbitals directly: rotate a chosen $(n,\ell,m_\ell)$ state, cut through it with a plane, and watch the linked radial probability $P(r)$ track the same node count derived above.
+
+```{openlyceum} QuantumAtom3D
+:screens: 1
+:label: fig:ch10-quantum-atom-3d-sim
+
+Hydrogenic orbitals in three dimensions, with complex-phase colouring, probability isosurfaces, a cutting plane, and the linked radial distribution $P(r)$. Change $n$, $\ell$, $m_\ell$, and $Z$ to compare hydrogen with $\text{He}^+$, $\text{Li}^{2+}$, and the other hydrogenic ions of the previous section.
+```
 
 :::{margin}
 **Where the letters come from.** $s,p,d,f$ for $\ell=0,1,2,3$ are historical leftovers from nineteenth-century spectroscopy, abbreviating **s**harp, **p**rincipal, **d**iffuse, and **f**undamental — descriptions of how the corresponding spectral lines *looked*, decades before anyone knew what $\ell$ was. Past $f$, the letters simply continue alphabetically ($g,h,\ldots$).
@@ -233,6 +240,15 @@ $$
 $$
 
 just past the violet edge of the visible spectrum, in the near ultraviolet. Every Balmer line falls between these two wavelengths, $364.6\ \text{nm} < \lambda \le 656.3\ \text{nm}$ — which is why nearly the whole series, unlike the entirely ultraviolet Lyman series or the entirely infrared Paschen series, is visible to the human eye, and why Johann Balmer found the first four of these lines by curve-fitting alone in 1885, three decades before Bohr's model — or Schrödinger's equation — existed to explain them.
+
+The same ladder can be driven interactively in {numref}`Figure %s <fig:ch10-light-and-atoms-sim>`: lift the electron and drop it to emit a photon into the Lyman, Balmer, or Paschen series, or fire photons from a lamp and watch only the resonant ones get absorbed. The wavelength that appears is exactly $hc/|E_{n_i}-E_{n_f}|$ — the Rydberg formula of the worked example, read off a live atom rather than computed by hand.
+
+```{openlyceum} LightAndAtoms
+:screens: 2
+:label: fig:ch10-light-and-atoms-sim
+
+A Bohr hydrogen atom beside its energy-level diagram, with emission and absorption modes. Each jump adds a line to the UV / visible / IR spectrum at $\lambda = hc/|\Delta E|$; photons that miss an allowed gap pass through unchanged, and short enough ones ionize the atom.
+```
 
 ### Electron Spin
 
@@ -300,7 +316,14 @@ $$
 \Delta E = (m_\ell + g_sm_s)\,\mu_B B \approx (m_\ell + 2m_s)\,\mu_B B,
 $$
 
-so that adjacent orbital sublevels are separated by exactly $\mu_BB$. For electric-dipole transitions, the corresponding magnetic quantum-number rule is $\Delta m_\ell=0,\pm1$: the $\Delta m_\ell=\pm1$ transitions produce the two side components, while $\Delta m_\ell=0$ produces the central component of the normal Zeeman triplet. Historically, it was the *observed* splitting pattern (sometimes the simple three-line "normal" Zeeman pattern predicted by $m_\ell$ alone, but more often a more complicated "anomalous" pattern explainable only once spin and its distinct $g$-factor were included) that provided some of the earliest indirect evidence for electron spin, years before Stern and Gerlach identified its direct mechanical signature.
+so that adjacent orbital sublevels are separated by exactly $\mu_BB$. For electric-dipole transitions, the corresponding magnetic quantum-number rule is $\Delta m_\ell=0,\pm1$: the $\Delta m_\ell=\pm1$ transitions produce the two side components, while $\Delta m_\ell=0$ produces the central component of the normal Zeeman triplet. Historically, it was the *observed* splitting pattern (sometimes the simple three-line "normal" Zeeman pattern predicted by $m_\ell$ alone, but more often a more complicated "anomalous" pattern explainable only once spin and its distinct $g$-factor were included) that provided some of the earliest indirect evidence for electron spin, years before Stern and Gerlach identified its direct mechanical signature. {numref}`Figure %s <fig:ch10-zeeman-atom-sim>` draws both the normal and anomalous patterns, with the selection rules and polarization filtering available to match the laboratory triplet (or multiplet) against the $(m_\ell,m_s)$ bookkeeping above.
+
+```{openlyceum} QuantumAtom3D
+:screens: 4
+:label: fig:ch10-zeeman-atom-sim
+
+Zeeman splitting of a hydrogenic level in an external field, with normal and anomalous patterns, fine-structure limits, and the $\Delta m_\ell=0,\pm1$ selection rules that produce the observed spectral components.
+```
 
 #### Worked Example: Zeeman Splitting Frequency in a 1 T Field
 

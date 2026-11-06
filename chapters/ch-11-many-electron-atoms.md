@@ -118,12 +118,20 @@ This filling scheme directly generates the structure of the **periodic table**. 
 The exclusion principle is not a special rule about electrons in atoms — it applies to any collection of identical fermions. Protons and neutrons are themselves spin-$\tfrac12$ fermions, and each species independently fills its own sequence of energy levels inside the nucleus subject to the same exclusion principle, producing a shell structure with its own closed-shell "magic numbers" that is strikingly analogous to the noble-gas shell closures described here. See [](#ch-nuclear-physics) for the nuclear shell model built on exactly this idea.
 :::
 
-The Aufbau procedure is quicker to learn by doing it than by reading the rules, and {numref}`Figure %s <fig:ch11-build-atom-sim>` is the exercise: add protons, neutrons, and electrons one at a time and watch the element name, the net charge, the mass number, and the shell occupancy update together. Two habits of thought are worth breaking there. Adding a proton changes the element; adding a neutron does not, and only moves the atom along a row of isotopes ([Chapter 13](#ch-nuclear-physics)). And the electrons go into shells that fill in a fixed order, so that the chemistry of the atom is decided by the last few added rather than by the total.
+The Aufbau procedure is quicker to learn by doing it than by reading the rules, and {numref}`Figure %s <fig:ch11-build-atom-sim>` is the first exercise: add protons, neutrons, and electrons one at a time and watch the element name, the net charge, the mass number, and the shell occupancy update together. Two habits of thought are worth breaking there. Adding a proton changes the element; adding a neutron does not, and only moves the atom along a row of isotopes ([Chapter 13](#ch-nuclear-physics)). And the electrons go into shells that fill in a fixed order, so that the chemistry of the atom is decided by the last few added rather than by the total.
 
 ```{phet} build-an-atom
 :label: fig:ch11-build-atom-sim
 
 Atoms assembled particle by particle, with element, charge, mass number, and electron shell filling all displayed as they are built. Build up to neon or argon and the outer shell closes exactly as the electron count reaches a noble gas — the closure being a fact about the electrons, and nothing to do with the nucleus underneath them.
+```
+
+Shell occupancy alone is not yet a configuration. {numref}`Figure %s <fig:ch11-electron-config-sim>` fills the energy-staircase orbital diagram electron by electron — Pauli exclusion enforced by the shake when a third electron is forced into an already-filled orbital, Hund's rule by the preference for parallel spins across a partially filled subshell — and then steps through the periodic table so the block structure and the chromium/copper exceptions below appear as measured ground states rather than as footnotes.
+
+```{openlyceum} ElectronConfiguration
+:label: fig:ch11-electron-config-sim
+
+Orbital diagrams, periodic-table filling patterns, common ions, and configuration challenges. The Aufbau order, Hund's rule, and the exclusion principle are enforced interactively; Cr and Cu pause the table walk-through at their observed ground states.
 ```
 
 #### The Aufbau Order in Practice: Configurations Across the Periodic Table
@@ -175,6 +183,14 @@ The Slater's-rule calculation above — $Z_{\text{eff}}$ rising from $2.20$ (sod
 :alt: Plot of first ionization energy in electron volts versus atomic number Z from 1 to 36, showing a sawtooth pattern peaking at the noble gases helium, neon, argon, and krypton, and dipping at the alkali metals lithium, sodium, and potassium.
 
 First ionization energy versus atomic number, $Z=1$–$36$. Each period rises from an alkali-metal trough to a noble-gas peak as $Z_{\text{eff}}$ grows across the period, then collapses as a new, more distant shell begins. Computed from NIST Atomic Spectra Database ionization-energy values.
+```
+
+The same sawtooth — and the matching trends in atomic radius, electron affinity, and electronegativity — can be walked period by period and group by group in {numref}`Figure %s <fig:ch11-periodic-trends-sim>`, with $Z_{\text{eff}}$ from Slater's rules plotted on a second axis so the mechanism of the previous worked example, not only the outcome, is visible.
+
+```{openlyceum} PeriodicTrends
+:label: fig:ch11-periodic-trends-sim
+
+Periodic trends in atomic radius, ionization energy, electron affinity, and electronegativity, with $Z_{\text{eff}}$ overlaid and a shielding screen that applies Slater's rules electron by electron. Drag across a period or down a group to watch the property and the effective nuclear charge move together.
 ```
 
 Two smaller features in that figure repay a closer look. Within period 2, beryllium's ionization energy ($9.32\ \text{eV}$) is *higher* than boron's ($8.30\ \text{eV}$), even though boron has one more proton — a small step backward against the overall rising trend, and the same pattern recurs for nitrogen ($14.53\ \text{eV}$) against oxygen ($13.62\ \text{eV}$), and again in period 3 for phosphorus ($10.49\ \text{eV}$) against sulfur ($10.36\ \text{eV}$). These dips are not noise; they are the same subshell-stability physics responsible for the chromium and copper exceptions above, showing up in ionization energy instead of in the filling order.

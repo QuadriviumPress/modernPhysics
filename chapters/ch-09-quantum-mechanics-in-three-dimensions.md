@@ -95,6 +95,16 @@ and already illustrate the general pattern. The $\ell=0$ harmonic, $Y_0^0$, is c
 **Counting nodes.** A real orbital with angular quantum number $\ell$ has $\ell$ angular nodes in total. For the complex spherical harmonic $Y_\ell^{m_\ell}$ itself, the associated Legendre factor gives $\ell-|m_\ell|$ polar nodes; the phase factor $e^{im_\ell\phi}$ does not create additional zeros. Real combinations such as $p_x$, $p_y$, and $p_z$ redistribute the nodes into familiar nodal planes — the same node-counting logic used for 1D bound states in [Chapter 8](#ch-the-schrodinger-equation).
 :::
 
+```{openlyceum} QuantumAtom3D
+:screens: 1
+:screen: 1
+:label: fig:ch09:spherical-harmonics-sim
+:placeholder: /images/simulations/quantum-atom3d-1.png
+:alt: Hydrogenic orbital density with phase colouring, quantum-number controls and a cutting plane.
+
+Compare the $\ell=1$, $m_\ell=0$ and $m_\ell=\pm1$ states at the same $n$. Predict their angular zeros from the spherical harmonics above, then inspect a cutting plane. Switch between complex and real orbital bases: a change in the familiar lobe picture must be interpreted through the corresponding wave function and its phase. The radial factor here is hydrogenic; the angular functions apply to any central potential.
+```
+
 #### The Radial Equation and the Centrifugal Barrier
 
 Substituting $\psi = R(r)Y(\theta,\phi)$ into the full Schrödinger equation and separating variables reduces the radial part to an ordinary differential equation for $R(r)$. It is standard, and illuminating, to write this in terms of $u(r) \equiv rR(r)$, in which case the radial equation takes a form directly analogous to a *one-dimensional* Schrödinger equation for $u(r)$ on the half-line $r>0$:
@@ -148,6 +158,16 @@ The bound $\ell \le n-1$ that holds for Coulomb bound states is easy to mistake 
 Two features are worth emphasizing, since both run against classical intuition. First, $L = \sqrt{\ell(\ell+1)}\hbar$, not $\ell\hbar$ — the "extra" factor means that for any $\ell>0$ the angular momentum vector's length is slightly *larger* than its maximum possible $z$-component, $m_{\ell,\max}\hbar = \ell\hbar$; the vector can never point exactly along the $z$-axis. Second, because $L_x$ and $L_y$ are not simultaneously measurable with $L_z$, only the magnitude $L$ and a single component $L_z$ can be assigned definite values at once — the other two components remain fundamentally indeterminate, consistent with the vector never lying exactly along any single axis.
 
 Historically, states of a given $\ell$ are labeled by spectroscopic letters inherited from early atomic spectroscopy: $\ell = 0,1,2,3,4,\ldots$ are denoted $s, p, d, f, g,\ldots$ respectively — a labeling convention used throughout atomic physics (Chapters [10](#ch-the-hydrogen-atom)–[11](#ch-many-electron-atoms)) and retained today purely by tradition.
+
+```{openlyceum} QuantumAtom3D
+:screens: 3
+:screen: 3
+:label: fig:ch09:angular-momentum-sim
+:placeholder: /images/simulations/quantum-atom3d-3.png
+:alt: Angular-momentum vector model with discrete projections, precession cones and uncertainty readouts.
+
+Choose $\ell$ and compare the fixed magnitude $\sqrt{\ell(\ell+1)}\hbar$ with the allowed projections $m_\ell\hbar$. Predict the number of projections before changing $\ell$. The precession cone is a vector-model representation of angular momentum and its uncertainties, not a trajectory followed by an electron.
+```
 
 #### Why $m_\ell$ Is Called the Magnetic Quantum Number
 
@@ -251,6 +271,16 @@ This may look like a mathematical curiosity, but the isotropic harmonic oscillat
 #### Comparing Degeneracy Across Three Central Potentials
 
 It is worth pausing to compare the degeneracy patterns of the three central (or Cartesian-separable) potentials encountered so far, since the comparison sharpens exactly what "degeneracy reflects underlying symmetry" means in practice. The cubic infinite box has a *discrete* symmetry (the box is invariant only under swapping $x$, $y$, $z$ and reflections, not under arbitrary rotations), and correspondingly modest degeneracies, arising only from specific numerical coincidences among sums of squares of integers. The isotropic harmonic oscillator has full continuous rotational symmetry plus an additional symmetry responsible for its larger degeneracy across different $\ell$ values at fixed $N=n_x+n_y+n_z$. The hydrogen atom's Coulomb potential ([Chapter 10](#ch-the-hydrogen-atom)) has an additional degeneracy as well: not only is the energy independent of $m_\ell$ (true for *any* central potential, since no central potential singles out a preferred direction in space), but for the Coulomb potential specifically, the energy is also independent of $\ell$ for fixed principal $n$ — an extra, "accidental" degeneracy not explained by rotational symmetry alone, and one of the most distinctive mathematical features of the $1/r$ potential, examined further in [Chapter 10](#ch-the-hydrogen-atom).
+
+```{openlyceum} QuantumAtom3D
+:screens: 5
+:screen: 5
+:label: fig:ch09:oscillator-degeneracy-sim
+:placeholder: /images/simulations/quantum-atom3d-5.png
+:alt: Three-dimensional oscillator states with Cartesian and spherical quantum numbers and shell degeneracies.
+
+Count the Cartesian states in shells $N=1$ and $N=2$ before revealing their spherical-basis counterparts. Compare the total with $(N+1)(N+2)/2$ and the allowed pairs satisfying $N=2n_r+\ell$. The basis changes while the shell energy and total number of states remain the same.
+```
 
 ## Summary
 

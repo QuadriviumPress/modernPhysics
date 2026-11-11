@@ -129,15 +129,34 @@ that works in an iframe can be embedded, not only simulations from
 [`plugins/README.md`](plugins/README.md) for the options and for how the
 fallback works.
 
-`{phet-legacy}` reaches PhET's pre-HTML5 Java simulations, which PhET runs in
-the browser through CheerpJ. Several topics here — the photoelectric effect,
-tunneling, lasers, gas discharge, radioactive dating, and nuclear fission —
-have no HTML5 equivalent, so the Java version is the only interactive option.
-Alpha decay, beta decay, and the Quantum Bound States suite (including particle
-in a box, bound-state superposition, double wells, and band structure) now have
-HTML5 versions; those use `{phet}`. A CheerpJ sim is slow to start and
-mouse-only; prefer `{phet}` or `{openlyceum}` where either has something
-comparable.
+`{phet-legacy}` reaches PhET's pre-HTML5 Java simulations through CheerpJ.
+The book retains Photoelectric Effect, Davisson–Germer, Quantum Tunneling,
+Discharge Lamps, Lasers, Radioactive Dating Game and Nuclear Fission. The
+scattering and discharge-lamp replacements are deferred; dating has no
+equivalent here. Alpha Decay, Beta Decay and the Quantum Bound States suite
+already use HTML5 through `{phet}`.
+
+Chapter 10 includes the forthcoming OpenLyceum Simplified MRI, marked **in
+progress**, with a generic static placeholder and a link to PhET's original
+MRI while development continues. The new OpenLyceum launch may remain
+unavailable until that simulation is published.
+
+Chapters 4, 5, 6, 9, 11, 12 and 14 include focused OpenLyceum activities for
+phasors and diffraction, photon interactions, three-dimensional quantum
+states, spectroscopy and particle physics. Their screen-specific PNG
+fallbacks live in [`images/simulations/`](images/simulations/); the capture
+manifest records the selected screens. Refresh them with:
+
+```bash
+npm install --prefix /tmp/modernphysics-browser playwright
+PLAYWRIGHT_MODULE=/tmp/modernphysics-browser/node_modules/playwright/index.mjs \
+  node scripts/capture-simulation-fallbacks.mjs
+```
+
+The capture tool needs an installed Playwright Chromium. Review refreshed
+images against their captions because the hosted simulations can change.
+[`SIMULATION-AUDIT.md`](SIMULATION-AUDIT.md) records the implemented placements
+and the retained legacy simulations.
 
 Every chapter carries at least one simulation;
 [`SOURCES.md`](SOURCES.md) lists which, chapter by chapter, along with the

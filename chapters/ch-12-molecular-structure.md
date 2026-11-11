@@ -93,6 +93,16 @@ The counting rule behind {numref}`Table %s <tab:ch12-hybridization>` is worth ex
 Molecular geometry built from electron domains. Bond angles are displayed live, and the "real molecules" screen compares the idealized VSEPR prediction with measured geometries.
 ```
 
+```{openlyceum} QuantumAtom3D
+:screens: 2
+:screen: 2
+:label: fig:ch12:hybrid-orbitals-sim
+:placeholder: /images/simulations/quantum-atom3d-2.png
+:alt: Superposition controls and a three-dimensional orbital view for combinations of s and p hydrogenic states.
+
+Explore the $sp$, $sp^2$ and $sp^3$ presets and inspect how amplitudes and relative signs form directional combinations of $s$ and $p$ orbitals. This hydrogenic model illustrates the mathematics of superposition; it is not a many-electron molecular calculation. If components have different energies, their relative phase evolves in time, unlike a stationary hybrid-orbital basis used to describe a bond.
+```
+
 #### Worked Example: The Geometry of Xenon Tetrafluoride
 
 Predict the hybridization and molecular geometry of $\text{XeF}_4$.
@@ -167,6 +177,16 @@ The idea that a covalent bond is a *shared pair of electrons* predates quantum m
 :alt: Historical photograph of Linus Pauling, 1962.
 
 Linus Pauling, photographed in 1962, eight years after his 1954 Nobel Prize in Chemistry for work on the nature of the chemical bond — the valence-bond and hybridization framework of this chapter. Photograph by the Nobel Foundation; public domain via Wikimedia Commons.
+```
+
+```{openlyceum} SpectroscopyLab
+:screens: 3
+:screen: 3
+:label: fig:ch12:electronic-spectra-sim
+:placeholder: /images/simulations/spectroscopy-lab-3.png
+:alt: Conjugated molecule with molecular orbitals, an electronic energy-level diagram and an ultraviolet-visible absorption spectrum.
+
+Extend the molecular-orbital picture to conjugated molecules. Compare the Hückel and particle-in-a-box predictions for an absorption wavelength with the measured value, then lengthen the conjugated system and predict the direction of the shift. These are models of conjugated molecules, not a replacement for the $\mathrm{N}_2$ and $\mathrm{O}_2$ diagrams below.
 ```
 
 #### Building the Diagram for the Second Row: N₂ and O₂
@@ -359,6 +379,16 @@ $$
 
 so the predicted line spacing is $2\tilde{B} = 3.85\ \text{cm}^{-1}$ — in excellent agreement with the spacing of about $3.86\ \text{cm}^{-1}$ actually observed in the CO fundamental infrared band. A bond length and a reduced mass, fed into a formula derived from nothing more than the rigid-rotor approximation, correctly predict the fine structure of a real molecular spectrum.
 
+```{openlyceum} SpectroscopyLab
+:screens: 1
+:screen: 1
+:label: fig:ch12:rovibrational-sim
+:placeholder: /images/simulations/spectroscopy-lab-1.png
+:alt: Infrared spectrum linked to a molecule and its vibration, with a high-resolution rotation–vibration view.
+
+Select HCl and open its high-resolution infrared view to resolve the P and R branches. Predict how isotopic substitution changes the line positions and how temperature changes the envelope, then test each prediction. The molecule here is HCl rather than the CO of the worked example, so compare branch structure and scaling rather than expecting the same numerical spacing.
+```
+
 #### Anharmonicity Revisited
 
 {numref}`Figure %s <fig:ch12-interatomic-sim>`, above, already showed that the true interatomic potential is not a perfect parabola: it rises more steeply than quadratic at short range (the repulsive wall) and flattens out well below quadratic at long range, approaching the dissociation energy asymptotically rather than climbing forever. A more realistic potential — the **Morse potential** is the standard choice for modeling this curve quantitatively — gives vibrational energy levels that are no longer *exactly* evenly spaced:
@@ -368,6 +398,16 @@ E_v \approx \left(v+\tfrac12\right)\hbar\omega - \left(v+\tfrac12\right)^2 x_e\h
 $$
 
 where the small, positive **anharmonicity constant** $x_e$ (typically a few percent, for real molecules) quantifies the departure from a perfect harmonic oscillator. The negative correction term grows with $v$, so **the levels crowd closer together at higher $v$** — an effect invisible near the bottom of the well, where the potential is well approximated by the parabola of the harmonic-oscillator treatment above, but increasingly important as $v$ climbs toward the dissociation limit, where the level spacing approaches zero as the bound levels approach the molecule's bond dissociation energy. Anharmonicity also relaxes the strict $\Delta v = \pm 1$ selection rule of the ideal harmonic oscillator, permitting weak **overtone** transitions with $\Delta v = \pm2, \pm3, \ldots$ — additional, much fainter absorption lines at roughly (but not exactly) integer multiples of the fundamental frequency. This is why a real vibrational spectrum shows one strong fundamental band accompanied by a series of progressively weaker overtones, rather than the single, perfectly sharp line the ideal harmonic oscillator of [Chapter 8](#ch-the-schrodinger-equation) would predict.
+
+```{openlyceum} QuantumPotential
+:screens: 2
+:screen: 2
+:label: fig:ch12:morse-potential-sim
+:placeholder: /images/simulations/quantum-potential-2.png
+:alt: Adjustable one-dimensional potential well with bound-state energy levels, wave functions and probability densities.
+
+Compare the harmonic-oscillator and Morse potentials. Predict which model has a finite number of bound levels and which develops smaller spacings at higher energy, then inspect the spectra. This solver uses an electron-mass particle: it illustrates the shape and level-spacing argument, rather than predicting the vibrational frequencies of a particular molecule.
+```
 
 :::{seealso} A Bound System Weighs Less Than Its Parts, Again
 A bond's dissociation energy — the energy needed to pull two bonded atoms apart to infinite separation — is the molecular-scale instance of a pattern that reappears, at a vastly different energy and length scale, when the same nuclei are pulled apart from *within*. See [](#ch-nuclear-physics) for the nuclear binding energy, where the same logic (a bound system has lower total energy, and hence lower total mass, than its separated constituents) explains why nuclei resist being split or fused apart, on a scale of $\text{MeV}$ rather than $\text{kJ/mol}$.

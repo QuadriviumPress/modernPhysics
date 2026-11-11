@@ -539,6 +539,16 @@ $$
 
 for $p = 1,2,3,4$ (the value $p = 5$ is excluded — it is the first-order principal maximum). The four zeros lie at $\sin\theta = 0.050, 0.100, 0.150, 0.200$, and between them sit $N - 2 = 3$ secondary maxima. Note that the first zero is at $\sin\theta = 0.050$, one fifth of the way to the first principal maximum at $0.250$. For comparison, the first zero of the two-slit pattern is halfway to that maximum, so this five-slit central peak is $2.5$ times narrower than the corresponding two-slit peak.
 
+```{openlyceum} DiffractionLab
+:screens: 1
+:screen: 1
+:label: fig:ch04:n-slit-sim
+:placeholder: /images/simulations/diffraction-lab-1.png
+:alt: Slits and an intensity pattern beside a chain of phasors for the selected observation angle.
+
+Add the slits one at a time. Predict where the phasor chain first closes for $N=2$, $3$ and $5$, then sweep the observation angle to test the prediction. Keep the slit spacing fixed: the principal maxima stay in place while their heights grow as $N^2$ and their widths shrink. The single-slit envelope previews the finite-width correction developed in [Chapter 5](#ch-diffraction-of-light).
+```
+
 ## Thin Films and Interferometers
 
 ### Thin-Film Interference
@@ -768,6 +778,16 @@ Everything in this chapter treats light as a classical wave, and the treatment w
 Turn the source in Young's experiment down. Not a little — down until the light is so faint that, on average, only one quantum of light is inside the apparatus at any moment. A $1\ \text{mW}$ helium–neon laser emits about $3\times10^{15}$ photons per second; light crosses a meter-long apparatus in about $3\ \text{ns}$. A rate below roughly $10^{8}$ photons per second keeps the mean number of photons in the apparatus below about $0.3$; individual emission intervals are still random, but simultaneous photons are then uncommon. G. I. Taylor performed the experiment in 1909 using an attenuated gas flame and a three-month exposure, and it has been repeated countless times since with single-photon sources and imaging detectors.
 
 The result is that the screen records individual, localized hits — dots, one at a time, apparently at random. But as the dots accumulate over hours, they build up precisely the $\cos^2$ fringe pattern derived in this chapter. The probability amplitude associated with each photon interferes between the two paths; there is no second photon for it to interfere with. That fact cannot be accommodated by any picture in which the photon simply goes through one slit or the other, and it is the central puzzle that [Chapters 6](#ch-particle-properties-of-waves) and [7](#ch-wave-properties-of-particles) take up.
+
+```{openlyceum} InterferometryLab
+:screens: 2
+:screen: 2
+:label: fig:ch04:single-photon-interferometer-sim
+:placeholder: /images/simulations/interferometry-lab-2.png
+:alt: Mach–Zehnder interferometer with two output detectors and complementary interference signals.
+
+A Mach–Zehnder interferometer tests the same superposition principle in a two-path geometry. Change the optical path of one arm and compare both output ports: a brightening at one accompanies a dimming at the other. Then select single-photon operation and accumulate detections with and without the which-path marker. Predict which feature changes when path information becomes available: the total detection probability or its distribution between the ports.
+```
 
 For now, the wave description stands on its own, and the next chapter completes it.
 

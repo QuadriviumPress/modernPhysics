@@ -1,0 +1,160 @@
+{
+  "description": "Screen-specific OpenLyceum captures for the Modern Physics simulation additions. Each image retains the simulation AGPL-3.0 license; see SOURCES.md.",
+  "captures": [
+    {
+      "repository": "DiffractionLab",
+      "screens": "1",
+      "file": "diffraction-lab-1.png"
+    },
+    {
+      "repository": "InterferometryLab",
+      "screens": "2",
+      "file": "interferometry-lab-2.png"
+    },
+    {
+      "repository": "DiffractionLab",
+      "screens": "2",
+      "file": "diffraction-lab-2.png"
+    },
+    {
+      "repository": "DiffractionLab",
+      "screens": "3",
+      "file": "diffraction-lab-3.png"
+    },
+    {
+      "repository": "DiffractionLab",
+      "screens": "4",
+      "file": "diffraction-lab-4.png"
+    },
+    {
+      "repository": "PhotonInteractions",
+      "screens": "2",
+      "file": "photon-interactions-2.png"
+    },
+    {
+      "repository": "PhotonInteractions",
+      "screens": "1",
+      "file": "photon-interactions-1.png"
+    },
+    {
+      "repository": "PhotonInteractions",
+      "screens": "3,4",
+      "file": "photon-interactions-3-4.png"
+    },
+    {
+      "repository": "QuantumAtom3D",
+      "screens": "1",
+      "file": "quantum-atom3d-1.png"
+    },
+    {
+      "repository": "QuantumAtom3D",
+      "screens": "3",
+      "file": "quantum-atom3d-3.png"
+    },
+    {
+      "repository": "QuantumAtom3D",
+      "screens": "5",
+      "file": "quantum-atom3d-5.png"
+    },
+    {
+      "repository": "InterferometryLab",
+      "screens": "3",
+      "file": "interferometry-lab-3.png"
+    },
+    {
+      "repository": "QuantumAtom3D",
+      "screens": "2",
+      "file": "quantum-atom3d-2.png",
+      "actions": [
+        {
+          "role": "button",
+          "name": "sp\u00b3"
+        }
+      ]
+    },
+    {
+      "repository": "SpectroscopyLab",
+      "screens": "3",
+      "file": "spectroscopy-lab-3.png"
+    },
+    {
+      "repository": "SpectroscopyLab",
+      "screens": "1",
+      "file": "spectroscopy-lab-1.png",
+      "actions": [
+        {
+          "role": "button",
+          "name": "Molecule water"
+        },
+        {
+          "role": "option",
+          "name": "hydrogen chloride"
+        },
+        {
+          "role": "checkbox",
+          "name": "Rotational fine structure (gas, high resolution)",
+          "key": "Space"
+        }
+      ]
+    },
+    {
+      "repository": "QuantumPotential",
+      "screens": "2",
+      "file": "quantum-potential-2.png",
+      "actions": [
+        {
+          "role": "button",
+          "name": "Potential Type Infinite Square Well"
+        },
+        {
+          "role": "option",
+          "name": "Morse Potential"
+        }
+      ]
+    },
+    {
+      "repository": "ParticleZoo",
+      "screens": "4",
+      "file": "particle-zoo-4.png",
+      "actions": [
+        {
+          "role": "button",
+          "name": "Classic cases Choose a case\u2026"
+        },
+        {
+          "role": "option",
+          "name": "Neutron \u03b2 decay"
+        }
+      ]
+    },
+    {
+      "repository": "ColliderLab",
+      "screens": "1,2,3",
+      "file": "collider-lab-1-2-3.png"
+    },
+    {
+      "repository": "ParticleZoo",
+      "screens": "1,2",
+      "file": "particle-zoo-1-2.png",
+      "actions": [
+        {
+          "role": "button",
+          "name": "Add u quark to the bag"
+        },
+        {
+          "role": "button",
+          "name": "Add u quark to the bag"
+        },
+        {
+          "role": "button",
+          "name": "Add d quark to the bag"
+        }
+      ]
+    },
+    {
+      "repository": "ParticleZoo",
+      "screens": "3",
+      "file": "particle-zoo-3.png"
+    }
+  ]
+}

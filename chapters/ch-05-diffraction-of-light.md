@@ -296,6 +296,16 @@ $$
 
 with $d$ the spacing between adjacent rulings; their width scales as $1/N$ and their peak intensity as $N^2$. What is new is only that $N$ is now enormous — a $1\ \text{cm}$ beam on a grating with $600$ lines per millimeter illuminates $6000$ lines at once — so the maxima are not fringes but needle-sharp spectral lines. And of course the finite width of each opening imposes a diffraction envelope, exactly as for the double slit, so some orders are weak or missing. (Precision gratings are *blazed*: each groove is cut at an angle chosen to steer the envelope's peak into a chosen order, so that most of the light ends up where it is wanted rather than in the useless $m = 0$ direction.)
 
+```{openlyceum} DiffractionLab
+:screens: 1
+:screen: 1
+:label: fig:ch05:gratings-sim
+:placeholder: /images/simulations/diffraction-lab-1.png
+:alt: Adjustable diffraction grating, phasor diagram and intensity curve with a single-slit envelope.
+
+Hold the wavelength and slit spacing fixed and increase the number of slits. Predict which maxima become narrower without moving, then change the slit width to search for a missing order. The phasor diagram shows why an aligned chain produces a principal maximum and a closed chain produces a zero.
+```
+
 #### Dispersion
 
 Because the diffraction angle depends on $\lambda$, a grating spreads white light into a spectrum — one spectrum per order, on each side of the center. Differentiating the grating equation gives the **angular dispersion**
@@ -350,6 +360,16 @@ N = \frac{R}{m} = 982\ \text{lines}.
 $$
 
 On a grating with $600$ lines per millimeter this needs a beam only $1.64\ \text{mm}$ wide — trivially met by any laboratory setup, which is why the sodium doublet is a standard first-week demonstration. In second order only $491$ lines would be needed. By contrast, resolving the hyperfine structure *within* one of those lines requires a much larger resolving power than resolving the doublet — far beyond this simple demonstration and typically measured with specialized spectroscopic methods instead.
+
+```{openlyceum} DiffractionLab
+:screens: 2
+:screen: 2
+:label: fig:ch05:grating-resolution-sim
+:placeholder: /images/simulations/diffraction-lab-2.png
+:alt: Two nearby spectral lines on a grating with an enlarged intensity plot and resolving-power readouts.
+
+Resolve the sodium doublet by changing the number of illuminated lines and the diffraction order. First predict the required $N$ from $R=mN$; then compare the two profiles with their sum. Try second order and explain why the required number of lines is halved.
+```
 
 #### Worked Example: A Grating Spectrum
 
@@ -452,6 +472,16 @@ At a reading distance of $25\ \text{cm}$ this corresponds to $s = (1.68\times10^
 
 This example is worth keeping in mind whenever a diffraction limit is quoted: it is a ceiling on performance, not a promise of it.
 
+```{openlyceum} DiffractionLab
+:screens: 3
+:screen: 3
+:label: fig:ch05:airy-resolution-sim
+:placeholder: /images/simulations/diffraction-lab-3.png
+:alt: Two point-source images through a circular aperture, Airy patterns and a Rayleigh-resolution intensity profile.
+
+Two point sources viewed through a circular aperture. Predict how doubling the diameter changes the Rayleigh angle, then vary the source separation through the just-resolved condition. Compare the eye and Hubble presets with the ground-based, seeing-limited case: aperture sets the diffraction limit, but the atmosphere can impose a broader image.
+```
+
 ### X-Ray Diffraction and Bragg's Law
 
 Gratings work because their line spacing is comparable to the wavelength of the light. To probe the arrangement of atoms in a solid, spaced a few tenths of a nanometer apart, we would need a grating with that spacing — and nature supplies one, in the form of a crystal, provided we bring a wave with a matching wavelength. That means **X-rays**, with $\lambda \sim 0.1\ \text{nm}$.
@@ -540,6 +570,16 @@ Two properties follow directly from this account. First, holography demands a so
 :alt: A demonstration uses a diffraction grating embossed on chocolate to produce a rainbow, illustrating grating dispersion and hologram-like effects.
 
 A hands-on look at diffraction gratings and embossed rainbow holograms outside the lab, using the same dispersion behavior developed earlier in this chapter.
+```
+
+```{openlyceum} DiffractionLab
+:screens: 4
+:screen: 4
+:label: fig:ch05:holography-sim
+:placeholder: /images/simulations/diffraction-lab-4.png
+:alt: Off-axis hologram recording and reconstruction with point objects, reference beam and film fringes.
+
+Record an off-axis hologram, then reconstruct it using the reference beam. Predict what remains when half the film is blocked before trying it: each object can still be reconstructed, but its image broadens because the available aperture is smaller. Change the coherence length and compare the visibility of the recorded fringes.
 ```
 
 ### Looking Ahead: Diffraction and the Uncertainty Principle

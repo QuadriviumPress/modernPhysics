@@ -232,6 +232,16 @@ $$
 
 This is comparable to, and somewhat shorter than, typical interatomic spacings in crystals ($\sim 0.1$–$0.3\ \text{nm}$), which is why X-rays of this energy scale are useful for crystallographic diffraction ([Chapter 5](#ch-diffraction-of-light)) as well as medical imaging, where their short wavelength (and correspondingly high photon energy) allows them to penetrate soft tissue while being partially absorbed by denser bone.
 
+```{openlyceum} PhotonInteractions
+:screens: 2
+:screen: 2
+:label: fig:ch06:xray-tube-sim
+:placeholder: /images/simulations/photon-interactions-2.png
+:alt: X-ray tube with voltage, current and target controls beside its bremsstrahlung spectrum and characteristic lines.
+
+Run the X-ray tube and predict the cutoff wavelength before changing its voltage. Raising the current changes the output; raising the voltage shifts the Duane–Hunt cutoff and can enable characteristic lines. Change the target to distinguish those material-dependent lines from the voltage-dependent continuum.
+```
+
 ## Compton Scattering, Pair Production, and the Photon
 
 ### Compton Scattering
@@ -302,6 +312,16 @@ so the scattered wavelength is $\lambda' = 101.2\ \text{pm}$. In photon-energy t
 
 In a real gamma-ray or X-ray detector, photons scatter through the full range of angles $0 \le \theta \le 180°$ available inside the detector material, and the detector records the energy $\Delta E(\theta) = E - E'(\theta)$ actually deposited by the recoiling electron for each scattering event. Because $\Delta E(\theta)$ increases monotonically with $\theta$ (least energy transfer for forward scattering, most for backscattering), there is a sharply defined *maximum* possible energy deposit, occurring at $\theta = 180°$ — the **Compton edge** — beyond which no Compton-scattered electron can deposit more energy in a single scattering event, no matter how many photons are examined. A photon that instead deposits its *entire* energy in one interaction (via the photoelectric effect on a bound atomic electron, rather than Compton scattering a free one) produces a separate, sharp peak at the full incident photon energy, the **photopeak**. Gamma-ray spectroscopists routinely distinguish these two features — a sharp photopeak plus a broad continuum of Compton-scattered energies cut off abruptly at the Compton edge — when interpreting a detector's measured energy spectrum, since both are simultaneous, competing ways the same photon can interact with the detector material.
 
+```{openlyceum} PhotonInteractions
+:screens: 1
+:screen: 1
+:label: fig:ch06:compton-sim
+:placeholder: /images/simulations/photon-interactions-1.png
+:alt: Photon and recoil electron with a momentum triangle, scattering-angle control and photon-energy spectra.
+
+Set the incident wavelength to $0.100\ \text{nm}$ and the detector angle to $60^\circ$ to check the worked example. Predict what happens to the wavelength shift when the incident energy changes at fixed angle, then compare the spectrometer and detector-spectrum views. Backscattering sets the largest electron energy deposit, the Compton edge.
+```
+
 ### Pair Production and Annihilation
 
 A further, still more dramatic demonstration of the particle nature of light is **pair production**: a sufficiently energetic photon, passing near a nucleus, can convert entirely into an electron–positron pair,
@@ -329,6 +349,16 @@ K_{e^-} + K_{e^+} \approx E_\gamma - 2m_ec^2 = 3.00\ \text{MeV} - 1.022\ \text{M
 $$
 
 If the pair shares this energy symmetrically (not required by any conservation law, but a useful simplifying assumption), each particle carries about $0.989\ \text{MeV}$ of kinetic energy — comparable to its own rest energy, so each is produced at a substantial fraction of the speed of light.
+
+```{openlyceum} PhotonInteractions
+:screens: 3,4
+:screen: 3
+:label: fig:ch06:pair-annihilation-sim
+:placeholder: /images/simulations/photon-interactions-3-4.png
+:alt: Pair-production and annihilation screens with particle tracks and energy and momentum budgets.
+
+Compare pair production near a nucleus with the empty-space case, and account separately for rest energy, kinetic energy and recoil momentum. On the annihilation screen, begin with a pair at rest and predict the two photon energies and directions; then give the positron kinetic energy. The PET detector ring turns the back-to-back coincidence into a line of response.
+```
 
 ### The Photon: A Unified Picture
 

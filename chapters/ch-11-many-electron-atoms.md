@@ -241,6 +241,16 @@ $$
 
 corresponding to a predicted photon energy $hf_{\text{Ni}} \approx 7.46\ \text{keV}$. The accepted experimental value for the Ni $K_\alpha$ doublet is $7.461$–$7.478\ \text{keV}$ — agreement to better than half a percent, from a calculation using only a single measured data point and one universal constant, exactly the kind of predictive power that let Moseley assign atomic numbers to elements from X-ray measurements alone.
 
+```{openlyceum} PhotonInteractions
+:screens: 2
+:screen: 2
+:label: fig:ch11:moseley-sim
+:placeholder: /images/simulations/photon-interactions-2.png
+:alt: X-ray target controls and spectrum with a Moseley plot of the square root of characteristic frequency against atomic number.
+
+Compare targets in the X-ray tube and inspect the Moseley plot. Predict whether changing the voltage after a characteristic line appears should move that line; then contrast its behavior with the moving bremsstrahlung cutoff. The target changes the inner-shell energy gaps, while the accelerating voltage determines which gaps can be excited.
+```
+
 The surviving photograph in {numref}`Figure %s <fig:ch11-historical-moseley>` shows the physicist himself, not long before the work described above.
 
 ```{figure} ../images/historical-moseley.jpg
@@ -304,6 +314,16 @@ Out of every $10^{30}$ or so chromium ions in thermal equilibrium, essentially n
 #### Applications: Lasers in Technology and Medicine
 
 The properties that make a laser beam distinctive — a single, precisely defined wavelength; a high degree of spatial coherence, allowing the beam to be focused to a tiny spot or to travel long distances with little spreading; and a high degree of temporal coherence, permitting long coherence lengths ([Chapter 4](#ch-interference-of-light)) — underlie applications far removed from the gas-discharge tubes and ruby rods described above. **Fiber-optic communication**, the physical backbone of the modern internet, encodes digital data as pulses from semiconductor **diode lasers** (a solid-state laser design, distinct from both examples above, in which the population inversion is created electrically across a semiconductor junction rather than by an optical pump) sent down thin glass fibers by total internal reflection; the laser's narrow wavelength spread keeps different colors of light traveling through the same fiber from smearing into one another over long distances, allowing enormous data rates over transoceanic distances. **Laser cooling**, by contrast, exploits the momentum $p=h/\lambda$ carried by individual photons ([Chapter 6](#ch-particle-properties-of-waves)): a beam tuned just below an atom's resonant absorption frequency preferentially scatters off atoms moving *toward* the beam (Doppler-shifted into resonance), each absorption event imparting a momentum kick that opposes the atom's motion, and repeated scattering from beams in multiple directions can cool a dilute atomic gas to temperatures of a microkelvin or below — a technique essential to modern atomic clocks and to the experimental study of quantum gases. In medicine, lasers are used both destructively, where a tightly focused, high-intensity beam cuts or cauterizes tissue with a precision unavailable to a mechanical scalpel (as in some ophthalmic and dermatological surgery), and diagnostically, where the coherence and narrow linewidth of laser light are exploited in optical coherence tomography to image tissue structure with micrometer resolution — different laser properties from the list above put to work in each case.
+
+```{openlyceum} InterferometryLab
+:screens: 3
+:screen: 3
+:label: fig:ch11:laser-cavity-sim
+:placeholder: /images/simulations/interferometry-lab-3.png
+:alt: Fabry–Pérot cavity with adjustable mirror reflectance, cavity spacing and a transmission spectrum.
+
+The passive optical cavity can be studied separately from the gain medium. Predict how increasing mirror reflectance changes the transmission peaks, then scan the cavity spacing through resonance. This model supplies no pump or population inversion: use the Lasers simulation above for gain and lasing threshold, and this one for the cavity that selects resonant frequencies.
+```
 
 ## Summary
 

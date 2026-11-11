@@ -105,18 +105,39 @@ attribution and receive it through that link:
 |---|---|
 | 1. The Need for Relativity | Waves Intro (PhET); Interferometry Lab (OpenLyceum) |
 | 2. Special Relativity | Special Relativity ×2 — light clock and spacetime diagram (OpenLyceum); Doppler Effect (OpenLyceum) |
-| 3. Relativistic Dynamics | Collision Lab (PhET) |
-| 4. Interference of Light | Light Propagation (OpenLyceum); Wave Interference, slits screen (PhET); Standing Waves, reflection screen (OpenLyceum); Interferometry Lab (OpenLyceum) |
-| 5. Diffraction of Light | Wave Interference, diffraction screen (PhET); Crystal Lattice (OpenLyceum) |
-| 6. Particle Properties of Waves | Blackbody Spectrum (PhET); Photoelectric Effect (PhET, Java); Radio Waves (OpenLyceum) |
+| 3. Relativistic Dynamics | Collision Lab (PhET); Relativistic Dynamics ×4 — energy–momentum, collisions, thresholds and acceleration (OpenLyceum) |
+| 4. Interference of Light | Light Propagation; Standing Waves, reflection; Interferometry Lab, interferometers and single-photon Mach–Zehnder; Diffraction Lab, N-slit phasors (OpenLyceum); Wave Interference, slits (PhET) |
+| 5. Diffraction of Light | Wave Interference, diffraction (PhET); Crystal Lattice; Diffraction Lab ×4 — gratings, resolving power, circular aperture and holography (OpenLyceum) |
+| 6. Particle Properties of Waves | Blackbody Spectrum; Photoelectric Effect (PhET, Java); Radio Waves; Photon Interactions ×3 — X-ray tube, Compton scattering, pair production / annihilation (OpenLyceum) |
 | 7. Wave Properties of Particles | Davisson–Germer (PhET, Java); Standing Waves (OpenLyceum); Quantum Wave Interference, single-particles screen (PhET); Fourier: Making Waves, wave-packet screen (PhET); Wave Composer (OpenLyceum) |
 | 8. The Schrödinger Equation | Quantum Measurement (PhET); Particle in a Box (PhET); Quantum Bound States (PhET); Bound State Superposition (PhET); Quantum Tunneling (PhET, Java) |
-| 9. Quantum Mechanics in Three Dimensions | Stern–Gerlach (OpenLyceum); Precession (OpenLyceum) |
-| 10. The Hydrogen Atom | Models of the Hydrogen Atom (PhET); Quantum Atom 3D, orbitals and Zeeman screens (OpenLyceum); Light and Atoms, hydrogen screen (OpenLyceum); Simplified MRI (PhET, Java) |
-| 11. Many-Electron Atoms | Build an Atom (PhET); Electron Configuration (OpenLyceum); Periodic Trends (OpenLyceum); Neon Lights & Other Discharge Lamps (PhET, Java); Lasers (PhET, Java) |
-| 12. Molecular Structure | Molecule Polarity (PhET); Molecule Shapes (PhET); Double Wells and Covalent Bonds (PhET); Band Structure (PhET); Atomic Interactions (PhET); Molecules and Light (PhET) |
+| 9. Quantum Mechanics in Three Dimensions | Stern–Gerlach; Precession; Quantum Atom 3D ×3 — spherical harmonics, angular momentum and 3D oscillator (OpenLyceum) |
+| 10. The Hydrogen Atom | Models of the Hydrogen Atom (PhET); Quantum Atom 3D, orbitals and Zeeman; Light and Atoms, hydrogen; Simplified MRI, in progress (OpenLyceum) |
+| 11. Many-Electron Atoms | Build an Atom (PhET); Electron Configuration; Periodic Trends; Photon Interactions, X-ray tube / Moseley; Interferometry Lab, passive Fabry–Pérot cavity (OpenLyceum); Neon Lights & Other Discharge Lamps; Lasers (PhET, Java) |
+| 12. Molecular Structure | Molecule Polarity; Molecule Shapes; Double Wells and Covalent Bonds; Band Structure; Atomic Interactions; Molecules and Light (PhET); Quantum Atom 3D, hybrid superpositions; Spectroscopy Lab, UV-Vis and IR; Quantum Potential, harmonic / Morse comparison (OpenLyceum) |
 | 13. Nuclear Physics | Isotopes and Atomic Mass (PhET); Rutherford Scattering (PhET); Radioactive Dating Game (PhET, Java); Alpha Decay (PhET); Build a Nucleus (PhET); Nuclear Fission (PhET, Java) |
-| 14. Elementary Particles and the Standard Model | Beta Decay (PhET) |
+| 14. Elementary Particles and the Standard Model | Beta Decay (PhET); Collider Lab, event display / dimuon mass / energy frontier; Particle Zoo ×3 — reactions and vertices, hadrons / Eightfold Way, confinement (OpenLyceum) |
+
+### Screen captures for print and Word
+
+The PNG files in `images/simulations/` are captures of the public OpenLyceum
+screens listed in `images/simulations/manifest.json`, made with
+`scripts/capture-simulation-fallbacks.mjs`. They retain the simulations'
+AGPL-3.0 license and OpenLyceum credit; they are not original book diagrams.
+The source repositories are [Diffraction Lab](https://github.com/OpenLyceum/DiffractionLab),
+[Interferometry Lab](https://github.com/OpenLyceum/InterferometryLab),
+[Photon Interactions](https://github.com/OpenLyceum/PhotonInteractions),
+[Quantum Atom 3D](https://github.com/OpenLyceum/QuantumAtom3D),
+[Quantum Potential](https://github.com/OpenLyceum/QuantumPotential),
+[Spectroscopy Lab](https://github.com/OpenLyceum/SpectroscopyLab),
+[Collider Lab](https://github.com/OpenLyceum/ColliderLab), and
+[Particle Zoo](https://github.com/OpenLyceum/ParticleZoo).
+Each simulation figure also links to its running source.
+
+The Simplified MRI figure deliberately uses the book's existing generic
+simulation card while the new OpenLyceum simulation is in progress. Its chapter
+notice retains a link to PhET's original MRI; it is not presented as a completed
+or verified OpenLyceum experiment.
 
 ## Local animations and embedded video
 

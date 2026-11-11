@@ -130,6 +130,16 @@ Verify, vertex by vertex, that the beta-decay diagram in {numref}`Figure %s <fig
 
 Every conservation law holds separately at each vertex, which is both a check on the diagram and the deeper reason the *overall* reaction conserves these quantities in the first place: a multi-vertex process can only conserve a quantity globally if every individual vertex conserves it, since nothing is allowed to leak in or out of an internal line that connects two vertices back to back.
 
+```{openlyceum} ParticleZoo
+:screens: 4
+:screen: 4
+:label: fig:ch14:reaction-court-sim
+:placeholder: /images/simulations/particle-zoo-4.png
+:alt: Particle reactions with a conservation ledger and a quark-level Feynman-diagram exercise.
+
+Choose a supported reaction and complete its quark-level vertices. Predict the exchanged boson and check charge, baryon number and lepton numbers at each vertex before consulting the ledger. Return to this activity after the conservation-law discussion below to distinguish a broken conservation rule from a reaction that requires the weak interaction.
+```
+
 ## Accelerators, Leptons, and Quarks
 
 ### Particle Accelerators and Detectors
@@ -158,6 +168,16 @@ Not every particle produced in a collision leaves a readily visible signal. A ne
 If a neutrino escapes unseen, which measured quantity tells you something is missing?
 Why do head-on colliders reach higher center-of-momentum energy than fixed-target machines for the same beam energy?
 :::
+
+```{openlyceum} ColliderLab
+:screens: 1,2,3
+:screen: 1
+:label: fig:ch14:collider-lab-sim
+:placeholder: /images/simulations/collider-lab-1-2-3.png
+:alt: Collider event display, dimuon invariant-mass spectrum and fixed-target versus collider energy comparison.
+
+Read an event as a detector would: infer momentum from track curvature, identify the layers reached and look for missing transverse momentum. On Bump Hunt, combine muon pairs into an invariant-mass spectrum and locate the Z resonance in real CMS data. On Energy Frontier, predict why equal beam energies yield more available energy in a collider than on a fixed target. The Z spectrum demonstrates resonance reconstruction, not a Higgs discovery analysis.
+```
 
 #### Worked Example: Inferring a Missing Neutrino from Momentum Conservation
 
@@ -251,6 +271,16 @@ $$
 where $\sigma$, the **string tension**, is measured to be about $1\ \text{GeV/fm}$. Once the stored energy $\sigma r$ climbs to a few hundred $\text{MeV}$ — comparable to the energy needed to create a light quark-antiquark pair from the vacuum via $E=mc^2$ — it becomes energetically cheaper for the field to supply that pair than to keep stretching, so the flux tube snaps into two shorter, separately confined pieces rather than yielding an isolated quark. This typically happens after the tube has stretched only about $1\ \text{fm}$, comparable to a hadron's own size, which is exactly why no accelerator, however powerful, can pull a free quark out of a hadron: pushing $r$ larger simply manufactures more hadrons, never a lone one.
 :::
 
+```{openlyceum} ParticleZoo
+:screens: 1,2
+:screen: 1
+:label: fig:ch14:hadron-builder-sim
+:placeholder: /images/simulations/particle-zoo-1-2.png
+:alt: Quarks and antiquarks assembled into hadrons with charge, baryon number and strangeness readouts, alongside the Eightfold Way.
+
+Build a proton, neutron and charged kaon, predicting each charge and baryon number before checking the readouts. Then use the Eightfold Way screen to predict the missing $\Omega^-$ from its position in the charge–strangeness pattern. Compare the predicted quark content and mass with the revealed particle.
+```
+
 #### Worked Example: Quark Content of the $K^+$ Meson
 
 The $K^+$ meson (a **kaon**), like the pion above, is a quark-antiquark pair, but built from a different combination: $K^+ = u\bar s$, an up quark bound to a strange *antiquark*. Every antiquark carries the exact opposite electric charge of its corresponding quark, so $\bar s$ (the antiparticle of the $-\tfrac13e$ strange quark) carries $+\tfrac13e$, and
@@ -274,6 +304,16 @@ The eightfold way's success in predicting the $\Omega^-$ before it was ever obse
 :::{note} Where the Name "Quark" Came From
 Gell-Mann's name for the new constituents was borrowed, by his own account, from a nonsense line in James Joyce's *Finnegans Wake* — "Three quarks for Muster Mark!" — which happened to fit neatly with the three quark flavors ($u$, $d$, $s$) known at the time. Zweig, who proposed the same constituents independently and simultaneously, called them "aces" instead; Gell-Mann's name, and his convention of fractional-$e$ electric charges, is the one the entire field still uses today.
 :::
+
+```{openlyceum} ParticleZoo
+:screens: 3
+:screen: 3
+:label: fig:ch14:confinement-sim
+:placeholder: /images/simulations/particle-zoo-3.png
+:alt: Quark–antiquark pair joined by a colour string with an energy bar and string-breaking products.
+
+Pull the quark and antiquark apart and predict what appears when the stored energy can create a new pair. The simplified string model produces new colour-neutral hadrons rather than an isolated quark; it illustrates confinement without attempting a full quantum-chromodynamics calculation.
+```
 
 ### Conservation Laws
 
@@ -301,6 +341,8 @@ This single fact resolves Rochester and Butler's original puzzle: strange partic
 :::{tip} A Fast Checklist for Particle Reactions
 When checking whether a proposed reaction is allowed, work through the conservation laws in order of how absolute they are, not in the order this chapter introduced them. Charge and baryon number are conserved without exception in every observed process, so check those first — a violation there kills the reaction outright, with no further work needed. Lepton number, checked separately per generation, is next for the elementary vertices considered here, with the caveat that neutrino oscillations can change the flavor labels during propagation. Only then check strangeness, and check it last precisely because it is *allowed* to change: a reaction with $\Delta S=0$ can proceed strongly or electromagnetically, while $\Delta S=\pm1$ at tree level signals a weak process. Larger changes are possible only through higher-order weak processes and are strongly suppressed, not absolutely forbidden. The size of $\Delta S$, in other words, is a useful fast diagnostic for which interaction a reaction must proceed through.
 :::
+
+Return to {numref}`Figure %s <fig:ch14:reaction-court-sim>` and compare strong production of strange particles with a weak decay. Predict whether total strangeness should balance in each case before reading the interaction verdict.
 
 #### Worked Example: Strangeness Conservation in Associated Production and Decay
 

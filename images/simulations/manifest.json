@@ -155,6 +155,12 @@
       "repository": "ParticleZoo",
       "screens": "3",
       "file": "particle-zoo-3.png"
+    },
+    {
+      "repository": "SimplifiedMRI",
+      "screens": "1,2,3",
+      "initialScreen": "2",
+      "file": "simplified-mri-1-2-3.png"
     }
   ]
 }

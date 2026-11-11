@@ -33,7 +33,7 @@ try {
     page.on('pageerror', error => exceptions.push(error.message));
     const params = new URLSearchParams({
       screens: capture.screens,
-      initialScreen: capture.screens.split(',')[0],
+      initialScreen: capture.initialScreen ?? capture.screens.split(',')[0],
       seed: '173',
     });
     // Exercise the renderer available even on machines without a WebGPU device.

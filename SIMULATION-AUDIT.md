@@ -7,10 +7,11 @@ Updated 2026-11-11 after the approved additions. The initial review covered all
 ## Approved scope
 
 Added 22 focused simulation activities in chapters 4, 5, 6, 9, 11, 12 and 14.
-Replaced the chapter 10 MRI embed with the forthcoming OpenLyceum Simplified
-MRI, explicitly marked in progress. Existing figure labels and cross-references
-were preserved. Quantum Scattering, discharge-lamp replacement and radioactive
-dating replacement were not implemented, following the user's decisions.
+Replaced the chapter 10 MRI embed with OpenLyceum Simplified MRI, opening on
+its MRI screen with NMR and relaxation also available. Existing figure labels
+and cross-references were preserved. Quantum Scattering, discharge-lamp
+replacement and radioactive dating replacement were not implemented, following
+the user's decisions.
 
 ## Implemented additions
 
@@ -37,7 +38,7 @@ The manifest and capture script record the source and screen selection.
 
 | Topic | Decision |
 | --- | --- |
-| Simplified MRI | Include OpenLyceum's version ahead of completion. Chapter 10 labels it in progress, uses a local generic placeholder and links to the original PhET MRI. The new launch is not claimed to be complete or operational. Preserve `fig:ch10-mri-sim`. |
+| Simplified MRI | Use the published OpenLyceum NMR, MRI and relaxation screens, opening on MRI with a local screenshot. Preserve `fig:ch10-mri-sim`. |
 | Quantum tunneling | Retain PhET's Java Quantum Tunneling and Wave Packets. Do not introduce Quantum Scattering. |
 | Discharge lamps | Retain PhET's Java model; defer Light and Atoms replacement. |
 | Radioactive dating | Retain PhET's Java dating game and its carbon-14 worked-example references. Counting statistics and alpha decay do not replace dating. |
@@ -50,9 +51,9 @@ Alpha Decay, Beta Decay, Quantum Wave Interference, Quantum Bound States,
 Particle in a Box, Bound State Superposition, Double Wells and Covalent Bonds,
 and Band Structure were already embedded as HTML5 and needed no Java migration.
 
-The MRI preview is the only intentional unfinished deployment. The remaining
-models are public simulations. The source ledger in `SOURCES.md` was updated,
-including its previously omitted Relativistic Dynamics activities in chapter 3.
+Simplified MRI and the other added models are public simulations. The source
+ledger in `SOURCES.md` was updated, including its previously omitted Relativistic
+Dynamics activities in chapter 3.
 
 ## Source and capture references
 
@@ -74,8 +75,8 @@ for known HTML5 titles; this was not interpreted as proof that a title is absent
 
 - `npm run check`: project validation, 30 JavaScript tests, 5 Python tests and the strict HTML/link build.
 - `npm run test:exports`: student/full PDF and Word export smoke tests passed.
-- Chromium loaded all 20 selected screen combinations without JavaScript exceptions; five teaching presets were selected through keyboard controls before capture.
-- The rendered diffraction, MRI and particle-physics pages were checked for their selected-screen iframe URLs, MRI progress notice and visible local print fallbacks.
+- Chromium loaded the original 20 selected screen combinations without JavaScript exceptions; five teaching presets were selected through keyboard controls before capture. Simplified MRI adds a twenty-first capture opening on screen 2.
+- The rendered diffraction, MRI and particle-physics pages were checked for their selected-screen iframe URLs and visible local print fallbacks.
 - All previous figure labels were retained. The seven retained Java embeds and chapters 1, 2, 3, 7, 8 and 13 were verified unchanged.
 
 ## Current embed inventory
@@ -131,7 +132,7 @@ Line numbers refer to the source after this implementation.
 | 10 | [181](chapters/ch-10-the-hydrogen-atom.md#L181) | `openlyceum` | `QuantumAtom3D` | 1 | `fig:ch10-quantum-atom-3d-sim` |
 | 10 | [246](chapters/ch-10-the-hydrogen-atom.md#L246) | `openlyceum` | `LightAndAtoms` | 2 | `fig:ch10-light-and-atoms-sim` |
 | 10 | [321](chapters/ch-10-the-hydrogen-atom.md#L321) | `openlyceum` | `QuantumAtom3D` | 4 | `fig:ch10-zeeman-atom-sim` |
-| 10 | [378](chapters/ch-10-the-hydrogen-atom.md#L378) | `openlyceum` | `SimplifiedMRI` | All / default | `fig:ch10-mri-sim` |
+| 10 | [374](chapters/ch-10-the-hydrogen-atom.md#L374) | `openlyceum` | `SimplifiedMRI` | 1,2,3 | `fig:ch10-mri-sim` |
 | 11 | [123](chapters/ch-11-many-electron-atoms.md#L123) | `phet` | `build-an-atom` | All / default | `fig:ch11-build-atom-sim` |
 | 11 | [131](chapters/ch-11-many-electron-atoms.md#L131) | `openlyceum` | `ElectronConfiguration` | All / default | `fig:ch11-electron-config-sim` |
 | 11 | [190](chapters/ch-11-many-electron-atoms.md#L190) | `openlyceum` | `PeriodicTrends` | All / default | `fig:ch11-periodic-trends-sim` |

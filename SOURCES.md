@@ -112,7 +112,7 @@ attribution and receive it through that link:
 | 7. Wave Properties of Particles | Davisson–Germer (PhET, Java); Standing Waves (OpenLyceum); Quantum Wave Interference, single-particles screen (PhET); Fourier: Making Waves, wave-packet screen (PhET); Wave Composer (OpenLyceum) |
 | 8. The Schrödinger Equation | Quantum Measurement (PhET); Particle in a Box (PhET); Quantum Bound States (PhET); Bound State Superposition (PhET); Quantum Tunneling (PhET, Java) |
 | 9. Quantum Mechanics in Three Dimensions | Stern–Gerlach; Precession; Quantum Atom 3D ×3 — spherical harmonics, angular momentum and 3D oscillator (OpenLyceum) |
-| 10. The Hydrogen Atom | Models of the Hydrogen Atom (PhET); Quantum Atom 3D, orbitals and Zeeman; Light and Atoms, hydrogen; Simplified MRI, in progress (OpenLyceum) |
+| 10. The Hydrogen Atom | Models of the Hydrogen Atom (PhET); Quantum Atom 3D, orbitals and Zeeman; Light and Atoms, hydrogen; Simplified MRI (OpenLyceum) |
 | 11. Many-Electron Atoms | Build an Atom (PhET); Electron Configuration; Periodic Trends; Photon Interactions, X-ray tube / Moseley; Interferometry Lab, passive Fabry–Pérot cavity (OpenLyceum); Neon Lights & Other Discharge Lamps; Lasers (PhET, Java) |
 | 12. Molecular Structure | Molecule Polarity; Molecule Shapes; Double Wells and Covalent Bonds; Band Structure; Atomic Interactions; Molecules and Light (PhET); Quantum Atom 3D, hybrid superpositions; Spectroscopy Lab, UV-Vis and IR; Quantum Potential, harmonic / Morse comparison (OpenLyceum) |
 | 13. Nuclear Physics | Isotopes and Atomic Mass (PhET); Rutherford Scattering (PhET); Radioactive Dating Game (PhET, Java); Alpha Decay (PhET); Build a Nucleus (PhET); Nuclear Fission (PhET, Java) |
@@ -130,14 +130,13 @@ The source repositories are [Diffraction Lab](https://github.com/OpenLyceum/Diff
 [Quantum Atom 3D](https://github.com/OpenLyceum/QuantumAtom3D),
 [Quantum Potential](https://github.com/OpenLyceum/QuantumPotential),
 [Spectroscopy Lab](https://github.com/OpenLyceum/SpectroscopyLab),
-[Collider Lab](https://github.com/OpenLyceum/ColliderLab), and
+[Collider Lab](https://github.com/OpenLyceum/ColliderLab),
+[Simplified MRI](https://github.com/OpenLyceum/SimplifiedMRI), and
 [Particle Zoo](https://github.com/OpenLyceum/ParticleZoo).
 Each simulation figure also links to its running source.
 
-The Simplified MRI figure deliberately uses the book's existing generic
-simulation card while the new OpenLyceum simulation is in progress. Its chapter
-notice retains a link to PhET's original MRI; it is not presented as a completed
-or verified OpenLyceum experiment.
+The Simplified MRI figure uses a capture of its MRI screen, with NMR and
+relaxation available in the same embed.
 
 ## Local animations and embedded video
 

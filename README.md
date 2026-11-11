@@ -136,10 +136,9 @@ scattering and discharge-lamp replacements are deferred; dating has no
 equivalent here. Alpha Decay, Beta Decay and the Quantum Bound States suite
 already use HTML5 through `{phet}`.
 
-Chapter 10 includes the forthcoming OpenLyceum Simplified MRI, marked **in
-progress**, with a generic static placeholder and a link to PhET's original
-MRI while development continues. The new OpenLyceum launch may remain
-unavailable until that simulation is published.
+Chapter 10 includes OpenLyceum's Simplified MRI, with NMR, MRI and relaxation
+screens and a local screenshot for PDF, Word and print. It opens on the MRI
+screen to connect radio-frequency resonance with spatial field gradients.
 
 Chapters 4, 5, 6, 9, 11, 12 and 14 include focused OpenLyceum activities for
 phasors and diffraction, photon interactions, three-dimensional quantum

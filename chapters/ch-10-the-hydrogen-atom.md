@@ -365,23 +365,21 @@ $$
 
 within about a factor of four of the measured value — entirely appropriate for an order-of-magnitude estimate that drops the numerical factors ($j$-dependence and other combinatorics supplied only by a full relativistic treatment) while correctly capturing the essential physical scale: fine structure is smaller than the gross level spacing $|E_n|$ by a factor of $\alpha^2\approx5\times10^{-5}$, the same small parameter that controls, order by order, essentially every relativistic correction in atomic physics.
 
-The same coupling, applied to the *proton's* magnetic moment rather than the electron's, is the basis of magnetic resonance imaging, and the forthcoming OpenLyceum model in {numref}`Figure %s <fig:ch10-mri-sim>` is intended to explore it. A static field along $z$ splits the two spin orientations by $\Delta E = g\mu_N B$, which for a proton in a $1\ \text{T}$ field falls in the radio band; a transverse radio-frequency field tuned to exactly that frequency drives transitions between them, and the resonance is sharp enough that a deliberate spatial *gradient* in $B$ makes the resonant frequency a map of position. Everything in the sequence — the splitting proportional to $B$, the resonance condition $hf = \Delta E$, the return to equilibrium afterwards — is this section's physics with $\mu_B$ replaced by the nuclear magneton.
+The same coupling, applied to the *proton's* magnetic moment rather than the electron's, is the basis of magnetic resonance imaging, and the OpenLyceum model in {numref}`Figure %s <fig:ch10-mri-sim>` demonstrates it. A static field along $z$ splits the two spin orientations by $\Delta E = g\mu_N B$, which for a proton in a $1\ \text{T}$ field falls in the radio band; a transverse radio-frequency field tuned to exactly that frequency drives transitions between them, and the resonance is sharp enough that a deliberate spatial *gradient* in $B$ makes the resonant frequency a map of position. Everything in the sequence — the splitting proportional to $B$, the resonance condition $hf = \Delta E$, the return to equilibrium afterwards — is this section's physics with $\mu_B$ replaced by the nuclear magneton.
 
 :::{margin}
 **Nuclear magneton.** $\mu_N \equiv e\hbar/2m_p$, built the same way as the Bohr magneton $\mu_B$ but with the much larger proton mass $m_p$ in place of $m_e$. Since $m_p\approx1836\,m_e$, $\mu_N\approx\mu_B/1836$ — nuclear magnetic effects are intrinsically about a thousand times weaker than electronic ones, which is part of why MRI needs strong fields and sensitive receivers.
 :::
 
-```{note}
-OpenLyceum's Simplified MRI is in progress. Its embed below is included ahead of completion; use [PhET's original Simplified MRI](https://phet.colorado.edu/en/simulations/mri) while the new version is being finished.
-```
-
 ```{openlyceum} SimplifiedMRI
+:screens: 1,2,3
+:screen: 2
 :sim-name: Simplified MRI
 :label: fig:ch10-mri-sim
-:placeholder: /images/simulation-placeholder.png
-:alt: Placeholder for the forthcoming OpenLyceum Simplified MRI simulation, which is still in progress.
+:placeholder: /images/simulations/simplified-mri-1-2-3.png
+:alt: MRI model showing hydrogen nuclei in a head, gradient magnets, a radio-frequency source and a detector.
 
-Simplified MRI (in progress). The planned activity connects proton-spin splitting in a static magnetic field, radio-frequency resonance and the use of field gradients to locate a signal. The image in print is a placeholder until the completed simulation is available.
+Tune the radio-frequency source to bring hydrogen nuclei into resonance, then add a field gradient and predict which region of the head responds. Add a tumor in the model and sweep the frequency to locate the denser region. The NMR screen connects absorption to the spin energy gap; the Relaxation screen compares longitudinal recovery with transverse dephasing after a pulse.
 ```
 
 ### Selection Rules

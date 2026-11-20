@@ -108,7 +108,7 @@ attribution and receive it through that link:
 | 3. Relativistic Dynamics | Collision Lab (PhET); Relativistic Dynamics ×4 — energy–momentum, collisions, thresholds and acceleration (OpenLyceum) |
 | 4. Interference of Light | Light Propagation; Standing Waves, reflection; Interferometry Lab, interferometers and single-photon Mach–Zehnder; Diffraction Lab, N-slit phasors (OpenLyceum); Wave Interference, slits (PhET) |
 | 5. Diffraction of Light | Wave Interference, diffraction (PhET); Crystal Lattice; Diffraction Lab ×4 — gratings, resolving power, circular aperture and holography (OpenLyceum) |
-| 6. Particle Properties of Waves | Blackbody Spectrum; Photoelectric Effect (PhET, Java); Radio Waves; Photon Interactions ×3 — X-ray tube, Compton scattering, pair production / annihilation (OpenLyceum) |
+| 6. Particle Properties of Waves | Blackbody Spectrum; Photoelectric Effect (PhET); Radio Waves; Photon Interactions ×3 — X-ray tube, Compton scattering, pair production / annihilation (OpenLyceum) |
 | 7. Wave Properties of Particles | Davisson–Germer (PhET, Java); Standing Waves (OpenLyceum); Quantum Wave Interference, single-particles screen (PhET); Fourier: Making Waves, wave-packet screen (PhET); Wave Composer (OpenLyceum) |
 | 8. The Schrödinger Equation | Quantum Measurement (PhET); Particle in a Box (PhET); Quantum Bound States (PhET); Bound State Superposition (PhET); Quantum Tunneling (PhET, Java) |
 | 9. Quantum Mechanics in Three Dimensions | Stern–Gerlach; Precession; Quantum Atom 3D ×3 — spherical harmonics, angular momentum and 3D oscillator (OpenLyceum) |

@@ -163,11 +163,10 @@ Millikan spent nearly a decade trying to disprove Einstein's photon hypothesis, 
 
 The three stubborn facts are best met in the order Lenard and Millikan met them, with the apparatus in front of you. In {numref}`Figure %s <fig:ch06-photoelectric-sim>` the light's intensity, its wavelength, the target metal, and the retarding voltage are all under control, and the photocurrent and stopping potential are read off directly. Turn the intensity up at fixed wavelength: the current rises and the stopping potential does not move. Shorten the wavelength instead: the stopping potential climbs, and a plot of $eV_0$ against $f$ — the simulation will accumulate one for you — is a straight line whose slope is $h$ and whose intercept names the metal. Cross the threshold from the long-wavelength side and the current stops altogether, at full intensity.
 
-```{phet-legacy} photoelectric
-:sim-name: Photoelectric Effect
+```{phet} photoelectric-effect
 :label: fig:ch06-photoelectric-sim
 
-The photoelectric apparatus: a photocathode, an adjustable light source, and a retarding voltage. (This is one of PhET's original Java simulations, run in the browser by CheerpJ; it downloads a Java runtime before it starts, so give it a few seconds on first load.)
+The photoelectric apparatus: a photocathode, an adjustable light source, and a retarding voltage.
 ```
 
 :::{tip}

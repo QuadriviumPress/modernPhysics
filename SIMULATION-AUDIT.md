@@ -1,8 +1,8 @@
 # Simulation audit and implementation record
 
 Updated 2026-11-11 after the approved additions. The initial review covered all
-14 chapters and 54 embeds. The book now contains **76 embeds: 24 PhET HTML5,
-45 OpenLyceum and 7 PhET Java/CheerpJ**.
+14 chapters and 54 embeds. The book now contains **76 embeds: 25 PhET HTML5,
+45 OpenLyceum and 6 PhET Java/CheerpJ**.
 
 ## Approved scope
 
@@ -42,7 +42,7 @@ The manifest and capture script record the source and screen selection.
 | Quantum tunneling | Retain PhET's Java Quantum Tunneling and Wave Packets. Do not introduce Quantum Scattering. |
 | Discharge lamps | Retain PhET's Java model; defer Light and Atoms replacement. |
 | Radioactive dating | Retain PhET's Java dating game and its carbon-14 worked-example references. Counting statistics and alpha decay do not replace dating. |
-| Photoelectric effect | Retain Java; no equivalent public model found in the searched catalogs. |
+| Photoelectric effect | Use PhET's HTML5 Photoelectric Effect (`photoelectric-effect`). |
 | Davisson–Germer | Retain Java; optical diffraction and slit interference do not replace electron scattering from a crystal. |
 | Lasers | Retain Java for pumping, population inversion and threshold. The added passive Fabry–Pérot cavity supplies only cavity resonance. |
 | Nuclear fission | Retain Java; composition, stability and decay models do not replace chain reactions and reactor control. |
@@ -108,7 +108,7 @@ Line numbers refer to the source after this implementation.
 | 5 | [524](chapters/ch-05-diffraction-of-light.md#L524) | `openlyceum` | `CrystalLattice` | All / default | `fig:ch05-crystal-sim` |
 | 5 | [575](chapters/ch-05-diffraction-of-light.md#L575) | `openlyceum` | `DiffractionLab` | 4 | `fig:ch05:holography-sim` |
 | 6 | [60](chapters/ch-06-particle-properties-of-waves.md#L60) | `phet` | `blackbody-spectrum` | All / default | `fig:ch06-blackbody-sim` |
-| 6 | [166](chapters/ch-06-particle-properties-of-waves.md#L166) | `phet-legacy` | `photoelectric` | All / default | `fig:ch06-photoelectric-sim` |
+| 6 | [166](chapters/ch-06-particle-properties-of-waves.md#L166) | `phet` | `photoelectric-effect` | All / default | `fig:ch06-photoelectric-sim` |
 | 6 | [219](chapters/ch-06-particle-properties-of-waves.md#L219) | `openlyceum` | `RadioWaves` | All / default | `fig:ch06-radiating-charge-sim` |
 | 6 | [235](chapters/ch-06-particle-properties-of-waves.md#L235) | `openlyceum` | `PhotonInteractions` | 2 | `fig:ch06:xray-tube-sim` |
 | 6 | [315](chapters/ch-06-particle-properties-of-waves.md#L315) | `openlyceum` | `PhotonInteractions` | 1 | `fig:ch06:compton-sim` |

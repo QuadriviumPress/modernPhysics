@@ -130,11 +130,11 @@ that works in an iframe can be embedded, not only simulations from
 fallback works.
 
 `{phet-legacy}` reaches PhET's pre-HTML5 Java simulations through CheerpJ.
-The book retains Photoelectric Effect, Davisson–Germer, Quantum Tunneling,
-Discharge Lamps, Lasers, Radioactive Dating Game and Nuclear Fission. The
-scattering and discharge-lamp replacements are deferred; dating has no
-equivalent here. Alpha Decay, Beta Decay and the Quantum Bound States suite
-already use HTML5 through `{phet}`.
+The book retains Davisson–Germer, Quantum Tunneling, Discharge Lamps, Lasers,
+Radioactive Dating Game and Nuclear Fission. The scattering and discharge-lamp
+replacements are deferred; dating has no equivalent here. Photoelectric Effect,
+Alpha Decay, Beta Decay and the Quantum Bound States suite use HTML5 through
+`{phet}`.
 
 Chapter 10 includes OpenLyceum's Simplified MRI, with NMR, MRI and relaxation
 screens and a local screenshot for PDF, Word and print. It opens on the MRI

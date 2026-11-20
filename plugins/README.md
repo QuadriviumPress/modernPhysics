@@ -80,24 +80,25 @@ A bare URL just needs a `:placeholder:` to look right in a PDF.
 
 ## PhET's Java simulations
 
-Several topics in a modern physics course — the photoelectric effect,
-tunneling, lasers, gas discharge, radioactive dating, and nuclear fission —
-have no HTML5 PhET simulation, only the original Java one. PhET still
-publishes those, run in the browser by [CheerpJ](https://cheerpj.com/), and
-`{phet-legacy}` addresses them:
+Several topics in a modern physics course — tunneling, lasers, gas discharge,
+radioactive dating, and nuclear fission — have no HTML5 PhET simulation, only
+the original Java one. PhET still publishes those, run in the browser by
+[CheerpJ](https://cheerpj.com/), and `{phet-legacy}` addresses them:
 
 ````markdown
-```{phet-legacy} photoelectric
+```{phet-legacy} quantum-tunneling
 ```
 ```{phet-legacy} nuclear-physics/nuclear-fission
 ```
 ````
 
-Alpha Decay, Beta Decay, and the Quantum Bound States suite are HTML5 now.
-Embed them with `{phet}`, which resolves to
+Photoelectric Effect, Alpha Decay, Beta Decay, and the Quantum Bound States
+suite are HTML5 now. Embed them with `{phet}`, which resolves to
 `sims/html/<sim>/latest/<sim>_<locale>.html`:
 
 ````markdown
+```{phet} photoelectric-effect
+```
 ```{phet} alpha-decay
 ```
 ```{phet} beta-decay

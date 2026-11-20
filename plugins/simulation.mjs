@@ -120,10 +120,10 @@ const PROVIDERS = {
     // 100vw/100vh) but were laid out for a 4:3 window, so give them one.
     aspect: '4:3',
     /**
-     * PhET's pre-HTML5 catalogue -- Photoelectric Effect, Quantum Bound
-     * States, Quantum Tunneling, Lasers, radioactive dating, nuclear fission --
-     * is still the best interactive treatment of several topics in this book
-     * and has no HTML5 replacement. Alpha Decay and Beta Decay are HTML5;
+     * PhET's pre-HTML5 catalogue -- Quantum Tunneling, Lasers, radioactive
+     * dating, nuclear fission, and a few others -- is still the best
+     * interactive treatment of several topics in this book and has no HTML5
+     * replacement. Photoelectric Effect, Alpha Decay and Beta Decay are HTML5;
      * embed those with `phet`, not here. The remaining Java sims run in the
      * browser by CheerpJ, and are served from a launcher that takes the
      * *project* in the path and the *simulation* in the query string. The two
@@ -576,7 +576,7 @@ const phetLegacyDirective = makeDirective( {
        'CheerpJ. Slow to start and mouse-only; use `{phet}` where an HTML5 ' +
        'version exists.',
   argDoc: 'The PhET simulation name, or `project/name` when the two differ, ' +
-          'e.g. `photoelectric` or `nuclear-physics/nuclear-fission`.'
+          'e.g. `quantum-tunneling` or `nuclear-physics/nuclear-fission`.'
 } );
 
 /**
